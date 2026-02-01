@@ -29,3 +29,6 @@ canonifyURLs = true
   name = "Search"
   url = "/search/"
   weight = 30
+
+[params]
+  enableSearch = true

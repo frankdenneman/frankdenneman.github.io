@@ -30,11 +30,16 @@ canonifyURLs = true
     weight = 20
 
   [[menu.main]]
-    name = "Search"
-    url = "/search/"
+    name = "AI"
+    url = "/tags/ai/"
     weight = 30
 
   [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
+    name = "NUMA"
+    url = "/tags/numa/"
     weight = 40
+
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 100

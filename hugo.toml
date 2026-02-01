@@ -21,3 +21,11 @@ canonifyURLs = true
   name = "About"
   url = "/about/"
   weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "Search"
+  url = "/search/"
+  weight = 30

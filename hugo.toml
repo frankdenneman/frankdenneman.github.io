@@ -9,26 +9,24 @@ canonifyURLs = true
 [pagination]
   pagerSize = 10
 
-[params]
-  description = "Personal site of Frank Denneman"
-
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 10
-
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 20
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-[[menu.main]]
-  name = "Search"
-  url = "/search/"
-  weight = 30
-
 [params]
-  enableSearch = true
+  description = "Solving AI Resource Management Challenges in Private Datacenters"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 30

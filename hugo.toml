@@ -1,0 +1,13 @@
+baseURL = "https://frankdenneman.github.io/"
+languageCode = "en-us"
+title = "Frank Denneman"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+canonifyURLs = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Personal site of Frank Denneman"

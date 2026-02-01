@@ -12,6 +12,10 @@ canonifyURLs = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# Enable tags taxonomy (explicit)
+[taxonomies]
+  tag = "tags"
+
 [params]
   description = "Solving AI Resource Management Challenges in Private Datacenters"
 

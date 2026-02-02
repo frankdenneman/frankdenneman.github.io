@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="26 115 634 488" width="634" height="488">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#a5a5a5">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="#a5a5a5">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="26" y="115" width="634" height="488"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="154" y="413" width="241" height="157" fill="white"/>
+        <rect x="154" y="413" width="241" height="157" stroke="#3cdfff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(159 484.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="91.782" y="12">Weights</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="657" y="552" width="2" height="1" fill="white"/>
+        <rect x="657" y="552" width="2" height="1" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(250.752 584)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="0" y="12">Matrix A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(31 482.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="7247536e-19" y="12">M = # of outputs</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="404" y="163" width="157" height="241" fill="white"/>
+        <rect x="404" y="163" width="157" height="241" stroke="#f8981d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(367 276.5)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" fill="#f8981d" x="67.602" y="12">Input Activations</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(575 276.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="4369838e-19" y="12">Matrix B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="404" y="413" width="157" height="157" fill="white"/>
+        <rect x="404" y="413" width="157" height="157" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(409 484.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="20.412" y="12">Output Activations</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <line x1="142.2" y1="556.1" x2="142.2" y2="422.9" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11">
+        <line x1="163.89998" y1="399.02072" x2="385.1" y2="399.4838" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(232.02 375)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="0" y="12">K = # of Inputs</tspan>
+        </text>
+      </g>
+      <g id="Line_13">
+        <line x1="413.9" y1="145" x2="551.1" y2="145" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#a5a5a5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(441.772 120)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="0" y="12">N = batch size</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(575.066 482.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="0" y="12">Matrix C</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

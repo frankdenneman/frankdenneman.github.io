@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="843 306 338 248" width="338" height="248">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_151">
+        <line x1="1089.7064" y1="452.0873" x2="1075.4016" y2="432.1239" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_150">
+        <line x1="1140.581" y1="418.04365" x2="915.2862" y2="418.04365" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_12">
+        <line x1="1140.581" y1="462.0873" x2="915.2862" y2="462.0873" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27">
+        <rect x="954.3139" y="472.0873" width="47.457627" height="47.457627" fill="white"/>
+        <rect x="954.3139" y="472.0873" width="47.457627" height="47.457627" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(957.3139 481.8161)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4.132813" y="12">Cores</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="15.058813" y="26">14</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <rect x="1013.7285" y="472.0873" width="47.457627" height="47.457627" fill="white"/>
+        <rect x="1013.7285" y="472.0873" width="47.457627" height="47.457627" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1016.7285 481.8161)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4.132813" y="12">Cores</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="15.058813" y="26">14</tspan>
+        </text>
+      </g>
+      <g id="Line_22">
+        <line x1="1001.7715" y1="495.8161" x2="1013.7285" y2="495.8161" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_21">
+        <rect x="954.6277" y="529" width="225.29487" height="24" fill="white"/>
+        <rect x="954.6277" y="529" width="225.29487" height="24" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(955.6277 534)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="71.18344" y="12">56 Cores Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <rect x="981.3306" y="401.62393" width="47.457627" height="30.5" fill="white"/>
+        <rect x="981.3306" y="401.62393" width="47.457627" height="30.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(982.3306 409.87393)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.558813" y="12">VPD</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="954.3139" y="452.0873" width="47.457627" height="20" fill="white"/>
+        <rect x="954.3139" y="452.0873" width="47.457627" height="20" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(955.3139 455.0873)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.894813" y="12">PPD</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <line x1="1005.0594" y1="401.62393" x2="1005.0594" y2="389.4163" stroke="#33d7f9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <rect x="981.3306" y="374.1663" width="47.457627" height="30.5" fill="#33d7f9"/>
+        <rect x="981.3306" y="374.1663" width="47.457627" height="30.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(982.3306 375.4163)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="16.860813" y="12">18 </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="6.756813" y="26">vCPU</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="984.0181" y1="452.0873" x2="995.947" y2="432.1239" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="892.754" y="407" width="47.457627" height="64.49315" fill="white"/>
+        <path d="M 892.754 407 L 940.2116 407 L 940.2116 471.49315 L 892.754 471.49315 Z" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(897.754 425.2466)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.5508132" y="12">Numa </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2.4148132" y="26">Client</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="1013.7285" y="452.0873" width="47.457627" height="20" fill="white"/>
+        <rect x="1013.7285" y="452.0873" width="47.457627" height="20" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1014.7285 455.0873)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.894813" y="12">PPD</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <rect x="1040.7453" y="401.62393" width="47.457627" height="30.5" fill="white"/>
+        <rect x="1040.7453" y="401.62393" width="47.457627" height="30.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1041.7453 409.87393)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.558813" y="12">VPD</tspan>
+        </text>
+      </g>
+      <g id="Graphic_121">
+        <rect x="1040.7453" y="374.1663" width="47.457627" height="30.5" fill="#33d7f9"/>
+        <rect x="1040.7453" y="374.1663" width="47.457627" height="30.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1041.7453 375.4163)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="16.860813" y="12">18 </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="6.756813" y="26">vCPU</tspan>
+        </text>
+      </g>
+      <g id="Line_124">
+        <line x1="1006.8306" y1="374.86923" x2="1006.8306" y2="364.76923" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_125">
+        <rect x="981.3306" y="306.87607" width="52" height="47.457627" fill="white"/>
+        <path d="M 981.3306 306.87607 L 1033.3306 306.87607 L 1033.3306 354.3337 L 981.3306 354.3337 Z" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(986.3306 309.6049)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2.172" y="12">Virtual </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.914" y="26">NUMA </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5.19" y="40">Node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_126">
+        <rect x="1041.584" y="306.87607" width="52" height="47.457627" fill="white"/>
+        <path d="M 1041.584 306.87607 L 1093.584 306.87607 L 1093.584 354.3337 L 1041.584 354.3337 Z" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(1046.584 309.6049)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2.172" y="12">Virtual </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.914" y="26">NUMA </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5.19" y="40">Node</tspan>
+        </text>
+      </g>
+      <g id="Line_127">
+        <line x1="1067.288" y1="374.86923" x2="1067.288" y2="364.76923" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_129">
+        <line x1="940.2116" y1="369" x2="1122.746" y2="369" stroke="#310067" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="1.0,3.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_131">
+        <text transform="translate(848.6288 360)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Guest OS Layer</tspan>
+        </text>
+      </g>
+      <g id="Line_133">
+        <line x1="978.0427" y1="519.5449" x2="978.0427" y2="529" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_134">
+        <line x1="1037.4573" y1="519.5449" x2="1037.4573" y2="529" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_139"/>
+      <g id="Graphic_140">
+        <rect x="1073.1432" y="472.0873" width="47.457627" height="47.457627" fill="white"/>
+        <rect x="1073.1432" y="472.0873" width="47.457627" height="47.457627" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1076.1432 481.8161)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4.132813" y="12">Cores</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="15.058813" y="26">14</tspan>
+        </text>
+      </g>
+      <g id="Graphic_141">
+        <rect x="1073.1432" y="452.0873" width="47.457627" height="20" fill="white"/>
+        <rect x="1073.1432" y="452.0873" width="47.457627" height="20" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1074.1432 455.0873)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.894813" y="12">PPD</tspan>
+        </text>
+      </g>
+      <g id="Graphic_142">
+        <rect x="1132.465" y="483" width="47.457627" height="36.452026" fill="white"/>
+        <rect x="1132.465" y="483" width="47.457627" height="36.452026" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1135.465 487.226)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4.132813" y="12">Cores</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="15.058813" y="26">14</tspan>
+        </text>
+      </g>
+      <g id="Graphic_149">
+        <rect x="1132.465" y="407" width="47.457627" height="64.49315" fill="white"/>
+        <path d="M 1132.465 407 L 1179.9226 407 L 1179.9226 471.49315 L 1132.465 471.49315 Z" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(1137.465 425.2466)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.5508132" y="12">Numa </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2.4148132" y="26">Client</tspan>
+        </text>
+      </g>
+      <g id="Line_152">
+        <line x1="1015.9869" y1="432.1239" x2="1030.2918" y2="452.0873" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_153">
+        <line x1="1055.3616" y1="432.1239" x2="1043.4327" y2="452.0873" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

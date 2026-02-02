@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="1650 957 542 682" width="542" height="682">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="1650" y="957" width="542" height="682"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_48">
+        <rect x="1650.9893" y="1523" width="540.01066" height="115.06519" fill="#f7f7f7"></rect>
+        <path d="M 1650.9893 1523 L 2191 1523 L 2191 1638.0652 L 1650.9893 1638.0652 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_42">
+        <rect x="1664.58" y="1562.4348" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1664.58" y="1562.4348" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1669.58 1586.9674)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="27.580163" y="12">Qualified Servers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <rect x="1841.1175" y="1562.4348" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1841.1175" y="1562.4348" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1846.1175 1586.9674)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="19.144163" y="12">NGC-Ready Servers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <rect x="2017.655" y="1562.4348" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="2017.655" y="1562.4348" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(2022.655 1586.9674)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="2.2901633" y="12">NVIDIA-Certified Systems</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(1846.4987 1532.5727)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Accelerated Infrastructure</tspan>
+        </text>
+      </g>
+      <g id="Group_96">
+        <g id="Graphic_54">
+          <rect x="1650.9893" y="1273.8696" width="540.01066" height="115.06519" fill="#f7f7f7"></rect>
+          <path d="M 1650.9893 1273.8696 L 2191 1273.8696 L 2191 1388.9348 L 1650.9893 1388.9348 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+        </g>
+        <g id="Graphic_55">
+          <rect x="1664.58" y="1313.3044" width="162.60033" height="63.06519" fill="white"></rect>
+          <rect x="1664.58" y="1313.3044" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1669.58 1330.837)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="54.442163" y="12">NVIDIA</tspan>
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="59.98016" y="26">vGPU</tspan>
+          </text>
+        </g>
+        <g id="Graphic_56">
+          <rect x="1841.1175" y="1313.3044" width="162.60033" height="63.06519" fill="#fb3983"></rect>
+          <rect x="1841.1175" y="1313.3044" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1846.1175 1330.837)" fill="white">
+            <tspan font-family="Metropolis" font-size="12" fill="white" x="54.442163" y="12">NVIDIA</tspan>
+            <tspan font-family="Metropolis" font-size="12" fill="white" x="40.294163" y="26">Magnum I/O</tspan>
+          </text>
+        </g>
+        <g id="Graphic_57">
+          <rect x="2017.655" y="1313.3044" width="162.60033" height="63.06519" fill="white"></rect>
+          <rect x="2017.655" y="1313.3044" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(2022.655 1330.837)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="54.442163" y="12">NVIDIA</tspan>
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="44.032163" y="26">CUDA-X AI</tspan>
+          </text>
+        </g>
+        <g id="Graphic_58">
+          <text transform="translate(1845.9237 1287.8696)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="5968559e-19" y="12">Infrastructure Optimization</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_97">
+        <g id="Graphic_63">
+          <rect x="1650.9893" y="1149.3044" width="540.01066" height="115.06519" fill="#f7f7f7"></rect>
+          <path d="M 1650.9893 1149.3044 L 2191 1149.3044 L 2191 1264.3696 L 1650.9893 1264.3696 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+        </g>
+        <g id="Graphic_64">
+          <rect x="1664.58" y="1188.9345" width="251.53275" height="62.86994" fill="white"></rect>
+          <rect x="1664.58" y="1188.9345" width="251.53275" height="62.86994" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1669.58 1206.3695)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="98.90838" y="12">NVIDIA</tspan>
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="76.72638" y="26">vGPU Operator</tspan>
+          </text>
+        </g>
+        <g id="Graphic_65">
+          <rect x="1929.3863" y="1188.7392" width="250.86908" height="62.86994" fill="white"></rect>
+          <rect x="1929.3863" y="1188.7392" width="250.86908" height="62.86994" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1934.3863 1206.1742)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="98.57654" y="12">NVIDIA</tspan>
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="68.19254" y="26">Network Operator</tspan>
+          </text>
+        </g>
+        <g id="Graphic_67">
+          <text transform="translate(1848.205 1164.9035)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="7247536e-19" y="12">Cloud-Native Deployment</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_95">
+        <g id="Graphic_49">
+          <rect x="1650.9893" y="1398.4348" width="540.01066" height="115.06519" fill="#f7f7f7"></rect>
+          <path d="M 1650.9893 1398.4348 L 2191 1398.4348 L 2191 1513.5 L 1650.9893 1513.5 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+        </g>
+        <g id="Graphic_52">
+          <rect x="1840.9817" y="1472.7317" width="339.27368" height="28.203066" fill="white"></rect>
+          <rect x="1840.9817" y="1472.7317" width="339.27368" height="28.203066" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1845.9817 1479.8333)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="97.25684" y="12">VMware vSphere / VCF</tspan>
+          </text>
+        </g>
+        <g id="Graphic_51">
+          <rect x="1841.8182" y="1437.8696" width="162.66546" height="28.203066" fill="white"></rect>
+          <rect x="1841.8182" y="1437.8696" width="162.66546" height="28.203066" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1846.8182 1444.9712)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="35.142733" y="12">VMware TKGS</tspan>
+          </text>
+        </g>
+        <g id="Graphic_50">
+          <rect x="2017.5899" y="1437.8696" width="162.66546" height="28.203066" fill="white"></rect>
+          <rect x="2017.5899" y="1437.8696" width="162.66546" height="28.203066" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(2022.5899 1444.9712)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="38.340733" y="12">Red Hat OCP</tspan>
+          </text>
+        </g>
+        <g id="Graphic_62">
+          <text transform="translate(1865.3747 1410.8333)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8029133e-19" y="12">Enterprise Platform</tspan>
+          </text>
+        </g>
+        <g id="Graphic_81">
+          <rect x="1665.21" y="1437.8696" width="168.36207" height="62.67348" fill="white"></rect>
+          <rect x="1665.21" y="1437.8696" width="168.36207" height="62.67348" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(1670.21 1462.2064)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="12" fill="#006990" x="11.801038" y="12">VMware vSphere / VCF</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_74">
+        <rect x="1650.9893" y="1009.7392" width="540.01066" height="130.06519" fill="#f6f6f6"></rect>
+        <path d="M 1650.9893 1009.7392 L 2191 1009.7392 L 2191 1139.8044 L 1650.9893 1139.8044 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_80">
+        <text transform="translate(1778.278 1018.7392)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.2329504" y="12">Data Science Development and Deployment Tools</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <rect x="1664.58" y="1063.674" width="125.55565" height="63.06519" fill="white"></rect>
+        <rect x="1664.58" y="1063.674" width="125.55565" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1669.58 1081.2066)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="35.919824" y="12">NVIDIA </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="35.019824" y="26">RAPIDS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <rect x="1800.8976" y="1063.674" width="125.55565" height="63.06519" fill="white"></rect>
+        <rect x="1800.8976" y="1063.674" width="125.55565" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1805.8976 1081.2066)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="35.919824" y="12">NVIDIA</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="23.949824" y="26">TAO Toolkit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <rect x="1937.2151" y="1063.674" width="125.55565" height="63.06519" fill="white"></rect>
+        <rect x="1937.2151" y="1063.674" width="125.55565" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1942.2151 1074.2066)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.603824" y="12">PyToch &amp;</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="26.307824" y="26">Tensorflow</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="27.063824" y="40">Containers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <rect x="2072.7694" y="1063.674" width="106.85588" height="63.06519" fill="white"></rect>
+        <rect x="2072.7694" y="1063.674" width="106.85588" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(2077.7694 1074.2066)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="26.56994" y="12">NVIDIA</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="31.63994" y="26">Triton</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="1.3099404" y="40">Inference Server</tspan>
+        </text>
+      </g>
+      <g id="Line_86">
+        <line x1="1664.58" y1="1049.9566" x2="1787.9811" y2="1049.9566" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_83">
+        <rect x="1676.2738" y="1038.9566" width="105.52" height="22" fill="#f6f6f6"></rect>
+        <text transform="translate(1678.2738 1043.9566)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="22026825e-20" y="10">Accelerate Data Prep</tspan>
+        </text>
+      </g>
+      <g id="Line_88">
+        <line x1="1938.7065" y1="1051.0678" x2="2172.1253" y2="1051.0678" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_87">
+        <rect x="1985.5264" y="1040.0678" width="143.61" height="22" fill="#f6f6f6"></rect>
+        <text transform="translate(1987.5264 1045.0678)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="2842171e-19" y="10">Optimize and Deploy at Scale</tspan>
+        </text>
+      </g>
+      <g id="Line_89">
+        <line x1="1802.0087" y1="1051.0678" x2="1925.4098" y2="1051.0678" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_90">
+        <rect x="1832.6374" y="1040.0678" width="67.65" height="22" fill="#f6f6f6"></rect>
+        <text transform="translate(1834.6374 1045.0678)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="7247536e-19" y="10">Train at Scale</tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <rect x="1650.9893" y="958" width="540.01066" height="46.06519" fill="#f6f6f6"></rect>
+        <path d="M 1650.9893 958 L 2191 958 L 2191 1004.0652 L 1650.9893 1004.0652 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_102">
+        <text transform="translate(1869.4067 974.0326)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">NeMo Framework</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

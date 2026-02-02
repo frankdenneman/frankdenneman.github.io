@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="-832 267 785 240" width="785" height="240">
+  <defs/>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill="none" stroke-opacity="1" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-832" y="267" width="785" height="240"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_194">
+        <rect x="-408.93567" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_193">
+        <rect x="-386.00826" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_192">
+        <rect x="-363.08085" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_182">
+        <rect x="-684.0646" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_181">
+        <rect x="-661.13715" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_180">
+        <rect x="-638.20975" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_179">
+        <rect x="-615.28234" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_178">
+        <rect x="-775.7742" y="411.77823" width="19" height="19" fill="#78be20"/>
+      </g>
+      <g id="Graphic_177">
+        <rect x="-752.8468" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_176">
+        <rect x="-729.9194" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_175">
+        <rect x="-706.992" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_174">
+        <rect x="-500.6453" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_173">
+        <rect x="-477.7179" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_172">
+        <rect x="-454.7905" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_171">
+        <rect x="-431.8631" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_170">
+        <rect x="-592.3549" y="411.77823" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_169">
+        <rect x="-569.4275" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_168">
+        <rect x="-546.5001" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_167">
+        <rect x="-523.5727" y="411.77823" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Line_241">
+        <line x1="-756.7742" y1="387.502" x2="-775.7742" y2="387.502" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_244">
+        <line x1="-751.479" y1="387.502" x2="-574.8339" y2="387.502" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_245">
+        <rect x="-719.9477" y="374.002" width="114.006" height="27" fill="white"/>
+        <text transform="translate(-714.9477 379.002)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="61106675e-20" y="14">Exponent 8 bits</tspan>
+        </text>
+      </g>
+      <g id="Line_248">
+        <line x1="-570.9065" y1="387.502" x2="-345.55985" y2="387.502" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_249">
+        <rect x="-516.7371" y="374.002" width="117.548" height="27" fill="white"/>
+        <text transform="translate(-511.7371 379.002)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Precision 10 bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_256">
+        <text transform="translate(-824.771 412.77823)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.925" y="14">TF32 </tspan>
+        </text>
+      </g>
+      <g id="Group_259">
+        <g id="Graphic_275">
+          <rect x="-617.80334" y="483.4378" width="19" height="19" fill="#f95700"/>
+        </g>
+        <g id="Graphic_274">
+          <rect x="-594.8759" y="483.4378" width="19" height="19" fill="#f95700"/>
+        </g>
+        <g id="Graphic_273">
+          <rect x="-571.9485" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_272">
+          <rect x="-549.0211" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_271">
+          <rect x="-709.513" y="483.4378" width="19" height="19" fill="#78be20"/>
+        </g>
+        <g id="Graphic_270">
+          <rect x="-686.5856" y="483.4378" width="19" height="19" fill="#f95700"/>
+        </g>
+        <g id="Graphic_269">
+          <rect x="-663.65815" y="483.4378" width="19" height="19" fill="#f95700"/>
+        </g>
+        <g id="Graphic_268">
+          <rect x="-640.73075" y="483.4378" width="19" height="19" fill="#f95700"/>
+        </g>
+        <g id="Graphic_267">
+          <rect x="-434.3841" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_266">
+          <rect x="-411.45667" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_265">
+          <rect x="-388.52926" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_264">
+          <rect x="-365.60185" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_263">
+          <rect x="-526.0937" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_262">
+          <rect x="-503.1663" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_261">
+          <rect x="-480.2389" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+        <g id="Graphic_260">
+          <rect x="-457.3115" y="483.4378" width="19" height="19" fill="#63e5ff"/>
+        </g>
+      </g>
+      <g id="Line_276">
+        <line x1="-684.0646" y1="459.4997" x2="-573.3549" y2="459.4997" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_277">
+        <rect x="-685.38404" y="445.9997" width="113.614" height="27" fill="white"/>
+        <text transform="translate(-680.38405 450.9997)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="6963319e-19" y="14">Exponent 5 bits</tspan>
+        </text>
+      </g>
+      <g id="Line_278">
+        <line x1="-569.4275" y1="460.7759" x2="-344.08085" y2="460.7759" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_279">
+        <rect x="-515.2581" y="447.2759" width="117.548" height="27" fill="white"/>
+        <text transform="translate(-510.2581 452.2759)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Precision 10 bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_280">
+        <text transform="translate(-756.7388 484.4378)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.925" y="14">FP16 </tspan>
+        </text>
+      </g>
+      <g id="Line_282">
+        <line x1="-690.513" y1="460.7759" x2="-709.513" y2="460.7759" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_284"/>
+      <g id="Graphic_286">
+        <rect x="-318.70503" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_287">
+        <rect x="-295.77763" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_288">
+        <rect x="-272.85022" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_289">
+        <rect x="-249.9228" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_290">
+        <rect x="-410.41467" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_291">
+        <rect x="-387.48726" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_292">
+        <rect x="-364.55985" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_293">
+        <rect x="-341.63244" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_294">
+        <rect x="-135.28577" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_295">
+        <rect x="-112.35836" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_296">
+        <rect x="-89.43096" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_297">
+        <rect x="-66.50355" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_298">
+        <rect x="-226.9954" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_299">
+        <rect x="-204.068" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_300">
+        <rect x="-181.14059" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_301">
+        <rect x="-158.21318" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_302">
+        <rect x="-685.5436" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_303">
+        <rect x="-662.61615" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_304">
+        <rect x="-639.68875" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_305">
+        <rect x="-616.76134" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_306">
+        <rect x="-777.2532" y="340.2258" width="19" height="19" fill="#78be20"/>
+      </g>
+      <g id="Graphic_307">
+        <rect x="-754.3258" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_308">
+        <rect x="-731.3984" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_309">
+        <rect x="-708.471" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_310">
+        <rect x="-502.1243" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_311">
+        <rect x="-479.1969" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_312">
+        <rect x="-456.2695" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_313">
+        <rect x="-433.3421" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_314">
+        <rect x="-593.8339" y="340.2258" width="19" height="19" fill="#f95700"/>
+      </g>
+      <g id="Graphic_315">
+        <rect x="-570.9065" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_316">
+        <rect x="-547.9791" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Graphic_317">
+        <rect x="-525.0517" y="340.2258" width="19" height="19" fill="#63e5ff"/>
+      </g>
+      <g id="Line_318">
+        <line x1="-767.7532" y1="297.387" x2="-767.7532" y2="311.738" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_319">
+        <text transform="translate(-799.2742 272.9496)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.925" y="14">Sign 1 bit </tspan>
+        </text>
+      </g>
+      <g id="Line_320">
+        <line x1="-758.2532" y1="315.9496" x2="-777.2532" y2="315.9496" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_321">
+        <line x1="-752.958" y1="315.9496" x2="-576.3129" y2="315.9496" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_322">
+        <rect x="-721.4267" y="302.4496" width="114.006" height="27" fill="white"/>
+        <text transform="translate(-716.4267 307.4496)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="61106675e-20" y="14">Exponent 8 bits</tspan>
+        </text>
+      </g>
+      <g id="Line_323">
+        <line x1="-572.3855" y1="315.9496" x2="-48.98255" y2="315.9496" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_324">
+        <rect x="-369.52365" y="302.4496" width="118.934" height="27" fill="white"/>
+        <text transform="translate(-364.52365 307.4496)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="55422333e-20" y="14">Precision 23 bits</tspan>
+        </text>
+      </g>
+      <g id="Graphic_326">
+        <text transform="translate(-826.915 341.2258)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.925" y="14">FP32 </tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

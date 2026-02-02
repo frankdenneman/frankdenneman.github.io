@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="125 209 1184 626" width="1184" height="626">
+  <defs>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="-979.1667" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-style="italic" font-weight="300">
+      <font-face-src>
+        <font-face-name name="Metropolis-LightItalic"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#00a4cc">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.17.5\n2020-11-06 14:42:29 +0000</metadata>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="125" y="209" width="1184" height="626"/>
+    <g id="Canvas_1_Layer_9">
+      <title>Layer 9</title>
+      <g id="Graphic_135">
+        <rect x="338.33225" y="660.51275" width="551.66775" height="100" fill="white"/>
+        <rect x="338.33225" y="660.51275" width="551.66775" height="100" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_134">
+        <rect x="338.33225" y="407.6026" width="551.66775" height="242.91014" fill="white"/>
+        <rect x="338.33225" y="407.6026" width="551.66775" height="242.91014" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_133">
+        <rect x="338.34648" y="216.5232" width="551.66775" height="181.0794" fill="white"/>
+        <rect x="338.34648" y="216.5232" width="551.66775" height="181.0794" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_126">
+        <rect x="472.83225" y="577.01275" width="282.428" height="43" fill="white"/>
+        <path d="M 472.83225 577.01275 L 755.26025 577.01275 L 755.26025 620.01275 L 472.83225 620.01275 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_146">
+        <text transform="translate(355.33225 270.0232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="0" y="12">Connect to vSphere Namespace</tspan>
+        </text>
+      </g>
+      <g id="Line_147">
+        <line x1="569.8322" y1="277.0232" x2="545.71625" y2="277.0232" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_148">
+        <line x1="205" y1="710.51275" x2="232.6582" y2="710.51275" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_149">
+        <line x1="290.6582" y1="710.51275" x2="338.33225" y2="710.51275" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_150">
+        <path d="M 178.66667 670.9265 L 178.66667 529.0577 L 232.5742 529.0577" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_151">
+        <line x1="290.5742" y1="529.0577" x2="338.33225" y2="529.0577" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_153">
+        <line x1="290.5742" y1="307.0629" x2="338.34648" y2="307.0629" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_160">
+        <line x1="152.0202" y1="307.0629" x2="152.0202" y2="671.4587" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_162">
+        <line x1="261.5742" y1="476" x2="261.5742" y2="507.5577" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_164">
+        <line x1="261.63908" y1="259.5629" x2="261.60357" y2="285.5629" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_166">
+        <line x1="261.6582" y1="732.01275" x2="261.6582" y2="788.1314" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_167">
+        <line x1="1039.5" y1="366.5232" x2="1120.698" y2="366.5232" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_168">
+        <path d="M 1125.018 289.65804 L 976.8116 289.65804 L 976.5872 345.0232" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_169">
+        <line x1="520.2385" y1="681.0673" x2="520.275" y2="697.4507" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_171">
+        <line x1="613.7982" y1="680.5716" x2="613.551" y2="697.4507" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_172">
+        <line x1="707.2951" y1="681.0673" x2="707.3316" y2="697.4507" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_145">
+        <path d="M 976.4865 471.01275 L 976.4071 597.6923 L 559.80395 598.4417" stroke="#106391" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="4.0,3.0,1.0,3.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_144">
+        <rect x="472.02296" y="427.6026" width="282.428" height="43" fill="white"/>
+        <path d="M 472.02296 427.6026 L 754.451 427.6026 L 754.451 470.6026 L 472.02296 470.6026 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <rect x="351.33225" y="209" width="113.528" height="14" fill="white"/>
+        <text transform="translate(355.33225 209)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="0" y="12">Frontend Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="349.77825" y="754" width="136.076" height="14" fill="white"/>
+        <text transform="translate(353.77825 754)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4689582e-19" y="12">Management Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="629.8544" y="352.5232" width="79" height="28" fill="white"/>
+        <path d="M 629.8544 352.5232 L 708.8544 352.5232 L 708.8544 380.5232 L 629.8544 380.5232 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(634.8544 359.5232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="8.712" y="12">Virtual IP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="126" y="671.01275" width="79" height="79" fill="white"/>
+        <rect x="126" y="671.01275" width="79" height="79" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(131 703.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="8.928" y="12">HAProxy</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <rect x="913.5" y="345.0232" width="126" height="43" fill="white"/>
+        <path d="M 913.5 345.0232 L 1039.5 345.0232 L 1039.5 388.0232 L 913.5 388.0232 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(918.5 359.5232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="12.196" y="12">Virtual IP Range</tspan>
+        </text>
+      </g>
+      <g id="Line_32">
+        <line x1="913.5" y1="366.5232" x2="708.8544" y2="366.5232" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_35">
+        <rect x="232.6582" y="689.01275" width="58" height="43" fill="white"/>
+        <rect x="232.6582" y="689.01275" width="58" height="43" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(237.6582 696.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="18.72" y="12">IP </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.068" y="26">address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <rect x="232.5742" y="507.5577" width="58" height="43" fill="white"/>
+        <rect x="232.5742" y="507.5577" width="58" height="43" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(237.5742 515.0577)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="18.72" y="12">IP </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.068" y="26">address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(189.4122 622.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.74" y="12">Step 2.3 Network Config </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="37.722" y="26">in HA-Proxy</tspan>
+        </text>
+      </g>
+      <g id="Line_42">
+        <line x1="232.5742" y1="307.0629" x2="152.0202" y2="307.0629" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_44">
+        <rect x="913.5" y="428.01275" width="126" height="43" fill="white"/>
+        <path d="M 913.5 428.01275 L 1039.5 428.01275 L 1039.5 471.01275 L 913.5 471.01275 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(918.5 442.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x=".364" y="12">Cluster Node Range</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="559.80395" y1="449.51275" x2="913.5" y2="449.51275" stroke="#106391" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="4.0,3.0,1.0,3.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(187.6962 788.1314)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="12.45" y="12">Step 5 Load Balancer </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="0" y="26">in Workload Management</tspan>
+        </text>
+      </g>
+      <g id="Line_47">
+        <line x1="261.5901" y1="650.51275" x2="261.6338" y2="689.01275" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_48">
+        <text transform="translate(182.8242 821)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">(Data Plane API Addresses)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(1122.358 307.0232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">(Load Balancer IP Ranges)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(1092.88 383.6026)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="6679102e-19" y="12">IP Address Ranges for Virtual Servers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(1124.698 352.5232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="12.45" y="12">Step 5 Load Balancer</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="0" y="26">in Workload Management</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <rect x="913.5" y="688.9507" width="126" height="43" fill="#eb2188"/>
+        <path d="M 913.5 688.9507 L 1039.5 688.9507 L 1039.5 731.9507 L 913.5 731.9507 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(918.5 696.4507)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="27.25" y="12">Supervisor</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="20.44" y="26"> Node Range</tspan>
+        </text>
+      </g>
+      <g id="Line_69">
+        <line x1="913.5" y1="710.4507" x2="746.86055" y2="710.4507" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_70">
+        <text transform="translate(1112.368 699.938)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.74" y="12">Step 6 Management Network </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="12.33" y="26">in Workload Management</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <text transform="translate(1143.964 731)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">Starting IP Address</tspan>
+        </text>
+      </g>
+      <g id="Line_72">
+        <line x1="1039.5" y1="711.4396" x2="1108.368" y2="712.52065" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_73">
+        <rect x="480.80395" y="585.51275" width="79" height="26" fill="white"/>
+        <rect x="480.80395" y="585.51275" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(485.80395 591.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <rect x="480.80395" y="697.4507" width="79" height="26" fill="white"/>
+        <rect x="480.80395" y="697.4507" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(485.80395 703.4507)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <rect x="574.33225" y="585.51275" width="79" height="26" fill="white"/>
+        <rect x="574.33225" y="585.51275" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(579.33225 591.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <rect x="573.86055" y="697.4507" width="79" height="26" fill="white"/>
+        <rect x="573.86055" y="697.4507" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(578.86055 703.4507)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <rect x="667.86055" y="585.51275" width="79" height="26" fill="white"/>
+        <rect x="667.86055" y="585.51275" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(672.86055 591.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <rect x="667.86055" y="697.4507" width="79" height="26" fill="white"/>
+        <rect x="667.86055" y="697.4507" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(672.86055 703.4507)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_86">
+        <circle cx="613.83225" cy="277.0232" r="44.0000703076834" fill="white"/>
+        <path d="M 644.9449 245.91054 C 662.12806 263.0936 662.12806 290.9528 644.9449 308.13587 C 627.76186 325.319 599.90264 325.319 582.7196 308.13587 C 565.53644 290.9528 565.53644 263.0936 582.7196 245.91054 C 599.90264 228.7274 627.76186 228.7274 644.9449 245.91054" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(583.63225 270.0232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x=".45800076" y="12">Developer</tspan>
+        </text>
+      </g>
+      <g id="Line_87">
+        <line x1="637.0325" y1="314.42127" x2="655.4505" y2="344.11053" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_88">
+        <line x1="657.8323" y1="277.0232" x2="694.33225" y2="277.0232" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_89">
+        <text transform="translate(698.33225 270.0232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="0" y="12">Connect to TKG Cluster</tspan>
+        </text>
+      </g>
+      <g id="Line_90">
+        <line x1="1039.5" y1="449.51275" x2="1118.226" y2="449.51275" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <rect x="667.73696" y="628.8876" width="79" height="52.17972" fill="white"/>
+        <rect x="667.73696" y="628.8876" width="79" height="52.17972" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(672.73696 640.97746)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="3.75" y="12">Supervisor </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="24.846" y="26">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <rect x="574.68035" y="628.3919" width="79" height="52.17972" fill="white"/>
+        <rect x="574.68035" y="628.3919" width="79" height="52.17972" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(579.68035 640.4817)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="3.75" y="12">Supervisor </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="24.846" y="26">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <rect x="480.68035" y="628.8876" width="79" height="52.17972" fill="white"/>
+        <rect x="480.68035" y="628.8876" width="79" height="52.17972" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(485.68035 640.97746)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="3.75" y="12">Supervisor </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="24.846" y="26">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="480.80395" y="478.61554" width="79" height="52.17972" fill="white"/>
+        <rect x="480.80395" y="478.61554" width="79" height="52.17972" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(485.80395 497.7054)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.29" y="12">TKG</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="574.68035" y="478.75634" width="79" height="52.17972" fill="white"/>
+        <rect x="574.68035" y="478.75634" width="79" height="52.17972" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(579.68035 497.8462)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.29" y="12">TKG</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="668.68035" y="478.75634" width="79" height="52.17972" fill="white"/>
+        <rect x="668.68035" y="478.75634" width="79" height="52.17972" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(673.68035 497.8462)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.29" y="12">TKG</tspan>
+        </text>
+      </g>
+      <g id="Graphic_108">
+        <text transform="translate(1141.12 469)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="8668621e-19" y="12">(IP Address Ranges)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <rect x="1118.226" y="435.51275" width="160.868" height="28" fill="white"/>
+        <text transform="translate(1122.226 435.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.74" y="12">Step 7 Workload Network </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="2.472" y="26">in Workload Management</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <rect x="1125.018" y="275.65804" width="147.284" height="28" fill="white"/>
+        <text transform="translate(1129.018 275.65804)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.74" y="12">Step 3.1 Load Balancing </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="35.202" y="26">in HA-Proxy</tspan>
+        </text>
+      </g>
+      <g id="Graphic_114">
+        <rect x="519.5063" y="352.5232" width="79" height="28" fill="white"/>
+        <path d="M 519.5063 352.5232 L 598.5063 352.5232 L 598.5063 380.5232 L 519.5063 380.5232 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        <text transform="translate(524.5063 359.5232)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="8.712" y="12">Virtual IP</tspan>
+        </text>
+      </g>
+      <g id="Line_122">
+        <line x1="590.8431" y1="314.55163" x2="572.7538" y2="344.08124" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_123">
+        <line x1="520.2755" y1="611.51275" x2="520.23746" y2="628.8876" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_124">
+        <line x1="613.9131" y1="611.51275" x2="614.0181" y2="628.3919" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_125">
+        <line x1="707.3321" y1="611.51275" x2="707.2941" y2="628.8876" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_127">
+        <path d="M 519.5063 366.5232 L 383.8707 366.5232 L 384.02112 598.6515 L 472.7807 598.6515" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_56">
+        <rect x="480.80395" y="436.51275" width="79" height="26" fill="white"/>
+        <rect x="480.80395" y="436.51275" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(485.80395 442.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <rect x="574.68035" y="436.51275" width="79" height="26" fill="white"/>
+        <rect x="574.68035" y="436.51275" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(579.68035 442.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <rect x="668.68035" y="436.51275" width="79" height="26" fill="white"/>
+        <rect x="668.68035" y="436.51275" width="79" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(673.68035 442.51275)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="4.548" y="12">IP address</tspan>
+        </text>
+      </g>
+      <g id="Line_131">
+        <line x1="669.3544" y1="380.5232" x2="669.3544" y2="427.27957" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_37">
+        <rect x="232.5742" y="285.5629" width="58" height="43" fill="white"/>
+        <rect x="232.5742" y="285.5629" width="58" height="43" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(237.5742 293.0629)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="18.72" y="12">IP </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.068" y="26">address</tspan>
+        </text>
+      </g>
+      <g id="Graphic_138">
+        <rect x="349.77825" y="643" width="116.636" height="14" fill="white"/>
+        <text transform="translate(353.77825 643)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="0" y="12">Workload Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_161">
+        <text transform="translate(187.5942 448)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.74" y="12">Step 2.5  Network Config </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="39.54" y="26">in HA-Proxy</tspan>
+        </text>
+      </g>
+      <g id="Graphic_163">
+        <text transform="translate(187.6722 231.5629)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="1.74" y="12">Step 2.7  Network Config </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="39.546" y="26">in HA-Proxy</tspan>
+        </text>
+      </g>
+      <g id="Line_154">
+        <line x1="614.18035" y1="462.51275" x2="614.18035" y2="478.75634" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_129">
+        <line x1="520.30395" y1="462.51275" x2="520.30395" y2="478.61554" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_130">
+        <line x1="708.18035" y1="462.51275" x2="708.18035" y2="478.75634" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

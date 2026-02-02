@@ -1,0 +1,10 @@
+---
+title: "My public VMworld schedule"
+date: 2012-08-20
+categories: 
+  - "vmware"
+tags: 
+  - "vmworld"
+---
+
+This year will be an action-packed VMWorld for me, presenting sessions, participating in two panel sessions, hosting a group discussion and available in two “Meet the expert” sessions. Presenting the following sessions: INF-STO1545 - Architecting Storage DRS Datastore Clusters INF-VSP1683 - VMware vSphere Cluster Resource Pools Best Practices Panel sessions: (TAM Day) - ASK THE EXPERTS INF-VSP1504 - Ask the Expert vBloggers Hosting the GD22 - Resource management (DRS/SDRS) group discussion. I invited Anne Holler (Lead engineer DRS) to host this session together with me. During Meet the Experts session 13 and session 17 I’m available for short meetings to answer your resource management (DRS\\SDRS) questions. Here is the week schedule of the sessions/events/activities that I will be taking part of, be sure to sign up if you have not already: Sunday (TAM Day): 14:35 – 15:35 : ASK THE EXPERTS Monday: 14:30 – 15:30 : [INF-VSP1504 - Ask the Expert vBloggers](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=1504) 16:00 – 17:00 : [GD22 – Resource Management](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3488) Tuesday: 12:30 – 13:30 : [INF-STO1545 - Architecting Storage DRS Datastore Clusters](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=1545) (Repeat session) 15:00 – 16:00 : [INF-VSP1683 - vSphere Cluster Resource Pools Best Practices](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=1683) Wednesday: 08:30 – 09:30 : [INF-STO1545 - Architecting Storage DRS Datastore Clusters](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=1545) 12:30 – 13:30 : [Expert 13](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3559) Thursday: 12:00 – 12:00 : [Expert 17](https://vmworld2012.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3563)

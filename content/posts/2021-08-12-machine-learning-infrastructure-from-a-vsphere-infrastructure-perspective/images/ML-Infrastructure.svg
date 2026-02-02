@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-2559.5 743.5 2273.432 857" width="2273.432" height="857">
+  <defs>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Metropolis-Medium"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 7 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="600">
+      <font-face-src>
+        <font-face-name name="Metropolis-SemiBold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="10" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Metropolis-Medium"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-08-05 12:03:50 +0000</metadata>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-2559.5" y="743.5" width="2273.432" height="857"/>
+    <g id="Canvas_1_New">
+      <title>New</title>
+      <g id="Graphic_950">
+        <title>Box Model Store</title>
+        <rect x="-897.6276" y="754" width="129.04988" height="709" fill="white"/>
+        <path d="M -897.6276 754 L -768.5777 754 L -768.5777 1463 L -897.6276 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_930">
+        <line x1="-993.0802" y1="1479" x2="-993.0802" y2="1405.1282" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_870">
+        <title>Line MT</title>
+        <line x1="-1310" y1="1477" x2="-1310" y2="1436.3656" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_838">
+        <title>Line FE</title>
+        <line x1="-1560.7935" y1="1479" x2="-1560.7935" y2="1404.6785" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_834">
+        <title>Line DP</title>
+        <line x1="-1793" y1="1537" x2="-1794.6065" y2="1246.6165" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_832">
+        <title>Line DI</title>
+        <line x1="-2242.2793" y1="1531.6327" x2="-2241.1607" y2="1463" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_932">
+        <title>Box Model Serving</title>
+        <rect x="-758.84" y="950" width="218.84" height="513" fill="white"/>
+        <path d="M -758.84 950 L -540 950 L -540 1463 L -758.84 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_550">
+        <title>Box Performance Monitoring</title>
+        <rect x="-522.3335" y="754" width="225.76543" height="709" fill="white"/>
+        <path d="M -522.3335 754 L -296.56806 754 L -296.56806 1463 L -522.3335 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_868">
+        <title>Box Model Training</title>
+        <rect x="-1431.3205" y="754" width="306.32047" height="709" fill="white"/>
+        <path d="M -1431.3205 754 L -1125 754 L -1125 1463 L -1431.3205 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_549">
+        <title>Box Model Store</title>
+        <rect x="-1107.3335" y="754" width="197.75326" height="709" fill="white"/>
+        <path d="M -1107.3335 754 L -909.5802 754 L -909.5802 1463 L -1107.3335 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_546">
+        <title>Box Feature Engineering</title>
+        <rect x="-1667.827" y="754" width="218.84" height="709" fill="white"/>
+        <path d="M -1667.827 754 L -1448.987 754 L -1448.987 1463 L -1667.827 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_547">
+        <title>Box Data Preperation</title>
+        <rect x="-1909.1667" y="754" width="228.5065" height="709" fill="white"/>
+        <path d="M -1909.1667 754 L -1680.6602 754 L -1680.6602 1463 L -1909.1667 1463 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_557">
+        <title>Box Data Ingestion</title>
+        <rect x="-2549" y="754" width="627.2346" height="709" fill="white"/>
+        <path d="M -2549 754 L -1921.7654 754 L -1921.7654 1463 L -2549 1463 Z" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Group_874">
+        <title>MD-Stage</title>
+        <g id="Graphic_795">
+          <title>M-Deployment-Outer</title>
+          <ellipse cx="-833.1027" cy="1534.5" rx="56.4025291499546" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-833.1027" cy="1534.5" rx="56.4025291499546" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-873.2246 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.313952" y="12">Model </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="5.183952" y="26">Deployment</tspan>
+          </text>
+        </g>
+        <g id="Graphic_794">
+          <title>M-Deployment-Inner</title>
+          <ellipse cx="-833.1027" cy="1534.5" rx="49.7928577651942" ry="48.9961720409512" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_818">
+        <title>MV-Stage</title>
+        <g id="Graphic_793">
+          <title>M-Validation-Outer</title>
+          <ellipse cx="-993.0802" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-993.0802" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-1033.2022 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.313952" y="12">Model </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="11.321952" y="26">Validation</tspan>
+          </text>
+        </g>
+        <g id="Graphic_792">
+          <title>M-Validation-Inner</title>
+          <ellipse cx="-993.0802" cy="1534.5" rx="49.7928577651941" ry="48.9961720409512" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_817">
+        <title>MT-Stage</title>
+        <g id="Graphic_791">
+          <title>M-Training-Outer</title>
+          <ellipse cx="-1309" cy="1534.5" rx="56.4025291499544" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-1309" cy="1534.5" rx="56.4025291499544" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-1349.122 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.313952" y="12">Model </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="16.883952" y="26">Training</tspan>
+          </text>
+        </g>
+        <g id="Graphic_790">
+          <title>M-Training-Inner</title>
+          <ellipse cx="-1309" cy="1534.5" rx="49.7928577651941" ry="48.9961720409512" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_816">
+        <title>FE-Stage</title>
+        <g id="Graphic_789">
+          <title>F-Engineering-Outer</title>
+          <ellipse cx="-1560.7935" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-1560.7935" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-1600.9155 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="17.897952" y="12">Feature </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="5.435952" y="26">Engineering</tspan>
+          </text>
+        </g>
+        <g id="Graphic_788">
+          <title>F-Engineering-Inner</title>
+          <ellipse cx="-1560.7935" cy="1534.5" rx="49.7928577651941" ry="48.9961720409512" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_812">
+        <title>DP-Stage</title>
+        <g id="Graphic_783">
+          <title>D-Analysis-Outer</title>
+          <ellipse cx="-1794.9135" cy="1534.5" rx="56.4025291499544" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-1794.9135" cy="1534.5" rx="56.4025291499544" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-1835.0354 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="26.753952" y="12">Data </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="9.005952" y="26">processing</tspan>
+          </text>
+        </g>
+        <g id="Graphic_782">
+          <title>D-Analysis-Inner</title>
+          <ellipse cx="-1794.9135" cy="1534.5" rx="49.7928577651941" ry="48.9961720409512" stroke="#f95700" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_811">
+        <title>DI-Stage</title>
+        <g id="Graphic_781">
+          <title>D-Ingestion-Outer</title>
+          <ellipse cx="-2242.7346" cy="1534.5" rx="56.4025291499548" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-2242.7346" cy="1534.5" rx="56.4025291499548" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-2282.8565 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="26.753952" y="12">Data </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="13.721952" y="26">Ingestion</tspan>
+          </text>
+        </g>
+        <g id="Graphic_780">
+          <title>D-Ingestion-Inner</title>
+          <ellipse cx="-2242.7346" cy="1534.5" rx="49.7928577651943" ry="48.9961720409512" stroke="#f95700" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_514">
+        <title>DPS</title>
+        <circle cx="-1794.9135" cy="1191.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-1794.9135" cy="1191.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1839.3135 1170.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="30.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x=".21600153" y="26">Transformation </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="19.488002" y="40">Platform</tspan>
+        </text>
+      </g>
+      <g id="Graphic_515">
+        <title>DPS</title>
+        <circle cx="-1794.9135" cy="1041.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-1794.9135" cy="1041.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1839.3135 1020.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="30.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x=".21600153" y="26">Transformation </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="19.488002" y="40">Platform</tspan>
+        </text>
+      </g>
+      <g id="Graphic_516">
+        <title>DPS</title>
+        <circle cx="-1794.9135" cy="886.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-1794.9135" cy="886.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1839.3135 865.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="30.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x=".21600153" y="26">Transformation </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="19.488002" y="40">Platform</tspan>
+        </text>
+      </g>
+      <g id="Graphic_521">
+        <title>Central OSP</title>
+        <circle cx="-2018.824" cy="1041.1173" r="55.5000886835552" fill="white"/>
+        <circle cx="-2018.824" cy="1041.1173" r="55.5000886835552" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-2058.224 1013.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="18.496002" y="12">Central </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="20.266002" y="26">Object </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="16.594002" y="40">Storage </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="14.488002" y="54">Platform</tspan>
+        </text>
+      </g>
+      <g id="Graphic_525">
+        <title>Ingestion Service</title>
+        <circle cx="-2242.7346" cy="1196.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-2242.7346" cy="1196.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-2282.1346 1182.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="12.556002" y="12">Ingestion </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="18.124002" y="26">Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_526">
+        <title>Ingestion Service</title>
+        <circle cx="-2242.7346" cy="1041.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-2242.7346" cy="1041.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-2282.1346 1027.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="12.556002" y="12">Ingestion </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="18.124002" y="26">Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_527">
+        <title>Ingestion Service</title>
+        <circle cx="-2242.7346" cy="886.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-2242.7346" cy="886.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-2282.1346 872.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="12.556002" y="12">Ingestion </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="18.124002" y="26">Service</tspan>
+        </text>
+      </g>
+      <g id="Graphic_528">
+        <title>Data Source C</title>
+        <circle cx="-2466.645" cy="1196.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-2466.645" cy="1196.1173" r="55.5000886835553" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-2506.045 1175.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="25.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="19.150002" y="26">Source </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="35.212" y="40">C</tspan>
+        </text>
+      </g>
+      <g id="Graphic_529">
+        <title>Data Source B</title>
+        <circle cx="-2466.645" cy="1041.1173" r="55.5000886835552" fill="white"/>
+        <circle cx="-2466.645" cy="1041.1173" r="55.5000886835552" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-2506.045 1020.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="25.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="19.150002" y="26">Source </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="35.146" y="40">B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_530">
+        <title>Data Source A</title>
+        <circle cx="-2466.645" cy="886.1173" r="55.5000886835552" fill="white"/>
+        <circle cx="-2466.645" cy="886.1173" r="55.5000886835552" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(-2506.045 865.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="25.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="19.150002" y="26">Source </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="34.888" y="40">A</tspan>
+        </text>
+      </g>
+      <g id="Line_660">
+        <line x1="-1794.9135" y1="941.6173" x2="-1794.9135" y2="985.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_661">
+        <line x1="-1794.9135" y1="1096.6173" x2="-1794.9135" y2="1135.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_663">
+        <line x1="-2242.7346" y1="1251.6173" x2="-2242.7346" y2="1282.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_666">
+        <line x1="-2356.87" y1="810.5" x2="-2356.87" y2="884.2593" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_670">
+        <line x1="-1753.8937" y1="923.5037" x2="-1609.1302" y2="1055.4448" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_671">
+        <line x1="-1743.2168" y1="1170.887" x2="-1621.7094" y2="1123.338" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_672">
+        <line x1="-1741.0545" y1="1054.5481" x2="-1624.2583" y2="1083.6737" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_673">
+        <line x1="-1755.961" y1="1151.583" x2="-1606.6942" y2="1000.0863" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_674">
+        <line x1="-1742.9216" y1="1021.6598" x2="-1622.0574" y2="976.4275" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_675">
+        <line x1="-1741.5688" y1="901.4706" x2="-1623.652" y2="935.4085" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_678">
+        <line x1="-1560.7935" y1="1155" x2="-1560.7935" y2="1348" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_524">
+        <line x1="-2410.145" y1="886.1173" x2="-2308.1346" y2="886.1173" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_523">
+        <line x1="-2410.145" y1="1041.1173" x2="-2308.1346" y2="1041.1173" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_522">
+        <line x1="-2410.145" y1="1196.1173" x2="-2308.1346" y2="1196.1173" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_519">
+        <line x1="-2197.0936" y1="917.7118" x2="-2073.4273" y2="1003.3187" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_518">
+        <line x1="-2187.2345" y1="1041.1173" x2="-2085.224" y2="1041.1173" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_517">
+        <line x1="-2197.0936" y1="1164.5228" x2="-2073.4273" y2="1078.9159" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_513">
+        <line x1="-1972.3607" y1="1008.9535" x2="-1848.6944" y2="923.3466" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_512">
+        <line x1="-1962.324" y1="1041.1173" x2="-1860.3135" y2="1041.1173" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_511">
+        <line x1="-1971.8747" y1="1072.5691" x2="-1849.2568" y2="1154.7121" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_466">
+        <line x1="-2018.824" y1="1097.6173" x2="-2018.824" y2="1282.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_448">
+        <line x1="-1794.9135" y1="1282.6173" x2="-1794.9135" y2="1246.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_560">
+        <rect x="-2432" y="760.5" width="150.26" height="50" fill="white"/>
+        <text transform="translate(-2428 764.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#006990" x="6.875997" y="12">Dedicated pipeline for </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#006990" x="21.755997" y="26">independent and </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#006990" x="6.329997" y="40">concurrent processing</tspan>
+        </text>
+      </g>
+      <g id="Graphic_559">
+        <rect x="-1900.9135" y="1282.6173" width="212" height="36" fill="white"/>
+        <text transform="translate(-1896.9135 1286.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="1.104" y="12">In-Memory data processing engine</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="59.004" y="26">(Spark Cluster)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_558">
+        <rect x="-2077.838" y="1282.6173" width="118.028" height="36" fill="white"/>
+        <text transform="translate(-2073.838 1286.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="0" y="12"> Unstructured Data</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="600" fill="#0095d3" x="33.708" y="26">(HDFS)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_456">
+        <rect x="-2331.4246" y="1282.6173" width="177.38" height="50" fill="white"/>
+        <text transform="translate(-2327.4246 1286.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="1.644" y="12">Streaming Data Aggregation </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="38.772" y="26">(Apache Flume)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_655">
+        <circle cx="-1560.7935" cy="953.5" r="55.5000886835554" fill="white"/>
+        <circle cx="-1560.7935" cy="953.5" r="55.5000886835554" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1600.1935 939.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="16.864002" y="12">Feature </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="23.794002" y="26">Store</tspan>
+        </text>
+      </g>
+      <g id="Graphic_669">
+        <circle cx="-1560.7935" cy="1099.5" r="55.5000886835554" fill="white"/>
+        <circle cx="-1560.7935" cy="1099.5" r="55.5000886835554" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1600.1935 1085.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="25.852" y="12">Data </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="6.1420015" y="26">Warehouse</tspan>
+        </text>
+      </g>
+      <g id="Graphic_677">
+        <rect x="-1649.4835" y="1282.6173" width="177.38" height="36" fill="white"/>
+        <text transform="translate(-1645.4835 1286.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="13.242002" y="12">Typically structured data</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="600" fill="#0095d3" x="28.578002" y="26">(Tanzu Greenplum)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_683">
+        <rect x="-1666.7935" y="760.5" width="212" height="36" fill="white"/>
+        <text transform="translate(-1662.7935 764.5)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="23.874" y="12">In-Memory key-value store</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="81.87" y="26">(Redis)</tspan>
+        </text>
+      </g>
+      <g id="Line_684">
+        <line x1="-1560.7935" y1="898" x2="-1560.7935" y2="796.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_729">
+        <circle cx="-1309" cy="1041.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-1309" cy="1041.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1348.4 1020.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="21.388002" y="12">Model </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="15.694002" y="26">Training</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="18.958002" y="40">Cluster</tspan>
+        </text>
+      </g>
+      <g id="Line_730">
+        <line x1="-1508.3643" y1="971.7439" x2="-1370.7793" y2="1019.6198" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_731">
+        <line x1="-1506.7206" y1="1086.9622" x2="-1372.7171" y2="1055.8912" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_735">
+        <line x1="-1309" y1="1096.6173" x2="-1309" y2="1412.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_737">
+        <line x1="-1560.7935" y1="1044" x2="-1560.7935" y2="1009" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_738">
+        <rect x="-1666.7935" y="813" width="212" height="50" fill="white"/>
+        <text transform="translate(-1662.7935 817)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="11.568" y="12">Light-weight downstream layer </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="3.276" y="26">serving data from data warehouse</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="69.624" y="40">(Container)</tspan>
+        </text>
+      </g>
+      <g id="Line_824">
+        <line x1="-1794.9135" y1="1318.6173" x2="-1794.9135" y2="1412.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_825">
+        <line x1="-1794.9135" y1="1370" x2="-1794.9135" y2="1373.3095" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_826">
+        <rect x="-1900.9135" y="1412.5" width="212" height="22" fill="white"/>
+        <text transform="translate(-1896.9135 1416.5)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="43.092" y="12">Monster VMs (24TB)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_828">
+        <rect x="-1666.7935" y="1348" width="212" height="50" fill="white"/>
+        <text transform="translate(-1662.7935 1352)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x=".588" y="12">Bring Data close to Training cluster</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="11.562" y="26">(vSAN or Pure with NVME over </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="81.654" y="40">Fabric)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_841">
+        <circle cx="-1309" cy="876.3827" r="26.0000415454494" fill="white"/>
+        <circle cx="-1309" cy="876.3827" r="26.0000415454494" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1324.8 869.3827)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="2.3060002" y="12">Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_843">
+        <circle cx="-1309" cy="1138.2346" r="26.0000415454494" fill="white"/>
+        <circle cx="-1309" cy="1138.2346" r="26.0000415454494" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1324.8 1131.2346)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="2.3060002" y="12">Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_844">
+        <circle cx="-1309" cy="1205.8519" r="26.0000415454494" fill="white"/>
+        <circle cx="-1309" cy="1205.8519" r="26.0000415454494" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1324.8 1198.8519)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="2.3060002" y="12">Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_850">
+        <circle cx="-1155.6608" cy="876.3827" r="14.5000231695776" fill="white"/>
+        <circle cx="-1155.6608" cy="876.3827" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1167.2608 870.3827)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_854">
+        <circle cx="-1155.6608" cy="944" r="14.5000231695776" fill="white"/>
+        <circle cx="-1155.6608" cy="944" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1167.2608 938)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_858">
+        <circle cx="-1155.6608" cy="1140.5" r="14.5000231695777" fill="white"/>
+        <circle cx="-1155.6608" cy="1140.5" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1167.2608 1134.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_862">
+        <circle cx="-1155.6608" cy="1205.8519" r="14.5000231695777" fill="white"/>
+        <circle cx="-1155.6608" cy="1205.8519" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1167.2608 1199.8519)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_866">
+        <rect x="-1415" y="1348" width="212" height="36" fill="white"/>
+        <text transform="translate(-1411 1352)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="4.818" y="12">Network Accessible Pool of GPUs</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="46.722" y="26">(VMware Bitfusion)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_835">
+        <rect x="-1392.5" y="1282.6173" width="167" height="52" fill="white"/>
+        <text transform="translate(-1387.5 1287.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="11.948" y="12">Multiple GPUs per host</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="7.868" y="26">(Horovod for distributed </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="45.092" y="40">scheduling)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_823">
+        <rect x="-1900.9135" y="1348" width="212" height="22" fill="white"/>
+        <text transform="translate(-1896.9135 1352)" fill="#0095d3">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="47.37" y="12">Persistent memory</tspan>
+        </text>
+      </g>
+      <g id="Graphic_867">
+        <rect x="-1415" y="1412.5" width="212" height="22" fill="white"/>
+        <text transform="translate(-1411 1416.5)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="56.748" y="12">Clusters of CPU</tspan>
+        </text>
+      </g>
+      <g id="Line_845">
+        <line x1="-1309" y1="985.6173" x2="-1309" y2="902.3827" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_846">
+        <line x1="-1283" y1="876.3827" x2="-1170.1609" y2="876.3827" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_863">
+        <line x1="-1283.0028" y1="1138.6187" x2="-1170.1593" y2="1140.2858" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_864">
+        <line x1="-1283" y1="1205.8519" x2="-1170.1609" y2="1205.8519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_865">
+        <line x1="-1283" y1="944" x2="-1170.1609" y2="944" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_883">
+        <line x1="-1253.5" y1="1041.1173" x2="-1058.4803" y2="1041.1173" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_911">
+        <rect x="-717.1951" y="1412.5" width="123" height="38" fill="white"/>
+        <text transform="translate(-712.1951 1417.5)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="2.002" y="12">Kubernetes cluster </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="36.328" y="26">(TKGS)</tspan>
+        </text>
+      </g>
+      <g id="Line_916">
+        <line x1="-993.0802" y1="1096.6173" x2="-993.0802" y2="1412.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_882">
+        <circle cx="-993.0802" cy="1041.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-993.0802" cy="1041.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1032.4802 1034.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="4.1380015" y="12">Model Store</tspan>
+        </text>
+      </g>
+      <g id="Graphic_907">
+        <rect x="-1076.5802" y="1412.5" width="167" height="38" fill="white"/>
+        <text transform="translate(-1071.5802 1417.5)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x=".644" y="12">S3 API compatible Storage </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="58.568" y="26">(Minio)</tspan>
+        </text>
+      </g>
+      <g id="Group_921">
+        <title>MS-Stage</title>
+        <g id="Graphic_923">
+          <title>M-Serving-Outer</title>
+          <ellipse cx="-655.6951" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-655.6951" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-695.8171 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.313952" y="12">Model </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="18.521952" y="26">Serving</tspan>
+          </text>
+        </g>
+        <g id="Graphic_922">
+          <title>M-Serving-Inner</title>
+          <ellipse cx="-655.6951" cy="1534.5" rx="49.7928577651942" ry="48.9961720409512" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_924">
+        <circle cx="-655.6951" cy="1041.1173" r="55.5000886835553" fill="white"/>
+        <circle cx="-655.6951" cy="1041.1173" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-695.0951 1020.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="21.388002" y="12">Model </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="17.332002" y="26">Serving </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="14.488002" y="40">Platform</tspan>
+        </text>
+      </g>
+      <g id="Line_925">
+        <line x1="-937.5802" y1="1041.1173" x2="-721.09515" y2="1041.1173" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_926">
+        <line x1="-655.6951" y1="1096.6173" x2="-655.6951" y2="1412.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_927">
+        <rect x="-753.4071" y="1289.6173" width="195.424" height="38" fill="white"/>
+        <text transform="translate(-748.4071 1294.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="0" y="12">Deploy models as microservices</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="17.67" y="26">(Seldon Core / KFserving)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_928">
+        <rect x="-1073.3622" y="1289.6173" width="160.564" height="38" fill="white"/>
+        <text transform="translate(-1068.3622 1294.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="1.644" y="12">Central Model Repository </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="51.108" y="26">(Seldon)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_929">
+        <rect x="-1068.6222" y="1348" width="151.084" height="38" fill="white"/>
+        <text transform="translate(-1063.6222 1353)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="0" y="12">Kubernetes Deployment</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="50.37" y="26">(TKGS)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_912">
+        <rect x="-717.1951" y="1348" width="123" height="38" fill="white"/>
+        <text transform="translate(-712.1951 1353)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="3.292" y="12">Uses service mesh</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="40.198" y="26">(Istio)</tspan>
+        </text>
+      </g>
+      <g id="Line_933">
+        <line x1="-654.6335" y1="1479.0097" x2="-654.3272" y2="1463" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_935">
+        <title>Box Model Serving</title>
+        <rect x="-758.84" y="754" width="218.84" height="180" fill="white"/>
+        <path d="M -758.84 754 L -540 754 L -540 934 L -758.84 934 Z" stroke="#89cbdf" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_936">
+        <circle cx="-655.6951" cy="844" r="55.5000886835553" fill="white"/>
+        <circle cx="-655.6951" cy="844" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-695.0951 837)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="1.9600015" y="12">App/website</tspan>
+        </text>
+      </g>
+      <g id="Line_937">
+        <line x1="-655.6951" y1="985.6173" x2="-655.6951" y2="899.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_938">
+        <circle cx="-413.8465" cy="844" r="55.5000886835553" fill="white"/>
+        <circle cx="-413.8465" cy="844" r="55.5000886835553" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-453.2465 837)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x=".8860015" y="12">Apps Tooling</tspan>
+        </text>
+      </g>
+      <g id="Graphic_939">
+        <circle cx="-413.8465" cy="1041.1173" r="55.5000886835552" fill="white"/>
+        <circle cx="-413.8465" cy="1041.1173" r="55.5000886835552" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-453.2465 1034.1173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="4.3420015" y="12">K8S Tooling</tspan>
+        </text>
+      </g>
+      <g id="Line_940">
+        <line x1="-590.2951" y1="844" x2="-469.34654" y2="844" marker-start="url(#FilledArrow_Marker_3)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_941">
+        <line x1="-469.34654" y1="1041.1173" x2="-590.2951" y2="1041.1173" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_942">
+        <line x1="-409.45077" y1="1523.3766" x2="-409.45077" y2="1463" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Group_876">
+        <title>MM-Stage</title>
+        <g id="Graphic_799">
+          <title>M-Monitoring-Outer</title>
+          <ellipse cx="-409.45077" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" fill="white"/>
+          <ellipse cx="-409.45077" cy="1534.5" rx="56.4025291499545" ry="55.5000886835552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(-449.5727 1520.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="22.313952" y="12">Model </tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="black" x="8.987952" y="26">Monitoring</tspan>
+          </text>
+        </g>
+        <g id="Graphic_797">
+          <title>M-Monitoring-Inner</title>
+          <ellipse cx="-409.45077" cy="1534.5" rx="49.7928577651942" ry="48.9961720409512" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Graphic_943">
+        <rect x="-488.9205" y="1289.6173" width="150.148" height="38" fill="white"/>
+        <text transform="translate(-483.9205 1294.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="5115908e-19" y="12">Downstream Monitoring</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="1.986" y="26">(Grafana / Prometheus)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_944">
+        <rect x="-480.4785" y="917.6173" width="133.264" height="24" fill="white"/>
+        <text transform="translate(-475.4785 922.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="0" y="12">Upstream Monitoring</tspan>
+        </text>
+      </g>
+      <g id="Line_945">
+        <line x1="-413.8465" y1="1096.6173" x2="-413.8465" y2="1289.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_946">
+        <line x1="-413.8465" y1="899.5" x2="-413.8465" y2="917.6173" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_947">
+        <rect x="-1895.9135" y="760.5" width="202" height="50" fill="white"/>
+        <text transform="translate(-1891.9135 764.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#006990" x="12.658" y="12">Extract, Transform, and Load </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#006990" x="4.444" y="26">(ETL) data into Data Warehouse</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#006990" x="35.314" y="40">Compute into feature</tspan>
+        </text>
+      </g>
+      <g id="Graphic_842">
+        <circle cx="-1309" cy="944" r="26.0000415454493" fill="white"/>
+        <circle cx="-1309" cy="944" r="26.0000415454493" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1324.8 937)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="black" x="2.3060002" y="12">Host</tspan>
+        </text>
+      </g>
+      <g id="Line_948">
+        <line x1="-1794.9135" y1="830.6173" x2="-1794.9135" y2="810.5" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_847">
+        <circle cx="-1262.0402" cy="876.3827" r="14.5000231695776" fill="white"/>
+        <circle cx="-1262.0402" cy="876.3827" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1273.6402 870.3827)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_848">
+        <circle cx="-1226.5804" cy="876.3827" r="14.5000231695776" fill="white"/>
+        <circle cx="-1226.5804" cy="876.3827" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1238.1804 870.3827)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_849">
+        <circle cx="-1191.1206" cy="876.3827" r="14.5000231695775" fill="white"/>
+        <circle cx="-1191.1206" cy="876.3827" r="14.5000231695775" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1202.7206 870.3827)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_851">
+        <circle cx="-1262.0402" cy="944" r="14.5000231695776" fill="white"/>
+        <circle cx="-1262.0402" cy="944" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1273.6402 938)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_852">
+        <circle cx="-1226.5804" cy="944" r="14.5000231695776" fill="white"/>
+        <circle cx="-1226.5804" cy="944" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1238.1804 938)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_853">
+        <circle cx="-1191.1206" cy="944" r="14.5000231695776" fill="white"/>
+        <circle cx="-1191.1206" cy="944" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1202.7206 938)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_855">
+        <circle cx="-1262.0402" cy="1140.5" r="14.5000231695777" fill="white"/>
+        <circle cx="-1262.0402" cy="1140.5" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1273.6402 1134.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_856">
+        <circle cx="-1226.5804" cy="1140.5" r="14.5000231695777" fill="white"/>
+        <circle cx="-1226.5804" cy="1140.5" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1238.1804 1134.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_857">
+        <circle cx="-1191.1206" cy="1140.5" r="14.5000231695777" fill="white"/>
+        <circle cx="-1191.1206" cy="1140.5" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1202.7206 1134.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_859">
+        <circle cx="-1262.0402" cy="1205.8519" r="14.5000231695777" fill="white"/>
+        <circle cx="-1262.0402" cy="1205.8519" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1273.6402 1199.8519)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_860">
+        <circle cx="-1226.5804" cy="1205.8519" r="14.5000231695777" fill="white"/>
+        <circle cx="-1226.5804" cy="1205.8519" r="14.5000231695777" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1238.1804 1199.8519)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_861">
+        <circle cx="-1191.1206" cy="1205.8519" r="14.5000231695776" fill="white"/>
+        <circle cx="-1191.1206" cy="1205.8519" r="14.5000231695776" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-1202.7206 1199.8519)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" font-weight="500" fill="black" x=".6100004" y="10">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_949">
+        <rect x="-879.9581" y="1289.6173" width="91.496" height="66" fill="white"/>
+        <text transform="translate(-874.9581 1294.6173)" fill="#f8981d">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="18.68" y="12">Serving </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="1.3400011" y="26">Infrastructure </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#f8981d" x="3.734001" y="40">Optimization</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="#0095d3" x="13.796001" y="54">(OctoML)</tspan>
+        </text>
+      </g>
+      <g id="Line_952">
+        <line x1="-833.1027" y1="1479" x2="-833.1027" y2="1463" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_953">
+        <line x1="-834.2101" y1="1289.6173" x2="-834.2101" y2="1044" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

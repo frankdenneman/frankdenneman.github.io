@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="142 51 568 502" width="568" height="502">
+  <defs>
+    <font-face font-family="Andale Mono" font-size="16" panose-1="2 11 5 9 0 0 0 0 0 4" units-per-em="1000" underline-position="-100.09766" underline-thickness="49.80469" slope="0" x-height="514.64844" cap-height="695.3125" ascent="907.2266" descent="-217.77344" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AndaleMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="-734.375" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-style="italic" font-weight="300">
+      <font-face-src>
+        <font-face-name name="Metropolis-LightItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Metropolis-Medium"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.14 
+    <dc:date>2020-03-20 09:35:47 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="142" y="51" width="568" height="502"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <text transform="translate(171.364 80)" fill="black">
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="15">apiVersion: v1</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="33">kind: Pod</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="51">metadata:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="69">  name: frontend</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="87">spec:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="105">  containers:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="123">  - name: db</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="141">    image: mysql</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="159">    resources:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="177">      requests:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="195">        memory: &quot;64Mi&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="213">        cpu: &quot;250m&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="231">      limits:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="249">        memory: &quot;128Mi&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="267">        cpu: &quot;500m&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="285">  - name: wp</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="303">    image: wordpress</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="321">    resources:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="339">      requests:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="357">        memory: &quot;64Mi&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="375">        cpu: &quot;250m&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="393">      limits:</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="411">        memory: &quot;128Mi&quot;</tspan>
+          <tspan font-family="Andale Mono" font-size="16" font-weight="400" fill="black" x="0" y="430">        cpu: &quot;500m</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" y="430">&quot;</tspan>
+        </text>
+      </g>
+      <g id="Group_12">
+        <g id="Graphic_10">
+          <path d="M 152.5 71 L 699.5 71 L 699.5 542.5 L 152.5 542.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Group_11">
+          <g id="Graphic_8">
+            <path d="M 169.55072 224 L 468.5507 224 L 468.5507 353 L 169.55072 353 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+          </g>
+          <g id="Graphic_7">
+            <path d="M 169.55072 389 L 468.5507 389 L 468.5507 518 L 169.55072 518 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+          </g>
+          <g id="Graphic_6">
+            <text transform="translate(483.8827 277)" fill="black">
+              <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="4.6000016" y="16">Resource Allocations </tspan>
+              <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="21.744002" y="35">for DB container</tspan>
+            </text>
+          </g>
+          <g id="Graphic_5">
+            <text transform="translate(483.8827 434.5)" fill="black">
+              <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="4.6000016" y="16">Resource Allocations </tspan>
+              <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="19.648002" y="35">for WP container</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_4">
+        <rect x="362.832" y="61" width="126.336" height="19" fill="white"/>
+        <text transform="translate(366.832 61)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="8.639999" y="16">Pod Manifest</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

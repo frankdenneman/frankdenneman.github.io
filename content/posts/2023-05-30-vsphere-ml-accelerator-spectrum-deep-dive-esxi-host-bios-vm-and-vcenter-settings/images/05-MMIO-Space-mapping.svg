@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="325 384 926 659" width="926" height="659">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="325" y="384" width="926" height="659"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="611" y="933" width="150" height="93" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(859.4149 1013.1486)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="6536993e-19" y="20">0 MB</tspan>
+        </text>
+      </g>
+      <g id="Line_24">
+        <line x1="761" y1="1026" x2="854" y2="1026" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_25">
+        <line x1="761" y1="933" x2="854" y2="933" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(859.4149 919.6982)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="3623768e-19" y="20">16 MB</tspan>
+        </text>
+      </g>
+      <g id="Line_27">
+        <line x1="518" y1="933" x2="611" y2="933" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_28">
+        <rect x="611" y="691" width="150" height="242" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Line_29">
+        <line x1="761" y1="691" x2="854" y2="691" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(859.4149 679)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="0" y="20">4 GB</tspan>
+        </text>
+      </g>
+      <g id="Line_31">
+        <line x1="518" y1="691" x2="611" y2="691" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_32">
+        <line x1="549.54955" y1="700.9" x2="549.54955" y2="922.5324" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_34">
+        <rect x="421" y="795" width="179.84" height="34" fill="white"></rect>
+        <text transform="translate(426 800)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="7105427e-20" y="20">MMIO Low Range</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <rect x="611" y="449.19015" width="150" height="242" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Line_36">
+        <line x1="761" y1="449" x2="854" y2="449" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_37">
+        <text transform="translate(857.1649 437.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="0" y="20">16 TB</tspan>
+        </text>
+      </g>
+      <g id="Line_38">
+        <line x1="520" y1="449" x2="613" y2="449" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(330.5 679)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="29842795e-20" y="20">32-bit addressable</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(334.08506 437.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="0" y="20">64-bit addressable</tspan>
+        </text>
+      </g>
+      <g id="Line_42">
+        <line x1="549.54955" y1="458.9" x2="549.54955" y2="680.5324" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_43">
+        <rect x="415.84" y="553" width="185" height="34" fill="white"></rect>
+        <text transform="translate(420.84 558)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="0" y="20">MMIO High Range</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <rect x="542.14" y="384.5" width="287.72" height="34" fill="white"></rect>
+        <text transform="translate(547.14 389.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="5968559e-19" y="20">CPU Memory Address Range</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="686" y1="418.5" x2="686" y2="449.19015" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_46">
+        <rect x="639.5" y="733.2603" width="93" height="57" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(644.5 743.3123)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="19.412" y="15">MMIO </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="18.684" y="33.448">Space</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <rect x="639.5" y="588.5" width="93" height="57" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(644.5 598.552)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="17.188" y="15"> MMIO </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="18.684" y="33.448">Space</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <rect x="1049.5" y="450" width="150" height="242" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_50">
+        <rect x="1078" y="588.5" width="93" height="57" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1083 588.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" fill="black" x="18.588" y="16">64-bit</tspan>
+          <tspan font-family="Metropolis" font-size="16" fill="black" x="21.572" y="35">BAR1</tspan>
+          <tspan font-family="Metropolis" font-size="16" fill="black" x="18.044" y="54">64 GB</tspan>
+        </text>
+      </g>
+      <g id="Line_53">
+        <line x1="732.5" y1="588.5" x2="1078" y2="588.5" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_54">
+        <line x1="732.5" y1="645.5" x2="1078" y2="645.5" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_58">
+        <rect x="998.04" y="384.5" width="252.92" height="34" fill="white"></rect>
+        <text transform="translate(1003.04 389.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="0" y="20">NVIDIA A100 40 GB GPU</tspan>
+        </text>
+      </g>
+      <g id="Line_59">
+        <line x1="1124.5" y1="418.5" x2="1124.5" y2="450" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_60">
+        <rect x="1049.5" y="701" width="150" height="232" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_61">
+        <rect x="1078" y="733.2603" width="93" height="57" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1083 733.2603)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" fill="black" x="19.044" y="16">32-bit</tspan>
+          <tspan font-family="Metropolis" font-size="16" fill="black" x="21.572" y="35">BAR1</tspan>
+          <tspan font-family="Metropolis" font-size="16" fill="black" x="12.412" y="54">256 MB</tspan>
+        </text>
+      </g>
+      <g id="Line_62">
+        <line x1="732.5" y1="733.2603" x2="1078" y2="733.2603" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_63">
+        <line x1="732.5" y1="790.2603" x2="1078" y2="790.2603" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_64">
+        <rect x="1014.12" y="952.5" width="220.76" height="34" fill="white"></rect>
+        <text transform="translate(1019.12 957.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="0" y="20">NVIDIA T4 16 GB GPU</tspan>
+        </text>
+      </g>
+      <g id="Line_65">
+        <line x1="1124.5" y1="952.5" x2="1124.5" y2="933" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_66">
+        <rect x="824.42" y="600" width="157.34" height="34" fill="white"></rect>
+        <text transform="translate(829.42 605)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="5684342e-20" y="20">MMIO mapping</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <rect x="824.42" y="745.2603" width="157.34" height="34" fill="white"></rect>
+        <text transform="translate(829.42 750.2603)" fill="black">
+          <tspan font-family="Metropolis" font-size="20" fill="black" x="5684342e-20" y="20">MMIO mapping</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

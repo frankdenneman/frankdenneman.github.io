@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="164.75 -82.5 935.375 526.0703" width="935.375" height="526.0703">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.15.2 
+    <dc:date>2020-05-26 19:13:17 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" stroke="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="164.75" y="-82.5" width="935.375" height="526.0703"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_97">
+        <line x1="770.5" y1="217.79485" x2="770.5" y2="140" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_98">
+        <line x1="989.7752" y1="336.07032" x2="990" y2="140" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_99">
+        <line x1="274.875" y1="349.86518" x2="274.875" y2="151" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_100">
+        <line x1="495.125" y1="217.79485" x2="495.125" y2="140" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_101">
+        <line x1="384.625" y1="93.79485" x2="384.625" y2="16" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_102">
+        <line x1="879.625" y1="93.79485" x2="879.625" y2="16" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_103">
+        <rect x="176.25" y="-72" width="913.375" height="97" fill="#006990"/>
+        <rect x="176.25" y="-72" width="913.375" height="97" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(181.25 -33)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="424.9195" y="16">Cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <rect x="670.875" y="204" width="199.25" height="43.964767" fill="white"/>
+        <rect x="670.875" y="204" width="199.25" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(675.875 216.48238)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="2.433" y="16">Memory Shares: Normal</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <rect x="671.125" y="257.03523" width="198.75" height="43.964767" fill="white"/>
+        <rect x="671.125" y="257.03523" width="198.75" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(676.125 269.51762)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="38.175" y="16">163840 Shares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <rect x="890.125" y="336.07032" width="199.25" height="43.964767" fill="white"/>
+        <rect x="890.125" y="336.07032" width="199.25" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(895.125 348.5527)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="17.505" y="16">CPU Shares: Normal</tspan>
+        </text>
+      </g>
+      <g id="Graphic_108">
+        <rect x="670.875" y="78" width="418.5" height="73" fill="#f95700"/>
+        <rect x="670.875" y="78" width="418.5" height="73" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(675.875 105)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="92.754" y="16">NormalShares Resource Pool</tspan>
+        </text>
+      </g>
+      <g id="Graphic_109">
+        <rect x="395" y="204" width="199.25" height="43.964767" fill="white"/>
+        <rect x="395" y="204" width="199.25" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(400 216.48238)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="12.913" y="16">Memory Shares: High</tspan>
+        </text>
+      </g>
+      <g id="Graphic_110">
+        <rect x="395.25" y="257.03523" width="198.75" height="43.964767" fill="white"/>
+        <rect x="395.25" y="257.03523" width="198.75" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(400.25 269.51762)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="36.471" y="16">327680 Shares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <rect x="176" y="78" width="418.25" height="73" fill="#00a4cc"/>
+        <rect x="176" y="78" width="418.25" height="73" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(181 105)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="103.109" y="16">HighShares Resource Pool</tspan>
+        </text>
+      </g>
+      <g id="Graphic_112">
+        <rect x="175.25" y="336.07032" width="199.25" height="43.964767" fill="white"/>
+        <rect x="175.25" y="336.07032" width="199.25" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(180.25 348.5527)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="27.985" y="16">CPU Shares: High</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <rect x="175.5" y="389.10555" width="198.75" height="43.964767" fill="white"/>
+        <rect x="175.5" y="389.10555" width="198.75" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(180.5 401.58794)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="44.631" y="16">8000 Shares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <rect x="890.375" y="389.10555" width="198.75" height="43.964767" fill="white"/>
+        <rect x="890.375" y="389.10555" width="198.75" height="43.964767" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(895.375 401.58794)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="44.495" y="16">4000 Shares</tspan>
+        </text>
+      </g>
+      <g id="Graphic_118">
+        <rect x="595.5775" y="401" width="74.72" height="19" fill="white"/>
+        <text transform="translate(603.5775 401)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="58264504e-20" y="16">2:1 ratio</tspan>
+        </text>
+      </g>
+      <g id="Line_119">
+        <line x1="375" y1="412" x2="594.25" y2="412" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_120">
+        <line x1="671.125" y1="412.79485" x2="890.375" y2="412.79485" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_122">
+        <path d="M 490.5 303.27385 L 490.5 352 L 771.5 352 L 771.5 304.38596" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_123">
+        <rect x="595.5775" y="341.5" width="74.72" height="19" fill="white"/>
+        <text transform="translate(603.5775 341.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="58264504e-20" y="16">2:1 ratio</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

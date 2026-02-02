@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="-4 2099 913 667" width="913" height="667">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#3cdfff">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -3 7 6" markerWidth="7" markerHeight="6" color="#ff6b03">
+      <g>
+        <path d="M 4.8 0 L 0 -1.8 L 0 1.8 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-4" y="2099" width="913" height="667"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_57">
+        <ellipse cx="118" cy="2439" rx="121.000193346129" ry="135.500216515707" fill="#dffaff"/>
+        <path d="M 32.440174 2343.187 C -14.813472 2396.103 -14.813472 2481.897 32.440174 2534.813 C 79.69358 2587.729 156.30642 2587.729 203.55983 2534.813 C 250.81347 2481.897 250.81347 2396.103 203.55983 2343.187 C 156.30642 2290.271 79.69358 2290.271 32.440174 2343.187" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_58">
+        <text transform="translate(75.041 2264)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="14" fill="#0b0b45" x="73896445e-20" y="14">Quantization</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <circle cx="475.75" cy="2432.5" r="106.750170576027" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(395.35 2424)" fill="#006990">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="14" fill="#006990" x="39.408" y="14">OPERANDS</tspan>
+        </text>
+      </g>
+      <g id="Graphic_64">
+        <circle cx="714.5" cy="2432.5" r="67.5001078583781" fill="#b1f2ff"/>
+        <text transform="translate(665.5 2415.5)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="14" fill="#0b0b45" x="1.596" y="14">Floating Point </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#0b0b45" x="14.539" y="31">Data Type</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <circle cx="864.25" cy="2530.25" r="44.2500707071588" fill="#b1f2ff"/>
+        <text transform="translate(830.85 2523.25)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="12" fill="#0b0b45" x="2.6140015" y="12">BFLOAT16</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <circle cx="864.25" cy="2432.5" r="44.2500707071588" fill="#b1f2ff"/>
+        <text transform="translate(830.85 2425.5)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="12" fill="#0b0b45" x="19.360002" y="12">FP16</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <circle cx="864.25" cy="2335.75" r="44.2500707071588" fill="#b1f2ff"/>
+        <text transform="translate(830.85 2328.75)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="12" fill="#0b0b45" x="18.358002" y="12">FP32</tspan>
+        </text>
+      </g>
+      <g id="Line_71">
+        <line x1="646" y1="2431" x2="594.3955" y2="2431.4547" marker-end="url(#FilledArrow_Marker)" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_72">
+        <line x1="827.0747" y1="2359.768" x2="771.2081" y2="2395.8622" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_73">
+        <line x1="820" y1="2432.5" x2="782" y2="2432.5" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_74">
+        <line x1="827.1881" y1="2506.0577" x2="771.0351" y2="2469.4035" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_75">
+        <circle cx="237" cy="2432.5" r="67.5001078583781" fill="#63e5ff"/>
+        <text transform="translate(188 2415.5)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="14" fill="#0b0b45" x="24.57" y="14">Integer</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#0b0b45" x="14.539" y="31">Data Type</tspan>
+        </text>
+      </g>
+      <g id="Line_76">
+        <line x1="304.50003" y1="2432.5" x2="355.09995" y2="2432.5" marker-end="url(#FilledArrow_Marker)" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_77">
+        <circle cx="82.25" cy="2387.25" r="44.2500707071589" fill="#63e5ff"/>
+        <text transform="translate(48.85 2380.25)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="12" fill="#0b0b45" x="19.360002" y="12">INT8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <circle cx="82.25" cy="2499.25" r="44.250070707159" fill="#63e5ff"/>
+        <text transform="translate(48.85 2492.25)" fill="#0b0b45">
+          <tspan font-family="Metropolis" font-size="12" fill="#0b0b45" x="19.486002" y="12">INT4</tspan>
+        </text>
+      </g>
+      <g id="Line_79">
+        <line x1="122.89215" y1="2481.7194" x2="175.0035" y2="2459.2416" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_80">
+        <line x1="124.7295" y1="2399.6713" x2="172.20076" y2="2413.5522" stroke="#3cdfff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_82">
+        <line x1="118" y1="2303.5" x2="118" y2="2286" stroke="#f8981d" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_83">
+        <circle cx="714.5" cy="2432.5" r="63.250101067295" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_84">
+        <circle cx="82.25" cy="2387.25" r="41.7247502162546" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_85">
+        <circle cx="82.25" cy="2499.25" r="41.7247502162545" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_86">
+        <circle cx="237" cy="2432.5" r="63.250101067295" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_87">
+        <circle cx="864.25" cy="2335.75" r="41.7247502162547" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_88">
+        <circle cx="864.25" cy="2432.5" r="41.7247502162548" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_89">
+        <circle cx="864.25" cy="2530.25" r="41.7247502162547" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_90">
+        <circle cx="475.75" cy="2432.5" r="103.171612945284" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Line_91">
+        <line x1="475.75" y1="2328.3285" x2="475.75" y2="2235.9765" marker-end="url(#FilledArrow_Marker_2)" stroke="#ff6b03" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_98">
+        <circle cx="475.75" cy="2162.8945" r="63.250101067295" fill="#ff6b03"/>
+        <text transform="translate(430.15 2155.8945)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="20.825998" y="12">OPS/sec</tspan>
+        </text>
+      </g>
+      <g id="Graphic_99">
+        <circle cx="475.75" cy="2162.8945" r="60.1821041626689" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_100">
+        <circle cx="475.75" cy="2702.1055" r="63.2501010672951" fill="#ff6b03"/>
+        <text transform="translate(430.15 2688.1055)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="22.073998" y="12">Memory </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="7.5539985" y="26">Consumption</tspan>
+        </text>
+      </g>
+      <g id="Graphic_101">
+        <circle cx="475.75" cy="2702.1055" r="60.182104162669" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_102">
+        <line x1="475.75" y1="2540.25" x2="475.75" y2="2629.0235" marker-end="url(#FilledArrow_Marker_2)" stroke="#ff6b03" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

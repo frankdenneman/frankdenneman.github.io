@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="96.5 -321 845 779" width="845" height="779">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.14.1 
+    <dc:date>2020-03-31 13:22:00 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" fill="none" stroke-dasharray="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="96.5" y="-321" width="845" height="779"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_19">
+        <path d="M 107 75 L 931 75 L 931 440 L 107 440 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 107 -301 L 931 -301 L 931 64 L 107 64 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3">
+        <circle cx="519" cy="78" r="100.00015979019" fill="#cff4d2"/>
+        <text transform="translate(444 59)" fill="#202072">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="34" y="16">Supervisor</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="29.584" y="35">Namespace</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="519" cy="292" r="72.0001150489365" fill="#56c596"/>
+        <text transform="translate(466.4 263.5)" fill="#202072">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="17.391998" y="16">Compute</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="16.703998" y="35">Resource </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="31.568" y="54">Pools</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <circle cx="297" cy="172" r="72.0001150489365" fill="#329d9c"/>
+        <text transform="translate(244.4 153)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="22.167998" y="16">Storage </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="23.919998" y="35">Policies</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <circle cx="741" cy="172" r="72.0001150489365" fill="#7be495"/>
+        <text transform="translate(688.4 153)" fill="#202072">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="11.119998" y="16">Permission</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#202072" x="29.04" y="35">Model</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="519" y1="187.90005" x2="519" y2="219.99996" marker-start="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_8">
+        <line x1="417.77393" y1="120.86149" x2="363.31893" y2="143.91901" marker-start="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_9">
+        <line x1="620.2261" y1="120.86149" x2="674.6811" y2="143.91901" marker-start="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <circle cx="417" cy="-159" r="72.0001150489365" fill="#fe4365"/>
+        <text transform="translate(364.4 -178)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="20.743998" y="16">vSphere </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="33.328" y="35">Pods</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <circle cx="617" cy="-159" r="72.0001150489365" fill="#205072"/>
+        <text transform="translate(564.4 -168.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="3.2639985" y="16">TKG Clusters</tspan>
+        </text>
+      </g>
+      <g id="Line_12">
+        <line x1="445.4708" y1="-92.84732" x2="476.49234" y2="-20.767792" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <line x1="589.48" y1="-92.44656" x2="560.0881" y2="-21.366173" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <rect x="124" y="-311" width="170.24" height="19" fill="white"/>
+        <text transform="translate(128 -311)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="7958079e-19" y="16">Resource Consumers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <rect x="760" y="429" width="156.864" height="19" fill="white"/>
+        <text transform="translate(764 429)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="6963319e-19" y="16">Resource Providers</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

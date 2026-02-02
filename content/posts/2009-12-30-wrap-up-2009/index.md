@@ -1,0 +1,10 @@
+---
+title: "Wrap-up 2009"
+date: 2009-12-30
+categories: 
+  - "miscellaneous"
+tags: 
+  - "wrap-up-2009"
+---
+
+[Daniel Easons](http://vmlover.blogspot.com/2009/12/goodbye-2009hello-2010.html) blog post inspired me to write a wrap-up of 2009 myself. Beside the career move described in the previous post, 2009 was a year of finding two new addictions. Blogging and twitter(@frankdenneman). Beginning of February I started blogging and the first article was received pretty well. The article got mentioned on [Yellow Bricks](http://www.yellow-bricks.com/2009/03/09/increasing-the-queue-depth/) the same day. Now 10 months later, more than 37.000 people visited the site. It cannot hold a candle to the great blogs out there, but it’s nice start. Some of my articles appeared in a few [Top 5 Planetv12n](http://blogs.vmware.com/vmtn/) lists, got mentioned on [Yellow Bricks](http://www.yellow-bricks.com) and were featured in [Scott Lowe’s virtualization short takes](http://blog.scottlowe.org/2009/12/22/virtualization-short-take-32/). Trying to create in-depth articles is an excellent way to learn stuff. Most of the time describing a certain subject somehow challenged my current knowledge of that topic and ended up spending ridiculous amounts of time researching that particular subject. More often than not coming across very interesting material not really related to the subject but similarly interesting, consuming even more time. Some articles are more popular than others; these are the top five visited articles this year; 1. [Increasing the queue depth](http://frankdenneman.nl/?p=101) 2. [Lefthand SAN – Lessons learned](http://frankdenneman.nl/?p=280) 3. [HP Continuous Access and the use of LUN balancing scripts](http://frankdenneman.nl/?p=133) 4. [Impact of memory reservations](http://frankdenneman.nl/?p=344) 5. [NFS and IP-HASH Load-Balancing](http://frankdenneman.nl/?p=324) Lately I’m running into a few limitations of the free wordpress blog themes, that’s why I’ve decided to move to another site, stay tuned for the URL. I’m aiming to release the new site at the beginning of next year.

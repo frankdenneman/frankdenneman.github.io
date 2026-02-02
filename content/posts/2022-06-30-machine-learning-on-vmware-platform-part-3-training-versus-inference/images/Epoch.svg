@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="319 281 407 291" width="407" height="291">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="NegativeControls_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -5 2 10" markerWidth="2" markerHeight="10" color="#0095d3">
+      <g>
+        <line x1="0" y1="-4" x2="0" y2="4" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="NegativeControls_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -5 2 10" markerWidth="2" markerHeight="10" color="#0095d3">
+      <g>
+        <line x1="0" y1="4" x2="0" y2="-4" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="319" y="281" width="407" height="291"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Group_26">
+        <g id="Graphic_28">
+          <text transform="translate(361.577 384.5575)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+        <g id="Graphic_27">
+          <rect x="347.537" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_23">
+        <g id="Graphic_25">
+          <rect x="403.577" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_24">
+          <text transform="translate(418.617 385.8522)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_20">
+        <g id="Graphic_22">
+          <rect x="459.617" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_21">
+          <text transform="translate(474.657 385.8522)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_17">
+        <g id="Graphic_19">
+          <rect x="515.657" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_18">
+          <text transform="translate(530.697 385.8522)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_14">
+        <g id="Graphic_16">
+          <rect x="571.697" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_15">
+          <text transform="translate(586.737 385.8522)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_11">
+        <g id="Graphic_13">
+          <rect x="627.737" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_12">
+          <text transform="translate(642.777 385.8522)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_8">
+        <g id="Graphic_10">
+          <rect x="683.777" y="317.97993" width="41" height="220.74453" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_9">
+          <text transform="translate(698.817 385.8522)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_7">
+        <line x1="348.077" y1="295.97993" x2="722.277" y2="295.97993" marker-end="url(#NegativeControls_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="503.5675" y="281.02007" width="65.51" height="27" fill="white"/>
+        <text transform="translate(508.5675 286.02007)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Data set</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="348.077" y1="558.3484" x2="712.917" y2="558.3484" marker-end="url(#FilledArrow_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="499.0476" y="544.9799" width="67.20461" height="27" fill="white"/>
+        <text transform="translate(511.1949 549.9799)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Epoch</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="328.577" y1="320.47993" x2="328.577" y2="528.82445" marker-end="url(#FilledArrow_Marker)" marker-start="url(#NegativeControls_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <rect x="319.223" y="347.21118" width="18.708" height="163" fill="white"/>
+        <text transform="translate(324.223 352.21118)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.219" y="14">I</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.827" y="31">t</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".252" y="48">e</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.505" y="65">r</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".413" y="82">a</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.827" y="99">t</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.527" y="116">i</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="133">o</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".098" y="150">n</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="292.5 405.75 719.2766 523.25" width="719.2766" height="523.25">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.13 
+    <dc:date>2020-03-12 15:55:04 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="292.5" y="405.75" width="719.2766" height="523.25"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_12">
+        <rect x="303" y="426" width="698.2766" height="332" fill="white"/>
+        <path d="M 303 426 L 1001.2766 426 L 1001.2766 758 L 303 758 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_34">
+        <line x1="423" y1="486" x2="423" y2="552.11364" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 369.5 446.75 L 918.6698 446.75 C 921.4312 446.75 923.6698 448.9886 923.6698 451.75 L 923.6698 518.25 C 923.6698 521.0114 921.4312 523.25 918.6698 523.25 L 369.5 523.25 C 366.73858 523.25 364.5 521.0114 364.5 518.25 L 364.5 451.75 C 364.5 448.9886 366.73858 446.75 369.5 446.75 Z" fill="#f95700"/>
+        <path d="M 369.5 446.75 L 918.6698 446.75 C 921.4312 446.75 923.6698 448.9886 923.6698 451.75 L 923.6698 518.25 C 923.6698 521.0114 921.4312 523.25 918.6698 523.25 L 369.5 523.25 C 366.73858 523.25 364.5 521.0114 364.5 518.25 L 364.5 451.75 C 364.5 448.9886 366.73858 446.75 369.5 446.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(369.5 475.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="200.1049" y="16">(CUDA) Application</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 369.5 535.25 L 535.7189 535.25 C 538.4803 535.25 540.7189 537.4886 540.7189 540.25 L 540.7189 606.75 C 540.7189 609.5114 538.4803 611.75 535.7189 611.75 L 369.5 611.75 C 366.73858 611.75 364.5 609.5114 364.5 606.75 L 364.5 540.25 C 364.5 537.4886 366.73858 535.25 369.5 535.25 Z" fill="#f95700"/>
+        <path d="M 369.5 535.25 L 535.7189 535.25 C 538.4803 535.25 540.7189 537.4886 540.7189 540.25 L 540.7189 606.75 C 540.7189 609.5114 538.4803 611.75 535.7189 611.75 L 369.5 611.75 C 366.73858 611.75 364.5 609.5114 364.5 606.75 L 364.5 540.25 C 364.5 537.4886 366.73858 535.25 369.5 535.25 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(369.5 554.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="29.557444" y="16">NVIDIA CUDA </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="50.477444" y="35">Libraries</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 369.5 625 L 918.6698 625 C 921.4312 625 923.6698 627.2386 923.6698 630 L 923.6698 726 C 923.6698 728.7614 921.4312 731 918.6698 731 L 369.5 731 C 366.73858 731 364.5 728.7614 364.5 726 L 364.5 630 C 364.5 627.2386 366.73858 625 369.5 625 Z" fill="#00a4cc"/>
+        <path d="M 369.5 625 L 918.6698 625 C 921.4312 625 923.6698 627.2386 923.6698 630 L 923.6698 726 C 923.6698 728.7614 921.4312 731 918.6698 731 L 369.5 731 C 366.73858 731 364.5 728.7614 364.5 726 L 364.5 630 C 364.5 627.2386 366.73858 625 369.5 625 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(369.5 668.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="205.1929" y="16">Operating System</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 308 774 L 996.2766 774 C 999.038 774 1001.2766 776.2386 1001.2766 779 L 1001.2766 821 C 1001.2766 823.7614 999.038 826 996.2766 826 L 308 826 C 305.23858 826 303 823.7614 303 821 L 303 779 C 303 776.2386 305.23858 774 308 774 Z" fill="#00a4cc"/>
+        <path d="M 308 774 L 996.2766 774 C 999.038 774 1001.2766 776.2386 1001.2766 779 L 1001.2766 821 C 1001.2766 823.7614 999.038 826 996.2766 826 L 308 826 C 305.23858 826 303 823.7614 303 821 L 303 779 C 303 776.2386 305.23858 774 308 774 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(308 790.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="302.2823" y="16">Hypervisor</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 544.2269 842 L 760.0497 842 C 762.8111 842 765.0497 844.2386 765.0497 847 L 765.0497 913.5 C 765.0497 916.2614 762.8111 918.5 760.0497 918.5 L 544.2269 918.5 C 541.4655 918.5 539.2269 916.2614 539.2269 913.5 L 539.2269 847 C 539.2269 844.2386 541.4655 842 544.2269 842 Z" fill="#00a4cc"/>
+        <path d="M 544.2269 842 L 760.0497 842 C 762.8111 842 765.0497 844.2386 765.0497 847 L 765.0497 913.5 C 765.0497 916.2614 762.8111 918.5 760.0497 918.5 L 544.2269 918.5 C 541.4655 918.5 539.2269 916.2614 539.2269 913.5 L 539.2269 847 C 539.2269 844.2386 541.4655 842 544.2269 842 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(544.2269 870.75)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="75.04738" y="16">Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 780.45385 842 L 996.2766 842 C 999.038 842 1001.2766 844.2386 1001.2766 847 L 1001.2766 913.5 C 1001.2766 916.2614 999.038 918.5 996.2766 918.5 L 780.45385 918.5 C 777.6924 918.5 775.45385 916.2614 775.45385 913.5 L 775.45385 847 C 775.45385 844.2386 777.6924 842 780.45385 842 Z" fill="#f95700"/>
+        <path d="M 780.45385 842 L 996.2766 842 C 999.038 842 1001.2766 844.2386 1001.2766 847 L 1001.2766 913.5 C 1001.2766 916.2614 999.038 918.5 996.2766 918.5 L 780.45385 918.5 C 777.6924 918.5 775.45385 916.2614 775.45385 913.5 L 775.45385 847 C 775.45385 844.2386 777.6924 842 780.45385 842 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(780.45385 870.75)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="90.83138" y="16">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <rect x="635.2663" y="415.75" width="33.744" height="19" fill="white"/>
+        <text transform="translate(639.2663 415.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Line_29">
+        <line x1="830.7255" y1="611.1818" x2="830.7255" y2="842" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_30">
+        <path d="M 308 842 L 523.82275 842 C 526.5842 842 528.82275 844.2386 528.82275 847 L 528.82275 913.5 C 528.82275 916.2614 526.5842 918.5 523.82275 918.5 L 308 918.5 C 305.23858 918.5 303 916.2614 303 913.5 L 303 847 C 303 844.2386 305.23858 842 308 842 Z" fill="#00a4cc"/>
+        <path d="M 308 842 L 523.82275 842 C 526.5842 842 528.82275 844.2386 528.82275 847 L 528.82275 913.5 C 528.82275 916.2614 526.5842 918.5 523.82275 918.5 L 308 918.5 C 305.23858 918.5 303 916.2614 303 913.5 L 303 847 C 303 844.2386 305.23858 842 308 842 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(308 870.75)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="46.983377" y="16">Other hardware</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 752.4509 639.75 L 910 639.75 C 912.7614 639.75 915 641.9886 915 644.75 L 915 711.25 C 915 714.0114 912.7614 716.25 910 716.25 L 752.4509 716.25 C 749.6895 716.25 747.4509 714.0114 747.4509 711.25 L 747.4509 644.75 C 747.4509 641.9886 749.6895 639.75 752.4509 639.75 Z" fill="#f95700"/>
+        <path d="M 752.4509 639.75 L 910 639.75 C 912.7614 639.75 915 641.9886 915 644.75 L 915 711.25 C 915 714.0114 912.7614 716.25 910 716.25 L 752.4509 716.25 C 749.6895 716.25 747.4509 714.0114 747.4509 711.25 L 747.4509 644.75 C 747.4509 641.9886 749.6895 639.75 752.4509 639.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(752.4509 659)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="12.182536" y="16">GPU Kernelspace </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="55.718536" y="35">Driver</tspan>
+        </text>
+      </g>
+      <g id="Line_33">
+        <line x1="540.7189" y1="573.625" x2="750" y2="573.625" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 743.7811 534.3182 L 910 534.3182 C 912.7614 534.3182 915 536.55676 915 539.3182 L 915 605.8182 C 915 608.5796 912.7614 610.8182 910 610.8182 L 743.7811 610.8182 C 741.0197 610.8182 738.7811 608.5796 738.7811 605.8182 L 738.7811 539.3182 C 738.7811 536.55676 741.0197 534.3182 743.7811 534.3182 Z" fill="#f95700"/>
+        <path d="M 743.7811 534.3182 L 910 534.3182 C 912.7614 534.3182 915 536.55676 915 539.3182 L 915 605.8182 C 915 608.5796 912.7614 610.8182 910 610.8182 L 743.7811 610.8182 C 741.0197 610.8182 738.7811 608.5796 738.7811 605.8182 L 738.7811 539.3182 C 738.7811 536.55676 741.0197 534.3182 743.7811 534.3182 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(743.7811 553.5682)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="17.133444" y="16">CUDA Userspace </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="60.053444" y="35">Driver</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

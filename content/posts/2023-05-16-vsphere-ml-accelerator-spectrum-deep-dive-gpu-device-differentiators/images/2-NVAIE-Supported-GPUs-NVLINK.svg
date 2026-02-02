@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="244 416 2188 832" width="2188" height="832">
+  <defs></defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="244" y="416" width="2188" height="832"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_116">
+        <line x1="248.8318" y1="1046.886" x2="2428.9176" y2="1046.886" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_2">
+        <line x1="251.47625" y1="945" x2="2431.4573" y2="945" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(249.3438 985.9348)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Single Slot PCIe</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(253.8318 832.2324)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Dual Slot PCIe</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="251.47625" y1="743" x2="2431.4573" y2="743" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_10">
+        <line x1="492.38704" y1="462.75" x2="492.38704" y2="1141.62" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_11">
+        <line x1="766.0595" y1="462.75" x2="766.0595" y2="1141.62" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_12">
+        <line x1="1040.036" y1="452.13004" x2="1040.036" y2="1131" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_13">
+        <line x1="1317.698" y1="453.565" x2="1317.698" y2="1132.435" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(886.4137 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5684342e-20" y="12">24 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(1164.1117 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">32 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <title>vGPU Instances</title>
+        <circle cx="1006.8277" cy="1015.193" r="6.50001038636229" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(999.7778 975.193)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">L4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(613.5173 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1314504e-19" y="12">16 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <title>vGPU Instances</title>
+        <circle cx="664.4483" cy="1015.193" r="6.50001038636228" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(657.3803 975.193)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">T4</tspan>
+        </text>
+      </g>
+      <g id="Line_25">
+        <line x1="1592.3705" y1="450.69" x2="1592.3705" y2="1129.56" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_26">
+        <line x1="1867.043" y1="450.69" x2="1867.043" y2="1129.56" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(1437.9922 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">40 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(1712.5847 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">48 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <title>vGPU Instances</title>
+        <circle cx="1842.0986" cy="914.307" r="6.50001038636234" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(1830.9026 875.5408)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">L40</tspan>
+        </text>
+      </g>
+      <g id="Group_199">
+        <g id="Graphic_29">
+          <title>vGPU Instances</title>
+          <circle cx="1456.0342" cy="810.815" r="6.50001038636225" fill="#fb3983"></circle>
+        </g>
+        <g id="Graphic_46">
+          <text transform="translate(1441.1543 770.815)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A100</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_202">
+        <g id="Graphic_31">
+          <title>vGPU Instances</title>
+          <circle cx="2333.6018" cy="810.815" r="6.50001038636225" fill="#fb3983"></circle>
+        </g>
+        <g id="Graphic_48">
+          <text transform="translate(2318.4937 770.815)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="17408297e-20" y="12">H100</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(390.5692 832.2324)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Time-Sliced</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <text transform="translate(281.6238 630.99176)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4654055e-19" y="12">SXM</tspan>
+        </text>
+      </g>
+      <g id="Line_56">
+        <line x1="251.47625" y1="539" x2="2431.4573" y2="539" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Group_217">
+        <g id="Graphic_7">
+          <title>vGPU Instances</title>
+          <circle cx="901.7137" cy="810.4813" r="6.50001038636228" fill="#a8de9e"></circle>
+        </g>
+        <g id="Graphic_45">
+          <text transform="translate(879.9818 770.4813)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A30 (X)</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_60">
+        <title>vGPU Instances</title>
+        <circle cx="1696.0335" cy="914.307" r="6.50001038636234" fill="#0095d3"></circle>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(1683.9135 875.5408)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="7993606e-19" y="12">A40</tspan>
+        </text>
+      </g>
+      <g id="Group_186">
+        <g id="Graphic_62">
+          <title>vGPU Instances</title>
+          <circle cx="2004.3792" cy="913.5" r="6.50001038636222" fill="#bee8fb"></circle>
+        </g>
+        <g id="Graphic_63">
+          <text transform="translate(1991.3173 873.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A16*</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_64">
+        <line x1="2140.7155" y1="453.565" x2="2140.7155" y2="1132.435" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_65">
+        <text transform="translate(1986.7872 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="55422333e-20" y="12">64 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <title>vGPU Instances</title>
+        <circle cx="901.7137" cy="1015.193" r="6.50001038636229" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_69">
+        <text transform="translate(890.9798 975.193)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="38014036e-20" y="12">A10</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <title>vGPU Instances</title>
+        <circle cx="733.5263" cy="1015.193" r="6.50001038636229" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_71">
+        <text transform="translate(725.6903 975.193)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A2</tspan>
+        </text>
+      </g>
+      <g id="Group_218">
+        <g id="Graphic_30">
+          <title>vGPU Instances</title>
+          <circle cx="2221.1517" cy="810.815" r="6.50001038636231" fill="#fb3983"></circle>
+        </g>
+        <g id="Graphic_47">
+          <text transform="translate(2196.6237 770.815)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="24868996e-20" y="12">A100 (X)</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_76">
+        <title>vGPU Instances</title>
+        <circle cx="799.52775" cy="913.5" r="6.50001038636229" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(787.74375 873.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">P40</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <title>vGPU Instances</title>
+        <circle cx="526.2263" cy="913.5" r="6.5000103863623" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(511.6823 873.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">P100</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <title>vGPU Instances</title>
+        <circle cx="526.2263" cy="705.25" r="6.5000103863623" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_81">
+        <text transform="translate(511.6823 665.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">P100</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(390.5692 630.99176)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Time-Sliced</tspan>
+        </text>
+      </g>
+      <g id="Line_89">
+        <line x1="2415.388" y1="452.13004" x2="2415.388" y2="1131" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_91">
+        <text transform="translate(2259.8117 1091)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">80 GB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_85">
+        <title>vGPU Instances</title>
+        <circle cx="595.3373" cy="705.25" r="6.50001038636229" fill="#387c2c"></circle>
+      </g>
+      <g id="Graphic_86">
+        <text transform="translate(580.4573 665.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">V100</tspan>
+        </text>
+      </g>
+      <g id="Graphic_92">
+        <title>vGPU Instances</title>
+        <circle cx="595.3373" cy="913.5" r="6.50001038636229" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_93">
+        <text transform="translate(580.4573 873.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">V100</tspan>
+        </text>
+      </g>
+      <g id="Graphic_87">
+        <title>vGPU Instances</title>
+        <circle cx="1123.6924" cy="705.25" r="6.50001038636234" fill="#387c2c"></circle>
+      </g>
+      <g id="Graphic_88">
+        <text transform="translate(1108.8124 665.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">V100</tspan>
+        </text>
+      </g>
+      <g id="Graphic_94">
+        <title>vGPU Instances</title>
+        <circle cx="1123.6924" cy="914.307" r="6.50001038636237" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_95">
+        <text transform="translate(1108.8124 874.307)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">V100</tspan>
+        </text>
+      </g>
+      <g id="Graphic_100">
+        <title>vGPU Instances</title>
+        <circle cx="1791.0556" cy="914.307" r="6.5000103863624" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_102">
+        <text transform="translate(1723.9482 861.5408)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8.838" y="12">RTX </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="26">A6000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_101">
+        <title>vGPU Instances</title>
+        <circle cx="953.7417" cy="913.5" r="6.50001038636231" fill="#0095d3"></circle>
+      </g>
+      <g id="Graphic_103">
+        <text transform="translate(933.8878 859.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8.112" y="12">RTX</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="26">A5500</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <text transform="translate(881.2717 859.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8.7" y="12">RTX</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="26">A5000</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <title>vGPU Instances</title>
+        <circle cx="901.7137" cy="913.5" r="6.50001038636231" fill="#0095d3"></circle>
+      </g>
+      <g id="Graphic_106">
+        <title>vGPU Instances</title>
+        <circle cx="1236.4081" cy="914.307" r="6.50001038636234" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_107">
+        <text transform="translate(1216.8071 874.307)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">V100S</tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <title>vGPU Instances</title>
+        <circle cx="595.3373" cy="507.75" r="6.50001038636229" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_112">
+        <text transform="translate(587.5313 467.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4938272e-19" y="12">P6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(279.9918 478.49176)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="7283063e-20" y="12">MXM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_114">
+        <text transform="translate(406.8318 478.49176)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Time-Sliced</tspan>
+        </text>
+      </g>
+      <g id="Graphic_117">
+        <text transform="translate(390.9238 985.9348)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Time-Sliced</tspan>
+        </text>
+      </g>
+      <g id="Graphic_118">
+        <title>vGPU Instances</title>
+        <circle cx="1642.034" cy="914.307" r="6.50001038636237" fill="#febe00"></circle>
+      </g>
+      <g id="Graphic_119">
+        <text transform="translate(1622.06 861.5408)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8.232" y="12">RTX </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="15987212e-20" y="26">8000p</tspan>
+        </text>
+      </g>
+      <g id="Graphic_127">
+        <text transform="translate(582.5693 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="30198066e-21" y="12">2017</tspan>
+        </text>
+      </g>
+      <g id="Graphic_128">
+        <text transform="translate(512.8523 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2016</tspan>
+        </text>
+      </g>
+      <g id="Graphic_129">
+        <text transform="translate(651.0443 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="45119464e-20" y="12">2018</tspan>
+        </text>
+      </g>
+      <g id="Graphic_130">
+        <text transform="translate(720.4583 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2021</tspan>
+        </text>
+      </g>
+      <g id="Graphic_137">
+        <text transform="translate(394.8593 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">Release Date</tspan>
+        </text>
+      </g>
+      <g id="Graphic_138">
+        <text transform="translate(888.6457 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2021</tspan>
+        </text>
+      </g>
+      <g id="Graphic_139">
+        <text transform="translate(786.15375 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2016</tspan>
+        </text>
+      </g>
+      <g id="Graphic_140">
+        <text transform="translate(939.2797 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="71409545e-20" y="12">2022</tspan>
+        </text>
+      </g>
+      <g id="Graphic_141">
+        <text transform="translate(992.4098 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2023</tspan>
+        </text>
+      </g>
+      <g id="Graphic_158">
+        <text transform="translate(1110.2884 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="45119464e-20" y="12">2018</tspan>
+        </text>
+      </g>
+      <g id="Graphic_156">
+        <text transform="translate(1221.9851 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2019</tspan>
+        </text>
+      </g>
+      <g id="Graphic_163">
+        <text transform="translate(1440.9622 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11723955e-20" y="12">2020</tspan>
+        </text>
+      </g>
+      <g id="Graphic_168">
+        <text transform="translate(1680.9615 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11723955e-20" y="12">2020</tspan>
+        </text>
+      </g>
+      <g id="Graphic_167">
+        <text transform="translate(1628.63 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="45119464e-20" y="12">2018</tspan>
+        </text>
+      </g>
+      <g id="Graphic_166">
+        <text transform="translate(1746.037 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="71409545e-20" y="12">2022</tspan>
+        </text>
+      </g>
+      <g id="Graphic_165">
+        <text transform="translate(1825.177 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2023</tspan>
+        </text>
+      </g>
+      <g id="Graphic_173">
+        <text transform="translate(1991.3112 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2021</tspan>
+        </text>
+      </g>
+      <g id="Graphic_178">
+        <text transform="translate(2208.0837 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2021</tspan>
+        </text>
+      </g>
+      <g id="Graphic_176">
+        <text transform="translate(2319.1838 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2023</tspan>
+        </text>
+      </g>
+      <g id="Graphic_213">
+        <title>vGPU Instances</title>
+        <circle cx="733.5263" cy="914.693" r="6.50001038636228" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_212">
+        <text transform="translate(720.4643 874.693)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A16*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_214">
+        <text transform="translate(837.3997 421.75933)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">2019</tspan>
+        </text>
+      </g>
+      <g id="Graphic_215">
+        <text transform="translate(830.82975 859.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8.202" y="12">RTX</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="26">6000p</tspan>
+        </text>
+      </g>
+      <g id="Graphic_216">
+        <title>vGPU Instances</title>
+        <circle cx="850.7737" cy="914.307" r="6.50001038636234" fill="#febe00"></circle>
+      </g>
+      <g id="Graphic_223">
+        <title>vGPU Instances</title>
+        <circle cx="1745.0469" cy="914.307" r="6.5000103863624" fill="#0095d3"></circle>
+      </g>
+      <g id="Graphic_224">
+        <text transform="translate(1773.7903 847.5408)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="6.042" y="12">RTX </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.65" y="26">6000 </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="6.186" y="40">Ada</tspan>
+        </text>
+      </g>
+      <g id="Group_225">
+        <g id="Graphic_227">
+          <title>vGPU Instances</title>
+          <circle cx="1456.2262" cy="608.5625" r="6.50001038636239" fill="#fb3983"></circle>
+        </g>
+        <g id="Graphic_226">
+          <text transform="translate(1426.4603 568.5625)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A100 HGX</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_228">
+        <g id="Graphic_230">
+          <title>vGPU Instances</title>
+          <circle cx="2221.1517" cy="608.5625" r="6.50001038636232" fill="#fb3983"></circle>
+        </g>
+        <g id="Graphic_229">
+          <text transform="translate(2191.3858 568.5625)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">A100 HGX</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_232">
+        <text transform="translate(305.0911 1200.0539)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4192202e-19" y="12">300 GB/s</tspan>
+        </text>
+      </g>
+      <g id="Graphic_233">
+        <text transform="translate(305.0911 1114.5135)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5684342e-20" y="12">100 GB/s</tspan>
+        </text>
+      </g>
+      <g id="Graphic_234">
+        <title>vGPU Instances</title>
+        <circle cx="281.4918" cy="1178.5404" r="6.50001038636235" fill="#a8de9e"></circle>
+      </g>
+      <g id="Graphic_235">
+        <title>vGPU Instances</title>
+        <circle cx="281.4918" cy="1207.0539" r="6.50001038636232" fill="#387c2c"></circle>
+      </g>
+      <g id="Graphic_236">
+        <title>vGPU Instances</title>
+        <circle cx="281.4918" cy="1150.027" r="6.50001038636232" fill="#0095d3"></circle>
+      </g>
+      <g id="Graphic_237">
+        <title>vGPU Instances</title>
+        <circle cx="281.4918" cy="1093" r="6.50001038636235" fill="#bee8fb"></circle>
+      </g>
+      <g id="Graphic_238">
+        <text transform="translate(305.0911 1086)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8455459e-19" y="12">No NVLINK Support</tspan>
+        </text>
+      </g>
+      <g id="Graphic_239">
+        <text transform="translate(305.0911 1143.027)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="24868996e-20" y="12">112.5 GB/s</tspan>
+        </text>
+      </g>
+      <g id="Graphic_240">
+        <text transform="translate(305.0911 1171.5404)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">200 GB/s</tspan>
+        </text>
+      </g>
+      <g id="Graphic_243">
+        <text transform="translate(305.0911 1228.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="14210855e-20" y="12">600 GB/s</tspan>
+        </text>
+      </g>
+      <g id="Graphic_248">
+        <title>vGPU Instances</title>
+        <circle cx="281.4918" cy="1235.5" r="6.50001038636232" fill="#fb3983"></circle>
+      </g>
+      <g id="Graphic_249">
+        <title>vGPU Instances</title>
+        <circle cx="281.4918" cy="1121.5135" r="6.50001038636232" fill="#febe00"></circle>
+      </g>
+    </g>
+  </g>
+</svg>

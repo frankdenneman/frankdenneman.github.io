@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-130 261 868 629" width="868" height="629">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBox_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#0095d3">
+      <g>
+        <rect x="0" y="-3" width="6" height="6" fill="currentColor" stroke="currentColor" stroke-width="1"></rect>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledBox_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-7 -4 8 8" markerWidth="8" markerHeight="8" color="#0095d3">
+      <g>
+        <rect x="-6" y="-3" width="6" height="6" fill="currentColor" stroke="currentColor" stroke-width="1"></rect>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-130" y="261" width="868" height="629"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_159">
+        <rect x="-128.97093" y="294" width="496" height="563" fill="#dffaff"></rect>
+        <rect x="-128.97093" y="294" width="496" height="563" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Group_320">
+        <title>GPU Slice 6</title>
+        <g id="Graphic_340">
+          <title>GPU Slice Box</title>
+          <rect x="621.1163" y="369.2353" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="621.1163" y="369.2353" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_339">
+          <title>Memory Slice Box</title>
+          <rect x="628.1903" y="686.20385" width="101" height="155" fill="white"></rect>
+          <rect x="628.1903" y="686.20385" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_338">
+          <title>DRAM</title>
+          <rect x="635.1903" y="760.20385" width="87" height="76" fill="white"></rect>
+          <rect x="635.1903" y="760.20385" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.1903 791.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_337">
+          <title>L2 Slice 2</title>
+          <rect x="635.1903" y="737.20385" width="87" height="20" fill="white"></rect>
+          <rect x="635.1903" y="737.20385" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.1903 740.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_336">
+          <text transform="translate(667.8303 701.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_335">
+          <title>L2 Slice 1</title>
+          <rect x="635.1903" y="699.20385" width="87" height="20" fill="white"></rect>
+          <rect x="635.1903" y="699.20385" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.1903 702.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_334">
+          <title>Memory Slice</title>
+          <rect x="635.1903" y="672.20385" width="87" height="24" fill="white"></rect>
+          <text transform="translate(637.1903 677.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_333">
+          <title>Data Xbar</title>
+          <rect x="628.1903" y="644.2353" width="101" height="33" fill="white"></rect>
+          <rect x="628.1903" y="644.2353" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(629.1903 653.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_332">
+          <title>GPC Box</title>
+          <rect x="628.3663" y="482.7353" width="101" height="155" fill="white"></rect>
+          <rect x="628.3663" y="482.7353" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_331">
+          <text transform="translate(668.0063 573.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_330">
+          <title>SM5</title>
+          <rect x="635.3663" y="613.7353" width="87" height="20" fill="white"></rect>
+          <rect x="635.3663" y="613.7353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.3663 616.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_329">
+          <title>SM4</title>
+          <rect x="635.3663" y="569.2353" width="87" height="20" fill="white"></rect>
+          <rect x="635.3663" y="569.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.3663 572.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_328">
+          <title>SM3</title>
+          <rect x="635.3663" y="544.2353" width="87" height="20" fill="white"></rect>
+          <rect x="635.3663" y="544.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.3663 547.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_327">
+          <title>SM2</title>
+          <rect x="635.3663" y="519.2353" width="87" height="20" fill="white"></rect>
+          <rect x="635.3663" y="519.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.3663 522.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_326">
+          <title>SM1</title>
+          <rect x="635.3663" y="494.2353" width="87" height="20" fill="white"></rect>
+          <rect x="635.3663" y="494.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(640.3663 497.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_325">
+          <title>GPC</title>
+          <rect x="661.1043" y="472.58824" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(666.1043 475.58824)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_324">
+          <title>Control Xbar</title>
+          <rect x="628.3663" y="439.20385" width="101" height="33" fill="white"></rect>
+          <rect x="628.3663" y="439.20385" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(629.3663 448.70385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_323">
+          <title>Sys Pipe</title>
+          <rect x="628.3663" y="383.71957" width="101" height="49" fill="white"></rect>
+          <rect x="628.3663" y="383.71957" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(633.3663 401.21957)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_322">
+          <line x1="636.5023" y1="369.2353" x2="721.2303" y2="369.2353" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_321">
+          <text transform="translate(646.74176 362.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6679102e-19" y="12">GPU Slice 6</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_299">
+        <title>GPU Slice 5</title>
+        <g id="Graphic_319">
+          <title>GPU Slice Box</title>
+          <rect x="498.55814" y="369.2353" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="498.55814" y="369.2353" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_318">
+          <title>Memory Slice Box</title>
+          <rect x="505.63214" y="686.20385" width="101" height="155" fill="white"></rect>
+          <rect x="505.63214" y="686.20385" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_317">
+          <title>DRAM</title>
+          <rect x="512.63214" y="760.20385" width="87" height="76" fill="white"></rect>
+          <rect x="512.63214" y="760.20385" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.63214 791.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_316">
+          <title>L2 Slice 2</title>
+          <rect x="512.63214" y="737.20385" width="87" height="20" fill="white"></rect>
+          <rect x="512.63214" y="737.20385" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.63214 740.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_315">
+          <text transform="translate(545.27214 701.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_314">
+          <title>L2 Slice 1</title>
+          <rect x="512.63214" y="699.20385" width="87" height="20" fill="white"></rect>
+          <rect x="512.63214" y="699.20385" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.63214 702.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_313">
+          <title>Memory Slice</title>
+          <rect x="512.63214" y="672.20385" width="87" height="24" fill="white"></rect>
+          <text transform="translate(514.63214 677.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_312">
+          <title>Data Xbar</title>
+          <rect x="505.63214" y="644.2353" width="101" height="33" fill="white"></rect>
+          <rect x="505.63214" y="644.2353" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(506.63214 653.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_311">
+          <title>GPC Box</title>
+          <rect x="505.80814" y="482.7353" width="101" height="155" fill="white"></rect>
+          <rect x="505.80814" y="482.7353" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_310">
+          <text transform="translate(545.44814 573.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_309">
+          <title>SM5</title>
+          <rect x="512.80814" y="613.7353" width="87" height="20" fill="white"></rect>
+          <rect x="512.80814" y="613.7353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.80814 616.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_308">
+          <title>SM4</title>
+          <rect x="512.80814" y="569.2353" width="87" height="20" fill="white"></rect>
+          <rect x="512.80814" y="569.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.80814 572.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_307">
+          <title>SM3</title>
+          <rect x="512.80814" y="544.2353" width="87" height="20" fill="white"></rect>
+          <rect x="512.80814" y="544.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.80814 547.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_306">
+          <title>SM2</title>
+          <rect x="512.80814" y="519.2353" width="87" height="20" fill="white"></rect>
+          <rect x="512.80814" y="519.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.80814 522.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_305">
+          <title>SM1</title>
+          <rect x="512.80814" y="494.2353" width="87" height="20" fill="white"></rect>
+          <rect x="512.80814" y="494.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(517.80814 497.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_304">
+          <title>GPC</title>
+          <rect x="538.54614" y="472.58824" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(543.54614 475.58824)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_303">
+          <title>Control Xbar</title>
+          <rect x="505.80814" y="439.20385" width="101" height="33" fill="white"></rect>
+          <rect x="505.80814" y="439.20385" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(506.80814 448.70385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_302">
+          <title>Sys Pipe</title>
+          <rect x="505.80814" y="383.71957" width="101" height="49" fill="white"></rect>
+          <rect x="505.80814" y="383.71957" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(510.80814 401.21957)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_301">
+          <line x1="513.94414" y1="369.2353" x2="598.67214" y2="369.2353" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_300">
+          <text transform="translate(524.3216 362.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">GPU Slice 5</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_278">
+        <title>GPU Slice 4</title>
+        <g id="Graphic_298">
+          <title>GPU Slice Box</title>
+          <rect x="376" y="369.2353" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="376" y="369.2353" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_297">
+          <title>Memory Slice Box</title>
+          <rect x="383.074" y="686.20385" width="101" height="155" fill="white"></rect>
+          <rect x="383.074" y="686.20385" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_296">
+          <title>DRAM</title>
+          <rect x="390.074" y="760.20385" width="87" height="76" fill="white"></rect>
+          <rect x="390.074" y="760.20385" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.074 791.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_295">
+          <title>L2 Slice 2</title>
+          <rect x="390.074" y="737.20385" width="87" height="20" fill="white"></rect>
+          <rect x="390.074" y="737.20385" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.074 740.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_294">
+          <text transform="translate(422.714 701.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_293">
+          <title>L2 Slice 1</title>
+          <rect x="390.074" y="699.20385" width="87" height="20" fill="white"></rect>
+          <rect x="390.074" y="699.20385" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.074 702.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_292">
+          <title>Memory Slice</title>
+          <rect x="390.074" y="672.20385" width="87" height="24" fill="white"></rect>
+          <text transform="translate(392.074 677.20385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_291">
+          <title>Data Xbar</title>
+          <rect x="383.074" y="644.2353" width="101" height="33" fill="white"></rect>
+          <rect x="383.074" y="644.2353" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(384.074 653.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_290">
+          <title>GPC Box</title>
+          <rect x="383.25" y="482.7353" width="101" height="155" fill="white"></rect>
+          <rect x="383.25" y="482.7353" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_289">
+          <text transform="translate(422.89 573.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_288">
+          <title>SM5</title>
+          <rect x="390.25" y="613.7353" width="87" height="20" fill="white"></rect>
+          <rect x="390.25" y="613.7353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.25 616.7353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_287">
+          <title>SM4</title>
+          <rect x="390.25" y="569.2353" width="87" height="20" fill="white"></rect>
+          <rect x="390.25" y="569.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.25 572.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_286">
+          <title>SM3</title>
+          <rect x="390.25" y="544.2353" width="87" height="20" fill="white"></rect>
+          <rect x="390.25" y="544.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.25 547.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_285">
+          <title>SM2</title>
+          <rect x="390.25" y="519.2353" width="87" height="20" fill="white"></rect>
+          <rect x="390.25" y="519.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.25 522.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_284">
+          <title>SM1</title>
+          <rect x="390.25" y="494.2353" width="87" height="20" fill="white"></rect>
+          <rect x="390.25" y="494.2353" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(395.25 497.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_283">
+          <title>GPC</title>
+          <rect x="415.988" y="472.58824" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(420.988 475.58824)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_282">
+          <title>Control Xbar</title>
+          <rect x="383.25" y="439.20385" width="101" height="33" fill="white"></rect>
+          <rect x="383.25" y="439.20385" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(384.25 448.70385)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_281">
+          <title>Sys Pipe</title>
+          <rect x="383.25" y="383.71957" width="101" height="49" fill="white"></rect>
+          <rect x="383.25" y="383.71957" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(388.25 401.21957)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_280">
+          <line x1="391.386" y1="369.2353" x2="476.114" y2="369.2353" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_279">
+          <text transform="translate(401.7935 362.2353)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">GPU Slice 4</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_257">
+        <title>GPU Slice 3</title>
+        <g id="Graphic_277">
+          <title>GPU Slice Box</title>
+          <rect x="245.11628" y="371" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="245.11628" y="371" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_276">
+          <title>Memory Slice Box</title>
+          <rect x="252.19028" y="687.96855" width="101" height="155" fill="white"></rect>
+          <rect x="252.19028" y="687.96855" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_275">
+          <title>DRAM</title>
+          <rect x="259.19028" y="761.96855" width="87" height="76" fill="white"></rect>
+          <rect x="259.19028" y="761.96855" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.19028 792.9686)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_274">
+          <title>L2 Slice 2</title>
+          <rect x="259.19028" y="738.96855" width="87" height="20" fill="white"></rect>
+          <rect x="259.19028" y="738.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.19028 741.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_273">
+          <text transform="translate(291.83028 702.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_272">
+          <title>L2 Slice 1</title>
+          <rect x="259.19028" y="700.96855" width="87" height="20" fill="white"></rect>
+          <rect x="259.19028" y="700.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.19028 703.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_271">
+          <title>Memory Slice</title>
+          <rect x="259.19028" y="673.96855" width="87" height="24" fill="white"></rect>
+          <text transform="translate(261.19028 678.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_270">
+          <title>Data Xbar</title>
+          <rect x="252.19028" y="646" width="101" height="33" fill="white"></rect>
+          <rect x="252.19028" y="646" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(253.19028 655.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_269">
+          <title>GPC Box</title>
+          <rect x="252.36628" y="484.5" width="101" height="155" fill="white"></rect>
+          <rect x="252.36628" y="484.5" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_268">
+          <text transform="translate(292.00628 575.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_267">
+          <title>SM5</title>
+          <rect x="259.36628" y="615.5" width="87" height="20" fill="white"></rect>
+          <rect x="259.36628" y="615.5" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.36628 618.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_266">
+          <title>SM4</title>
+          <rect x="259.36628" y="571" width="87" height="20" fill="white"></rect>
+          <rect x="259.36628" y="571" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.36628 574)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_265">
+          <title>SM3</title>
+          <rect x="259.36628" y="546" width="87" height="20" fill="white"></rect>
+          <rect x="259.36628" y="546" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.36628 549)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_264">
+          <title>SM2</title>
+          <rect x="259.36628" y="521" width="87" height="20" fill="white"></rect>
+          <rect x="259.36628" y="521" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.36628 524)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_263">
+          <title>SM1</title>
+          <rect x="259.36628" y="496" width="87" height="20" fill="white"></rect>
+          <rect x="259.36628" y="496" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(264.36628 499)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_262">
+          <title>GPC</title>
+          <rect x="285.10428" y="474.35294" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(290.10428 477.35294)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_261">
+          <title>Control Xbar</title>
+          <rect x="252.36628" y="440.96855" width="101" height="33" fill="white"></rect>
+          <rect x="252.36628" y="440.96855" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(253.36628 450.46855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_260">
+          <title>Sys Pipe</title>
+          <rect x="252.36628" y="385.48428" width="101" height="49" fill="white"></rect>
+          <rect x="252.36628" y="385.48428" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(257.36628 402.9843)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_259">
+          <line x1="260.50228" y1="371" x2="345.23028" y2="371" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_258">
+          <text transform="translate(270.94576 364)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">GPU Slice 3</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_236">
+        <title>GPU Slice 2</title>
+        <g id="Graphic_256">
+          <title>GPU Slice Box</title>
+          <rect x="122.55814" y="371" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="122.55814" y="371" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_255">
+          <title>Memory Slice Box</title>
+          <rect x="129.63214" y="687.96855" width="101" height="155" fill="white"></rect>
+          <rect x="129.63214" y="687.96855" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_254">
+          <title>DRAM</title>
+          <rect x="136.63214" y="761.96855" width="87" height="76" fill="white"></rect>
+          <rect x="136.63214" y="761.96855" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.63214 792.9686)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_253">
+          <title>L2 Slice 2</title>
+          <rect x="136.63214" y="738.96855" width="87" height="20" fill="white"></rect>
+          <rect x="136.63214" y="738.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.63214 741.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_252">
+          <text transform="translate(169.27214 702.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_251">
+          <title>L2 Slice 1</title>
+          <rect x="136.63214" y="700.96855" width="87" height="20" fill="white"></rect>
+          <rect x="136.63214" y="700.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.63214 703.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_250">
+          <title>Memory Slice</title>
+          <rect x="136.63214" y="673.96855" width="87" height="24" fill="white"></rect>
+          <text transform="translate(138.63214 678.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_249">
+          <title>Data Xbar</title>
+          <rect x="129.63214" y="646" width="101" height="33" fill="white"></rect>
+          <rect x="129.63214" y="646" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(130.63214 655.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_248">
+          <title>GPC Box</title>
+          <rect x="129.80814" y="484.5" width="101" height="155" fill="white"></rect>
+          <rect x="129.80814" y="484.5" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_247">
+          <text transform="translate(169.44814 575.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_246">
+          <title>SM5</title>
+          <rect x="136.80814" y="615.5" width="87" height="20" fill="white"></rect>
+          <rect x="136.80814" y="615.5" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.80814 618.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_245">
+          <title>SM4</title>
+          <rect x="136.80814" y="571" width="87" height="20" fill="white"></rect>
+          <rect x="136.80814" y="571" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.80814 574)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_244">
+          <title>SM3</title>
+          <rect x="136.80814" y="546" width="87" height="20" fill="white"></rect>
+          <rect x="136.80814" y="546" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.80814 549)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_243">
+          <title>SM2</title>
+          <rect x="136.80814" y="521" width="87" height="20" fill="white"></rect>
+          <rect x="136.80814" y="521" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.80814 524)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_242">
+          <title>SM1</title>
+          <rect x="136.80814" y="496" width="87" height="20" fill="white"></rect>
+          <rect x="136.80814" y="496" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(141.80814 499)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_241">
+          <title>GPC</title>
+          <rect x="162.54614" y="474.35294" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(167.54614 477.35294)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_240">
+          <title>Control Xbar</title>
+          <rect x="129.80814" y="440.96855" width="101" height="33" fill="white"></rect>
+          <rect x="129.80814" y="440.96855" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(130.80814 450.46855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_239">
+          <title>Sys Pipe</title>
+          <rect x="129.80814" y="385.48428" width="101" height="49" fill="white"></rect>
+          <rect x="129.80814" y="385.48428" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(134.80814 402.9843)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_238">
+          <line x1="137.94414" y1="371" x2="222.67214" y2="371" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_237">
+          <text transform="translate(148.48962 364)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="17763568e-20" y="12">GPU Slice 2</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_161">
+        <line x1="20.961" y1="293.77444" x2="217.09714" y2="293.77444" stroke="#dffaff" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+      </g>
+      <g id="Graphic_160">
+        <text transform="translate(36.11495 286.77444)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="4121148e-19" y="12">GPU Instance (MIG 4g.40GB)</tspan>
+        </text>
+      </g>
+      <g id="Group_215">
+        <title>GPU Slice 1</title>
+        <g id="Graphic_235">
+          <title>GPU Slice Box</title>
+          <rect x="0" y="371" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="0" y="371" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_234">
+          <title>Memory Slice Box</title>
+          <rect x="7.074" y="687.96855" width="101" height="155" fill="white"></rect>
+          <rect x="7.074" y="687.96855" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_233">
+          <title>DRAM</title>
+          <rect x="14.074" y="761.96855" width="87" height="76" fill="white"></rect>
+          <rect x="14.074" y="761.96855" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.074 792.9686)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_232">
+          <title>L2 Slice 2</title>
+          <rect x="14.074" y="738.96855" width="87" height="20" fill="white"></rect>
+          <rect x="14.074" y="738.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.074 741.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_231">
+          <text transform="translate(46.714 702.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_230">
+          <title>L2 Slice 1</title>
+          <rect x="14.074" y="700.96855" width="87" height="20" fill="white"></rect>
+          <rect x="14.074" y="700.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.074 703.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_229">
+          <title>Memory Slice</title>
+          <rect x="14.074" y="673.96855" width="87" height="24" fill="white"></rect>
+          <text transform="translate(16.074 678.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_228">
+          <title>Data Xbar</title>
+          <rect x="7.074" y="646" width="101" height="33" fill="white"></rect>
+          <rect x="7.074" y="646" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(8.074 655.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_227">
+          <title>GPC Box</title>
+          <rect x="7.25" y="484.5" width="101" height="155" fill="white"></rect>
+          <rect x="7.25" y="484.5" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_226">
+          <text transform="translate(46.89 575.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_225">
+          <title>SM5</title>
+          <rect x="14.25" y="615.5" width="87" height="20" fill="white"></rect>
+          <rect x="14.25" y="615.5" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.25 618.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_224">
+          <title>SM4</title>
+          <rect x="14.25" y="571" width="87" height="20" fill="white"></rect>
+          <rect x="14.25" y="571" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.25 574)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_223">
+          <title>SM3</title>
+          <rect x="14.25" y="546" width="87" height="20" fill="white"></rect>
+          <rect x="14.25" y="546" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.25 549)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_222">
+          <title>SM2</title>
+          <rect x="14.25" y="521" width="87" height="20" fill="white"></rect>
+          <rect x="14.25" y="521" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.25 524)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_221">
+          <title>SM1</title>
+          <rect x="14.25" y="496" width="87" height="20" fill="white"></rect>
+          <rect x="14.25" y="496" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(19.25 499)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_220">
+          <title>GPC</title>
+          <rect x="39.988" y="474.35294" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(44.988 477.35294)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_219">
+          <title>Control Xbar</title>
+          <rect x="7.25" y="440.96855" width="101" height="33" fill="white"></rect>
+          <rect x="7.25" y="440.96855" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(8.25 450.46855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_218">
+          <title>Sys Pipe</title>
+          <rect x="7.25" y="385.48428" width="101" height="49" fill="white"></rect>
+          <rect x="7.25" y="385.48428" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(12.25 402.9843)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_217">
+          <line x1="15.386" y1="371" x2="100.114" y2="371" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_216">
+          <text transform="translate(27.17948 364)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="58264504e-20" y="12">GPU Slice 1</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_214">
+        <title>GPU Slice 0</title>
+        <g id="Graphic_172">
+          <title>GPU Slice Box</title>
+          <rect x="-122.55814" y="371" width="115.5" height="477.5" fill="white"></rect>
+          <rect x="-122.55814" y="371" width="115.5" height="477.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_174">
+          <title>Memory Slice Box</title>
+          <rect x="-115.48414" y="687.96855" width="101" height="155" fill="white"></rect>
+          <rect x="-115.48414" y="687.96855" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_185">
+          <title>DRAM</title>
+          <rect x="-108.48414" y="761.96855" width="87" height="76" fill="white"></rect>
+          <rect x="-108.48414" y="761.96855" width="87" height="76" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.48414 792.9686)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="19.996" y="12">DRAM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_184">
+          <title>L2 Slice 2</title>
+          <rect x="-108.48414" y="738.96855" width="87" height="20" fill="white"></rect>
+          <rect x="-108.48414" y="738.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.48414 741.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_182">
+          <text transform="translate(-75.84414 702.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_183">
+          <title>L2 Slice 1</title>
+          <rect x="-108.48414" y="700.96855" width="87" height="20" fill="white"></rect>
+          <rect x="-108.48414" y="700.96855" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.48414 703.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="13.798" y="12">L2 Slices</tspan>
+          </text>
+        </g>
+        <g id="Graphic_175">
+          <title>Memory Slice</title>
+          <rect x="-108.48414" y="673.96855" width="87" height="24" fill="white"></rect>
+          <text transform="translate(-106.48414 678.96855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="3.052" y="12">Memory Slice</tspan>
+          </text>
+        </g>
+        <g id="Graphic_190">
+          <title>Data Xbar</title>
+          <rect x="-115.48414" y="646" width="101" height="33" fill="white"></rect>
+          <rect x="-115.48414" y="646" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-114.48414 655.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="8.58" y="12">Data CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_173">
+          <title>GPC Box</title>
+          <rect x="-115.30814" y="484.5" width="101" height="155" fill="white"></rect>
+          <rect x="-115.30814" y="484.5" width="101" height="155" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        </g>
+        <g id="Graphic_188">
+          <text transform="translate(-75.66814 575.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="30" fill="black" x="58264504e-20" y="30">…</tspan>
+          </text>
+        </g>
+        <g id="Graphic_181">
+          <title>SM5</title>
+          <rect x="-108.30814" y="615.5" width="87" height="20" fill="white"></rect>
+          <rect x="-108.30814" y="615.5" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.30814 618.5)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_180">
+          <title>SM4</title>
+          <rect x="-108.30814" y="571" width="87" height="20" fill="white"></rect>
+          <rect x="-108.30814" y="571" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.30814 574)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_179">
+          <title>SM3</title>
+          <rect x="-108.30814" y="546" width="87" height="20" fill="white"></rect>
+          <rect x="-108.30814" y="546" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.30814 549)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_178">
+          <title>SM2</title>
+          <rect x="-108.30814" y="521" width="87" height="20" fill="white"></rect>
+          <rect x="-108.30814" y="521" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.30814 524)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_177">
+          <title>SM1</title>
+          <rect x="-108.30814" y="496" width="87" height="20" fill="white"></rect>
+          <rect x="-108.30814" y="496" width="87" height="20" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-103.30814 499)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="29.524" y="12">SM</tspan>
+          </text>
+        </g>
+        <g id="Graphic_176">
+          <title>GPC</title>
+          <rect x="-82.57014" y="474.35294" width="35.524" height="20" fill="white"></rect>
+          <text transform="translate(-77.57014 477.35294)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="6252776e-19" y="12">GPC</tspan>
+          </text>
+        </g>
+        <g id="Graphic_189">
+          <title>Control Xbar</title>
+          <rect x="-115.30814" y="440.96855" width="101" height="33" fill="white"></rect>
+          <rect x="-115.30814" y="440.96855" width="101" height="33" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-114.30814 450.46855)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x=".846" y="12">Control CrossBar</tspan>
+          </text>
+        </g>
+        <g id="Graphic_186">
+          <title>Sys Pipe</title>
+          <rect x="-115.30814" y="385.48428" width="101" height="49" fill="white"></rect>
+          <rect x="-115.30814" y="385.48428" width="101" height="49" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(-110.30814 402.9843)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="21.182" y="12">Sys Pipe</tspan>
+          </text>
+        </g>
+        <g id="Line_191">
+          <line x1="-107.17214" y1="371" x2="-22.444138" y2="371" stroke="white" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></line>
+        </g>
+        <g id="Graphic_192">
+          <text transform="translate(-97.38266 364)" fill="black">
+            <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">GPU Slice 0</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_343">
+        <path d="M -111 696 L 350 696 L 350 840 L -111 840 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_345">
+        <text transform="translate(44.05907 871)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Instance Memory Partition</tspan>
+        </text>
+      </g>
+      <g id="Graphic_346">
+        <circle cx="119.02907" cy="840.2353" r="6.50001038636232" fill="#fdb813"></circle>
+      </g>
+      <g id="Line_347">
+        <line x1="119.02907" y1="846.7353" x2="119.02907" y2="866" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_348">
+        <line x1="-122.47093" y1="273.30075" x2="729.14535" y2="273.30075" marker-end="url(#FilledBox_Marker)" marker-start="url(#FilledBox_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_349">
+        <rect x="233.97575" y="261.30075" width="138.628" height="24" fill="white"></rect>
+        <text transform="translate(238.97575 266.30075)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="29842795e-20" y="12">A100 80GB MIG Mode</tspan>
+        </text>
+      </g>
+      <g id="Graphic_350">
+        <rect x="-26.173255" y="313.24812" width="75" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(-21.173255 321.74812)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="10.54" y="12">NVDEC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_352">
+        <rect x="189.2314" y="313.24812" width="75" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(194.2314 321.74812)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="10.54" y="12">NVDEC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_353">
+        <rect x="-89.30814" y="313.49624" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(-84.30814 321.99624)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_355">
+        <rect x="62.96163" y="313.24812" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(67.96163 321.74812)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_356">
+        <rect x="126.09651" y="313.24812" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(131.09651 321.74812)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_357">
+        <rect x="278.36628" y="313.24812" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(283.36628 321.74812)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_364">
+        <rect x="377.94574" y="313.24812" width="57.054264" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(382.94574 321.74812)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.567132" y="12">NVDEC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_367">
+        <rect x="687.6163" y="313.74436" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(692.6163 322.24436)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_368">
+        <rect x="442.5" y="313.74436" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(447.5 322.24436)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_369">
+        <rect x="500.5039" y="313.74436" width="57.054264" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(505.5039 322.24436)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.567132" y="12">NVDEC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_370">
+        <rect x="565.05814" y="314.2406" width="49" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(570.05814 322.7406)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="11.4" y="12">CE</tspan>
+        </text>
+      </g>
+      <g id="Graphic_371">
+        <rect x="622.3101" y="313.49624" width="57.054264" height="31" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(627.3101 321.99624)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="1.567132" y="12">NVDEC</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

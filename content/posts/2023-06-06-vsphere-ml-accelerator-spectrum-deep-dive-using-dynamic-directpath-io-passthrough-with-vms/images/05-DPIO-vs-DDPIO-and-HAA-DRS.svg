@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="202 158 860 607" width="860" height="607">
+  <defs></defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="202" y="158" width="860" height="607"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <path d="M 208 230 L 465 230 C 467.7614 230 470 232.23858 470 235 L 470 278 C 470 280.76142 467.7614 283 465 283 L 208 283 C 205.23858 283 203 280.76142 203 278 L 203 235 C 203 232.23858 205.23858 230 208 230 Z" fill="white"></path>
+        <path d="M 208 230 L 465 230 C 467.7614 230 470 232.23858 470 235 L 470 278 C 470 280.76142 467.7614 283 465 283 L 208 283 C 205.23858 283 203 280.76142 203 278 L 203 235 C 203 232.23858 205.23858 230 208 230 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(208 242.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="13.786" y="12">User finds ESXi hosts with required GPU </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="109.912" y="26">device</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 208 310 L 465 310 C 467.7614 310 470 312.23858 470 315 L 470 358 C 470 360.76142 467.7614 363 465 363 L 208 363 C 205.23858 363 203 360.76142 203 358 L 203 315 C 203 312.23858 205.23858 310 208 310 Z" fill="white"></path>
+        <path d="M 208 310 L 465 310 C 467.7614 310 470 312.23858 470 315 L 470 358 C 470 360.76142 467.7614 363 465 363 L 208 363 C 205.23858 363 203 360.76142 203 358 L 203 315 C 203 312.23858 205.23858 310 208 310 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(208 322.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="23.44" y="12">User finds ESXi host with unassigned </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="68.998" y="26">required GPU device</tspan>
+        </text>
+      </g>
+      <g id="Line_4">
+        <line x1="336.5" y1="283" x2="336.5" y2="310" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 208 390 L 465 390 C 467.7614 390 470 392.23858 470 395 L 470 438 C 470 440.7614 467.7614 443 465 443 L 208 443 C 205.23858 443 203 440.7614 203 438 L 203 395 C 203 392.23858 205.23858 390 208 390 Z" fill="white"></path>
+        <path d="M 208 390 L 465 390 C 467.7614 390 470 392.23858 470 395 L 470 438 C 470 440.7614 467.7614 443 465 443 L 208 443 C 205.23858 443 203 440.7614 203 438 L 203 395 C 203 392.23858 205.23858 390 208 390 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(208 402.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="27.676" y="12">User provisions VM with GPU using </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="26.704" y="26">DirectPath IO on selected ESXi host</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="336.5" y1="363" x2="336.5" y2="390" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_7">
+        <path d="M 208 470 L 465 470 C 467.7614 470 470 472.2386 470 475 L 470 518 C 470 520.7614 467.7614 523 465 523 L 208 523 C 205.23858 523 203 520.7614 203 518 L 203 475 C 203 472.2386 205.23858 470 208 470 Z" fill="white"></path>
+        <path d="M 208 470 L 465 470 C 467.7614 470 470 472.2386 470 475 L 470 518 C 470 520.7614 467.7614 523 465 523 L 208 523 C 205.23858 523 203 520.7614 203 518 L 203 475 C 203 472.2386 205.23858 470 208 470 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(208 489.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="47.392" y="12">User initializes Power on VM</tspan>
+        </text>
+      </g>
+      <g id="Line_8">
+        <line x1="336.5" y1="443" x2="336.5" y2="470" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 208 550 L 465 550 C 467.7614 550 470 552.2386 470 555 L 470 598 C 470 600.7614 467.7614 603 465 603 L 208 603 C 205.23858 603 203 600.7614 203 598 L 203 555 C 203 552.2386 205.23858 550 208 550 Z" fill="white"></path>
+        <path d="M 208 550 L 465 550 C 467.7614 550 470 552.2386 470 555 L 470 598 C 470 600.7614 467.7614 603 465 603 L 208 603 C 205.23858 603 203 600.7614 203 598 L 203 555 C 203 552.2386 205.23858 550 208 550 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(208 562.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="24.358" y="12">VM is pinned to specific ESXi Host in </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="56.488" y="26">subsequent power cycles</tspan>
+        </text>
+      </g>
+      <g id="Line_11">
+        <line x1="336.5" y1="523" x2="336.5" y2="550" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 208 630 L 465 630 C 467.7614 630 470 632.2386 470 635 L 470 678 C 470 680.7614 467.7614 683 465 683 L 208 683 C 205.23858 683 203 680.7614 203 678 L 203 635 C 203 632.2386 205.23858 630 208 630 Z" fill="white"></path>
+        <path d="M 208 630 L 465 630 C 467.7614 630 470 632.2386 470 635 L 470 678 C 470 680.7614 467.7614 683 465 683 L 208 683 C 205.23858 683 203 680.7614 203 678 L 203 635 C 203 632.2386 205.23858 630 208 630 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(208 642.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="3.376" y="12">User repeats step 1-4 if ESXi fails or must be </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="40.564" y="26">placed into maintenance mode</tspan>
+        </text>
+      </g>
+      <g id="Line_14">
+        <line x1="336.5" y1="603" x2="336.5" y2="630" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_15">
+        <path d="M 519 230 L 776 230 C 778.7614 230 781 232.23858 781 235 L 781 278 C 781 280.76142 778.7614 283 776 283 L 519 283 C 516.2386 283 514 280.76142 514 278 L 514 235 C 514 232.23858 516.2386 230 519 230 Z" fill="white"></path>
+        <path d="M 519 230 L 776 230 C 778.7614 230 781 232.23858 781 235 L 781 278 C 781 280.76142 778.7614 283 776 283 L 519 283 C 516.2386 283 514 280.76142 514 278 L 514 235 C 514 232.23858 516.2386 230 519 230 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(519 242.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5.776" y="12">Provision VM with GPU using label used by </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="63.418" y="26">Dynamic DirectPath IO</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 519 310 L 776 310 C 778.7614 310 781 312.23858 781 315 L 781 358 C 781 360.76142 778.7614 363 776 363 L 519 363 C 516.2386 363 514 360.76142 514 358 L 514 315 C 514 312.23858 516.2386 310 519 310 Z" fill="white"></path>
+        <path d="M 519 310 L 776 310 C 778.7614 310 781 312.23858 781 315 L 781 358 C 781 360.76142 778.7614 363 776 363 L 519 363 C 516.2386 363 514 360.76142 514 358 L 514 315 C 514 312.23858 516.2386 310 519 310 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(519 329.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="47.392" y="12">User initializes Power on VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <path d="M 823 388.75 L 1017 388.75 C 1019.7614 388.75 1022 390.98858 1022 393.75 L 1022 436.75 C 1022 439.5114 1019.7614 441.75 1017 441.75 L 823 441.75 C 820.2386 441.75 818 439.5114 818 436.75 L 818 393.75 C 818 390.98858 820.2386 388.75 823 388.75 Z" fill="white"></path>
+        <path d="M 823 388.75 L 1017 388.75 C 1019.7614 388.75 1022 390.98858 1022 393.75 L 1022 436.75 C 1022 439.5114 1019.7614 441.75 1017 441.75 L 823 441.75 C 820.2386 441.75 818 439.5114 818 436.75 L 818 393.75 C 818 390.98858 820.2386 388.75 823 388.75 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(823 401.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x=".802" y="12">DRS finds ESXi host with required </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="63.616" y="26">GPU device</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 823 453.25 L 1017 453.25 C 1019.7614 453.25 1022 455.4886 1022 458.25 L 1022 501.25 C 1022 504.0114 1019.7614 506.25 1017 506.25 L 823 506.25 C 820.2386 506.25 818 504.0114 818 501.25 L 818 458.25 C 818 455.4886 820.2386 453.25 823 453.25 Z" fill="white"></path>
+        <path d="M 823 453.25 L 1017 453.25 C 1019.7614 453.25 1022 455.4886 1022 458.25 L 1022 501.25 C 1022 504.0114 1019.7614 506.25 1017 506.25 L 823 506.25 C 820.2386 506.25 818 504.0114 818 501.25 L 818 458.25 C 818 455.4886 820.2386 453.25 823 453.25 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(823 472.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="10.966" y="12">DRS verifies device availability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <path d="M 823 517.75 L 1017 517.75 C 1019.7614 517.75 1022 519.9886 1022 522.75 L 1022 565.75 C 1022 568.5114 1019.7614 570.75 1017 570.75 L 823 570.75 C 820.2386 570.75 818 568.5114 818 565.75 L 818 522.75 C 818 519.9886 820.2386 517.75 823 517.75 Z" fill="white"></path>
+        <path d="M 823 517.75 L 1017 517.75 C 1019.7614 517.75 1022 519.9886 1022 522.75 L 1022 565.75 C 1022 568.5114 1019.7614 570.75 1017 570.75 L 823 570.75 C 820.2386 570.75 818 568.5114 818 565.75 L 818 522.75 C 818 519.9886 820.2386 517.75 823 517.75 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(823 530.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5.812" y="12">DRS selects the available device </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="52.354" y="26">in the ESXi host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <path d="M 823 582.25 L 1017 582.25 C 1019.7614 582.25 1022 584.4886 1022 587.25 L 1022 630.25 C 1022 633.0114 1019.7614 635.25 1017 635.25 L 823 635.25 C 820.2386 635.25 818 633.0114 818 630.25 L 818 587.25 C 818 584.4886 820.2386 582.25 823 582.25 Z" fill="white"></path>
+        <path d="M 823 582.25 L 1017 582.25 C 1019.7614 582.25 1022 584.4886 1022 587.25 L 1022 630.25 C 1022 633.0114 1019.7614 635.25 1017 635.25 L 823 635.25 C 820.2386 635.25 818 633.0114 818 630.25 L 818 587.25 C 818 584.4886 820.2386 582.25 823 582.25 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(823 594.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="8.26" y="12">DRS requests power-on VM on </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="69.928" y="26">ESXi host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <path d="M 823 646.75 L 1017 646.75 C 1019.7614 646.75 1022 648.9886 1022 651.75 L 1022 694.75 C 1022 697.5114 1019.7614 699.75 1017 699.75 L 823 699.75 C 820.2386 699.75 818 697.5114 818 694.75 L 818 651.75 C 818 648.9886 820.2386 646.75 823 646.75 Z" fill="white"></path>
+        <path d="M 823 646.75 L 1017 646.75 C 1019.7614 646.75 1022 648.9886 1022 651.75 L 1022 694.75 C 1022 697.5114 1019.7614 699.75 1017 699.75 L 823 699.75 C 820.2386 699.75 818 697.5114 818 694.75 L 818 651.75 C 818 648.9886 820.2386 646.75 823 646.75 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(823 652.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.064" y="12">DRS maintenance mode - User </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.406" y="26">power cycles VM, DRS repeats </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="57.904" y="40">steps DRS 1-4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <path d="M 823 711.25 L 1017 711.25 C 1019.7614 711.25 1022 713.4886 1022 716.25 L 1022 759.25 C 1022 762.0114 1019.7614 764.25 1017 764.25 L 823 764.25 C 820.2386 764.25 818 762.0114 818 759.25 L 818 716.25 C 818 713.4886 820.2386 711.25 823 711.25 Z" fill="white"></path>
+        <path d="M 823 711.25 L 1017 711.25 C 1019.7614 711.25 1022 713.4886 1022 716.25 L 1022 759.25 C 1022 762.0114 1019.7614 764.25 1017 764.25 L 823 764.25 C 820.2386 764.25 818 762.0114 818 759.25 L 818 716.25 C 818 713.4886 820.2386 711.25 823 711.25 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(823 730.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="62.368" y="12">Restarts VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <path d="M 519 711.25 L 776 711.25 C 778.7614 711.25 781 713.4886 781 716.25 L 781 759.25 C 781 762.0114 778.7614 764.25 776 764.25 L 519 764.25 C 516.2386 764.25 514 762.0114 514 759.25 L 514 716.25 C 514 713.4886 516.2386 711.25 519 711.25 Z" fill="white"></path>
+        <path d="M 519 711.25 L 776 711.25 C 778.7614 711.25 781 713.4886 781 716.25 L 781 759.25 C 781 762.0114 778.7614 764.25 776 764.25 L 519 764.25 C 516.2386 764.25 514 762.0114 514 759.25 L 514 716.25 C 514 713.4886 516.2386 711.25 519 711.25 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(519 730.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="119.38" y="12">HA</tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <path d="M 1022 737.75 L 1060.5455 737.75 L 1060.411 415.11364 L 1022 415.15094" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></path>
+      </g>
+      <g id="Line_28">
+        <line x1="491.5" y1="159" x2="491.5" y2="764.25" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_29">
+        <path d="M 519 390 L 776 390 C 778.7614 390 781 392.23858 781 395 L 781 438 C 781 440.7614 778.7614 443 776 443 L 519 443 C 516.2386 443 514 440.7614 514 438 L 514 395 C 514 392.23858 516.2386 390 519 390 Z" fill="white"></path>
+        <path d="M 519 390 L 776 390 C 778.7614 390 781 392.23858 781 395 L 781 438 C 781 440.7614 778.7614 443 776 443 L 519 443 C 516.2386 443 514 440.7614 514 438 L 514 395 C 514 392.23858 516.2386 390 519 390 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+        <text transform="translate(519 409.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="116.074" y="12">DRS</tspan>
+        </text>
+      </g>
+      <g id="Line_30">
+        <line x1="647.5" y1="283" x2="647.5" y2="310" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_31">
+        <line x1="647.5" y1="363" x2="647.5" y2="390" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_32">
+        <line x1="781" y1="415.8876" x2="818" y2="415.7179" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_33">
+        <line x1="920" y1="441.75" x2="920" y2="453.25" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_34">
+        <line x1="920" y1="506.25" x2="920" y2="517.75" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_35">
+        <line x1="920" y1="570.75" x2="920" y2="582.25" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_36">
+        <line x1="920" y1="635.25" x2="920" y2="646.75" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_37">
+        <line x1="781" y1="737.75" x2="818" y2="737.75" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(297.32 173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2842171e-19" y="12">DirectPath IO</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(533.668 173)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="47.808" y="12">Dynamic DirectPath IO</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="32684966e-20" y="26">With Hardware Accelerator Aware DRS</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

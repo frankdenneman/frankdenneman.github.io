@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="147.5 643.5 1043 819.5" width="1043" height="819.5">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Metropolis-Medium"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 7 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="600">
+      <font-face-src>
+        <font-face-name name="Metropolis-SemiBold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.14 
+    <dc:date>2020-03-19 14:46:12 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="147.5" y="643.5" width="1043" height="819.5"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_32">
+        <rect x="158" y="1013" width="321" height="361" fill="white"/>
+        <rect x="158" y="1013" width="321" height="361" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_31">
+        <rect x="512" y="1013" width="321" height="361" fill="white"/>
+        <rect x="512" y="1013" width="321" height="361" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_30">
+        <rect x="167" y="1168" width="208.76092" height="197" fill="#f95700"/>
+        <rect x="167" y="1168" width="208.76092" height="197" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_29">
+        <rect x="167" y="1022" width="208.76092" height="131" fill="#00a4cc"/>
+        <rect x="167" y="1022" width="208.76092" height="131" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(192.80445 1257)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="0" y="16">Reserved Resources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(184.17246 1081.1)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="5400125e-19" y="16">Unreserved Resources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_26">
+        <rect x="859" y="1013" width="321" height="361" fill="white"/>
+        <rect x="859" y="1013" width="321" height="361" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(272.796 1390)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">ESXi Host A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(627.38 1390)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="7958079e-19" y="16">ESXi Host B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(974.396 1390)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">ESXi Host C</tspan>
+        </text>
+      </g>
+      <g id="Line_22">
+        <line x1="158" y1="1443" x2="1180" y2="1443.6522" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_21">
+        <rect x="607.556" y="1434" width="129.888" height="19" fill="white"/>
+        <text transform="translate(611.556 1434)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">vSphere Cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 673.45 654 L 770.9 751.45 L 673.45 848.9 L 576 751.45 Z" fill="#cdecf0"/>
+        <path d="M 673.45 654 L 770.9 751.45 L 673.45 848.9 L 576 751.45 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(607.3115 730.501)" fill="#080a52">
+          <tspan font-family="Metropolis" font-size="16" font-weight="600" fill="#080a52" x="35.3995" y="16">vSphere</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#080a52" x="16.719502" y="35">Control Plane</tspan>
+        </text>
+      </g>
+      <g id="Line_19">
+        <path d="M 566.74565 750.1739 L 327.05 750.1739 L 327.05 991.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_18">
+        <path d="M 778.25435 750.1739 L 1017.95 750.1739 L 1017.95 991.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_17">
+        <line x1="672.5" y1="858.1282" x2="672.5" y2="991.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_16">
+        <rect x="389.6" y="1050" width="80.39999" height="316" fill="#73cee2"/>
+        <rect x="389.6" y="1050" width="80.39999" height="316" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15">
+        <rect x="521" y="1244" width="208.76092" height="121" fill="#f95700"/>
+        <rect x="521" y="1244" width="208.76092" height="121" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <rect x="521" y="1022" width="208.76092" height="211" fill="#00a4cc"/>
+        <rect x="521" y="1022" width="208.76092" height="211" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13">
+        <rect x="743.6" y="1107" width="80.39999" height="258" fill="#73cee2"/>
+        <rect x="743.6" y="1107" width="80.39999" height="258" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_12">
+        <rect x="868" y="1244" width="208.76092" height="122" fill="#f95700"/>
+        <rect x="868" y="1244" width="208.76092" height="122" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="868" y="1023" width="208.76092" height="210" fill="#00a4cc"/>
+        <rect x="868" y="1023" width="208.76092" height="210" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_10">
+        <rect x="1090.6" y="1235" width="80.39999" height="131" fill="#73cee2"/>
+        <rect x="1090.6" y="1235" width="80.39999" height="131" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <rect x="967.9456" y="906.6016" width="101.12863" height="43.925" fill="#03a678"/>
+        <rect x="967.9456" y="906.6016" width="101.12863" height="43.925" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(972.9456 919.0641)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="600" fill="white" x="6.884316" y="16">Workload</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(405.472 1189)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="0" y="16">Active</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x=".08" y="35">Usage</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(546.80445 1295)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="0" y="16">Reserved Resources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(538.17246 1118)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="5400125e-19" y="16">Unreserved Resources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(893.8045 1295)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="0" y="16">Reserved Resources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(885.1725 1118)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="5400125e-19" y="16">Unreserved Resources</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(759.472 1221.9726)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="0" y="16">Active</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x=".08" y="35">Usage</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(1106.472 1286)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x="0" y="16">Active</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="white" x=".08" y="35">Usage</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <rect x="961.9" y="1001.5" width="115.2" height="19" fill="white"/>
+        <text transform="translate(965.9 1001.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="36948222e-20" y="16">Host Capacity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <rect x="614.9" y="1001.5" width="115.2" height="19" fill="white"/>
+        <text transform="translate(618.9 1001.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="36948222e-20" y="16">Host Capacity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <rect x="260.9" y="1001.6935" width="115.2" height="19" fill="white"/>
+        <text transform="translate(264.9 1001.6935)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="36948222e-20" y="16">Host Capacity</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

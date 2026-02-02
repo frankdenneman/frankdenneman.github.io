@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-1025 -1 633 444" width="633" height="444">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#00a4cc">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-1025" y="-1" width="633" height="444"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_114">
+        <line x1="-687.7251" y1="122.68618" x2="-687.7251" y2="82.688" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_113">
+        <line x1="-853.028" y1="145.56565" x2="-853.028" y2="82.688" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_112">
+        <path d="M -533.3971 70.62039 L -430.58005 70.62039 C -425.0572 70.62039 -420.58005 75.09755 -420.58005 80.62039 L -420.58005 119.46287" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_108">
+        <text transform="translate(-932.536 360.6162)" fill="black">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="12" fill="black" x="5258016e-19" y="12">Number of Parameters</tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <text transform="translate(-914.89 416.1162)" fill="black">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="12" fill="black" x="4405365e-19" y="12">Memory Footprint</tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(-874.402 309.37855)" fill="black">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="12" fill="black" x="0" y="12">Calculation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <text transform="translate(-1021 323.37855)" fill="black">
+          <tspan font-family="Metropolis" font-style="italic" font-size="12" fill="black" x="0" y="12">(Depth x (kernel height x kernel width) </tspan>
+          <tspan font-family="Metropolis" font-style="italic" font-size="12" fill="black" x="82.968" y="26">x Depth previous layer)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_104">
+        <rect x="-987.837" y="113.2253" width="82.102" height="82.102" fill="white"/>
+        <rect x="-987.837" y="113.2253" width="82.102" height="82.102" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-982.837 133.2763)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="12.368999" y="12">224x224 </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="18.050999" y="26">3 RGB</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.878999" y="40">Channels</tspan>
+        </text>
+      </g>
+      <g id="Line_103">
+        <line x1="-904.009" y1="154.31565" x2="-795.2914" y2="154.31565" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_102">
+        <rect x="-862.278" y="145.56565" width="18.5" height="18.5" fill="white"/>
+        <rect x="-862.278" y="145.56565" width="18.5" height="18.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-857.278 147.81565)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2.756" y="12">i</tspan>
+        </text>
+      </g>
+      <g id="Graphic_101">
+        <rect x="-967.784" y="104.1489" width="43.652" height="14" fill="white"/>
+        <text transform="translate(-963.784 104.1489)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Image</tspan>
+        </text>
+      </g>
+      <g id="Line_100">
+        <line x1="-591.7426" y1="154.35589" x2="-524.2338" y2="154.35589" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_99">
+        <line x1="-514.71423" y1="284.4807" x2="-514.71423" y2="405.41574" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_98">
+        <path d="M -526.2603 349.91574 L -503.16814 349.91574 C -499.85443 349.91574 -497.16814 352.60203 -497.16814 355.91574 L -497.16814 380.956 C -497.16814 384.2697 -499.85443 386.956 -503.16814 386.956 L -526.2603 386.956 C -529.57404 386.956 -532.2603 384.2697 -532.2603 380.956 L -532.2603 355.91574 C -532.2603 352.60203 -529.57404 349.91574 -526.2603 349.91574 Z" fill="#8aecff"/>
+        <text transform="translate(-528.2603 361.43586)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="9.358095" y="12">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_97">
+        <path d="M -526.2603 405.41574 L -503.16814 405.41574 C -499.85443 405.41574 -497.16814 408.10203 -497.16814 411.41574 L -497.16814 436.456 C -497.16814 439.7697 -499.85443 442.456 -503.16814 442.456 L -526.2603 442.456 C -529.57404 442.456 -532.2603 439.7697 -532.2603 436.456 L -532.2603 411.41574 C -532.2603 408.10203 -529.57404 405.41574 -526.2603 405.41574 Z" fill="#8aecff"/>
+        <text transform="translate(-528.2603 416.93586)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="9.358095" y="12">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_96">
+        <path d="M -526.2603 304.43816 L -503.16814 304.43816 C -499.85443 304.43816 -497.16814 307.12445 -497.16814 310.43816 L -497.16814 323.9583 C -497.16814 327.272 -499.85443 329.9583 -503.16814 329.9583 L -526.2603 329.9583 C -529.57404 329.9583 -532.2603 327.272 -532.2603 323.9583 L -532.2603 310.43816 C -532.2603 307.12445 -529.57404 304.43816 -526.2603 304.43816 Z" fill="#cdecf0"/>
+        <text transform="translate(-529.2603 311.19822)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="11.091095" y="10">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_95">
+        <path d="M -522.2603 127.67556 L -507.16814 127.67556 C -501.6453 127.67556 -497.16814 132.15271 -497.16814 137.67556 L -497.16814 274.4807 C -497.16814 280.00355 -501.6453 284.4807 -507.16814 284.4807 L -522.2603 284.4807 C -527.7832 284.4807 -532.2603 280.00355 -532.2603 274.4807 L -532.2603 137.67556 C -532.2603 132.15271 -527.7832 127.67556 -522.2603 127.67556 Z" fill="white"/>
+        <path d="M -522.2603 127.67556 L -507.16814 127.67556 C -501.6453 127.67556 -497.16814 132.15271 -497.16814 137.67556 L -497.16814 274.4807 C -497.16814 280.00355 -501.6453 284.4807 -507.16814 284.4807 L -522.2603 284.4807 C -527.7832 284.4807 -532.2603 280.00355 -532.2603 274.4807 L -532.2603 137.67556 C -532.2603 132.15271 -527.7832 127.67556 -522.2603 127.67556 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-528.2603 178.07813)" fill="#003d79">
+          <tspan font-family="Metropolis" font-size="12" fill="#003d79" x="9.436095" y="12">P</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#003d79" x="9.844095" y="26">o</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#003d79" x="9.844095" y="40">o</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#003d79" x="12.052095" y="54">l</tspan>
+        </text>
+      </g>
+      <g id="Line_94">
+        <line x1="-761.8037" y1="367.6162" x2="-799.83" y2="367.6162" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_93">
+        <line x1="-720.7527" y1="423.1162" x2="-799.83" y2="423.1162" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_92">
+        <line x1="-720.7527" y1="316.37855" x2="-799.83" y2="316.37855" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_91">
+        <line x1="-739.3672" y1="404.59607" x2="-739.3672" y2="284.3003" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_90">
+        <line x1="-630.8461" y1="404.1263" x2="-630.8461" y2="284.128" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_89">
+        <line x1="-735.7277" y1="154.0263" x2="-720.7411" y2="154.0263" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_88">
+        <path d="M -671.8569 404.59607 L -589.8353 404.59607 C -586.5216 404.59607 -583.8353 407.28236 -583.8353 410.59607 L -583.8353 435.6363 C -583.8353 438.95 -586.5216 441.6363 -589.8353 441.6363 L -671.8569 441.6363 C -675.1706 441.6363 -677.8569 438.95 -677.8569 435.6363 L -677.8569 410.59607 C -677.8569 407.28236 -675.1706 404.59607 -671.8569 404.59607 Z" fill="#8aecff"/>
+        <text transform="translate(-673.8569 416.1162)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="23.786807" y="12">147 KB</tspan>
+        </text>
+      </g>
+      <g id="Line_87">
+        <line x1="-619.2426" y1="248.56884" x2="-619.2426" y2="189.3559" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_86">
+        <circle cx="-760.2914" cy="154.35589" r="27.5000439423022" fill="white"/>
+        <circle cx="-760.2914" cy="154.35589" r="27.5000439423022" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-777.2914 147.35589)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.326" y="12">CL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_85">
+        <path d="M -776.378 248.56884 L -593.8353 248.56884 C -588.3125 248.56884 -583.8353 253.046 -583.8353 258.56884 L -583.8353 273.66103 C -583.8353 279.18388 -588.3125 283.66103 -593.8353 283.66103 L -776.378 283.66103 C -781.90085 283.66103 -786.378 279.18388 -786.378 273.66103 L -786.378 258.56884 C -786.378 253.046 -781.90085 248.56884 -776.378 248.56884 Z" fill="white"/>
+        <path d="M -776.378 248.56884 L -593.8353 248.56884 C -588.3125 248.56884 -583.8353 253.046 -583.8353 258.56884 L -583.8353 273.66103 C -583.8353 279.18388 -588.3125 283.66103 -593.8353 283.66103 L -776.378 283.66103 C -781.90085 283.66103 -786.378 279.18388 -786.378 273.66103 L -786.378 258.56884 C -786.378 253.046 -781.90085 248.56884 -776.378 248.56884 Z" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-782.378 259.11494)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="47.57934" y="12">64 Filters (Depth)</tspan>
+        </text>
+      </g>
+      <g id="Line_84">
+        <line x1="-760.2914" y1="248.89843" x2="-760.2914" y2="189.3559" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_83">
+        <rect x="-769.5414" y="205.96237" width="18.5" height="18.5" fill="white"/>
+        <rect x="-769.5414" y="205.96237" width="18.5" height="18.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-764.5414 208.21237)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x=".956" y="12">k</tspan>
+        </text>
+      </g>
+      <g id="Graphic_82">
+        <rect x="-847.654" y="208.21237" width="42.46" height="14" fill="white"/>
+        <text transform="translate(-845.654 208.21237)" fill="black">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="12" fill="black" x="0" y="12">Kernel</tspan>
+        </text>
+      </g>
+      <g id="Graphic_81">
+        <circle cx="-619.2426" cy="154.35589" r="27.5000439423021" fill="white"/>
+        <circle cx="-619.2426" cy="154.35589" r="27.5000439423021" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-636.2426 147.35589)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.326" y="12">CL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <path d="M -671.8569 349.09607 L -589.8353 349.09607 C -586.5216 349.09607 -583.8353 351.78236 -583.8353 355.09607 L -583.8353 380.1363 C -583.8353 383.45 -586.5216 386.1363 -589.8353 386.1363 L -671.8569 386.1363 C -675.1706 386.1363 -677.8569 383.45 -677.8569 380.1363 L -677.8569 355.09607 C -677.8569 351.78236 -675.1706 349.09607 -671.8569 349.09607 Z" fill="#8aecff"/>
+        <text transform="translate(-673.8569 360.6162)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="22.772807" y="12">36,928</tspan>
+        </text>
+      </g>
+      <g id="Graphic_79">
+        <path d="M -671.8569 303.6185 L -589.8353 303.6185 C -586.5216 303.6185 -583.8353 306.3048 -583.8353 309.6185 L -583.8353 323.1386 C -583.8353 326.45232 -586.5216 329.1386 -589.8353 329.1386 L -671.8569 329.1386 C -675.1706 329.1386 -677.8569 326.45232 -677.8569 323.1386 L -677.8569 309.6185 C -677.8569 306.3048 -675.1706 303.6185 -671.8569 303.6185 Z" fill="#cdecf0"/>
+        <text transform="translate(-675.8569 310.37855)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="7.955807" y="10">64 x (3 x 3) x 64 </tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <rect x="-628.4926" y="205.96237" width="18.5" height="18.5" fill="white"/>
+        <rect x="-628.4926" y="205.96237" width="18.5" height="18.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-623.4926 208.21237)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x=".956" y="12">k</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <path d="M -776.378 404.59607 L -702.3564 404.59607 C -696.8335 404.59607 -692.3564 409.0732 -692.3564 414.59607 L -692.3564 431.6363 C -692.3564 437.15916 -696.8335 441.6363 -702.3564 441.6363 L -776.378 441.6363 C -781.90085 441.6363 -786.378 437.15916 -786.378 431.6363 L -786.378 414.59607 C -786.378 409.0732 -781.90085 404.59607 -776.378 404.59607 Z" fill="#8aecff"/>
+        <text transform="translate(-782.378 416.1162)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="31.364807" y="12">7KB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <path d="M -780.378 349.09607 L -698.3564 349.09607 C -695.0427 349.09607 -692.3564 351.78236 -692.3564 355.09607 L -692.3564 380.1363 C -692.3564 383.45 -695.0427 386.1363 -698.3564 386.1363 L -780.378 386.1363 C -783.6917 386.1363 -786.378 383.45 -786.378 380.1363 L -786.378 355.09607 C -786.378 351.78236 -783.6917 349.09607 -780.378 349.09607 Z" fill="#8aecff"/>
+        <text transform="translate(-782.378 360.6162)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="28.376807" y="12">1,792</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <path d="M -780.378 303.6185 L -698.3564 303.6185 C -695.0427 303.6185 -692.3564 306.3048 -692.3564 309.6185 L -692.3564 323.1386 C -692.3564 326.45232 -695.0427 329.1386 -698.3564 329.1386 L -780.378 329.1386 C -783.6917 329.1386 -786.378 326.45232 -786.378 323.1386 L -786.378 309.6185 C -786.378 306.3048 -783.6917 303.6185 -780.378 303.6185 Z" fill="#cdecf0"/>
+        <text transform="translate(-784.378 310.37855)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="11.065807" y="10">64 x (3 x 3) x 3 </tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <rect x="-681.2411" y="145.44373" width="18.5" height="18.5" fill="white"/>
+        <rect x="-681.2411" y="145.44373" width="18.5" height="18.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-676.2411 147.69373)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="2.756" y="12">i</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <rect x="-713.2411" y="145.44373" width="18.5" height="18.5" fill="white"/>
+        <rect x="-713.2411" y="145.44373" width="18.5" height="18.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-708.2411 147.69373)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x=".548" y="12">o</tspan>
+        </text>
+      </g>
+      <g id="Line_72">
+        <path d="M -703.9865 145.44373 L -703.9833 139.01585 C -703.9788 130.01681 -696.68236 122.72404 -687.6833 122.72404 L -687.6833 122.72404 C -679.2058 122.72404 -672.2406 129.19913 -671.46356 137.47347" marker-end="url(#FilledArrow_Marker)" stroke="#00a4cc" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_71">
+        <path d="M -743.7251 57.16788 L -631.7251 57.16788 C -628.9637 57.16788 -626.7251 59.40646 -626.7251 62.16788 L -626.7251 77.688 C -626.7251 80.44943 -628.9637 82.688 -631.7251 82.688 L -743.7251 82.688 C -746.4866 82.688 -748.7251 80.44943 -748.7251 77.688 L -748.7251 62.16788 C -748.7251 59.40646 -746.4866 57.16788 -743.7251 57.16788 Z" fill="#0063b1"/>
+        <text transform="translate(-745.7251 63.92794)" fill="white">
+          <tspan font-family="Metropolis" font-size="10" fill="white" x="21.17" y="10">Output (o) = 64</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <circle cx="-420.63293" cy="155.17556" r="27.5000439423021" fill="white"/>
+        <circle cx="-420.63293" cy="155.17556" r="27.5000439423021" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-437.63293 148.17556)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="9.326" y="12">CL</tspan>
+        </text>
+      </g>
+      <g id="Line_62">
+        <line x1="-769.5414" y1="215.21237" x2="-805.194" y2="215.21237" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(-843.654 225.3471)" fill="black">
+          <tspan font-family="Metropolis" font-style="italic" font-size="12" fill="black" x="0" y="12">(3 x 3)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <path d="M -462.64373 57.987555 L -445.64373 57.987555 C -442.8823 57.987555 -440.64373 60.22613 -440.64373 62.987555 L -440.64373 78.50768 C -440.64373 81.2691 -442.8823 83.50768 -445.64373 83.50768 L -462.64373 83.50768 C -465.40516 83.50768 -467.64373 81.2691 -467.64373 78.50768 L -467.64373 62.987555 C -467.64373 60.22613 -465.40516 57.987555 -462.64373 57.987555 Z" fill="#0063b1"/>
+        <text transform="translate(-464.64373 64.747616)" fill="white">
+          <tspan font-family="Metropolis" font-size="10" fill="white" x="4.48" y="10">64</tspan>
+        </text>
+      </g>
+      <g id="Line_59">
+        <line x1="-662.7411" y1="154.69373" x2="-654.2426" y2="154.69373" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_58">
+        <path d="M -779.5583 405.41574 L -697.5367 405.41574 C -694.223 405.41574 -691.5367 408.10203 -691.5367 411.41574 L -691.5367 436.456 C -691.5367 439.7697 -694.223 442.456 -697.5367 442.456 L -779.5583 442.456 C -782.872 442.456 -785.5583 439.7697 -785.5583 436.456 L -785.5583 411.41574 C -785.5583 408.10203 -782.872 405.41574 -779.5583 405.41574 Z" fill="#8aecff"/>
+        <text transform="translate(-781.5583 416.93586)" fill="#041882">
+          <tspan font-family="Metropolis" font-size="12" fill="#041882" x="29.720807" y="12">7 KB</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <path d="M -573.4561 141.93367 L -556.4561 141.93367 C -553.69466 141.93367 -551.4561 144.17225 -551.4561 146.93367 L -551.4561 162.4538 C -551.4561 165.21522 -553.69466 167.4538 -556.4561 167.4538 L -573.4561 167.4538 C -576.2175 167.4538 -578.4561 165.21522 -578.4561 162.4538 L -578.4561 146.93367 C -578.4561 144.17225 -576.2175 141.93367 -573.4561 141.93367 Z" fill="#0063b1"/>
+        <text transform="translate(-575.4561 148.69373)" fill="white">
+          <tspan font-family="Metropolis" font-size="10" fill="white" x="4.48" y="10">64</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <path d="M -537.21423 57.16788 L -492.21423 57.16788 C -489.4528 57.16788 -487.21423 59.40646 -487.21423 62.16788 L -487.21423 77.688 C -487.21423 80.44943 -489.4528 82.688 -492.21423 82.688 L -537.21423 82.688 C -539.97566 82.688 -542.21423 80.44943 -542.21423 77.688 L -542.21423 62.16788 C -542.21423 59.40646 -539.97566 57.16788 -537.21423 57.16788 Z" fill="#cdecf0"/>
+        <text transform="translate(-539.21423 63.92794)" fill="black">
+          <tspan font-family="Metropolis" font-size="10" fill="black" x="6.405" y="10">112 x 112</tspan>
+        </text>
+      </g>
+      <g id="Line_55">
+        <line x1="-514.71423" y1="82.688" x2="-514.71423" y2="127.67556" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(-1021 62.92794)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="3623768e-19" y="12">Input (i) = 3 channels</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <path d="M -861.528 57.16788 L -844.528 57.16788 C -841.7666 57.16788 -839.528 59.40646 -839.528 62.16788 L -839.528 77.688 C -839.528 80.44943 -841.7666 82.688 -844.528 82.688 L -861.528 82.688 C -864.2895 82.688 -866.528 80.44943 -866.528 77.688 L -866.528 62.16788 C -866.528 59.40646 -864.2895 57.16788 -861.528 57.16788 Z" fill="#0063b1"/>
+        <text transform="translate(-863.528 63.92794)" fill="white">
+          <tspan font-family="Metropolis" font-size="10" fill="white" x="7.59" y="10">3</tspan>
+        </text>
+      </g>
+      <g id="Line_52">
+        <line x1="-866.528" y1="69.92794" x2="-932.6607" y2="69.92794" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_51">
+        <line x1="-688.2251" y1="20.12764" x2="-688.2251" y2="57.16788" stroke="#89cbdf" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_50">
+        <text transform="translate(-740.6017 -1)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="31974423e-20" y="12">64 Feature maps</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

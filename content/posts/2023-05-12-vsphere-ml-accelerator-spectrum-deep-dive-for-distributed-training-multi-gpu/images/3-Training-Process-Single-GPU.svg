@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-1354 871 822 179" width="822" height="179">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 6.4 0 L 0 -2.4 L 0 2.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-1354" y="871" width="822" height="179"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_235">
+        <text transform="translate(-1337.5 911)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="0" y="12">Data set</tspan>
+        </text>
+      </g>
+      <g id="Group_365">
+        <g id="Graphic_270">
+          <circle cx="-1223.5426" cy="945.3026" r="5.84635314964736" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_271">
+          <circle cx="-1223.5426" cy="960.7607" r="5.84635314964741" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_272">
+          <circle cx="-1202.3372" cy="937.7717" r="5.84635314964739" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_273">
+          <circle cx="-1202.3372" cy="953.2299" r="5.84635314964738" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_274">
+          <circle cx="-1202.3372" cy="968.688" r="5.84635314964735" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_275">
+          <circle cx="-1181.6273" cy="950.3183" r="5.84635314964738" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_276">
+          <line x1="-1218.0321" y1="943.3456" x2="-1207.8477" y2="939.7287" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_277">
+          <line x1="-1218.065" y1="947.3503" x2="-1207.8148" y2="951.1822" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_278">
+          <line x1="-1218.0321" y1="958.8037" x2="-1207.8477" y2="955.1869" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_279">
+          <line x1="-1219.5786" y1="956.4634" x2="-1206.3012" y2="942.0691" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_280">
+          <line x1="-1218.065" y1="962.8084" x2="-1207.8148" y2="966.6403" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_281">
+          <line x1="-1219.6153" y1="949.6336" x2="-1206.2645" y2="964.357" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_282">
+          <line x1="-1197.3358" y1="940.8017" x2="-1186.6288" y2="947.2883" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_283">
+          <line x1="-1197.9634" y1="964.8084" x2="-1186.0011" y2="954.1979" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_284">
+          <line x1="-1196.5475" y1="952.4159" x2="-1187.417" y2="951.1322" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Graphic_285">
+          <circle cx="-1223.5426" cy="976.2189" r="5.84635314964735" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_286">
+          <circle cx="-1202.3372" cy="984.1461" r="5.84635314964738" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_287">
+          <circle cx="-1181.6273" cy="972.1562" r="5.84635314964727" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_288">
+          <line x1="-1218.0321" y1="974.2619" x2="-1207.8477" y2="970.645" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_289">
+          <line x1="-1218.065" y1="978.2666" x2="-1207.8148" y2="982.0984" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_290">
+          <line x1="-1219.5786" y1="971.9215" x2="-1206.3012" y2="957.5273" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_291">
+          <line x1="-1220.7183" y1="971.0982" x2="-1205.1615" y2="942.8924" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_292">
+          <line x1="-1220.7405" y1="950.4354" x2="-1205.1393" y2="979.0133" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_293">
+          <line x1="-1219.6153" y1="965.0918" x2="-1206.2645" y2="979.8151" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_294">
+          <line x1="-1197.2764" y1="981.2162" x2="-1186.6881" y2="975.0861" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_295">
+          <line x1="-1199.284" y1="979.1589" x2="-1184.6806" y2="955.3055" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_296">
+          <line x1="-1196.5707" y1="969.6537" x2="-1187.3938" y2="971.1905" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_297">
+          <line x1="-1198.0215" y1="957.1739" x2="-1185.943" y2="968.2121" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_298">
+          <line x1="-1199.3201" y1="942.781" x2="-1184.6444" y2="967.1469" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+      </g>
+      <g id="Graphic_324">
+        <path d="M -1301.9323 984.3957 C -1305.1806 985.661 -1309.4825 986.3579 -1314.046 986.3579 C -1318.6095 986.3579 -1322.9115 985.661 -1326.1596 984.3957 C -1329.6404 983.0398 -1331.5573 981.1449 -1331.5573 979.06 L -1331.5573 942.8579 C -1331.5573 940.773 -1329.6404 938.8781 -1326.1596 937.5221 C -1322.9114 936.2568 -1318.6095 935.56 -1314.046 935.56 C -1309.4825 935.56 -1305.1806 936.2568 -1301.9323 937.5222 C -1298.4529 938.8776 -1296.5363 940.7716 -1296.5348 942.8556 C -1296.5348 942.8563 -1296.5347 942.857 -1296.5347 942.8579 L -1296.5347 979.06 C -1296.5347 981.1449 -1298.4516 983.0398 -1301.9323 984.3957 Z M -1302.5002 938.9769 C -1305.5717 937.7805 -1309.6721 937.1215 -1314.046 937.1215 C -1318.4199 937.1215 -1322.5203 937.7805 -1325.5918 938.977 C -1328.3897 940.0668 -1329.9944 941.4815 -1329.9944 942.8579 C -1329.9944 944.2343 -1328.3897 945.6489 -1325.5918 946.7388 C -1322.5203 947.9351 -1318.4199 948.5941 -1314.046 948.5941 C -1312.4058 948.5941 -1310.8042 948.5014 -1309.2806 948.3224 C -1306.7415 948.0243 -1304.4199 947.4866 -1302.5002 946.7387 C -1299.7024 945.6488 -1298.0978 944.2342 -1298.0978 942.8578 C -1298.0978 941.4814 -1299.7023 940.0668 -1302.5002 938.9769 Z M -1298.0975 945.9609 C -1298.099 945.9623 -1298.1006 945.9636 -1298.1021 945.965 C -1298.1153 945.9771 -1298.1294 945.9892 -1298.1428 946.0014 C -1299.2254 946.9846 -1300.5789 947.6663 -1301.9322 948.1936 C -1304.0638 949.0239 -1306.6492 949.6094 -1309.4647 949.9139 C -1310.9395 950.0734 -1312.4772 950.1557 -1314.0459 950.1557 C -1318.6094 950.1557 -1322.9114 949.4589 -1326.1595 948.1936 C -1327.5382 947.6565 -1328.8966 946.9766 -1329.9906 945.9643 C -1329.9918 945.9632 -1329.993 945.9622 -1329.9942 945.9611 L -1329.9942 954.9252 C -1329.9942 956.3015 -1328.3896 957.7161 -1325.5917 958.806 C -1323.0001 959.8156 -1319.6761 960.4425 -1316.0733 960.6138 C -1315.3981 960.646 -1314.722 960.6616 -1314.0459 960.6616 C -1309.2099 960.6616 -1303.5109 960.3062 -1299.5475 957.2196 C -1299.0209 956.8096 -1298.5291 956.3243 -1298.264 955.7011 C -1298.16 955.4571 -1298.0975 955.1913 -1298.0975 954.9253 L -1298.0975 945.9609 Z M -1298.0974 958.0281 C -1298.0986 958.029 -1298.0998 958.0301 -1298.1008 958.031 C -1298.3516 958.2611 -1298.6171 958.475 -1298.8943 958.6728 C -1300.619 959.9041 -1302.689 960.6269 -1304.727 961.1455 C -1306.413 961.5745 -1308.269 961.882 -1310.224 962.056 C -1310.2411 962.0573 -1310.2581 962.0591 -1310.2751 962.0606 C -1310.9186 962.117 -1311.5726 962.1585 -1312.2345 962.1857 C -1312.8324 962.2103 -1313.4367 962.2231 -1314.0458 962.2231 C -1318.6093 962.2231 -1322.9113 961.5262 -1326.1594 960.261 C -1327.5139 959.7335 -1328.8598 959.0562 -1329.9434 958.0738 C -1329.9588 958.0598 -1329.9748 958.0461 -1329.9901 958.032 C -1329.9914 958.0308 -1329.9927 958.0296 -1329.994 958.0284 L -1329.994 966.9927 C -1329.994 968.3691 -1328.3895 969.7837 -1325.5916 970.8736 C -1322.5201 972.07 -1318.4197 972.729 -1314.0458 972.729 C -1312.867 972.729 -1311.7084 972.6807 -1310.5842 972.5872 C -1310.5035 972.5806 -1310.423 972.5736 -1310.3428 972.5666 C -1307.3895 972.3031 -1304.6844 971.7245 -1302.5 970.8736 C -1301.3066 970.4087 -1300.3313 969.8847 -1299.604 969.3299 C -1298.9918 968.8628 -1298.3886 968.2712 -1298.1717 967.5099 C -1298.1703 967.5047 -1298.1694 967.4996 -1298.1679 967.4945 C -1298.1224 967.331 -1298.0974 967.1623 -1298.0974 966.9926 Z M -1298.0972 970.0954 C -1298.0985 970.0966 -1298.0997 970.0976 -1298.101 970.0988 C -1298.118 970.1146 -1298.1363 970.1302 -1298.1537 970.1459 C -1298.4069 970.375 -1298.675 970.5869 -1298.9546 970.7829 C -1299.8735 971.4265 -1300.8885 971.9219 -1301.9321 972.3283 C -1304.7605 973.4299 -1308.388 974.1004 -1312.2912 974.2554 C -1312.8705 974.2784 -1313.4558 974.2903 -1314.0456 974.2903 C -1318.6091 974.2903 -1322.9111 973.5934 -1326.1592 972.3281 C -1327.5172 971.7993 -1328.8506 971.1305 -1329.9379 970.1457 C -1329.9552 970.1301 -1329.9732 970.1146 -1329.9903 970.0989 C -1329.9916 970.0977 -1329.9928 970.0967 -1329.994 970.0955 L -1329.994 979.0598 C -1329.994 980.4361 -1328.3895 981.8507 -1325.5916 982.9405 C -1322.52 984.1371 -1318.4198 984.7961 -1314.0458 984.7961 C -1309.6718 984.7961 -1305.5715 984.1371 -1302.4999 982.9405 C -1299.7021 981.8507 -1298.0975 980.4363 -1298.0975 979.0598 L -1298.0972 979.0598 Z M -1300.8925 978.1202 C -1301.6812 978.1202 -1302.3205 977.4815 -1302.3205 976.6934 C -1302.3205 975.9054 -1301.6812 975.2666 -1300.8925 975.2666 C -1300.1038 975.2666 -1299.4644 975.9054 -1299.4644 976.6934 C -1299.4644 977.4815 -1300.1038 978.1202 -1300.8925 978.1202 Z M -1305.8489 979.6131 C -1306.6375 979.6131 -1307.2769 978.9743 -1307.2769 978.1863 C -1307.2769 977.3983 -1306.6375 976.7595 -1305.8489 976.7595 C -1305.0602 976.7595 -1304.4208 977.3983 -1304.4208 978.1863 C -1304.4208 978.9743 -1305.0602 979.6131 -1305.8489 979.6131 Z M -1311.1085 980.4303 C -1311.8971 980.4303 -1312.5364 979.7916 -1312.5364 979.0035 C -1312.5364 978.2155 -1311.8971 977.5767 -1311.1085 977.5767 C -1310.3198 977.5767 -1309.6805 978.2155 -1309.6805 979.0035 C -1309.6805 979.7916 -1310.3198 980.4303 -1311.1085 980.4303 Z M -1300.8925 966.1556 C -1301.6812 966.1556 -1302.3205 965.5168 -1302.3205 964.7288 C -1302.3205 963.9407 -1301.6812 963.302 -1300.8925 963.302 C -1300.1038 963.302 -1299.4644 963.9407 -1299.4644 964.7288 C -1299.4644 965.5168 -1300.1038 966.1556 -1300.8925 966.1556 Z M -1305.8489 967.6495 C -1306.6375 967.6495 -1307.2769 967.0106 -1307.2769 966.2227 C -1307.2769 965.4346 -1306.6375 964.7959 -1305.8489 964.7959 C -1305.0602 964.7959 -1304.4208 965.4346 -1304.4208 966.2227 C -1304.4208 967.0106 -1305.0602 967.6495 -1305.8489 967.6495 Z M -1311.1085 968.4667 C -1311.8971 968.4667 -1312.5364 967.8279 -1312.5364 967.0399 C -1312.5364 966.2518 -1311.8971 965.6131 -1311.1085 965.6131 C -1310.3198 965.6131 -1309.6805 966.2518 -1309.6805 967.0399 C -1309.6805 967.8279 -1310.3198 968.4667 -1311.1085 968.4667 Z M -1300.8925 953.9827 C -1301.6812 953.9827 -1302.3205 953.344 -1302.3205 952.5559 C -1302.3205 951.768 -1301.6812 951.1291 -1300.8925 951.1291 C -1300.1038 951.1291 -1299.4644 951.768 -1299.4644 952.5559 C -1299.4644 953.344 -1300.1038 953.9827 -1300.8925 953.9827 Z M -1305.8489 955.4766 C -1306.6375 955.4766 -1307.2769 954.8379 -1307.2769 954.0498 C -1307.2769 953.2619 -1306.6375 952.623 -1305.8489 952.623 C -1305.0602 952.623 -1304.4208 953.2619 -1304.4208 954.0498 C -1304.4208 954.8379 -1305.0602 955.4766 -1305.8489 955.4766 Z M -1311.1085 956.2939 C -1311.8971 956.2939 -1312.5364 955.6551 -1312.5364 954.867 C -1312.5364 954.0791 -1311.8971 953.4402 -1311.1085 953.4402 C -1310.3198 953.4402 -1309.6805 954.0791 -1309.6805 954.867 C -1309.6805 955.6551 -1310.3198 956.2939 -1311.1085 956.2939 Z" fill="black"></path>
+      </g>
+      <g id="Line_326">
+        <line x1="-1291.4158" y1="960.8475" x2="-1242.8078" y2="960.8475" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_327">
+        <text transform="translate(-1241.0972 911)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="22026825e-20" y="12">Forward pass</tspan>
+        </text>
+      </g>
+      <g id="Line_329">
+        <line x1="-1169.7573" y1="960.2607" x2="-1121.1493" y2="960.2607" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_330">
+        <text transform="translate(-1103.1398 953.7607)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="24868996e-20" y="12">Error</tspan>
+        </text>
+      </g>
+      <g id="Line_331">
+        <line x1="-1046.3923" y1="905.4685" x2="-1046.3923" y2="948.7607" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_333">
+        <line x1="-1353" y1="883.5" x2="-1051.2195" y2="883.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_332">
+        <rect x="-1269.4697" y="871.5" width="136.96" height="24" fill="white"></rect>
+        <text transform="translate(-1264.4697 876.5)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="0" y="12">Step 1 - Predict a label</tspan>
+        </text>
+      </g>
+      <g id="Graphic_334">
+        <text transform="translate(-1026 940.0285)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="1.65" y="12">Compute </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="16.986" y="26">loss </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="4.818" y="40">function</tspan>
+        </text>
+      </g>
+      <g id="Line_335">
+        <line x1="-978.9354" y1="962" x2="-930.3274" y2="962" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Group_366">
+        <g id="Graphic_395">
+          <circle cx="-870.0119" cy="945.3026" r="5.84635314964725" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_394">
+          <circle cx="-870.0119" cy="960.7607" r="5.8463531496473" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_393">
+          <circle cx="-891.2173" cy="937.7717" r="5.84635314964729" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_392">
+          <circle cx="-891.2173" cy="953.2299" r="5.84635314964727" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_391">
+          <circle cx="-891.2173" cy="968.688" r="5.84635314964724" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_390">
+          <circle cx="-911.9272" cy="950.3183" r="5.84635314964729" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_389">
+          <line x1="-875.5224" y1="943.3456" x2="-885.7067" y2="939.7287" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_388">
+          <line x1="-875.4894" y1="947.3503" x2="-885.7397" y2="951.1822" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_387">
+          <line x1="-875.5224" y1="958.8037" x2="-885.7067" y2="955.1869" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_386">
+          <line x1="-873.9759" y1="956.4634" x2="-887.2533" y2="942.0691" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_385">
+          <line x1="-875.4894" y1="962.8084" x2="-885.7397" y2="966.6403" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_384">
+          <line x1="-873.9391" y1="949.6336" x2="-887.29" y2="964.357" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_383">
+          <line x1="-896.2187" y1="940.8017" x2="-906.9257" y2="947.2883" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_382">
+          <line x1="-895.5911" y1="964.8084" x2="-907.5533" y2="954.1979" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_381">
+          <line x1="-897.007" y1="952.4159" x2="-906.1374" y2="951.1322" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Graphic_380">
+          <circle cx="-870.0119" cy="976.2189" r="5.84635314964724" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_379">
+          <circle cx="-891.2173" cy="984.1461" r="5.84635314964727" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_378">
+          <circle cx="-911.9272" cy="972.1562" r="5.84635314964718" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_377">
+          <line x1="-875.5224" y1="974.2619" x2="-885.7067" y2="970.645" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_376">
+          <line x1="-875.4894" y1="978.2666" x2="-885.7397" y2="982.0984" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_375">
+          <line x1="-873.9759" y1="971.9215" x2="-887.2533" y2="957.5273" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_374">
+          <line x1="-872.8361" y1="971.0982" x2="-888.393" y2="942.8924" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_373">
+          <line x1="-872.814" y1="950.4354" x2="-888.4152" y2="979.0133" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_372">
+          <line x1="-873.9391" y1="965.0918" x2="-887.29" y2="979.8151" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_371">
+          <line x1="-896.2781" y1="981.2162" x2="-906.8664" y2="975.0861" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_370">
+          <line x1="-894.2705" y1="979.1589" x2="-908.8739" y2="955.3055" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_369">
+          <line x1="-896.9838" y1="969.6537" x2="-906.1607" y2="971.1905" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_368">
+          <line x1="-895.533" y1="957.1739" x2="-907.6115" y2="968.2121" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_367">
+          <line x1="-894.2344" y1="942.781" x2="-908.9101" y2="967.1469" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+      </g>
+      <g id="Graphic_396">
+        <text transform="translate(-933.7855 909.8818)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="7105427e-19" y="12">Backward pass</tspan>
+        </text>
+      </g>
+      <g id="Line_398">
+        <line x1="-857.5" y1="960.8475" x2="-808.892" y2="960.8475" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_400">
+        <line x1="-1040.4878" y1="883.5" x2="-772.6829" y2="885.0488" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_401">
+        <rect x="-980.9155" y="872.3288" width="167.476" height="24" fill="white"></rect>
+        <text transform="translate(-975.9155 877.3288)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="0" y="12">Step 2 - Compute gradients</tspan>
+        </text>
+      </g>
+      <g id="Line_402">
+        <line x1="-767.8471" y1="904.8818" x2="-767.8471" y2="948.7607" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Group_403">
+        <g id="Graphic_432">
+          <circle cx="-664.0518" cy="945.3026" r="5.84635314964729" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_431">
+          <circle cx="-664.0518" cy="960.7607" r="5.84635314964729" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_430">
+          <circle cx="-642.84645" cy="937.7717" r="5.8463531496473" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_429">
+          <circle cx="-642.84645" cy="953.2299" r="5.84635314964727" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_428">
+          <circle cx="-642.84645" cy="968.688" r="5.84635314964722" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_427">
+          <circle cx="-622.1365" cy="950.3183" r="5.84635314964732" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_426">
+          <line x1="-658.5413" y1="943.3456" x2="-648.357" y2="939.7287" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_425">
+          <line x1="-658.5743" y1="947.3503" x2="-648.324" y2="951.1822" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_424">
+          <line x1="-658.5413" y1="958.8037" x2="-648.357" y2="955.1869" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_423">
+          <line x1="-660.08786" y1="956.4634" x2="-646.8104" y2="942.0691" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_422">
+          <line x1="-658.5743" y1="962.8084" x2="-648.324" y2="966.6403" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_421">
+          <line x1="-660.12456" y1="949.6336" x2="-646.7737" y2="964.357" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_420">
+          <line x1="-637.845" y1="940.8017" x2="-627.138" y2="947.2883" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_419">
+          <line x1="-638.4726" y1="964.8084" x2="-626.51036" y2="954.1979" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_418">
+          <line x1="-637.0567" y1="952.4159" x2="-627.92626" y2="951.1322" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Graphic_417">
+          <circle cx="-664.0518" cy="976.2189" r="5.84635314964725" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_416">
+          <circle cx="-642.84645" cy="984.1461" r="5.84635314964719" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_415">
+          <circle cx="-622.1365" cy="972.1562" r="5.84635314964726" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_414">
+          <line x1="-658.5413" y1="974.2619" x2="-648.357" y2="970.645" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_413">
+          <line x1="-658.5743" y1="978.2666" x2="-648.324" y2="982.0984" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_412">
+          <line x1="-660.08786" y1="971.9215" x2="-646.8104" y2="957.5273" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_411">
+          <line x1="-661.2276" y1="971.0982" x2="-645.6707" y2="942.8924" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_410">
+          <line x1="-661.2497" y1="950.4354" x2="-645.64855" y2="979.0133" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_409">
+          <line x1="-660.12456" y1="965.0918" x2="-646.7737" y2="979.8151" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_408">
+          <line x1="-637.7856" y1="981.2162" x2="-627.19735" y2="975.0861" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_407">
+          <line x1="-639.7932" y1="979.1589" x2="-625.1898" y2="955.3055" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_406">
+          <line x1="-637.07995" y1="969.6537" x2="-627.903" y2="971.1905" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_405">
+          <line x1="-638.5307" y1="957.1739" x2="-626.45225" y2="968.2121" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_404">
+          <line x1="-639.8293" y1="942.781" x2="-625.1536" y2="967.1469" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+      </g>
+      <g id="Line_433">
+        <line x1="-761.9512" y1="884.0488" x2="-532.6829" y2="884.0488" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_434">
+        <rect x="-730.9687" y="872.0488" width="169.408" height="24" fill="white"></rect>
+        <text transform="translate(-725.9687 877.0488)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="0" y="12">Step 3 - Update Parameters</tspan>
+        </text>
+      </g>
+      <g id="Line_435">
+        <line x1="-730.1733" y1="962" x2="-681.5653" y2="962" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_436">
+        <line x1="-1071" y1="962" x2="-1022.392" y2="962" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_438">
+        <path d="M -1092.5 981.5 L -1092.5 1012.6829 L -996.868 1012.6829 L -997.264 987.0285" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_439">
+        <rect x="-1078.853" y="983.5" width="72.614" height="66" fill="white"></rect>
+        <text transform="translate(-1073.853 988.5)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="4.996999" y="12">Compare </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="3.826999" y="26">predicted </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="4.066999" y="40">label with </tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x=".7669992" y="54">annotation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_440">
+        <rect x="-1244.2963" y="1001.6447" width="83.42277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(-1239.2963 1006.6447)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="19.773384" y="12">GPU 1</tspan>
+        </text>
+      </g>
+      <g id="Line_443">
+        <line x1="-1202.3863" y1="989.9923" x2="-1202.4842" y2="1001.6447" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_444">
+        <rect x="-932.6809" y="1001.6447" width="83.42277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(-927.6809 1006.6447)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="19.773384" y="12">GPU 1</tspan>
+        </text>
+      </g>
+      <g id="Line_445">
+        <line x1="-891.1682" y1="989.9923" x2="-891.0703" y2="1001.6447" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_446">
+        <rect x="-684.5854" y="1001.6447" width="83.42277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(-679.5854 1006.6447)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="19.773384" y="12">GPU 1</tspan>
+        </text>
+      </g>
+      <g id="Line_447">
+        <line x1="-642.8519" y1="989.9925" x2="-642.8628" y2="1001.6447" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_399">
+        <rect x="-796.0093" y="947.8407" width="65.836" height="24" fill="white"></rect>
+        <text transform="translate(-791.0093 952.8407)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="0" y="12">Optimizer</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

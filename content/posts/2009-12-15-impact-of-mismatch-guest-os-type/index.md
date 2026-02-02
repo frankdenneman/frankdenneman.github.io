@@ -1,0 +1,14 @@
+---
+title: "Impact of mismatch Guest OS type"
+date: 2009-12-15
+categories: 
+  - "vmware"
+tags: 
+  - "guest-os-type"
+---
+
+During Healthchecks I frequently encounter virtual machines configured with the incorrect Guest OS type specified. Incorrect configuration of Guest OS of the virtual machine can lead to; • Reduction of performance • Different default type for the SCSI device \* • Different defaults of devices • Wrong VMware Tools presented to the Guest OS resulting in failure to install • Inability to select virtual hardware such as enhanced vmxnet, vmxnet3 or number of vCPUs. • Inability to activate features such as CPU and Memory Hot Add. • Inability to activate Fault Tolerance. • VM burning up 100% of CPU when idling (rare occasions) Buslogic SCSI Device \* Due to mismatch of Guest OS Type, windows 2000 and Windows 2003 can be configured with a Buslogic SCSI device. Using the Buslogic virtual adapter with Windows 2000 and 2003 will limit the effective IO queue depth of one. This limits disk throughput severely and lead to serious performance degradation. For more information visit KB article [1614](http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=1614&sliceId=1&docTypeID=DT_KB_1_1&dialogID=53698934&stateId=0 0 53706353) Virtual Machine Monitor and execution mode Selecting the wrong Guest OS type can be of influence of the selected execution mode. When a virtual machine is powering on, the VMM inspects the physical CPU’s features and the guest operating system type to determine the set of possible execution modes. This can have a slight impact on performance and in some extreme cases application crashes or BSODs. VMware published a Must-Read whitepaper about the VMM and execution modes [http://www.vmware.com/files/pdf/software\_hardware\_tech\_x86\_virt.pdf](http://www.vmware.com/files/pdf/software_hardware_tech_x86_virt.pdf) How to solve the mismatch? vCenter only displays the configured Guest OS of the Virtual Machine, it will not check the installed operating system inside the virtual machine. Powercli offers the solution to this problem, today more and more people start to discover the beauty of Powercli and incorporate this in their day-to-day activities. So I’ve asked PowerCLI guru [Alan Renouf](http://www.virtu-al.net/) if he could write a PowerCLI script which can detect the Guest OS mismatch.
+
+> Get-View -ViewType VirtualMachine | Where { $\_.Guest.GuestFullname} | Sort Name |Select-Object Name, @{N="SelectedOS";E={$\_.Guest.GuestFullName}}, @{N="InstalledOS";E={$\_.Summary.Config.GuestFullName}} | Out-GridView
+
+Alans "one-liner" checks the configured Gues Os Type in the VM (VM properties) and queries the VMtools to see which operating system it reports. Once the mismatch is identified, set the correct Guest OS Type in the VM properties as soon as possible. The best way to deal with the mismatch is to power-down the VM before changing the guest OS type.

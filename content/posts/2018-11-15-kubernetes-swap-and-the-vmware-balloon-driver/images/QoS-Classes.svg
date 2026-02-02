@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1209 407 680 593" width="680" height="593">
+  <defs>
+    <font-face font-family="Proxima Nova" font-size="12" panose-1="2 0 5 6 3 0 0 2 0 4" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="483" cap-height="667" ascent="790.0016" descent="-210.00043" font-weight="400">
+      <font-face-src>
+        <font-face-name name="ProximaNova-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.2 
+    <dc:date>2018-11-15 13:54:37 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="1209" y="407" width="680" height="593"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_16">
+        <line x1="1670" y1="550.75" x2="1209.5" y2="550.75" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_2">
+        <line x1="1669.211" y1="466.67383" x2="1669" y2="539.8262" stroke="#44bce5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_20">
+        <rect x="1209.5" y="558" width="460.5" height="53.5" fill="white"/>
+        <rect x="1209.5" y="558" width="460.5" height="53.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1214.5 577.75)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x="199.498" y="11">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(1792.211 496.25)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".22" y="11">Guaranteed Class</tspan>
+        </text>
+      </g>
+      <g id="Line_22">
+        <line x1="1774.711" y1="502.75" x2="1685.5" y2="502.75" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(1630.5 409)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".924" y="11">Resource Limit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(1658 437.75)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".2" y="11">4GB </tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <line x1="1653.5" y1="502.75" x2="1564.289" y2="502.75" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27">
+        <text transform="translate(1477.789 496.25)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".048" y="11">Request 4GB</tspan>
+        </text>
+      </g>
+      <g id="Line_28">
+        <line x1="1670" y1="773.4238" x2="1209.5" y2="773.4238" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_29">
+        <line x1="1669.211" y1="689.34766" x2="1669" y2="762.5" stroke="#44bce5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_30">
+        <rect x="1209.5" y="780.6738" width="460.5" height="53.5" fill="white"/>
+        <rect x="1209.5" y="780.6738" width="460.5" height="53.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1214.5 800.4238)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x="199.498" y="11">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(1792.211 718.9238)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".664" y="11">Burstable Class</tspan>
+        </text>
+      </g>
+      <g id="Line_32">
+        <line x1="1774.711" y1="725.4238" x2="1685.5" y2="725.4238" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_33">
+        <text transform="translate(1630.5 631.6738)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".924" y="11">Resource Limit</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(1658 660.4238)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".2" y="11">4GB </tspan>
+        </text>
+      </g>
+      <g id="Line_35">
+        <line x1="1421.211" y1="725.4238" x2="1332" y2="725.4238" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_36">
+        <text transform="translate(1244.5 718.9238)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".688" y="11">Request 2GB</tspan>
+        </text>
+      </g>
+      <g id="Line_37">
+        <line x1="1439.461" y1="689.34766" x2="1439.25" y2="762.5" stroke="#44bce5" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_46">
+        <line x1="1670" y1="938.4238" x2="1209.5" y2="938.4238" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_48">
+        <rect x="1209.5" y="945.6738" width="460.5" height="53.5" fill="white"/>
+        <rect x="1209.5" y="945.6738" width="460.5" height="53.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1214.5 965.4238)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x="199.498" y="11">Container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(1791.211 952.75)" fill="black">
+          <tspan font-family="Proxima Nova" font-size="12" font-weight="400" fill="black" x=".188" y="11">BestEffort Class</tspan>
+        </text>
+      </g>
+      <g id="Line_50">
+        <line x1="1774.711" y1="959.25" x2="1685.5" y2="959.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

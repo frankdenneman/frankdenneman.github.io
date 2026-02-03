@@ -1,0 +1,15 @@
+/* Smaller sidebar social icons */
+.sidebar i.fab,
+.sidebar i.fa-brands,
+.sidebar i[class^="fa"],
+.sidebar i[class*=" fa-"] {
+  font-size: 20px !important;
+  line-height: 1 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Tighter spacing between icons */
+.sidebar .social-links a {
+  margin-right: 6px !important;
+}

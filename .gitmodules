@@ -1,3 +1,6 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = git@github.com:adityatelange/hugo-PaperMod.git
+[submodule "themes/hugo-theme-chirpy"]
+	path = themes/hugo-theme-chirpy
+	url = git@github.com:geekifan/hugo-theme-chirpy.git

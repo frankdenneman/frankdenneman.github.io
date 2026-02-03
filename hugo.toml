@@ -1,8 +1,5 @@
 baseURL = "https://frankdenneman.github.io/"
 languageCode = "en-us"
-title = "Frank Denneman"
-theme = "PaperMod"
-
 enableRobotsTXT = true
 canonifyURLs = true
 
@@ -12,11 +9,19 @@ canonifyURLs = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# Anatole as Hugo Module
+[module]
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+
 [taxonomies]
+  category = "categories"
   tag = "tags"
 
 [params]
-  description = "Solving AI Resource Management Challenges in Private Datacenters"
+  title = "Frank Denneman"
+  author = "Frank Denneman"
+  profilePicture = "images/Headshot-FD.jpeg"
 
 [menu]
   [[menu.main]]
@@ -42,4 +47,9 @@ canonifyURLs = true
   [[menu.main]]
     name = "Search"
     url = "/search/"
-    weight = 100
+    weight = 45
+
+  [[menu.main]]
+    name = "Now"
+    url = "/now/"
+    weight = 50

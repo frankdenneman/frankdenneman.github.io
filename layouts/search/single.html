@@ -1,0 +1,66 @@
+{{ define "main" }}
+<div class="post">
+  <h1 class="post-title">{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="post-content">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  <div class="post-content">
+    <input id="searchBox" type="search" placeholder="Search…" autocomplete="off" style="width:100%; max-width: 36rem;" />
+    <div id="searchResults" style="margin-top: 1rem;"></div>
+  </div>
+
+  <script>
+    async function loadIndex() {
+      const res = await fetch('/index.json');
+      if (!res.ok) throw new Error('Could not load /index.json');
+      return await res.json();
+    }
+
+    function escapeHtml(s) {
+      return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function render(results) {
+      const el = document.getElementById('searchResults');
+      if (!results.length) { el.innerHTML = '<p>No results.</p>'; return; }
+
+      el.innerHTML =
+        '<ul>' +
+          results.map(r => {
+            const title = escapeHtml(r.title || '');
+            const url = r.permalink || r.relpermalink || '#';
+            return `<li><a href="${url}">${title}</a></li>`;
+          }).join('') +
+        '</ul>';
+    }
+
+    function search(index, q) {
+      q = q.trim().toLowerCase();
+      if (!q) return [];
+      return index.filter(p =>
+        (p.title && p.title.toLowerCase().includes(q)) ||
+        (p.content && p.content.toLowerCase().includes(q)) ||
+        (p.summary && p.summary.toLowerCase().includes(q))
+      ).slice(0, 50);
+    }
+
+    (async function() {
+      const idx = await loadIndex();
+      const box = document.getElementById('searchBox');
+      const el = document.getElementById('searchResults');
+
+      el.innerHTML = '<p>Type to search…</p>';
+      box.addEventListener('input', () => render(search(idx, box.value)));
+      box.focus();
+    })().catch(err => {
+      document.getElementById('searchResults').innerHTML =
+        '<p>Search index not available yet. If this is your first run, build the site once and refresh.</p>';
+      console.error(err);
+    });
+  </script>
+</div>
+{{ end }}

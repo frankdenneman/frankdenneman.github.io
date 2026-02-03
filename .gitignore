@@ -1,2 +1,10 @@
 .hugo_build.lock
 public/
+
+# macOS
+.DS_Store
+
+# Hugo build artifacts
+public/
+resources/
+_vendor/

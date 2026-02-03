@@ -13,3 +13,6 @@
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+# Ensure Anatole is the active theme
+theme = "anatole"

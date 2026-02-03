@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-      - switch-to-anatole  workflow_dispatch:
+      - switch-to-anatole
+  workflow_dispatch:
 
 permissions:
   contents: read

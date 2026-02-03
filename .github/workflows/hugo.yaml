@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -25,8 +22,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
+
+      - name: Setup Go (required for Hugo Modules)
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -34,15 +35,18 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Hugo Modules
+        run: HUGO_MODULE_PROXY=direct hugo mod get -u
+
       - name: Build
-        run: HUGO_MODULE_PROXY=direct hugo --minify --config hugo.toml,hugo.anatole.toml
+        run: HUGO_MODULE_PROXY=direct hugo --minify
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
-    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

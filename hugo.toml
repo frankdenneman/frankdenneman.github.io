@@ -36,12 +36,12 @@ canonifyURLs = true
 
   [[menu.main]]
     name = "AI"
-    url = "/tags/ai/"
+    url = "/categories/ai/"
     weight = 30
 
   [[menu.main]]
     name = "NUMA"
-    url = "/tags/numa/"
+    url = "/categories/numa/"
     weight = 40
 
   [[menu.main]]

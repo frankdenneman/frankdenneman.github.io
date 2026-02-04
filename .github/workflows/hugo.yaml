@@ -29,18 +29,15 @@ jobs:
         with:
           go-version: 'stable'
 
+      - name: Setup Node (for Dart Sass)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install Dart Sass
-        uses: dw-labs-org/dart-sass-gha@v1
+        run: npm install -g sass
 
-        - name: Setup Node (for Dart Sass)
-    uses: actions/setup-node
-    with:
-      node-version: "20"
-
-  - name: Install Dart Sass
-    run: npm install -g sass
-
-- name: Setup Hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
@@ -50,9 +47,7 @@ jobs:
         run: HUGO_MODULE_PROXY=direct hugo mod get -u
 
       - name: Build
-        run: |
-          sass --version
-          HUGO_MODULE_PROXY=direct hugo --minify
+        run: HUGO_MODULE_PROXY=direct hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

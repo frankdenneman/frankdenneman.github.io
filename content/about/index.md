@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "ABOUT"
 ---
 
 I am a Distinguished Engineer and Chief Technologist for AI in the AI and Advanced Services team at the VCF Division of Broadcom. My work focuses on solving resource-management challenges for AI workloads in the private datacenter, helping organizations design and operate AI platforms that are performant, scalable, and operationally sustainable.

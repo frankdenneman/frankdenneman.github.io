@@ -2,4 +2,3 @@
 title: "Frank Denneman"
 ---
 
-Welcome.

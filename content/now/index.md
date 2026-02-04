@@ -1,5 +1,5 @@
 ---
-title: "Now"
+title: "NOW"
 url: "/now/"
 draft: false
 ---

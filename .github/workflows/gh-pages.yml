@@ -1,0 +1,83 @@
+name: Deploy Hugo site to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          submodules: false
+
+      - name: Setup Hugo (extended)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.155.2"
+          extended: true
+
+      - name: Cache Hugo resources + modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            resources
+            /home/runner/.cache/hugo_cache
+            /home/runner/go/pkg/mod
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum','**/go.mod','**/hugo.toml','**/hugo.yaml','**/hugo.json','**/config.toml','**/config.yaml','**/config.json') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
+      - name: Install Dart Sass (pinned prebuilt binary)
+        run: |
+          set -euo pipefail
+          SASS_VERSION="1.71.1"
+          curl -fsSL -o dart-sass.tar.gz \
+            "https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz"
+          tar -xzf dart-sass.tar.gz
+          chmod -R a+rX dart-sass
+          echo "${PWD}/dart-sass" >> "$GITHUB_PATH"
+          which sass
+          sass --version
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site
+        env:
+          HUGO_MODULE_PROXY: direct
+        run: |
+          hugo --minify
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

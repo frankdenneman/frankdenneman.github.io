@@ -34,56 +34,41 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Cache Hugo resources + modules
-        uses: actions/cache@v4
-        with:
-          path: |
-            resources
-            /home/runner/.cache/hugo_cache
-            /home/runner/go/pkg/mod
-          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum','**/go.mod','**/hugo.toml','**/hugo.yaml','**/hugo.json','**/config.toml','**/config.yaml','**/config.json') }}
-          restore-keys: |
-            ${{ runner.os }}-hugo-
-
-      - name: Install Sass Embedded (NOT pure JS sass)
+      - name: Install Sass Embedded and verify (must support --embedded)
         shell: bash
         run: |
           set -euo pipefail
           npm install -g sass-embedded
-          echo "=== sass-embedded resolution ==="
-          command -v sass-embedded
-          sass-embedded --version || true
-          echo "=== embedded check (should output JSON) ==="
-          sass-embedded --embedded --version
 
-      - name: Verify Dart Sass embedded mode (CI)
-        shell: bash
-        run: |
-          set -euo pipefail
           echo "=== PATH ==="
           echo "$PATH"
           echo
+
           echo "=== sass resolution ==="
-          command -v sass || true
+          command -v sass
           ls -l "$(command -v sass)" || true
           echo
-          echo "=== sass version ==="
-          sass --version || true
-          echo
-          echo "=== sass embedded check ==="
-          sass --embedded --version || true
 
+          echo "=== sass version ==="
+          sass --version
+          echo
+
+          echo "=== embedded check (must output JSON) ==="
+          sass --embedded --version
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Build site
+        shell: bash
         env:
           HUGO_MODULE_PROXY: direct
-          DART_SASS_BINARY: /usr/local/bin/sass-embedded
         run: |
+          set -euo pipefail
+          export DART_SASS_BINARY="$(command -v sass)"
           echo "DART_SASS_BINARY=$DART_SASS_BINARY"
           "$DART_SASS_BINARY" --embedded --version
+
           hugo env
           hugo --minify --verbose
 

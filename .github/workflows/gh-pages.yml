@@ -41,38 +41,35 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
-      - name: Install Dart Sass (pinned) to runner temp and verify permissions
+      - name: Install Dart Sass (pinned, keep directory intact)
         shell: bash
         run: |
           set -euo pipefail
 
           SASS_VERSION="1.71.1"
-          INSTALL_DIR="${RUNNER_TEMP}/dart-sass-${SASS_VERSION}"
-          BIN_DIR="${RUNNER_TEMP}/bin"
-          mkdir -p "${INSTALL_DIR}" "${BIN_DIR}"
-
           curl -fsSL -o "${RUNNER_TEMP}/dart-sass.tar.gz" \
             "https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz"
 
-          tar -xzf "${RUNNER_TEMP}/dart-sass.tar.gz" -C "${INSTALL_DIR}" --strip-components=1
+          tar -xzf "${RUNNER_TEMP}/dart-sass.tar.gz" -C "${RUNNER_TEMP}"
 
-          # Put sass on PATH (as a real executable), and set explicit perms
-          cp "${INSTALL_DIR}/sass" "${BIN_DIR}/sass"
-          chmod 755 "${BIN_DIR}/sass"
-          echo "${BIN_DIR}" >> "$GITHUB_PATH"
+          # The extracted directory is "${RUNNER_TEMP}/dart-sass"
+          chmod -R a+rX "${RUNNER_TEMP}/dart-sass"
+
+          echo "${RUNNER_TEMP}/dart-sass" >> "$GITHUB_PATH"
 
           echo "== sass resolution =="
           command -v sass
           ls -l "$(command -v sass)"
-          stat -c "%A %U:%G %n" "$(command -v sass)" || true
           sass --version
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build site (show Hugo env for Sass)
+      - name: Build site
         env:
           HUGO_MODULE_PROXY: direct
+          # Force Hugo to use this exact Sass executable (no PATH ambiguity)
+          DART_SASS_BINARY: ${{ runner.temp }}/dart-sass/sass
         run: |
           hugo env
           hugo --minify --verbose

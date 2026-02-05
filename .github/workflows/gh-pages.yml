@@ -70,7 +70,7 @@ jobs:
           "$DART_SASS_BINARY" --embedded --version
 
           hugo env
-          hugo --minify --verbose
+          hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

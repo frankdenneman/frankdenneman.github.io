@@ -19,7 +19,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,26 +40,28 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
-      - name: Install Dart Sass (pinned, keep directory intact)
+      - name: Install Dart Sass (embedded-capable) and verify
         shell: bash
         run: |
           set -euo pipefail
 
-          SASS_VERSION="1.71.1"
-          curl -fsSL -o "${RUNNER_TEMP}/dart-sass.tar.gz" \
+          # Match what you're using locally
+          SASS_VERSION="1.97.3"
+          curl -fsSL -o "${RUNNER_TEMP}/dart-sass.tgz" \
             "https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz"
 
-          tar -xzf "${RUNNER_TEMP}/dart-sass.tar.gz" -C "${RUNNER_TEMP}"
-
-          # The extracted directory is "${RUNNER_TEMP}/dart-sass"
+          tar -xzf "${RUNNER_TEMP}/dart-sass.tgz" -C "${RUNNER_TEMP}"
           chmod -R a+rX "${RUNNER_TEMP}/dart-sass"
 
           echo "${RUNNER_TEMP}/dart-sass" >> "$GITHUB_PATH"
 
-          echo "== sass resolution =="
+          echo "== sass path =="
           command -v sass
           ls -l "$(command -v sass)"
           sass --version
+
+          echo "== embedded must work =="
+          sass --embedded --version
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -68,9 +69,10 @@ jobs:
       - name: Build site
         env:
           HUGO_MODULE_PROXY: direct
-          # Force Hugo to use this exact Sass executable (no PATH ambiguity)
+          # Force Hugo to use THIS Sass (avoid any PATH ambiguity)
           DART_SASS_BINARY: ${{ runner.temp }}/dart-sass/sass
         run: |
+          echo "DART_SASS_BINARY=$DART_SASS_BINARY"
           hugo env
           hugo --minify --verbose
 

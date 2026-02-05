@@ -57,6 +57,7 @@ jobs:
       - name: Build site
         env:
           HUGO_MODULE_PROXY: direct
+          DART_SASS_BINARY: /snap/bin/sass
         run: |
           hugo env
           hugo --minify --verbose

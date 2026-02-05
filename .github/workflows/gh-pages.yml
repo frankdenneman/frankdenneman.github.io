@@ -23,9 +23,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          submodules: false
 
       - name: Setup Hugo (extended)
         uses: peaceiris/actions-hugo@v3
@@ -44,26 +41,41 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
-      - name: Install Dart Sass (pinned prebuilt binary)
+      - name: Install Dart Sass (pinned) to runner temp and verify permissions
+        shell: bash
         run: |
           set -euo pipefail
+
           SASS_VERSION="1.71.1"
-          curl -fsSL -o dart-sass.tar.gz \
+          INSTALL_DIR="${RUNNER_TEMP}/dart-sass-${SASS_VERSION}"
+          BIN_DIR="${RUNNER_TEMP}/bin"
+          mkdir -p "${INSTALL_DIR}" "${BIN_DIR}"
+
+          curl -fsSL -o "${RUNNER_TEMP}/dart-sass.tar.gz" \
             "https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz"
-          tar -xzf dart-sass.tar.gz
-          chmod -R a+rX dart-sass
-          echo "${PWD}/dart-sass" >> "$GITHUB_PATH"
-          which sass
+
+          tar -xzf "${RUNNER_TEMP}/dart-sass.tar.gz" -C "${INSTALL_DIR}" --strip-components=1
+
+          # Put sass on PATH (as a real executable), and set explicit perms
+          cp "${INSTALL_DIR}/sass" "${BIN_DIR}/sass"
+          chmod 755 "${BIN_DIR}/sass"
+          echo "${BIN_DIR}" >> "$GITHUB_PATH"
+
+          echo "== sass resolution =="
+          command -v sass
+          ls -l "$(command -v sass)"
+          stat -c "%A %U:%G %n" "$(command -v sass)" || true
           sass --version
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build site
+      - name: Build site (show Hugo env for Sass)
         env:
           HUGO_MODULE_PROXY: direct
         run: |
-          hugo --minify
+          hugo env
+          hugo --minify --verbose
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

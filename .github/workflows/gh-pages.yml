@@ -40,27 +40,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
-      - name: Install Dart Sass (embedded-capable) and verify
+      - name: Install Dart Sass via Snap (recommended on Linux)
         shell: bash
         run: |
           set -euo pipefail
-
-          # Match what you're using locally
-          SASS_VERSION="1.97.3"
-          curl -fsSL -o "${RUNNER_TEMP}/dart-sass.tgz" \
-            "https://github.com/sass/dart-sass/releases/download/${SASS_VERSION}/dart-sass-${SASS_VERSION}-linux-x64.tar.gz"
-
-          tar -xzf "${RUNNER_TEMP}/dart-sass.tgz" -C "${RUNNER_TEMP}"
-          chmod -R a+rX "${RUNNER_TEMP}/dart-sass"
-
-          echo "${RUNNER_TEMP}/dart-sass" >> "$GITHUB_PATH"
-
+          sudo snap install dart-sass
           echo "== sass path =="
           command -v sass
-          ls -l "$(command -v sass)"
           sass --version
-
-          echo "== embedded must work =="
+          echo "== embedded check =="
           sass --embedded --version
 
       - name: Configure Pages
@@ -69,10 +57,7 @@ jobs:
       - name: Build site
         env:
           HUGO_MODULE_PROXY: direct
-          # Force Hugo to use THIS Sass (avoid any PATH ambiguity)
-          DART_SASS_BINARY: ${{ runner.temp }}/dart-sass/sass
         run: |
-          echo "DART_SASS_BINARY=$DART_SASS_BINARY"
           hugo env
           hugo --minify --verbose
 

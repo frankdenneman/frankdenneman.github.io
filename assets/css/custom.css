@@ -13,3 +13,7 @@
 .sidebar .social-links a {
   margin-right: 6px !important;
 }
+
+.main-wrapper {
+  grid-template-columns: 200px 1fr !important;
+}

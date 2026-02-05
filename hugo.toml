@@ -88,5 +88,6 @@ allow = [
   '^npx$',
   '^postcss$',
   '^tailwindcss$',
-  '^/opt/hostedtoolcache/node/.*/bin/sass$'
+  '^/opt/hostedtoolcache/node/.*/bin/sass$',
+  '^/usr/local/bin/sass$'
 ]

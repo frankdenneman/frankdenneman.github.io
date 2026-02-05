@@ -78,3 +78,15 @@ url = "https://x.com/FrankDenneman"
     name = "Now"
     url = "/now/"
     weight = 50
+
+[security.exec]
+# Allow the Node toolcache path used on GitHub Actions runners
+allow = [
+  '^(dart-)?sass(-embedded)?$',
+  '^go$',
+  '^git$',
+  '^npx$',
+  '^postcss$',
+  '^tailwindcss$',
+  '^/opt/hostedtoolcache/node/.*/bin/sass$'
+]

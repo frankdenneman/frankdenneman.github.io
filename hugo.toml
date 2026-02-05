@@ -91,3 +91,15 @@ allow = [
   '^/opt/hostedtoolcache/node/.*/bin/sass$',
   '^/usr/local/bin/sass$'
 ]
+
+[[menu.main]]
+  identifier = "privacy"
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 90
+
+[[menu.main]]
+  identifier = "privacy"
+  name = "Privacy Policy"
+  url = "/privacy/"
+  weight = 51

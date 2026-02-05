@@ -1,7 +1,7 @@
 +++
 date = '2026-02-04T23:03:39+01:00'
 title = 'Understanding Activation Memory in Mixture of Experts Models'
-categories = ['AI']
+categories = ['ai']
 +++ 
 
 In my previous article, [The Dynamic World of LLM Runtime Memory](https://frankdenneman.nl/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), I focused on KV-cache as the primary driver of runtime memory pressure. Today, as inference workloads move toward long-context and agentic execution, activation memory has emerged as an equally important and often overlooked constraint.

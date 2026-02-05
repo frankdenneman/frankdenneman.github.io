@@ -21,6 +21,7 @@ canonifyURLs = true
   tag = "tags"
 
 [params]
+gtagId = "G-XSZJ05LPXJ"
   customCss = ["css/custom.css"]
   # Anatole sidebar title (name under profile)
   title = "Frank Denneman"

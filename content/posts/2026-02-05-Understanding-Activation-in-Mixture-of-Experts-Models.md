@@ -60,7 +60,7 @@ These figures capture the dominant feed-forward activation costs (held until lay
 
 ### Why does MoE still stress activation memory?
 
-Dense models generate a single large activation set per token per layer—predictable and concentrated, which GPUs handle efficiently with minimal allocation overhead and smooth memory usage.
+Dense models generate a single large activation set per token per layer, predictable and concentrated, which GPUs handle efficiently with minimal allocation overhead and smooth memory usage.
 
 MoE models create multiple smaller sets per token per layer, triggered conditionally by routing decisions that vary across tokens and layers.
 

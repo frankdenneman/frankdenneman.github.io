@@ -29,6 +29,12 @@ jobs:
           hugo-version: "0.155.2"
           extended: true
 
+      - name: Setup Node (for sass-embedded)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
       - name: Cache Hugo resources + modules
         uses: actions/cache@v4
         with:
@@ -40,16 +46,34 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
-      - name: Install Dart Sass via Snap (recommended on Linux)
+      - name: Install Sass Embedded (NOT pure JS sass)
         shell: bash
         run: |
           set -euo pipefail
-          sudo snap install dart-sass
-          echo "== sass path =="
-          command -v sass
-          sass --version
-          echo "== embedded check =="
-          sass --embedded --version
+          npm install -g sass-embedded
+          echo "=== sass-embedded resolution ==="
+          command -v sass-embedded
+          sass-embedded --version || true
+          echo "=== embedded check (should output JSON) ==="
+          sass-embedded --embedded --version
+
+      - name: Verify Dart Sass embedded mode (CI)
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "=== PATH ==="
+          echo "$PATH"
+          echo
+          echo "=== sass resolution ==="
+          command -v sass || true
+          ls -l "$(command -v sass)" || true
+          echo
+          echo "=== sass version ==="
+          sass --version || true
+          echo
+          echo "=== sass embedded check ==="
+          sass --embedded --version || true
+
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -57,8 +81,10 @@ jobs:
       - name: Build site
         env:
           HUGO_MODULE_PROXY: direct
-          DART_SASS_BINARY: /snap/bin/sass
+          DART_SASS_BINARY: /usr/local/bin/sass-embedded
         run: |
+          echo "DART_SASS_BINARY=$DART_SASS_BINARY"
+          "$DART_SASS_BINARY" --embedded --version
           hugo env
           hugo --minify --verbose
 

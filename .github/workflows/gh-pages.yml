@@ -56,21 +56,27 @@ jobs:
           echo "=== embedded check (must output JSON) ==="
           sass --embedded --version
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      - name: Install Sass Embedded and verify
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install -g sass-embedded
+          sudo ln -sf "$(command -v sass)" /usr/local/bin/sass
+          /usr/local/bin/sass --embedded --version
 
       - name: Build site
         shell: bash
         env:
           HUGO_MODULE_PROXY: direct
+          DART_SASS_BINARY: /usr/local/bin/sass
         run: |
           set -euo pipefail
-          export DART_SASS_BINARY="$(command -v sass)"
-          echo "DART_SASS_BINARY=$DART_SASS_BINARY"
-          "$DART_SASS_BINARY" --embedded --version
-
           hugo env
           hugo --minify
+
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,4 +1,26 @@
 <head>
+<!-- Prevent thin list pages from being indexed -->
+{{ if .IsNode }}<meta name="robots" content="noindex,follow">{{ end }}
+<!-- Article structured data -->
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | jsonify }},
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ .Permalink | jsonify }} }
+}
+</script>
+{{ end }}
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:site_name" content="Frank Denneman">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}">
   <meta charset="utf-8" />

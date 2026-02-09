@@ -1,4 +1,6 @@
 <head>
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}">
   <meta charset="utf-8" />
   <title>
     {{ if (eq .Site.Params.reversepagetitle true) }}
@@ -252,5 +254,4 @@
       {{ end -}}
     {{ end -}}
   {{ end }}
-<script data-goatcounter="https://frankdenneman.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>

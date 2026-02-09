@@ -104,3 +104,7 @@ allow = [
   name = "Privacy Policy"
   url = "/privacy/"
   weight = 51
+
+# Plausible Analytics Configuration
+[params.plausibleAnalytics]
+  domain = "frankdenneman.nl"

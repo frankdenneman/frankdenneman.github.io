@@ -2,7 +2,6 @@
 title: "Enhanced vMotion for vGPU VMs in VCF 9.0"
 date: 2025-06-24T09:00:00+02:00
 draft: false
-slug: "enhanced-vmotion-for-vgpu-vms-in-vmware-cloud-foundation-9-0"
 categories: ["ai"]
 tags: ["VCF 9.0", "vMotion", "vGPU", "LLM", "GPU memory", "KV cache"]
 ---

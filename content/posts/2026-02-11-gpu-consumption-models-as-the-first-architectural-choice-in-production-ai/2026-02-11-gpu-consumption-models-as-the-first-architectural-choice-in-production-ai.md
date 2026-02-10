@@ -2,7 +2,6 @@
 title: "GPU Consumption Models as the First Architectural Choice in Production AI"
 date: 2026-02-11T09:00:00+01:00
 draft: false
-slug: "gpu-consumption-models-as-the-first-architectural-choice-in-production-ai"
 categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 ---

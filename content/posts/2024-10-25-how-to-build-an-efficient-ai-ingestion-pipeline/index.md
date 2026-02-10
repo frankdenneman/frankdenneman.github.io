@@ -2,7 +2,6 @@
 title: "How to Build an Efficient AI Ingestion Pipeline"
 date: 2024-10-25T09:00:00+01:00
 draft: false
-slug: "how-to-build-an-efficient-ai-ingestion-pipeline"
 categories: ["ai"]
 tags: ["RAG", "Ingestion Pipeline", "Embeddings", "Vector Database", "Infrastructure"]
 ---

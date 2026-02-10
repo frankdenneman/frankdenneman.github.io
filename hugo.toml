@@ -108,3 +108,8 @@ allow = [
 # Plausible Analytics Configuration
 [params.plausibleAnalytics]
   domain = "frankdenneman.nl"
+
+[markup.goldmark.renderer]
+  unsafe = true
+[permalinks]
+  posts = "/posts/:contentbasename/"

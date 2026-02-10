@@ -66,3 +66,5 @@ This is why virtualization becomes increasingly valuable as AI workloads move fr
 As this series continues, it will connect these architectural ideas to practical tools that vSphere administrators already know. We will look at how GPU usage models like passthrough, fractional vGPU, and multi-GPU setups affect placement; how host-level GPU policies and vGPU modes impact consolidation and fragmentation; and how cluster-level decisions are shaped by DRS, device groups, and hardware layout.
 
 Building AI infrastructure means treating GPU placement as a core issue from the start. It is not something to adjust later, but something to plan for deliberately.
+
+Next article: [GPU Consumption Models as the First Architectural Choice in Production AI](https://frankdenneman.nl/2026-02-11-GPU-Consumption-Models-as-the-First-Architectural-Choice-in-Production-AI/)

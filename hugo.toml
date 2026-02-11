@@ -27,6 +27,7 @@ gtagId = "G-XSZJ05LPXJ"
   title = "Frank Denneman"
   author = "Frank Denneman"
   profilePicture = "images/Headshot-FD.jpeg"
+  favicon = "favicons/"
 
 # Social icons (Font Awesome classes) under the profile picture
 [[params.socialIcons]]

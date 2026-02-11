@@ -1,12 +1,14 @@
 ---
-title: "Architecting AI Infrastructure Series"
+title: "Why GPU Placement Becomes the Defining Problem"
 date: 2026-02-09T09:00:00+01:00
 draft: false
 categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 slug: "why-gpu-placement-becomes-the-defining-problem"
 ---
-## Why GPU Placement Becomes the Defining Problem
+
+## Architecting AI Infrastructure Series - Part 1"
+
 In earlier articles, I looked at how modern AI models use GPU resources. I covered [dynamic memory consumption](https://frankdenneman.nl/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), activation patterns, and how designs like [mixture-of-experts](https://frankdenneman.nl/posts/2026-02-05-understanding-activation-in-mixture-of-experts-models/) change resource needs over time. Those pieces focused on what models require from accelerators. This new series shifts the focus. Instead of starting with the model, we will look at the platform itself.
 
 The goal of *Architecting AI Infrastructure* is to understand what changes when AI workloads move from ad-hoc experiments to long-running production services. At this stage, models need to be deployed, scaled, upgraded, and retired in a predictable way. GPUs are no longer tied to a single project, but become shared resources that support many teams, models, and use cases over time.

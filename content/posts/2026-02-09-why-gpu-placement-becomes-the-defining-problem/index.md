@@ -66,4 +66,5 @@ As this series continues, it will connect these architectural ideas to practical
 
 Building AI infrastructure means treating GPU placement as a core issue from the start. It is not something to adjust later, but something to plan for deliberately.
 
-Next article: [GPU Consumption Models as the First Architectural Choice in Production AI](https://frankdenneman.nl/2026-02-11-GPU-Consumption-Models-as-the-First-Architectural-Choice-in-Production-AI/)
+**Next in the series:** [GPU Consumption Models as the First Architectural Choice in Production AI](/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/)
+

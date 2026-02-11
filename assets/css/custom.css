@@ -176,3 +176,22 @@ a.category:visited {
   padding: 3px 8px;
 }
 
+
+/* ===== Article Header Accent ===== */
+
+/* Only affect headers inside article content */
+.post__content h2,
+.post__content h3,
+.post__content h4 {
+  color: #23678c !important;
+}
+
+/* Slight spacing refinement for long-form readability */
+.post__content h2 {
+  margin-top: 2.2rem;
+}
+
+.post__content h3 {
+  margin-top: 1.6rem;
+}
+

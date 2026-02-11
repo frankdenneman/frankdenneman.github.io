@@ -11,9 +11,7 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 ## GPU Consumption Models as the First Architectural Choice in Production AI
 The [previous article](https://frankdenneman.nl/posts/why-gpu-placement-becomes-the-defining-problem/) covered GPU placement as part of the platform’s lifecycle, not just a scheduling step. These choices affect what the platform can handle as workloads evolve. Before making placement decisions, it’s worth asking: how do AI workloads use GPUs?
 
-This question is important because not every GPU workload requires the same resources. Two services might both need accelerators, but can be very different in memory use, how they run, and how much they depend on other GPUs. These differences set the platform’s limits well before the scheduler gets involved.
-
-So, GPU consumption models are not just an optimization detail. They are the first architectural choice for any AI platform.
+This question is important because not every GPU workload requires the same resources. Two services might both need accelerators, but can be very different in memory use, how they run, and how much they depend on other GPUs. These differences set the platform’s limits well before the scheduler gets involved. So, GPU consumption models are not just an optimization detail. They are the first architectural choice for any AI platform.
 
 ---
 
@@ -21,9 +19,7 @@ So, GPU consumption models are not just an optimization detail. They are the fir
 
 In most cases, users ask for the biggest configuration they can get. More GPU memory, more compute, and exclusive access are seen as the safest ways to ensure stable and consistent performance.
 
-This behavior follows old patterns in how people use infrastructure. When performance is important, asking for more resources seems like the easiest way to lower risk. Bigger allocations are thought to prevent interference, make troubleshooting easier, and reduce uncertainty.
-
-What has changed is not user behavior, but the nature of GPU contention.
+This behavior follows old patterns in how people use infrastructure. When performance is important, asking for more resources seems like the easiest way to lower risk. Bigger allocations are thought to prevent interference, make troubleshooting easier, and reduce uncertainty. What has changed is not user behavior, but the nature of GPU contention.
 
 ---
 
@@ -31,9 +27,7 @@ What has changed is not user behavior, but the nature of GPU contention.
 
 CPU and system memory have been built to handle oversubscription for a long time. Advanced schedulers, preemption, and memory management help manage contention smoothly. When CPUs are overloaded, workloads just slow down. When memory is tight, systems use reservations, limits, and reclamation to stay stable. GPU contention is different.
 
-Depending on the setup, a GPU either shares execution over time or splits it into separate parts. In time-sliced setups, compute tasks are shared, but each workload keeps its own memory. A virtual GPU keeps its full frame buffer whether it’s busy or not. In partitioned setups like Multi-Instance GPU, the device is split into hardware-isolated units, each with its own compute and memory.
-
-So, sharing a GPU isn’t like traditional oversubscription. It’s more like structured isolation, with clear resource boundaries. This difference changes how we should think about GPU sharing.
+Depending on the setup, a GPU either shares execution over time or splits it into separate parts. In time-sliced setups, compute tasks are shared, but each workload keeps its own memory. A virtual GPU keeps its full frame buffer whether it’s busy or not. In partitioned setups like Multi-Instance GPU, the device is split into hardware-isolated units, each with its own compute and memory. So, sharing a GPU isn’t like traditional oversubscription. It’s more like structured isolation, with clear resource boundaries. This difference changes how we should think about GPU sharing.
 
 ---
 
@@ -56,6 +50,8 @@ Passthrough remains an important consumption model in production environments th
 The key feature of passthrough is not how it works at runtime, but where rigidity is introduced. Enabling passthrough sets up the GPU to be used only as a full device. This is true whether or not the GPU is currently assigned to a virtual machine. When a virtual machine uses a passthrough GPU, the workload keeps this fixed consumption shape for as long as it runs.
 
 Changing that shape is not something you can do at the workload level. It requires stopping the workload and reconfiguring how the GPU is set up and assigned at the host and device levels. Unlike vGPU-based consumption, where an administrator can pick a different profile or VM class and just reboot the virtual machine.
+
+![](images/changing_workshape_passthrough_vs_GPU.svg)
 
 This difference matters in environments where AI workloads change quickly. Data scientists often try new model versions, use new quantization techniques, and adjust serving parameters, all of which can change a workload’s resource profile. Hardware-level allocation assumes the right consumption shape is known ahead of time. When that is not true, the cost of rigidity becomes clear.
 
@@ -104,6 +100,18 @@ Once that VM configuration is set, placement decisions go beyond the GPU. Host s
 ---
 
 ## Consumption models shape everything that follows
+
+Traditionally, GPU allocation was handled near the infrastructure layer. Now, that decision is happening at higher levels. New Kubernetes features, such as 
+
+[Dynamic Resource Allocation (DRA)]: https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/
+
+, let workloads specify their hardware needs directly in their scheduling requirements.
+
+With DRA, workloads can now make structured ResourceClaims, which drivers use to pick compatible devices. While the full range of features is still developing, the main trend is clear: allocation decisions are becoming more declarative and focused on workload needs.
+
+In the future, this approach could let workloads set ordered hardware preferences (cascading ordered GPU list). Instead of just asking for one device, a workload could list preferred GPU types, memory sizes, or features. This way, a pod could share a flexible wish list, and the scheduler and driver would pick the best available device at runtime.
+
+Even as these abstractions mature, one principle remains constant. A GPU, once allocated, is still consumed as a discrete unit. What changes is not the granularity of the device itself, but the layer at which intent is declared, and binding happens. Within that limit, different GPU consumption models create different constraints for the platform.
 
 Each GPU consumption model brings different constraints to the platform. Passthrough favors predictable performance. Fractional GPUs keep flexibility once behavior is understood. Full GPUs absorb uncertainty. Multi-GPU workloads make topology a first-class requirement, pulling in more system resources for placement decisions.
 

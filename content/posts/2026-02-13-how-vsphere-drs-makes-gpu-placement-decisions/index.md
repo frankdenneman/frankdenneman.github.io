@@ -28,7 +28,7 @@ With vGPU mode, the GPU uses profiles to set clear memory and compute limits. On
 
 GPU memory is never oversubscribed and shared beyond its limits. In time-sliced mode, compute cores are shared, but memory stays dedicated. In the image below, two VMs with different vGPU profiles use the same physical device. VM4 is scheduled first, and feeds all the cores with the data stored in its allocated memory space. VM8 awaits its time-slice, when it's scheduled it feeds all the cores with the data stored in its memory space.
 
-![](images/timeslicing_vs_MIG.svg)
+![](images/timeslicing_vs_migmode.svg)
 
 In MIG mode, hardware enforces isolation with fixed memory and compute partitions, referred to by NVIDIA as instances. VM4 and VM8 are scheduled continuously, each having access to a subset of cores and memory space that are shaped by the MIG vGPU profile (MIG instance). The selected GPU mode (MIG or time-slicing) determines how a device participates in the cluster’s allocation model.
 

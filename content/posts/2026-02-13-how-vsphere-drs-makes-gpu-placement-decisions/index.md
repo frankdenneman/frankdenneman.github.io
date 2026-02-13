@@ -78,15 +78,7 @@ This orchestration model supports heterogeneity at the device level. A cluster c
 
 Please note that time-sliced vGPU mode spans a broad spectrum of configurations. It can expose fractional profiles for shared inference, full-device profiles for exclusive consumption, or be captured in a topology-aware multi-GPU allocation with vSphere device groups for larger workloads.
 
-When combined with Device Groups and integration with 
-
-[NVIDIA Fabric Manager](https://docs.nvidia.com/datacenter/tesla/fabric-manager-user-guide/index.html)
-
-, vSphere understands GPU interconnect topology. Multi-GPU virtual machines can be placed on devices that share 
-
-[NVLink](https://www.nvidia.com/en-us/data-center/nvlink/)
-
- domains, preserving bandwidth and latency characteristics required by distributed inference. GPUs are evaluated not as abstract counters, but as structured, topology-aware resources.
+When combined with Device Groups and integration with [NVIDIA Fabric Manager](https://docs.nvidia.com/datacenter/tesla/fabric-manager-user-guide/index.html), vSphere understands GPU interconnect topology. Multi-GPU virtual machines can be placed on devices that share [NVLink](https://www.nvidia.com/en-us/data-center/nvlink/) domains, preserving bandwidth and latency characteristics required by distributed inference. GPUs are evaluated not as abstract counters, but as structured, topology-aware resources.
 
 ## Placement Policy: Balancing Utilization and Fragmentation
 

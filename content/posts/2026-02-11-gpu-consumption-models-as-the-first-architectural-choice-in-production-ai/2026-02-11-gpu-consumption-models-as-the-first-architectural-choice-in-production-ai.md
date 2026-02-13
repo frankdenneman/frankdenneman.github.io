@@ -12,23 +12,17 @@ The [previous article](https://frankdenneman.nl/posts/2026-02-09-why-gpu-placeme
 
 This question is important because not every GPU workload requires the same resources. Two services might both need accelerators, but can be very different in memory use, how they run, and how much they depend on other GPUs. These differences set the platform’s limits well before the scheduler gets involved. So, GPU consumption models are not just an optimization detail. They are the first architectural choice for any AI platform.
 
----
-
 ## GPU consumption follows request patterns, not scarcity
 
 In most cases, users ask for the biggest configuration they can get. More GPU memory, more compute, and exclusive access are seen as the safest ways to ensure stable and consistent performance.
 
 This behavior follows old patterns in how people use infrastructure. When performance is important, asking for more resources seems like the easiest way to lower risk. Bigger allocations are thought to prevent interference, make troubleshooting easier, and reduce uncertainty. What has changed is not user behavior, but the nature of GPU contention.
 
----
-
 ## Why GPU contention is different from CPU and memory contention
 
 CPU and system memory have been built to handle oversubscription for a long time. Advanced schedulers, preemption, and memory management help manage contention smoothly. When CPUs are overloaded, workloads just slow down. When memory is tight, systems use reservations, limits, and reclamation to stay stable. GPU contention is different.
 
 Depending on the setup, a GPU either shares execution over time or splits it into separate parts. In time-sliced setups, compute tasks are shared, but each workload keeps its own memory. A virtual GPU keeps its full frame buffer whether it’s busy or not. In partitioned setups like Multi-Instance GPU, the device is split into hardware-isolated units, each with its own compute and memory. So, sharing a GPU isn’t like traditional oversubscription. It’s more like structured isolation, with clear resource boundaries. This difference changes how we should think about GPU sharing.
-
----
 
 ## Fractional GPUs are not a compromise
 
@@ -39,8 +33,6 @@ Modern quantization techniques support this change. Large models in formats like
 Here, fractional GPUs aren’t about oversubscription. They set realistic resource limits that match how workloads actually behave once we understand them. By clearly limiting GPU memory and compute, fractional GPUs define a workload shape the platform can manage reliably.
 
 This model works best when both static needs and dynamic behavior are predictable. If memory use, concurrency, and execution patterns are well understood, you can set clear limits. Then, multiple workloads can run together without interference, and placement stays flexible. Stability and consistency come from clear, enforceable resource boundaries, not exclusivity.
-
----
 
 ## Passthrough and exclusivity
 
@@ -58,8 +50,6 @@ Tools like Dynamic DirectPath I/O can make placement more flexible and help with
 
 Passthrough is not the wrong choice. It is the right option when workload requirements are stable and well understood. In environments with frequent change, it becomes a deliberate architectural decision that trades adaptability for certainty.
 
----
-
 ## Full GPUs as a necessity, not a preference
 
 Assigning a full GPU to a workload is often not about comfort or simplicity. In many cases, it is a direct result of the workload’s resource needs.
@@ -74,8 +64,6 @@ It is important to distinguish this consumption model from passthrough. A full G
 
 From a platform perspective, full-GPU consumption introduces stronger constraints than fractional sharing. Each placement fixes the workload shape at the largest possible granularity. This does not make full GPUs inefficient or undesirable. It makes them precise. They are the correct choice when the workload requires it.
 
----
-
 ## When a workload spans GPUs
 
 When a workload needs more than one GPU, GPU consumption changes in a fundamental way. The GPU is no longer the unit of placement. Multi-GPU workloads are not just larger versions of single-GPU workloads. They depend on communication between devices, often at bandwidths higher than what PCIe alone can provide. At that point, topology becomes part of the contract between the workload and the platform.
@@ -83,8 +71,6 @@ When a workload needs more than one GPU, GPU consumption changes in a fundamenta
 Distributed model serving, large-scale inference, and training workloads rely on fast interconnects to synchronize parameters, exchange activations, or shard model state. Technologies such as NVIDIA [NVLink and NVSwitch](https://www.nvidia.com/en-us/data-center/nvlink/) enable this communication at scale.
 
 From a placement perspective, this creates a hard boundary. GPUs can no longer be treated as independent units. They must be allocated as connected groups, and the topology of those connections directly affects which hosts can satisfy the request and which future placements are possible.
-
----
 
 ## GPUs are not isolated from the system
 
@@ -96,15 +82,9 @@ The amount of GPU memory consumed and how it is accessed determine how much CPU 
 
 Once that VM configuration is set, placement decisions go beyond the GPU. Host selection, CPU scheduling flexibility, memory locality, and even cluster-level behaviors like vSphere HA admission control are all affected by what first seems like a GPU-only choice.
 
----
-
 ## Consumption models shape everything that follows
 
-Traditionally, GPU allocation was handled near the infrastructure layer. Now, that decision is happening at higher levels. New Kubernetes features, such as 
-
-[Dynamic Resource Allocation (DRA)]: https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/
-
-, let workloads specify their hardware needs directly in their scheduling requirements.
+Traditionally, GPU allocation was handled near the infrastructure layer. Now, that decision is happening at higher levels. New Kubernetes features, such as [Dynamic Resource Allocation (DRA)](https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/), let workloads specify their hardware needs directly in their scheduling requirements.
 
 With DRA, workloads can now make structured ResourceClaims, which drivers use to pick compatible devices. While the full range of features is still developing, the main trend is clear: allocation decisions are becoming more declarative and focused on workload needs.
 
@@ -115,8 +95,6 @@ Even as these abstractions mature, one principle remains constant. A GPU, once a
 Each GPU consumption model brings different constraints to the platform. Passthrough favors predictable performance. Fractional GPUs keep flexibility once behavior is understood. Full GPUs absorb uncertainty. Multi-GPU workloads make topology a first-class requirement, pulling in more system resources for placement decisions.
 
 The architectural challenge is not picking a single GPU consumption model, but making sure different workload needs can be met at the same time. Workloads express their needs through different consumption models, while the platform enforces isolation, makes correct placement decisions, and keeps global awareness across hosts and clusters. Solving this challenge lets GPU resources be used efficiently over time without fragmenting the platform.
-
----
 
 ## Looking ahead
 

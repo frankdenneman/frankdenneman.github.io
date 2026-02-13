@@ -18,11 +18,7 @@ In vSphere, a GPU-backed workload is defined by its virtual machine configuratio
 
 These needs are evaluated when the virtual machine starts. The platform ensures the cluster meets the resource contract before allowing the workload to run. Once resources are assigned, the accelerator setup remains the same throughout the workload’s lifecycle. This stability helps keep performance predictable, which is important for model behavior and service reliability.
 
-The same principle applies in Kubernetes environments such as 
-
-[VMware Kubernetes Service]: https://www.vmware.com/products/cloud-infrastructure/vsphere-kubernetes-service
-
-. Worker nodes are virtual machines, and their GPU configuration determines the accelerator capacity exposed to the container runtime. Pods request GPUs through Kubernetes abstractions, but those requests are handled at the infrastructure level based on the VM configuration. Kubernetes expresses workload-level demand. vSphere enforces infrastructure-level guarantees.
+The same principle applies in Kubernetes environments such as [VMware Kubernetes Service](https://www.vmware.com/products/cloud-infrastructure/vsphere-kubernetes-service). Worker nodes are virtual machines, and their GPU configuration determines the accelerator capacity exposed to the container runtime. Pods request GPUs through Kubernetes abstractions, but those requests are handled at the infrastructure level based on the VM configuration. Kubernetes expresses workload-level demand. vSphere enforces infrastructure-level guarantees.
 
 ## GPU Mode Defines the Device Participation Model
 
@@ -76,8 +72,6 @@ The placement process begins with compatibility filtering. The two passthrough h
 
 Within the eligible host pool, DRS applies its Goodness calculation. It evaluates which host can satisfy the VM’s CPU and memory guarantees while keeping the cluster load balanced. The goal is to maximize VM Happiness while keeping the cluster healthy. VM Happiness shows how closely a virtual machine gets the resources it needs. Accelerator capacity alone does not guarantee good performance. CPU scheduling, memory location, storage access, and network placement all affect how well things run. DRS looks at all these factors together to find the best placement. GPU compatibility decides where a workload can run. The Goodness calculation determines where it should run.
 
-------
-
 ## Heterogeneous Accelerators and Topology Awareness
 
 This orchestration model supports heterogeneity at the device level. A cluster can simultaneously support passthrough GPUs, time-sliced vGPU devices, and MIG-partitioned accelerators. Assignable Hardware filters hosts based on declared device characteristics, allowing each virtual machine to express the accelerator model that best fits its workload.
@@ -86,15 +80,13 @@ Please note that time-sliced vGPU mode spans a broad spectrum of configurations.
 
 When combined with Device Groups and integration with 
 
-[NVIDIA Fabric Manager]: https://docs.nvidia.com/datacenter/tesla/fabric-manager-user-guide/index.html
+[NVIDIA Fabric Manager](https://docs.nvidia.com/datacenter/tesla/fabric-manager-user-guide/index.html)
 
 , vSphere understands GPU interconnect topology. Multi-GPU virtual machines can be placed on devices that share 
 
-[NVLink]: https://www.nvidia.com/en-us/data-center/nvlink/
+[NVLink](https://www.nvidia.com/en-us/data-center/nvlink/)
 
  domains, preserving bandwidth and latency characteristics required by distributed inference. GPUs are evaluated not as abstract counters, but as structured, topology-aware resources.
-
-------
 
 ## Placement Policy: Balancing Utilization and Fragmentation
 
@@ -106,8 +98,6 @@ In fast-changing AI environments, fragmentation can become a big problem. As sin
 
 For these situations, DRS can use Consolidation mode. In this mode, workloads are packed onto fewer hosts when possible. Reducing the spread of allocations makes it easier to place future workloads. Best Performance focuses on balanced use of resources right now. Consolidation focuses on keeping placement flexible for the future. Compatibility is always enforced. The Goodness calculation still looks at everything together. Policy guides which options are preferred within the eligible group.
 
-------
-
 ## Complementary to Kubernetes Scheduling
 
 This layered orchestration model aligns naturally with Kubernetes scheduling principles. Kubernetes DRA evaluates node labels, resource availability, and topology constraints before binding a Pod.
@@ -115,8 +105,6 @@ This layered orchestration model aligns naturally with Kubernetes scheduling pri
 vSphere works with similar principles at the infrastructure layer. Device characteristics are declared explicitly. Hardware capabilities are surfaced through structured identifiers and topology awareness. Placement decisions respect real interconnect domains and resource boundaries. Kubernetes decides which node a workload should run on. vSphere decides how hardware resources are allocated and balanced across the infrastructure.
 
 Together, they create a layered control system that matches workload intent with reliable hardware enforcement.
-
-------
 
 ## Looking Ahead: GPU Policy and Long-Term Cluster Efficiency
 

@@ -7,7 +7,7 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 slug: "why-gpu-placement-becomes-the-defining-problem"
 ---
 
-## Architecting AI Infrastructure Series - Part 1"
+## Architecting AI Infrastructure Series - Part 1
 
 In earlier articles, I looked at how modern AI models use GPU resources. I covered [dynamic memory consumption](https://frankdenneman.nl/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), activation patterns, and how designs like [mixture-of-experts](https://frankdenneman.nl/posts/2026-02-05-understanding-activation-in-mixture-of-experts-models/) change resource needs over time. Those pieces focused on what models require from accelerators. This new series shifts the focus. Instead of starting with the model, we will look at the platform itself.
 

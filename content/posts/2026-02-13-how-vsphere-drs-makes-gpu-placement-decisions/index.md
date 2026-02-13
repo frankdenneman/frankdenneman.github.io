@@ -50,7 +50,7 @@ This model gives each device a fixed identity. The workload is bound to a specif
 
 ![](images/GPU_static_passthrough.svg)
 
-Dynamic DirectPath I/O modernizes this approach using the Assignable Hardware framework of the vSphere cluster. Instead of using a fixed SBDF address, the virtual machine declares device characteristics such as vendor IDs, device features, and hardware labels. In this example below, a label 'Training' was assigned to the A100 GPU. When powered on, the platform evaluates all hosts in the cluster and finds the GPUs that meet the declared requirements stated in the VM configuration (Training). A compatible device is then assigned automatically.
+Dynamic DirectPath I/O modernizes this approach using the Assignable Hardware framework of the vSphere cluster. Instead of using a fixed SBDF address, the virtual machine declares device characteristics such as vendor IDs, device features, and hardware labels. In this example below, a label 'Inference' was assigned to the H100 GPU. When powered on, the platform evaluates all hosts in the cluster and finds the GPUs that meet the declared requirements stated in the VM configuration (Inference). A compatible device is then assigned automatically.
 
 ![](images/GPU_dynamic_passthrough.svg)
 

@@ -70,7 +70,7 @@ This flexibility comes with one main constraint: placement IDs. A GPU's memory i
 
 ![](images/H100_placement_id.svg)
 
-The platform does not stop these gaps from happening. The key is to choose profiles that both support your workload and align with placement IDs. The NVIDIA AI Enterprise User Guide is a helpful resource. Sometimes, it is better to use a slightly larger profile, like 20GB instead of 16GB, if it helps support multiple vGPU profiles. If done right, Mixed Size mode gives the most placement flexibility with no locking and no wasted capacity.
+The platform does not stop these gaps from happening. The key is to choose profiles that both support your workload and align with placement IDs. The [NVIDIA AI Enterprise User Guide](https://docs.nvidia.com/ai-enterprise/5.1/user-guide/index.html#vgpu-types-nvidia-h100-pcie-80gb) is a helpful resource. Sometimes, it is better to use a slightly larger profile, like 20GB instead of 16GB, if it helps support multiple vGPU profiles. If done right, Mixed Size mode gives the most placement flexibility with no locking and no wasted capacity.
 
 ### MIG: Hardware Isolation With a Fixed Resource Budget
 

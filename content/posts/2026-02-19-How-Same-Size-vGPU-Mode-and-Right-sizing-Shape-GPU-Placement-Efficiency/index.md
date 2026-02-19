@@ -96,7 +96,7 @@ The main difference from the spread example is not total memory, but flexibility
 
 ## Re-evaluating Right-sizing
 
-Right-sizing is therefore not only a workload decision but also a platform decision. The goal is not simply to match a workload’s minimum memory requirement, but to choose profile sizes that improve opportunities for cluster-wide capacity allocation.
+Right-sizing is therefore not only a workload decision but also a platform decision. The goal is not simply to match a workload’s minimum memory requirement (slim-fit), but to choose profile sizes that improve opportunities for cluster-wide capacity allocation (right-size).
 
 | Profile Size | Spread – Placed | Spread – Available | Group – Placed | Group – Available |
 | ------------ | --------------: | -----------------: | -------------: | ----------------: |

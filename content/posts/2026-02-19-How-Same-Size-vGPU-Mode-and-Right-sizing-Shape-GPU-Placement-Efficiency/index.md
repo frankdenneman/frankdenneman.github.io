@@ -65,7 +65,7 @@ Once the first workloads start, each GPU becomes locked to a specific profile si
 | 40GB         | 0                          |
 | 80GB         | 0                          |
 
-Same Size vGPU Mode – Consolidation Assignment Policy
+## Same Size vGPU Mode – Consolidation Assignment Policy
 
 Consolidation does not affect which host is chosen; it only changes how GPUs within the selected host are used.
 

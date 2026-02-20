@@ -4,10 +4,13 @@ date: 2026-02-19T15:00:00+01:00
 draft: false
 categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
+
+series: ["Architecting AI Infrastructure"]
+series_order: 5
 ---
 ## Architecting AI Infrastructure - Part 5
 
-In the [previous article](http://localhost:1313/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/), we looked at how GPUs are placed within an ESXi host and how GPU modes and assignment policies determine which physical GPU a workload uses. These decisions impact more than just the initial placement of workloads. They also shape how GPU capacity changes over time, affecting fragmentation, consolidation, and how easily new workloads can be scheduled. In this article, we will look at workloads that use fractional GPU profiles and how their sizing choices impact overall platform efficiency.
+In the [previous article](https://frankdenneman.nl/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/), we looked at how GPUs are placed within an ESXi host and how GPU modes and assignment policies determine which physical GPU a workload uses. These decisions impact more than just the initial placement of workloads. They also shape how GPU capacity changes over time, affecting fragmentation, consolidation, and how easily new workloads can be scheduled. In this article, we will look at workloads that use fractional GPU profiles and how their sizing choices impact overall platform efficiency.
 
 AI platforms typically run a wide range of workloads. Along with large language models that use full GPUs, span several GPUs, or span across multiple hosts, most setups also include smaller but important services. Embedding models support retrieval pipelines, small language models handle tasks like moderation and security analysis, and data science notebooks support experimentation and model development. As mentioned in the earlier article about same-size and mixed-size deployments, these workloads often use fractional vGPU profiles. To get the most from the platform, you need to choose the right vGPU profile and vGPU mode. It can be tempting to size profiles as closely as possible to actual memory use, but sizing too tightly can isolate GPU capacity and lower overall efficiency.
 

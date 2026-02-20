@@ -5,6 +5,9 @@ draft: false
 categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 slug: "why-gpu-placement-becomes-the-defining-problem"
+
+series: ["Architecting AI Infrastructure"]
+series_order: 1
 ---
 
 ## Architecting AI Infrastructure Series - Part 1

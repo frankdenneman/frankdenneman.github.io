@@ -4,6 +4,9 @@ date: 2026-02-13T12:50:00+01:00
 draft: false
 categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
+
+series: ["Architecting AI Infrastructure"]
+series_order: 3
 ---
 
 ## Architecting AI Infrastructure - Part 3

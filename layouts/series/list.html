@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="page">
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+    </header>
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    {{ $seriesName := "Architecting AI Infrastructure" }}
+    {{ $pages := where site.RegularPages "Params.series" "intersect" (slice $seriesName) }}
+    {{ $sorted := sort $pages "Params.series_order" "asc" }}
+
+    <h2>All parts</h2>
+    <ol>
+      {{ range $sorted }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.series_order }}<span> (Part {{ . }})</span>{{ end }}
+          <div><small>{{ .Date.Format "Jan 2, 2006" }}</small></div>
+        </li>
+      {{ end }}
+    </ol>
+  </article>
+</main>
+{{ end }}

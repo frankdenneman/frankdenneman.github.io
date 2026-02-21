@@ -1,0 +1,197 @@
+/* Smaller sidebar social icons */
+.sidebar i.fab,
+.sidebar i.fa-brands,
+.sidebar i[class^="fa"],
+.sidebar i[class*=" fa-"] {
+  font-size: 20px !important;
+  line-height: 1 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Tighter spacing between icons */
+.sidebar .social-links a {
+  margin-right: 6px !important;
+}
+
+.main-wrapper {
+  grid-template-columns: 200px 1fr !important;
+}
+
+/* Brand color for post titles (Anatole variations) */
+.post__title,
+.post__title a,
+.post-title,
+.post-title a,
+article h1 a,
+article h2 a,
+article header h1,
+article header h2 {
+  color: #23678c !important;
+}
+
+
+/* Brand color for post titles on the list page (home, section pages) */
+.post__content h3 > a {
+  color: #23678c !important;
+}
+
+/* Brand color for the single-post title (Anatole uses h1 in post content) */
+.post__content h1 {
+  color: #23678c !important;
+}
+
+
+.post__content h3 > a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== Brand Color: Deep Navy ===== */
+
+/* 1️⃣ Name under headshot */
+.sidebar__introduction-title {
+  color: #032350 !important;
+}
+
+/* 2️⃣ Top navigation menu links */
+.nav__list-item a,
+.nav__link--active {
+  color: #032350 !important;
+}
+
+/* Optional: hover effect */
+.nav__list-item a:hover {
+  opacity: 0.75;
+}
+
+/* 3️⃣ Category badges (AI, NUMA, etc.) */
+.category {
+  background-color: #032350 !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+/* Ensure category links stay white */
+.category a {
+  color: #ffffff !important;
+}
+
+
+/* ===== Brand Color #032350 ===== */
+
+/* 1️⃣ Name under headshot */
+.sidebar__introduction-title {
+  color: #032350 !important;
+}
+
+/* 2️⃣ Top navigation links */
+.nav__list .nav__list-item a {
+  color: #032350 !important;
+}
+
+/* Active nav item */
+.nav__list .nav__link--active {
+  color: #032350 !important;
+}
+
+/* 3️⃣ Category badges */
+.post__content .category,
+.category {
+  background-color: #032350 !important;
+  color: #ffffff !important;
+}
+
+/* Force category link text to white */
+.category a,
+.category a:visited,
+.post__content .category a {
+  color: #ffffff !important;
+}
+
+
+/* ===== Brand color fixes (exact markup) ===== */
+
+/* Name under headshot is an <a> inside the title container */
+.sidebar__introduction-title a,
+.sidebar__introduction-title a:visited {
+  color: #032350 !important;
+}
+
+/* Top navigation links are anchors; cover states */
+.nav__list-item a,
+.nav__list-item a:visited,
+.nav__list-item a:hover,
+.nav__list-item a:active,
+.nav__link--active,
+.nav__link--active:visited {
+  color: #032350 !important;
+}
+
+/* Category badge is the <a class="category"> itself */
+a.category,
+a.category:visited,
+a.category:hover,
+a.category:active {
+  background-color: #032350 !important;
+  color: #ffffff !important;
+}
+
+
+/* ===== Brand Refinement ===== */
+
+/* Slightly lighter brand blue */
+:root {
+  --brand-blue: #0b2f5c;
+}
+
+/* Name under headshot */
+.sidebar__introduction-title a,
+.sidebar__introduction-title a:visited {
+  color: var(--brand-blue) !important;
+}
+
+/* Navigation */
+.nav__list-item a,
+.nav__list-item a:visited {
+  color: var(--brand-blue) !important;
+  transition: color 0.2s ease;
+}
+
+/* Active nav slightly stronger */
+.nav__link--active {
+  font-weight: 600;
+}
+
+/* Category badges refined */
+a.category,
+a.category:visited {
+  background-color: var(--brand-blue) !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+
+/* ===== Article Header Accent ===== */
+
+/* Only affect headers inside article content */
+.post__content h2,
+.post__content h3,
+.post__content h4 {
+  color: #23678c !important;
+}
+
+/* Slight spacing refinement for long-form readability */
+.post__content h2 {
+  margin-top: 2.2rem;
+}
+
+.post__content h3 {
+  margin-top: 1.6rem;
+}
+

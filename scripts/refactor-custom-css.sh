@@ -1,3 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+CSS_FILE="assets/css/custom.css"
+TS="$(date +"%Y%m%d-%H%M%S")"
+BACKUP="${CSS_FILE}.bak.${TS}"
+
+mkdir -p "$(dirname "$CSS_FILE")"
+
+if [ -f "$CSS_FILE" ]; then
+  cp "$CSS_FILE" "$BACKUP"
+  echo "Backup created: $BACKUP"
+fi
+
+cat > "$CSS_FILE" <<'CSS'
 /* =============================================================================
    FrankDenneman.nl Custom CSS
    Refactored for clarity and maintainability
@@ -7,7 +22,7 @@
 :root {
   --brand-navy: #032350;     /* primary identity */
   --brand-accent: #23678c;   /* headings & post title accent */
-  --brand-teal: #20B2AA;     /* category badges */
+  --brand-teal: #00AEEF;     /* category badges */
 }
 
 /* =============================================================================
@@ -129,3 +144,6 @@ a.category:active {
 .post__content h2 { margin-top: 2.2rem; }
 .post__content h3 { margin-top: 1.6rem; }
 
+CSS
+
+echo "Refactor complete: $CSS_FILE"

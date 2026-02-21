@@ -1,0 +1,69 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://frankdenneman.nl/#person",
+  "name": "Frank Denneman",
+  "url": "https://frankdenneman.nl",
+  "jobTitle": "Distinguished Engineer and Chief Technologist for AI",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "VMware Cloud Foundation (Broadcom)"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/frankdenneman/",
+    "https://github.com/frankdenneman",
+    "https://x.com/FrankDenneman",
+    "https://www.instagram.com/roadtoimmersion"
+  ],
+  "knowsAbout": [
+    "AI infrastructure",
+    "GPU resource management",
+    "NUMA architecture",
+    "VMware Cloud Foundation",
+    "vSphere",
+    "NVIDIA GPU platforms",
+    "AI platform design",
+    "Virtualized AI platforms",
+    "GPU scheduling and placement"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "@id": "https://frankdenneman.nl/#ai-infrastructure-series",
+  "name": "Architecting AI Infrastructure",
+  "url": "https://frankdenneman.nl/",
+  "creator": {
+    "@id": "https://frankdenneman.nl/#person"
+  },
+  "about": [
+    "AI infrastructure",
+    "GPU placement",
+    "VMware Cloud Foundation",
+    "NUMA-aware design",
+    "Virtualized AI platforms"
+  ]
+}
+</script>
+
+{{/* Auto-link posts to the "Architecting AI Infrastructure" series (no per-post edits). */}}
+{{- if and .IsPage (eq .Section "posts") (in .RawContent "Architecting AI Infrastructure - Part") -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "{{ .Permalink }}#blogposting",
+  "headline": {{ .Title | jsonify }},
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}",
+  "author": { "@id": "https://frankdenneman.nl/#person" },
+  "isPartOf": { "@id": "https://frankdenneman.nl/#ai-infrastructure-series" }
+}
+</script>
+{{- end -}}
+

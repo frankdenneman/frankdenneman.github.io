@@ -21,6 +21,9 @@ canonifyURLs = true
   tag = "tags"
 
 [params]
+description = """I'm Frank Denneman, Distinguished Engineer and Chief Technologist for AI in VMware Cloud Foundation (Broadcom).
+I write about AI infrastructure, GPU placement, and on-prem resource management."""
+
 customCss = ["css/custom.css"]
 gtagId = "G-XSZJ05LPXJ"
   # Anatole sidebar title (name under profile)
@@ -114,3 +117,4 @@ allow = [
   unsafe = true
 [permalinks]
   posts = "/posts/:contentbasename/"
+

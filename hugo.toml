@@ -21,8 +21,10 @@ canonifyURLs = true
   tag = "tags"
 
 [params]
-description = """Distinguished Engineer | Chief Technologist for AI | VMware Cloud Foundation (Broadcom).
-I write about AI infrastructure, GPU placement, and on-prem resource management."""
+description = """Distinguished Engineer | Chief Technologist for AI
+VMware Cloud Foundation (Broadcom)
+
+I write about AI platform architecture, GPU resource strategy, and NUMA-aware infrastructure design."""
 
 customCss = ["css/custom.css"]
 gtagId = "G-XSZJ05LPXJ"

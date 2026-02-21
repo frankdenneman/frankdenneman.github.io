@@ -51,7 +51,8 @@
 </script>
 
 {{/* Auto-link posts to the "Architecting AI Infrastructure" series (no per-post edits). */}}
-{{- if and .IsPage (eq .Section "posts") (in .RawContent "Architecting AI Infrastructure - Part") -}}
+{{- with .Page -}}
+  {{- if and (eq .Section "posts") (in .RawContent "Architecting AI Infrastructure - Part") -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,5 +66,6 @@
   "isPartOf": { "@id": "https://frankdenneman.nl/#ai-infrastructure-series" }
 }
 </script>
+  {{- end -}}
 {{- end -}}
 

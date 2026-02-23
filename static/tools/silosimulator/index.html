@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NVIDIA vGPU Placement Simulator</title>
+<title>Mixed Mode vGPU Profile Placement Silo Simulator</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
 
@@ -174,12 +174,9 @@
   .rec-section-header .rsh-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
   .rec-section-header .rsh-title { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); white-space: nowrap; }
   .rec-section-header .rsh-badge { font-family: 'Space Mono', monospace; font-size: 9px; color: var(--text-muted); background: var(--surface3); border: 1px solid var(--border); padding: 2px 7px; border-radius: 10px; letter-spacing: 0; font-weight: 400; white-space: nowrap; }
-  .rec-section-header .rsh-desc { font-size: 10px; color: var(--text-muted); font-weight: 400; letter-spacing: 0; text-transform: none; margin-left: 2px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .rec-section-header .rsh-desc { font-size: 10px; color: var(--text-muted); font-weight: 400; letter-spacing: 0; text-transform: none; margin-left: 2px; flex: 1 1 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
   /* Cluster table */
-  .cluster-table td { padding: 10px 10px; vertical-align: middle; border-bottom: 1px solid var(--border); }
-  .cluster-table tr:last-child td { border-bottom: none; }
-  .cluster-table tr:hover td { background: rgba(255,255,255,0.02); }
 
   /* Buttons */
   .btn { font-family: 'Space Mono', monospace; font-size: 11px; padding: 6px 14px; border-radius: 4px; border: 1px solid var(--border); cursor: pointer; transition: all 0.15s; }
@@ -200,28 +197,28 @@
   .mem-header { padding: 12px 16px; background: var(--map-surface2); border-bottom: 1px solid var(--map-border); display: flex; justify-content: space-between; align-items: center; }
   .mem-header-left { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--map-text-dim); display: flex; align-items: center; gap: 8px; }
   .mem-header-left .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 6px var(--amber); }
-  .mem-body { padding: 16px; background: var(--map-bg); }
+  .mem-body { padding: 16px; background: var(--surface); }
   .frag-bar-wrap { margin-bottom: 14px; }
-  .frag-bar-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--map-text-dim); margin-bottom: 5px; }
-  .frag-bar { height: 8px; background: var(--map-surface3); border-radius: 4px; overflow: hidden; display: flex; }
+  .frag-bar-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--text-muted); margin-bottom: 5px; }
+  .frag-bar { height: 8px; background: var(--surface3); border-radius: 4px; overflow: hidden; display: flex; }
   .frag-bar-alloc { height: 100%; background: var(--primary); transition: width 0.3s ease; }
   .frag-bar-silo  { height: 100%; background: var(--red); opacity: 0.7; transition: width 0.3s ease; }
   .mem-wrapper { display: grid; grid-template-columns: 40px 1fr; }
   #mem-grid { display: grid; gap: 3px; }
   .mem-cell { height: 34px; border-radius: 3px; position: relative; transition: background 0.2s; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-size: 9px; font-weight: 700; overflow: hidden; cursor: default; }
-  .mem-cell.free { background: var(--map-surface3); border: 1px solid var(--map-border); }
-  .mem-cell.siloed { background: repeating-linear-gradient(45deg, rgba(220,38,38,0.3), rgba(220,38,38,0.3) 4px, rgba(220,38,38,0.07) 4px, rgba(220,38,38,0.07) 8px); border: 1px solid rgba(220,38,38,0.45); }
+  .mem-cell.free { background: var(--surface3); border: 1px solid var(--border); }
+  .mem-cell.siloed { background: repeating-linear-gradient(45deg, rgba(220,38,38,0.18), rgba(220,38,38,0.18) 4px, rgba(220,38,38,0.04) 4px, rgba(220,38,38,0.04) 8px); border: 1px solid rgba(220,38,38,0.35); }
   .mem-cell.siloed::after { content: '✕'; color: var(--red); opacity: 0.7; font-size: 10px; }
   .mem-cell.occupied { border: none; color: rgba(255,255,255,0.85); font-size: 10px; letter-spacing: 0.5px; }
   .mem-cell.block-start { border-radius: 4px 0 0 4px; }
   .mem-cell.block-mid   { border-radius: 0; }
   .mem-cell.block-end   { border-radius: 0 4px 4px 0; }
   .mem-cell.block-solo  { border-radius: 4px; }
-  .mem-cell[data-tip]:hover::before { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #0f172a; border: 1px solid var(--map-border); color: var(--map-text); font-size: 10px; padding: 4px 8px; border-radius: 4px; white-space: nowrap; z-index: 100; pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
-  .mem-axis { display: grid; font-family: 'Space Mono', monospace; font-size: 9px; color: var(--map-text-dim); gap: 3px; }
+  .mem-cell[data-tip]:hover::before { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: var(--text); border: 1px solid var(--border); color: #fff; font-size: 10px; padding: 4px 8px; border-radius: 4px; white-space: nowrap; z-index: 100; pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  .mem-axis { display: grid; font-family: 'Space Mono', monospace; font-size: 9px; color: var(--text-muted); gap: 3px; }
   .axis-label { display: flex; align-items: center; justify-content: flex-end; padding-right: 6px; height: 34px; }
   /* Legend in mem header uses light text on dark bg */
-  #mem-legend span { color: var(--map-text-dim) !important; }
+  #mem-legend span { color: var(--text-muted) !important; }
 
   /* Insight */
   .insight-box { background: var(--surface3); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; font-size: 12px; color: var(--text-dim); line-height: 1.6; display: flex; gap: 10px; align-items: flex-start; }
@@ -231,7 +228,7 @@
   .insight-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
 
   /* Alloc list */
-  .alloc-list-inner { display: flex; flex-direction: column; gap: 5px; max-height: 200px; overflow-y: auto; }
+  .alloc-list-inner { display: flex; flex-direction: column; gap: 5px; }
   .alloc-item { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; background: var(--surface3); border: 1px solid var(--border); border-radius: 4px; font-family: 'Space Mono', monospace; font-size: 11px; }
   .alloc-item .ai-left { display: flex; align-items: center; gap: 8px; }
   .ai-info { color: var(--text-dim); font-size: 10px; }
@@ -262,7 +259,7 @@
   <header>
     <div class="logo-area">
       <div class="logo-badge">VGPU MIXED-SIZE MODE</div>
-      <h1>Placement <span>Silo</span> Simulator</h1>
+      <h1>Mixed Mode vGPU Profile Placement <span>Silo</span> Simulator</h1>
       <div class="subtitle">Visualize how vGPU profile combinations create siloed (unreachable) GPU capacity</div>
     </div>
     <div class="header-links">
@@ -312,9 +309,15 @@
         <div class="panel-body">
           <div class="alloc-hint">Click <strong style="color:var(--text-dim)">+</strong> to place a VM — each click simulates the next FCFS allocation and shows emerging silos in real time.</div>
           <div class="profile-grid" id="profile-grid"></div>
-          <div style="margin-top:10px;display:flex;justify-content:flex-end;">
+          <div style="margin-top:10px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <button class="btn" onclick="runRandomUntilFail()">Randomize until first failed placement</button>
+              <button class="btn" onclick="runRandomMonteCarlo()">Run 25.000 random runs (Monte Carlo)</button>
+            </div>
             <button class="btn btn-red" onclick="resetAllocations()">✕ Reset instances</button>
           </div>
+          <div id="random-mc-summary" style="margin-top:8px;font-size:11px;color:var(--text-dim);"></div>
+          <div id="random-mc-actions" style="margin-top:6px;display:none;gap:8px;flex-wrap:wrap;"></div>
         </div>
       </div>
 
@@ -346,25 +349,26 @@
         </div>
       </div>
 
-      <div class="mem-panel">
-        <div class="mem-header">
-          <div class="mem-header-left"><div class="dot"></div> GPU Memory Map</div>
-          <span id="gpu-label-badge" style="font-family:'Space Mono',monospace;font-size:10px;color:var(--text-muted);"></span>
+      <div class="panel">
+        <div class="panel-header">
+          <div class="dot" style="background:var(--amber);box-shadow:0 0 6px var(--amber)"></div>
+          GPU Memory Map
+          <span id="gpu-label-badge" style="font-family:'Space Mono',monospace;font-size:10px;color:var(--text-muted);margin-left:auto;font-weight:400;letter-spacing:0;text-transform:none;"></span>
         </div>
         <div class="mem-body">
           <div class="frag-bar-wrap">
             <div class="frag-bar-label">
-              <span style="color:var(--map-text-dim)">Memory breakdown</span>
-              <span id="util-pct-label" style="color:var(--map-text-dim);">—</span>
+              <span style="color:var(--text-muted)">Memory breakdown</span>
+              <span id="util-pct-label" style="color:var(--text-muted);">—</span>
             </div>
             <div class="frag-bar">
               <div class="frag-bar-alloc" id="bar-alloc" style="width:0%"></div>
               <div class="frag-bar-silo"  id="bar-silo"  style="width:0%"></div>
             </div>
-            <div id="mem-legend" style="display:flex;gap:16px;margin-top:6px;font-size:10px;color:var(--map-text-dim);">
+            <div id="mem-legend" style="display:flex;gap:16px;margin-top:6px;font-size:10px;color:var(--text-muted);">
               <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--primary);margin-right:4px;vertical-align:middle;"></span>Allocated</span>
               <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--red);margin-right:4px;vertical-align:middle;opacity:0.7"></span>Siloed (unreachable by mix)</span>
-              <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--map-surface3);border:1px solid var(--map-border);margin-right:4px;vertical-align:middle;"></span>Free</span>
+              <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--surface3);border:1px solid var(--border);margin-right:4px;vertical-align:middle;"></span>Free</span>
             </div>
           </div>
           <div class="mem-wrapper">
@@ -388,40 +392,34 @@
         </div>
       </div>
 
-    </div>
-  </div>
-
-  <!-- ── Full-width Profile Recommender ── -->
-  <div class="panel" style="margin-top:20px;">
-    <div class="panel-header">
-      <div class="dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan)"></div>
-      Profile Recommender
-      <span class="step-badge">STEP 3</span>
-      <span style="margin-left:8px;font-size:10px;color:var(--text-muted);font-weight:400;letter-spacing:0;text-transform:none;">Scores profiles by siloed capacity impact using placement boundary alignment analysis</span>
-    </div>
-    <div class="panel-body">
-      <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap;">
-        <div style="font-size:12px;color:var(--text-dim);line-height:1.5;flex:1;min-width:300px;">
-          Enter your workload's actual GPU memory need. All profiles in your selected mix that can fit the workload are ranked by siloed capacity impact — not just per-VM overhead. A slim-fit profile may look cheaper per VM but create far more siloed capacity through boundary misalignment with the rest of your mix.
+      <!-- Profile Recommender (inline on right column) -->
+      <div class="panel" style="margin-top:16px;">
+        <div class="panel-header">
+          <div class="dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan)"></div>
+          Profile Recommender
+          <span class="step-badge">STEP 3</span>
+          <span style="margin-left:8px;font-size:10px;color:var(--text-muted);font-weight:400;letter-spacing:0;text-transform:none;">Ranks fitting profiles by silo impact for your selected mix.</span>
         </div>
-        <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;flex-wrap:wrap;">
-          <div style="display:flex;align-items:center;gap:8px;">
-            <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">Workload needs</label>
-            <div class="workload-input-wrap" style="width:100px;">
-              <input type="number" id="workload-gb" min="1" value="7">
-              <span class="gb-unit">GB</span>
+        <div class="panel-body">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
+            <div style="font-size:11px;color:var(--text-dim);line-height:1.5;flex:1;min-width:220px;">
+              Enter the workload's GPU memory need. Profiles in your mix that can fit it are ranked by siloed capacity impact, placement density and headroom.
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;flex-wrap:wrap;">
+              <div style="display:flex;align-items:center;gap:6px;">
+                <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">Workload needs</label>
+                <div class="workload-input-wrap" style="width:90px;">
+                  <input type="number" id="workload-gb" min="1" value="7">
+                  <span class="gb-unit">GB</span>
+                </div>
+              </div>
+              <button class="btn-recommend" onclick="runRecommender()">Analyse →</button>
             </div>
           </div>
-          <div style="display:flex;align-items:center;gap:8px;">
-            <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">GPUs in cluster</label>
-            <input type="number" id="cluster-gpus" min="1" max="10000" value="10"
-              style="width:80px;background:var(--surface3);border:1px solid var(--border);color:var(--text);padding:8px 10px;border-radius:5px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;outline:none;transition:border-color 0.2s;"
-              onfocus="this.style.borderColor='var(--cyan)'" onblur="this.style.borderColor='var(--border)'">
-          </div>
-          <button class="btn-recommend" onclick="runRecommender()">Analyse →</button>
+          <div id="rec-output"><div class="rec-empty">Enter a workload size and click Analyse.</div></div>
         </div>
       </div>
-      <div id="rec-output"><div class="rec-empty">Enter a workload size and click Analyse.</div></div>
+
     </div>
   </div>
 
@@ -441,7 +439,7 @@
         </a>
       </div>
     </div>
-    <div class="footer-right">vGPU Placement Silo Simulator · v1.3<br>Profile data: NVIDIA vGPU Software 19.x<br>Built for planning &amp; education</div>
+    <div class="footer-right">Mixed Mode vGPU Profile Placement Silo Simulator · v1.4<br>Profile data: NVIDIA vGPU Software 19.x<br>Built for planning &amp; education</div>
   </footer>
 
 </div>
@@ -540,6 +538,7 @@ let currentGpuKey = null;
 let selectedProfileNames = new Set();
 let allocations = [];
 let nextId = 0;
+let lastMonteCarlo = null; // worst-run allocations + restore snapshot
 
 // ─── Math helpers ─────────────────────────────────────────────────────────────
 function gcd(a, b) { return b === 0 ? a : gcd(b, a % b); }
@@ -659,187 +658,126 @@ function getSelectedProfiles() {
   return GPUS[currentGpuKey].profiles.filter(p => selectedProfileNames.has(p.name));
 }
 
+// ─── Recommender helpers ──────────────────────────────────────────────────────
+function buildEffectiveMix(candidate, selectedProfiles) {
+  const effective = selectedProfiles.filter(p => p.gb >= candidate.gb);
+  if (!effective.find(p => p.name === candidate.name)) effective.push(candidate);
+  return effective;
+}
+
+function buildPairwiseMixAnalysis(effectiveMixProfiles, totalGB) {
+  const effectiveMixSizes = effectiveMixProfiles.map(p => p.gb);
+  const pairwise = [];
+  for (let i = 0; i < effectiveMixProfiles.length; i++) {
+    for (let j = i + 1; j < effectiveMixProfiles.length; j++) {
+      const a = effectiveMixProfiles[i];
+      const b = effectiveMixProfiles[j];
+      const analysis = pairwiseSiloAnalysis(a.gb, b.gb, effectiveMixSizes, totalGB);
+      pairwise.push({ profileA: a, profileB: b, ...analysis });
+    }
+  }
+  const maxPairSilo = pairwise.length > 0 ? Math.max(...pairwise.map(p => p.worstCaseTotal)) : 0;
+  const totalPairSilo = pairwise.reduce((sum, pw) => sum + pw.worstCaseTotal, 0);
+  const minSharedBoundaries = pairwise.length > 0
+    ? Math.min(...pairwise.map(p => p.shared.length))
+    : 0;
+  return { pairwise, maxPairSilo, totalPairSilo, minSharedBoundaries };
+}
+
+function scoreCandidateProfile(candidate, workloadGB, selectedProfiles, gpuTotalGB) {
+  const overhead = candidate.gb - workloadGB;
+  const effectiveMixProfiles = buildEffectiveMix(candidate, selectedProfiles);
+  const { pairwise, maxPairSilo, totalPairSilo, minSharedBoundaries } =
+    buildPairwiseMixAnalysis(effectiveMixProfiles, gpuTotalGB);
+
+  const placementDensity = effectiveMixProfiles.reduce(
+    (sum, p) => sum + Math.floor(gpuTotalGB / p.gb), 0
+  );
+  const placementSlots = Math.floor(gpuTotalGB / candidate.gb);
+
+  const headroomRatio = overhead / Math.max(workloadGB, 1);
+  const headroomBonus = Math.min(Math.max(overhead, 0) * 0.8, 5);
+  const excessPenalty = headroomRatio > 1.0
+    ? (overhead - workloadGB) * 3
+    : 0;
+
+  const score =
+    (totalPairSilo * 5) -
+    (placementDensity * 0.4) -
+    headroomBonus +
+    excessPenalty;
+
+  return {
+    profile: candidate,
+    overhead,
+    effectiveMixProfiles,
+    pairwise,
+    maxPairSilo,
+    totalPairSilo,
+    minSharedBoundaries,
+    placementSlots,
+    placementDensity,
+    headroomRatio,
+    score
+  };
+}
+
 // ─── Recommender ─────────────────────────────────────────────────────────────
 function runRecommender() {
   const workloadGB = parseInt(document.getElementById('workload-gb').value, 10);
   const out = document.getElementById('rec-output');
   const gpu = GPUS[currentGpuKey];
 
-  if (!workloadGB || workloadGB < 1) { out.innerHTML = `<div class="rec-empty">Enter a valid workload size (≥ 1 GB).</div>`; return; }
-  if (workloadGB > gpu.totalGB) { out.innerHTML = `<div class="rec-empty">Workload exceeds GPU total (${gpu.totalGB} GB).</div>`; return; }
-  if (selectedProfileNames.size === 0) { out.innerHTML = `<div class="rec-empty">Select your profile mix in Step 1 first — recommendations are context-aware.</div>`; return; }
+  if (!workloadGB || workloadGB < 1) {
+    out.innerHTML = `<div class="rec-empty">Enter a valid workload size (≥ 1 GB).</div>`;
+    return;
+  }
+  if (workloadGB > gpu.totalGB) {
+    out.innerHTML = `<div class="rec-empty">Workload exceeds GPU total (${gpu.totalGB} GB).</div>`;
+    return;
+  }
+  if (selectedProfileNames.size === 0) {
+    out.innerHTML = `<div class="rec-empty">Select your profile mix in Step 1 first — recommendations are context-aware.</div>`;
+    return;
+  }
 
   const selectedProfiles = getSelectedProfiles();
-  
+
   const candidates = selectedProfiles.filter(p => p.gb >= workloadGB);
   if (candidates.length === 0) {
     const smallest = selectedProfiles.length > 0 ? Math.min(...selectedProfiles.map(p => p.gb)) : '—';
     out.innerHTML = `<div class="rec-empty">No profile in your selected mix fits a ${workloadGB} GB workload. Smallest selected profile is ${smallest} GB. Either add a larger profile to your mix or reduce the workload size.</div>`;
     return;
   }
-  const mixGB = selectedProfiles.map(p => p.gb);
 
-  // ── Also consider (not in selected mix, headroom-triggered) ──────────────────
-  // We only surface unselected profiles when they would genuinely reduce headroom
-  // compared to the best fitting profile already in the selected mix.
-  // Example: selected {H100L-11C, H100L-23C}, workload 14GB →
-  //   best selected fit = H100L-23C (9GB headroom)
-  //   H100L-15C (1GB headroom) < 9GB → surface it
-  //   H100L-47C (33GB headroom) > 9GB → skip it
   const ALSO_CONSIDER_N = 3;
-
-  const bestSelectedHeadroom = candidates.length > 0
-    ? Math.min(...candidates.map(p => p.gb - workloadGB))
-    : Infinity;
+  const bestSelectedHeadroom = Math.min(...candidates.map(p => p.gb - workloadGB));
 
   const alsoConsider = gpu.profiles
     .filter(p => {
-      if (p.gb < workloadGB) return false;                    // must fit the workload
-      if (selectedProfileNames.has(p.name)) return false;    // already in selected mix
+      if (p.gb < workloadGB) return false;
+      if (selectedProfileNames.has(p.name)) return false;
       const headroom = p.gb - workloadGB;
-      // Only surface if this profile offers meaningfully less headroom than the best selected fit
-      // Require at least 1GB reduction so we don't clutter with near-identical profiles
       return headroom < bestSelectedHeadroom - 1;
     })
-    .sort((a, b) => (a.gb - workloadGB) - (b.gb - workloadGB))  // closest fit first
+    .sort((a, b) => (a.gb - workloadGB) - (b.gb - workloadGB))
     .slice(0, ALSO_CONSIDER_N);
 
-  const scored = candidates.map(candidate => {
-    const overhead = candidate.gb - workloadGB;
-
-    // ── Effective mix ──────────────────────────────────────────────────────────
-    // If we deploy candidate for this workload, we no longer need any profile
-    // smaller than candidate.gb. The effective mix is: candidate + all selected
-    // profiles whose size >= candidate.gb.
-    // Example: workload 7GB, candidate 10GB, mix {8,10,20}
-    //   → effective mix = {10, 20}  (8GB is no longer needed)
-    // Example: candidate 8GB:
-    //   → effective mix = {8, 10, 20}  (still needs all three)
-    const effectiveMixProfiles = selectedProfiles.filter(p => p.gb >= candidate.gb);
-    // ensure candidate itself is in the mix
-    if (!effectiveMixProfiles.find(p => p.name === candidate.name)) {
-      effectiveMixProfiles.push(candidate);
-    }
-    const effectiveMixSizes = effectiveMixProfiles.map(p => p.gb);
-
-    // ── Pairwise silo for the EFFECTIVE mix ────────────────────────────────────
-    const pairwise = [];
-    for (let i = 0; i < effectiveMixProfiles.length; i++) {
-      for (let j = i + 1; j < effectiveMixProfiles.length; j++) {
-        const a = effectiveMixProfiles[i];
-        const b = effectiveMixProfiles[j];
-        const analysis = pairwiseSiloAnalysis(a.gb, b.gb, effectiveMixSizes, gpu.totalGB);
-        pairwise.push({ profileA: a, profileB: b, other: b, ...analysis });
-      }
-    }
-
-    const maxPairSilo   = pairwise.length > 0 ? Math.max(...pairwise.map(p => p.worstCaseTotal)) : 0;
-    const totalPairSilo = pairwise.reduce((sum, pw) => sum + pw.worstCaseTotal, 0);
-
-    // Min shared boundaries across all pairs in effective mix
-    const minSharedBoundaries = pairwise.length > 0
-      ? Math.min(...pairwise.map(p => p.shared.length))
-      : Math.floor(gpu.totalGB / candidate.gb) + 1;
-
-    // ── Placement density of effective mix ─────────────────────────────────────
-    // Total VM slots across all profiles in effective mix.
-    // More slots = more scheduling flexibility, better GPU fill.
-    const placementDensity = effectiveMixProfiles.reduce((sum, p) => sum + Math.floor(gpu.totalGB / p.gb), 0);
-    const placementSlots   = Math.floor(gpu.totalGB / candidate.gb); // slots just for this profile
-
-    // ── Headroom logic ─────────────────────────────────────────────────────────
-    // Headroom inside the profile is a BENEFIT up to a point:
-    //   - Reduces memory pressure, limits swapping, absorbs workload growth
-    //   - But when headroom > workloadGB (>100% overshoot), you're trading
-    //     placement density for buffer — diminishing returns become a penalty
-    const headroomRatio  = overhead / Math.max(workloadGB, 1);
-    const headroomBonus  = Math.min(overhead * 0.8, 5);              // benefit, capped
-    const excessPenalty  = headroomRatio > 1.0                       // >100% overshoot
-      ? (overhead - workloadGB) * 3                                  // e.g. 20GB for 7GB → 13GB excess → +39
-      : 0;
-
-    // ── Final score (lower = better) ───────────────────────────────────────────
-    //   Primary:   total silo of effective mix × 5
-    //   Secondary: placement density bonus (more slots = better)
-    //   Tertiary:  headroom is a small benefit, excessive headroom is a penalty
-    const score = (totalPairSilo * 5)
-                - (placementDensity * 0.4)
-                - headroomBonus
-                + excessPenalty;
-
-    return {
-      profile: candidate,
-      overhead,
-      effectiveMixProfiles,
-      pairwise,
-      maxPairSilo,
-      totalPairSilo,
-      minSharedBoundaries,
-      placementSlots,
-      placementDensity,
-      headroomRatio,
-      score
-    };
-  });
+  const scored = candidates.map(candidate =>
+    scoreCandidateProfile(candidate, workloadGB, selectedProfiles, gpu.totalGB)
+  );
 
   scored.sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead);
   const top = scored.slice(0, 3);
 
-  
-
-  // Also-consider analysis: same scoring pipeline, shown separately, never ranked above selected-mix results.
-  // We also track how much headroom is saved vs the best currently-selected fit.
   const bestSelectedFitName = candidates.length > 0
     ? candidates.reduce((best, p) => (p.gb - workloadGB) < (best.gb - workloadGB) ? p : best).name
     : null;
 
   const alsoScored = alsoConsider.map(candidate => {
-    const found = scored.find(r => r.profile.name === candidate.name);
-    if (found) return { ...found, headroomSaved: bestSelectedHeadroom - found.overhead, _alsoConsider: true };
-
-    const overhead = candidate.gb - workloadGB;
-    const headroomSaved = bestSelectedHeadroom - overhead;  // GB saved vs best selected fit
-
-    const effectiveMixProfiles = [candidate, ...selectedProfiles.filter(p => p.gb >= candidate.gb)]
-      .reduce((acc, p) => { if (!acc.find(x => x.name === p.name)) acc.push(p); return acc; }, []);
-
-    const effectiveMixSizes = effectiveMixProfiles.map(p => p.gb);
-    const pairwise = [];
-    for (let i = 0; i < effectiveMixProfiles.length; i++) {
-      for (let j = i + 1; j < effectiveMixProfiles.length; j++) {
-        const a = effectiveMixProfiles[i], b = effectiveMixProfiles[j];
-        const analysis = pairwiseSiloAnalysis(a.gb, b.gb, effectiveMixSizes, gpu.totalGB);
-        pairwise.push({ profileA: a, profileB: b, ...analysis });
-      }
-    }
-
-    const maxPairSilo = pairwise.length > 0 ? Math.max(...pairwise.map(pw => pw.worstCaseTotal)) : 0;
-    const totalPairSilo = pairwise.reduce((sum, pw) => sum + pw.worstCaseTotal, 0);
-    const minSharedBoundaries = pairwise.length > 0 ? Math.min(...pairwise.map(pw => pw.shared.length)) : 99;
-
-    const placementSlots = Math.floor(gpu.totalGB / candidate.gb);
-    const placementDensity = effectiveMixProfiles.reduce((sum, p) => sum + Math.floor(gpu.totalGB / p.gb), 0);
-
-    const headroomRatio = overhead / Math.max(workloadGB, 1);
-    const headroomBonus = Math.min(overhead * 0.8, 5);
-    const excessPenalty = headroomRatio > 1.0 ? (overhead - workloadGB) * 3 : 0;
-    const score = (totalPairSilo * 5) - (placementDensity * 0.4) - headroomBonus + excessPenalty;
-
-    return {
-      profile: candidate,
-      overhead,
-      headroomSaved,
-      effectiveMixProfiles,
-      pairwise,
-      maxPairSilo,
-      totalPairSilo,
-      minSharedBoundaries,
-      placementSlots,
-      placementDensity,
-      headroomRatio,
-      score,
-      _alsoConsider: true
-    };
+    const base = scoreCandidateProfile(candidate, workloadGB, selectedProfiles, gpu.totalGB);
+    const headroomSaved = bestSelectedHeadroom - base.overhead;
+    return { ...base, headroomSaved, _alsoConsider: true };
   }).sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead);
 const rankBadge = ['best', 'warn', 'poor'];
   const rankLabel = ['Best fit', 'Acceptable', 'Avoid'];
@@ -847,10 +785,6 @@ const rankBadge = ['best', 'warn', 'poor'];
   const html = top.map((r, idx) => {
     const profileColor = r.profile.color;
     const effectiveMixNames = r.effectiveMixProfiles.map(p => p.name).join(' + ');
-    const eliminatedProfiles = []; // keep selected mix intent; do not claim other selected profiles are eliminated
-    const eliminatedNote = eliminatedProfiles.length > 0
-      ? `Evaluating this profile within your selected mix still includes ${eliminatedProfiles.map(p => p.name).join(', ')} — reducing your effective mix to {${effectiveMixNames}}.`
-      : `This keeps your full mix of {${effectiveMixNames}} in play.`;
 
     // Pairwise table using effective mix pairs
     let pairwiseHTML = '';
@@ -879,25 +813,30 @@ const rankBadge = ['best', 'warn', 'poor'];
 
     let reason = '';
     if (idx === 0) {
-      if (r.totalPairSilo === 0 && r.overhead === 0) {
-        reason = `${r.profile.name} is an exact size match AND creates zero siloed capacity in its effective mix {${effectiveMixNames}}. Every GB of GPU memory remains reachable.`;
-      } else if (r.totalPairSilo === 0) {
-        reason = `${eliminatedNote} The resulting {${effectiveMixNames}} mix has zero siloed capacity — placement boundaries align cleanly, and no memory is permanently locked out regardless of VM startup order. The ${r.overhead} GB of headroom per workload also reduces memory pressure and swap risk.`;
-      } else {
-        const loser = top[1];
-        reason = `${eliminatedNote} The effective mix {${effectiveMixNames}} produces ${r.totalPairSilo} GB total siloed capacity — less than ${loser ? loser.profile.name + ' (' + loser.totalPairSilo + ' GB)' : 'the alternatives'}. With ${r.placementDensity} total placement slots across the mix and ${r.overhead > 0 ? r.overhead + ' GB of workload headroom per VM,' : 'an exact fit,'} this is the best balance of alignment, density, and workload buffer.`;
-      }
+      const utilText = r.overhead === 0
+        ? 'Exact fit'
+        : `+${r.overhead} GB headroom`;
+      const siloText = r.totalPairSilo === 0
+        ? '0 GB siloed'
+        : `${r.totalPairSilo} GB siloed`;
+      reason = `<strong>Why #1:</strong> ${utilText} for this workload and ${siloText} across the effective mix {${effectiveMixNames}}. This option gives ${r.placementDensity} total placement slots, making it the most alignment‑friendly choice for your current mix.`;
     } else if (idx === 1) {
       const better = top[0];
       const siloGap = r.totalPairSilo - better.totalPairSilo;
       const densityGap = r.placementDensity - better.placementDensity;
-      reason = `${eliminatedNote} The effective mix {${effectiveMixNames}} has ${r.totalPairSilo} GB total siloed capacity${siloGap > 0 ? ` — ${siloGap} GB more than ${better.profile.name}` : ''}. ${densityGap > 0 ? `It does offer ${densityGap} more placement slots across the mix (${r.placementDensity} vs ${better.placementDensity}), but` : 'It has'} the boundary misalignment cost outweighs the density gain.`;
+      const siloPhrase = siloGap > 0
+        ? `${siloGap} GB more siloed than ${better.profile.name}`
+        : `${Math.abs(siloGap)} GB less siloed than ${better.profile.name}`;
+      const densityPhrase = densityGap > 0
+        ? `${r.placementDensity} vs ${better.placementDensity} slots`
+        : `${better.placementDensity - r.placementDensity} fewer slots than ${better.profile.name}`;
+      reason = `<strong>Why not #1:</strong> ${r.profile.name} creates ${r.totalPairSilo} GB siloed in {${effectiveMixNames}} (${siloPhrase}). It has ${densityPhrase}, so overall it is slightly less balanced than the top pick.`;
     } else {
       const worstPair = r.pairwise.length > 0 ? r.pairwise.reduce((a, b) => a.worstCaseTotal > b.worstCaseTotal ? a : b) : null;
       const excessNote = r.headroomRatio > 1.0
-        ? ` The ${r.overhead} GB of headroom (${Math.round(r.headroomRatio * 100)}% above workload size) also significantly reduces placement density — only ${r.placementSlots} slots per GPU.`
+        ? ` It also overprovisions heavily: +${r.overhead} GB per VM (${Math.round(r.headroomRatio * 100)}% above workload), cutting usable slots down to ${r.placementSlots} per GPU.`
         : '';
-      reason = `${eliminatedNote} ${worstPair ? `The ${worstPair.profileA.name} + ${worstPair.profileB.name} pairing in the effective mix has LCM = ${worstPair.lcmPeriod} GB with only ${worstPair.shared.length} shared placement boundaries, trapping up to ${worstPair.worstCaseTotal} GB per period.` : `Poor boundary alignment in the effective mix.`}${excessNote}`;
+      reason = `<strong>When to avoid:</strong> boundary misalignment in {${effectiveMixNames}} can trap up to ${worstPair ? worstPair.worstCaseTotal : r.totalPairSilo} GB, making siloed capacity and placement flexibility noticeably worse than the higher‑ranked options.${excessNote}`;
     }
 
     return `
@@ -924,8 +863,8 @@ const rankBadge = ['best', 'warn', 'poor'];
             <div class="rm-val" style="color:${densityColor}">${r.placementDensity} slots</div>
           </div>
           <div class="rec-metric">
-            <div class="rm-label">Effective mix size</div>
-            <div class="rm-val" style="color:var(--text-dim)">${r.effectiveMixProfiles.length} profile type${r.effectiveMixProfiles.length !== 1 ? 's' : ''}</div>
+            <div class="rm-label">Active profile types</div>
+            <div class="rm-val" style="color:var(--text-dim)">${r.effectiveMixProfiles.length} type${r.effectiveMixProfiles.length !== 1 ? 's' : ''}</div>
           </div>
         </div>
         ${pairwiseHTML}
@@ -973,8 +912,8 @@ const rankBadge = ['best', 'warn', 'poor'];
         : `${Math.abs(siloVsBest)} GB less silo than ${bestPrimary.profile.name}`;
 
     const reason = r.overhead === 0
-      ? `${r.profile.name} is an exact size match for a ${workloadGB} GB workload — no headroom wasted. Compared to ${bestSelectedFitName} (${bestSelectedHeadroom} GB headroom), adding this saves ${headroomSaved} GB per VM. Effective mix {${effectiveMixNames}}: ${r.totalPairSilo === 0 ? 'zero siloed capacity — alignment is clean, this is a clear win' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.`
-      : `Adding ${r.profile.name} cuts per-VM headroom from ${bestSelectedHeadroom} GB → ${r.overhead} GB, recovering ${headroomSaved} GB per workload VM. Effective mix {${effectiveMixNames}}: ${r.totalPairSilo === 0 ? 'zero siloed capacity — alignment holds up, strong candidate to add' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + '). Confirm the silo cost is acceptable before adding this profile'}.`;
+      ? `<strong>Why consider it:</strong> ${r.profile.name} exactly fits a ${workloadGB} GB workload and recovers ${headroomSaved} GB per VM versus ${bestSelectedFitName}. Effective mix {${effectiveMixNames}} leaves ${r.totalPairSilo === 0 ? 'no siloed capacity' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.`
+      : `<strong>Why consider it:</strong> switching to ${r.profile.name} reduces headroom from ${bestSelectedHeadroom} GB → ${r.overhead} GB per VM, saving ${headroomSaved} GB while ${r.totalPairSilo === 0 ? 'keeping siloed capacity at 0 GB' : 'creating ' + r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.`;
 
     const headroomBadge = r.overhead > 0
       ? `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(6,205,212,0.1);border:1px solid rgba(6,205,212,0.3);color:var(--cyan);white-space:nowrap;">+${r.overhead} GB headroom</div>`
@@ -1004,8 +943,8 @@ const rankBadge = ['best', 'warn', 'poor'];
               <div class="rm-val" style="color:${siloColor}">${r.totalPairSilo === 0 ? 'None' : r.totalPairSilo + ' GB'}</div>
             </div>
             <div class="rec-metric">
-              <div class="rm-label">Effective mix size</div>
-              <div class="rm-val" style="color:var(--text-dim)">${r.effectiveMixProfiles.length} profile type${r.effectiveMixProfiles.length !== 1 ? 's' : ''}</div>
+              <div class="rm-label">Active profile types</div>
+              <div class="rm-val" style="color:var(--text-dim)">${r.effectiveMixProfiles.length} type${r.effectiveMixProfiles.length !== 1 ? 's' : ''}</div>
             </div>
           </div>
           ${pairwiseHTML}
@@ -1019,20 +958,17 @@ const rankBadge = ['best', 'warn', 'poor'];
     <div style="margin-top:20px;">
       <div class="rec-section-header">
         <div class="rsh-dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan);"></div>
-        <span class="rsh-title">Consider Adding to Your Mix</span>
+        <span class="rsh-title">Tighter Profiles Outside Your Mix</span>
         <span class="rsh-badge">Not currently selected</span>
-        <span class="rsh-desc">${bestSelectedFitName} leaves ${bestSelectedHeadroom} GB headroom — tighter profiles exist outside your mix</span>
+        <span class="rsh-desc">${bestSelectedFitName} leaves ${bestSelectedHeadroom} GB headroom per VM — these profiles cut that down.</span>
       </div>
       <div style="font-size:11px;color:var(--text-dim);line-height:1.7;max-width:800px;margin-bottom:12px;padding:0 2px;">
-        Adding any profile below could cut headroom from <strong style="color:var(--amber)">${bestSelectedHeadroom} GB</strong> per VM —
-        but check the silo alignment analysis before adding it to your mix.
+        Each option below reduces per‑VM headroom from <strong style="color:var(--amber)">${bestSelectedHeadroom} GB</strong>. Use the silo and boundary views to decide whether the added alignment risk is acceptable.
       </div>
       <div class="rec-cards">${alsoCards}</div>
     </div>` : '';
 
   // ── Cluster-level comparison ──────────────────────────────────────────────
-  const clusterGPUs = parseInt(document.getElementById('cluster-gpus').value, 10) || 10;
-  const clusterHTML = buildClusterComparison(top, selectedProfiles, gpu, workloadGB, clusterGPUs);
 
   out.innerHTML = `
     <div class="rec-section-header" style="margin-bottom:14px;">
@@ -1043,287 +979,9 @@ const rankBadge = ['best', 'warn', 'poor'];
       <span class="rsh-desc">scored by silo impact within selected mix</span>
     </div>
     <div class="rec-cards">${html}</div>
-    ${alsoHTML}
-    ${clusterHTML}`;
+    ${alsoHTML}`;
 }
 
-// ── Cluster-level impact simulation ─────────────────────────────────────────
-// Simulates filling a GPU with a round-robin mix of all selected profiles,
-// substituting the candidate profile for wherever the workload profile would go.
-// Returns { vmsPlaced, siloedGB, freeGB, overheadGB }
-function simulateGPUFill(candidateProfile, allSelectedProfiles, gpu) {
-  const totalGB = gpu.totalGB;
-
-  // Build a realistic fill sequence: round-robin through all selected profiles
-  // (candidate included), repeat until we can't place anything more
-  const fillOrder = [];
-  const maxIterations = Math.ceil(totalGB / Math.min(...allSelectedProfiles.map(p => p.gb)));
-  for (let i = 0; i < maxIterations; i++) {
-    for (const p of allSelectedProfiles) {
-      fillOrder.push(p);
-    }
-  }
-
-  const memory = new Array(totalGB).fill(null);
-  let vmsPlaced = 0;
-  let overheadGB = 0;
-
-  for (const p of fillOrder) {
-    const size = p.gb;
-    let placed_at = -1;
-    for (let pos = 0; pos + size <= totalGB; pos += size) {
-      let ok = true;
-      for (let i = pos; i < pos + size; i++) { if (memory[i] !== null) { ok = false; break; } }
-      if (ok) { placed_at = pos; break; }
-    }
-    if (placed_at >= 0) {
-      for (let i = placed_at; i < placed_at + size; i++) memory[i] = p;
-      vmsPlaced++;
-      // overhead is only counted for the candidate profile (workload VMs)
-      if (p.name === candidateProfile.name) overheadGB += (p.gb - candidateProfile.gb);
-    }
-  }
-
-  // Count siloed vs free
-  let siloedGB = 0, freeGB = 0;
-  for (let i = 0; i < totalGB; i++) {
-    if (memory[i] !== null) continue;
-    let reachable = false;
-    for (const p of allSelectedProfiles) {
-      const bs = Math.floor(i / p.gb) * p.gb;
-      if (bs + p.gb > totalGB) continue;
-      let free = true;
-      for (let j = bs; j < bs + p.gb; j++) { if (memory[j] !== null) { free = false; break; } }
-      if (free) { reachable = true; break; }
-    }
-    if (!reachable) siloedGB++; else freeGB++;
-  }
-
-  return { vmsPlaced, siloedGB, freeGB, overheadGB, memory };
-}
-
-// Simulate the exact user-style fill: place profiles in the order they appear
-// in the current allocations list, but swap all instances of profileA with profileB
-function simulateSwappedFill(fromProfileGB, toProfile, allSelectedProfiles, gpu) {
-  const totalGB = gpu.totalGB;
-  // Build fill sequence mirroring current allocations, swapping fromProfileGB → toProfile
-  const swappedAllocs = allocations.map(a =>
-    a.gb === fromProfileGB
-      ? { ...a, profileName: toProfile.name, gb: toProfile.gb, color: toProfile.color }
-      : a
-  );
-  // Also add the remaining profiles proportionally to fill the GPU
-  const fillProfiles = swappedAllocs.length > 0 ? swappedAllocs : allSelectedProfiles.map(p => ({ ...p, id: -1 }));
-
-  const memory = new Array(totalGB).fill(null);
-  let vmsPlaced = 0, overheadGB = 0;
-  const placed = [];
-
-  for (const alloc of fillProfiles) {
-    const size = alloc.gb;
-    let placed_at = -1;
-    for (let pos = 0; pos + size <= totalGB; pos += size) {
-      let ok = true;
-      for (let i = pos; i < pos + size; i++) { if (memory[i] !== null) { ok = false; break; } }
-      if (ok) { placed_at = pos; break; }
-    }
-    if (placed_at >= 0) {
-      for (let i = placed_at; i < placed_at + size; i++) memory[i] = alloc;
-      vmsPlaced++;
-      placed.push({ ...alloc, startGB: placed_at });
-    }
-  }
-
-  let siloedGB = 0, freeGB = 0;
-  for (let i = 0; i < totalGB; i++) {
-    if (memory[i] !== null) continue;
-    let reachable = false;
-    for (const p of allSelectedProfiles) {
-      const bs = Math.floor(i / p.gb) * p.gb;
-      if (bs + p.gb > totalGB) continue;
-      let free = true;
-      for (let j = bs; j < bs + p.gb; j++) { if (memory[j] !== null) { free = false; break; } }
-      if (free) { reachable = true; break; }
-    }
-    if (!reachable) siloedGB++; else freeGB++;
-  }
-
-  return { vmsPlaced, siloedGB, freeGB, memory, placed };
-}
-
-function buildClusterComparison(topCandidates, selectedProfiles, gpu, workloadGB, clusterGPUs) {
-  if (topCandidates.length < 2) return '';
-
-  // For each candidate, simulate swapping ALL current workload-sized allocations to that profile
-  // If no allocations yet, use a round-robin fill
-  const simResults = topCandidates.map(r => {
-    let sim;
-    if (allocations.length > 0) {
-      // Find the current "workload" profile in allocations (any profile >= workloadGB)
-      const workloadProfileGB = allocations.find(a => a.gb >= workloadGB)?.gb || r.profile.gb;
-      sim = simulateSwappedFill(workloadProfileGB, r.profile, selectedProfiles, gpu);
-    } else {
-      sim = simulateGPUFill(r.profile, selectedProfiles, gpu);
-    }
-    return { ...r, sim };
-  });
-
-  // Best = lowest siloed
-  const bestSilo = Math.min(...simResults.map(s => s.sim.siloedGB));
-  const bestVMs  = Math.max(...simResults.map(s => s.sim.vmsPlaced));
-
-  const rows = simResults.map((r, idx) => {
-    const s = r.sim;
-
-    const workloadVMCount = allocations.filter(a => a.gb >= workloadGB).length ||
-      Math.floor(gpu.totalGB / r.profile.gb);
-    const clusterSiloGB    = s.siloedGB * clusterGPUs;
-    const clusterVMs       = s.vmsPlaced * clusterGPUs;
-    const clusterFreeGB    = s.freeGB * clusterGPUs;
-    const clusterHeadroomGB = r.overhead * workloadVMCount * clusterGPUs;
-
-    const isBest = s.siloedGB === bestSilo;
-    const rankColor        = idx === 0 ? 'var(--green)' : idx === 1 ? 'var(--amber)' : 'var(--red)';
-    const siloColor        = s.siloedGB === 0 ? 'var(--green)' : s.siloedGB <= 5 ? 'var(--amber)' : 'var(--red)';
-    const clusterSiloColor = clusterSiloGB === 0 ? 'var(--green)' : clusterSiloGB < 50 ? 'var(--amber)' : 'var(--red)';
-    const headroomColor    = r.overhead === 0 ? 'var(--text-muted)' : r.headroomRatio <= 1.0 ? 'var(--blue)' : 'var(--amber)';
-
-    return `
-      <tr>
-        <td>
-          <div style="display:flex;align-items:center;gap:8px;">
-            <span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${r.profile.color}"></span>
-            <span style="font-family:'Space Mono',monospace;font-weight:700;color:${rankColor}">${r.profile.name}</span>
-            ${isBest ? `<span style="font-size:9px;background:rgba(46,158,255,0.12);color:var(--green);border:1px solid rgba(46,158,255,0.3);border-radius:3px;padding:1px 6px;">BEST</span>` : ''}
-          </div>
-          <div style="font-size:10px;color:var(--text-muted);margin-top:2px;font-family:'Space Mono',monospace;">${r.profile.gb} GB profile · ${r.overhead === 0 ? 'exact fit' : '+' + r.overhead + ' GB headroom/VM'}</div>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:var(--green);font-weight:700;">${s.vmsPlaced}</span>
-          <span style="color:var(--text-muted);font-size:10px;"> VMs</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:${siloColor};font-weight:700;">${s.siloedGB} GB</span>
-          <span style="color:var(--text-muted);font-size:10px;"> siloed</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:${headroomColor};font-weight:700;">${r.overhead === 0 ? '—' : '+' + r.overhead + ' GB'}</span>
-          <span style="color:var(--text-muted);font-size:10px;"> /VM</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:var(--blue);font-weight:700;">${s.freeGB} GB</span>
-          <span style="color:var(--text-muted);font-size:10px;"> free</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:var(--green);font-weight:700;">${clusterVMs}</span>
-          <span style="color:var(--text-muted);font-size:10px;"> VMs</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:${clusterSiloColor};font-weight:700;">${clusterSiloGB} GB</span>
-          <span style="color:var(--text-muted);font-size:10px;"> siloed</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:${headroomColor};font-weight:700;">${clusterHeadroomGB === 0 ? '—' : '+' + clusterHeadroomGB + ' GB'}</span>
-          <span style="color:var(--text-muted);font-size:10px;"> headroom</span>
-        </td>
-        <td style="font-family:'Space Mono',monospace;">
-          <span style="color:var(--blue);font-weight:700;">${clusterFreeGB} GB</span>
-          <span style="color:var(--text-muted);font-size:10px;"> free</span>
-        </td>
-      </tr>`;
-  }).join('');
-
-  // Key insight callout
-  // Compare best (lowest silo) vs worst (highest silo) candidate
-  const best  = simResults[0];
-  const worst = simResults[simResults.length - 1];
-  const clusterSiloDiff = (worst.sim.siloedGB - best.sim.siloedGB) * clusterGPUs;  // GB recovered by choosing best
-  const headroomDiff    = best.overhead - worst.overhead;  // extra headroom per VM (best vs worst)
-  // headroomDiff > 0 means best gives MORE headroom per VM (double benefit)
-  // headroomDiff < 0 means best gives LESS headroom per VM (but still wins on silo)
-
-  let callout = '';
-  if (clusterSiloDiff > 0 || headroomDiff !== 0) {
-    const extraVMSlots = Math.floor(clusterSiloDiff / best.profile.gb);
-
-    // Two-part story: what does the best profile give you vs the worst?
-    const headroomLine = headroomDiff > 0
-      ? `<strong style="color:var(--blue)">+${headroomDiff} GB more headroom per workload VM</strong> — reducing memory pressure, limiting swap activity, and giving workloads room to grow beyond their initial estimate`
-      : headroomDiff < 0
-        ? `<strong style="color:var(--text-dim)">${Math.abs(headroomDiff)} GB less headroom per VM</strong> (tighter fit) — workloads have less buffer for growth`
-        : `<strong style="color:var(--text-dim)">identical headroom per VM</strong>`;
-
-    const siloLine = clusterSiloDiff > 0
-      ? `<strong style="color:var(--green)">${clusterSiloDiff} GB of permanently siloed capacity eliminated</strong> across ${clusterGPUs} GPUs${extraVMSlots > 0 ? ` — equivalent to <strong style="color:var(--green)">${extraVMSlots} additional VM slots</strong> recovered` : ''}`
-      : `<strong style="color:var(--text-dim)">identical siloed capacity</strong> across the cluster`;
-
-    const bgColor = clusterSiloDiff > 0 ? 'rgba(46,158,255,0.06)' : 'rgba(46,158,255,0.05)';
-    const borderColor = clusterSiloDiff > 0 ? 'rgba(46,158,255,0.25)' : 'rgba(46,158,255,0.2)';
-    const titleColor = clusterSiloDiff > 0 ? 'var(--green)' : 'var(--blue)';
-
-    // Core message: in a multi-profile mixed environment, slim-fit only helps if you have a single profile
-    const contextLine = clusterSiloDiff > 0
-      ? `In a single-profile deployment, ${worst.profile.name} would be the tighter choice. But with ${selectedProfiles.length} profile types and unpredictable VM startup order, its placement boundaries tile poorly — permanently locking out capacity that no workload in your mix can ever claim. The alignment benefit of ${best.profile.name} is worth more than its slim-fit counterpart at this scale.`
-      : `Both profiles produce similar siloed capacity with your current mix. Profile choice here comes down to headroom preference.`;
-
-    callout = `
-      <div style="margin-top:14px;padding:14px 16px;background:${bgColor};border:1px solid ${borderColor};border-radius:6px;font-size:12px;color:var(--text-dim);line-height:1.8;">
-        <div style="font-weight:700;color:${titleColor};margin-bottom:8px;">
-          Cluster trade-off: ${best.profile.name} vs ${worst.profile.name} across ${clusterGPUs} GPUs
-        </div>
-        Choosing <strong style="color:var(--text)">${best.profile.name}</strong> gives you:<br>
-        &nbsp;&nbsp;① ${headroomLine}<br>
-        &nbsp;&nbsp;② ${siloLine}<br>
-        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:var(--text-muted);">
-          ${contextLine}
-        </div>
-      </div>`;
-  }
-
-  return `
-    <div style="margin-top:20px;">
-      <div class="rec-section-header" style="margin-bottom:12px;">
-        <div class="rsh-dot" style="background:var(--purple);box-shadow:0 0 6px var(--purple);"></div>
-        <span class="rsh-title">Cluster-Level Impact</span>
-        <span class="rsh-badge">${clusterGPUs} GPU${clusterGPUs !== 1 ? 's' : ''}</span>
-        <span class="rsh-desc">siloed capacity is permanently unreachable · headroom benefits workloads — not equivalent trade-offs</span>
-        <div style="display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0;">
-          <label style="font-size:10px;color:var(--text-muted);white-space:nowrap;letter-spacing:0;text-transform:none;font-weight:400;">GPUs in cluster</label>
-          <input type="number" id="cluster-gpus-inline" min="1" max="10000" value="${clusterGPUs}"
-            style="width:72px;background:var(--surface3);border:1px solid var(--border);color:var(--text);padding:4px 8px;border-radius:4px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;outline:none;"
-            oninput="document.getElementById('cluster-gpus').value=this.value;runRecommender();">
-        </div>
-      </div>
-      <div style="overflow-x:auto;">
-        <table class="cluster-table" style="width:100%;border-collapse:collapse;font-size:12px;">
-          <thead>
-            <tr style="border-bottom:1px solid var(--border);">
-              <th style="text-align:left;padding:8px 10px;font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:700;min-width:160px;">Profile</th>
-              <th colspan="4" style="text-align:center;padding:8px 10px;font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;font-weight:700;border-bottom:2px solid rgba(46,158,255,0.2);">Per GPU</th>
-              <th colspan="4" style="text-align:center;padding:8px 10px;font-size:10px;color:var(--purple);letter-spacing:1px;text-transform:uppercase;font-weight:700;border-bottom:2px solid rgba(188,140,255,0.25);">${clusterGPUs} GPUs (cluster)</th>
-            </tr>
-            <tr style="border-bottom:2px solid var(--border);">
-              <th></th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">VMs placed</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Siloed</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--blue);font-weight:400;">Headroom/VM</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Free</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Total VMs</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Total siloed</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--blue);font-weight:400;">Total headroom</th>
-              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Total free</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${rows}
-          </tbody>
-        </table>
-      </div>
-      ${callout}
-    </div>`;
-}
-
-// Build a small placement boundary visualizer for a candidate vs its mix peers
 function buildBoundaryViz(candidate, otherProfiles, totalGB) {
   if (otherProfiles.length === 0) return '';
   const vizWidth = 240; // px display width
@@ -1565,6 +1223,195 @@ function removeAlloc(id) {
 
 function resetAllocations() {
   allocations = []; buildAllocPanel(); render();
+}
+
+// Randomized FCFS placement using the selected mix in Step 1.
+// Starts from an empty GPU and keeps adding random instances until the first
+// instance cannot be placed (no aligned contiguous space left for that profile).
+function runRandomUntilFail() {
+  const gpu = GPUS[currentGpuKey];
+  if (!gpu) return;
+
+  const selected = gpu.profiles.filter(p => selectedProfileNames.has(p.name));
+  if (selected.length === 0) {
+    alert('Select at least one profile type in Step 1 before running the randomizer.');
+    return;
+  }
+
+  // Start from a clean slate so the random run is reproducible and easy to reason about.
+  allocations = [];
+  nextId = 0;
+
+  // Helper to count how many instances of a profile are currently allocated.
+  const countForProfile = (name) => allocations.filter(a => a.profileName === name).length;
+
+  while (true) {
+    // Only consider profiles that have not yet reached their maxVms cap.
+    const candidates = selected.filter(p => countForProfile(p.name) < p.maxVms);
+    if (candidates.length === 0) break; // nothing more to place, all caps reached
+
+    const choice = candidates[Math.floor(Math.random() * candidates.length)];
+    const allocObj = {
+      profileName: choice.name,
+      gb: choice.gb,
+      color: choice.color,
+      placementId: choice.placementId || null,
+      id: nextId++
+    };
+
+    const trialAllocs = allocations.concat([allocObj]);
+    const { placed, failed } = computeLayout(trialAllocs, gpu.totalGB, selected);
+
+    // Commit this allocation to the main list so the UI reflects this step.
+    allocations = trialAllocs;
+
+    // If this newly requested instance shows up in the failed list, we have hit
+    // the first failed placement — stop here to show the limit.
+    const thisFailed = failed.find(a => a.id === allocObj.id);
+    if (thisFailed) break;
+
+    // Safety stop if GPU is fully allocated (no free GB left) even if we somehow
+    // did not observe a failure for this specific request.
+    const allocatedGB = placed.reduce((sum, a) => sum + a.gb, 0);
+    if (allocatedGB >= gpu.totalGB) break;
+  }
+
+  buildAllocPanel();
+  render();
+}
+
+// Monte Carlo: run many independent random FCFS allocations using the current
+// selected mix, without disturbing the live layout. Reports worst / typical
+// siloed capacity across trials.
+function simulateRandomRun(gpu, selectedProfiles) {
+  const totalGB = gpu.totalGB;
+  let trialAllocs = [];
+  let nextLocalId = 0;
+
+  const countForProfile = (name) =>
+    trialAllocs.filter(a => a.profileName === name).length;
+
+  while (true) {
+    const candidates = selectedProfiles.filter(p => countForProfile(p.name) < p.maxVms);
+    if (candidates.length === 0) break;
+
+    const choice = candidates[Math.floor(Math.random() * candidates.length)];
+    const allocObj = {
+      profileName: choice.name,
+      gb: choice.gb,
+      color: choice.color,
+      placementId: choice.placementId || null,
+      id: nextLocalId++
+    };
+
+    const trialWith = trialAllocs.concat([allocObj]);
+    const { memory, placed, failed, siloed } = computeLayout(trialWith, totalGB, selectedProfiles);
+    trialAllocs = trialWith;
+
+    const thisFailed = failed.find(a => a.id === allocObj.id);
+
+    let siloGB = 0;
+    let freeGB = 0;
+    for (let i = 0; i < totalGB; i++) {
+      if (siloed[i]) siloGB++;
+      else if (memory[i] === null) freeGB++;
+    }
+
+    if (thisFailed || freeGB === 0) {
+      return { siloGB, placedCount: placed.length, allocations: trialAllocs, failed: !!thisFailed };
+    }
+  }
+
+  const { memory, placed, failed, siloed } = computeLayout(trialAllocs, gpu.totalGB, selectedProfiles);
+  let siloGB = 0;
+  for (let i = 0; i < gpu.totalGB; i++) {
+    if (siloed[i]) siloGB++;
+  }
+  return { siloGB, placedCount: placed.length, allocations: trialAllocs, failed: failed.length > 0 };
+}
+
+function showMonteCarloWorstRun() {
+  if (!lastMonteCarlo || !Array.isArray(lastMonteCarlo.worstAllocations)) return;
+  allocations = lastMonteCarlo.worstAllocations.map(a => ({ ...a }));
+  nextId = allocations.reduce((m, a) => Math.max(m, a.id), -1) + 1;
+  buildAllocPanel();
+  render();
+}
+
+function restorePreMonteCarloLayout() {
+  if (!lastMonteCarlo || !Array.isArray(lastMonteCarlo.prevAllocations)) return;
+  allocations = lastMonteCarlo.prevAllocations.map(a => ({ ...a }));
+  nextId = typeof lastMonteCarlo.prevNextId === 'number'
+    ? lastMonteCarlo.prevNextId
+    : (allocations.reduce((m, a) => Math.max(m, a.id), -1) + 1);
+  buildAllocPanel();
+  render();
+}
+
+function runRandomMonteCarlo() {
+  const gpu = GPUS[currentGpuKey];
+  if (!gpu) return;
+
+  const selectedProfiles = getSelectedProfiles();
+  if (selectedProfiles.length === 0) {
+    alert('Select at least one profile type in Step 1 before running Monte Carlo.');
+    return;
+  }
+
+  const TRIALS = 25000;
+  const siloSamples = [];
+  const vmSamples = [];
+  const prevAllocations = allocations.slice();
+  const prevNextId = nextId;
+  let worstRun = null;
+  let worstSiloSeen = -1;
+
+  for (let t = 0; t < TRIALS; t++) {
+    const { siloGB, placedCount, allocations: trialAllocations } = simulateRandomRun(gpu, selectedProfiles);
+    siloSamples.push(siloGB);
+    vmSamples.push(placedCount);
+    if (siloGB > worstSiloSeen) {
+      worstSiloSeen = siloGB;
+      worstRun = trialAllocations;
+    }
+  }
+
+  const worstSilo = Math.max(...siloSamples);
+  const avgSilo = siloSamples.reduce((a, b) => a + b, 0) / TRIALS;
+
+  const sortedSilo = siloSamples.slice().sort((a, b) => a - b);
+  const medianSilo = sortedSilo[Math.floor(sortedSilo.length / 2)];
+
+  const summaryEl = document.getElementById('random-mc-summary');
+  if (summaryEl) {
+    summaryEl.innerHTML =
+      `25.000 random runs (from empty GPU) with your current mix: ` +
+      `<strong>${worstSilo} GB</strong> worst-case siloed capacity observed, ` +
+      `median <strong>${medianSilo} GB</strong>, average ${avgSilo.toFixed(1)} GB.`;
+  }
+
+  lastMonteCarlo = {
+    trials: TRIALS,
+    worstSilo,
+    worstAllocations: Array.isArray(worstRun) ? worstRun.map(a => ({ ...a })) : null,
+    prevAllocations: prevAllocations.map(a => ({ ...a })),
+    prevNextId
+  };
+
+  const actionsEl = document.getElementById('random-mc-actions');
+  if (actionsEl) {
+    if (Array.isArray(lastMonteCarlo.worstAllocations) && lastMonteCarlo.worstAllocations.length > 0) {
+      actionsEl.style.display = 'flex';
+      actionsEl.innerHTML = `
+        <button class="btn" onclick="showMonteCarloWorstRun()">Visualize worst-case run</button>
+        <button class="btn" onclick="restorePreMonteCarloLayout()">Restore current layout</button>
+        <span style="align-self:center;color:var(--text-muted);font-size:10px;">(Monte Carlo does not change your layout until you visualize.)</span>
+      `;
+    } else {
+      actionsEl.style.display = 'none';
+      actionsEl.innerHTML = '';
+    }
+  }
 }
 
 initCatalog().catch(err => {

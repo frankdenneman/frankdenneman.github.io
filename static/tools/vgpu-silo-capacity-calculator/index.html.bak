@@ -259,27 +259,6 @@
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .stats-row { grid-template-columns: 1fr 1fr; } .header-links { display: none; } }
 </style>
-
-<style>
-  .fd-tool-footer {
-    font: inherit;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    opacity: 0.75;
-    margin-top: 24px;
-  }
-  .fd-tool-footer a {
-    font: inherit;
-    color: inherit;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .fd-tool-footer .sep {
-    margin: 0 10px;
-    opacity: 0.7;
-  }
-</style>
-
 </head>
 <body>
 <div class="app">
@@ -287,7 +266,7 @@
   <header>
     <div class="logo-area">
       <div class="logo-badge">VGPU MIXED-SIZE MODE</div>
-      <h1>vGPU Silo Capacity Calculator</h1>
+      <h1>Mixed Mode vGPU Profile Placement <span>Silo</span> Simulator</h1>
 <div style="font-size: 0.85em; opacity: 0.7; margin-top: 4px;">Version v1.4 • vGPU Silo Capacity Calculator</div>
 
       <div class="subtitle">Visualize how vGPU profile combinations create siloed (unreachable) GPU capacity</div>
@@ -1449,15 +1428,11 @@ initCatalog().catch(err => {
 });
 </script>
 
-<footer class="fd-tool-footer">
+<div style="margin-top: 24px; font-size: 0.85em; opacity: 0.7;">
   Built for AI infrastructure architects to understand mixed-size vGPU placement and silo capacity behavior.
-  <span class="sep">•</span>
-  Sources:
-  <a href="https://docs.nvidia.com/vgpu/19.0/grid-vgpu-user-guide/index.html#vgpu-placements-for-gpus-in-mixed-size-mode" target="_blank" rel="noopener noreferrer">NVIDIA vGPU 19 User Guide</a>,
-  <a href="https://docs.nvidia.com/ai-enterprise/release-7/7.0/infra-software/vgpu.html#virtual-gpu-types-for-supported-gpus" target="_blank" rel="noopener noreferrer">NVIDIA AI Enterprise 7.0 vGPU for Compute</a>
-  <span class="sep">•</span>
+  <span style="margin: 0 8px;">•</span>
   <a href="https://github.com/frankdenneman/vgpu-silo-capacity-calculator" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
-</footer>
+</div>
 
 </body>
 </html>

@@ -201,7 +201,7 @@
           "placementId": "0, 40"
         },
         {
-          "name": "A100DX-80",
+          "name": "A100DX-80C",
           "gb": 80,
           "maxVms": 1,
           "placementId": "0"
@@ -257,7 +257,7 @@
           "placementId": "0, 40"
         },
         {
-          "name": "A100D-80",
+          "name": "A100D-80C",
           "gb": 80,
           "maxVms": 1,
           "placementId": "0"
@@ -313,7 +313,7 @@
           "placementId": "0, 40"
         },
         {
-          "name": "H100-80",
+          "name": "H100-80C",
           "gb": 80,
           "maxVms": 1,
           "placementId": "0"

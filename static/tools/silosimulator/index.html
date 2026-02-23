@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVIDIA vGPU Placement Simulator</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
+
+  :root {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface2: #f1f5f9;
+    --surface3: #e8eef5;
+    --border: #d1dce8;
+    --border-light: #e8eef5;
+    --green: #059669;
+    --amber: #d97706;
+    --red: #dc2626;
+    --blue: #2e9eff;
+    --blue-bright: #0ea5e9;
+    --purple: #6366f1;
+    --cyan: #0891b2;
+    --teal: #0d9488;
+    --primary: #0ea5e9;
+    --primary-dark: #0284c7;
+    --text: #0f172a;
+    --text-dim: #475569;
+    --text-muted: #94a3b8;
+    /* dark zone for memory map */
+    --map-bg: #060c14;
+    --map-surface: #0a1220;
+    --map-surface2: #0f1a2e;
+    --map-surface3: #162035;
+    --map-border: #1e2d45;
+    --map-text: #e8edf5;
+    --map-text-dim: #7b8faa;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Syne', sans-serif; min-height: 100vh; overflow-x: hidden; }
+
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background-image: linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+    background-size: 40px 40px; pointer-events: none; z-index: 0;
+  }
+
+  .app { position: relative; z-index: 1; max-width: 1240px; margin: 0 auto; padding: 24px 20px 0; }
+
+  /* Header */
+  header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+  .logo-area { display: flex; flex-direction: column; gap: 6px; }
+  .logo-badge { display: inline-flex; align-items: center; gap: 8px; font-family: 'Space Mono', monospace; font-size: 10px; color: var(--cyan); background: rgba(6,205,212,0.08); border: 1px solid rgba(6,205,212,0.25); padding: 4px 10px; border-radius: 3px; letter-spacing: 1px; width: fit-content; }
+  .logo-badge::before { content: '▶'; font-size: 8px; }
+  h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1; }
+  h1 span { color: var(--primary); }
+  .subtitle { font-size: 13px; color: var(--text-dim); margin-top: 4px; font-weight: 400; }
+  .header-links { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; margin-top: 4px; }
+  .ref-link { display: inline-flex; align-items: center; gap: 6px; font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text-muted); text-decoration: none; transition: color 0.15s; white-space: nowrap; }
+  .ref-link:hover { color: var(--blue); }
+  .ref-link .ref-label { border-bottom: 1px dotted var(--border); }
+
+  /* Layout */
+  .layout { display: grid; grid-template-columns: 300px 1fr; gap: 20px; align-items: start; }
+
+  /* Panel */
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .panel-header { padding: 11px 16px; background: var(--surface2); border-bottom: 1px solid var(--border); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); display: flex; align-items: center; gap: 8px; }
+  .panel-header .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 6px var(--primary); flex-shrink: 0; }
+  .panel-header .step-badge { margin-left: auto; font-family: 'Space Mono', monospace; font-size: 9px; color: var(--text-muted); background: var(--surface3); border: 1px solid var(--border); padding: 2px 7px; border-radius: 10px; letter-spacing: 0; font-weight: 400; }
+  .panel-body { padding: 14px 16px; }
+
+  /* Controls */
+  .gpu-select-wrap { display: flex; flex-direction: column; gap: 6px; }
+  .gpu-select-wrap label { font-size: 10px; color: var(--text-dim); letter-spacing: 0.5px; text-transform: uppercase; }
+  select { width: 100%; background: var(--surface3); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 5px; font-family: 'Space Mono', monospace; font-size: 12px; appearance: none; cursor: pointer; outline: none; transition: border-color 0.2s; }
+  select:focus { border-color: var(--primary); }
+  .gpu-info { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+  .info-chip { background: var(--surface3); border: 1px solid var(--border); border-radius: 5px; padding: 8px 10px; }
+  .info-chip .label { font-size: 9px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+  .info-chip .value { font-family: 'Space Mono', monospace; font-size: 14px; color: var(--primary); font-weight: 700; margin-top: 2px; }
+
+  /* Mix list */
+  .mix-hint { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-bottom: 10px; }
+  .profile-mix-list { display: flex; flex-direction: column; gap: 5px; }
+  .mix-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: var(--surface3); border: 1px solid var(--border); border-radius: 5px; cursor: pointer; transition: all 0.15s; user-select: none; }
+  .mix-row:hover { border-color: var(--text-muted); }
+  .mix-row.selected { border-color: rgba(46,158,255,0.5); background: rgba(46,158,255,0.07); }
+  .mix-row.selected .mix-check { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .mix-check { width: 16px; height: 16px; border-radius: 3px; border: 1px solid var(--border); background: var(--surface2); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 900; flex-shrink: 0; transition: all 0.15s; }
+  .mix-name { font-family: 'Space Mono', monospace; font-size: 12px; font-weight: 700; flex: 1; }
+  .mix-gb { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text-muted); }
+  .color-swatch { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+
+  /* Alloc */
+  .alloc-hint { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-bottom: 10px; }
+  .profile-grid { display: flex; flex-direction: column; gap: 5px; }
+  .profile-btn { display: flex; align-items: center; justify-content: space-between; padding: 8px 10px; background: var(--surface3); border: 1px solid var(--border); border-radius: 5px; cursor: pointer; transition: all 0.15s; color: var(--text); font-family: 'Space Mono', monospace; font-size: 12px; }
+  .profile-btn:hover { border-color: var(--primary); background: rgba(46,158,255,0.06); }
+  .profile-btn .pb-add { background: var(--surface2); border: 1px solid var(--border); color: var(--text-dim); width: 20px; height: 20px; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: all 0.15s; }
+  .profile-btn:hover .pb-add { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .no-mix-msg { font-size: 11px; color: var(--text-muted); text-align: center; padding: 14px; border: 1px dashed var(--border); border-radius: 5px; }
+
+  /* Recommender */
+  .recommender-body { display: flex; flex-direction: column; gap: 10px; }
+  .workload-input-row { display: flex; align-items: center; gap: 8px; }
+  .workload-input-row label { font-size: 11px; color: var(--text-dim); white-space: nowrap; }
+  .workload-input-wrap { position: relative; flex: 1; }
+  .workload-input-wrap input { width: 100%; background: var(--surface3); border: 1px solid var(--border); color: var(--text); padding: 8px 36px 8px 12px; border-radius: 5px; font-family: 'Space Mono', monospace; font-size: 14px; outline: none; transition: border-color 0.2s; font-weight: 700; }
+  .workload-input-wrap input:focus { border-color: var(--cyan); }
+  .workload-input-wrap .gb-unit { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-family: 'Space Mono', monospace; font-size: 11px; color: var(--text-muted); }
+  .btn-recommend { font-family: 'Space Mono', monospace; font-size: 11px; padding: 8px 14px; border-radius: 5px; border: 1px solid rgba(6,205,212,0.3); background: rgba(6,205,212,0.08); color: var(--cyan); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .btn-recommend:hover { background: rgba(6,205,212,0.16); }
+
+  /* Rec cards */
+  .rec-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
+  @media (max-width: 1000px) { .rec-cards { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 660px)  { .rec-cards { grid-template-columns: 1fr; } }
+  .rec-card { border-radius: 6px; border: 1px solid var(--border); overflow: hidden; }
+  .rec-card.rank-1 { border-color: rgba(46,158,255,0.5); }
+  .rec-card.rank-2 { border-color: rgba(240,165,0,0.35); }
+  .rec-card.rank-3 { border-color: rgba(248,81,73,0.3); }
+  .rec-card-header { display: flex; align-items: center; gap: 8px; padding: 9px 12px; font-family: 'Space Mono', monospace; font-size: 11px; }
+  .rec-card.rank-1 .rec-card-header { background: rgba(46,158,255,0.08); }
+  .rec-card.rank-2 .rec-card-header { background: rgba(240,165,0,0.06); }
+  .rec-card.rank-3 .rec-card-header { background: rgba(248,81,73,0.05); }
+  .rec-rank { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; }
+  .rank-1 .rec-rank { background: var(--green); color: #000; }
+  .rank-2 .rec-rank { background: var(--amber); color: #000; }
+  .rank-3 .rec-rank { background: rgba(248,81,73,0.2); color: var(--red); border: 1px solid rgba(248,81,73,0.4); }
+  .rec-profile-name { font-weight: 700; flex: 1; }
+  .rec-profile-name span { font-weight: 400; color: var(--text-muted); margin-left: 4px; }
+  .rec-badge { font-size: 9px; padding: 2px 7px; border-radius: 3px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .rec-badge.best { background: rgba(46,158,255,0.12); color: var(--green); border: 1px solid rgba(46,158,255,0.3); }
+  .rec-badge.warn { background: rgba(240,165,0,0.12); color: var(--amber); border: 1px solid rgba(240,165,0,0.3); }
+  .rec-badge.poor { background: rgba(248,81,73,0.1); color: var(--red); border: 1px solid rgba(248,81,73,0.25); }
+  .rec-card-body { padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+
+  /* Metrics row */
+  .rec-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .rec-metric { background: var(--surface3); border: 1px solid var(--border); border-radius: 4px; padding: 6px 8px; }
+  .rec-metric .rm-label { font-size: 9px; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 2px; }
+  .rec-metric .rm-val { font-family: 'Space Mono', monospace; font-size: 12px; font-weight: 700; }
+
+  /* Pairwise table */
+  .pairwise-title { font-size: 10px; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .pairwise-row { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 11px; }
+  .pairwise-row:last-child { border-bottom: none; }
+  .pw-profiles { font-family: 'Space Mono', monospace; font-weight: 700; min-width: 110px; }
+  .pw-lcm { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text-muted); min-width: 60px; }
+  .pw-shared { font-family: 'Space Mono', monospace; font-size: 10px; min-width: 80px; }
+  .pw-silo { font-family: 'Space Mono', monospace; font-size: 10px; font-weight: 700; margin-left: auto; }
+
+  /* Boundary visualizer */
+  .boundary-viz { margin-top: 2px; }
+  .bv-title { font-size: 9px; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .bv-track { position: relative; height: 8px; background: var(--surface3); border-radius: 2px; margin-bottom: 4px; overflow: visible; }
+  .bv-tick { position: absolute; top: -3px; width: 2px; height: 14px; border-radius: 1px; transform: translateX(-50%); }
+  .bv-shared-tick { position: absolute; top: -5px; width: 3px; height: 18px; border-radius: 1px; transform: translateX(-50%); background: #fff; box-shadow: 0 0 4px rgba(255,255,255,0.6); z-index: 2; }
+  .bv-label { font-family: 'Space Mono', monospace; font-size: 9px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; margin-bottom: 3px; }
+  .bv-label-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+
+  /* Reason */
+  .rec-reason { font-size: 11px; color: var(--text-dim); line-height: 1.6; padding: 8px 10px; background: var(--surface3); border-radius: 4px; border-left: 3px solid var(--border); }
+  .rec-card.rank-1 .rec-reason { border-left-color: var(--green); }
+  .rec-card.rank-2 .rec-reason { border-left-color: var(--amber); }
+  .rec-card.rank-3 .rec-reason { border-left-color: var(--red); }
+
+  .rec-empty { font-size: 11px; color: var(--text-muted); text-align: center; padding: 18px; border: 1px dashed var(--border); border-radius: 5px; }
+
+  /* Cluster table */
+  .cluster-table td { padding: 10px 10px; vertical-align: middle; border-bottom: 1px solid var(--border); }
+  .cluster-table tr:last-child td { border-bottom: none; }
+  .cluster-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  /* Buttons */
+  .btn { font-family: 'Space Mono', monospace; font-size: 11px; padding: 6px 14px; border-radius: 4px; border: 1px solid var(--border); cursor: pointer; transition: all 0.15s; }
+  .btn-red { background: rgba(248,81,73,0.1); color: var(--red); border-color: rgba(248,81,73,0.3); }
+  .btn-red:hover { background: rgba(248,81,73,0.2); }
+
+  /* Right col */
+  .right-col { display: flex; flex-direction: column; gap: 16px; }
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+  .stat-card .s-label { font-size: 10px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+  .stat-card .s-value { font-family: 'Space Mono', monospace; font-size: 22px; font-weight: 700; line-height: 1; margin-top: 4px; }
+  .stat-card .s-sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
+  .s-green { color: var(--green); } .s-amber { color: var(--amber); } .s-red { color: var(--red); } .s-blue { color: var(--primary); }
+
+  /* Memory map — dark island for contrast/readability */
+  .mem-panel { background: var(--map-bg); border: 1px solid var(--map-border); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(6,12,20,0.15); }
+  .mem-header { padding: 12px 16px; background: var(--map-surface2); border-bottom: 1px solid var(--map-border); display: flex; justify-content: space-between; align-items: center; }
+  .mem-header-left { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--map-text-dim); display: flex; align-items: center; gap: 8px; }
+  .mem-header-left .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 6px var(--amber); }
+  .mem-body { padding: 16px; background: var(--map-bg); }
+  .frag-bar-wrap { margin-bottom: 14px; }
+  .frag-bar-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--map-text-dim); margin-bottom: 5px; }
+  .frag-bar { height: 8px; background: var(--map-surface3); border-radius: 4px; overflow: hidden; display: flex; }
+  .frag-bar-alloc { height: 100%; background: var(--primary); transition: width 0.3s ease; }
+  .frag-bar-silo  { height: 100%; background: var(--red); opacity: 0.7; transition: width 0.3s ease; }
+  .mem-wrapper { display: grid; grid-template-columns: 40px 1fr; }
+  #mem-grid { display: grid; gap: 3px; }
+  .mem-cell { height: 34px; border-radius: 3px; position: relative; transition: background 0.2s; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-size: 9px; font-weight: 700; overflow: hidden; cursor: default; }
+  .mem-cell.free { background: var(--map-surface3); border: 1px solid var(--map-border); }
+  .mem-cell.siloed { background: repeating-linear-gradient(45deg, rgba(220,38,38,0.3), rgba(220,38,38,0.3) 4px, rgba(220,38,38,0.07) 4px, rgba(220,38,38,0.07) 8px); border: 1px solid rgba(220,38,38,0.45); }
+  .mem-cell.siloed::after { content: '✕'; color: var(--red); opacity: 0.7; font-size: 10px; }
+  .mem-cell.occupied { border: none; color: rgba(255,255,255,0.85); font-size: 10px; letter-spacing: 0.5px; }
+  .mem-cell.block-start { border-radius: 4px 0 0 4px; }
+  .mem-cell.block-mid   { border-radius: 0; }
+  .mem-cell.block-end   { border-radius: 0 4px 4px 0; }
+  .mem-cell.block-solo  { border-radius: 4px; }
+  .mem-cell[data-tip]:hover::before { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #0f172a; border: 1px solid var(--map-border); color: var(--map-text); font-size: 10px; padding: 4px 8px; border-radius: 4px; white-space: nowrap; z-index: 100; pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+  .mem-axis { display: grid; font-family: 'Space Mono', monospace; font-size: 9px; color: var(--map-text-dim); gap: 3px; }
+  .axis-label { display: flex; align-items: center; justify-content: flex-end; padding-right: 6px; height: 34px; }
+  /* Legend in mem header uses light text on dark bg */
+  #mem-legend span { color: var(--map-text-dim) !important; }
+
+  /* Insight */
+  .insight-box { background: var(--surface3); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; font-size: 12px; color: var(--text-dim); line-height: 1.6; display: flex; gap: 10px; align-items: flex-start; }
+  .insight-box.warn { border-color: rgba(240,165,0,0.3); background: rgba(240,165,0,0.04); }
+  .insight-box.good { border-color: rgba(46,158,255,0.3); background: rgba(46,158,255,0.04); }
+  .insight-box.bad  { border-color: rgba(248,81,73,0.3); background: rgba(248,81,73,0.04); }
+  .insight-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+  /* Alloc list */
+  .alloc-list-inner { display: flex; flex-direction: column; gap: 5px; max-height: 200px; overflow-y: auto; }
+  .alloc-item { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; background: var(--surface3); border: 1px solid var(--border); border-radius: 4px; font-family: 'Space Mono', monospace; font-size: 11px; }
+  .alloc-item .ai-left { display: flex; align-items: center; gap: 8px; }
+  .ai-info { color: var(--text-dim); font-size: 10px; }
+  .alloc-remove { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 14px; padding: 0 2px; transition: color 0.15s; line-height: 1; }
+  .alloc-remove:hover { color: var(--red); }
+  .empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; color: var(--text-muted); font-size: 12px; gap: 8px; text-align: center; }
+  .empty-state .es-icon { font-size: 26px; opacity: 0.35; }
+
+  /* Footer */
+  footer { margin-top: 48px; padding: 24px 0 32px; border-top: 1px solid var(--border); display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .footer-left { display: flex; flex-direction: column; gap: 8px; }
+  .footer-title { font-family: 'Space Mono', monospace; font-size: 11px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+  .footer-links { display: flex; flex-direction: column; gap: 6px; }
+  .footer-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--text-dim); font-size: 12px; transition: color 0.15s; }
+  .footer-link:hover { color: var(--blue); }
+  .footer-link .fl-source { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text-muted); }
+  .footer-right { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text-muted); text-align: right; line-height: 1.7; }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--surface); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .stats-row { grid-template-columns: 1fr 1fr; } .header-links { display: none; } }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div class="logo-area">
+      <div class="logo-badge">VGPU MIXED-SIZE MODE</div>
+      <h1>Placement <span>Silo</span> Simulator</h1>
+      <div class="subtitle">Visualize how vGPU profile combinations create siloed (unreachable) GPU capacity</div>
+    </div>
+    <div class="header-links">
+      <a class="ref-link" href="https://docs.nvidia.com/vgpu/latest/pdf/grid-vgpu-user-guide.pdf" target="_blank">
+        <span>📄</span><span class="ref-label">NVIDIA vGPU Software User Guide</span>
+      </a>
+      <a class="ref-link" href="https://frankdenneman.nl/architecting-ai-infrastructure" target="_blank">
+        <span>✍︎</span><span class="ref-label">Architecting AI Infrastructure — frankdenneman.nl</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- LEFT -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <div class="panel">
+        <div class="panel-header"><div class="dot"></div> GPU Model</div>
+        <div class="panel-body">
+          <div class="gpu-select-wrap">
+            <label>Select GPU</label>
+            <select id="gpu-select" onchange="selectGPU()"></select>
+          </div>
+          <div class="gpu-info" id="gpu-info"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="dot" style="background:var(--amber);box-shadow:0 0 6px var(--amber)"></div>
+          Profile Mix
+          <span class="step-badge">STEP 1</span>
+        </div>
+        <div class="panel-body">
+          <div class="mix-hint">Select the profile types you intend to offer. Only memory gaps that none of these profiles can fill are counted as <strong style="color:var(--text-dim)">siloed capacity</strong>.</div>
+          <div class="profile-mix-list" id="profile-mix-list"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="dot" style="background:var(--primary);box-shadow:0 0 6px var(--primary)"></div>
+          Allocate Instances
+          <span class="step-badge">STEP 2</span>
+        </div>
+        <div class="panel-body">
+          <div class="alloc-hint">Click <strong style="color:var(--text-dim)">+</strong> to place a VM — each click simulates the next FCFS allocation and shows emerging silos in real time.</div>
+          <div class="profile-grid" id="profile-grid"></div>
+          <div style="margin-top:10px;display:flex;justify-content:flex-end;">
+            <button class="btn btn-red" onclick="resetAllocations()">✕ Reset instances</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-col">
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="s-label">Allocated</div>
+          <div class="s-value s-green" id="stat-alloc">0 GB</div>
+          <div class="s-sub" id="stat-alloc-pct">0% of total</div>
+        </div>
+        <div class="stat-card">
+          <div class="s-label">Siloed</div>
+          <div class="s-value s-red" id="stat-silo">0 GB</div>
+          <div class="s-sub" id="stat-silo-pct">vs. selected mix</div>
+        </div>
+        <div class="stat-card">
+          <div class="s-label">Available</div>
+          <div class="s-value s-blue" id="stat-free">— GB</div>
+          <div class="s-sub" id="stat-free-pct">0% free</div>
+        </div>
+        <div class="stat-card">
+          <div class="s-label">VMs Placed</div>
+          <div class="s-value s-amber" id="stat-vms">0</div>
+          <div class="s-sub" id="stat-profiles">no instances</div>
+        </div>
+      </div>
+
+      <div class="mem-panel">
+        <div class="mem-header">
+          <div class="mem-header-left"><div class="dot"></div> GPU Memory Map</div>
+          <span id="gpu-label-badge" style="font-family:'Space Mono',monospace;font-size:10px;color:var(--text-muted);"></span>
+        </div>
+        <div class="mem-body">
+          <div class="frag-bar-wrap">
+            <div class="frag-bar-label">
+              <span style="color:var(--map-text-dim)">Memory breakdown</span>
+              <span id="util-pct-label" style="color:var(--map-text-dim);">—</span>
+            </div>
+            <div class="frag-bar">
+              <div class="frag-bar-alloc" id="bar-alloc" style="width:0%"></div>
+              <div class="frag-bar-silo"  id="bar-silo"  style="width:0%"></div>
+            </div>
+            <div id="mem-legend" style="display:flex;gap:16px;margin-top:6px;font-size:10px;color:var(--map-text-dim);">
+              <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--primary);margin-right:4px;vertical-align:middle;"></span>Allocated</span>
+              <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--red);margin-right:4px;vertical-align:middle;opacity:0.7"></span>Siloed (unreachable by mix)</span>
+              <span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--map-surface3);border:1px solid var(--map-border);margin-right:4px;vertical-align:middle;"></span>Free</span>
+            </div>
+          </div>
+          <div class="mem-wrapper">
+            <div class="mem-axis" id="mem-axis"></div>
+            <div id="mem-grid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-box" id="insight-box">
+        <div class="insight-icon">💡</div>
+        <div id="insight-text">
+          <strong>How to use:</strong> Step 1 — select which profile types you plan to offer. Step 2 — allocate instances; siloed slots (unreachable due to placement boundary misalignment) appear in red. Step 3 — enter a workload size for an alignment-aware profile recommendation that accounts for siloed capacity across your whole mix.
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><div class="dot" style="background:var(--teal);box-shadow:0 0 6px var(--teal)"></div> Allocated Instances</div>
+        <div class="panel-body">
+          <div id="alloc-list"><div class="empty-state"><div class="es-icon">□</div><div>No instances allocated yet.</div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Full-width Profile Recommender ── -->
+  <div class="panel" style="margin-top:20px;">
+    <div class="panel-header">
+      <div class="dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan)"></div>
+      Profile Recommender
+      <span class="step-badge">STEP 3</span>
+      <span style="margin-left:8px;font-size:10px;color:var(--text-muted);font-weight:400;letter-spacing:0;text-transform:none;">Scores profiles by siloed capacity impact using placement boundary alignment analysis</span>
+    </div>
+    <div class="panel-body">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap;">
+        <div style="font-size:12px;color:var(--text-dim);line-height:1.5;flex:1;min-width:300px;">
+          Enter your workload's actual GPU memory need. All profiles in your selected mix that can fit the workload are ranked by siloed capacity impact — not just per-VM overhead. A slim-fit profile may look cheaper per VM but create far more siloed capacity through boundary misalignment with the rest of your mix.
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;flex-wrap:wrap;">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">Workload needs</label>
+            <div class="workload-input-wrap" style="width:100px;">
+              <input type="number" id="workload-gb" min="1" value="7">
+              <span class="gb-unit">GB</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">GPUs in cluster</label>
+            <input type="number" id="cluster-gpus" min="1" max="10000" value="10"
+              style="width:80px;background:var(--surface3);border:1px solid var(--border);color:var(--text);padding:8px 10px;border-radius:5px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;outline:none;transition:border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--cyan)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <button class="btn-recommend" onclick="runRecommender()">Analyse →</button>
+        </div>
+      </div>
+      <div id="rec-output"><div class="rec-empty">Enter a workload size and click Analyse.</div></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <div class="footer-title">References &amp; Further Reading</div>
+      <div class="footer-links">
+        <a class="footer-link" href="https://docs.nvidia.com/vgpu/latest/pdf/grid-vgpu-user-guide.pdf" target="_blank">
+          <span>📄</span>
+          <span>NVIDIA vGPU Software User Guide — Mixed-Size Mode &amp; Placement IDs</span>
+          <span class="fl-source">docs.nvidia.com</span>
+        </a>
+        <a class="footer-link" href="https://frankdenneman.nl/architecting-ai-infrastructure" target="_blank">
+          <span>✍︎</span>
+          <span>Architecting AI Infrastructure Series</span>
+          <span class="fl-source">frankdenneman.nl</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-right">vGPU Placement Silo Simulator · v1.3<br>Profile data: NVIDIA vGPU Software 19.x<br>Built for planning &amp; education</div>
+  </footer>
+
+</div>
+
+<script>
+// ─── GPU data ─────────────────────────────────────────────────────────────────
+// ─── GPU catalog (external JSON) ─────────────────────────────────────────────
+let GPUS = {}; // populated from ./vgpu-catalog.json
+
+const DEFAULT_COLORS = [
+  '#58a6ff','#79c0ff','#2e9eff','#06cdd4','#f0a500',
+  '#ffc24a','#bc8cff','#d9b5ff','#f85149'
+];
+
+function assignProfileColors(profiles) {
+  return profiles.map((p, idx) => ({ ...p, color: p.color || DEFAULT_COLORS[idx % DEFAULT_COLORS.length] }));
+}
+
+function catalogToGPUS(catalogJson) {
+  const out = {};
+  for (const g of catalogJson.gpus) {
+    out[g.key] = {
+      name: g.label,
+      totalGB: g.memoryGB,
+      arch: g.arch,
+      profiles: assignProfileColors(g.profiles).map(p => ({
+        name: p.name,
+        gb: p.gb,
+        maxVms: p.maxVms,
+        color: p.color,
+        placementId: p.placementId || null
+      }))
+    };
+  }
+  return out;
+}
+
+function buildGpuDropdownFromCatalog(catalogJson) {
+  const sel = document.getElementById('gpu-select');
+  sel.innerHTML = '';
+
+  // Group by memory capacity (descending)
+  const groups = new Map();
+  for (const g of catalogJson.gpus) {
+    if (!groups.has(g.memoryGB)) groups.set(g.memoryGB, []);
+    groups.get(g.memoryGB).push(g);
+  }
+  const memSizes = [...groups.keys()].sort((a,b) => b - a);
+
+  for (const mem of memSizes) {
+    const og = document.createElement('optgroup');
+    og.label = `${mem} GB`;
+    const gpus = groups.get(mem).slice().sort((a,b) => a.label.localeCompare(b.label));
+    for (const g of gpus) {
+      const opt = document.createElement('option');
+      opt.value = g.key;
+      opt.textContent = `${g.label} · ${g.memoryGB} GB`;
+      og.appendChild(opt);
+    }
+    sel.appendChild(og);
+  }
+}
+
+async function initCatalog() {
+  const resp = await fetch('./vgpu-catalog.json', { cache: 'no-store' });
+  if (!resp.ok) throw new Error(`Failed to load vgpu-catalog.json (${resp.status})`);
+  const catalog = await resp.json();
+
+  GPUS = catalogToGPUS(catalog);
+  buildGpuDropdownFromCatalog(catalog);
+
+  const sel = document.getElementById('gpu-select');
+  currentGpuKey = sel.value || Object.keys(GPUS)[0];
+  sel.value = currentGpuKey;
+
+  // ensure workload max tracks GPU size
+  const workload = document.getElementById('workload-gb');
+  if (workload) workload.max = String(GPUS[currentGpuKey].totalGB);
+
+  selectGPU();
+}
+
+
+// ─── State ────────────────────────────────────────────────────────────────────
+let currentGpuKey = null;
+let selectedProfileNames = new Set();
+let allocations = [];
+let nextId = 0;
+
+// ─── Math helpers ─────────────────────────────────────────────────────────────
+function gcd(a, b) { return b === 0 ? a : gcd(b, a % b); }
+function lcm(a, b) { return (a / gcd(a, b)) * b; }
+
+// Placement boundaries for a profile of size s on a GPU of totalGB
+function placementBoundaries(s, totalGB) {
+  const bounds = [];
+  for (let i = 0; i <= totalGB; i += s) bounds.push(i);
+  return bounds;
+}
+
+// Shared boundaries between two profile sizes
+function sharedBoundaries(sA, sB, totalGB) {
+  const l = lcm(sA, sB);
+  const shared = [];
+  for (let i = 0; i <= totalGB; i += l) shared.push(i);
+  return shared;
+}
+
+// ─── Core: worst-case siloed GB for placing candidateGB among otherGB profiles ─
+// We simulate within one LCM(candidate, other) period:
+//   Case A: place 1 candidate at start, then greedily fill with other
+//   Case B: place 1 other at start, then greedily fill with candidate
+// In each case count cells unreachable by ANY mix profile.
+// Returns { siloPerPeriod, lcmPeriod, worstCase }
+function pairwiseSiloAnalysis(candidateGB, otherGB, allMixGB, totalGB) {
+  const l = lcm(candidateGB, otherGB);
+  const period = Math.min(l, totalGB);
+
+  function countSilos(mem, mixSizes) {
+    let silo = 0;
+    for (let i = 0; i < period; i++) {
+      if (mem[i] !== null) continue;
+      let reachable = false;
+      for (const sz of mixSizes) {
+        const bs = Math.floor(i / sz) * sz;
+        if (bs + sz > period) continue;
+        let free = true;
+        for (let j = bs; j < bs + sz; j++) { if (mem[j] !== null) { free = false; break; } }
+        if (free) { reachable = true; break; }
+      }
+      if (!reachable) silo++;
+    }
+    return silo;
+  }
+
+  const allSizes = allMixGB.includes(candidateGB) ? allMixGB : [...allMixGB, candidateGB];
+
+  // Case A: candidate first at 0
+  const memA = new Array(period).fill(null);
+  for (let i = 0; i < candidateGB && i < period; i++) memA[i] = 'C';
+  for (let pos = 0; pos + otherGB <= period; pos += otherGB) {
+    if (memA[pos] === null) for (let i = pos; i < pos + otherGB; i++) memA[i] = 'O';
+  }
+  const siloA = countSilos(memA, allSizes);
+
+  // Case B: other first at 0
+  const memB = new Array(period).fill(null);
+  for (let i = 0; i < otherGB && i < period; i++) memB[i] = 'O';
+  for (let pos = 0; pos + candidateGB <= period; pos += candidateGB) {
+    if (memB[pos] === null) for (let i = pos; i < pos + candidateGB; i++) memB[i] = 'C';
+  }
+  const siloB = countSilos(memB, allSizes);
+
+  const worstPerPeriod = Math.max(siloA, siloB);
+  const periods = Math.floor(totalGB / period);
+  return {
+    siloPerPeriod: worstPerPeriod,
+    lcmPeriod: period,
+    worstCaseTotal: worstPerPeriod * periods,
+    shared: sharedBoundaries(candidateGB, otherGB, totalGB)
+  };
+}
+
+// ─── Core placement engine ────────────────────────────────────────────────────
+function computeLayout(allocs, totalGB, siloCheckProfiles) {
+  const memory = new Array(totalGB).fill(null);
+  const placed = [], failed = [];
+
+  for (const alloc of allocs) {
+    const size = alloc.gb;
+    let placed_at = -1;
+    for (let pos = 0; pos + size <= totalGB; pos += size) {
+      let ok = true;
+      for (let i = pos; i < pos + size; i++) { if (memory[i] !== null) { ok = false; break; } }
+      if (ok) { placed_at = pos; break; }
+    }
+    if (placed_at >= 0) {
+      for (let i = placed_at; i < placed_at + size; i++) memory[i] = alloc;
+      placed.push({ ...alloc, startGB: placed_at });
+    } else {
+      failed.push(alloc);
+    }
+  }
+
+  // Siloed cells: free cells unreachable by any mix profile
+  const siloed = new Array(totalGB).fill(false);
+  if (siloCheckProfiles && siloCheckProfiles.length > 0) {
+    for (let i = 0; i < totalGB; i++) {
+      if (memory[i] !== null) continue;
+      let reachable = false;
+      for (const p of siloCheckProfiles) {
+        const bs = Math.floor(i / p.gb) * p.gb;
+        if (bs + p.gb > totalGB) continue;
+        let free = true;
+        for (let j = bs; j < bs + p.gb; j++) { if (memory[j] !== null) { free = false; break; } }
+        if (free) { reachable = true; break; }
+      }
+      if (!reachable) siloed[i] = true;
+    }
+  }
+  return { memory, placed, failed, siloed };
+}
+
+function getSelectedProfiles() {
+  return GPUS[currentGpuKey].profiles.filter(p => selectedProfileNames.has(p.name));
+}
+
+// ─── Recommender ─────────────────────────────────────────────────────────────
+function runRecommender() {
+  const workloadGB = parseInt(document.getElementById('workload-gb').value, 10);
+  const out = document.getElementById('rec-output');
+  const gpu = GPUS[currentGpuKey];
+
+  if (!workloadGB || workloadGB < 1) { out.innerHTML = `<div class="rec-empty">Enter a valid workload size (≥ 1 GB).</div>`; return; }
+  if (workloadGB > gpu.totalGB) { out.innerHTML = `<div class="rec-empty">Workload exceeds GPU total (${gpu.totalGB} GB).</div>`; return; }
+  if (selectedProfileNames.size === 0) { out.innerHTML = `<div class="rec-empty">Select your profile mix in Step 1 first — recommendations are context-aware.</div>`; return; }
+
+  const selectedProfiles = getSelectedProfiles();
+  const candidates = selectedProfiles.filter(p => p.gb >= workloadGB);
+  if (candidates.length === 0) {
+    const smallest = selectedProfiles.length > 0 ? Math.min(...selectedProfiles.map(p => p.gb)) : '—';
+    out.innerHTML = `<div class="rec-empty">No profile in your selected mix fits a ${workloadGB} GB workload. Smallest selected profile is ${smallest} GB. Either add a larger profile to your mix or reduce the workload size.</div>`;
+    return;
+  }
+  const mixGB = selectedProfiles.map(p => p.gb);
+
+  const scored = candidates.map(candidate => {
+    const overhead = candidate.gb - workloadGB;
+
+    // ── Effective mix ──────────────────────────────────────────────────────────
+    // If we deploy candidate for this workload, we no longer need any profile
+    // smaller than candidate.gb. The effective mix is: candidate + all selected
+    // profiles whose size >= candidate.gb.
+    // Example: workload 7GB, candidate 10GB, mix {8,10,20}
+    //   → effective mix = {10, 20}  (8GB is no longer needed)
+    // Example: candidate 8GB:
+    //   → effective mix = {8, 10, 20}  (still needs all three)
+    const effectiveMixProfiles = selectedProfiles.filter(p => p.gb >= candidate.gb);
+    // ensure candidate itself is in the mix
+    if (!effectiveMixProfiles.find(p => p.name === candidate.name)) {
+      effectiveMixProfiles.push(candidate);
+    }
+    const effectiveMixSizes = effectiveMixProfiles.map(p => p.gb);
+
+    // ── Pairwise silo for the EFFECTIVE mix ────────────────────────────────────
+    const pairwise = [];
+    for (let i = 0; i < effectiveMixProfiles.length; i++) {
+      for (let j = i + 1; j < effectiveMixProfiles.length; j++) {
+        const a = effectiveMixProfiles[i];
+        const b = effectiveMixProfiles[j];
+        const analysis = pairwiseSiloAnalysis(a.gb, b.gb, effectiveMixSizes, gpu.totalGB);
+        pairwise.push({ profileA: a, profileB: b, other: b, ...analysis });
+      }
+    }
+
+    const maxPairSilo   = pairwise.length > 0 ? Math.max(...pairwise.map(p => p.worstCaseTotal)) : 0;
+    const totalPairSilo = pairwise.reduce((sum, pw) => sum + pw.worstCaseTotal, 0);
+
+    // Min shared boundaries across all pairs in effective mix
+    const minSharedBoundaries = pairwise.length > 0
+      ? Math.min(...pairwise.map(p => p.shared.length))
+      : Math.floor(gpu.totalGB / candidate.gb) + 1;
+
+    // ── Placement density of effective mix ─────────────────────────────────────
+    // Total VM slots across all profiles in effective mix.
+    // More slots = more scheduling flexibility, better GPU fill.
+    const placementDensity = effectiveMixProfiles.reduce((sum, p) => sum + Math.floor(gpu.totalGB / p.gb), 0);
+    const placementSlots   = Math.floor(gpu.totalGB / candidate.gb); // slots just for this profile
+
+    // ── Headroom logic ─────────────────────────────────────────────────────────
+    // Headroom inside the profile is a BENEFIT up to a point:
+    //   - Reduces memory pressure, limits swapping, absorbs workload growth
+    //   - But when headroom > workloadGB (>100% overshoot), you're trading
+    //     placement density for buffer — diminishing returns become a penalty
+    const headroomRatio  = overhead / Math.max(workloadGB, 1);
+    const headroomBonus  = Math.min(overhead * 0.8, 5);              // benefit, capped
+    const excessPenalty  = headroomRatio > 1.0                       // >100% overshoot
+      ? (overhead - workloadGB) * 3                                  // e.g. 20GB for 7GB → 13GB excess → +39
+      : 0;
+
+    // ── Final score (lower = better) ───────────────────────────────────────────
+    //   Primary:   total silo of effective mix × 5
+    //   Secondary: placement density bonus (more slots = better)
+    //   Tertiary:  headroom is a small benefit, excessive headroom is a penalty
+    const score = (totalPairSilo * 5)
+                - (placementDensity * 0.4)
+                - headroomBonus
+                + excessPenalty;
+
+    return {
+      profile: candidate,
+      overhead,
+      effectiveMixProfiles,
+      pairwise,
+      maxPairSilo,
+      totalPairSilo,
+      minSharedBoundaries,
+      placementSlots,
+      placementDensity,
+      headroomRatio,
+      score
+    };
+  });
+
+  scored.sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead);
+  const top = scored.slice(0, 3);
+
+  const rankBadge = ['best', 'warn', 'poor'];
+  const rankLabel = ['Best fit', 'Acceptable', 'Avoid'];
+
+  const html = top.map((r, idx) => {
+    const profileColor = r.profile.color;
+    const effectiveMixNames = r.effectiveMixProfiles.map(p => p.name).join(' + ');
+    const eliminatedProfiles = selectedProfiles.filter(p => p.gb < r.profile.gb);
+    const eliminatedNote = eliminatedProfiles.length > 0
+      ? `Choosing this profile eliminates the need for ${eliminatedProfiles.map(p => p.name).join(', ')} — reducing your effective mix to {${effectiveMixNames}}.`
+      : `This keeps your full mix of {${effectiveMixNames}} in play.`;
+
+    // Pairwise table using effective mix pairs
+    let pairwiseHTML = '';
+    if (r.pairwise.length > 0) {
+      const rows = r.pairwise.map(pw => {
+        const siloColor   = pw.worstCaseTotal === 0 ? 'var(--green)' : pw.worstCaseTotal <= 5 ? 'var(--amber)' : 'var(--red)';
+        const sharedColor = pw.shared.length >= 5 ? 'var(--green)' : pw.shared.length >= 3 ? 'var(--amber)' : 'var(--red)';
+        return `<div class="pairwise-row">
+          <span class="pw-profiles" style="color:var(--text)">${pw.profileA.name} + ${pw.profileB.name}</span>
+          <span class="pw-lcm" style="color:var(--text-muted)">LCM: ${pw.lcmPeriod} GB</span>
+          <span class="pw-shared" style="color:${sharedColor}">${pw.shared.length} shared bounds</span>
+          <span class="pw-silo" style="color:${siloColor}">${pw.worstCaseTotal === 0 ? '✓ 0 GB silo' : '⚠ up to ' + pw.worstCaseTotal + ' GB'}</span>
+        </div>`;
+      }).join('');
+      pairwiseHTML = `<div><div class="pairwise-title">Effective mix: {${effectiveMixNames}}</div>${rows}</div>`;
+    } else {
+      pairwiseHTML = `<div style="font-size:11px;color:var(--green);padding:4px 0;">✓ Single-profile effective mix — no pairwise silo possible.</div>`;
+    }
+
+    // Boundary visualizer for effective mix
+    const vizHTML = buildBoundaryViz(r.profile, r.effectiveMixProfiles.filter(p => p.name !== r.profile.name), gpu.totalGB);
+
+    const headroomColor = r.overhead === 0 ? 'var(--green)' : r.headroomRatio <= 1.0 ? 'var(--blue)' : 'var(--amber)';
+    const siloColor     = r.totalPairSilo === 0 ? 'var(--green)' : r.totalPairSilo <= 6 ? 'var(--amber)' : 'var(--red)';
+    const densityColor  = r.placementDensity >= 10 ? 'var(--green)' : r.placementDensity >= 6 ? 'var(--amber)' : 'var(--red)';
+
+    let reason = '';
+    if (idx === 0) {
+      if (r.totalPairSilo === 0 && r.overhead === 0) {
+        reason = `${r.profile.name} is an exact size match AND creates zero siloed capacity in its effective mix {${effectiveMixNames}}. Every GB of GPU memory remains reachable.`;
+      } else if (r.totalPairSilo === 0) {
+        reason = `${eliminatedNote} The resulting {${effectiveMixNames}} mix has zero siloed capacity — placement boundaries align cleanly, and no memory is permanently locked out regardless of VM startup order. The ${r.overhead} GB of headroom per workload also reduces memory pressure and swap risk.`;
+      } else {
+        const loser = top[1];
+        reason = `${eliminatedNote} The effective mix {${effectiveMixNames}} produces ${r.totalPairSilo} GB total siloed capacity — less than ${loser ? loser.profile.name + ' (' + loser.totalPairSilo + ' GB)' : 'the alternatives'}. With ${r.placementDensity} total placement slots across the mix and ${r.overhead > 0 ? r.overhead + ' GB of workload headroom per VM,' : 'an exact fit,'} this is the best balance of alignment, density, and workload buffer.`;
+      }
+    } else if (idx === 1) {
+      const better = top[0];
+      const siloGap = r.totalPairSilo - better.totalPairSilo;
+      const densityGap = r.placementDensity - better.placementDensity;
+      reason = `${eliminatedNote} The effective mix {${effectiveMixNames}} has ${r.totalPairSilo} GB total siloed capacity${siloGap > 0 ? ` — ${siloGap} GB more than ${better.profile.name}` : ''}. ${densityGap > 0 ? `It does offer ${densityGap} more placement slots across the mix (${r.placementDensity} vs ${better.placementDensity}), but` : 'It has'} the boundary misalignment cost outweighs the density gain.`;
+    } else {
+      const worstPair = r.pairwise.length > 0 ? r.pairwise.reduce((a, b) => a.worstCaseTotal > b.worstCaseTotal ? a : b) : null;
+      const excessNote = r.headroomRatio > 1.0
+        ? ` The ${r.overhead} GB of headroom (${Math.round(r.headroomRatio * 100)}% above workload size) also significantly reduces placement density — only ${r.placementSlots} slots per GPU.`
+        : '';
+      reason = `${eliminatedNote} ${worstPair ? `The ${worstPair.profileA.name} + ${worstPair.profileB.name} pairing in the effective mix has LCM = ${worstPair.lcmPeriod} GB with only ${worstPair.shared.length} shared placement boundaries, trapping up to ${worstPair.worstCaseTotal} GB per period.` : `Poor boundary alignment in the effective mix.`}${excessNote}`;
+    }
+
+    return `
+    <div class="rec-card rank-${idx+1}">
+      <div class="rec-card-header">
+        <div class="rec-rank">${idx+1}</div>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${profileColor};flex-shrink:0"></span>
+        <div class="rec-profile-name">${r.profile.name} <span>${r.profile.gb} GB profile</span></div>
+        ${r.overhead > 0 ? `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(6,205,212,0.1);border:1px solid rgba(6,205,212,0.3);color:var(--cyan);white-space:nowrap;">+${r.overhead} GB headroom</div>` : `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(46,158,255,0.1);border:1px solid rgba(46,158,255,0.3);color:var(--primary);white-space:nowrap;">exact fit</div>`}
+        <div class="rec-badge ${rankBadge[idx]}">${rankLabel[idx]}</div>
+      </div>
+      <div class="rec-card-body">
+        <div class="rec-metrics">
+          <div class="rec-metric">
+            <div class="rm-label">Workload headroom</div>
+            <div class="rm-val" style="color:${headroomColor}">${r.overhead === 0 ? 'Exact fit' : '+' + r.overhead + ' GB / VM'}</div>
+          </div>
+          <div class="rec-metric">
+            <div class="rm-label">Total silo (effective mix)</div>
+            <div class="rm-val" style="color:${siloColor}">${r.totalPairSilo === 0 ? 'None' : r.totalPairSilo + ' GB'}</div>
+          </div>
+          <div class="rec-metric">
+            <div class="rm-label">Placement density</div>
+            <div class="rm-val" style="color:${densityColor}">${r.placementDensity} slots</div>
+          </div>
+          <div class="rec-metric">
+            <div class="rm-label">Effective mix size</div>
+            <div class="rm-val" style="color:var(--text-dim)">${r.effectiveMixProfiles.length} profile type${r.effectiveMixProfiles.length !== 1 ? 's' : ''}</div>
+          </div>
+        </div>
+        ${pairwiseHTML}
+        ${vizHTML}
+        <div class="rec-reason">${reason}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // ── Cluster-level comparison ──────────────────────────────────────────────
+  const clusterGPUs = parseInt(document.getElementById('cluster-gpus').value, 10) || 10;
+  const clusterHTML = buildClusterComparison(top, selectedProfiles, gpu, workloadGB, clusterGPUs);
+
+  out.innerHTML = `
+    <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--text-muted);margin-bottom:12px;">
+      WORKLOAD: ${workloadGB} GB · ${candidates.length} fitting profile(s) in mix · ranked by siloed capacity impact
+    </div>
+    <div class="rec-cards">${html}</div>
+    ${clusterHTML}`;
+}
+
+// ── Cluster-level impact simulation ─────────────────────────────────────────
+// Simulates filling a GPU with a round-robin mix of all selected profiles,
+// substituting the candidate profile for wherever the workload profile would go.
+// Returns { vmsPlaced, siloedGB, freeGB, overheadGB }
+function simulateGPUFill(candidateProfile, allSelectedProfiles, gpu) {
+  const totalGB = gpu.totalGB;
+
+  // Build a realistic fill sequence: round-robin through all selected profiles
+  // (candidate included), repeat until we can't place anything more
+  const fillOrder = [];
+  const maxIterations = Math.ceil(totalGB / Math.min(...allSelectedProfiles.map(p => p.gb)));
+  for (let i = 0; i < maxIterations; i++) {
+    for (const p of allSelectedProfiles) {
+      fillOrder.push(p);
+    }
+  }
+
+  const memory = new Array(totalGB).fill(null);
+  let vmsPlaced = 0;
+  let overheadGB = 0;
+
+  for (const p of fillOrder) {
+    const size = p.gb;
+    let placed_at = -1;
+    for (let pos = 0; pos + size <= totalGB; pos += size) {
+      let ok = true;
+      for (let i = pos; i < pos + size; i++) { if (memory[i] !== null) { ok = false; break; } }
+      if (ok) { placed_at = pos; break; }
+    }
+    if (placed_at >= 0) {
+      for (let i = placed_at; i < placed_at + size; i++) memory[i] = p;
+      vmsPlaced++;
+      // overhead is only counted for the candidate profile (workload VMs)
+      if (p.name === candidateProfile.name) overheadGB += (p.gb - candidateProfile.gb);
+    }
+  }
+
+  // Count siloed vs free
+  let siloedGB = 0, freeGB = 0;
+  for (let i = 0; i < totalGB; i++) {
+    if (memory[i] !== null) continue;
+    let reachable = false;
+    for (const p of allSelectedProfiles) {
+      const bs = Math.floor(i / p.gb) * p.gb;
+      if (bs + p.gb > totalGB) continue;
+      let free = true;
+      for (let j = bs; j < bs + p.gb; j++) { if (memory[j] !== null) { free = false; break; } }
+      if (free) { reachable = true; break; }
+    }
+    if (!reachable) siloedGB++; else freeGB++;
+  }
+
+  return { vmsPlaced, siloedGB, freeGB, overheadGB, memory };
+}
+
+// Simulate the exact user-style fill: place profiles in the order they appear
+// in the current allocations list, but swap all instances of profileA with profileB
+function simulateSwappedFill(fromProfileGB, toProfile, allSelectedProfiles, gpu) {
+  const totalGB = gpu.totalGB;
+  // Build fill sequence mirroring current allocations, swapping fromProfileGB → toProfile
+  const swappedAllocs = allocations.map(a =>
+    a.gb === fromProfileGB
+      ? { ...a, profileName: toProfile.name, gb: toProfile.gb, color: toProfile.color }
+      : a
+  );
+  // Also add the remaining profiles proportionally to fill the GPU
+  const fillProfiles = swappedAllocs.length > 0 ? swappedAllocs : allSelectedProfiles.map(p => ({ ...p, id: -1 }));
+
+  const memory = new Array(totalGB).fill(null);
+  let vmsPlaced = 0, overheadGB = 0;
+  const placed = [];
+
+  for (const alloc of fillProfiles) {
+    const size = alloc.gb;
+    let placed_at = -1;
+    for (let pos = 0; pos + size <= totalGB; pos += size) {
+      let ok = true;
+      for (let i = pos; i < pos + size; i++) { if (memory[i] !== null) { ok = false; break; } }
+      if (ok) { placed_at = pos; break; }
+    }
+    if (placed_at >= 0) {
+      for (let i = placed_at; i < placed_at + size; i++) memory[i] = alloc;
+      vmsPlaced++;
+      placed.push({ ...alloc, startGB: placed_at });
+    }
+  }
+
+  let siloedGB = 0, freeGB = 0;
+  for (let i = 0; i < totalGB; i++) {
+    if (memory[i] !== null) continue;
+    let reachable = false;
+    for (const p of allSelectedProfiles) {
+      const bs = Math.floor(i / p.gb) * p.gb;
+      if (bs + p.gb > totalGB) continue;
+      let free = true;
+      for (let j = bs; j < bs + p.gb; j++) { if (memory[j] !== null) { free = false; break; } }
+      if (free) { reachable = true; break; }
+    }
+    if (!reachable) siloedGB++; else freeGB++;
+  }
+
+  return { vmsPlaced, siloedGB, freeGB, memory, placed };
+}
+
+function buildClusterComparison(topCandidates, selectedProfiles, gpu, workloadGB, clusterGPUs) {
+  if (topCandidates.length < 2) return '';
+
+  // For each candidate, simulate swapping ALL current workload-sized allocations to that profile
+  // If no allocations yet, use a round-robin fill
+  const simResults = topCandidates.map(r => {
+    let sim;
+    if (allocations.length > 0) {
+      // Find the current "workload" profile in allocations (any profile >= workloadGB)
+      const workloadProfileGB = allocations.find(a => a.gb >= workloadGB)?.gb || r.profile.gb;
+      sim = simulateSwappedFill(workloadProfileGB, r.profile, selectedProfiles, gpu);
+    } else {
+      sim = simulateGPUFill(r.profile, selectedProfiles, gpu);
+    }
+    return { ...r, sim };
+  });
+
+  // Best = lowest siloed
+  const bestSilo = Math.min(...simResults.map(s => s.sim.siloedGB));
+  const bestVMs  = Math.max(...simResults.map(s => s.sim.vmsPlaced));
+
+  const rows = simResults.map((r, idx) => {
+    const s = r.sim;
+
+    const workloadVMCount = allocations.filter(a => a.gb >= workloadGB).length ||
+      Math.floor(gpu.totalGB / r.profile.gb);
+    const clusterSiloGB    = s.siloedGB * clusterGPUs;
+    const clusterVMs       = s.vmsPlaced * clusterGPUs;
+    const clusterFreeGB    = s.freeGB * clusterGPUs;
+    const clusterHeadroomGB = r.overhead * workloadVMCount * clusterGPUs;
+
+    const isBest = s.siloedGB === bestSilo;
+    const rankColor        = idx === 0 ? 'var(--green)' : idx === 1 ? 'var(--amber)' : 'var(--red)';
+    const siloColor        = s.siloedGB === 0 ? 'var(--green)' : s.siloedGB <= 5 ? 'var(--amber)' : 'var(--red)';
+    const clusterSiloColor = clusterSiloGB === 0 ? 'var(--green)' : clusterSiloGB < 50 ? 'var(--amber)' : 'var(--red)';
+    const headroomColor    = r.overhead === 0 ? 'var(--text-muted)' : r.headroomRatio <= 1.0 ? 'var(--blue)' : 'var(--amber)';
+
+    return `
+      <tr>
+        <td>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${r.profile.color}"></span>
+            <span style="font-family:'Space Mono',monospace;font-weight:700;color:${rankColor}">${r.profile.name}</span>
+            ${isBest ? `<span style="font-size:9px;background:rgba(46,158,255,0.12);color:var(--green);border:1px solid rgba(46,158,255,0.3);border-radius:3px;padding:1px 6px;">BEST</span>` : ''}
+          </div>
+          <div style="font-size:10px;color:var(--text-muted);margin-top:2px;font-family:'Space Mono',monospace;">${r.profile.gb} GB profile · ${r.overhead === 0 ? 'exact fit' : '+' + r.overhead + ' GB headroom/VM'}</div>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:var(--green);font-weight:700;">${s.vmsPlaced}</span>
+          <span style="color:var(--text-muted);font-size:10px;"> VMs</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:${siloColor};font-weight:700;">${s.siloedGB} GB</span>
+          <span style="color:var(--text-muted);font-size:10px;"> siloed</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:${headroomColor};font-weight:700;">${r.overhead === 0 ? '—' : '+' + r.overhead + ' GB'}</span>
+          <span style="color:var(--text-muted);font-size:10px;"> /VM</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:var(--blue);font-weight:700;">${s.freeGB} GB</span>
+          <span style="color:var(--text-muted);font-size:10px;"> free</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:var(--green);font-weight:700;">${clusterVMs}</span>
+          <span style="color:var(--text-muted);font-size:10px;"> VMs</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:${clusterSiloColor};font-weight:700;">${clusterSiloGB} GB</span>
+          <span style="color:var(--text-muted);font-size:10px;"> siloed</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:${headroomColor};font-weight:700;">${clusterHeadroomGB === 0 ? '—' : '+' + clusterHeadroomGB + ' GB'}</span>
+          <span style="color:var(--text-muted);font-size:10px;"> headroom</span>
+        </td>
+        <td style="font-family:'Space Mono',monospace;">
+          <span style="color:var(--blue);font-weight:700;">${clusterFreeGB} GB</span>
+          <span style="color:var(--text-muted);font-size:10px;"> free</span>
+        </td>
+      </tr>`;
+  }).join('');
+
+  // Key insight callout
+  // Compare best (lowest silo) vs worst (highest silo) candidate
+  const best  = simResults[0];
+  const worst = simResults[simResults.length - 1];
+  const clusterSiloDiff = (worst.sim.siloedGB - best.sim.siloedGB) * clusterGPUs;  // GB recovered by choosing best
+  const headroomDiff    = best.overhead - worst.overhead;  // extra headroom per VM (best vs worst)
+  // headroomDiff > 0 means best gives MORE headroom per VM (double benefit)
+  // headroomDiff < 0 means best gives LESS headroom per VM (but still wins on silo)
+
+  let callout = '';
+  if (clusterSiloDiff > 0 || headroomDiff !== 0) {
+    const extraVMSlots = Math.floor(clusterSiloDiff / best.profile.gb);
+
+    // Two-part story: what does the best profile give you vs the worst?
+    const headroomLine = headroomDiff > 0
+      ? `<strong style="color:var(--blue)">+${headroomDiff} GB more headroom per workload VM</strong> — reducing memory pressure, limiting swap activity, and giving workloads room to grow beyond their initial estimate`
+      : headroomDiff < 0
+        ? `<strong style="color:var(--text-dim)">${Math.abs(headroomDiff)} GB less headroom per VM</strong> (tighter fit) — workloads have less buffer for growth`
+        : `<strong style="color:var(--text-dim)">identical headroom per VM</strong>`;
+
+    const siloLine = clusterSiloDiff > 0
+      ? `<strong style="color:var(--green)">${clusterSiloDiff} GB of permanently siloed capacity eliminated</strong> across ${clusterGPUs} GPUs${extraVMSlots > 0 ? ` — equivalent to <strong style="color:var(--green)">${extraVMSlots} additional VM slots</strong> recovered` : ''}`
+      : `<strong style="color:var(--text-dim)">identical siloed capacity</strong> across the cluster`;
+
+    const bgColor = clusterSiloDiff > 0 ? 'rgba(46,158,255,0.06)' : 'rgba(46,158,255,0.05)';
+    const borderColor = clusterSiloDiff > 0 ? 'rgba(46,158,255,0.25)' : 'rgba(46,158,255,0.2)';
+    const titleColor = clusterSiloDiff > 0 ? 'var(--green)' : 'var(--blue)';
+
+    // Core message: in a multi-profile mixed environment, slim-fit only helps if you have a single profile
+    const contextLine = clusterSiloDiff > 0
+      ? `In a single-profile deployment, ${worst.profile.name} would be the tighter choice. But with ${selectedProfiles.length} profile types and unpredictable VM startup order, its placement boundaries tile poorly — permanently locking out capacity that no workload in your mix can ever claim. The alignment benefit of ${best.profile.name} is worth more than its slim-fit counterpart at this scale.`
+      : `Both profiles produce similar siloed capacity with your current mix. Profile choice here comes down to headroom preference.`;
+
+    callout = `
+      <div style="margin-top:14px;padding:14px 16px;background:${bgColor};border:1px solid ${borderColor};border-radius:6px;font-size:12px;color:var(--text-dim);line-height:1.8;">
+        <div style="font-weight:700;color:${titleColor};margin-bottom:8px;">
+          Cluster trade-off: ${best.profile.name} vs ${worst.profile.name} across ${clusterGPUs} GPUs
+        </div>
+        Choosing <strong style="color:var(--text)">${best.profile.name}</strong> gives you:<br>
+        &nbsp;&nbsp;① ${headroomLine}<br>
+        &nbsp;&nbsp;② ${siloLine}<br>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:var(--text-muted);">
+          ${contextLine}
+        </div>
+      </div>`;
+  }
+
+  return `
+    <div style="margin-top:20px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:10px;">
+        <div>
+          <div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;">Cluster-Level Capacity Impact</div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:3px;">Siloed capacity is permanently unreachable by any workload. Headroom inside a profile benefits workloads — these are not equivalent trade-offs.</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+            <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">GPUs in cluster</label>
+            <input type="number" id="cluster-gpus-inline" min="1" max="10000" value="${clusterGPUs}"
+              style="width:80px;background:var(--surface3);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:5px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;outline:none;"
+              oninput="document.getElementById('cluster-gpus').value=this.value;runRecommender();">
+          </div>
+      </div>
+      <div style="overflow-x:auto;">
+        <table class="cluster-table" style="width:100%;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="border-bottom:1px solid var(--border);">
+              <th style="text-align:left;padding:8px 10px;font-size:10px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;font-weight:700;min-width:160px;">Profile</th>
+              <th colspan="4" style="text-align:center;padding:8px 10px;font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;font-weight:700;border-bottom:2px solid rgba(46,158,255,0.2);">Per GPU</th>
+              <th colspan="4" style="text-align:center;padding:8px 10px;font-size:10px;color:var(--purple);letter-spacing:1px;text-transform:uppercase;font-weight:700;border-bottom:2px solid rgba(188,140,255,0.25);">${clusterGPUs} GPUs (cluster)</th>
+            </tr>
+            <tr style="border-bottom:2px solid var(--border);">
+              <th></th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">VMs placed</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Siloed</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--blue);font-weight:400;">Headroom/VM</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Free</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Total VMs</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Total siloed</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--blue);font-weight:400;">Total headroom</th>
+              <th style="text-align:right;padding:6px 10px;font-size:9px;color:var(--text-muted);font-weight:400;">Total free</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows}
+          </tbody>
+        </table>
+      </div>
+      ${callout}
+    </div>`;
+}
+
+// Build a small placement boundary visualizer for a candidate vs its mix peers
+function buildBoundaryViz(candidate, otherProfiles, totalGB) {
+  if (otherProfiles.length === 0) return '';
+  const vizWidth = 240; // px display width
+
+  // Show candidate track + up to 2 others (keep it compact)
+  const toShow = [candidate, ...otherProfiles.slice(0, 2)];
+
+  const tracks = toShow.map(p => {
+    const bounds = placementBoundaries(p.gb, totalGB);
+    const ticks = bounds.map(b => {
+      const pct = (b / totalGB) * 100;
+      return `<div class="bv-tick" style="left:${pct}%;background:${p.color};opacity:0.8;"></div>`;
+    }).join('');
+    return `
+      <div class="bv-label">
+        <span class="bv-label-dot" style="background:${p.color}"></span>
+        <span style="font-family:'Space Mono',monospace;font-size:9px;color:var(--text-dim)">${p.name} — boundaries every ${p.gb} GB</span>
+      </div>
+      <div class="bv-track">${ticks}</div>`;
+  }).join('');
+
+  // Shared boundary ticks (candidate vs first other)
+  let sharedTrack = '';
+  if (otherProfiles.length > 0) {
+    const shared = sharedBoundaries(candidate.gb, otherProfiles[0].gb, totalGB);
+    const sharedTicks = shared.map(b => {
+      const pct = (b / totalGB) * 100;
+      return `<div class="bv-shared-tick" style="left:${pct}%"></div>`;
+    }).join('');
+    sharedTrack = `
+      <div class="bv-label" style="margin-top:4px;">
+        <span class="bv-label-dot" style="background:#fff;opacity:0.6"></span>
+        <span style="font-family:'Space Mono',monospace;font-size:9px;color:var(--text-muted)">${candidate.name} ∩ ${otherProfiles[0].name} — ${shared.length} shared (LCM ${lcm(candidate.gb,otherProfiles[0].gb)} GB)</span>
+      </div>
+      <div class="bv-track">${sharedTicks}</div>`;
+  }
+
+  return `<div class="boundary-viz"><div class="bv-title">Placement boundary alignment</div>${tracks}${sharedTrack}</div>`;
+}
+
+// ─── Render ───────────────────────────────────────────────────────────────────
+function render() {
+  const gpu = GPUS[currentGpuKey];
+  const totalGB = gpu.totalGB;
+  const selectedProfiles = getSelectedProfiles();
+  const { memory, placed, failed, siloed } = computeLayout(allocations, totalGB, selectedProfiles);
+
+  let allocatedGB = 0, siloGB = 0, freeGB = 0;
+  for (let i = 0; i < totalGB; i++) {
+    if (memory[i] !== null) allocatedGB++;
+    else if (siloed[i]) siloGB++;
+    else freeGB++;
+  }
+  const utilPct = Math.round((allocatedGB / totalGB) * 100);
+  const siloPct  = Math.round((siloGB / totalGB) * 100);
+  const freePct  = Math.round((freeGB / totalGB) * 100);
+
+  document.getElementById('stat-alloc').textContent    = allocatedGB + ' GB';
+  document.getElementById('stat-alloc-pct').textContent = utilPct + '% of total';
+  document.getElementById('stat-silo').textContent     = siloGB + ' GB';
+  document.getElementById('stat-silo-pct').textContent = selectedProfileNames.size > 0 ? 'vs. selected mix' : 'select mix first';
+  document.getElementById('stat-free').textContent     = freeGB + ' GB';
+  document.getElementById('stat-free-pct').textContent = freePct + '% free';
+  document.getElementById('stat-vms').textContent      = placed.length;
+
+  const profileCounts = {};
+  for (const a of placed) profileCounts[a.profileName] = (profileCounts[a.profileName] || 0) + 1;
+  document.getElementById('stat-profiles').textContent = Object.entries(profileCounts).map(([k,v]) => v+'×'+k).join(', ') || 'no instances';
+
+  document.getElementById('util-pct-label').textContent = `${allocatedGB} GB alloc · ${siloGB} GB siloed · ${freeGB} GB free`;
+  document.getElementById('bar-alloc').style.width = utilPct + '%';
+  document.getElementById('bar-silo').style.width  = siloPct + '%';
+
+  // Memory grid
+  const cols = Math.min(totalGB, 20);
+  const grid = document.getElementById('mem-grid');
+  grid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+  grid.innerHTML = '';
+
+  for (let i = 0; i < totalGB; i++) {
+    const cell = document.createElement('div');
+    cell.className = 'mem-cell';
+    if (memory[i] !== null) {
+      const alloc = memory[i];
+      let bs = i, be = i;
+      while (bs > 0 && memory[bs-1] === alloc) bs--;
+      while (be < totalGB-1 && memory[be+1] === alloc) be++;
+      cell.classList.add('occupied');
+      cell.style.background = alloc.color;
+      if (i === bs && i === be) cell.classList.add('block-solo');
+      else if (i === bs)        cell.classList.add('block-start');
+      else if (i === be)        cell.classList.add('block-end');
+      else                      cell.classList.add('block-mid');
+      if (i === bs) { cell.textContent = alloc.profileName; cell.style.justifyContent = 'flex-start'; cell.style.paddingLeft = '6px'; }
+      cell.setAttribute('data-tip', `${alloc.profileName} · ${alloc.gb} GB · placement ${bs}–${be} GB`);
+    } else if (siloed[i]) {
+      cell.classList.add('siloed');
+      cell.setAttribute('data-tip', `${i} GB: Siloed — no selected profile can reach this aligned slot`);
+    } else {
+      cell.classList.add('free');
+      cell.setAttribute('data-tip', `${i} GB: Free`);
+    }
+    grid.appendChild(cell);
+  }
+
+  // Axis
+  const axis = document.getElementById('mem-axis');
+  const rows = Math.ceil(totalGB / cols);
+  axis.style.gridTemplateRows = `repeat(${rows}, 34px)`;
+  axis.innerHTML = '';
+  for (let r = 0; r < rows; r++) {
+    const lbl = document.createElement('div'); lbl.className = 'axis-label';
+    lbl.textContent = (r * cols) + 'G'; axis.appendChild(lbl);
+  }
+
+  // Insight
+  const box = document.getElementById('insight-box');
+  const txt = document.getElementById('insight-text');
+  if (selectedProfileNames.size === 0) {
+    box.className = 'insight-box';
+    txt.innerHTML = '<strong>Step 1 first:</strong> Select the profile types you plan to offer. A gap is siloed only relative to your mix — a 2 GB gap is only wasted capacity if your mix contains no 2 GB profile.';
+  } else if (allocations.length === 0) {
+    box.className = 'insight-box';
+    txt.innerHTML = `Mix set: <strong style="color:var(--text)">${[...selectedProfileNames].join(', ')}</strong>. Now allocate instances in Step 2 — siloed slots will appear in red as placement boundary misalignment emerges.`;
+  } else if (failed.length > 0) {
+    box.className = 'insight-box bad';
+    txt.innerHTML = `<strong style="color:var(--red)">⚠ ${failed.length} instance(s) could not be placed</strong> — no aligned contiguous space remains for that profile size.${siloGB > 0 ? ` <strong>${siloGB} GB (${siloPct}%)</strong> is permanently siloed.` : ''}`;
+  } else if (siloGB === 0) {
+    box.className = 'insight-box good';
+    txt.innerHTML = `<strong style="color:var(--green)">Zero siloed capacity</strong> — all free memory is still reachable by at least one profile in your mix. ${freeGB > 0 ? freeGB + ' GB remains fully usable.' : 'GPU is fully utilized.'}`;
+  } else if (siloPct >= 10) {
+    box.className = 'insight-box bad';
+    txt.innerHTML = `<strong style="color:var(--red)">High siloed capacity: ${siloGB} GB (${siloPct}%)</strong> — placement boundary misalignment between your mixed profiles has trapped memory no selected profile can reach. Use Step 3 to evaluate better-aligned profile choices.`;
+  } else {
+    box.className = 'insight-box warn';
+    txt.innerHTML = `<strong style="color:var(--amber)">Siloed capacity: ${siloGB} GB (${siloPct}%)</strong> — some memory is stranded between misaligned placement boundaries. Use Step 3 to check whether a different profile choice would reduce this.`;
+  }
+
+  // Alloc list
+  const listEl = document.getElementById('alloc-list');
+  if (allocations.length === 0) { listEl.innerHTML = `<div class="empty-state"><div class="es-icon">□</div><div>No instances allocated yet.</div></div>`; return; }
+  const placedMap = {};
+  for (const p of placed) placedMap[p.id] = p;
+  const inner = document.createElement('div'); inner.className = 'alloc-list-inner';
+  for (const a of allocations) {
+    const p = placedMap[a.id];
+    const statusStr = p
+      ? `<span style="color:var(--green)">✓</span> <span class="ai-info">placed at ${p.startGB}–${p.startGB + p.gb - 1} GB</span>`
+      : `<span style="color:var(--red)">✕ no space</span>`;
+    const item = document.createElement('div'); item.className = 'alloc-item';
+    item.innerHTML = `
+      <div class="ai-left">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${a.color};flex-shrink:0"></span>
+        <span>${a.profileName}</span><span class="ai-info">${a.gb} GB · align:${a.gb}G${a.placementId ? ' · PID ' + a.placementId : ''}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        ${statusStr}
+        <button class="alloc-remove" onclick="removeAlloc(${a.id})">✕</button>
+      </div>`;
+    inner.appendChild(item);
+  }
+  listEl.innerHTML = ''; listEl.appendChild(inner);
+}
+
+// ─── Actions ──────────────────────────────────────────────────────────────────
+function selectGPU() {
+  currentGpuKey = document.getElementById('gpu-select').value;
+  selectedProfileNames = new Set(); allocations = [];
+  const workload = document.getElementById('workload-gb');
+  if (workload && GPUS[currentGpuKey]) {
+    workload.max = String(GPUS[currentGpuKey].totalGB);
+    if (parseInt(workload.value || '0', 10) > GPUS[currentGpuKey].totalGB) workload.value = GPUS[currentGpuKey].totalGB;
+  }
+  document.getElementById('rec-output').innerHTML = '<div class="rec-empty">Enter a workload size and click Analyse.</div>';
+  buildSidepanel(); render();
+}
+
+function buildSidepanel() {
+  const gpu = GPUS[currentGpuKey];
+  document.getElementById('gpu-info').innerHTML = `
+    <div class="info-chip"><div class="label">Total VRAM</div><div class="value">${gpu.totalGB} GB</div></div>
+    <div class="info-chip"><div class="label">Architecture</div><div class="value" style="font-size:11px;color:var(--blue)">${gpu.arch}</div></div>`;
+  document.getElementById('gpu-label-badge').textContent = gpu.name;
+  buildMixPanel(); buildAllocPanel();
+}
+
+function buildMixPanel() {
+  const gpu = GPUS[currentGpuKey];
+  const container = document.getElementById('profile-mix-list');
+  container.innerHTML = '';
+  for (const p of gpu.profiles) {
+    const sel = selectedProfileNames.has(p.name);
+    const row = document.createElement('div');
+    row.className = 'mix-row' + (sel ? ' selected' : '');
+    row.onclick = () => toggleMixProfile(p.name);
+    row.innerHTML = `<div class="mix-check">${sel ? '✓' : ''}</div><span class="color-swatch" style="background:${p.color}"></span><span class="mix-name">${p.name}</span><span class="mix-gb">${p.gb} GB</span>${p.placementId ? `<span class="mix-gb" style="margin-left:8px;">PID ${p.placementId}</span>` : ``}`;
+    container.appendChild(row);
+  }
+}
+
+function toggleMixProfile(name) {
+  if (selectedProfileNames.has(name)) selectedProfileNames.delete(name);
+  else selectedProfileNames.add(name);
+  buildMixPanel(); buildAllocPanel(); render();
+}
+
+function buildAllocPanel() {
+  const gpu = GPUS[currentGpuKey];
+  const container = document.getElementById('profile-grid');
+  container.innerHTML = '';
+  const selected = gpu.profiles.filter(p => selectedProfileNames.has(p.name));
+  if (selected.length === 0) { container.innerHTML = `<div class="no-mix-msg">Select profile types in Step 1 first.</div>`; return; }
+  for (const p of selected) {
+    const count = allocations.filter(a => a.profileName === p.name).length;
+    const btn = document.createElement('button'); btn.className = 'profile-btn';
+    btn.onclick = () => addInstance(p);
+    btn.innerHTML = `
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${p.color}"></span>
+        <span style="font-weight:700">${p.name}</span>
+        <span style="font-size:10px;color:var(--text-muted)">${p.gb} GB · ${count}/${p.maxVms}${p.placementId ? ` · PID ${p.placementId}` : ``}</span>
+      </div>
+      <div class="pb-add">+</div>`;
+    container.appendChild(btn);
+  }
+}
+
+function addInstance(p) {
+  const count = allocations.filter(a => a.profileName === p.name).length;
+  if (count >= p.maxVms) { alert(`Max ${p.maxVms} instances of ${p.name}.`); return; }
+  allocations.push({ profileName: p.name, gb: p.gb, color: p.color, placementId: p.placementId || null, id: nextId++ });
+  buildAllocPanel(); render();
+}
+
+function removeAlloc(id) {
+  allocations = allocations.filter(a => a.id !== id);
+  buildAllocPanel(); render();
+}
+
+function resetAllocations() {
+  allocations = []; buildAllocPanel(); render();
+}
+
+initCatalog().catch(err => {
+  console.error(err);
+  alert('Failed to load GPU catalog (vgpu-catalog.json). Check file path and hosting.');
+});
+</script>
+</body>
+</html>

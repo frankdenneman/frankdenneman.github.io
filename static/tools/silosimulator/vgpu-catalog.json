@@ -1,0 +1,466 @@
+{
+  "version": "2026-02-23",
+  "source": "NVIDIA vGPU Software User Guide (Feb 2026) + user-maintained extensions",
+  "gpus": [
+    {
+      "key": "rtxpro6000bws-96",
+      "label": "RTX PRO 6000 Blackwell Server",
+      "memoryGB": 96,
+      "arch": "Blackwell",
+      "profiles": [
+        {
+          "name": "RTXPRO6000BWS-1C",
+          "gb": 1,
+          "maxVms": 96,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-2C",
+          "gb": 2,
+          "maxVms": 48,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-3C",
+          "gb": 3,
+          "maxVms": 32,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-4C",
+          "gb": 4,
+          "maxVms": 24,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-6C",
+          "gb": 6,
+          "maxVms": 16,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-8C",
+          "gb": 8,
+          "maxVms": 12,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-12C",
+          "gb": 12,
+          "maxVms": 8,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-16C",
+          "gb": 16,
+          "maxVms": 6,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-24C",
+          "gb": 24,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-32C",
+          "gb": 32,
+          "maxVms": 3,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-48C",
+          "gb": 48,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "RTXPRO6000BWS-96C",
+          "gb": 96,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "h100-nvl-94",
+      "label": "H100 NVL PCIe",
+      "memoryGB": 94,
+      "arch": "Hopper",
+      "profiles": [
+        {
+          "name": "H100NVL-1C",
+          "gb": 1,
+          "maxVms": 94,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100NVL-2C",
+          "gb": 2,
+          "maxVms": 47,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100NVL-47C",
+          "gb": 47,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100NVL-94C",
+          "gb": 94,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "h100-80",
+      "label": "H100 (SXM/PCIe)",
+      "memoryGB": 80,
+      "arch": "Hopper",
+      "profiles": [
+        {
+          "name": "H100-1C",
+          "gb": 1,
+          "maxVms": 80,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-2C",
+          "gb": 2,
+          "maxVms": 40,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-4C",
+          "gb": 4,
+          "maxVms": 20,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-8C",
+          "gb": 8,
+          "maxVms": 10,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-10C",
+          "gb": 10,
+          "maxVms": 8,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-16C",
+          "gb": 16,
+          "maxVms": 5,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-20C",
+          "gb": 20,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-40C",
+          "gb": 40,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "H100-80C",
+          "gb": 80,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "a100-80",
+      "label": "A100 80 GB",
+      "memoryGB": 80,
+      "arch": "Ampere",
+      "profiles": [
+        {
+          "name": "A100-1C",
+          "gb": 1,
+          "maxVms": 80,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-2C",
+          "gb": 2,
+          "maxVms": 40,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-4C",
+          "gb": 4,
+          "maxVms": 20,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-8C",
+          "gb": 8,
+          "maxVms": 10,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-10C",
+          "gb": 10,
+          "maxVms": 8,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-16C",
+          "gb": 16,
+          "maxVms": 5,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-20C",
+          "gb": 20,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-40C",
+          "gb": 40,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-80C",
+          "gb": 80,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "l40s-48",
+      "label": "L40S",
+      "memoryGB": 48,
+      "arch": "Ada Lovelace",
+      "profiles": [
+        {
+          "name": "L40S-1C",
+          "gb": 1,
+          "maxVms": 48,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-2C",
+          "gb": 2,
+          "maxVms": 24,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-4C",
+          "gb": 4,
+          "maxVms": 12,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-6C",
+          "gb": 6,
+          "maxVms": 8,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-8C",
+          "gb": 8,
+          "maxVms": 6,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-12C",
+          "gb": 12,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-16C",
+          "gb": 16,
+          "maxVms": 3,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-24C",
+          "gb": 24,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40S-48C",
+          "gb": 48,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "l40-48",
+      "label": "L40",
+      "memoryGB": 48,
+      "arch": "Ada Lovelace",
+      "profiles": [
+        {
+          "name": "L40-1C",
+          "gb": 1,
+          "maxVms": 48,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-2C",
+          "gb": 2,
+          "maxVms": 24,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-4C",
+          "gb": 4,
+          "maxVms": 12,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-6C",
+          "gb": 6,
+          "maxVms": 8,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-8C",
+          "gb": 8,
+          "maxVms": 6,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-12C",
+          "gb": 12,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-16C",
+          "gb": 16,
+          "maxVms": 3,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-24C",
+          "gb": 24,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L40-48C",
+          "gb": 48,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "a100-40",
+      "label": "A100 40 GB",
+      "memoryGB": 40,
+      "arch": "Ampere",
+      "profiles": [
+        {
+          "name": "A100-1C",
+          "gb": 1,
+          "maxVms": 40,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-2C",
+          "gb": 2,
+          "maxVms": 20,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-4C",
+          "gb": 4,
+          "maxVms": 10,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-8C",
+          "gb": 8,
+          "maxVms": 5,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-10C",
+          "gb": 10,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-20C",
+          "gb": 20,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "A100-40C",
+          "gb": 40,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    },
+    {
+      "key": "l4-24",
+      "label": "L4",
+      "memoryGB": 24,
+      "arch": "Ada Lovelace",
+      "profiles": [
+        {
+          "name": "L4-1C",
+          "gb": 1,
+          "maxVms": 24,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L4-2C",
+          "gb": 2,
+          "maxVms": 12,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L4-4C",
+          "gb": 4,
+          "maxVms": 6,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L4-6C",
+          "gb": 6,
+          "maxVms": 4,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L4-8C",
+          "gb": 8,
+          "maxVms": 3,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L4-12C",
+          "gb": 12,
+          "maxVms": 2,
+          "placementId": "TBD"
+        },
+        {
+          "name": "L4-24C",
+          "gb": 24,
+          "maxVms": 1,
+          "placementId": "TBD"
+        }
+      ]
+    }
+  ]
+}

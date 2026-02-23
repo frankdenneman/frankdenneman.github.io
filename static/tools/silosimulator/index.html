@@ -157,7 +157,7 @@
   .bv-title { font-size: 9px; color: var(--text-muted); letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 5px; }
   .bv-track { position: relative; height: 8px; background: var(--surface3); border-radius: 2px; margin-bottom: 4px; overflow: visible; }
   .bv-tick { position: absolute; top: -3px; width: 2px; height: 14px; border-radius: 1px; transform: translateX(-50%); }
-  .bv-shared-tick { position: absolute; top: -5px; width: 3px; height: 18px; border-radius: 1px; transform: translateX(-50%); background: #fff; box-shadow: 0 0 4px rgba(255,255,255,0.6); z-index: 2; }
+  .bv-shared-tick { position: absolute; top: -5px; width: 3px; height: 18px; border-radius: 1px; transform: translateX(-50%); background: var(--text); box-shadow: 0 0 3px rgba(15,23,42,0.25); z-index: 2; }
   .bv-label { font-family: 'Space Mono', monospace; font-size: 9px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; margin-bottom: 3px; }
   .bv-label-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
 
@@ -168,6 +168,13 @@
   .rec-card.rank-3 .rec-reason { border-left-color: var(--red); }
 
   .rec-empty { font-size: 11px; color: var(--text-muted); text-align: center; padding: 18px; border: 1px dashed var(--border); border-radius: 5px; }
+
+  /* Section dividers inside the recommender output — same visual language as .panel-header */
+  .rec-section-header { display: flex; align-items: center; gap: 8px; padding: 10px 14px; background: var(--surface2); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+  .rec-section-header .rsh-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .rec-section-header .rsh-title { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); white-space: nowrap; }
+  .rec-section-header .rsh-badge { font-family: 'Space Mono', monospace; font-size: 9px; color: var(--text-muted); background: var(--surface3); border: 1px solid var(--border); padding: 2px 7px; border-radius: 10px; letter-spacing: 0; font-weight: 400; white-space: nowrap; }
+  .rec-section-header .rsh-desc { font-size: 10px; color: var(--text-muted); font-weight: 400; letter-spacing: 0; text-transform: none; margin-left: 2px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
   /* Cluster table */
   .cluster-table td { padding: 10px 10px; vertical-align: middle; border-bottom: 1px solid var(--border); }
@@ -498,10 +505,21 @@ function buildGpuDropdownFromCatalog(catalogJson) {
   }
 }
 
+// ─── Inline catalog (embedded so the tool works without a server) ─────────────
+const INLINE_CATALOG = {"version":"generated-from-section-csv","source":"user CSV","gpus":[{"key":"nvidia-rtx-pro-6000-se-96gb-96","label":"NVIDIA RTX PRO 6000 SE 96GB","memoryGB":96,"arch":"Blackwell","profiles":[{"name":"DC-8C","gb":8,"maxVms":12,"placementId":"0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88"},{"name":"DC-12C","gb":12,"maxVms":8,"placementId":"0, 12, 24, 36, 48, 60, 72, 84"},{"name":"DC-16C","gb":16,"maxVms":6,"placementId":"0, 16, 32, 48, 64, 80"},{"name":"DC-24C","gb":24,"maxVms":4,"placementId":"0, 24, 48, 72"},{"name":"DC-32C","gb":32,"maxVms":3,"placementId":"0, 32, 64"},{"name":"DC-48C","gb":48,"maxVms":2,"placementId":"0, 48"},{"name":"DC-96C","gb":96,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-pcie-94gb-h100-nvl-94","label":"NVIDIA H100 PCIe 94GB (H100 NVL)","memoryGB":94,"arch":"Hopper","profiles":[{"name":"H100L-4C","gb":4,"maxVms":16,"placementId":"0, 7, 11, 19, 23, 31, 35, 43, 47, 54, 58, 66, 70, 78, 82, 90"},{"name":"H100L-6C","gb":6,"maxVms":8,"placementId":"0, 17, 23, 41, 47, 64, 70, 88"},{"name":"H100L-11C","gb":11,"maxVms":8,"placementId":"0, 12, 23, 36, 47, 59, 70, 83"},{"name":"H100L-15C","gb":15,"maxVms":4,"placementId":"0, 32, 47, 79"},{"name":"H100L-23C","gb":23,"maxVms":4,"placementId":"0, 24, 47, 71"},{"name":"H100L-47C","gb":47,"maxVms":2,"placementId":"0, 47"},{"name":"H100L-94C","gb":94,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-sxm5-94gb-94","label":"NVIDIA H100 SXM5 94GB","memoryGB":94,"arch":"Hopper","profiles":[{"name":"H100XL-4C","gb":4,"maxVms":16,"placementId":"0, 7, 11, 19, 23, 31, 35, 43, 47, 54, 58, 66, 70, 78, 82, 90"},{"name":"H100XL-6C","gb":6,"maxVms":8,"placementId":"0, 17, 23, 41, 47, 64, 70, 88"},{"name":"H100XL-11C","gb":11,"maxVms":8,"placementId":"0, 12, 23, 36, 47, 59, 70, 83"},{"name":"H100XL-15C","gb":15,"maxVms":4,"placementId":"0, 32, 47, 79"},{"name":"H100XL-23C","gb":23,"maxVms":4,"placementId":"0, 24, 47, 71"},{"name":"H100XL-47C","gb":47,"maxVms":2,"placementId":"0, 47"},{"name":"H100XL-94C","gb":94,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-hgx-80gb-80","label":"NVIDIA A100 HGX 80GB","memoryGB":80,"arch":"Ampere","profiles":[{"name":"A100DX-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"A100DX-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"A100DX-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"A100DX-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"A100DX-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"A100DX-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"A100DX-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"A100DX-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-pcie-80gb-80","label":"NVIDIA A100 PCIe 80GB","memoryGB":80,"arch":"Ampere","profiles":[{"name":"A100D-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"A100D-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"A100D-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"A100D-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"A100D-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"A100D-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"A100D-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"A100D-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-pcie-80gb-80","label":"NVIDIA H100 PCIe 80GB","memoryGB":80,"arch":"Hopper","profiles":[{"name":"H100-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"H100-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"H100-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"H100-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"H100-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"H100-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"H100-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"H100-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-sxm5-80gb-80","label":"NVIDIA H100 SXM5 80GB","memoryGB":80,"arch":"Hopper","profiles":[{"name":"H100XM-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"H100XM-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"H100XM-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"H100XM-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"H100XM-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"H100XM-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"H100XM-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"H100XM-80C","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l40-48","label":"NVIDIA L40","memoryGB":48,"arch":"Ada Lovelace","profiles":[{"name":"L40-4C","gb":4,"maxVms":8,"placementId":"0, 8, 12, 20, 24, 32, 36, 44"},{"name":"L40-6C","gb":6,"maxVms":8,"placementId":"0, 6, 12, 18, 24, 30, 36, 42"},{"name":"L40-8C","gb":8,"maxVms":4,"placementId":"0, 16, 24, 40"},{"name":"L40-12C","gb":12,"maxVms":4,"placementId":"0, 12, 24, 36"},{"name":"L40-16C","gb":16,"maxVms":2,"placementId":"0, 32"},{"name":"L40-24C","gb":24,"maxVms":2,"placementId":"0, 24"},{"name":"L40-48C","gb":48,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l40s-48","label":"NVIDIA L40S","memoryGB":48,"arch":"Ada Lovelace","profiles":[{"name":"L40S-4C","gb":4,"maxVms":8,"placementId":"0, 8, 12, 20, 24, 32, 36, 44"},{"name":"L40S-6C","gb":6,"maxVms":8,"placementId":"0, 6, 12, 18, 24, 30, 36, 42"},{"name":"L40S-8C","gb":8,"maxVms":4,"placementId":"0, 16, 24, 40"},{"name":"L40S-12C","gb":12,"maxVms":4,"placementId":"0, 12, 24, 36"},{"name":"L40S-16C","gb":16,"maxVms":2,"placementId":"0, 32"},{"name":"L40S-24C","gb":24,"maxVms":2,"placementId":"0, 24"},{"name":"L40S-48C","gb":48,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-pcie-40gb-40","label":"NVIDIA A100 PCIe 40GB","memoryGB":40,"arch":"Ampere","profiles":[{"name":"A100-4C","gb":4,"maxVms":8,"placementId":"0, 6, 10, 16, 20, 26, 30, 36"},{"name":"A100-5C","gb":5,"maxVms":8,"placementId":"0, 5, 10, 15, 20, 25, 30, 35"},{"name":"A100-8C","gb":8,"maxVms":4,"placementId":"0, 12, 20, 32"},{"name":"A100-10C","gb":10,"maxVms":4,"placementId":"0, 10, 20, 30"},{"name":"A100-20C","gb":20,"maxVms":2,"placementId":"0, 20"},{"name":"A100-40C","gb":40,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l4-24","label":"NVIDIA L4","memoryGB":24,"arch":"Ada Lovelace","profiles":[{"name":"L4-4C","gb":4,"maxVms":4,"placementId":"0, 8, 12, 20"},{"name":"L4-6C","gb":6,"maxVms":4,"placementId":"0, 6, 12, 18"},{"name":"L4-8C","gb":8,"maxVms":2,"placementId":"0, 16"},{"name":"L4-12C","gb":12,"maxVms":2,"placementId":"0, 12"},{"name":"L4-24C","gb":24,"maxVms":1,"placementId":"0"}]}]};
+
 async function initCatalog() {
-  const resp = await fetch('./vgpu-catalog.json', { cache: 'no-store' });
-  if (!resp.ok) throw new Error(`Failed to load vgpu-catalog.json (${resp.status})`);
-  const catalog = await resp.json();
+  let catalog = INLINE_CATALOG;
+
+  // If served from a web server, try to load a fresher external catalog first
+  if (location.protocol !== 'file:') {
+    try {
+      const resp = await fetch('./vgpu-catalog.json', { cache: 'no-store' });
+      if (resp.ok) catalog = await resp.json();
+    } catch (e) {
+      // fall through to inline catalog
+    }
+  }
 
   GPUS = catalogToGPUS(catalog);
   buildGpuDropdownFromCatalog(catalog);
@@ -510,7 +528,6 @@ async function initCatalog() {
   currentGpuKey = sel.value || Object.keys(GPUS)[0];
   sel.value = currentGpuKey;
 
-  // ensure workload max tracks GPU size
   const workload = document.getElementById('workload-gb');
   if (workload) workload.max = String(GPUS[currentGpuKey].totalGB);
 
@@ -653,6 +670,7 @@ function runRecommender() {
   if (selectedProfileNames.size === 0) { out.innerHTML = `<div class="rec-empty">Select your profile mix in Step 1 first — recommendations are context-aware.</div>`; return; }
 
   const selectedProfiles = getSelectedProfiles();
+  
   const candidates = selectedProfiles.filter(p => p.gb >= workloadGB);
   if (candidates.length === 0) {
     const smallest = selectedProfiles.length > 0 ? Math.min(...selectedProfiles.map(p => p.gb)) : '—';
@@ -660,6 +678,31 @@ function runRecommender() {
     return;
   }
   const mixGB = selectedProfiles.map(p => p.gb);
+
+  // ── Also consider (not in selected mix, headroom-triggered) ──────────────────
+  // We only surface unselected profiles when they would genuinely reduce headroom
+  // compared to the best fitting profile already in the selected mix.
+  // Example: selected {H100L-11C, H100L-23C}, workload 14GB →
+  //   best selected fit = H100L-23C (9GB headroom)
+  //   H100L-15C (1GB headroom) < 9GB → surface it
+  //   H100L-47C (33GB headroom) > 9GB → skip it
+  const ALSO_CONSIDER_N = 3;
+
+  const bestSelectedHeadroom = candidates.length > 0
+    ? Math.min(...candidates.map(p => p.gb - workloadGB))
+    : Infinity;
+
+  const alsoConsider = gpu.profiles
+    .filter(p => {
+      if (p.gb < workloadGB) return false;                    // must fit the workload
+      if (selectedProfileNames.has(p.name)) return false;    // already in selected mix
+      const headroom = p.gb - workloadGB;
+      // Only surface if this profile offers meaningfully less headroom than the best selected fit
+      // Require at least 1GB reduction so we don't clutter with near-identical profiles
+      return headroom < bestSelectedHeadroom - 1;
+    })
+    .sort((a, b) => (a.gb - workloadGB) - (b.gb - workloadGB))  // closest fit first
+    .slice(0, ALSO_CONSIDER_N);
 
   const scored = candidates.map(candidate => {
     const overhead = candidate.gb - workloadGB;
@@ -742,15 +785,71 @@ function runRecommender() {
   scored.sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead);
   const top = scored.slice(0, 3);
 
-  const rankBadge = ['best', 'warn', 'poor'];
+  
+
+  // Also-consider analysis: same scoring pipeline, shown separately, never ranked above selected-mix results.
+  // We also track how much headroom is saved vs the best currently-selected fit.
+  const bestSelectedFitName = candidates.length > 0
+    ? candidates.reduce((best, p) => (p.gb - workloadGB) < (best.gb - workloadGB) ? p : best).name
+    : null;
+
+  const alsoScored = alsoConsider.map(candidate => {
+    const found = scored.find(r => r.profile.name === candidate.name);
+    if (found) return { ...found, headroomSaved: bestSelectedHeadroom - found.overhead, _alsoConsider: true };
+
+    const overhead = candidate.gb - workloadGB;
+    const headroomSaved = bestSelectedHeadroom - overhead;  // GB saved vs best selected fit
+
+    const effectiveMixProfiles = [candidate, ...selectedProfiles.filter(p => p.gb >= candidate.gb)]
+      .reduce((acc, p) => { if (!acc.find(x => x.name === p.name)) acc.push(p); return acc; }, []);
+
+    const effectiveMixSizes = effectiveMixProfiles.map(p => p.gb);
+    const pairwise = [];
+    for (let i = 0; i < effectiveMixProfiles.length; i++) {
+      for (let j = i + 1; j < effectiveMixProfiles.length; j++) {
+        const a = effectiveMixProfiles[i], b = effectiveMixProfiles[j];
+        const analysis = pairwiseSiloAnalysis(a.gb, b.gb, effectiveMixSizes, gpu.totalGB);
+        pairwise.push({ profileA: a, profileB: b, ...analysis });
+      }
+    }
+
+    const maxPairSilo = pairwise.length > 0 ? Math.max(...pairwise.map(pw => pw.worstCaseTotal)) : 0;
+    const totalPairSilo = pairwise.reduce((sum, pw) => sum + pw.worstCaseTotal, 0);
+    const minSharedBoundaries = pairwise.length > 0 ? Math.min(...pairwise.map(pw => pw.shared.length)) : 99;
+
+    const placementSlots = Math.floor(gpu.totalGB / candidate.gb);
+    const placementDensity = effectiveMixProfiles.reduce((sum, p) => sum + Math.floor(gpu.totalGB / p.gb), 0);
+
+    const headroomRatio = overhead / Math.max(workloadGB, 1);
+    const headroomBonus = Math.min(overhead * 0.8, 5);
+    const excessPenalty = headroomRatio > 1.0 ? (overhead - workloadGB) * 3 : 0;
+    const score = (totalPairSilo * 5) - (placementDensity * 0.4) - headroomBonus + excessPenalty;
+
+    return {
+      profile: candidate,
+      overhead,
+      headroomSaved,
+      effectiveMixProfiles,
+      pairwise,
+      maxPairSilo,
+      totalPairSilo,
+      minSharedBoundaries,
+      placementSlots,
+      placementDensity,
+      headroomRatio,
+      score,
+      _alsoConsider: true
+    };
+  }).sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead);
+const rankBadge = ['best', 'warn', 'poor'];
   const rankLabel = ['Best fit', 'Acceptable', 'Avoid'];
 
   const html = top.map((r, idx) => {
     const profileColor = r.profile.color;
     const effectiveMixNames = r.effectiveMixProfiles.map(p => p.name).join(' + ');
-    const eliminatedProfiles = selectedProfiles.filter(p => p.gb < r.profile.gb);
+    const eliminatedProfiles = []; // keep selected mix intent; do not claim other selected profiles are eliminated
     const eliminatedNote = eliminatedProfiles.length > 0
-      ? `Choosing this profile eliminates the need for ${eliminatedProfiles.map(p => p.name).join(', ')} — reducing your effective mix to {${effectiveMixNames}}.`
+      ? `Evaluating this profile within your selected mix still includes ${eliminatedProfiles.map(p => p.name).join(', ')} — reducing your effective mix to {${effectiveMixNames}}.`
       : `This keeps your full mix of {${effectiveMixNames}} in play.`;
 
     // Pairwise table using effective mix pairs
@@ -836,15 +935,115 @@ function runRecommender() {
     </div>`;
   }).join('');
 
+  // ── Also consider section (not in selected mix, headroom-triggered) ──────────
+  const alsoCards = alsoScored.map((r) => {
+    const profileColor = r.profile.color;
+    const effectiveMixNames = r.effectiveMixProfiles.map(p => p.name).join(' + ');
+    const headroomSaved = r.headroomSaved != null ? r.headroomSaved : (bestSelectedHeadroom - r.overhead);
+
+    let pairwiseHTML = '';
+    if (r.pairwise.length > 0) {
+      const rows = r.pairwise.map(pw => {
+        const sc = pw.worstCaseTotal === 0 ? 'var(--green)' : pw.worstCaseTotal <= 5 ? 'var(--amber)' : 'var(--red)';
+        const bc = pw.shared.length >= 5 ? 'var(--green)' : pw.shared.length >= 3 ? 'var(--amber)' : 'var(--red)';
+        return `<div class="pairwise-row">
+          <span class="pw-profiles" style="color:var(--text)">${pw.profileA.name} + ${pw.profileB.name}</span>
+          <span class="pw-lcm" style="color:var(--text-muted)">LCM: ${pw.lcmPeriod} GB</span>
+          <span class="pw-shared" style="color:${bc}">${pw.shared.length} shared bounds</span>
+          <span class="pw-silo" style="color:${sc}">${pw.worstCaseTotal === 0 ? '✓ 0 GB silo' : '⚠ up to ' + pw.worstCaseTotal + ' GB'}</span>
+        </div>`;
+      }).join('');
+      pairwiseHTML = `<div><div class="pairwise-title">Effective mix if added: {${effectiveMixNames}}</div>${rows}</div>`;
+    } else {
+      pairwiseHTML = `<div style="font-size:11px;color:var(--green);padding:4px 0;">✓ Single-profile — no pairwise silo possible.</div>`;
+    }
+
+    const vizHTML = buildBoundaryViz(r.profile, r.effectiveMixProfiles.filter(p => p.name !== r.profile.name), gpu.totalGB);
+
+    const headroomColor = r.overhead === 0 ? 'var(--green)' : r.headroomRatio <= 0.5 ? 'var(--green)' : 'var(--blue)';
+    const siloColor     = r.totalPairSilo === 0 ? 'var(--green)' : r.totalPairSilo <= 6 ? 'var(--amber)' : 'var(--red)';
+    const savedColor    = headroomSaved >= 5 ? 'var(--green)' : 'var(--blue)';
+
+    const bestPrimary = top[0];
+    const siloVsBest = r.totalPairSilo - bestPrimary.totalPairSilo;
+    const siloVsBestText = siloVsBest === 0
+      ? `same silo as top pick (${bestPrimary.profile.name})`
+      : siloVsBest > 0
+        ? `${siloVsBest} GB more silo than ${bestPrimary.profile.name} — weigh this against the headroom saving`
+        : `${Math.abs(siloVsBest)} GB less silo than ${bestPrimary.profile.name}`;
+
+    const reason = r.overhead === 0
+      ? `${r.profile.name} is an exact size match for a ${workloadGB} GB workload — no headroom wasted. Compared to ${bestSelectedFitName} (${bestSelectedHeadroom} GB headroom), adding this saves ${headroomSaved} GB per VM. Effective mix {${effectiveMixNames}}: ${r.totalPairSilo === 0 ? 'zero siloed capacity — alignment is clean, this is a clear win' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.`
+      : `Adding ${r.profile.name} cuts per-VM headroom from ${bestSelectedHeadroom} GB → ${r.overhead} GB, recovering ${headroomSaved} GB per workload VM. Effective mix {${effectiveMixNames}}: ${r.totalPairSilo === 0 ? 'zero siloed capacity — alignment holds up, strong candidate to add' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + '). Confirm the silo cost is acceptable before adding this profile'}.`;
+
+    const headroomBadge = r.overhead > 0
+      ? `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(6,205,212,0.1);border:1px solid rgba(6,205,212,0.3);color:var(--cyan);white-space:nowrap;">+${r.overhead} GB headroom</div>`
+      : `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.3);color:var(--green);white-space:nowrap;">exact fit</div>`;
+
+    return `
+      <div class="rec-card" style="border-color:rgba(8,145,178,0.3);">
+        <div class="rec-card-header" style="background:rgba(8,145,178,0.05);">
+          <div class="rec-rank" style="background:var(--cyan);color:#fff;font-size:11px;line-height:1;">+</div>
+          <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${profileColor};flex-shrink:0"></span>
+          <div class="rec-profile-name">${r.profile.name} <span>${r.profile.gb} GB profile</span></div>
+          ${headroomBadge}
+          <div class="rec-badge" style="background:rgba(8,145,178,0.08);color:var(--cyan);border:1px solid rgba(8,145,178,0.25);">Not in mix</div>
+        </div>
+        <div class="rec-card-body">
+          <div class="rec-metrics">
+            <div class="rec-metric">
+              <div class="rm-label">Headroom / VM</div>
+              <div class="rm-val" style="color:${headroomColor}">${r.overhead === 0 ? 'Exact fit' : '+' + r.overhead + ' GB'}</div>
+            </div>
+            <div class="rec-metric" style="border-color:rgba(8,145,178,0.2);background:rgba(8,145,178,0.04);">
+              <div class="rm-label" style="color:var(--cyan);">Headroom saved vs mix</div>
+              <div class="rm-val" style="color:${savedColor};">−${headroomSaved} GB / VM</div>
+            </div>
+            <div class="rec-metric">
+              <div class="rm-label">Silo if added</div>
+              <div class="rm-val" style="color:${siloColor}">${r.totalPairSilo === 0 ? 'None' : r.totalPairSilo + ' GB'}</div>
+            </div>
+            <div class="rec-metric">
+              <div class="rm-label">Effective mix size</div>
+              <div class="rm-val" style="color:var(--text-dim)">${r.effectiveMixProfiles.length} profile type${r.effectiveMixProfiles.length !== 1 ? 's' : ''}</div>
+            </div>
+          </div>
+          ${pairwiseHTML}
+          ${vizHTML}
+          <div class="rec-reason" style="border-left-color:var(--cyan);">${reason}</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  const alsoHTML = alsoScored.length > 0 ? `
+    <div style="margin-top:20px;">
+      <div class="rec-section-header">
+        <div class="rsh-dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan);"></div>
+        <span class="rsh-title">Consider Adding to Your Mix</span>
+        <span class="rsh-badge">Not currently selected</span>
+        <span class="rsh-desc">${bestSelectedFitName} leaves ${bestSelectedHeadroom} GB headroom — tighter profiles exist outside your mix</span>
+      </div>
+      <div style="font-size:11px;color:var(--text-dim);line-height:1.7;max-width:800px;margin-bottom:12px;padding:0 2px;">
+        Adding any profile below could cut headroom from <strong style="color:var(--amber)">${bestSelectedHeadroom} GB</strong> per VM —
+        but check the silo alignment analysis before adding it to your mix.
+      </div>
+      <div class="rec-cards">${alsoCards}</div>
+    </div>` : '';
+
   // ── Cluster-level comparison ──────────────────────────────────────────────
   const clusterGPUs = parseInt(document.getElementById('cluster-gpus').value, 10) || 10;
   const clusterHTML = buildClusterComparison(top, selectedProfiles, gpu, workloadGB, clusterGPUs);
 
   out.innerHTML = `
-    <div style="font-family:'Space Mono',monospace;font-size:10px;color:var(--text-muted);margin-bottom:12px;">
-      WORKLOAD: ${workloadGB} GB · ${candidates.length} fitting profile(s) in mix · ranked by siloed capacity impact
+    <div class="rec-section-header" style="margin-bottom:14px;">
+      <div class="rsh-dot" style="background:var(--primary);box-shadow:0 0 6px var(--primary);"></div>
+      <span class="rsh-title">Ranked Recommendations</span>
+      <span class="rsh-badge">Workload: ${workloadGB} GB</span>
+      <span class="rsh-badge">${candidates.length} profile${candidates.length !== 1 ? 's' : ''} fit</span>
+      <span class="rsh-desc">scored by silo impact within selected mix</span>
     </div>
     <div class="rec-cards">${html}</div>
+    ${alsoHTML}
     ${clusterHTML}`;
 }
 
@@ -1083,17 +1282,17 @@ function buildClusterComparison(topCandidates, selectedProfiles, gpu, workloadGB
 
   return `
     <div style="margin-top:20px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:10px;">
-        <div>
-          <div style="font-family:'Space Mono',monospace;font-size:11px;font-weight:700;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;">Cluster-Level Capacity Impact</div>
-          <div style="font-size:11px;color:var(--text-muted);margin-top:3px;">Siloed capacity is permanently unreachable by any workload. Headroom inside a profile benefits workloads — these are not equivalent trade-offs.</div>
+      <div class="rec-section-header" style="margin-bottom:12px;">
+        <div class="rsh-dot" style="background:var(--purple);box-shadow:0 0 6px var(--purple);"></div>
+        <span class="rsh-title">Cluster-Level Impact</span>
+        <span class="rsh-badge">${clusterGPUs} GPU${clusterGPUs !== 1 ? 's' : ''}</span>
+        <span class="rsh-desc">siloed capacity is permanently unreachable · headroom benefits workloads — not equivalent trade-offs</span>
+        <div style="display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0;">
+          <label style="font-size:10px;color:var(--text-muted);white-space:nowrap;letter-spacing:0;text-transform:none;font-weight:400;">GPUs in cluster</label>
+          <input type="number" id="cluster-gpus-inline" min="1" max="10000" value="${clusterGPUs}"
+            style="width:72px;background:var(--surface3);border:1px solid var(--border);color:var(--text);padding:4px 8px;border-radius:4px;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;outline:none;"
+            oninput="document.getElementById('cluster-gpus').value=this.value;runRecommender();">
         </div>
-        <div style="display:flex;align-items:center;gap:8px;">
-            <label style="font-size:11px;color:var(--text-dim);white-space:nowrap;">GPUs in cluster</label>
-            <input type="number" id="cluster-gpus-inline" min="1" max="10000" value="${clusterGPUs}"
-              style="width:80px;background:var(--surface3);border:1px solid var(--border);color:var(--text);padding:6px 10px;border-radius:5px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;outline:none;"
-              oninput="document.getElementById('cluster-gpus').value=this.value;runRecommender();">
-          </div>
       </div>
       <div style="overflow-x:auto;">
         <table class="cluster-table" style="width:100%;border-collapse:collapse;font-size:12px;">
@@ -1369,8 +1568,7 @@ function resetAllocations() {
 }
 
 initCatalog().catch(err => {
-  console.error(err);
-  alert('Failed to load GPU catalog (vgpu-catalog.json). Check file path and hosting.');
+  console.error('initCatalog error:', err);
 });
 </script>
 </body>

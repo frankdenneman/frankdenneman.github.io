@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silo Capacity Visualizer (educational)</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
 
   :root {
     --bg: #f8fafc;
@@ -53,7 +53,7 @@
   .logo-area { display: flex; flex-direction: column; gap: 6px; }
   .logo-badge { display: inline-flex; align-items: center; gap: 8px; font-family: 'Space Mono', monospace; font-size: 10px; color: var(--cyan); background: rgba(6,205,212,0.08); border: 1px solid rgba(6,205,212,0.25); padding: 4px 10px; border-radius: 3px; letter-spacing: 1px; width: fit-content; }
   .logo-badge::before { content: '▶'; font-size: 8px; }
-  h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1; }
+  h1 { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1; }
   h1 span { color: var(--primary); }
   .subtitle { font-size: 13px; color: var(--text-dim); margin-top: 4px; font-weight: 400; }
   .header-links { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; margin-top: 4px; }
@@ -251,6 +251,17 @@
   ::-webkit-scrollbar-track { background: var(--surface); }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .stats-row { grid-template-columns: 1fr 1fr; } .header-links { display: none; } }
+
+  /* Font test: when html has .font-test-inter, use Inter everywhere (toggle to compare) */
+  html.font-test-inter,
+  html.font-test-inter *,
+  html.font-test-inter *::before,
+  html.font-test-inter *::after {
+    font-family: 'Inter', sans-serif !important;
+  }
+  .font-toggle { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text-muted); background: var(--surface3); border: 1px solid var(--border); padding: 4px 10px; border-radius: 3px; cursor: pointer; transition: all 0.15s; }
+  .font-toggle:hover { border-color: var(--primary); color: var(--primary); }
+  html.font-test-inter .font-toggle { background: rgba(6,205,212,0.08); border-color: rgba(6,205,212,0.3); color: var(--cyan); }
 </style>
 </head>
 <body>
@@ -263,6 +274,7 @@
       <div class="subtitle">Visualize how vGPU profile combinations create siloed (unreachable) GPU capacity</div>
     </div>
     <div class="header-links">
+      <button type="button" class="font-toggle" id="font-toggle" onclick="toggleFontTest()" title="Toggle Inter everywhere to compare typography">Font test: Inter</button>
       <a class="ref-link" href="https://docs.nvidia.com/vgpu/latest/pdf/grid-vgpu-user-guide.pdf" target="_blank">
         <span>📄</span><span class="ref-label">NVIDIA vGPU Software User Guide</span>
       </a>
@@ -1145,6 +1157,13 @@ function render() {
     inner.appendChild(item);
   }
   listEl.innerHTML = ''; listEl.appendChild(inner);
+}
+
+// ─── Font test toggle (Inter everywhere vs original) ───────────────────────────
+function toggleFontTest() {
+  document.documentElement.classList.toggle('font-test-inter');
+  const btn = document.getElementById('font-toggle');
+  if (btn) btn.textContent = document.documentElement.classList.contains('font-test-inter') ? 'Restore fonts' : 'Font test: Inter';
 }
 
 // ─── Actions ──────────────────────────────────────────────────────────────────

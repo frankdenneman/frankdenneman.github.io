@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-
-<meta name="description" content="Calculate and visualize vGPU silo capacity and mixed-size placement behavior for NVIDIA vGPU profiles.">
-  <link rel="canonical" href="https://frankdenneman.nl/tools/vgpu-silo-capacity-calculator/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>vGPU Silo Capacity Calculator</title>
+<title>Silo Capacity Visualizer (educational)</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
 
@@ -259,27 +252,6 @@
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
   @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .stats-row { grid-template-columns: 1fr 1fr; } .header-links { display: none; } }
 </style>
-
-<style>
-  .fd-tool-footer {
-    font: inherit;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    opacity: 0.75;
-    margin-top: 24px;
-  }
-  .fd-tool-footer a {
-    font: inherit;
-    color: inherit;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-  .fd-tool-footer .sep {
-    margin: 0 10px;
-    opacity: 0.7;
-  }
-</style>
-
 </head>
 <body>
 <div class="app">
@@ -287,9 +259,7 @@
   <header>
     <div class="logo-area">
       <div class="logo-badge">VGPU MIXED-SIZE MODE</div>
-      <h1>vGPU Silo Capacity Calculator</h1>
-<div style="font-size: 0.85em; opacity: 0.7; margin-top: 4px;">Version v1.4 • vGPU Silo Capacity Calculator</div>
-
+      <h1>Mixed Mode vGPU Profile Placement <span>Silo</span> Simulator</h1>
       <div class="subtitle">Visualize how vGPU profile combinations create siloed (unreachable) GPU capacity</div>
     </div>
     <div class="header-links">
@@ -534,7 +504,7 @@ function buildGpuDropdownFromCatalog(catalogJson) {
 }
 
 // ─── Inline catalog (embedded so the tool works without a server) ─────────────
-const INLINE_CATALOG = {"version":"generated-from-section-csv","source":"user CSV","gpus":[{"key":"nvidia-rtx-pro-6000-se-96gb-96","label":"NVIDIA RTX PRO 6000 SE 96GB","memoryGB":96,"arch":"Blackwell","profiles":[{"name":"DC-8C","gb":8,"maxVms":12,"placementId":"0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88"},{"name":"DC-12C","gb":12,"maxVms":8,"placementId":"0, 12, 24, 36, 48, 60, 72, 84"},{"name":"DC-16C","gb":16,"maxVms":6,"placementId":"0, 16, 32, 48, 64, 80"},{"name":"DC-24C","gb":24,"maxVms":4,"placementId":"0, 24, 48, 72"},{"name":"DC-32C","gb":32,"maxVms":3,"placementId":"0, 32, 64"},{"name":"DC-48C","gb":48,"maxVms":2,"placementId":"0, 48"},{"name":"DC-96C","gb":96,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-pcie-94gb-h100-nvl-94","label":"NVIDIA H100 PCIe 94GB (H100 NVL)","memoryGB":94,"arch":"Hopper","profiles":[{"name":"H100L-4C","gb":4,"maxVms":16,"placementId":"0, 7, 11, 19, 23, 31, 35, 43, 47, 54, 58, 66, 70, 78, 82, 90"},{"name":"H100L-6C","gb":6,"maxVms":8,"placementId":"0, 17, 23, 41, 47, 64, 70, 88"},{"name":"H100L-11C","gb":11,"maxVms":8,"placementId":"0, 12, 23, 36, 47, 59, 70, 83"},{"name":"H100L-15C","gb":15,"maxVms":4,"placementId":"0, 32, 47, 79"},{"name":"H100L-23C","gb":23,"maxVms":4,"placementId":"0, 24, 47, 71"},{"name":"H100L-47C","gb":47,"maxVms":2,"placementId":"0, 47"},{"name":"H100L-94C","gb":94,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-sxm5-94gb-94","label":"NVIDIA H100 SXM5 94GB","memoryGB":94,"arch":"Hopper","profiles":[{"name":"H100XL-4C","gb":4,"maxVms":16,"placementId":"0, 7, 11, 19, 23, 31, 35, 43, 47, 54, 58, 66, 70, 78, 82, 90"},{"name":"H100XL-6C","gb":6,"maxVms":8,"placementId":"0, 17, 23, 41, 47, 64, 70, 88"},{"name":"H100XL-11C","gb":11,"maxVms":8,"placementId":"0, 12, 23, 36, 47, 59, 70, 83"},{"name":"H100XL-15C","gb":15,"maxVms":4,"placementId":"0, 32, 47, 79"},{"name":"H100XL-23C","gb":23,"maxVms":4,"placementId":"0, 24, 47, 71"},{"name":"H100XL-47C","gb":47,"maxVms":2,"placementId":"0, 47"},{"name":"H100XL-94C","gb":94,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-hgx-80gb-80","label":"NVIDIA A100 HGX 80GB","memoryGB":80,"arch":"Ampere","profiles":[{"name":"A100DX-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"A100DX-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"A100DX-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"A100DX-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"A100DX-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"A100DX-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"A100DX-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"A100DX-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-pcie-80gb-80","label":"NVIDIA A100 PCIe 80GB","memoryGB":80,"arch":"Ampere","profiles":[{"name":"A100D-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"A100D-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"A100D-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"A100D-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"A100D-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"A100D-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"A100D-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"A100D-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-pcie-80gb-80","label":"NVIDIA H100 PCIe 80GB","memoryGB":80,"arch":"Hopper","profiles":[{"name":"H100-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"H100-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"H100-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"H100-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"H100-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"H100-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"H100-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"H100-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-sxm5-80gb-80","label":"NVIDIA H100 SXM5 80GB","memoryGB":80,"arch":"Hopper","profiles":[{"name":"H100XM-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"H100XM-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"H100XM-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"H100XM-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"H100XM-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"H100XM-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"H100XM-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"H100XM-80C","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l40-48","label":"NVIDIA L40","memoryGB":48,"arch":"Ada Lovelace","profiles":[{"name":"L40-4C","gb":4,"maxVms":8,"placementId":"0, 8, 12, 20, 24, 32, 36, 44"},{"name":"L40-6C","gb":6,"maxVms":8,"placementId":"0, 6, 12, 18, 24, 30, 36, 42"},{"name":"L40-8C","gb":8,"maxVms":4,"placementId":"0, 16, 24, 40"},{"name":"L40-12C","gb":12,"maxVms":4,"placementId":"0, 12, 24, 36"},{"name":"L40-16C","gb":16,"maxVms":2,"placementId":"0, 32"},{"name":"L40-24C","gb":24,"maxVms":2,"placementId":"0, 24"},{"name":"L40-48C","gb":48,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l40s-48","label":"NVIDIA L40S","memoryGB":48,"arch":"Ada Lovelace","profiles":[{"name":"L40S-4C","gb":4,"maxVms":8,"placementId":"0, 8, 12, 20, 24, 32, 36, 44"},{"name":"L40S-6C","gb":6,"maxVms":8,"placementId":"0, 6, 12, 18, 24, 30, 36, 42"},{"name":"L40S-8C","gb":8,"maxVms":4,"placementId":"0, 16, 24, 40"},{"name":"L40S-12C","gb":12,"maxVms":4,"placementId":"0, 12, 24, 36"},{"name":"L40S-16C","gb":16,"maxVms":2,"placementId":"0, 32"},{"name":"L40S-24C","gb":24,"maxVms":2,"placementId":"0, 24"},{"name":"L40S-48C","gb":48,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-pcie-40gb-40","label":"NVIDIA A100 PCIe 40GB","memoryGB":40,"arch":"Ampere","profiles":[{"name":"A100-4C","gb":4,"maxVms":8,"placementId":"0, 6, 10, 16, 20, 26, 30, 36"},{"name":"A100-5C","gb":5,"maxVms":8,"placementId":"0, 5, 10, 15, 20, 25, 30, 35"},{"name":"A100-8C","gb":8,"maxVms":4,"placementId":"0, 12, 20, 32"},{"name":"A100-10C","gb":10,"maxVms":4,"placementId":"0, 10, 20, 30"},{"name":"A100-20C","gb":20,"maxVms":2,"placementId":"0, 20"},{"name":"A100-40C","gb":40,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l4-24","label":"NVIDIA L4","memoryGB":24,"arch":"Ada Lovelace","profiles":[{"name":"L4-4C","gb":4,"maxVms":4,"placementId":"0, 8, 12, 20"},{"name":"L4-6C","gb":6,"maxVms":4,"placementId":"0, 6, 12, 18"},{"name":"L4-8C","gb":8,"maxVms":2,"placementId":"0, 16"},{"name":"L4-12C","gb":12,"maxVms":2,"placementId":"0, 12"},{"name":"L4-24C","gb":24,"maxVms":1,"placementId":"0"}]}]};
+const INLINE_CATALOG = {"version":"generated-from-section-csv","source":"user CSV","gpus":[{"key":"nvidia-rtx-pro-6000-se-96gb-96","label":"NVIDIA RTX PRO 6000 SE 96GB","memoryGB":96,"arch":"Blackwell","profiles":[{"name":"DC-8C","gb":8,"maxVms":12,"placementId":"0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88"},{"name":"DC-12C","gb":12,"maxVms":8,"placementId":"0, 12, 24, 36, 48, 60, 72, 84"},{"name":"DC-16C","gb":16,"maxVms":6,"placementId":"0, 16, 32, 48, 64, 80"},{"name":"DC-24C","gb":24,"maxVms":4,"placementId":"0, 24, 48, 72"},{"name":"DC-32C","gb":32,"maxVms":3,"placementId":"0, 32, 64"},{"name":"DC-48C","gb":48,"maxVms":2,"placementId":"0, 48"},{"name":"DC-96C","gb":96,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-pcie-94gb-h100-nvl-94","label":"NVIDIA H100 PCIe 94GB (H100 NVL)","memoryGB":94,"arch":"Hopper","profiles":[{"name":"H100L-4C","gb":4,"maxVms":16,"placementId":"0, 7, 11, 19, 23, 31, 35, 43, 47, 54, 58, 66, 70, 78, 82, 90"},{"name":"H100L-6C","gb":6,"maxVms":8,"placementId":"0, 17, 23, 41, 47, 64, 70, 88"},{"name":"H100L-11C","gb":11,"maxVms":8,"placementId":"0, 12, 23, 36, 47, 59, 70, 83"},{"name":"H100L-15C","gb":15,"maxVms":4,"placementId":"0, 32, 47, 79"},{"name":"H100L-23C","gb":23,"maxVms":4,"placementId":"0, 24, 47, 71"},{"name":"H100L-47C","gb":47,"maxVms":2,"placementId":"0, 47"},{"name":"H100L-94C","gb":94,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-sxm5-94gb-94","label":"NVIDIA H100 SXM5 94GB","memoryGB":94,"arch":"Hopper","profiles":[{"name":"H100XL-4C","gb":4,"maxVms":16,"placementId":"0, 7, 11, 19, 23, 31, 35, 43, 47, 54, 58, 66, 70, 78, 82, 90"},{"name":"H100XL-6C","gb":6,"maxVms":8,"placementId":"0, 17, 23, 41, 47, 64, 70, 88"},{"name":"H100XL-11C","gb":11,"maxVms":8,"placementId":"0, 12, 23, 36, 47, 59, 70, 83"},{"name":"H100XL-15C","gb":15,"maxVms":4,"placementId":"0, 32, 47, 79"},{"name":"H100XL-23C","gb":23,"maxVms":4,"placementId":"0, 24, 47, 71"},{"name":"H100XL-47C","gb":47,"maxVms":2,"placementId":"0, 47"},{"name":"H100XL-94C","gb":94,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-hgx-80gb-80","label":"NVIDIA A100 HGX 80GB","memoryGB":80,"arch":"Ampere","profiles":[{"name":"A100DX-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"A100DX-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"A100DX-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"A100DX-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"A100DX-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"A100DX-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"A100DX-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-pcie-80gb-80","label":"NVIDIA A100 PCIe 80GB","memoryGB":80,"arch":"Ampere","profiles":[{"name":"A100D-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"A100D-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"A100D-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"A100D-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"A100D-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"A100D-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"A100D-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-pcie-80gb-80","label":"NVIDIA H100 PCIe 80GB","memoryGB":80,"arch":"Hopper","profiles":[{"name":"H100-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"H100-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"H100-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"H100-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"H100-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"H100-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"H100-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"H100-80","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-h100-sxm5-80gb-80","label":"NVIDIA H100 SXM5 80GB","memoryGB":80,"arch":"Hopper","profiles":[{"name":"H100XM-4C","gb":4,"maxVms":16,"placementId":"0, 6, 10, 16, 20, 26, 30, 36, 40, 46, 50, 56, 60, 66, 70, 76"},{"name":"H100XM-5C","gb":5,"maxVms":16,"placementId":"0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75"},{"name":"H100XM-8C","gb":8,"maxVms":8,"placementId":"0, 12, 20, 32, 40, 52, 60, 72"},{"name":"H100XM-10C","gb":10,"maxVms":8,"placementId":"0, 10, 20, 30, 40, 50, 60, 70"},{"name":"H100XM-16C","gb":16,"maxVms":4,"placementId":"0, 24, 40, 64"},{"name":"H100XM-20C","gb":20,"maxVms":4,"placementId":"0, 20, 40, 60"},{"name":"H100XM-40C","gb":40,"maxVms":2,"placementId":"0, 40"},{"name":"H100XM-80C","gb":80,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l40-48","label":"NVIDIA L40","memoryGB":48,"arch":"Ada Lovelace","profiles":[{"name":"L40-4C","gb":4,"maxVms":8,"placementId":"0, 8, 12, 20, 24, 32, 36, 44"},{"name":"L40-6C","gb":6,"maxVms":8,"placementId":"0, 6, 12, 18, 24, 30, 36, 42"},{"name":"L40-8C","gb":8,"maxVms":4,"placementId":"0, 16, 24, 40"},{"name":"L40-12C","gb":12,"maxVms":4,"placementId":"0, 12, 24, 36"},{"name":"L40-16C","gb":16,"maxVms":2,"placementId":"0, 32"},{"name":"L40-24C","gb":24,"maxVms":2,"placementId":"0, 24"},{"name":"L40-48C","gb":48,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l40s-48","label":"NVIDIA L40S","memoryGB":48,"arch":"Ada Lovelace","profiles":[{"name":"L40S-4C","gb":4,"maxVms":8,"placementId":"0, 8, 12, 20, 24, 32, 36, 44"},{"name":"L40S-6C","gb":6,"maxVms":8,"placementId":"0, 6, 12, 18, 24, 30, 36, 42"},{"name":"L40S-8C","gb":8,"maxVms":4,"placementId":"0, 16, 24, 40"},{"name":"L40S-12C","gb":12,"maxVms":4,"placementId":"0, 12, 24, 36"},{"name":"L40S-16C","gb":16,"maxVms":2,"placementId":"0, 32"},{"name":"L40S-24C","gb":24,"maxVms":2,"placementId":"0, 24"},{"name":"L40S-48C","gb":48,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-a100-pcie-40gb-40","label":"NVIDIA A100 PCIe 40GB","memoryGB":40,"arch":"Ampere","profiles":[{"name":"A100-4C","gb":4,"maxVms":8,"placementId":"0, 6, 10, 16, 20, 26, 30, 36"},{"name":"A100-5C","gb":5,"maxVms":8,"placementId":"0, 5, 10, 15, 20, 25, 30, 35"},{"name":"A100-8C","gb":8,"maxVms":4,"placementId":"0, 12, 20, 32"},{"name":"A100-10C","gb":10,"maxVms":4,"placementId":"0, 10, 20, 30"},{"name":"A100-20C","gb":20,"maxVms":2,"placementId":"0, 20"},{"name":"A100-40C","gb":40,"maxVms":1,"placementId":"0"}]},{"key":"nvidia-l4-24","label":"NVIDIA L4","memoryGB":24,"arch":"Ada Lovelace","profiles":[{"name":"L4-4C","gb":4,"maxVms":4,"placementId":"0, 8, 12, 20"},{"name":"L4-6C","gb":6,"maxVms":4,"placementId":"0, 6, 12, 18"},{"name":"L4-8C","gb":8,"maxVms":2,"placementId":"0, 16"},{"name":"L4-12C","gb":12,"maxVms":2,"placementId":"0, 12"},{"name":"L4-24C","gb":24,"maxVms":1,"placementId":"0"}]}]};
 
 async function initCatalog() {
   let catalog = INLINE_CATALOG;
@@ -780,18 +750,11 @@ function runRecommender() {
     return;
   }
 
-  const ALSO_CONSIDER_N = 3;
   const bestSelectedHeadroom = Math.min(...candidates.map(p => p.gb - workloadGB));
 
-  const alsoConsider = gpu.profiles
-    .filter(p => {
-      if (p.gb < workloadGB) return false;
-      if (selectedProfileNames.has(p.name)) return false;
-      const headroom = p.gb - workloadGB;
-      return headroom < bestSelectedHeadroom - 1;
-    })
-    .sort((a, b) => (a.gb - workloadGB) - (b.gb - workloadGB))
-    .slice(0, ALSO_CONSIDER_N);
+  // All unselected profiles that fit the workload — consolidated, ranked by score (silo + placement density; excess headroom penalized)
+  const alsoConsiderAll = gpu.profiles
+    .filter(p => p.gb >= workloadGB && !selectedProfileNames.has(p.name));
 
   const scored = candidates.map(candidate =>
     scoreCandidateProfile(candidate, workloadGB, selectedProfiles, gpu.totalGB)
@@ -804,11 +767,11 @@ function runRecommender() {
     ? candidates.reduce((best, p) => (p.gb - workloadGB) < (best.gb - workloadGB) ? p : best).name
     : null;
 
-  const alsoScored = alsoConsider.map(candidate => {
+  const alsoScored = alsoConsiderAll.map(candidate => {
     const base = scoreCandidateProfile(candidate, workloadGB, selectedProfiles, gpu.totalGB);
     const headroomSaved = bestSelectedHeadroom - base.overhead;
     return { ...base, headroomSaved, _alsoConsider: true };
-  }).sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead);
+  }).sort((a, b) => a.score !== b.score ? a.score - b.score : a.overhead - b.overhead).slice(0, 3);
 const rankBadge = ['best', 'warn', 'poor'];
   const rankLabel = ['Best fit', 'Acceptable', 'Avoid'];
 
@@ -904,8 +867,8 @@ const rankBadge = ['best', 'warn', 'poor'];
     </div>`;
   }).join('');
 
-  // ── Also consider section (not in selected mix, headroom-triggered) ──────────
-  const alsoCards = alsoScored.map((r) => {
+  // ── Build "not in mix" card HTML (ranked) ───────────────────────────────────
+  const buildAlsoCard = (r, rank) => {
     const profileColor = r.profile.color;
     const effectiveMixNames = r.effectiveMixProfiles.map(p => p.name).join(' + ');
     const headroomSaved = r.headroomSaved != null ? r.headroomSaved : (bestSelectedHeadroom - r.overhead);
@@ -931,7 +894,7 @@ const rankBadge = ['best', 'warn', 'poor'];
 
     const headroomColor = r.overhead === 0 ? 'var(--green)' : r.headroomRatio <= 0.5 ? 'var(--green)' : 'var(--blue)';
     const siloColor     = r.totalPairSilo === 0 ? 'var(--green)' : r.totalPairSilo <= 6 ? 'var(--amber)' : 'var(--red)';
-    const savedColor    = headroomSaved >= 5 ? 'var(--green)' : 'var(--blue)';
+    const savedColor    = headroomSaved >= 5 ? 'var(--green)' : headroomSaved > 0 ? 'var(--blue)' : 'var(--text-muted)';
 
     const bestPrimary = top[0];
     const siloVsBest = r.totalPairSilo - bestPrimary.totalPairSilo;
@@ -941,18 +904,24 @@ const rankBadge = ['best', 'warn', 'poor'];
         ? `${siloVsBest} GB more silo than ${bestPrimary.profile.name} — weigh this against the headroom saving`
         : `${Math.abs(siloVsBest)} GB less silo than ${bestPrimary.profile.name}`;
 
+    const excessNote = r.headroomRatio > 1.0
+      ? ` <strong>Excess headroom</strong> (+${r.overhead} GB, ${Math.round(r.headroomRatio * 100)}% above workload) reduces placement density — only ${r.placementSlots} slots per GPU.`
+      : '';
     const reason = r.overhead === 0
-      ? `<strong>Why consider it:</strong> ${r.profile.name} exactly fits a ${workloadGB} GB workload and recovers ${headroomSaved} GB per VM versus ${bestSelectedFitName}. Effective mix {${effectiveMixNames}} leaves ${r.totalPairSilo === 0 ? 'no siloed capacity' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.`
-      : `<strong>Why consider it:</strong> switching to ${r.profile.name} reduces headroom from ${bestSelectedHeadroom} GB → ${r.overhead} GB per VM, saving ${headroomSaved} GB while ${r.totalPairSilo === 0 ? 'keeping siloed capacity at 0 GB' : 'creating ' + r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.`;
+      ? `<strong>Why consider it:</strong> ${r.profile.name} exactly fits a ${workloadGB} GB workload${headroomSaved > 0 ? ' and recovers ' + headroomSaved + ' GB per VM versus ' + bestSelectedFitName : ''}. Effective mix {${effectiveMixNames}} leaves ${r.totalPairSilo === 0 ? 'no siloed capacity' : r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.${excessNote}`
+      : `<strong>Why consider it:</strong> ${r.profile.name} ${headroomSaved > 0 ? 'reduces headroom from ' + bestSelectedHeadroom + ' GB → ' + r.overhead + ' GB per VM, saving ' + headroomSaved + ' GB' : 'gives +' + r.overhead + ' GB headroom per VM' + (headroomSaved < 0 ? ' (more than your best fit)' : '')} while ${r.totalPairSilo === 0 ? 'keeping siloed capacity at 0 GB' : 'creating ' + r.totalPairSilo + ' GB siloed (' + siloVsBestText + ')'}.${excessNote}`;
 
     const headroomBadge = r.overhead > 0
       ? `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(6,205,212,0.1);border:1px solid rgba(6,205,212,0.3);color:var(--cyan);white-space:nowrap;">+${r.overhead} GB headroom</div>`
       : `<div style="font-family:'Space Mono',monospace;font-size:9px;padding:2px 8px;border-radius:3px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.3);color:var(--green);white-space:nowrap;">exact fit</div>`;
 
+    const savedLabel = headroomSaved > 0 ? 'Headroom saved vs mix' : 'Headroom vs mix';
+    const savedVal   = headroomSaved > 0 ? `−${headroomSaved} GB / VM` : (headroomSaved === 0 ? 'Same as best' : `+${-headroomSaved} GB (more than best)`);
+
     return `
       <div class="rec-card" style="border-color:rgba(8,145,178,0.3);">
         <div class="rec-card-header" style="background:rgba(8,145,178,0.05);">
-          <div class="rec-rank" style="background:var(--cyan);color:#fff;font-size:11px;line-height:1;">+</div>
+          <div class="rec-rank" style="background:var(--cyan);color:#fff;font-size:10px;line-height:1;">${rank}</div>
           <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${profileColor};flex-shrink:0"></span>
           <div class="rec-profile-name">${r.profile.name} <span>${r.profile.gb} GB profile</span></div>
           ${headroomBadge}
@@ -965,8 +934,8 @@ const rankBadge = ['best', 'warn', 'poor'];
               <div class="rm-val" style="color:${headroomColor}">${r.overhead === 0 ? 'Exact fit' : '+' + r.overhead + ' GB'}</div>
             </div>
             <div class="rec-metric" style="border-color:rgba(8,145,178,0.2);background:rgba(8,145,178,0.04);">
-              <div class="rm-label" style="color:var(--cyan);">Headroom saved vs mix</div>
-              <div class="rm-val" style="color:${savedColor};">−${headroomSaved} GB / VM</div>
+              <div class="rm-label" style="color:var(--cyan);">${savedLabel}</div>
+              <div class="rm-val" style="color:${savedColor};">${savedVal}</div>
             </div>
             <div class="rec-metric">
               <div class="rm-label">Silo if added</div>
@@ -982,18 +951,20 @@ const rankBadge = ['best', 'warn', 'poor'];
           <div class="rec-reason" style="border-left-color:var(--cyan);">${reason}</div>
         </div>
       </div>`;
-  }).join('');
+  };
+
+  const alsoCards = alsoScored.map((r, idx) => buildAlsoCard(r, idx + 1)).join('');
 
   const alsoHTML = alsoScored.length > 0 ? `
     <div style="margin-top:20px;">
       <div class="rec-section-header">
         <div class="rsh-dot" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan);"></div>
-        <span class="rsh-title">Tighter Profiles Outside Your Mix</span>
-        <span class="rsh-badge">Not currently selected</span>
-        <span class="rsh-desc">${bestSelectedFitName} leaves ${bestSelectedHeadroom} GB headroom per VM — these profiles cut that down.</span>
+        <span class="rsh-title">Profiles Not in Your Mix</span>
+        <span class="rsh-badge">Ranked by silo impact &amp; headroom</span>
+        <span class="rsh-desc">Unselected profiles that fit a ${workloadGB} GB workload. Tighter fits rank higher; excess headroom is penalized.</span>
       </div>
       <div style="font-size:11px;color:var(--text-dim);line-height:1.7;max-width:800px;margin-bottom:12px;padding:0 2px;">
-        Each option below reduces per‑VM headroom from <strong style="color:var(--amber)">${bestSelectedHeadroom} GB</strong>. Use the silo and boundary views to decide whether the added alignment risk is acceptable.
+        Best picks reduce headroom versus your current best fit (${bestSelectedFitName}: ${bestSelectedHeadroom} GB) and have good boundary alignment. Profiles with excessive headroom rank lower.
       </div>
       <div class="rec-cards">${alsoCards}</div>
     </div>` : '';
@@ -1448,16 +1419,5 @@ initCatalog().catch(err => {
   console.error('initCatalog error:', err);
 });
 </script>
-
-<footer class="fd-tool-footer">
-  Built for AI infrastructure architects to understand mixed-size vGPU placement and silo capacity behavior.
-  <span class="sep">•</span>
-  Sources:
-  <a href="https://docs.nvidia.com/vgpu/19.0/grid-vgpu-user-guide/index.html#vgpu-placements-for-gpus-in-mixed-size-mode" target="_blank" rel="noopener noreferrer">NVIDIA vGPU 19 User Guide</a>,
-  <a href="https://docs.nvidia.com/ai-enterprise/release-7/7.0/infra-software/vgpu.html#virtual-gpu-types-for-supported-gpus" target="_blank" rel="noopener noreferrer">NVIDIA AI Enterprise 7.0 vGPU for Compute</a>
-  <span class="sep">•</span>
-  <a href="https://github.com/frankdenneman/vgpu-silo-capacity-calculator" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
-</footer>
-
 </body>
 </html>

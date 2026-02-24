@@ -2,6 +2,13 @@
    FrankDenneman.nl Custom CSS
    Refactored for clarity and maintainability
    ============================================================================= */
+/* Force light mode even if the browser/OS prefers dark */
+:root { color-scheme: light; }
+html, body { color-scheme: light; }
+
+/* Kill any theme-driven dark overrides */
+[data-theme="dark"] { display: none !important; }
+
 
 /* ----- Brand tokens ----- */
 :root {

@@ -21,6 +21,7 @@ canonifyURLs = true
   tag = "tags"
 
 [params]
+disableThemeSwitcher = true
 description = """Distinguished Engineer | Chief Technologist for AI
 VMware Cloud Foundation (Broadcom)
 

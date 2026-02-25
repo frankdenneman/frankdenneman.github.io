@@ -1,0 +1,17 @@
+[[parts]]
+number = 1
+title = "GPU consumption models as the first architectural choice in production AI"
+url = "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
+summary = "Explains the core GPU consumption models and why they determine how you should size and place workloads. Establishes the vocabulary used throughout the series."
+
+[[parts]]
+number = 2
+title = "How vSphere translates virtual machine configuration into host-level decisions"
+url = "/posts/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/"
+summary = "Shows how vSphere interprets VM configuration as a placement contract and filters hosts accordingly. Clarifies why GPU placement behaves differently from CPU and memory."
+
+[[parts]]
+number = 3
+title = "How vSphere GPU modes and assignment policies determine host-level placement"
+url = "/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/"
+summary = "Walks through host-level GPU assignment decisions after a host is selected. Explains how GPU modes and policies constrain placement and consolidation."

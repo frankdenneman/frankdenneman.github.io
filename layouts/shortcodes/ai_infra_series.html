@@ -1,0 +1,90 @@
+{{/* layouts/shortcodes/ai_infra_series.html
+     Renders ONLY the series list.
+     Uses front matter:
+       series: ["Architecting AI Infrastructure"] (or string)
+       series_order: <number>
+*/}}
+
+{{- $seriesName := "Architecting AI Infrastructure" -}}
+
+{{- $items := slice -}}
+
+{{- range .Site.RegularPages -}}
+  {{- $p := . -}}
+  {{- if eq $p.Section "posts" -}}
+
+    {{- $inSeries := false -}}
+
+    {{- with $p.Params.series -}}
+      {{- if reflect.IsSlice . -}}
+        {{- if in . $seriesName -}}{{- $inSeries = true -}}{{- end -}}
+      {{- else -}}
+        {{- if eq . $seriesName -}}{{- $inSeries = true -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if and (not $inSeries) (eq (or $p.Params.series_title "") $seriesName) -}}
+      {{- $inSeries = true -}}
+    {{- end -}}
+
+    {{- if $inSeries -}}
+      {{- $order := 0 -}}
+      {{- if isset $p.Params "series_order" -}}
+        {{- $order = int $p.Params.series_order -}}
+      {{- end -}}
+      {{- $items = $items | append (dict "page" $p "order" $order) -}}
+    {{- end -}}
+
+  {{- end -}}
+{{- end -}}
+
+{{- if eq (len $items) 0 -}}
+  <p><em>No series parts found yet.</em></p>
+{{- else -}}
+
+  {{- $pages := slice -}}
+  {{- range $items -}}{{- $pages = $pages | append .page -}}{{- end -}}
+  {{- $latest := index (sort $pages "Date" "desc") 0 -}}
+
+  <div class="ai-infra-series">
+
+
+  <div style="margin:1.5rem 0 .75rem 0; border-top:1px solid rgba(0,0,0,.12);"></div>
+  <div style="font-size:.9rem; opacity:.7; margin-bottom:.8rem;">Series overview</div>
+
+<div style="margin:.25rem 0 1rem 0; opacity:.9;">
+      <strong>{{ len $items }}</strong> parts • Latest:
+      <a href="{{ $latest.RelPermalink }}">{{ $latest.Title }}</a>
+    </div>
+
+    <ol style="list-style:none;padding-left:0;margin:0;">
+      {{- range (sort $items "order" "asc") -}}
+        {{- $p := .page -}}
+
+        {{- $sum := "" -}}
+        {{- if $p.Params.summary -}}
+          {{- $sum = $p.Params.summary -}}
+        {{- else if $p.Params.description -}}
+          {{- $sum = $p.Params.description -}}
+        {{- else -}}
+          {{- $sum = $p.Summary | plainify -}}
+        {{- end -}}
+        {{- $sum = $sum | replaceRE `\s+` " " | truncate 220 -}}
+
+        <li style="margin:0 0 1.1rem 0;padding:.85rem 1rem;border:1px solid rgba(0,0,0,.08);border-radius:.75rem;">
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:baseline;">
+            <strong style="white-space:nowrap;">Part {{ .order }}</strong>
+            <a href="{{ $p.RelPermalink }}"><strong>{{ $p.Title }}</strong></a>
+            {{- if eq $p.RelPermalink $latest.RelPermalink -}}
+              <span style="font-size:.85em;padding:.1rem .5rem;border:1px solid rgba(0,0,0,.18);border-radius:999px;">Newest</span>
+            {{- end -}}
+          </div>
+          {{- if $sum -}}
+            <div style="margin-top:.35rem;opacity:.95;">{{ $sum }}</div>
+          {{- end -}}
+        </li>
+      {{- end -}}
+    </ol>
+  </div>
+
+{{- end -}}

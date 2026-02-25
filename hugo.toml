@@ -63,11 +63,6 @@ url = "https://x.com/FrankDenneman"
     weight = 10
 
   [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 20
-
-  [[menu.main]]
     name = "AI"
     url = "/categories/ai/"
     weight = 30
@@ -78,14 +73,36 @@ url = "https://x.com/FrankDenneman"
     weight = 40
 
   [[menu.main]]
+    name = "AI Infra Series"
+    url = "/ai-infrastructure/"
+    weight = 42
+
+  [[menu.main]]
     name = "Search"
     url = "/search/"
     weight = 45
 
   [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 47
+
+  [[menu.main]]
     name = "Now"
     url = "/now/"
     weight = 50
+
+  [[menu.main]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    url = "/privacy/"
+    weight = 90
+
+  [[menu.main]]
+    name = "Tools"
+    url = "/tools/"
+    weight = 100
+
 
 [security.exec]
 # Allow the Node toolcache path used on GitHub Actions runners
@@ -100,24 +117,6 @@ allow = [
   '^/usr/local/bin/sass$'
 ]
 
-[[menu.main]]
-  identifier = "privacy"
-  name = "Privacy Policy"
-  url = "/privacy/"
-  weight = 90
-
-[[menu.main]]
-  identifier = "privacy"
-  name = "Privacy Policy"
-  url = "/privacy/"
-  weight = 51
-
-# Plausible Analytics Configuration
-[params.plausibleAnalytics]
-  domain = "frankdenneman.nl"
-
 [markup.goldmark.renderer]
   unsafe = true
-[permalinks]
-  posts = "/posts/:contentbasename/"
 

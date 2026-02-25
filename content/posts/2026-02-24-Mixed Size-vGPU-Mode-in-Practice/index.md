@@ -6,7 +6,7 @@ categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 
 series: ["Architecting AI Infrastructure"]
-series_order: 5
+series_order: 6
 ---
 ## Architecting AI Infrastructure - Part 6
 

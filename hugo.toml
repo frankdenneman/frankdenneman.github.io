@@ -120,3 +120,7 @@ allow = [
 [markup.goldmark.renderer]
   unsafe = true
 
+
+[params.plausibleAnalytics]
+  domain = "frankdenneman.nl"
+  serverURL = "https://plausible.io"

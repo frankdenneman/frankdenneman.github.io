@@ -9,7 +9,7 @@ series: ["Architecting AI Infrastructure"]
 series_order: 3
 ---
 
-## Architecting AI Infrastructure - Part 3
+## Architecting AI Infrastructure - Part 3.
 
 In the first two articles, I looked at GPU consumption models and how AI workloads state their accelerator needs. In vSphere, these models take shape through virtual machine settings. CPU reservations, memory guarantees, and GPU profile choices together create a clear resource contract.
 

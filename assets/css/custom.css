@@ -149,3 +149,94 @@ a.category:active {
   width: 100% !important;
 }
 
+
+/* =============================================================================
+   Typography: monospace headings (blog.exe.dev style)
+   ============================================================================= */
+
+.post__title,
+.post-title,
+article header h1,
+.post__content h1,
+.post__content h2,
+.post__content h3,
+.post__content h4,
+.post__content h5,
+.post__content h6 {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    monospace !important;
+  font-weight: 400;
+}
+
+/* =============================================================================
+   Typography: monospace sidebar + navigation
+   ============================================================================= */
+
+/* Name under profile image */
+.sidebar__introduction-title,
+.sidebar__introduction-title a {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    monospace !important;
+  font-weight: 400;
+}
+
+/* Navigation menu */
+.nav__list-item a,
+.nav__list-item a:visited {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    monospace !important;
+  font-weight: 400;
+}
+
+/* =============================================================================
+   Typography: load Inter font
+   ============================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+/* =============================================================================
+   Typography: sidebar name using Inter
+   ============================================================================= */
+
+.sidebar__introduction-title,
+.sidebar__introduction-title a {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  font-weight: 600;
+}
+
+/* =============================================================================
+   Typography: sidebar name in sentence case
+   ============================================================================= */
+
+.sidebar__introduction-title,
+.sidebar__introduction-title a {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* =============================================================================
+   Typography: refined body text tone
+   ============================================================================= */
+
+body {
+  color: #3f3f3f;
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cluster Profile Strategy · Same-size vs Mixed-size</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState, useEffect, useRef } = React;
+
+    const CATALOG = [
+      { key:"rtxpro6000bws-96", label:"RTX PRO 6000 Blackwell Server", memoryGB:96, arch:"Blackwell", profiles:[{gb:1,maxVms:96},{gb:2,maxVms:48},{gb:3,maxVms:32},{gb:4,maxVms:24},{gb:6,maxVms:16},{gb:8,maxVms:12},{gb:12,maxVms:8},{gb:16,maxVms:6},{gb:24,maxVms:4},{gb:32,maxVms:3},{gb:48,maxVms:2},{gb:96,maxVms:1}]},
+      { key:"h100-nvl-94", label:"H100 NVL PCIe 94GB", memoryGB:94, arch:"Hopper", profiles:[{gb:1,maxVms:94},{gb:2,maxVms:47},{gb:47,maxVms:2},{gb:94,maxVms:1}]},
+      { key:"h100-pcie-80", label:"H100 PCIe 80GB", memoryGB:80, arch:"Hopper", profiles:[{gb:1,maxVms:80},{gb:2,maxVms:40},{gb:4,maxVms:20},{gb:8,maxVms:10},{gb:10,maxVms:8},{gb:16,maxVms:5},{gb:20,maxVms:4},{gb:40,maxVms:2},{gb:80,maxVms:1}]},
+      { key:"h100-sxm5-80", label:"H100 SXM5 80GB", memoryGB:80, arch:"Hopper", profiles:[{gb:1,maxVms:80},{gb:2,maxVms:40},{gb:4,maxVms:20},{gb:8,maxVms:10},{gb:10,maxVms:8},{gb:16,maxVms:5},{gb:20,maxVms:4},{gb:40,maxVms:2},{gb:80,maxVms:1}]},
+      { key:"a100-pcie-80", label:"A100 PCIe 80GB", memoryGB:80, arch:"Ampere", profiles:[{gb:1,maxVms:80},{gb:2,maxVms:40},{gb:4,maxVms:20},{gb:8,maxVms:10},{gb:10,maxVms:8},{gb:16,maxVms:5},{gb:20,maxVms:4},{gb:40,maxVms:2},{gb:80,maxVms:1}]},
+      { key:"a100-pcie-40", label:"A100 PCIe 40GB", memoryGB:40, arch:"Ampere", profiles:[{gb:1,maxVms:40},{gb:2,maxVms:20},{gb:4,maxVms:10},{gb:5,maxVms:8},{gb:8,maxVms:5},{gb:10,maxVms:4},{gb:20,maxVms:2},{gb:40,maxVms:1}]},
+      { key:"l40s-48", label:"L40S 48GB", memoryGB:48, arch:"Ada Lovelace", profiles:[{gb:1,maxVms:48},{gb:2,maxVms:24},{gb:4,maxVms:12},{gb:6,maxVms:8},{gb:8,maxVms:6},{gb:12,maxVms:4},{gb:16,maxVms:3},{gb:24,maxVms:2},{gb:48,maxVms:1}]},
+      { key:"l4-24", label:"L4 24GB", memoryGB:24, arch:"Ada Lovelace", profiles:[{gb:1,maxVms:24},{gb:2,maxVms:12},{gb:4,maxVms:6},{gb:6,maxVms:4},{gb:8,maxVms:3},{gb:12,maxVms:2},{gb:24,maxVms:1}]},
+      { key:"a40-48", label:"A40 48GB", memoryGB:48, arch:"Ampere", profiles:[{gb:1,maxVms:48},{gb:2,maxVms:24},{gb:4,maxVms:12},{gb:6,maxVms:8},{gb:8,maxVms:6},{gb:12,maxVms:4},{gb:16,maxVms:3},{gb:24,maxVms:2},{gb:48,maxVms:1}]},
+    ];
+
+    const ARCH_ORDER = ["Blackwell","Hopper","Ada Lovelace","Ampere"];
+    const PALETTE = ["#4ade80","#60a5fa","#f59e0b","#fb923c","#e879f9","#f87171","#a78bfa","#34d399","#fbbf24","#38bdf8"];
+
+    function pColor(gb, allGBs) {
+      const s = [...new Set(allGBs)].sort((a,b)=>a-b);
+      return PALETTE[s.indexOf(gb) % PALETTE.length];
+    }
+
+    function gcd(a,b){ return b===0?a:gcd(b,a%b); }
+    function gcdAll(arr){ return arr.reduce((a,b)=>gcd(a,b)); }
+
+    function siloEstimate(vms, gpuMem, mix) {
+      if (!vms.length || !mix.length) return 0;
+      const atom = gcdAll([...vms.map(v=>v.size),...mix]);
+      const slots = Math.floor(gpuMem/atom);
+      const occ = new Array(slots).fill(false);
+      for (const vm of vms) {
+        const n = vm.size/atom;
+        for (let i=0;i<=slots-n;i++) {
+          if (i%n!==0) continue;
+          let ok=true; for(let j=i;j<i+n;j++) if(occ[j]){ok=false;break;}
+          if(ok){for(let j=i;j<i+n;j++) occ[j]=true; break;}
+        }
+      }
+      let silo=0,i=0;
+      while(i<slots){
+        if(!occ[i]){
+          let j=i; while(j<slots&&!occ[j]) j++;
+          if(!mix.some(p=>p<=(j-i)*atom)) silo+=(j-i);
+          i=j;
+        } else i++;
+      }
+      return silo*atom;
+    }
+
+    function makeGPUs(h, gph) {
+      const arr=[];
+      for(let hi=0;hi<h;hi++)
+        for(let gi=0;gi<gph;gi++){
+          const id=arr.length;
+          arr.push({id, label:String.fromCharCode(65+id%26)+(id>=26?String(Math.floor(id/26)):""), hostId:hi+1, usedGB:0, lock:null, vms:[], siloGB:0});
+        }
+      return arr;
+    }
+
+    function runSame(seq, gpus, mem) {
+      const gs=gpus.map(g=>({...g,usedGB:0,lock:null,vms:[],siloGB:0}));
+      const log=[]; let rr=0;
+      for(const vm of seq){
+        let placed=false;
+        for(let i=0;i<gs.length;i++){
+          const gi=(rr+i)%gs.length, g=gs[gi];
+          if((g.lock===null||g.lock===vm.size)&&g.usedGB+vm.size<=mem){
+            if(!g.lock) g.lock=vm.size;
+            g.usedGB+=vm.size; g.vms.push({size:vm.size});
+            log.push({vmId:vm.id,size:vm.size,gpu:g.label,ok:true});
+            rr=(gi+1)%gs.length; placed=true; break;
+          }
+        }
+        if(!placed) log.push({vmId:vm.id,size:vm.size,ok:false});
+      }
+      return {gpus:gs,log};
+    }
+
+    function runMixed(seq, gpus, mem, mix) {
+      const gs=gpus.map(g=>({...g,usedGB:0,lock:null,vms:[],siloGB:0}));
+      const log=[]; let rr=0;
+      for(const vm of seq){
+        let placed=false;
+        for(let i=0;i<gs.length;i++){
+          const gi=(rr+i)%gs.length, g=gs[gi];
+          if(g.usedGB+vm.size<=mem){
+            g.usedGB+=vm.size; g.vms.push({size:vm.size});
+            g.siloGB=siloEstimate(g.vms,mem,mix);
+            log.push({vmId:vm.id,size:vm.size,gpu:g.label,ok:true,silo:g.siloGB});
+            rr=(gi+1)%gs.length; placed=true; break;
+          }
+        }
+        if(!placed) log.push({vmId:vm.id,size:vm.size,ok:false});
+      }
+      return {gpus:gs,log};
+    }
+
+    function MemBar({vms,silo=0,mem,allGBs}){
+      return(
+        <div style={{height:8,display:"flex",borderRadius:2,overflow:"hidden",background:"#0d1117"}}>
+          {vms.map((v,i)=><div key={i} style={{width:`${v.size/mem*100}%`,background:pColor(v.size,allGBs),borderRight:"1px solid #000",flexShrink:0}}/>)}
+          {silo>0&&<div style={{width:`${silo/mem*100}%`,background:"#ef4444",opacity:.75,flexShrink:0}}/>}
+        </div>
+      );
+    }
+
+    function GCard({g,mode,mem,allGBs}){
+      return(
+        <div style={{background:"#0a0f1a",border:"1px solid #1a2035",borderRadius:4,padding:"5px 6px"}}>
+          <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:3}}>
+            <span style={{fontSize:8,color:"#374151",fontFamily:"monospace"}}>{g.label}·H{g.hostId}</span>
+            {mode==="same"&&g.lock&&<span style={{fontSize:7,color:pColor(g.lock,allGBs),padding:"0 4px",borderRadius:99,border:`1px solid ${pColor(g.lock,allGBs)}44`}}>{g.lock}G</span>}
+            {mode==="mixed"&&g.siloGB>0&&<span style={{fontSize:7,color:"#ef4444"}}>⚠{g.siloGB}G</span>}
+          </div>
+          <MemBar vms={g.vms} silo={g.siloGB} mem={mem} allGBs={allGBs}/>
+          <div style={{display:"flex",justifyContent:"space-between",marginTop:2,fontSize:7,color:"#2d3748"}}>
+            <span style={{color:"#4b5563"}}>{g.usedGB}G</span><span>{mem-g.usedGB-g.siloGB}G free</span>
+          </div>
+        </div>
+      );
+    }
+
+    function LogLine({e,fresh,allGBs}){
+      return(
+        <div style={{display:"flex",gap:4,padding:"3px 6px",borderRadius:3,marginBottom:1,fontSize:8,fontFamily:"monospace",background:fresh?(e.ok?"rgba(74,222,128,0.05)":"rgba(239,68,68,0.07)"):"transparent",borderLeft:`2px solid ${e.ok?"#1a2035":"#7f1d1d"}`}}>
+          <span style={{color:"#374151",minWidth:20}}>VM{e.vmId}</span>
+          <span style={{background:pColor(e.size,allGBs),color:"#000",borderRadius:2,padding:"0 3px",fontWeight:700,flexShrink:0}}>{e.size}G</span>
+          {e.ok
+            ?<span style={{color:"#374151"}}>→ {e.gpu} <span style={{color:"#4ade80"}}>✓</span>{e.silo>0&&<span style={{color:"#ef4444",marginLeft:3}}>+{e.silo}GB silo</span>}</span>
+            :<div><div style={{color:"#ef4444"}}>⚠ No placement compatibility</div><div style={{color:"#374151",fontSize:7,marginTop:1,lineHeight:1.5}}>All GPUs committed to other profiles<br/><span style={{color:"#2d3748"}}>Subsequent {e.size}GB requests same outcome</span></div></div>
+          }
+        </div>
+      );
+    }
+
+    function Nudge({label,val,min,max,set}){
+      return(
+        <div style={{display:"flex",flexDirection:"column",gap:3}}>
+          <span style={{fontSize:8,color:"#4b5563",textTransform:"uppercase",letterSpacing:.6}}>{label}</span>
+          <div style={{display:"flex",alignItems:"center",gap:4,background:"#0a0f1a",border:"1px solid #1a2035",borderRadius:5,padding:"3px 6px"}}>
+            <button onClick={()=>set(Math.max(min,val-1))} style={{width:16,height:16,border:"1px solid #1a2035",borderRadius:2,background:"#111827",color:"#6b7280",cursor:"pointer",fontSize:11,padding:0,lineHeight:1}}>−</button>
+            <span style={{fontSize:14,fontWeight:800,color:"#f9fafb",minWidth:22,textAlign:"center"}}>{val}</span>
+            <button onClick={()=>set(Math.min(max,val+1))} style={{width:16,height:16,border:"1px solid #1a2035",borderRadius:2,background:"#111827",color:"#6b7280",cursor:"pointer",fontSize:11,padding:0,lineHeight:1}}>+</button>
+          </div>
+        </div>
+      );
+    }
+
+    function Stat({label,value,color}){
+      return(
+        <div style={{background:"#0a0f1a",border:"1px solid #111827",borderRadius:3,padding:"4px 6px",textAlign:"center"}}>
+          <div style={{fontSize:13,fontWeight:800,color,fontFamily:"sans-serif"}}>{value}</div>
+          <div style={{fontSize:7,color:"#374151",marginTop:1}}>{label}</div>
+        </div>
+      );
+    }
+
+    function App(){
+      const [gpuKey,setGpuKey]=useState("h100-pcie-80");
+      const [hosts,setHosts]=useState(3);
+      const [gph,setGph]=useState(2);
+      const [selP,setSelP]=useState([8,10,20,40]);
+      const [seq,setSeq]=useState([{id:1,size:8},{id:2,size:10},{id:3,size:8},{id:4,size:20},{id:5,size:8},{id:6,size:10},{id:7,size:40},{id:8,size:20},{id:9,size:8},{id:10,size:40},{id:11,size:40},{id:12,size:8}]);
+      const [step,setStep]=useState(0);
+      const [play,setPlay]=useState(false);
+      const [spd,setSpd]=useState(800);
+      const lsRef=useRef(null),lmRef=useRef(null),tmr=useRef(null);
+
+      const gpu=CATALOG.find(g=>g.key===gpuKey);
+      const mem=gpu.memoryGB;
+      const allGBs=gpu.profiles.map(p=>p.gb);
+      const total=hosts*gph;
+
+      useEffect(()=>{setSelP(p=>p.filter(x=>allGBs.includes(x)));setStep(0);setPlay(false);},[gpuKey]);
+      useEffect(()=>{
+        if(play){tmr.current=setInterval(()=>setStep(s=>{if(s>=seq.length){setPlay(false);return s;}return s+1;}),spd);}
+        return()=>clearInterval(tmr.current);
+      },[play,spd,seq.length]);
+      useEffect(()=>{
+        if(lsRef.current) lsRef.current.scrollTop=lsRef.current.scrollHeight;
+        if(lmRef.current) lmRef.current.scrollTop=lmRef.current.scrollHeight;
+      },[step]);
+
+      const base=makeGPUs(hosts,gph);
+      const sl=seq.slice(0,step);
+      const {gpus:sG,log:sL}=runSame(sl,base,mem);
+      const {gpus:mG,log:mL}=runMixed(sl,base,mem,selP);
+
+      const sServed=sL.filter(e=>e.ok).length;
+      const sRej=sL.filter(e=>!e.ok).length;
+      const mServed=mL.filter(e=>e.ok).length;
+      const tSilo=mG.reduce((s,g)=>s+g.siloGB,0);
+      const failSz=[...new Set(sL.filter(e=>!e.ok).map(e=>e.size))];
+      const canRun=seq.length>0&&selP.length>0&&total>0&&total<=64;
+      const cols=total<=4?2:total<=9?3:total<=16?4:5;
+
+      const cov=selP.map(p=>({
+        gb:p,
+        same:sG.filter(g=>(g.lock===null||g.lock===p)&&mem-g.usedGB>=p).length,
+        mix:mG.filter(g=>mem-g.usedGB-g.siloGB>=p).length,
+      }));
+
+      const addVM=sz=>{setSeq(p=>[...p,{id:p.length+1,size:sz}]);setStep(0);setPlay(false);};
+      const undoVM=()=>{setSeq(p=>p.slice(0,-1));setStep(s=>Math.max(0,Math.min(s,seq.length-2)));};
+      const clearVM=()=>{setSeq([]);setStep(0);setPlay(false);};
+      const randVM=()=>{
+        if(!selP.length)return;
+        const n=Math.max(8,total+Math.ceil(total*.6));
+        setSeq(Array.from({length:n},(_,i)=>({id:i+1,size:selP[Math.floor(Math.random()*selP.length)]})));
+        setStep(0);setPlay(false);
+      };
+      const togP=gb=>{setSelP(p=>p.includes(gb)?p.filter(x=>x!==gb):[...p,gb].sort((a,b)=>a-b));setStep(0);setPlay(false);};
+
+      const PB=(bg,col,dis=false)=>({background:dis?"#0a0f1a":bg,color:dis?"#1a2035":col,border:`1px solid ${dis?"#111":"#1a2035"}`,borderRadius:4,padding:"5px 10px",fontSize:9,cursor:dis?"not-allowed":"pointer",fontFamily:"monospace"});
+
+      return(
+        <div style={{minHeight:"100vh",background:"#030712",color:"#e5e7eb",fontFamily:"monospace",display:"flex",flexDirection:"column",fontSize:11}}>
+          <style>{`*{box-sizing:border-box}@keyframes fi{from{opacity:0}to{opacity:1}}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:#1f2937;border-radius:2px}button:hover{opacity:.8}select option,optgroup{background:#0a0f1a;color:#e5e7eb}`}</style>
+
+          {/* ── TOP CONFIG BAR ── */}
+          <div style={{background:"#070c18",borderBottom:"1px solid #0f172a",flexShrink:0}}>
+            <div style={{padding:"8px 18px",borderBottom:"1px solid #0d1117",display:"flex",alignItems:"baseline",gap:10}}>
+              <span style={{fontSize:14,fontWeight:800,color:"#f9fafb",fontFamily:"sans-serif"}}>Cluster Profile Strategy</span>
+              <span style={{color:"#1f2937"}}>|</span>
+              <span style={{fontSize:9,color:"#374151"}}>Same-size vs Mixed-size · placement impact at cluster scale</span>
+              <span style={{marginLeft:"auto",fontSize:8,color:"#111827"}}>frankdenneman.nl</span>
+            </div>
+            <div style={{padding:"10px 18px",display:"flex",gap:0,alignItems:"flex-end",flexWrap:"wrap",rowGap:8}}>
+
+              {/* GPU */}
+              <div style={{display:"flex",flexDirection:"column",gap:3,marginRight:14}}>
+                <span style={{fontSize:8,color:"#4b5563",textTransform:"uppercase",letterSpacing:.6}}>GPU Model</span>
+                <div style={{position:"relative",minWidth:210}}>
+                  <select value={gpuKey} onChange={e=>setGpuKey(e.target.value)} style={{width:"100%",background:"#0a0f1a",border:"1px solid #1a2035",borderRadius:5,color:"#f9fafb",fontSize:10,padding:"5px 24px 5px 8px",cursor:"pointer",outline:"none",fontFamily:"monospace",appearance:"none",WebkitAppearance:"none"}}>
+                    {ARCH_ORDER.filter(a=>CATALOG.some(g=>g.arch===a)).map(a=>(
+                      <optgroup key={a} label={`— ${a} —`}>
+                        {CATALOG.filter(g=>g.arch===a).map(g=><option key={g.key} value={g.key}>{g.label}</option>)}
+                      </optgroup>
+                    ))}
+                  </select>
+                  <span style={{position:"absolute",right:7,top:"50%",transform:"translateY(-50%)",color:"#374151",pointerEvents:"none",fontSize:9}}>▾</span>
+                </div>
+                <div style={{display:"flex",gap:3}}>
+                  {[gpu.arch,`${mem}GB`,`${gpu.profiles.length} profiles`].map(t=>(
+                    <span key={t} style={{fontSize:7,color:"#4b5563",background:"#0a0f1a",border:"1px solid #1a2035",padding:"1px 4px",borderRadius:99}}>{t}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{width:1,height:46,background:"#0f172a",marginRight:14,alignSelf:"flex-end"}}/>
+
+              {/* Cluster size */}
+              <div style={{display:"flex",flexDirection:"column",gap:3,marginRight:12}}>
+                <span style={{fontSize:8,color:"#4b5563",textTransform:"uppercase",letterSpacing:.6}}>Cluster Size</span>
+                <div style={{display:"flex",gap:8}}>
+                  <Nudge label="Hosts" val={hosts} min={1} max={16} set={v=>{setHosts(v);setStep(0);setPlay(false);}}/>
+                  <Nudge label="GPUs / Host" val={gph} min={1} max={8} set={v=>{setGph(v);setStep(0);setPlay(false);}}/>
+                </div>
+              </div>
+
+              {/* Totals */}
+              <div style={{display:"flex",gap:5,alignItems:"flex-end",marginRight:14}}>
+                {[
+                  {l:"Total GPUs",v:total,s:`${hosts}×${gph}`,c:"#60a5fa"},
+                  {l:"Total VRAM",v:`${(total*mem).toLocaleString()}GB`,s:`${total}×${mem}GB`,c:"#4ade80"},
+                  {l:"Max VMs (same)",v:selP.length?total*Math.floor(mem/Math.min(...selP)):"—",s:selP.length?`@ ${Math.min(...selP)}GB`:"select profiles",c:"#f59e0b"},
+                ].map(({l,v,s,c})=>(
+                  <div key={l} style={{background:"#0a0f1a",border:"1px solid #1a2035",borderRadius:4,padding:"4px 9px",textAlign:"center",minWidth:76}}>
+                    <div style={{fontSize:7,color:"#374151",textTransform:"uppercase",letterSpacing:.4,marginBottom:2}}>{l}</div>
+                    <div style={{fontSize:13,fontWeight:800,color:c,fontFamily:"sans-serif",lineHeight:1}}>{v}</div>
+                    <div style={{fontSize:7,color:"#1f2937",marginTop:2}}>{s}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div style={{width:1,height:46,background:"#0f172a",marginRight:14,alignSelf:"flex-end"}}/>
+
+              {/* Profiles */}
+              <div style={{display:"flex",flexDirection:"column",gap:3,flex:1}}>
+                <span style={{fontSize:8,color:"#4b5563",textTransform:"uppercase",letterSpacing:.6}}>Profile Catalog</span>
+                <div style={{display:"flex",flexWrap:"wrap",gap:3}}>
+                  {gpu.profiles.map(p=>{
+                    const sel=selP.includes(p.gb),col=pColor(p.gb,allGBs);
+                    return(
+                      <button key={p.gb} onClick={()=>togP(p.gb)} style={{display:"flex",alignItems:"center",gap:3,padding:"3px 8px",borderRadius:3,cursor:"pointer",fontSize:9,fontFamily:"monospace",background:sel?"rgba(255,255,255,0.04)":"transparent",border:sel?`1px solid ${col}55`:"1px solid #1a2035",color:sel?col:"#374151"}}>
+                        <span style={{width:6,height:6,borderRadius:1,background:sel?col:"#1f2937",flexShrink:0}}/>
+                        {p.gb}GB <span style={{fontSize:7,color:sel?"#374151":"#1a2035"}}>×{p.maxVms}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── SIMULATION ── */}
+          <div style={{flex:1,padding:"12px 18px",display:"flex",flexDirection:"column",gap:8,overflowY:"auto"}}>
+
+            {/* Sequence + controls */}
+            <div style={{background:"#070c18",border:"1px solid #0f172a",borderRadius:6,padding:"10px 12px",display:"flex",gap:12,alignItems:"flex-end",flexWrap:"wrap",rowGap:8}}>
+              <div style={{flex:"1 1 240px",minWidth:0}}>
+                <div style={{fontSize:7,color:"#374151",textTransform:"uppercase",letterSpacing:.5,marginBottom:4}}>VM Request Sequence · {seq.length} queued</div>
+                <div style={{display:"flex",gap:2,flexWrap:"wrap",minHeight:20,marginBottom:5}}>
+                  {seq.map((vm,i)=>(
+                    <span key={vm.id} style={{fontSize:8,padding:"1px 4px",borderRadius:2,fontWeight:700,background:i<step?pColor(vm.size,allGBs)+"33":pColor(vm.size,allGBs),color:i<step?"#374151":"#000"}}>{vm.size}G</span>
+                  ))}
+                  {!seq.length&&<span style={{fontSize:8,color:"#1f2937"}}>No VMs queued</span>}
+                </div>
+                <div style={{display:"flex",gap:3,flexWrap:"wrap",alignItems:"center"}}>
+                  <span style={{fontSize:8,color:"#374151"}}>Add:</span>
+                  {selP.map(p=><button key={p} onClick={()=>addVM(p)} style={{padding:"2px 7px",borderRadius:3,fontSize:8,fontWeight:700,cursor:"pointer",background:pColor(p,allGBs),color:"#000",border:"none",fontFamily:"monospace"}}>+{p}G</button>)}
+                  <span style={{width:1,height:12,background:"#1a2035",margin:"0 2px"}}/>
+                  <button onClick={randVM} style={{padding:"2px 6px",borderRadius:3,fontSize:8,cursor:"pointer",background:"#0a0f1a",color:"#4b5563",border:"1px solid #1a2035",fontFamily:"monospace"}}>⟳ Random</button>
+                  <button onClick={undoVM} disabled={!seq.length} style={{padding:"2px 6px",borderRadius:3,fontSize:8,cursor:"pointer",background:"#0a0f1a",color:"#4b5563",border:"1px solid #1a2035",fontFamily:"monospace"}}>⌫ Undo</button>
+                  <button onClick={clearVM} disabled={!seq.length} style={{padding:"2px 6px",borderRadius:3,fontSize:8,cursor:"pointer",background:"#0a0f1a",color:"#4b5563",border:"1px solid #1a2035",fontFamily:"monospace"}}>✕ Clear</button>
+                </div>
+              </div>
+              <div style={{display:"flex",flexDirection:"column",gap:4,alignItems:"flex-end",flexShrink:0}}>
+                <div style={{display:"flex",gap:4}}>
+                  <button onClick={()=>{setStep(0);setPlay(false);}} style={PB("#1a2035","#6b7280")}>↺</button>
+                  <button onClick={()=>setStep(s=>Math.max(0,s-1))} disabled={play||step===0} style={PB("#1a2035","#6b7280")}>‹</button>
+                  <button disabled={!canRun} onClick={()=>{if(step>=seq.length)setStep(0);setPlay(p=>!p);}} style={{...PB(play?"#1a2035":"#4ade80",play?"#9ca3af":"#000"),padding:"5px 16px",fontSize:10,fontWeight:700,minWidth:110}}>
+                    {play?"⏸ Pause":step>=seq.length?"↺ Replay":step===0?"▶ Run":"▶ Continue"}
+                  </button>
+                  <button onClick={()=>setStep(s=>Math.min(s+1,seq.length))} disabled={play||step>=seq.length||!canRun} style={PB("#1a2035","#6b7280")}>›</button>
+                </div>
+                <div style={{display:"flex",gap:3,alignItems:"center"}}>
+                  {[["Slow",1200],["Normal",800],["Fast",350]].map(([l,v])=>(
+                    <button key={l} onClick={()=>setSpd(v)} style={{padding:"2px 6px",fontSize:7,cursor:"pointer",borderRadius:2,fontFamily:"monospace",background:spd===v?"#1a2035":"transparent",color:spd===v?"#9ca3af":"#374151",border:`1px solid ${spd===v?"#2d3748":"transparent"}`}}>{l}</button>
+                  ))}
+                  <span style={{fontSize:8,color:"#1f2937",marginLeft:3}}>{step}/{seq.length}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Three columns */}
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 190px",gap:8,flex:1}}>
+
+              {/* SAME-SIZE */}
+              <div style={{background:"#070c18",border:"1px solid #0f172a",borderTop:"2px solid #60a5fa",borderRadius:6,padding:10,display:"flex",flexDirection:"column"}}>
+                <div style={{fontSize:12,fontWeight:700,color:"#f9fafb",fontFamily:"sans-serif"}}>Same-Size Mode</div>
+                <div style={{fontSize:8,color:"#374151",marginBottom:8,marginTop:1}}>GPU locks to first placed profile type</div>
+                <div style={{display:"grid",gridTemplateColumns:`repeat(${cols},1fr)`,gap:3,marginBottom:7}}>
+                  {sG.slice(0,28).map(g=><GCard key={g.id} g={g} mode="same" mem={mem} allGBs={allGBs}/>)}
+                </div>
+                <div style={{fontSize:7,color:"#1f2937",marginBottom:2,textTransform:"uppercase",letterSpacing:.4}}>Placement log</div>
+                <div ref={lsRef} style={{maxHeight:150,overflowY:"auto",flex:1,marginBottom:7}}>
+                  {sL.map((e,i)=><LogLine key={e.vmId} e={e} fresh={i===sL.length-1} allGBs={allGBs}/>)}
+                  {!sL.length&&<div style={{fontSize:8,color:"#1a2035",padding:"6px 0"}}>Run simulation to see placements</div>}
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:4,marginBottom:sRej>0?7:0}}>
+                  <Stat label="Served" value={sServed} color="#4ade80"/>
+                  <Stat label="Rejected" value={sRej} color={sRej>0?"#ef4444":"#1f2937"}/>
+                  <Stat label="Siloed" value="0 GB" color="#1a2035"/>
+                </div>
+                {sRej>0&&(
+                  <div style={{padding:"7px 9px",background:"rgba(239,68,68,0.06)",border:"1px solid rgba(239,68,68,0.2)",borderRadius:4,fontSize:8,lineHeight:1.6,animation:"fi .3s ease"}}>
+                    <div style={{color:"#f87171",fontWeight:600,marginBottom:2}}>No placement compatibility · {failSz.join(", ")}GB</div>
+                    <div style={{color:"#4b5563"}}>All GPUs committed to other profiles — byproduct of same-size state. Cannot resolve without destroying existing VMs.</div>
+                  </div>
+                )}
+              </div>
+
+              {/* MIXED-SIZE */}
+              <div style={{background:"#070c18",border:"1px solid #0f172a",borderTop:"2px solid #e879f9",borderRadius:6,padding:10,display:"flex",flexDirection:"column"}}>
+                <div style={{fontSize:12,fontWeight:700,color:"#f9fafb",fontFamily:"sans-serif"}}>Mixed-Size Mode</div>
+                <div style={{fontSize:8,color:"#374151",marginBottom:8,marginTop:1}}>Any profile on any GPU · memory permitting</div>
+                <div style={{display:"grid",gridTemplateColumns:`repeat(${cols},1fr)`,gap:3,marginBottom:7}}>
+                  {mG.slice(0,28).map(g=><GCard key={g.id} g={g} mode="mixed" mem={mem} allGBs={allGBs}/>)}
+                </div>
+                <div style={{fontSize:7,color:"#1f2937",marginBottom:2,textTransform:"uppercase",letterSpacing:.4}}>Placement log</div>
+                <div ref={lmRef} style={{maxHeight:150,overflowY:"auto",flex:1,marginBottom:7}}>
+                  {mL.map((e,i)=><LogLine key={e.vmId} e={e} fresh={i===mL.length-1} allGBs={allGBs}/>)}
+                  {!mL.length&&<div style={{fontSize:8,color:"#1a2035",padding:"6px 0"}}>Run simulation to see placements</div>}
+                </div>
+                <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:4,marginBottom:tSilo>0?7:0}}>
+                  <Stat label="Served" value={mServed} color="#4ade80"/>
+                  <Stat label="Rejected" value={0} color="#1a2035"/>
+                  <Stat label="Siloed" value={tSilo>0?`${tSilo}GB`:"0 GB"} color={tSilo>0?"#ef4444":"#1a2035"}/>
+                </div>
+                {tSilo>0&&(
+                  <div style={{padding:"7px 9px",background:"rgba(239,68,68,0.04)",border:"1px solid rgba(239,68,68,0.1)",borderRadius:4,fontSize:8,lineHeight:1.6,animation:"fi .3s ease"}}>
+                    <div style={{color:"#f59e0b",fontWeight:600,marginBottom:2}}>Estimated silo · {tSilo}GB ({((tSilo/(total*mem))*100).toFixed(1)}%)</div>
+                    <div style={{color:"#374151"}}>Profile alignment gap — addressable by refining catalog. No VM destruction required.</div>
+                  </div>
+                )}
+              </div>
+
+              {/* COVERAGE + IMPACT */}
+              <div style={{display:"flex",flexDirection:"column",gap:7}}>
+                <div style={{background:"#070c18",border:"1px solid #0f172a",borderTop:"2px solid #f59e0b",borderRadius:6,padding:10,flex:1}}>
+                  <div style={{fontSize:11,fontWeight:700,color:"#f9fafb",fontFamily:"sans-serif",marginBottom:1}}>Service Coverage</div>
+                  <div style={{fontSize:7,color:"#374151",marginBottom:9,textTransform:"uppercase",letterSpacing:.4}}>Eligible GPUs · live</div>
+                  {!cov.length&&<div style={{fontSize:8,color:"#1f2937"}}>Select profiles above</div>}
+                  {cov.map(c=>{
+                    const col=pColor(c.gb,allGBs);
+                    return(
+                      <div key={c.gb} style={{marginBottom:8}}>
+                        <div style={{display:"flex",alignItems:"center",gap:3,marginBottom:2}}>
+                          <span style={{width:6,height:6,borderRadius:1,background:col,flexShrink:0}}/>
+                          <span style={{fontSize:8,color:"#9ca3af"}}>{c.gb}GB</span>
+                        </div>
+                        {[["same",c.same,true],["mixed",c.mix,false]].map(([lbl,val,warn])=>(
+                          <div key={lbl} style={{display:"flex",gap:4,alignItems:"center",marginBottom:2}}>
+                            <span style={{fontSize:7,color:"#2d3748",width:26}}>{lbl}</span>
+                            <div style={{flex:1,height:5,background:"#0d1117",borderRadius:2,overflow:"hidden"}}>
+                              <div style={{height:"100%",width:total>0?`${val/total*100}%`:"0%",background:warn&&val===0?"#ef4444":col,opacity:val===0?0.4:1,borderRadius:2,transition:"width .4s"}}/>
+                            </div>
+                            <span style={{fontSize:7,color:warn&&val===0?"#ef4444":"#2d3748",width:16,textAlign:"right"}}>{warn&&val===0?"⚠":val}</span>
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div style={{background:"#070c18",border:"1px solid #0f172a",borderRadius:6,padding:10}}>
+                  <div style={{fontSize:11,fontWeight:700,color:"#f9fafb",fontFamily:"sans-serif",marginBottom:8}}>Platform Impact</div>
+                  {[{l:"Same-size",s:sServed,c:"#60a5fa",r:sRej},{l:"Mixed-size",s:mServed,c:"#e879f9",r:0}].map(({l,s,c,r})=>(
+                    <div key={l} style={{marginBottom:6}}>
+                      <div style={{display:"flex",justifyContent:"space-between",fontSize:8,marginBottom:2}}>
+                        <span style={{color:"#4b5563"}}>{l}</span>
+                        <span style={{color:r>0?"#ef4444":"#374151"}}>{s}/{seq.length}{r>0?` · ${r} rejected`:""}</span>
+                      </div>
+                      <div style={{height:5,background:"#0d1117",borderRadius:2,overflow:"hidden"}}>
+                        <div style={{height:"100%",width:seq.length>0?`${s/seq.length*100}%`:"0%",background:c,borderRadius:2,transition:"width .4s"}}/>
+                      </div>
+                    </div>
+                  ))}
+                  {seq.length>0&&step>0&&(
+                    <div style={{marginTop:5,fontSize:8,lineHeight:1.7}}>
+                      {sRej>0&&<div style={{color:"#ef4444"}}>⚠ {sRej} VM{sRej>1?"s":""} unserviceable</div>}
+                      {tSilo>0&&<div style={{color:"#4b5563"}}>{tSilo}GB stranded in mixed-size</div>}
+                      {!sRej&&!tSilo&&<div style={{color:"#4ade80"}}>✓ Both modes serving all VMs</div>}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Legend */}
+            <div style={{display:"flex",gap:10,flexWrap:"wrap",alignItems:"center",paddingTop:5,borderTop:"1px solid #0d1117"}}>
+              <span style={{fontSize:7,color:"#1f2937",textTransform:"uppercase",letterSpacing:.6}}>Profile</span>
+              {selP.map(p=><span key={p} style={{display:"flex",alignItems:"center",gap:3,fontSize:8,color:"#374151"}}><span style={{width:8,height:8,borderRadius:2,background:pColor(p,allGBs),display:"inline-block"}}/>{p}GB</span>)}
+              <span style={{display:"flex",alignItems:"center",gap:3,fontSize:8,color:"#374151"}}><span style={{width:8,height:8,borderRadius:2,background:"#ef4444",opacity:.7,display:"inline-block"}}/>Siloed</span>
+              <span style={{marginLeft:"auto",fontSize:7,color:"#111827"}}>{gpu.label} · {gpu.arch} · vGPU 19.x</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

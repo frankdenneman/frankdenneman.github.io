@@ -4,11 +4,12 @@ description: "Architecting AI Infrastructure — Part 7"
 date: 2026-03-01
 url: "/posts/2026-03-01-same-size-vs-mixed-size-placement/"
 series: ["Architecting AI Infrastructure"]
+series_order: 7
 ---
 
 ## Architecting AI Infrastructure — Part 7
 
-The Silo Capacity Visualizer from [Part 6](https://frankdenneman.nl/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/) shows how profile selection and placement-ID alignment affect memory layout inside a single GPU. While that's helpful for understanding the basics, real capacity planning happens at the cluster level. This article introduces the Same-size vs Mixed-size Placement simulator, the second tool in the Cluster Profile Strategy Toolset. It lets you simulate vGPU placement across an entire cluster using both same-size and mixed-size policies simultaneously, with the same workload sequence for both. This way, you can directly compare their results.
+The Silo Capacity Visualizer from [Part 6](https://frankdenneman.nl/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/) shows how profile selection and placement-ID alignment affect memory layout inside a single GPU. While that's helpful for understanding the basics, real capacity planning happens at the cluster level. This article introduces the [Same-size vs Mixed-size Placement simulator](https://frankdenneman.nl/tools/same-size-vs-mixed-mode/), the second tool in the Cluster Profile Strategy Toolset. It lets you simulate vGPU placement across an entire cluster using both same-size and mixed-size policies simultaneously, with the same workload sequence for both. This way, you can directly compare their results.
 
 ![Screenshot tool](images/1-same-size-vs-mixed-mode-simulator.png)
 

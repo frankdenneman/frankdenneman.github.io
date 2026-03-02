@@ -550,3 +550,66 @@ article table {
   position: absolute;
   inset: 0;
 }
+
+/* =============================================================================
+   FIX: keep "tiles" only on /tools/ and restore normal tables everywhere else
+   Anatole wraps many pages in .post, so .post table rules affect the whole site.
+   Normal markdown tables live inside .post__content (and sometimes .post-content).
+   ============================================================================= */
+
+.post__content table thead,
+.post-content table thead,
+article table thead {
+  display: table-header-group !important;
+}
+
+.post__content table tbody,
+.post-content table tbody,
+article table tbody {
+  display: table-row-group !important;
+  grid-template-columns: none !important;
+  gap: 0 !important;
+  width: auto !important;
+}
+
+.post__content table tr,
+.post-content table tr,
+article table tr {
+  display: table-row !important;
+  height: auto !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  position: static !important;
+  aspect-ratio: auto !important;
+}
+
+.post__content table th,
+.post__content table td,
+.post-content table th,
+.post-content table td,
+article table th,
+article table td {
+  display: table-cell !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+.post__content table,
+.post-content table,
+article table {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+/* Remove the full-tile clickable overlay from normal tables */
+.post__content table td:first-child a::after,
+.post-content table td:first-child a::after,
+article table td:first-child a::after {
+  content: none !important;
+}
+

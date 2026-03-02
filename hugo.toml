@@ -101,7 +101,7 @@ url = "https://x.com/FrankDenneman"
   [[menu.main]]
     name = "Tools"
     url = "/tools/"
-    weight = 100
+    weight = 44
 
 
 [security.exec]

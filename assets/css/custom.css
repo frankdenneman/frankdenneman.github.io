@@ -240,3 +240,294 @@ article header h1,
 body {
   color: #3f3f3f;
 }
+
+/* =============================================================================
+   Tables: ensure full width across content layouts
+   ============================================================================= */
+.post__content table,
+.post-content table,
+article table {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Tools/section pages (Anatole uses .post wrapper, not .post__content) */
+.post table {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Tools/section pages (Anatole uses .post wrapper, not .post__content) */
+.post table {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Tools/section pages: use same heading font as posts */
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    monospace !important;
+  font-weight: 400;
+}
+
+/* Tools table links: always visible as links */
+.post table a,
+.post table a:visited {
+  color: var(--brand-accent) !important;
+  text-decoration: none;
+}
+
+.post table a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* Tools table: make tool names feel primary */
+.post table td:first-child a {
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+/* =============================================================================
+   Tools page — card-like table layout
+   ============================================================================= */
+
+.post table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.post table thead {
+  display: none;
+}
+
+.post table tbody tr {
+  background: #fafafa;
+  border: 1px solid #ececec;
+}
+
+.post table td {
+  border: none;
+  padding: 14px 16px;
+}
+
+.post table td:first-child {
+  width: 30%;
+}
+
+.post table tbody tr:hover {
+  background: #f5f7f9;
+}
+
+/* =============================================================================
+   Tools page — true square tiles
+   ============================================================================= */
+
+/* hide table structure visually but keep markdown simple */
+.post table {
+  width: 100% !important;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.post table thead {
+  display: none;
+}
+
+.post table tbody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* each row becomes a tile */
+.post table tbody tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  aspect-ratio: 1 / 1;
+  background: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  padding: 18px;
+  transition: background 0.2s ease;
+}
+
+/* remove table cell layout */
+.post table td {
+  display: block;
+  border: none;
+  padding: 0;
+}
+
+/* tool title */
+.post table td:first-child {
+  margin-bottom: 12px;
+}
+
+.post table td:first-child a {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--brand-accent) !important;
+  text-decoration: none;
+}
+
+.post table td:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* description tone */
+.post table td:last-child {
+  color: #555;
+  line-height: 1.45;
+}
+
+/* subtle hover */
+.post table tbody tr:hover {
+  background: #f5f7f9;
+}
+
+/* =============================================================================
+   Tools tiles refinements: single-line titles + shorter tiles
+   ============================================================================= */
+
+.post table tbody tr {
+  aspect-ratio: auto !important;
+  height: 180px;
+}
+
+.post table td:first-child a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Tools tiles: allow clean 2-line titles instead of truncation */
+.post table td:first-child a {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.25;
+}
+
+/* Tools tiles: first cell should not behave like a "first column" */
+.post table tbody {
+  width: 100%;
+}
+
+.post table tbody tr td:first-child {
+  width: 100% !important;
+  white-space: normal !important;
+}
+
+/* =============================================================================
+   Tools tiles — catalog styling for 4–6 tools
+   ============================================================================= */
+
+/* Grid: consistent tiles, responsive */
+.post table tbody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+/* Tile */
+.post table tbody tr {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  padding: 18px 18px 16px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.post table tbody tr:hover {
+  background: #f5f7f9;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+
+/* Cells: stack cleanly */
+.post table tbody tr td {
+  width: 100% !important;
+}
+
+/* Title */
+.post table tbody tr td:first-child {
+  margin: 0 0 12px 0;
+}
+
+.post table tbody tr td:first-child a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  font-weight: 650;
+  font-size: 1.15rem;
+  line-height: 1.2;
+
+  color: var(--brand-accent) !important;
+  text-decoration: none;
+}
+
+.post table tbody tr td:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* Divider line between title and description */
+.post table tbody tr td:first-child::after {
+  content: "";
+  display: block;
+  margin-top: 12px;
+  border-top: 1px solid #e7e7e7;
+}
+
+/* Description */
+.post table tbody tr td:last-child {
+  margin-top: 12px;
+  color: #555;
+  line-height: 1.45;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Optional: keep link color consistent everywhere in tiles */
+.post table tbody tr a,
+.post table tbody tr a:visited {
+  color: var(--brand-accent) !important;
+}
+
+/* Tools tiles: larger tool titles */
+.post table tbody tr td:first-child a {
+  font-size: 1.32rem !important;
+  line-height: 1.18;
+}
+
+/* Tools tiles: subtle blue hover state */
+.post table tbody tr:hover {
+  background: rgba(35, 103, 140, 0.08) !important; /* brand-accent tint */
+  border-color: rgba(35, 103, 140, 0.25);
+}

@@ -4,6 +4,6 @@ description: "A practical series on how AI workloads behave on infrastructure, a
 url: "/ai-infrastructure/"
 ---
 
-The Architecting AI Infrastructure series examines how AI workloads operate across different systems and how this affects platform design choices. The articles break down the basics of placement, scheduling, and resource use, and the included tools show how these ideas play out in practice. The first tool in the series is the online <a href="/tools/vgpu-silo-capacity-calculator/">vGPU Silo Capacity Calculator</a>, which lets you see how your selected vGPU profiles affect available GPU capacity when you apply real placement limits.
+The Architecting AI Infrastructure series examines how AI workloads operate across different systems and how this affects platform design choices. The articles break down the basics of placement, scheduling, and resource use, and the included tools show how these ideas play out in practice. Tools in this series include the <a href="/tools/vgpu-silo-capacity-calculator/">vGPU Silo Capacity Calculator</a> (how profile catalogs influence long-term deployable capacity under placement limits) and <a href="/tools/same-size-vs-mixed-mode/">Same-size vs Mixed-size Placement</a> (how Same-size and Mixed-size modes behave as placement decisions accumulate over time).
 
 {{< ai_infra_series >}}

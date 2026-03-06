@@ -157,18 +157,24 @@
 
     function runMixed(seq, gpus, mem, mix, placementByGb) {
       const gs=gpus.map(g=>({...g,usedGB:0,lock:null,vms:[],slots:[],siloGB:0}));
-      const log=[]; let rr=0;
+      const log=[];
+      const numHosts=Math.max(...gpus.map(g=>g.hostId),1);
+      let rrHost=0;
       const pid=g=>placementByGb[g]||Array.from({length:Math.floor(mem/g)+1},(_,i)=>i*g);
       for(const vm of seq){
         let placed=false;
-        for(let i=0;i<gs.length;i++){
-          const gi=(rr+i)%gs.length, g=gs[gi];
-          const slot=findPlacementSlot(g.slots,vm.size,pid(vm.size),mem);
-          if(slot===null)continue;
-          g.slots.push({offset:slot,size:vm.size}); g.usedGB+=vm.size; g.vms.push({size:vm.size});
-          g.siloGB=siloEstimate(g.vms,mem,mix);
-          log.push({vmId:vm.id,size:vm.size,gpu:g.label,ok:true,silo:g.siloGB});
-          rr=(gi+1)%gs.length; placed=true; break;
+        for(let h=0;h<numHosts;h++){
+          const hostIdx=(rrHost+h)%numHosts;
+          const hostGPUs=gs.filter(g=>g.hostId===hostIdx+1).slice().sort((a,b)=>b.usedGB-a.usedGB);
+          for(const g of hostGPUs){
+            const slot=findPlacementSlot(g.slots,vm.size,pid(vm.size),mem);
+            if(slot===null)continue;
+            g.slots.push({offset:slot,size:vm.size}); g.usedGB+=vm.size; g.vms.push({size:vm.size});
+            g.siloGB=siloEstimate(g.vms,mem,mix);
+            log.push({vmId:vm.id,size:vm.size,gpu:g.label,ok:true,silo:g.siloGB});
+            rrHost=(hostIdx+1)%numHosts; placed=true; break;
+          }
+          if(placed)break;
         }
         if(!placed) log.push({vmId:vm.id,size:vm.size,ok:false});
       }
@@ -354,22 +360,26 @@
       const seqNew=[]; let id=1;
       const pid=g=>placementByGb[g]||Array.from({length:Math.floor(mem/g)+1},(_,i)=>i*g);
       const gs=base.map(g=>({...g,usedGB:0,lock:null,vms:[],slots:[],siloGB:0}));
-      let rr=0;
+      let rrHost=0;
       while(true){
         const currentTotal=seqNew.reduce((s,v)=>s+v.size,0);
         const fits=selP.filter(s=>currentTotal+s<=totalCap);
         if(!fits.length)break;
         const sz=fits[Math.floor(Math.random()*fits.length)];
         let placed=false;
-        for(let i=0;i<gs.length;i++){
-          const gi=(rr+i)%gs.length, g=gs[gi];
-          const slot=findPlacementSlot(g.slots,sz,pid(sz),mem);
-          if(slot!==null){
-            g.slots.push({offset:slot,size:sz}); g.usedGB+=sz; g.vms.push({size:sz});
-            g.siloGB=siloEstimate(g.vms,mem,selP);
-            seqNew.push({id:id++,size:sz});
-            rr=(gi+1)%gs.length; placed=true; break;
+        for(let h=0;h<hosts;h++){
+          const hostIdx=(rrHost+h)%hosts;
+          const hostGPUs=gs.filter(g=>g.hostId===hostIdx+1).slice().sort((a,b)=>b.usedGB-a.usedGB);
+          for(const g of hostGPUs){
+            const slot=findPlacementSlot(g.slots,sz,pid(sz),mem);
+            if(slot!==null){
+              g.slots.push({offset:slot,size:sz}); g.usedGB+=sz; g.vms.push({size:sz});
+              g.siloGB=siloEstimate(g.vms,mem,selP);
+              seqNew.push({id:id++,size:sz});
+              rrHost=(hostIdx+1)%hosts; placed=true; break;
+            }
           }
+          if(placed)break;
         }
         if(!placed)seqNew.push({id:id++,size:sz});
       }
@@ -492,22 +502,26 @@
         const seqNew=[]; let id=1;
         const pid=g=>placementByGb[g]||Array.from({length:Math.floor(mem/g)+1},(_,i)=>i*g);
         const gs=base.map(g=>({...g,usedGB:0,lock:null,vms:[],slots:[],siloGB:0}));
-        let rr=0;
+        let rrHost=0;
         while(true){
           const currentTotal=seqNew.reduce((s,v)=>s+v.size,0);
           const fits=selP.filter(s=>currentTotal+s<=totalCap);
           if(!fits.length)break;
           const sz=fits[Math.floor(Math.random()*fits.length)];
           let placed=false;
-          for(let i=0;i<gs.length;i++){
-            const gi=(rr+i)%gs.length, g=gs[gi];
-            const slot=findPlacementSlot(g.slots,sz,pid(sz),mem);
-            if(slot!==null){
-              g.slots.push({offset:slot,size:sz}); g.usedGB+=sz; g.vms.push({size:sz});
-              g.siloGB=siloEstimate(g.vms,mem,selP);
-              seqNew.push({id:id++,size:sz});
-              rr=(gi+1)%gs.length; placed=true; break;
+          for(let h=0;h<hosts;h++){
+            const hostIdx=(rrHost+h)%hosts;
+            const hostGPUs=gs.filter(g=>g.hostId===hostIdx+1).slice().sort((a,b)=>b.usedGB-a.usedGB);
+            for(const g of hostGPUs){
+              const slot=findPlacementSlot(g.slots,sz,pid(sz),mem);
+              if(slot!==null){
+                g.slots.push({offset:slot,size:sz}); g.usedGB+=sz; g.vms.push({size:sz});
+                g.siloGB=siloEstimate(g.vms,mem,selP);
+                seqNew.push({id:id++,size:sz});
+                rrHost=(hostIdx+1)%hosts; placed=true; break;
+              }
             }
+            if(placed)break;
           }
           if(!placed)seqNew.push({id:id++,size:sz});
         }

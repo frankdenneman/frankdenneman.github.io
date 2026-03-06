@@ -1,12 +1,11 @@
 ---
 title: "MIG Partitioning, Placement Geometry, and Stranded Capacity"
-description: "A deep dive into MIG partitioning, placement geometry, and stranded capacity in GPU infrastructure for AI workloads.""
+description: "A deep dive into MIG partitioning, placement geometry, and stranded capacity in GPU infrastructure for AI workloads."
 date: 2026-03-01
 url: "/posts/2026-03-06-MIG-Mode"
 series: ["Architecting AI Infrastructure"]
 series_order: 8
 ---
-
 ## Architecting AI Infrastructure — Part 8
 
 Previous articles in this series explained how time-sliced GPU sharing works
@@ -72,7 +71,7 @@ The GPU still has eight memory slices. After placing seven instances, 10 gigabyt
 
 MIG profiles must align with specific memory placement regions inside the GPU. Profiles that consume multiple memory slices require a contiguous region.
 
-The 3g.40gb profile consumes four memory slices. On an 80-gigabyte GPU, this creates two valid placement regions: memory slices 0--3 or 4--7.  nvidia-smi is NVIDIA's command-line tool installed with the driver. The mig -lgi flag lists all active MIG instances on the host — ***list GPU instances*** — including the profile each instance was created from and where it sits in the GPU's memory layout.
+The 3g.40gb profile consumes four memory slices. On an 80-gigabyte GPU, this creates two valid placement regions: memory slices 0--3 or 4--7.  [nvidia-smi](https://docs.nvidia.com/deploy/nvidia-smi/index.html) is NVIDIA's command-line tool installed with the driver. The mig -lgi flag lists all active MIG instances on the host — ***list GPU instances*** — including the profile each instance was created from and where it sits in the GPU's memory layout.
 The output includes a placement column formatted as start:size, where start is the index of the first memory slice the instance occupies, and size is the number of slices it consumes. 
 
 ![nvdia-smi-mig-lgi-command-2x3g40](images/nvdia-smi-mig-lgi-command-2x3g40.png)

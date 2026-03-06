@@ -1,6 +1,6 @@
 ---
 title: "MIG Partitioning, Placement Geometry, and Stranded Capacity"
-description: "Architecting AI Infrastructure — Part 8"
+description: "A deep dive into MIG partitioning, placement geometry, and stranded capacity in GPU infrastructure for AI workloads.""
 date: 2026-03-01
 url: "/posts/2026-03-06-MIG-Mode"
 series: ["Architecting AI Infrastructure"]

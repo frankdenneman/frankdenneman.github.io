@@ -32,7 +32,7 @@ Earlier articles in this series showed that GPU capacity is not determined solel
 All NVIDIA GPU architectures that support MIG, including Ampere, Hopper,
 and Blackwell, have the same structure. Each GPU provides seven compute slices and eight memory slices. Profiles use both resources simultaneously, so each profile represents a specific combination of compute and memory slices that match the GPU's physical layout.
 
-![MIG slices](images/mig-slices.svg)
+![MIG slices](images/MIG-slices.svg)
 
 This article uses an H100 eighty-gigabyte GPU as an example. In this
 setup, each memory slice represents ten gigabytes of framebuffer memory. Because compute slices and memory slices are allocated together,

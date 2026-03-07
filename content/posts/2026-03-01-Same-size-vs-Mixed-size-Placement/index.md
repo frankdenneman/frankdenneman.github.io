@@ -1,6 +1,6 @@
 ---
 title: "Same Size vs Mixed Size Placement at Cluster Scale"
-description: "Architecting AI Infrastructure — Part 7"
+description: "How Same-size and Mixed-size vGPU placement behavior evolves at cluster scale and how profile strategy influences deployable capacity over time."
 date: 2026-03-01
 url: "/posts/2026-03-01-same-size-vs-mixed-size-placement/"
 series: ["Architecting AI Infrastructure"]

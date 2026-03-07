@@ -14,7 +14,10 @@
     {{- end -}}
   {{- end -}}
   {{- $pages = sort $pages "Params.series_order" "asc" -}}
+  {{- $total := len $pages -}}
   {{- range $index, $p := $pages -}}
+    {{- $prev := cond (gt $index 0) (index $pages (sub $index 1)) nil -}}
+    {{- $next := cond (lt $index (sub $total 1)) (index $pages (add $index 1)) nil -}}
     {{- if $index }},{{ end }}
     {
       "part": {{ $p.Params.series_order }},
@@ -22,7 +25,11 @@
       "url": {{ $p.Permalink | jsonify }},
       "date": {{ $p.Date.Format "2006-01-02" | jsonify }},
       "description": {{ $p.Description | default $p.Summary | plainify | htmlUnescape | jsonify }},
-      "tags": {{ $p.Params.tags | default (slice) | jsonify }}
+      "tags": {{ $p.Params.tags | default (slice) | jsonify }},
+      "previous_part": {{ if $prev }}{{ $prev.Params.series_order }}{{ else }}null{{ end }},
+      "previous_url": {{ if $prev }}{{ $prev.Permalink | jsonify }}{{ else }}null{{ end }},
+      "next_part": {{ if $next }}{{ $next.Params.series_order }}{{ else }}null{{ end }},
+      "next_url": {{ if $next }}{{ $next.Permalink | jsonify }}{{ else }}null{{ end }}
     }
   {{- end }}
   ]

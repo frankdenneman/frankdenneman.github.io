@@ -1,0 +1,29 @@
+{
+  "series": "Architecting AI Infrastructure",
+  "author": "Frank Denneman",
+  "site": "https://frankdenneman.nl",
+  "series_url": "https://frankdenneman.nl/ai-infrastructure/",
+  "description": "A practical series on how AI workloads behave on infrastructure, and how platforms should place and run them.",
+  "articles": [
+  {{- $pages := slice -}}
+  {{- range site.RegularPages -}}
+    {{- if and (eq .Type "posts") .Params.series -}}
+      {{- if in .Params.series "Architecting AI Infrastructure" -}}
+        {{- $pages = $pages | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $pages = sort $pages "Params.series_order" "asc" -}}
+  {{- range $index, $p := $pages -}}
+    {{- if $index }},{{ end }}
+    {
+      "part": {{ $p.Params.series_order }},
+      "title": {{ $p.Title | jsonify }},
+      "url": {{ $p.Permalink | jsonify }},
+      "date": {{ $p.Date.Format "2006-01-02" | jsonify }},
+      "description": {{ $p.Description | default $p.Summary | plainify | htmlUnescape | jsonify }},
+      "tags": {{ $p.Params.tags | default (slice) | jsonify }}
+    }
+  {{- end }}
+  ]
+}

@@ -1,0 +1,28 @@
+# FrankDenneman.nl AI Knowledge Corpus
+
+Site: https://frankdenneman.nl
+Author: Frank Denneman
+
+This file contains machine-readable versions of selected articles
+from frankdenneman.nl covering AI infrastructure architecture,
+GPU resource management, and NUMA-aware system design.
+
+Primary topics:
+- GPU placement and scheduling
+- vGPU profiles and placement behavior
+- MIG partitioning and placement geometry
+- NUMA-aware infrastructure design
+- Runtime memory behavior of AI models
+
+{{ range where .Site.RegularPages "Type" "posts" }}
+{{ $tags := .Params.tags }}
+{{ if or (in $tags "ai") (in $tags "gpu") (in $tags "vgpu") (in $tags "numa") }}
+================================================================================
+Title: {{ .Title }}
+URL: {{ .Permalink }}
+Date: {{ .Date.Format "2006-01-02" }}
+
+{{ .Plain | htmlUnescape }}
+
+{{ end }}
+{{ end }}

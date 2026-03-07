@@ -1,0 +1,16 @@
+{
+  "series": "Architecting AI Infrastructure",
+  "author": "Frank Denneman",
+  "site": "https://frankdenneman.nl",
+  "articles": [
+  {{ $pages := where .Pages "Section" "posts" }}
+  {{ $filtered := where $pages "Params.series" "Architecting AI Infrastructure" }}
+  {{ range $index, $p := $filtered }}
+    {
+      "title": {{ $p.Title | jsonify }},
+      "url": {{ $p.Permalink | jsonify }},
+      "date": {{ $p.Date.Format "2006-01-02" | jsonify }}
+    }{{ if not (eq (add $index 1) (len $filtered)) }},{{ end }}
+  {{ end }}
+  ]
+}

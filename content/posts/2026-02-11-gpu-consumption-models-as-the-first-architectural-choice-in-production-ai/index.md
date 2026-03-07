@@ -7,6 +7,9 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 
 series: ["Architecting AI Infrastructure"]
 series_order: 2
+url: "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
+aliases:
+  - "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
 ---
 
 ## Architecting AI Infrastructure - Part 2

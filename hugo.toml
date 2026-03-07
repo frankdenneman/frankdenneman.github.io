@@ -9,7 +9,25 @@ canonifyURLs = true
   pagerSize = 10
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "TXT", "LLMSFULL"]
+
+[outputFormats.TXT]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.LLMSFULL]
+  mediaType = "text/plain"
+  baseName = "llms-full"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.AIINFRA]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true
+  notAlternative = true  
 
 # Anatole via Hugo Modules
 [module]
@@ -21,40 +39,44 @@ canonifyURLs = true
   tag = "tags"
 
 [params]
-disableThemeSwitcher = true
-description = """Distinguished Engineer | Chief Technologist for AI
+  disableThemeSwitcher = true
+  description = """Distinguished Engineer | Chief Technologist for AI
 VMware Cloud Foundation (Broadcom)
 
 I write about AI platform architecture, GPU resource strategy, and NUMA-aware infrastructure design."""
+  customCss = ["css/custom.css"]
+  gtagId = "G-XSZJ05LPXJ"
 
-customCss = ["css/custom.css"]
-gtagId = "G-XSZJ05LPXJ"
-  # Anatole sidebar title (name under profile)
+  # Anatole sidebar identity
   title = "Frank Denneman"
   author = "Frank Denneman"
   profilePicture = "images/Headshot-FD.jpeg"
   favicon = "favicons/"
 
-# Social icons (Font Awesome classes) under the profile picture
+[params.plausibleAnalytics]
+  domain = "frankdenneman.nl"
+  serverURL = "https://plausible.io"
+
+# Social icons under the profile picture
 [[params.socialIcons]]
-icon = "fab fa-linkedin"
-title = "LinkedIn"
-url = "https://www.linkedin.com/in/frankdenneman/"
+  icon = "fab fa-linkedin"
+  title = "LinkedIn"
+  url = "https://www.linkedin.com/in/frankdenneman/"
 
 [[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/frankdenneman"
+  icon = "fab fa-github"
+  title = "GitHub"
+  url = "https://github.com/frankdenneman"
 
 [[params.socialIcons]]
-icon = "fab fa-instagram"
-title = "Instagram"
-url = "https://www.instagram.com/roadtoimmersion"
+  icon = "fab fa-instagram"
+  title = "Instagram"
+  url = "https://www.instagram.com/roadtoimmersion"
 
 [[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "X"
-url = "https://x.com/FrankDenneman"
+  icon = "fab fa-twitter"
+  title = "X"
+  url = "https://x.com/FrankDenneman"
 
 [menu]
   [[menu.main]]
@@ -78,6 +100,11 @@ url = "https://x.com/FrankDenneman"
     weight = 42
 
   [[menu.main]]
+    name = "Tools"
+    url = "/tools/"
+    weight = 44
+
+  [[menu.main]]
     name = "Search"
     url = "/search/"
     weight = 45
@@ -98,29 +125,18 @@ url = "https://x.com/FrankDenneman"
     url = "/privacy/"
     weight = 90
 
-  [[menu.main]]
-    name = "Tools"
-    url = "/tools/"
-    weight = 44
-
-
 [security.exec]
-# Allow the Node toolcache path used on GitHub Actions runners
-allow = [
-  '^(dart-)?sass(-embedded)?$',
-  '^go$',
-  '^git$',
-  '^npx$',
-  '^postcss$',
-  '^tailwindcss$',
-  '^/opt/hostedtoolcache/node/.*/bin/sass$',
-  '^/usr/local/bin/sass$'
-]
+  # Allow the Node toolcache path used on GitHub Actions runners
+  allow = [
+    '^(dart-)?sass(-embedded)?$',
+    '^go$',
+    '^git$',
+    '^npx$',
+    '^postcss$',
+    '^tailwindcss$',
+    '^/opt/hostedtoolcache/node/.*/bin/sass$',
+    '^/usr/local/bin/sass$'
+  ]
 
 [markup.goldmark.renderer]
   unsafe = true
-
-
-[params.plausibleAnalytics]
-  domain = "frankdenneman.nl"
-  serverURL = "https://plausible.io"

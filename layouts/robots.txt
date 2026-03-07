@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: https://frankdenneman.nl/sitemap.xml
+
+# AI crawler guidance
+# llms.txt: https://frankdenneman.nl/llms.txt
+# llms-full.txt: https://frankdenneman.nl/llms-full.txt

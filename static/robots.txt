@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
 
+# Canonical sitemap
 Sitemap: https://frankdenneman.nl/sitemap.xml
+
+# AI discovery hints
+# Curated AI entry point
+# https://frankdenneman.nl/llms.txt
+
+# Machine-readable corpus
+# https://frankdenneman.nl/llms-full.txt
+
+# Structured AI Infrastructure series graph
+# https://frankdenneman.nl/ai-infrastructure/index.json

@@ -1,0 +1,26 @@
+{
+  "series": "Architecting AI Infrastructure",
+  "author": "Frank Denneman",
+  "site": "https://frankdenneman.nl",
+  "articles": [
+  {{- $pages := slice -}}
+  {{- range site.RegularPages -}}
+    {{- with .Params.series -}}
+      {{- if in . "Architecting AI Infrastructure" -}}
+        {{- $pages = $pages | append $ -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $pages = sort $pages "Params.series_order" "asc" -}}
+  {{- range $index, $p := $pages -}}
+    {{- if $index }},{{ end }}
+    {
+      "title": {{ $p.Title | jsonify }},
+      "url": {{ $p.Permalink | jsonify }},
+      "date": {{ $p.Date.Format "2006-01-02" | jsonify }},
+      "series_order": {{ $p.Params.series_order }},
+      "description": {{ $p.Description | jsonify }}
+    }
+  {{- end }}
+  ]
+}

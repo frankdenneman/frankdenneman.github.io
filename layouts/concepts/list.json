@@ -1,0 +1,6 @@
+{
+  "site": "https://frankdenneman.nl",
+  "author": "Frank Denneman",
+  "description": "Concept index for AI infrastructure, GPU resource management, and NUMA-aware platform architecture.",
+  "concepts": {{ site.Data.concepts.concepts | jsonify }}
+}

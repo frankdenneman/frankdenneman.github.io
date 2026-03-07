@@ -1,0 +1,73 @@
+concepts:
+
+  - name: "GPU placement"
+    summary: "How a platform decides where GPU-backed workloads run and which physical GPU resources they consume."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/why-gpu-placement-becomes-the-defining-problem/"
+      - "https://frankdenneman.nl/posts/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/"
+    related_concepts:
+      - "same-size mode"
+      - "mixed-size mode"
+      - "MIG partitioning"
+      - "NUMA locality"
+
+  - name: "GPU consumption models"
+    summary: "How AI workloads request and consume GPU resources in production environments."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
+    related_concepts:
+      - "GPU placement"
+      - "runtime memory"
+      - "activation memory"
+
+  - name: "same-size vGPU mode"
+    summary: "A vGPU configuration where all workloads on a GPU use the same profile size."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2026-02-19-how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/"
+    related_concepts:
+      - "mixed-size mode"
+      - "GPU placement"
+      - "vGPU profiles"
+
+  - name: "mixed-size vGPU mode"
+    summary: "A vGPU configuration where different profile sizes can coexist on the same GPU."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/"
+    related_concepts:
+      - "placement IDs"
+      - "stranded capacity"
+      - "GPU placement"
+
+  - name: "MIG partitioning"
+    summary: "Hardware partitioning of GPUs into isolated instances with dedicated compute and memory slices."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2026-03-06-MIG-Mode/"
+    related_concepts:
+      - "placement geometry"
+      - "stranded capacity"
+      - "GPU placement"
+
+  - name: "placement geometry"
+    summary: "How MIG memory and compute slices align and determine valid instance placement locations."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2026-03-06-MIG-Mode/"
+    related_concepts:
+      - "MIG partitioning"
+      - "stranded capacity"
+
+  - name: "stranded capacity"
+    summary: "GPU resources that remain unused because placement constraints prevent additional instances."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2026-03-06-MIG-Mode/"
+    related_concepts:
+      - "placement geometry"
+      - "mixed-size mode"
+
+  - name: "NUMA locality"
+    summary: "The effect of memory and device locality in systems with multiple CPU sockets."
+    canonical_urls:
+      - "https://frankdenneman.nl/posts/2016-07-07-numa-deep-dive-part-1-uma-numa/"
+      - "https://frankdenneman.nl/posts/2020-01-30-machine-learning-workload-and-gpgpu-numa-node-locality/"
+    related_concepts:
+      - "GPU placement"
+      - "CPU memory locality"

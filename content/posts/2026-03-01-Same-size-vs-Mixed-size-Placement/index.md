@@ -5,6 +5,7 @@ date: 2026-03-01
 url: "/posts/2026-03-01-same-size-vs-mixed-size-placement/"
 series: ["Architecting AI Infrastructure"]
 series_order: 7
+concepts: ["same-size vGPU mode","mixed-size vGPU mode","cluster-scale placement"]
 ---
 
 ## Architecting AI Infrastructure — Part 7

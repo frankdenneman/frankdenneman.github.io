@@ -8,6 +8,7 @@ slug: "why-gpu-placement-becomes-the-defining-problem"
 
 series: ["Architecting AI Infrastructure"]
 series_order: 1
+concepts: ["GPU placement","AI infrastructure","Scheduling"]
 ---
 
 ## Architecting AI Infrastructure Series - Part 1

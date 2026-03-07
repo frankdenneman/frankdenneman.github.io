@@ -7,6 +7,7 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 
 series: ["Architecting AI Infrastructure"]
 series_order: 4
+concepts: ["GPU modes","assignment policies","host-level placement"]
 ---
 
 ## Architecting AI Infrastructure - Part 4

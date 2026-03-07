@@ -7,6 +7,7 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 
 series: ["Architecting AI Infrastructure"]
 series_order: 3
+concepts: ["GPU placement","DRS","Scheduling"]
 ---
 
 ## Architecting AI Infrastructure - Part 3.

@@ -5,6 +5,7 @@ date: 2026-03-06
 url: "/posts/2026-03-06-MIG-Mode"
 series: ["Architecting AI Infrastructure"]
 series_order: 8
+concepts: ["MIG partitioning","placement geometry","stranded capacity","GPU placement"]
 ---
 ## Architecting AI Infrastructure — Part 8
 

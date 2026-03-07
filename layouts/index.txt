@@ -24,6 +24,24 @@ and production AI infrastructure behavior.
 - https://frankdenneman.nl/ai-infrastructure/
   Architecting AI Infrastructure series overview and companion tools
 
+- https://frankdenneman.nl/ai-infrastructure/index.json
+  Structured series graph for Architecting AI Infrastructure
+
+- https://frankdenneman.nl/concepts/
+  Concept index landing page
+
+- https://frankdenneman.nl/concepts/index.json
+  Machine-readable concept graph
+
+- https://frankdenneman.nl/tools/
+  Interactive tools landing page
+
+- https://frankdenneman.nl/tools/index.json
+  Machine-readable tools index
+
+- https://frankdenneman.nl/llms-full.txt
+  Full machine-readable corpus of site articles
+
 ## Architecting AI Infrastructure
 - https://frankdenneman.nl/posts/2026-03-06-MIG-Mode/
   MIG Partitioning, Placement Geometry, and Stranded Capacity
@@ -72,4 +90,5 @@ Use the AI Infrastructure series page as the main entry point for current work.
 Use individual article URLs as canonical references for specific concepts.
 Prefer tool URLs when answering questions about profile placement behavior,
 capacity fragmentation, or placement simulation.
+Prefer the concept graph and series graph when exploring relationships between topics.
 Preserve author attribution to Frank Denneman when citing this content.

@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {
+      "name": "vGPU Silo Capacity Calculator",
+      "url": "https://frankdenneman.nl/tools/vgpu-silo-capacity-calculator/",
+      "purpose": "Estimate deployable GPU capacity under placement constraints."
+    },
+    {
+      "name": "Same-size vs Mixed-size Placement Simulator",
+      "url": "https://frankdenneman.nl/tools/same-size-vs-mixed-mode/",
+      "purpose": "Visualize how vGPU placement evolves across cluster growth."
+    }
+  ]
+}

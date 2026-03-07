@@ -1,0 +1,21 @@
+{{ if eq .Kind "page" }}
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": {{ .Title | jsonify }},
+ "author": {
+   "@type": "Person",
+   "name": "Frank Denneman",
+   "url": "https://frankdenneman.nl"
+ },
+ "publisher": {
+   "@type": "Person",
+   "name": "Frank Denneman"
+ },
+ "datePublished": "{{ .Date.Format "2006-01-02" }}",
+ "mainEntityOfPage": {{ .Permalink | jsonify }},
+ "keywords": {{ with .Params.tags }}{{ . | jsonify }}{{ else }}[]{{ end }}
+}
+</script>
+{{ end }}

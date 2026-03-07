@@ -1,1 +1,29 @@
 # Frank Denneman
+
+Site: https://frankdenneman.nl
+Author: Frank Denneman
+
+Technical writing on:
+
+AI infrastructure architecture
+GPU resource management
+NUMA-aware infrastructure design
+Virtualization performance
+Production AI platforms
+
+Key entry points
+
+AI Infrastructure Series
+https://frankdenneman.nl/ai-infrastructure/
+https://frankdenneman.nl/ai-infrastructure/index.json
+
+Concept Graph
+https://frankdenneman.nl/concepts/
+https://frankdenneman.nl/concepts/index.json
+
+Interactive Tools
+https://frankdenneman.nl/tools/
+https://frankdenneman.nl/tools/index.json
+
+Full machine-readable corpus
+https://frankdenneman.nl/llms-full.txt

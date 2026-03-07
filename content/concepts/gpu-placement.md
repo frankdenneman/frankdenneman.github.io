@@ -1,12 +1,19 @@
 ---
 title: "GPU Placement"
+description: "How AI infrastructure platforms decide where GPU workloads run and how accelerators are allocated across clusters."
 url: "/concepts/gpu-placement/"
-description: "How AI platforms decide where GPU workloads run and how GPU resources are allocated across infrastructure."
 ---
 
-GPU placement determines how accelerator workloads are assigned to physical GPUs in a cluster.
+GPU placement determines where accelerator workloads run inside a cluster.
 
-Articles covering this concept:
+It is influenced by:
+
+- scheduler decisions
+- hardware topology
+- vGPU profile constraints
+- GPU partitioning models
+
+Articles covering GPU placement:
 
 - /posts/why-gpu-placement-becomes-the-defining-problem/
 - /posts/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/

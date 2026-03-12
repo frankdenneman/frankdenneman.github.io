@@ -1,4 +1,6 @@
 ---
+_build:
+  list: false
 title: "GPU Placement"
 description: "How AI infrastructure platforms decide where GPU workloads run and how accelerators are allocated across clusters."
 url: "/concepts/gpu-placement/"

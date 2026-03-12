@@ -52,7 +52,11 @@
         {{- partial "toc.html" . -}}
       {{- end -}}
 
-      {{ partial "concept-links.html" . }}
+      {{ if eq .RelPermalink "/ai-infrastructure/" }}
+        {{ .Content }}
+      {{ else }}
+        {{ partial "concept-links.html" . }}
+      {{ end }}
 
       {{- if isset .Params "series" -}}
         {{- partial "series.html" . -}}

@@ -1,5 +1,8 @@
 ---
 title: "Mixed Size vGPU Mode in Practice"
+url: "/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/"
+aliases:
+  - /posts/2026-02-24-Mixed%20Size-vGPU-Mode-in-Practice/
 linkTitle: "Part 6 - Mixed Size vGPU Mode in Practice"
 date: 2026-02-24T16:00:00+01:00
 categories: ["ai"]

@@ -54,7 +54,7 @@
 
 <div style="margin:.25rem 0 1rem 0; opacity:.9;">
       <strong>{{ len $items }}</strong> parts • Latest:
-      <a href="{{ $latest.RelPermalink }}">{{ $latest.Title }}</a>
+      <a href="{{ $latest.RelPermalink }}">{{ $latest.Params.linkTitle | default $latest.Title | plainify }}</a>
     </div>
 
     <ol style="list-style:none;padding-left:0;margin:0;">
@@ -74,7 +74,7 @@
         <li style="margin:0 0 1.1rem 0;padding:.85rem 1rem;border:1px solid rgba(0,0,0,.08);border-radius:.75rem;">
           <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:baseline;">
             <strong style="white-space:nowrap;">Part {{ .order }}</strong>
-            <a href="{{ $p.RelPermalink }}"><strong>{{ $p.Title }}</strong></a>
+            <a href="{{ $p.RelPermalink }}"><strong>{{ $p.Params.linkTitle | default $p.Title | plainify }}</strong></a>
             {{- if eq $p.RelPermalink $latest.RelPermalink -}}
               <span style="font-size:.85em;padding:.1rem .5rem;border:1px solid rgba(0,0,0,.18);border-radius:999px;">Newest</span>
             {{- end -}}

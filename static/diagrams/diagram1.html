@@ -116,7 +116,7 @@
 <script>
 const steps = [
   { label: ["Step 1", "System Prompt"],    kv: 33,  type: "init",   tokens: 800   },
-  { label: ["Step 2", "ITAM Query"],       kv: 107, type: "tool",   tokens: 2900  },
+  { label: ["Step 2", "VCF Ops Query"],     kv: 107, type: "tool",   tokens: 2900  },
   { label: ["Step 3", "PPM Pipeline"],     kv: 224, type: "tool",   tokens: 6250  },
   { label: ["Step 4", "Capacity Reason"],  kv: 326, type: "reason", tokens: 9150  },
   { label: ["Step 5", "CapEx Budget"],     kv: 367, type: "tool",   tokens: 10300 },
@@ -234,7 +234,7 @@ new Chart(ctx, {
       ctx.setLineDash([]);
 
       // Label pill — positioned above the line, anchored right
-      const label  = "854 MB — 26× single prompt completion";
+      const label  = "854 MB · session peak";
       ctx.font      = "600 10px 'Inter', sans-serif";
       const textW   = ctx.measureText(label).width;
       const pillPad = 6;

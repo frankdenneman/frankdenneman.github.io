@@ -3,7 +3,7 @@ title: "Durable Agentic AI Sessions in GPU Memory"
 linkTitle: "Part 3 - Durable Agentic AI Sessions in GPU Memory"
 description: "How agentic AI workloads accumulate KV cache across reasoning steps and tool calls and why this changes GPU memory planning for on prem infrastructure."
 date: 2026-03-12
-url: "/posts/2026-03-12-Durable-Agentic-AI-Sessions-in-GPU-Memory"
+url: "2026-03-12-Durable-Agentic-AI-Sessions-in-GPU-Memory"
 series: ["Understanding AI Memory"]
 series_order: 3
 concepts: ["Durable Agents","prefil","tools","KV cache, LLM runtime memory, Agentic AI"]

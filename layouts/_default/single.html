@@ -52,7 +52,7 @@
         {{- partial "toc.html" . -}}
       {{- end -}}
 
-      {{ if eq .RelPermalink "/ai-infrastructure/" }}
+      {{ if or (eq .RelPermalink "/ai-infrastructure/") (eq .RelPermalink "/understanding-ai-memory/") }}
         {{ .Content }}
       {{ else }}
         {{ partial "concept-links.html" . }}

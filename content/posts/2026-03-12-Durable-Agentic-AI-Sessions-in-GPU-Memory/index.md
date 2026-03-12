@@ -7,6 +7,7 @@ url: "/posts/2026-03-12-Durable-Agentic-AI-Sessions-in-GPU-Memory"
 series: ["Understanding AI Memory"]
 series_order: 3
 concepts: ["Durable Agents","prefil","tools","KV cache, LLM runtime memory, Agentic AI"]
+categories: ["ai"]
 ---
 
 ## The durable memory of agentic systems

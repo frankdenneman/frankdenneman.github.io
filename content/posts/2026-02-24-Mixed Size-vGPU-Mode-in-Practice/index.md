@@ -2,7 +2,6 @@
 title: "Mixed Size vGPU Mode in Practice"
 linkTitle: "Part 6 - Mixed Size vGPU Mode in Practice"
 date: 2026-02-24T16:00:00+01:00
-draft: false
 categories: ["ai"]
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 

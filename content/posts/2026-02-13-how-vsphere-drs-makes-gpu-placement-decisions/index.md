@@ -1,5 +1,6 @@
 ---
 title: "How vSphere DRS Makes GPU Placement Decisions"
+linkTitle: "Part 3 - How vSphere DRS Makes GPU Placement Decisions"
 date: 2026-02-13T12:50:00+01:00
 draft: false
 categories: ["ai"]

@@ -1,8 +1,15 @@
-+++
-date = '2026-02-04T23:03:39+01:00'
-title = 'Understanding Activation Memory in Mixture of Experts Models'
-categories = ['ai']
-+++ 
+---
+title: "Understanding Activation Memory in Mixture of Experts Models"
+linkTitle: "Part 2 - Understanding Activation Memory in Mixture of Experts Models"
+description: "Explains how activation memory behaves in Mixture of Experts models and why long-context and agentic inference introduce unpredictable activation peaks during prefill phases."
+date: 2026-02-05
+url: "2026-02-05-understanding-activation-in-mixture-of-experts-models"
+series: ["Understanding AI Memory"]
+series_order: 2
+concepts: ["Mixture of Experts", "activation memory", "prefill phase", "GPU memory spikes", "long context inference"]
+categories: ["ai"]
+---
+
 
 In my previous article, [The Dynamic World of LLM Runtime Memory](https://frankdenneman.nl/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), I focused on KV-cache as the primary driver of runtime memory pressure. Today, as inference workloads move toward long-context and agentic execution, activation memory has emerged as an equally important and often overlooked constraint.
 

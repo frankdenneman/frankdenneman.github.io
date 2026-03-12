@@ -354,3 +354,89 @@ article table td,
 #root table:has(thead th:nth-child(3):last-child) th:nth-child(3),
 #root table:has(thead th:nth-child(3):last-child) td:nth-child(3) { width: 32.5% !important; }
 
+
+/* =============================================================================
+   Series page spacing
+   ============================================================================= */
+
+.series-spacer {
+  display: block;
+  height: 0.5rem;
+}
+
+
+/* Series page heading spacing */
+.post-content h2 {
+  margin-bottom: 0.6rem;
+}
+
+
+/* =============================================================================
+   Section heading styling (## titles in articles)
+   ============================================================================= */
+
+.post-content h2 {
+  color: var(--brand-navy);
+}
+
+
+/* =============================================================================
+   Callout blocks
+   ============================================================================= */
+
+.post-content blockquote {
+  border-left: 4px solid var(--brand-accent);
+  background: #f7f9fc;
+  padding: 0.9rem 1.2rem;
+  margin: 1.6rem 0;
+  font-size: 0.98rem;
+}
+
+.post-content blockquote p {
+  margin: 0.4rem 0;
+}
+
+
+/* =============================================================================
+   Callout blocks
+   ============================================================================= */
+
+.post .post-content blockquote,
+.post-content blockquote,
+article blockquote {
+  border-left: 4px solid var(--brand-accent) !important;
+  background: #f7f9fc !important;
+  padding: 0.9rem 1.2rem !important;
+  margin: 1.6rem 0 !important;
+  font-size: 0.98rem !important;
+}
+
+.post .post-content blockquote p,
+.post-content blockquote p,
+article blockquote p {
+  margin: 0.4rem 0 !important;
+}
+
+
+/* =============================================================================
+   Callout blocks
+   ============================================================================= */
+
+.post-content blockquote,
+.post blockquote,
+article blockquote,
+main blockquote {
+  border-left: 4px solid #032350 !important;
+  background-color: #f3f7fb !important;
+  padding: 1rem 1.25rem !important;
+  margin: 1.5rem 0 !important;
+  border-radius: 0.25rem !important;
+}
+
+.post-content blockquote p,
+.post blockquote p,
+article blockquote p,
+main blockquote p {
+  margin: 0.45rem 0 !important;
+}
+

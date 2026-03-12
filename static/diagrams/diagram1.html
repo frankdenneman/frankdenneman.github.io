@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diagram 1 — Durable Session Memory Growth</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    background: #f8fafc;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    padding: 24px 24px 32px;
+  }
+
+  .wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 28px 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+  }
+
+  .series-label {
+    font-size: 10px;
+    font-weight: 500;
+    color: #94a3b8;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+
+  .legend {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #64748b;
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .chart-wrap {
+    position: relative;
+    width: 100%;
+    height: 360px;
+  }
+
+  .footer {
+    margin-top: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #cbd5e1;
+    text-align: right;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="series-label">Understanding AI Memory — Part 3</div>
+  <h2>Durable Session Memory Growth</h2>
+  <p class="subtitle">KV Cache consumption across a 10-step enterprise agent session &nbsp;·&nbsp; GPT-oss 120B &nbsp;·&nbsp; FP16</p>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#64748b"></div>Init</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#0284c7"></div>Tool Call</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d97706"></div>Reasoning Trace</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#059669"></div>Output</div>
+  </div>
+
+  <div class="chart-wrap">
+    <canvas id="chart"></canvas>
+  </div>
+
+  <div class="footer">frankdenneman.nl &nbsp;·&nbsp; Understanding AI Memory Series</div>
+</div>
+
+<script>
+const steps = [
+  { label: ["Step 1", "System Prompt"],    kv: 33,  type: "init",   tokens: 800   },
+  { label: ["Step 2", "ITAM Query"],       kv: 107, type: "tool",   tokens: 2900  },
+  { label: ["Step 3", "PPM Pipeline"],     kv: 224, type: "tool",   tokens: 6250  },
+  { label: ["Step 4", "Capacity Reason"],  kv: 326, type: "reason", tokens: 9150  },
+  { label: ["Step 5", "CapEx Budget"],     kv: 367, type: "tool",   tokens: 10300 },
+  { label: ["Step 6", "GPU Specs"],        kv: 455, type: "tool",   tokens: 12800 },
+  { label: ["Step 7", "Budget Reason"],    kv: 585, type: "reason", tokens: 16500 },
+  { label: ["Step 8", "Procurement"],      kv: 632, type: "tool",   tokens: 17850 },
+  { label: ["Step 9", "Final Reason"],     kv: 752, type: "reason", tokens: 21250 },
+  { label: ["Step 10", "Report + CR"],     kv: 854, type: "output", tokens: 24150 },
+];
+
+const typeColors   = { init: "#64748b", tool: "#0284c7", reason: "#d97706", output: "#059669" };
+const borderColors = { init: "#475569", tool: "#0369a1", reason: "#b45309", output: "#047857" };
+
+const ctx = document.getElementById("chart").getContext("2d");
+
+const gradient = ctx.createLinearGradient(0, 0, 0, 340);
+gradient.addColorStop(0, "rgba(2, 132, 199, 0.13)");
+gradient.addColorStop(1, "rgba(2, 132, 199, 0.01)");
+
+new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: steps.map(s => s.label),
+    datasets: [{
+      data: steps.map(s => s.kv),
+      borderColor: "#0284c7",
+      borderWidth: 2.5,
+      backgroundColor: gradient,
+      fill: true,
+      tension: 0.35,
+      pointRadius: 7,
+      pointHoverRadius: 9,
+      pointBackgroundColor: steps.map(s => typeColors[s.type]),
+      pointBorderColor:     steps.map(s => borderColors[s.type]),
+      pointBorderWidth: 2,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    layout: {
+      padding: { top: 36, right: 12, bottom: 16, left: 0 }
+    },
+    animation: {
+      duration: 800,
+      easing: "easeInOutQuart"
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: "#0f172a",
+        titleColor: "#94a3b8",
+        bodyColor: "#f1f5f9",
+        borderColor: "#334155",
+        borderWidth: 1,
+        padding: 12,
+        titleFont: { family: "'Inter', sans-serif", size: 11, weight: "600" },
+        bodyFont:  { family: "'Inter', sans-serif", size: 12 },
+        callbacks: {
+          title: (items) => steps[items[0].dataIndex].label.join(" — "),
+          label: (item) => {
+            const s = steps[item.dataIndex];
+            const typeLabel = { init: "Init", tool: "Tool Call", reason: "Reasoning Trace", output: "Output" };
+            return [
+              `  KV Cache: ${s.kv} MB`,
+              `  Cumulative tokens: ${s.tokens.toLocaleString()}`,
+              `  Source: ${typeLabel[s.type]}`,
+            ];
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { color: "#f1f5f9", drawBorder: false },
+        ticks: {
+          font: { family: "'Inter', sans-serif", size: 10 },
+          color: "#94a3b8",
+          maxRotation: 0,
+          padding: 6,
+        },
+        border: { display: false }
+      },
+      y: {
+        min: 0,
+        max: 980,
+        grid: { color: "#f1f5f9", drawBorder: false },
+        ticks: {
+          font: { family: "'Inter', sans-serif", size: 11 },
+          color: "#94a3b8",
+          callback: v => `${v} MB`,
+          stepSize: 200,
+        },
+        border: { display: false }
+      }
+    }
+  },
+  plugins: [{
+    id: "refline",
+    afterDraw(chart) {
+      const { ctx, scales } = chart;
+      const y      = scales.y.getPixelForValue(854);
+      const xLeft  = scales.x.left;
+      const xRight = scales.x.right;
+
+      // Dashed red reference line
+      ctx.save();
+      ctx.setLineDash([5, 4]);
+      ctx.strokeStyle = "#ef4444";
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(xLeft, y);
+      ctx.lineTo(xRight, y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // Label pill — positioned above the line, anchored right
+      const label  = "854 MB — 26× single prompt completion";
+      ctx.font      = "600 10px 'Inter', sans-serif";
+      const textW   = ctx.measureText(label).width;
+      const pillPad = 6;
+      const pillW   = textW + pillPad * 2;
+      const pillH   = 18;
+      const pillX   = xRight - pillW - 4;
+      const pillY   = y - pillH - 6;
+
+      ctx.fillStyle   = "#fef2f2";
+      ctx.strokeStyle = "#fca5a5";
+      ctx.lineWidth   = 1;
+      ctx.beginPath();
+      ctx.roundRect(pillX, pillY, pillW, pillH, 4);
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle  = "#dc2626";
+      ctx.textAlign  = "left";
+      ctx.textBaseline = "middle";
+      ctx.fillText(label, pillX + pillPad, pillY + pillH / 2);
+      ctx.restore();
+    }
+  }]
+});
+</script>
+</body>
+</html>

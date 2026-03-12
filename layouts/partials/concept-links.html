@@ -1,0 +1,13 @@
+{{- $content := .Content -}}
+
+{{- $content = replaceRE `(?i)\bGPU placement\b` `<a href="https://frankdenneman.nl/concepts/gpu-placement/">$0</a>` $content 1 -}}
+
+{{- $content = replaceRE `(?i)\bMIG partitioning\b` `<a href="https://frankdenneman.nl/concepts/mig-partitioning/">$0</a>` $content 1 -}}
+{{- $content = replaceRE `(?i)\bMIG mode\b` `<a href="https://frankdenneman.nl/concepts/mig-partitioning/">$0</a>` $content 1 -}}
+{{- $content = replaceRE `(?i)\bMIG\b` `<a href="https://frankdenneman.nl/concepts/mig-partitioning/">$0</a>` $content 1 -}}
+
+{{- $content = replaceRE `(?i)\bmixed-size vGPU mode\b` `<a href="https://frankdenneman.nl/concepts/mixed-size-vgpu-mode/">$0</a>` $content 1 -}}
+{{- $content = replaceRE `(?i)\bMixed Size VGPU Mode\b` `<a href="https://frankdenneman.nl/concepts/mixed-size-vgpu-mode/">$0</a>` $content 1 -}}
+{{- $content = replaceRE `(?i)\bMixed Size mode\b` `<a href="https://frankdenneman.nl/concepts/mixed-size-vgpu-mode/">$0</a>` $content 1 -}}
+
+{{- $content | safeHTML -}}

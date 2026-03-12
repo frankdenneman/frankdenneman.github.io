@@ -1,5 +1,6 @@
 ---
 title: "GPU Consumption Models as the First Architectural Choice in Production AI"
+linkTitle: "Part 2 - GPU Consumption Models as the First Architectural Choice in Production AI"
 date: 2026-02-11T09:00:00+01:00
 draft: false
 categories: ["ai"]

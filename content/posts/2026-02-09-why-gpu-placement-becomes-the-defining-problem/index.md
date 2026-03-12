@@ -1,5 +1,6 @@
 ---
 title: "Why GPU Placement Becomes the Defining Problem"
+linkTitle: "Part 1 - Why GPU Placement Becomes the Defining Problem"
 date: 2026-02-09T09:00:00+01:00
 draft: false
 categories: ["ai"]

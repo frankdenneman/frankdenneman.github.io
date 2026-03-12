@@ -1,0 +1,23 @@
+{{- $seriesList := .Params.series -}}
+{{- if $seriesList -}}
+  {{- $seriesName := index $seriesList 0 -}}
+  {{- $pages := where site.RegularPages "Params.series" "intersect" (slice $seriesName) -}}
+  {{- $sorted := sort $pages "Params.series_order" "asc" -}}
+
+  {{- if gt (len $sorted) 1 -}}
+    <div class="post-series">
+      <h3>Posts in this series</h3>
+      <ul>
+        {{- range $sorted -}}
+          <li>
+            {{- if eq .RelPermalink $.RelPermalink -}}
+              <strong>{{ .LinkTitle | default .Title }}</strong>
+            {{- else -}}
+              <a href="{{ .RelPermalink }}">{{ .LinkTitle | default .Title }}</a>
+            {{- end -}}
+          </li>
+        {{- end -}}
+      </ul>
+    </div>
+  {{- end -}}
+{{- end -}}

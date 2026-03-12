@@ -100,11 +100,6 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
     weight = 42
 
   [[menu.main]]
-    name = "AI Memory Series"
-    url = "/understanding-ai-memory/"
-    weight = 43
-
-  [[menu.main]]
     name = "Tools"
     url = "/tools/"
     weight = 44
@@ -118,6 +113,17 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
     name = "About"
     url = "/about/"
     weight = 47
+
+  [[menu.main]]
+    name = "Now"
+    url = "/now/"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "privacy"
+    name = "Privacy Policy"
+    url = "/privacy/"
+    weight = 90
 
 [security.exec]
   # Allow the Node toolcache path used on GitHub Actions runners

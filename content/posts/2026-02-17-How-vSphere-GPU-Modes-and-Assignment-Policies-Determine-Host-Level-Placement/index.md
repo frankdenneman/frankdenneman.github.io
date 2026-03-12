@@ -1,5 +1,6 @@
 ---
 title: "How vSphere GPU Modes and Assignment Policies Determine Host Level Placement"
+linkTitle: "Part 4 - How vSphere GPU Modes and Assignment Policies Determine Host Level Placement"
 date: 2026-02-17T14:00:00+01:00
 draft: false
 categories: ["ai"]

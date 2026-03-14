@@ -4,6 +4,7 @@ linkTitle: "Part 2 - GPU Consumption Models as the First Architectural Choice in
 date: 2026-02-11T09:00:00+01:00
 draft: false
 categories: ["ai"]
+track: "AI Infrastructure"
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 
 series: ["Architecting AI Infrastructure"]

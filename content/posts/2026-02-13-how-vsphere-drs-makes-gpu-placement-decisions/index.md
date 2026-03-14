@@ -4,6 +4,7 @@ linkTitle: "Part 3 - How vSphere DRS Makes GPU Placement Decisions"
 date: 2026-02-13T12:50:00+01:00
 draft: false
 categories: ["ai"]
+track: "AI Infrastructure"
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 
 series: ["Architecting AI Infrastructure"]

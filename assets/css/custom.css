@@ -440,3 +440,16 @@ main blockquote p {
   margin: 0.45rem 0 !important;
 }
 
+
+/* =============================================================================
+   Series category colors
+   ============================================================================= */
+
+a.category.series-infra {
+  background-color: #C97F0A !important;
+}
+
+a.category.series-memory {
+  background-color: #1D8F5C !important;
+}
+

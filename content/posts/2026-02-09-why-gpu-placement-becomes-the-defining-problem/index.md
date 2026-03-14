@@ -5,6 +5,7 @@ linkTitle: "Part 1 - Why GPU Placement Becomes the Defining Problem"
 date: 2026-02-09T09:00:00+01:00
 draft: false
 categories: ["ai"]
+track: "AI Infrastructure"
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 slug: "why-gpu-placement-becomes-the-defining-problem"
 

@@ -8,6 +8,7 @@ series: ["Architecting AI Infrastructure"]
 series_order: 8
 concepts: ["MIG partitioning","placement geometry","stranded capacity","GPU placement"]
 categories: ["ai"]
+track: "AI Infrastructure"
 ---
 ## Architecting AI Infrastructure — Part 8
 

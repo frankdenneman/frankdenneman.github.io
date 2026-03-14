@@ -4,6 +4,7 @@ linkTitle: "Part 5 - How Same Size vGPU Mode and Right-sizing Shape GPU Placemen
 date: 2026-02-19T15:00:00+01:00
 draft: false
 categories: ["ai"]
+track: "AI Infrastructure"
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 
 series: ["Architecting AI Infrastructure"]

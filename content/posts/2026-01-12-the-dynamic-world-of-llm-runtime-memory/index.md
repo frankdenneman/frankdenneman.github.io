@@ -8,6 +8,7 @@ series: ["Understanding AI Memory"]
 series_order: 1
 concepts: ["KV cache", "LLM runtime memory", "context length", "GPU concurrency", "inference memory behavior"]
 categories: ["ai"]
+track: "AI Memory"
 ---
 
 When meeting with customers and architectural teams, we often perform a specific exercise to separate a model's static consumption (its weights) from its dynamic runtime consumption.

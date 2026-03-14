@@ -8,6 +8,7 @@ series: ["Understanding AI Memory"]
 series_order: 2
 concepts: ["Mixture of Experts", "activation memory", "prefill phase", "GPU memory spikes", "long context inference"]
 categories: ["ai"]
+track: "AI Memory"
 ---
 
 

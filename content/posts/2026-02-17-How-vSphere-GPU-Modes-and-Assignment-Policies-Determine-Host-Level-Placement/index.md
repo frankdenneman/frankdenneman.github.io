@@ -4,6 +4,7 @@ linkTitle: "Part 4 - How vSphere GPU Modes and Assignment Policies Determine Hos
 date: 2026-02-17T14:00:00+01:00
 draft: false
 categories: ["ai"]
+track: "AI Infrastructure"
 tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernetes", "vSphere", "Scheduling"]
 
 series: ["Architecting AI Infrastructure"]

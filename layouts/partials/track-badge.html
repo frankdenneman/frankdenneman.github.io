@@ -1,0 +1,19 @@
+{{- with .Page.Params.track -}}
+  {{- $label := . -}}
+  {{- $href := "" -}}
+  {{- $class := "" -}}
+
+  {{- if eq $label "AI Infrastructure" -}}
+    {{- $href = "/ai-infrastructure/" -}}
+    {{- $class = "category series-infra" -}}
+  {{- else if eq $label "AI Memory" -}}
+    {{- $href = "/understanding-ai-memory/" -}}
+    {{- $class = "category series-memory" -}}
+  {{- end -}}
+
+  {{- if $href -}}
+    <span>
+      <a class="{{ $class }}" href="{{ $href | relLangURL }}">{{ $label }}</a>
+    </span>
+  {{- end -}}
+{{- end -}}

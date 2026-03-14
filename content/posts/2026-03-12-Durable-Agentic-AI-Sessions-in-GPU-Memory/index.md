@@ -8,6 +8,7 @@ series: ["Understanding AI Memory"]
 series_order: 3
 concepts: ["Durable Agents","prefil","tools","KV cache, LLM runtime memory, Agentic AI"]
 categories: ["ai"]
+track: "AI Memory"
 ---
 
 ## The durable memory of agentic systems

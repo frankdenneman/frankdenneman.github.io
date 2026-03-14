@@ -1,129 +1,204 @@
 {{ if .IsHome -}}
   <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": {{ .Site.Title | jsonify | safeJS }},
-      "url": "{{ .Site.BaseURL }}",
-      "description": "{{ .Site.Params.description }}",
-      "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
-      "license": "{{ .Site.Params.license}}"
-      {{ with .Site.Params.copyright }}
-        {{ $copyright := replace . "{{ YEAR }}" (now.Format "2006") }}
-        ,"copyrightYear": "{{ index (findRE `^\d{4}` $copyright 1) 0 }}"
-      {{ end }}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": {{ printf "%s#website" .Site.BaseURL | jsonify | safeJS }},
+    "name": {{ .Site.Title | plainify | jsonify | safeJS }},
+    "url": {{ .Site.BaseURL | jsonify | safeJS }},
+    "description": {{ .Site.Params.description | plainify | jsonify | safeJS }},
+    "creator": {
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }}
+    },
+    "publisher": {
+      "@type": "Person",
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }},
+      "name": "Frank Denneman",
+      "url": {{ .Site.BaseURL | jsonify | safeJS }}
     }
+  }
   </script>
-{{ else if .IsPage }}
-  {{ $author :=  or (.Params.author) (.Site.Params.author) }}
-  {{ $favicon := .Site.Params.favicon | absURL }}
+
   <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "articleSection": "{{ .Section }}",
-        "name": "{{ .Title | safeJS }}",
-        "headline": "{{ .Title | safeJS }}",
-        "alternativeHeadline": "{{ .Params.lead }}",
-        "description": "{{ if .Description }}
-      {{ .Description | safeJS }}
-
-
-    {{ else }}
-      {{ if .IsPage }}
-        {{ .Summary }}
-
-
-      {{ end }}
-
-
-    {{ end }}",
-        "license": "{{ .Site.Params.license}}",
-        {{ with .Site.Params.copyright }}
-          {{ $copyright := replace . "{{ YEAR }}" (now.Format "2006") }}
-          "copyrightYear": "{{ index (findRE `^\d{4}` $copyright 1) 0 }}",
-        {{ end }}
-        "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
-        "isFamilyFriendly": "true",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "{{ .Permalink }}"
-        },
-        "author" : {
-            "@type": "Person",
-            "name": "{{ $author }}"
-        },
-        "creator" : {
-            "@type": "Person",
-            "name": "{{ $author }}"
-        },
-        "accountablePerson" : {
-            "@type": "Person",
-            "name": "{{ $author }}"
-        },
-        "copyrightHolder" : {
-            "@type": "Person",
-            "name": "{{ $author }}"
-        },
-        "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-        "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-        "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-        "publisher":{
-            "@type":"Organization",
-            "name": {{ $author }},
-            "url": {{ .Site.BaseURL }},
-            "logo": {
-                "@type": "ImageObject",
-                "url": "{{ (printf "%s%s" $favicon "favicon-32x32.png") }}",
-                "width":"32",
-                "height":"32"
-            }
-        },
-        "image": {{ if .Params.images }}
-      [{{ range $i, $e := .Params.images }}
-        {{ if $i }}
-          ,
-
-        {{ end }}
-        {{ $e | absURL }}
-
-
-      {{ end }}
-      ]
-
-    {{ else }}
-      [{{ range $i, $e := .Site.Params.images }}
-        {{ if $i }}
-          ,
-
-        {{ end }}
-        {{ $e | absURL }}
-
-
-      {{ end }}
-      ]
-
-    {{ end }},
-        "url" : "{{ .Permalink }}"{{- if in .RawContent "Architecting AI Infrastructure - Part" }}
-        ,"isPartOf": { "@id": "https://frankdenneman.nl/#ai-infrastructure-series" }
-{{- end }},
-        "wordCount" : "{{ .WordCount }}",
-        "genre" : [ {{ range $index, $tag := .Params.categories }}
-      {{ if $index }}
-        ,
-
-      {{ end }}
-      "{{ $tag }}"
-
-    {{ end }}],
-        "keywords" : [ {{ range $index, $keyword := .Params.tags }}
-      {{ if $index }}
-        ,
-
-      {{ end }}
-      "{{ $keyword }}"
-
-    {{ end }}]
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }},
+    "name": "Frank Denneman",
+    "url": {{ .Site.BaseURL | jsonify | safeJS }},
+    "jobTitle": "Distinguished Engineer | Chief Technologist for AI",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "VMware Cloud Foundation (Broadcom)"
+    },
+    "knowsAbout": [
+      "AI Infrastructure",
+      "GPU resource management",
+      "LLM runtime memory",
+      "vGPU placement",
+      "NUMA-aware infrastructure"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/frankdenneman/",
+      "https://github.com/frankdenneman",
+      "https://www.instagram.com/roadtoimmersion",
+      "https://x.com/FrankDenneman"
+    ]
+  }
   </script>
+{{ else if .IsPage -}}
+  {{ $keywords := slice }}
+  {{ with .Params.concepts }}
+    {{ $keywords = . }}
+  {{ end }}
+  {{ $seriesName := "" }}
+  {{ $seriesId := "" }}
+  {{ $seriesPermalink := "" }}
+  {{ with .Params.series }}
+    {{ $seriesName = index . 0 }}
+    {{ $seriesSlug := $seriesName | urlize }}
+    {{ $seriesId = printf "%s#series-%s" $.Site.BaseURL $seriesSlug }}
+    {{ $seriesPermalink = printf "%s%s/" $.Site.BaseURL $seriesSlug }}
+  {{ end }}
+  {{ $isSeriesLanding := or (eq .File.Path "understanding-ai-memory.md") (eq .File.Path "ai-infrastructure.md") }}
+
+  {{ if $isSeriesLanding -}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": {{ printf "%s#collectionpage" .Permalink | jsonify | safeJS }},
+    "headline": {{ .Title | plainify | jsonify | safeJS }},
+    "description": {{ with .Description }}{{ . | plainify | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | jsonify | safeJS }}{{ end }},
+    "url": {{ .Permalink | jsonify | safeJS }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink | jsonify | safeJS }}
+    },
+    "author": {
+      "@type": "Person",
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }}
+    },
+    "inLanguage": {{ .Site.LanguageCode | jsonify | safeJS }}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "@id": {{ printf "%s#series-%s" .Site.BaseURL (.Title | urlize) | jsonify | safeJS }},
+    "name": {{ .Title | plainify | jsonify | safeJS }},
+    "url": {{ .Permalink | jsonify | safeJS }},
+    "creator": {
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }}
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ .Site.BaseURL | jsonify | safeJS }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ .Title | plainify | jsonify | safeJS }},
+        "item": {{ .Permalink | jsonify | safeJS }}
+      }
+    ]
+  }
+  </script>
+  {{ else -}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": {{ printf "%s#blogposting" .Permalink | jsonify | safeJS }},
+    "headline": {{ .Title | plainify | jsonify | safeJS }},
+    "description": {{ with .Description }}{{ . | plainify | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | jsonify | safeJS }}{{ end }},
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink | jsonify | safeJS }}
+    },
+    "url": {{ .Permalink | jsonify | safeJS }},
+    "author": {
+      "@type": "Person",
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }},
+      "name": "Frank Denneman",
+      "url": {{ .Site.BaseURL | jsonify | safeJS }}
+    },
+    "publisher": {
+      "@type": "Person",
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }},
+      "name": "Frank Denneman",
+      "url": {{ .Site.BaseURL | jsonify | safeJS }}
+    }{{ with .Params.categories }},
+    "articleSection": {{ index . 0 | plainify | jsonify | safeJS }}{{ end }}{{ if gt (len $keywords) 0 }},
+    "keywords": {{ delimit $keywords ", " | plainify | jsonify | safeJS }},
+    "about": [{{ range $i, $k := $keywords }}{{ if $i }}, {{ end }}{{ $k | plainify | jsonify | safeJS }}{{ end }}]{{ end }}{{ if $seriesId }},
+    "isPartOf": {
+      "@id": {{ $seriesId | jsonify | safeJS }}
+    }{{ end }},
+    "inLanguage": {{ .Site.LanguageCode | jsonify | safeJS }},
+    "wordCount": {{ .WordCount }}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ .Site.BaseURL | jsonify | safeJS }}
+      }{{ if $seriesName }},
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ $seriesName | plainify | jsonify | safeJS }},
+        "item": {{ $seriesPermalink | jsonify | safeJS }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": {{ .Title | plainify | jsonify | safeJS }},
+        "item": {{ .Permalink | jsonify | safeJS }}
+      }{{ else }},
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ .Title | plainify | jsonify | safeJS }},
+        "item": {{ .Permalink | jsonify | safeJS }}
+      }{{ end }}
+    ]
+  }
+  </script>
+  {{ end -}}
+
+  {{ if $seriesId -}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "@id": {{ $seriesId | jsonify | safeJS }},
+    "name": {{ $seriesName | plainify | jsonify | safeJS }},
+    "url": {{ $seriesPermalink | jsonify | safeJS }},
+    "creator": {
+      "@id": {{ printf "%s#person" .Site.BaseURL | jsonify | safeJS }}
+    }
+  }
+  </script>
+  {{ end -}}
 {{ end }}

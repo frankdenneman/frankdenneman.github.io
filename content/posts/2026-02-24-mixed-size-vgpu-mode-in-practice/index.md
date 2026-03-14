@@ -11,7 +11,7 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 
 series: ["Architecting AI Infrastructure"]
 series_order: 6
-concepts: ["mixed-size vGPU mode","placement IDs","stranded capacity","GPU placement"]
+concepts: ["Mixed-Size vGPU Mode", "Placement IDs", "Stranded Capacity", "GPU Placement"]
 ---
 ## Architecting AI Infrastructure - Part 6
 

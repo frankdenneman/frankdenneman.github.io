@@ -6,7 +6,7 @@ date: 2026-01-12
 url: "2026-01-12-the-dynamic-world-of-llm-runtime-memory"
 series: ["Understanding AI Memory"]
 series_order: 1
-concepts: ["KV cache", "LLM runtime memory", "context length", "GPU concurrency", "inference memory behavior"]
+concepts: ["KV Cache", "LLM Runtime Memory", "Context Length", "GPU Concurrency", "Inference Memory Behavior"]
 categories: ["ai"]
 track: "AI Memory"
 ---

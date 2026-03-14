@@ -8,7 +8,7 @@ categories: ["ai"]
 track: "AI Infrastructure"
 series: ["Architecting AI Infrastructure"]
 series_order: 7
-concepts: ["same-size vGPU mode","mixed-size vGPU mode","cluster-scale placement"]
+concepts: ["Same-Size vGPU Mode", "Mixed-Size vGPU Mode", "Cluster-Scale Placement"]
 ---
 
 ## Architecting AI Infrastructure — Part 7

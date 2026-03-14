@@ -6,7 +6,7 @@ date: 2026-02-05
 url: "2026-02-05-understanding-activation-in-mixture-of-experts-models"
 series: ["Understanding AI Memory"]
 series_order: 2
-concepts: ["Mixture of Experts", "activation memory", "prefill phase", "GPU memory spikes", "long context inference"]
+concepts: ["Mixture of Experts", "Activation Memory", "Prefill Phase", "GPU Memory Spikes", "Long-Context Inference"]
 categories: ["ai"]
 track: "AI Memory"
 ---

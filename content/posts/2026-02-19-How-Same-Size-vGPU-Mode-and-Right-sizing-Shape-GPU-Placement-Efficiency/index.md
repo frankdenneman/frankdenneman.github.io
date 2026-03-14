@@ -9,7 +9,7 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 
 series: ["Architecting AI Infrastructure"]
 series_order: 5
-concepts: ["same-size vGPU mode","right-sizing","GPU placement efficiency"]
+concepts: ["Same-Size vGPU Mode", "Right-Sizing", "GPU Placement Efficiency"]
 ---
 ## Architecting AI Infrastructure - Part 5
 

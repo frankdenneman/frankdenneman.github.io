@@ -1,6 +1,6 @@
 baseURL = "https://frankdenneman.nl/"
 languageCode = "en-us"
-title = "Frank Denneman"
+title = "Frank Denneman — AI Infrastructure"
 
 enableRobotsTXT = true
 canonifyURLs = true

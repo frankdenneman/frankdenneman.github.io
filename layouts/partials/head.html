@@ -3,21 +3,7 @@
     <meta name="robots" content="noindex,follow">
     {{ end }}
   <meta charset="utf-8" />
-  <title>
-    {{ if (eq .Site.Params.reversepagetitle true) }}
-      {{ with .Title }}
-        {{ . }} |
-      {{ end }}
-      {{- .Site.Params.author -}}
-    {{ else }}
-      {{- .Site.Params.author -}}{{ with .Title }}
-        |
-        {{ . }}
-      {{ end }}
-
-    {{ end }}
-
-  </title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
   <!-- Meta -->
   {{- hugo.Generator -}}

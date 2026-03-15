@@ -1,7 +1,6 @@
 baseURL = "https://frankdenneman.nl/"
 languageCode = "en-us"
-title = "Frank Denneman — AI Infrastructure"
-
+title = "Frank Denneman | Architecting AI Infrastructure"
 enableRobotsTXT = true
 canonifyURLs = true
 
@@ -10,6 +9,7 @@ canonifyURLs = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "TXT", "LLMSFULL"]
+  section = ["HTML", "RSS", "JSON"]
 
 [outputFormats.TXT]
   mediaType = "text/plain"
@@ -40,10 +40,7 @@ canonifyURLs = true
 
 [params]
   disableThemeSwitcher = true
-  description = """Distinguished Engineer | Chief Technologist for AI
-VMware Cloud Foundation (Broadcom)
-
-I write about AI platform architecture, GPU resource strategy, and NUMA-aware infrastructure design."""
+  description = "Distinguished Engineer and Chief Technologist for AI at VMware Cloud Foundation. Writing about AI infrastructure, GPU platform design, and NUMA-aware architecture."
   customCss = ["css/custom.css"]
   gtagId = "G-XSZJ05LPXJ"
 
@@ -52,7 +49,6 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
   author = "Frank Denneman"
   profilePicture = "images/Headshot-FD.jpeg"
   favicon = "favicons/"
-
 [params.plausibleAnalytics]
   domain = "frankdenneman.nl"
   serverURL = "https://plausible.io"

@@ -12,7 +12,7 @@ tags:
   - "vsphere-4-1"
 ---
 
-VMware vSphere 4.1 introduces a new affinity rule, called “Virtual Machines to Hosts” (VM-Host), which I described in the article “[VM to Host affinity rule](http://frankdenneman.nl/2010/07/vm-to-hosts-affinity-rule/)”. A short recap: VM-Host affinity rules are available in two flavors:
+VMware vSphere 4.1 introduces a new affinity rule, called “Virtual Machines to Hosts” (VM-Host), which I described in the article “[VM to Host affinity rule](https://frankdenneman.ai/2010/07/vm-to-hosts-affinity-rule/)”. A short recap: VM-Host affinity rules are available in two flavors:
 
 1. Must run rules (Mandatory)
 2. Should run rules (Preferential)

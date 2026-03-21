@@ -8,7 +8,7 @@ categories:
   - "vmotion"
 ---
 
-After explaining how to [limit the number of concurrent Storage vMotions operations](http://frankdenneman.nl/2012/06/28/limiting-the-number-of-storage-vmotions/  "Limiting the number of concurrent Storage vMotions"), I received multiple questions on how to limit the number of concurrent vMotion operations. This article will cover the cost and max cost constructs and show you how to calculate the correct config key values to limit the number of concurrent vMotion operations.  
+After explaining how to [limit the number of concurrent Storage vMotions operations](https://frankdenneman.ai/2012/06/28/limiting-the-number-of-storage-vmotions/  "Limiting the number of concurrent Storage vMotions"), I received multiple questions on how to limit the number of concurrent vMotion operations. This article will cover the cost and max cost constructs and show you how to calculate the correct config key values to limit the number of concurrent vMotion operations.  
 
 **Please note**  
 I usually do not post on configuration keys that change default behavior simply because I feel that most defaults are sufficient, and it should only be changed as a last resort when all other avenues are exhausted. I would like to mention that this is an unsupported configuration. Support will request to remove these settings before troubleshooting your environment!  

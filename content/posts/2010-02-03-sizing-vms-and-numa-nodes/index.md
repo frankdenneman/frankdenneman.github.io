@@ -11,7 +11,7 @@ tags:
   - "numa"
 ---
 
-**Note: This article describes NUMA scheduling on ESX 3.5 and ESX 4.0 platform, vSphere 4.1 introduced wide NUMA nodes, information about this can be found in my new article: [ESX4.1 NUMA scheduling](http://frankdenneman.nl/2010/09/esx-4-1-numa-scheduling/)**
+**Note: This article describes NUMA scheduling on ESX 3.5 and ESX 4.0 platform, vSphere 4.1 introduced wide NUMA nodes, information about this can be found in my new article: [ESX4.1 NUMA scheduling](https://frankdenneman.ai/2010/09/esx-4-1-numa-scheduling/)**
 
 With the introduction of vSphere, VM configurations with 8 CPUs and 255 GB of memory are possible. While I haven’t seen that much VM’s with more than 32GB, I receive a lot of questions about 8-way virtual machines. With today’s CPU architecture, VMs with more than 4 vCPUs can experience a decrease in memory performance when used on NUMA enabled systems. While the actually % of performance decrease depends on the workload, avoiding performance decrease must always be on the agenda of any administrator.
 

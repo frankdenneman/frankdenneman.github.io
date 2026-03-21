@@ -14,6 +14,6 @@ I hold 14 patents in computer science, with contributions spanning compute resou
 - [VMware vSphere 5.5 Host Resources Deep Dive](http://www.amazon.com/gp/product/1463658133/ref=as_li_tf_tl?ie=UTF8&tag=frankdenneman-20&linkCode=as2&camp=217145&creative=399373&creativeASIN=1463658133)  
 - [VMware vSphere Resource Management Deep Dive](http://www.amazon.com/gp/product/1456301446?ie=UTF8&tag=frankdenneman-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1456301446)
 
-I am a VMware Certified Design Expert (VCDX #29) and the author of the blog frankdenneman.nl, where I write about infrastructure architecture, scheduling behavior, and resource efficiency. For more than three years, I also hosted the *Unexplored Territory* podcast, engaging with the broader technology community on virtualization, infrastructure design, and the evolution toward AI-driven platforms.
+I am a VMware Certified Design Expert (VCDX #29) and the author of the blog frankdenneman.ai, where I write about infrastructure architecture, scheduling behavior, and resource efficiency. For more than three years, I also hosted the *Unexplored Territory* podcast, engaging with the broader technology community on virtualization, infrastructure design, and the evolution toward AI-driven platforms.
 
 Across writing, speaking, and engineering leadership, my focus remains consistent: enabling enterprises to run AI workloads effectively in their own datacenters by applying sound resource-management principles to modern, GPU-accelerated infrastructure.

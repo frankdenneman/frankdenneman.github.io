@@ -64,4 +64,4 @@ Why wouldn't you just buy M designated CPUs in the first place, you might wonder
 | Max Memory Speed (MHz) | 2400 | 2400 | 2666 | 2666 | 2666 | 2666 |
 | Memory Channels | 6 | 6 | 6 | 6 | 6 | 6 |
 
-[Part 2: Memory Subsystem available](http://frankdenneman.nl/2017/10/03/vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem/)
+[Part 2: Memory Subsystem available](https://frankdenneman.ai/2017/10/03/vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem/)

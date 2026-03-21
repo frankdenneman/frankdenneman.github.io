@@ -1,13 +1,13 @@
 ---
 title: "Privacy Policy"
 date: 2026-02-05
-description: "How frankdenneman.nl handles your personal data and privacy"
+description: "How frankdenneman.ai handles your personal data and privacy"
 draft: false
 ---
 
 ## Introduction
 
-Your privacy matters. This privacy policy explains how **frankdenneman.nl** (“we,” “us,” “our”) collects, uses, and protects personal data when you visit this website.
+Your privacy matters. This privacy policy explains how **frankdenneman.ai** (“we,” “us,” “our”) collects, uses, and protects personal data when you visit this website.
 
 By using this website, you consent to the collection and use of information in accordance with this policy.
 
@@ -57,7 +57,7 @@ We take reasonable measures to protect your data. However, no transmission over 
 
 ## Children’s Privacy
 
-frankdenneman.nl does not knowingly collect personal information from children under 13 years of age.
+frankdenneman.ai does not knowingly collect personal information from children under 13 years of age.
 
 ## Your Choices
 

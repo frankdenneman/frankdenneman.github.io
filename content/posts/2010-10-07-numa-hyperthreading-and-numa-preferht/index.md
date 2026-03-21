@@ -12,7 +12,7 @@ tags:
   - "vmware"
 ---
 
-I received a lot of questions about Hyperthreading and NUMA in ESX 4.1 after writing the [ESX 4.1 NUMA scheduling article](http://frankdenneman.nl/2010/09/esx-4-1-numa-scheduling/).
+I received a lot of questions about Hyperthreading and NUMA in ESX 4.1 after writing the [ESX 4.1 NUMA scheduling article](https://frankdenneman.ai/2010/09/esx-4-1-numa-scheduling/).
 
 A common misconception is that Hyperthreading is ignored and therefore not used on a NUMA system. This is not entirely true and due to the improved Hyperthreading code on Nehalems, the CPU scheduler is programmed to use the HT feature more aggressively than the previous releases of ESX. The main reason why I think this misconception exists is the way the NUMA load balancer handles vCPU placement of vSMP virtual machine. Before continuing, let’s get our CPU elements nomenclature aligned, I’ve created a diagram showing all the elements:
 
@@ -28,7 +28,7 @@ Now the key to understand is that only during placement the SMT threads are igno
 
 Because SMT threads share resources within a core will result into lesser performance than running a vCPU on a dedicated singe core. The ESX scheduler is designed in such a way that it will try to spread the load across all the cores in the NUMA node or in the server. But basically, If the workload is low it will try to schedule the vCPU on a complete core, if that’s not possible, it will schedule the vCPU on a SMT thread.
 
-As mentioned before, running a vCPU on a SMT thread will not offer the same progress than running on a complete core; therefore a different charging scheme is used for each scenario. This charging scheme is used to keep track of the delivered resources and to check if the VM gets it entitled resources, more on this topic can be found in the article “[Reservations and CPU scheduling](http://frankdenneman.nl/2010/06/reservations-and-cpu-scheduling/ )”.
+As mentioned before, running a vCPU on a SMT thread will not offer the same progress than running on a complete core; therefore a different charging scheme is used for each scenario. This charging scheme is used to keep track of the delivered resources and to check if the VM gets it entitled resources, more on this topic can be found in the article “[Reservations and CPU scheduling](https://frankdenneman.ai/2010/06/reservations-and-cpu-scheduling/ )”.
 
 **NUMA.preferHT=One NUMA node to rule them all?** Although the CPU scheduler can decide how to schedule the vCPU within the core, it will only schedule one vCPU of a vSMP virtual machine onto one core. Scott Drummonds [article](http://vpivot.com/2010/09/13/optimizing-vsphere-for-hyper-threading/) about numa.preferHT might offer a solution. Setting the advanced parameter _numa.preferHT_\=1 allows the NUMA load balancer to assign vCPU to SMT thread and if possible “contain” one vSMP VM into a single NUMA node. However the amount of vCPU must be less or equal than the amount of pCPUs within the NUMA node. By placing all vCPUs within a processor a virtual machine with a “intensive-cache-footprint” workload can benefit from a “warmed-up” cache. The vCPUs can fetch the memory from Last Level Cache instead of turning to local memory resulting in less latency. And this is exactly why this setting might not be beneficial to most environments.
 

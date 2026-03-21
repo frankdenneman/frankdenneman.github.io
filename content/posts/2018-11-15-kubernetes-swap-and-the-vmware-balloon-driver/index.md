@@ -34,7 +34,7 @@ With containers it's a little bit different. In its default state, the most mini
   
 For a detailed explanation, please (re)view our [VMworld session, CNA1553BE](http://videos.vmworld.com/global/2018/vi…).
 
-This means that if you do not specify any limit, the container has no restriction of how much resources such a pod can use. Similar to vSphere admission control, you cannot [overcommit reserved resources](http://frankdenneman.nl/2009/12/08/impact-of-memory-reservation/). Thus, if you commit to an IT policy that only allows configuration of Guaranteed pods, you leverage Kubernetes admission control to avoid overcommitment of resources.
+This means that if you do not specify any limit, the container has no restriction of how much resources such a pod can use. Similar to vSphere admission control, you cannot [overcommit reserved resources](https://frankdenneman.ai/2009/12/08/impact-of-memory-reservation/). Thus, if you commit to an IT policy that only allows configuration of Guaranteed pods, you leverage Kubernetes admission control to avoid overcommitment of resources.
 
 One of the questions to solve either on a technical level or organization level is, how you are going to control pod configuration? From a technical level, you can solve this by using [Kubernetes admission control](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/), but that is out of scope for this article.
 

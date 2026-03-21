@@ -17,4 +17,4 @@ aliases:
 - You are a new CloudPhysics user.
 - You fully install the CloudPhysics ‘Observer’ vApp in your vSphere environment.
 
-The first 150 users gets a free book, but what's even better, the Cloudphysics service gives you great insights on your current environment. For more info read the following blogposts: [CloudPhysics in a nutshell](http://frankdenneman.nl/2012/08/cloudphysics-in-a-nutshell/ "CloudPhysics in a nutshell") and [VM reservations and limits card - a closer look](http://frankdenneman.nl/2012/10/cloudphysics-vm-reservation-limits-card-a-closer-look/ "CloudPhysicsVM reservations and limits card - a closer look")
+The first 150 users gets a free book, but what's even better, the Cloudphysics service gives you great insights on your current environment. For more info read the following blogposts: [CloudPhysics in a nutshell](https://frankdenneman.ai/2012/08/cloudphysics-in-a-nutshell/ "CloudPhysics in a nutshell") and [VM reservations and limits card - a closer look](https://frankdenneman.ai/2012/10/cloudphysics-vm-reservation-limits-card-a-closer-look/ "CloudPhysicsVM reservations and limits card - a closer look")

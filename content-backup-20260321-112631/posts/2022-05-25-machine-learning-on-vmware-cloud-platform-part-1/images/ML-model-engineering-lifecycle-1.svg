@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-220 503 1519 857" width="1519" height="857">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#f8981d">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-220" y="503" width="1519" height="857"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_17">
+        <title>Grey Outercircle</title>
+        <circle cx="1074" cy="932" r="115.000183758718" fill="#e6e6e6"/>
+      </g>
+      <g id="Graphic_21">
+        <title>White Circle</title>
+        <circle cx="1074" cy="932" r="91.4424538081446" fill="white"/>
+      </g>
+      <g id="Graphic_22">
+        <circle cx="1074" cy="931.6923" r="80.2212820316877" fill="#78be20"/>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(1028.2768 922.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="14" fill="white" x="0" y="14">Model Serving</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <title>Grey Outercircle</title>
+        <circle cx="809" cy="932" r="115.000183758718" fill="#e6e6e6"/>
+      </g>
+      <g id="Graphic_24">
+        <title>White Circle</title>
+        <circle cx="809" cy="932" r="91.4424538081447" fill="white"/>
+      </g>
+      <g id="Graphic_25">
+        <circle cx="809.1154" cy="932" r="80.2212820316877" fill="#7f35b2"/>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(761.36585 922.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="14" fill="white" x="0" y="14">Model Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <title>Grey Outercircle</title>
+        <circle cx="544.2308" cy="932.2308" r="115.000183758718" fill="#e6e6e6"/>
+      </g>
+      <g id="Graphic_28">
+        <title>White Circle</title>
+        <circle cx="544.2308" cy="932.2308" r="91.4424538081446" fill="white"/>
+      </g>
+      <g id="Graphic_29">
+        <circle cx="544.2308" cy="931.4615" r="80.2212820316877" fill="#1d4280"/>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(478.7816 922.7308)" fill="white">
+          <tspan font-family="Metropolis" font-size="14" fill="white" x="4405365e-19" y="14">Model Development</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <title>Grey Outercircle</title>
+        <circle cx="279.46154" cy="932.4615" r="115.000183758718" fill="#e6e6e6"/>
+      </g>
+      <g id="Graphic_32">
+        <title>White Circle</title>
+        <circle cx="279.46154" cy="932.4615" r="91.4424538081446" fill="white"/>
+      </g>
+      <g id="Graphic_33">
+        <circle cx="279.46154" cy="932.4615" r="80.2212820316877" fill="#0091da"/>
+      </g>
+      <g id="Graphic_34">
+        <text transform="translate(225.90539 922.9615)" fill="white">
+          <tspan font-family="Metropolis" font-size="14" fill="white" x="4192202e-19" y="14">Data Exploration</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <title>Grey Outercircle</title>
+        <circle cx="14.692308" cy="932.6923" r="115.000183758718" fill="#e6e6e6"/>
+      </g>
+      <g id="Graphic_36">
+        <title>White Circle</title>
+        <circle cx="14.692308" cy="932.6923" r="91.4424538081447" fill="white"/>
+      </g>
+      <g id="Graphic_37">
+        <circle cx="14.692308" cy="932.6923" r="80.2212820316877" fill="#78be20"/>
+      </g>
+      <g id="Graphic_38">
+        <text transform="translate(-10.009847 923.1923)" fill="white">
+          <tspan font-family="Metropolis" font-size="14" fill="white" x="0" y="14">Ideation</tspan>
+        </text>
+      </g>
+      <g id="Line_41">
+        <line x1="14.692308" y1="817.69225" x2="14.692308" y2="764.7698" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_42">
+        <line x1="279.46154" y1="817.4615" x2="279.46154" y2="544.4011" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_43">
+        <line x1="16" y1="700" x2="16" y2="549.2537" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_44">
+        <circle cx="16" cy="671.11004" r="6.5000103863623" fill="white"/>
+        <circle cx="16" cy="671.11004" r="6.5000103863623" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_45">
+        <circle cx="16" cy="611.48" r="6.5000103863623" fill="white"/>
+        <circle cx="16" cy="611.48" r="6.5000103863623" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_46">
+        <circle cx="16" cy="550.9011" r="6.5000103863623" fill="white"/>
+        <circle cx="16" cy="550.9011" r="6.5000103863623" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(-141.417 542.4011)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Study idea feasibility</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <text transform="translate(-174.849 601.0556)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="682121e-18" y="14">Learn from other projects</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(-219.523 659.7102)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Explore models and frameworks</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <path d="M -66.30769 700 L 360.46154 700 C 379.2392 700 394.46154 715.2223 394.46154 734 L 394.46154 734 C 394.46154 752.7777 379.2392 768 360.46154 768 L -66.30769 768 C -85.08537 768 -100.30769 752.7777 -100.30769 734 L -100.30769 734 C -100.30769 715.2223 -85.08537 700 -66.30769 700 Z" fill="#caf3fa"/>
+        <text transform="translate(-95.30769 725.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="192.18761" y="14">Concept Phase</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <circle cx="279.46154" cy="551.5" r="6.50001038636232" fill="white"/>
+        <circle cx="279.46154" cy="551.5" r="6.50001038636232" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(177.57419 601.0556)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Data quality?</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <text transform="translate(107.70018 544.2727)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="21884716e-19" y="14">What data do we have?</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <circle cx="279.46154" cy="612.1537" r="6.50001038636231" fill="white"/>
+        <circle cx="279.46154" cy="612.1537" r="6.50001038636231" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_54">
+        <text transform="translate(128.11218 659.7102)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Data Transformation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <circle cx="279.46154" cy="669.2257" r="6.50001038636231" fill="white"/>
+        <circle cx="279.46154" cy="669.2257" r="6.50001038636231" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_57">
+        <line x1="544.2308" y1="1047.2308" x2="544.2308" y2="1298.6503" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_62">
+        <circle cx="544.2308" cy="1305.1503" r="6.50001038636231" fill="white"/>
+        <circle cx="544.2308" cy="1305.1503" r="6.50001038636231" stroke="#f8981d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_63">
+        <circle cx="544.2308" cy="1210.0995" r="6.50001038636234" fill="white"/>
+        <circle cx="544.2308" cy="1210.0995" r="6.50001038636234" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_64">
+        <text transform="translate(561 1202)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Train and evaluate </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="31">multiple models and </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="48">datasets</tspan>
+        </text>
+      </g>
+      <g id="Line_65">
+        <line x1="809" y1="1047" x2="809" y2="1298.6503" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_66">
+        <circle cx="809" cy="1305.1503" r="6.50001038636229" fill="white"/>
+        <circle cx="809" cy="1305.1503" r="6.50001038636229" stroke="#f8981d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_67">
+        <text transform="translate(561 1296.6503)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Collect more data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <circle cx="279.46154" cy="1305.1503" r="6.50001038636232" fill="white"/>
+        <circle cx="279.46154" cy="1305.1503" r="6.50001038636232" stroke="#f8981d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_69">
+        <line x1="279.46154" y1="1047.4616" x2="279.46154" y2="1298.6503" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_56">
+        <path d="M 198.46154 1096.9231 L 890 1096.9231 C 908.7777 1096.9231 924 1112.1454 924 1130.9231 L 924 1130.9231 C 924 1149.7008 908.7777 1164.9231 890 1164.9231 L 198.46154 1164.9231 C 179.68386 1164.9231 164.46154 1149.7008 164.46154 1130.9231 L 164.46154 1130.9231 C 164.46154 1112.1454 179.68386 1096.9231 198.46154 1096.9231 Z" fill="#caf3fa"/>
+        <text transform="translate(169.46154 1122.4231)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="325.40523" y="14">Training Phase</tspan>
+        </text>
+      </g>
+      <g id="Line_70">
+        <line x1="537.73077" y1="1305.1503" x2="295.86154" y2="1305.1503" marker-end="url(#FilledArrow_Marker)" stroke="#f8981d" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_71">
+        <circle cx="809" cy="1211.1271" r="6.50001038636229" fill="white"/>
+        <circle cx="809" cy="1211.1271" r="6.50001038636229" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(827 1201.5995)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Train on </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" y="14">massive</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" y="14"> datasets</tspan>
+        </text>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(827 602.98)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Possible Model retraining</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(827 1296.6503)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Collect more data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <circle cx="809.1154" cy="551.5" r="6.50001038636234" fill="white"/>
+        <circle cx="809.1154" cy="551.5" r="6.50001038636234" stroke="#f8981d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_77">
+        <line x1="809.0349" y1="816.9999" x2="809.1134" y2="558" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_78">
+        <circle cx="1074" cy="551.5" r="6.50001038636232" fill="white"/>
+        <circle cx="1074" cy="551.5" r="6.50001038636232" stroke="#f8981d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_80">
+        <line x1="1074" y1="816.9999" x2="1074" y2="558" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_74">
+        <path d="M 728 699.0769 L 1155 699.0769 C 1173.7777 699.0769 1189 714.2992 1189 733.0769 L 1189 733.0769 C 1189 751.8546 1173.7777 767.0769 1155 767.0769 L 728 767.0769 C 709.2223 767.0769 694 751.8546 694 733.0769 L 694 733.0769 C 694 714.2992 709.2223 699.0769 728 699.0769 Z" fill="#caf3fa"/>
+        <text transform="translate(699 724.5769)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="179.486" y="14">Deployment Phase</tspan>
+        </text>
+      </g>
+      <g id="Line_81">
+        <path d="M 809 1311.6504 L 809 1358.7197 L 279.66102 1358.7197 L 279.5226 1321.5502" marker-end="url(#FilledArrow_Marker)" stroke="#f8981d" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_82">
+        <circle cx="809" cy="611.48" r="6.50001038636228" fill="white"/>
+        <circle cx="809" cy="611.48" r="6.50001038636228" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(827 542.4011)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Feed data used in </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="31">production environment</tspan>
+        </text>
+      </g>
+      <g id="Line_84">
+        <path d="M 1074 545 L 1074 503.9377 L 809.4375 503.9377 L 809.2264 535.1004" marker-end="url(#FilledArrow_Marker)" stroke="#f8981d" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(1091 542.4011)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Monitor model performance</tspan>
+        </text>
+      </g>
+      <g id="Graphic_86">
+        <circle cx="1073.736" cy="611.48" r="6.50001038636234" fill="white"/>
+        <circle cx="1073.736" cy="611.48" r="6.50001038636234" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_87">
+        <circle cx="1073.3652" cy="671.11004" r="6.50001038636233" fill="white"/>
+        <circle cx="1073.3652" cy="671.11004" r="6.50001038636233" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_88">
+        <text transform="translate(1091 662.61004)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Deploy model to production</tspan>
+        </text>
+      </g>
+      <g id="Graphic_89">
+        <text transform="translate(1091 602.98)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Serve requests and predictions</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

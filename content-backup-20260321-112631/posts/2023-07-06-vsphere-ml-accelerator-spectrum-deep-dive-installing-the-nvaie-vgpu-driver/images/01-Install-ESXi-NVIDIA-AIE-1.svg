@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="230 188 584 477" width="584" height="477">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 9 8" markerWidth="9" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 6.4 0 L 0 -2.4 L 0 2.4 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="230" y="188" width="584" height="477"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_60">
+        <title>VM</title>
+        <rect x="470.7367" y="252.4225" width="107.95081" height="19.406887" fill="#8de953"></rect>
+        <rect x="470.7367" y="252.4225" width="107.95081" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(475.7367 257.12594)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x="5.087403" y="8">NVIDIA Licence Portal</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <title>VM</title>
+        <rect x="470.7367" y="226.95096" width="107.95081" height="19.406887" fill="#8de953"></rect>
+        <rect x="470.7367" y="226.95096" width="107.95081" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(475.7367 231.6544)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x="8.467403" y="8">Software Downloads</tspan>
+        </text>
+      </g>
+      <g id="Line_58">
+        <line x1="524.7121" y1="252.4225" x2="524.7121" y2="246.35785" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_57">
+        <title>VM</title>
+        <rect x="491.96297" y="189.43965" width="65.49824" height="24.865074" fill="white"></rect>
+        <rect x="491.96297" y="189.43965" width="65.49824" height="24.865074" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(496.96297 191.87219)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="10.005123" y="8">NVD-AIE</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="12.885123" y="18">525.105</tspan>
+        </text>
+      </g>
+      <g id="Line_56">
+        <line x1="524.7121" y1="214.30472" x2="524.7121" y2="226.95096" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_55">
+        <line x1="524.2121" y1="280.6041" x2="524.2121" y2="663.56035" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_54">
+        <rect x="307.84592" y="616.6041" width="76.51165" height="8.490513" fill="white"></rect>
+        <text transform="translate(288.02175 615.84935)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">Manual Process per ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_53">
+        <rect x="652.20475" y="616.6041" width="87.89864" height="8.490513" fill="white"></rect>
+        <text transform="translate(628.6861 615.84935)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="7531753e-19" y="8">Cluster-Level Remediation Process</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <title>VM</title>
+        <rect x="354.59592" y="579.1041" width="107" height="19.406887" fill="#8de953"></rect>
+        <rect x="354.59592" y="579.1041" width="107" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(359.59592 583.8075)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x="39.676" y="8">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <title>VM</title>
+        <rect x="351.84592" y="506.6041" width="112.5" height="60.64652" fill="white"></rect>
+        <rect x="351.84592" y="506.6041" width="112.5" height="60.64652" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_50">
+        <title>VM</title>
+        <rect x="356.69765" y="544.7395" width="102.14828" height="19.406887" fill="#8de953"></rect>
+        <rect x="356.69765" y="544.7395" width="102.14828" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(361.69765 549.4429)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x=".64213864" y="8">NVIDIA vGPU Manager</tspan>
+        </text>
+      </g>
+      <g id="Line_49">
+        <line x1="408.0044" y1="579.1041" x2="407.8633" y2="564.14636" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_48">
+        <title>VM</title>
+        <rect x="234.09592" y="579.1041" width="107" height="19.406887" fill="#8de953"></rect>
+        <rect x="234.09592" y="579.1041" width="107" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(239.09592 583.8075)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x="39.676" y="8">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <title>VM</title>
+        <rect x="231.34592" y="506.6041" width="112.5" height="60.64652" fill="white"></rect>
+        <rect x="231.34592" y="506.6041" width="112.5" height="60.64652" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_46">
+        <title>VM</title>
+        <rect x="236.19765" y="544.7395" width="102.14828" height="19.406887" fill="#8de953"></rect>
+        <rect x="236.19765" y="544.7395" width="102.14828" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(241.19765 549.4429)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x=".64213864" y="8">NVIDIA vGPU Manager</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="287.5044" y1="579.1041" x2="287.3633" y2="564.14636" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_44">
+        <title>VM</title>
+        <rect x="301.84592" y="368.1041" width="93" height="26.078005" fill="white"></rect>
+        <rect x="301.84592" y="368.1041" width="93" height="26.078005" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(306.84592 371.1431)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="23.104" y="8">VI-Admin </tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="18.216" y="18">Workstation</tspan>
+        </text>
+      </g>
+      <g id="Line_43">
+        <path d="M 470.7367 262.12594 L 348.92006 262.12594 L 348.4566 358.2042" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></path>
+      </g>
+      <g id="Line_42">
+        <path d="M 394.84592 381.1431 L 408.0959 381.1431 L 408.0959 536.4395" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_41">
+        <rect x="396.06656" y="397.7444" width="26.024" height="20" fill="white"></rect>
+        <text transform="translate(401.06656 402.7444)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="6252776e-19" y="8">SSH</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <rect x="351.84592" y="424.70737" width="112.5" height="50" fill="white"></rect>
+        <text transform="translate(356.84592 429.70737)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="22.882" y="8">esxcli software </tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="9.186" y="18">component apply -d /</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="5.542" y="28">path_to_zip/NVD-AIE-</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="40.93" y="38">%.zip</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <title>VM</title>
+        <rect x="315.97715" y="289.86637" width="65.49824" height="24.865074" fill="white"></rect>
+        <rect x="315.97715" y="289.86637" width="65.49824" height="24.865074" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(320.97715 292.2989)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="10.005123" y="8">NVD-AIE</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="12.885123" y="18">525.105</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <rect x="274.72837" y="321.398" width="147.744" height="14" fill="white"></rect>
+        <text transform="translate(279.72837 323.398)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">Download vSphere AIE vGPU Driver</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <title>VM</title>
+        <rect x="579.6541" y="370.7063" width="233" height="26.078005" fill="white"></rect>
+        <rect x="579.6541" y="370.7063" width="233" height="26.078005" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(584.6541 378.7453)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="96.584" y="8">vCenter</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <title>VM</title>
+        <rect x="706.464" y="288.1041" width="65.49824" height="24.865074" fill="white"></rect>
+        <rect x="706.464" y="288.1041" width="65.49824" height="24.865074" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(711.464 290.53663)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="4.3491226" y="8">vSphere 8.0 </tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="21.689123" y="18">u1a</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <title>VM</title>
+        <rect x="620.3459" y="288.1041" width="65.49824" height="24.865074" fill="white"></rect>
+        <rect x="620.3459" y="288.1041" width="65.49824" height="24.865074" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(625.3459 290.53663)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="10.005123" y="8">NVD-AIE</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="12.885123" y="18">525.105</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <title>VM</title>
+        <rect x="620.3459" y="321.5826" width="151.6163" height="19.406887" fill="white"></rect>
+        <rect x="620.3459" y="321.5826" width="151.6163" height="19.406887" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(625.3459 326.28605)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="48.54015" y="8">Base Image</tspan>
+        </text>
+      </g>
+      <g id="Line_33">
+        <line x1="653.09505" y1="312.96916" x2="653.09505" y2="321.5826" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_32">
+        <line x1="739.2131" y1="312.96916" x2="739.2131" y2="321.5826" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_31">
+        <line x1="696.1541" y1="340.9895" x2="696.1541" y2="370.7063" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_30">
+        <title>VM</title>
+        <rect x="579.6541" y="346.14445" width="233" height="19.406887" fill="white"></rect>
+        <rect x="579.6541" y="346.14445" width="233" height="19.406887" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(584.6541 350.8479)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="77" y="8">Lifecycle Manager</tspan>
+        </text>
+      </g>
+      <g id="Line_29">
+        <path d="M 578.6875 262.12594 L 653.3918 262.12594 L 653.1911 288.1041" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_28">
+        <title>VM</title>
+        <rect x="702.9041" y="579.1041" width="107" height="19.406887" fill="#8de953"></rect>
+        <rect x="702.9041" y="579.1041" width="107" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(707.9041 583.8075)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x="39.676" y="8">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <title>VM</title>
+        <rect x="700.1541" y="506.6041" width="112.5" height="60.64652" fill="white"></rect>
+        <rect x="700.1541" y="506.6041" width="112.5" height="60.64652" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_26">
+        <title>VM</title>
+        <rect x="705.0058" y="544.7395" width="102.14828" height="19.406887" fill="#8de953"></rect>
+        <rect x="705.0058" y="544.7395" width="102.14828" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(710.0058 549.4429)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x=".64213864" y="8">NVIDIA vGPU Manager</tspan>
+        </text>
+      </g>
+      <g id="Line_25">
+        <line x1="756.31255" y1="579.1041" x2="756.1715" y2="564.14636" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_24">
+        <title>VM</title>
+        <rect x="582.4041" y="579.1041" width="107" height="19.406887" fill="#8de953"></rect>
+        <rect x="582.4041" y="579.1041" width="107" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(587.4041 583.8075)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x="39.676" y="8">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <title>VM</title>
+        <rect x="579.6541" y="506.2118" width="112.5" height="60.64652" fill="white"></rect>
+        <rect x="579.6541" y="506.2118" width="112.5" height="60.64652" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_22">
+        <title>VM</title>
+        <rect x="584.5058" y="544.7395" width="102.14828" height="19.406887" fill="#8de953"></rect>
+        <rect x="584.5058" y="544.7395" width="102.14828" height="19.406887" stroke="#6db33f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(589.5058 549.4429)" fill="white">
+          <tspan font-family="Metropolis" font-weight="bold" font-size="8" fill="white" x=".64213864" y="8">NVIDIA vGPU Manager</tspan>
+        </text>
+      </g>
+      <g id="Line_21">
+        <line x1="635.81255" y1="579.1041" x2="635.6715" y2="564.14636" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_20">
+        <line x1="614.4041" y1="396.2843" x2="614.4041" y2="479.8041" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_19">
+        <rect x="589.34736" y="435.1848" width="50.113434" height="8.490513" fill="white"></rect>
+        <text transform="translate(593.6081 434.43004)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="27355895e-20" y="8">Remediate</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <line x1="663.3459" y1="488.1041" x2="663.3459" y2="405.29053" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_17">
+        <rect x="638.2892" y="435.05696" width="50.113434" height="8.490513" fill="white"></rect>
+        <text transform="translate(643.6059 434.3022)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">Compliant</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="733.8459" y1="396.2843" x2="733.8459" y2="479.09785" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_15">
+        <rect x="708.7892" y="434.8529" width="50.113434" height="8.490513" fill="white"></rect>
+        <text transform="translate(713.0499 434.0982)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="27355895e-20" y="8">Remediate</tspan>
+        </text>
+      </g>
+      <g id="Line_14">
+        <line x1="782.7878" y1="487.39785" x2="782.7878" y2="405.29053" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_13">
+        <rect x="757.73105" y="434.729" width="50.113434" height="8.490513" fill="white"></rect>
+        <text transform="translate(763.0478 433.97426)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">Compliant</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <title>VM</title>
+        <rect x="579.6541" y="486.43805" width="112.5" height="14" fill="white"></rect>
+        <rect x="579.6541" y="486.43805" width="112.5" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(584.6541 488.43805)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="28.982" y="8">Base Image</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <title>VM</title>
+        <rect x="699.8299" y="486.43805" width="112.5" height="14" fill="white"></rect>
+        <rect x="699.8299" y="486.43805" width="112.5" height="14" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(704.8299 488.43805)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="28.982" y="8">Base Image</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <line x1="756.1321" y1="500.43805" x2="756.1781" y2="506.6041" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_9">
+        <line x1="635.9041" y1="500.43805" x2="635.9041" y2="506.2118" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_8">
+        <rect x="239.0684" y="495.95495" width="27.568" height="20" fill="white"></rect>
+        <text transform="translate(244.0684 500.95495)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">ESXi</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <path d="M 301.84592 381.1431 L 287.59592 381.1431 L 287.59592 536.4395" marker-end="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_6">
+        <rect x="274.58392" y="398.3468" width="26.024" height="20" fill="white"></rect>
+        <text transform="translate(279.58392 403.3468)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="6252776e-19" y="8">SSH</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="361.84592" y="495.95495" width="27.568" height="20" fill="white"></rect>
+        <text transform="translate(366.84592 500.95495)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">ESXi</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="582.4041" y="500.43805" width="21.568" height="12" fill="white"></rect>
+        <text transform="translate(584.4041 501.43805)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">ESXi</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="706.464" y="500.6942" width="21.568" height="12" fill="white"></rect>
+        <text transform="translate(708.464 501.6942)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="0" y="8">ESXi</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <rect x="231.34592" y="424.69237" width="112.5" height="50" fill="white"></rect>
+        <text transform="translate(236.34592 429.69237)" fill="black">
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="22.882" y="8">esxcli software </tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="9.186" y="18">component apply -d /</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="5.542" y="28">path_to_zip/NVD-AIE-</tspan>
+          <tspan font-family="Metropolis" font-size="8" fill="black" x="40.93" y="38">%.zip</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

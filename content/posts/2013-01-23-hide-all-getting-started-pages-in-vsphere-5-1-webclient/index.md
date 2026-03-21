@@ -11,4 +11,4 @@ I'm rebuilding my lab and after I installed a new vCenter server I was confronte
 2. Click on the arrow
 3. Select Hide All Getting Started Pages
 
-[![Hide-All-Getting-Started-Pages](images/Hide-All-Getting-Started-Pages.png)](http://frankdenneman.nl/wp-content/uploads/2013/01/Hide-All-Getting-Started-Pages.png)
+[![Hide-All-Getting-Started-Pages](images/Hide-All-Getting-Started-Pages.png)](/wp-content-mirror/2013/01/Hide-All-Getting-Started-Pages.png)

@@ -23,7 +23,7 @@ The storage layer is provided by some virtual storage appliances, each backed by
 
 **Home office**  
 My home office is designed to be an office and not a data center. So where do you place 19" rack servers without ruining the esthetics of your minimalistic designed home office ;). Well, you create a 19" rack on wheels so you can roll it out of sight and place it wherever you want it. Introducing the portable Ikea lack 19" datacenter rack.  
-[![ikea portable rack-1](images/ikea-portable-rack-1-269x396.jpg)](http://frankdenneman.nl/wp-content/uploads/2013/12/ikea-portable-rack-1.jpg)  
+[![ikea portable rack-1](images/ikea-portable-rack-1-269x396.jpg)](/wp-content-mirror/2013/12/ikea-portable-rack-1.jpg)  
 Regular readers of my blog or Twitter followers know I'm a big fan of hacking IKEA furniture. I created a [whiteboard desk](http://frankdenneman.nl/2012/05/03/whiteboard-desk/) that got the attention of multiple sites and [ikeahackers.net](http://www.ikeahackers.net/) provided me with a lot of ideas on how to hack the famous lack table side table.
 
 I bought two lack tables, a couple of L-shaped brackets, four wheels, nuts, and bolts. The first lack table provides the base platform. Only the tabletop is used. The legs are discarded and act as a backup if I make a mistake during the drilling.

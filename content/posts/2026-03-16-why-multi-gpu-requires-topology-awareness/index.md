@@ -3,12 +3,14 @@ title: "Why Multi GPU Requires Topology Awareness"
 linkTitle: "Part 9 - Why Multi GPU Requires Topology Awareness"
 description: "Explains why distributed inference turns GPU communication into part of the critical path and why topology-aware scheduling is required when models span multiple GPUs."
 date: 2026-03-16
-url: "/posts/2026-03-16-why-multi-gpu-requires-topology-awareness"
+url: "/2026-03-16-why-multi-gpu-requires-topology-awareness/"
 series: ["Architecting AI Infrastructure"]
 series_order: 9
 concepts: ["Multi GPU Inference", "GPU Topology", "Topology Aware Scheduling", "KV Cache", "NUMA Analogy"]
 categories: ["ai"]
 track: "AI Infrastructure"
+aliases:
+  - "/posts/2026-03-16-why-multi-gpu-requires-topology-awareness"
 ---
 
 ## Architecting AI Infrastructure Series - Part 9
@@ -35,7 +37,7 @@ Key Takeaway: Data has to move between GPUs to complete even a single layer of c
 
 ## The NUMA analogy
 
-For administrators familiar with CPU architectures, the behavior should feel familiar. [NUMA](https://frankdenneman.ai/posts/2016-07-06-introduction-2016-numa-deep-dive-series/) systems divide memory across nodes. A processor accessing memory attached to its local node can do so quickly. Accessing memory attached to a remote node takes longer because the request must traverse an interconnect.
+For administrators familiar with CPU architectures, the behavior should feel familiar. <a href="{{< ref "posts/2016-07-06-introduction-2016-numa-deep-dive-series/index.md" >}}">NUMA</a> systems divide memory across nodes. A processor accessing memory attached to its local node can do so quickly. Accessing memory attached to a remote node takes longer because the request must traverse an interconnect.
 
 ![NUMA-basics](images/Numa-basics.svg)
 

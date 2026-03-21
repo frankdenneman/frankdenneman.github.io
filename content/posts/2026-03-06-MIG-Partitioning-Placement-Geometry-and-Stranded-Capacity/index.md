@@ -3,12 +3,14 @@ title: "MIG Partitioning, Placement Geometry, and Stranded Capacity"
 linkTitle: "Part 8 - MIG Partitioning, Placement Geometry, and Stranded Capacity"
 description: "A deep dive into MIG partitioning, placement geometry, and stranded capacity in GPU infrastructure for AI workloads."
 date: 2026-03-06
-url: "/posts/2026-03-06-MIG-Mode"
+url: "/2026-03-06-mig-partitioning-placement-geometry-and-stranded-capacity/"
 series: ["Architecting AI Infrastructure"]
 series_order: 8
 concepts: ["MIG Partitioning", "Placement Geometry", "Stranded Capacity", "GPU Placement"]
 categories: ["ai"]
 track: "AI Infrastructure"
+aliases:
+  - "/posts/2026-03-06-MIG-Mode"
 ---
 ## Architecting AI Infrastructure — Part 8
 
@@ -103,7 +105,7 @@ Keep in mind that existing instances are never rearranged. The way the GPU is se
 
 ## Placement Behavior
 
-As described in [part 4](https://frankdenneman.ai/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/), vSphere doesn’t use host-level GPU placement policies when GPUs are in MIG mode. Placement follows the same approach used in mixed-size environments: it fills one GPU before moving to the next, while keeping as many placement options open as possible for future workloads. This behavior has improved a lot in the Hopper architecture, but Ampere sometimes has trouble placing larger profiles because it does not always consider future 4g40gb placements. ([Reddit](https://www.reddit.com/r/vmware/comments/1rejqhg/comment/o7fmst7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)).
+As described in <a href="{{< ref "posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/index.md" >}}">part 4</a>, vSphere doesn’t use host-level GPU placement policies when GPUs are in MIG mode. Placement follows the same approach used in mixed-size environments: it fills one GPU before moving to the next, while keeping as many placement options open as possible for future workloads. This behavior has improved a lot in the Hopper architecture, but Ampere sometimes has trouble placing larger profiles because it does not always consider future 4g40gb placements. ([Reddit](https://www.reddit.com/r/vmware/comments/1rejqhg/comment/o7fmst7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)).
 
 On hosts with more than one GPU, workloads are placed on one GPU until
 that device can’t fit the requested profile anymore. The next workload is then placed on another GPU. The same idea applies inside the GPU: instances are placed to keep the largest possible contiguous regions, so larger profiles can still be deployed later.
@@ -124,7 +126,7 @@ The 20-gigabyte profiles have the same issue in a different way. Four 2g.20gb in
 
 There is no configuration that eliminates this tension. Platform teams must decide whether to prioritize placement predictability by offering fewer profile options and more predictable behavior, or to offer the full range of profiles and accept that users may sometimes see failed placements or that some GPUs will have stranded capacity.
 
-If you don’t need hard isolation, mixed mode described in [part 6](https://frankdenneman.ai/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/) and [part 7](https://frankdenneman.ai/posts/2026-03-01-same-size-vs-mixed-size-placement/) avoids these constraints completely. Four 20-gigabyte workloads and two 40-gigabyte workloads can each fully use a GPU in mixed-size environments without leaving compute capacity stranded.
+If you don’t need hard isolation, mixed mode described in <a href="{{< ref "posts/2026-02-24-mixed-size-vgpu-mode-in-practice/index.md" >}}">part 6</a> and <a href="{{< ref "posts/2026-03-01-same-size-vs-mixed-size-placement/index.md" >}}">part 7</a> avoids these constraints completely. Four 20-gigabyte workloads and two 40-gigabyte workloads can each fully use a GPU in mixed-size environments without leaving compute capacity stranded.
 
 ##Looking Ahead
 The next part covvers the new VCF9 functionality called 'DirectPath Profiles' to monitor placed GPU workloads and provide visibility into available GPU resources.

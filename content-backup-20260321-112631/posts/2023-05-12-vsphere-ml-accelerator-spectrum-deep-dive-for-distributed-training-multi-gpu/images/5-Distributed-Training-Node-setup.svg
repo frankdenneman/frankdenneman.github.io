@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="563 456 903 352" width="903" height="352">
+  <defs></defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="563" y="456" width="903" height="352"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_10">
+        <line x1="738.41" y1="463.5" x2="738.41" y2="751" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_11">
+        <rect x="772.354" y="503" width="140" height="248" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_12">
+        <rect x="783.354" y="606.5" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(788.354 620)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="809.214" y="492" width="66.28" height="24" fill="white"></rect>
+        <text transform="translate(814.214 497)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <rect x="841.024" y="456" width="208.768" height="24" fill="white"></rect>
+        <text transform="translate(846.024 461)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Multi-Node - Single GPU per Node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <rect x="945.298" y="503" width="140" height="248" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_18">
+        <rect x="956.298" y="606.5" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(961.298 620)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <rect x="982.158" y="492" width="66.28" height="24" fill="white"></rect>
+        <text transform="translate(987.158 497)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <rect x="783.354" y="696" width="118" height="41" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(788.354 709.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="43.272" y="12">NIC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <rect x="956.298" y="696" width="118" height="41" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(961.298 709.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="43.272" y="12">NIC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <rect x="564.112" y="503" width="140" height="248" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_3">
+        <rect x="575.112" y="696" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(580.112 709.5)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="575.112" y="606.5" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(580.112 620)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="575.112" y="526" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(580.112 539.5)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="600.972" y="492" width="66.28" height="24" fill="white"></rect>
+        <text transform="translate(605.972 497)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="564.112" y="456" width="142.708" height="24" fill="white"></rect>
+        <text transform="translate(569.112 461)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Multi-GPU Single Node</tspan>
+        </text>
+      </g>
+      <g id="Line_24">
+        <line x1="634.112" y1="696" x2="634.112" y2="647.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_25">
+        <line x1="634.112" y1="606.5" x2="634.112" y2="567" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_26">
+        <line x1="842.354" y1="647.5" x2="842.354" y2="696" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_27">
+        <line x1="1015.298" y1="647.5" x2="1015.298" y2="696" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_28">
+        <path d="M 842.354 737 L 842.354 806.889 L 1016 806.889 L 1015.4572 737" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Line_29">
+        <line x1="1118.242" y1="463.5" x2="1118.242" y2="751" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_31">
+        <rect x="1152.186" y="503" width="140" height="248" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_32">
+        <rect x="1163.186" y="606.5" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1168.186 620)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_33">
+        <rect x="1189.046" y="492" width="66.28" height="24" fill="white"></rect>
+        <text transform="translate(1194.046 497)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_34">
+        <rect x="1224.432" y="456" width="201.616" height="24" fill="white"></rect>
+        <text transform="translate(1229.432 461)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="881073e-18" y="12">Multi-Node - Multi GPU per Node</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <rect x="1325.13" y="503" width="140" height="248" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+      </g>
+      <g id="Graphic_36">
+        <rect x="1336.13" y="606.5" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1341.13 620)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <rect x="1361.99" y="492" width="66.28" height="24" fill="white"></rect>
+        <text transform="translate(1366.99 497)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <rect x="1163.186" y="696" width="118" height="41" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1168.186 709.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="43.272" y="12">NIC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <rect x="1336.13" y="696" width="118" height="41" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1341.13 709.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="43.272" y="12">NIC</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <line x1="1222.186" y1="647.5" x2="1222.186" y2="696" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_41">
+        <line x1="1395.13" y1="647.5" x2="1395.13" y2="696" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_42">
+        <path d="M 1222.186 737 L 1222.186 806.889 L 1395.832 806.889 L 1395.2892 737" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_43">
+        <rect x="1163.186" y="526" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1168.186 539.5)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <rect x="1336.13" y="526" width="118" height="41" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1341.13 539.5)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="40.854" y="12">GPU</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="1222.186" y1="567" x2="1222.186" y2="606.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_46">
+        <line x1="1395.13" y1="567" x2="1395.13" y2="606.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_47">
+        <rect x="593.076" y="573.3199" width="82.072" height="24" fill="white"></rect>
+        <text transform="translate(598.076 578.3199)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5684342e-20" y="12">Interconnect</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <rect x="593.076" y="658.8086" width="82.072" height="24" fill="white"></rect>
+        <text transform="translate(598.076 663.8086)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5684342e-20" y="12">Interconnect</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <rect x="1181.15" y="575.4624" width="82.072" height="24" fill="white"></rect>
+        <text transform="translate(1186.15 580.4624)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5684342e-20" y="12">Interconnect</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <rect x="1354.094" y="574.8598" width="82.072" height="24" fill="white"></rect>
+        <text transform="translate(1359.094 579.8598)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="5684342e-20" y="12">Interconnect</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

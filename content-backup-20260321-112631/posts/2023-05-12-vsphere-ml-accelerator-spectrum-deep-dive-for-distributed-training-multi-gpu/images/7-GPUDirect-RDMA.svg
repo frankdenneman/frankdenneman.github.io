@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-104 225 846 195" width="846" height="195">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-7 -4 8 8" markerWidth="8" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M -5.6 0 L 0 2.1 L 0 -2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" fill-opacity="1" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-104" y="225" width="846" height="195"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_4">
+        <rect x="123" y="347.23925" width="91.92277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(128 352.23925)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="24.023384" y="12">GPU 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="426" y="347.23925" width="91.92277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(431 352.23925)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="22.775384" y="12">GPU 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 24.992 269.08066 L 80.12 269.08066 C 82.88142 269.08066 85.12 271.31923 85.12 274.08066 L 85.12 288.08066 C 85.12 290.84208 82.88142 293.08066 80.12 293.08066 L 24.992 293.08066 C 22.230576 293.08066 19.992 290.84208 19.992 288.08066 L 19.992 274.08066 C 19.992 271.31923 22.230576 269.08066 24.992 269.08066 Z" fill="#1d4280"></path>
+        <text transform="translate(24.992 274.08066)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="3090861e-19" y="12">Gradients</tspan>
+        </text>
+      </g>
+      <g id="Group_5">
+        <g id="Graphic_34">
+          <circle cx="451.00373" cy="263.37723" r="5.84635314964739" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_33">
+          <circle cx="451.00373" cy="278.83536" r="5.84635314964739" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_32">
+          <circle cx="472.2091" cy="255.84634" r="5.84635314964739" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_31">
+          <circle cx="472.2091" cy="271.30447" r="5.84635314964739" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_30">
+          <circle cx="472.2091" cy="286.7626" r="5.84635314964739" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_29">
+          <circle cx="492.91904" cy="268.39287" r="5.84635314964739" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_28">
+          <line x1="456.51425" y1="261.42022" x2="466.6986" y2="257.80335" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_27">
+          <line x1="456.48127" y1="265.4249" x2="466.7316" y2="269.2568" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_26">
+          <line x1="456.51425" y1="276.87835" x2="466.6986" y2="273.26148" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_25">
+          <line x1="454.9677" y1="274.53796" x2="468.24514" y2="260.14374" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_24">
+          <line x1="456.48127" y1="280.88303" x2="466.7316" y2="284.71492" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_23">
+          <line x1="454.931" y1="267.70824" x2="468.28184" y2="282.4316" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_22">
+          <line x1="477.2106" y1="258.87635" x2="487.91757" y2="265.36287" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_21">
+          <line x1="476.58295" y1="282.883" x2="488.5452" y2="272.27247" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_20">
+          <line x1="477.99885" y1="270.4905" x2="487.1293" y2="269.20685" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Graphic_19">
+          <circle cx="451.00373" cy="294.2935" r="5.84635314964738" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_18">
+          <circle cx="472.2091" cy="302.22073" r="5.84635314964738" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_17">
+          <circle cx="492.91904" cy="290.23077" r="5.84635314964738" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_16">
+          <line x1="456.51425" y1="292.33648" x2="466.6986" y2="288.7196" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_15">
+          <line x1="456.48127" y1="296.34116" x2="466.7316" y2="300.17305" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_14">
+          <line x1="454.9677" y1="289.9961" x2="468.24514" y2="275.60187" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_13">
+          <line x1="453.828" y1="289.17285" x2="469.38484" y2="260.96698" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_12">
+          <line x1="453.80583" y1="268.51004" x2="469.407" y2="297.0879" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_11">
+          <line x1="454.931" y1="283.16637" x2="468.28184" y2="297.88972" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_10">
+          <line x1="477.26994" y1="299.29078" x2="487.8582" y2="293.16073" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_9">
+          <line x1="475.2624" y1="297.23346" x2="489.86576" y2="273.38014" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_8">
+          <line x1="477.9756" y1="287.7283" x2="487.15254" y2="289.2651" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_7">
+          <line x1="476.52484" y1="275.2485" x2="488.6033" y2="286.28673" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_6">
+          <line x1="475.2262" y1="260.85562" x2="489.90193" y2="285.2215" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+      </g>
+      <g id="Graphic_35">
+        <rect x="123" y="395" width="91.92277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(128 400)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="30.233384" y="12">NIC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <rect x="426" y="395" width="91.92277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(431 400)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="30.233384" y="12">NIC</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <rect x="123" y="320" width="91.92277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(128 325)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="2.6393838" y="12">GPU Memory</tspan>
+        </text>
+      </g>
+      <g id="Line_39">
+        <line x1="168.96139" y1="378.73925" x2="168.96139" y2="387.5" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_40">
+        <line x1="222.42277" y1="407" x2="418.5" y2="407" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_41">
+        <line x1="471.9614" y1="387.5" x2="471.9614" y2="378.73925" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_42">
+        <rect x="426" y="318.5" width="91.92277" height="24" stroke="#fb3983" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(431 323.5)" fill="#fb3983">
+          <tspan font-family="Metropolis" font-size="12" fill="#fb3983" x="2.6393838" y="12">GPU Memory</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <path d="M 291.5687 395 L 346.6967 395 C 349.4581 395 351.6967 397.23858 351.6967 400 L 351.6967 414 C 351.6967 416.7614 349.4581 419 346.6967 419 L 291.5687 419 C 288.80727 419 286.5687 416.7614 286.5687 414 L 286.5687 400 C 286.5687 397.23858 288.80727 395 291.5687 395 Z" fill="#1d4280"></path>
+        <text transform="translate(291.5687 400)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="3090861e-19" y="12">Gradients</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <path d="M 547.992 267.03354 L 603.12 267.03354 C 605.8814 267.03354 608.12 269.2721 608.12 272.03354 L 608.12 286.03354 C 608.12 288.79496 605.8814 291.03354 603.12 291.03354 L 547.992 291.03354 C 545.2306 291.03354 542.992 288.79496 542.992 286.03354 L 542.992 272.03354 C 542.992 269.2721 545.2306 267.03354 547.992 267.03354 Z" fill="#1d4280"></path>
+        <text transform="translate(547.992 272.03354)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="3090861e-19" y="12">Gradients</tspan>
+        </text>
+      </g>
+      <g id="Line_49">
+        <line x1="493.8717" y1="279.03354" x2="542.992" y2="279.03354" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Group_50">
+        <g id="Graphic_79">
+          <circle cx="149.05085" cy="265.42435" r="5.84635314964737" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_78">
+          <circle cx="149.05085" cy="280.88248" r="5.84635314964737" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_77">
+          <circle cx="170.25623" cy="257.89346" r="5.84635314964736" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_76">
+          <circle cx="170.25623" cy="273.3516" r="5.84635314964737" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_75">
+          <circle cx="170.25623" cy="288.80972" r="5.84635314964737" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_74">
+          <circle cx="190.96616" cy="270.44" r="5.84635314964735" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_73">
+          <line x1="154.56137" y1="263.46734" x2="164.74571" y2="259.85047" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_72">
+          <line x1="154.52839" y1="267.47203" x2="164.7787" y2="271.3039" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_71">
+          <line x1="154.56137" y1="278.92547" x2="164.74571" y2="275.3086" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_70">
+          <line x1="153.01483" y1="276.58508" x2="166.29226" y2="262.19086" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_69">
+          <line x1="154.52839" y1="282.93016" x2="164.7787" y2="286.76204" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_68">
+          <line x1="152.97812" y1="269.75536" x2="166.32896" y2="284.4787" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_67">
+          <line x1="175.2577" y1="260.92347" x2="185.9647" y2="267.41" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_66">
+          <line x1="174.63007" y1="284.93012" x2="186.59232" y2="274.3196" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_65">
+          <line x1="176.04597" y1="272.5376" x2="185.17642" y2="271.25397" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Graphic_64">
+          <circle cx="149.05085" cy="296.3406" r="5.84635314964737" fill="#33d7f9"></circle>
+        </g>
+        <g id="Graphic_63">
+          <circle cx="170.25623" cy="304.26785" r="5.84635314964737" fill="#f95700"></circle>
+        </g>
+        <g id="Graphic_62">
+          <circle cx="190.96616" cy="292.2779" r="5.84635314964736" fill="#fdb813"></circle>
+        </g>
+        <g id="Line_61">
+          <line x1="154.56137" y1="294.3836" x2="164.74571" y2="290.76673" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_60">
+          <line x1="154.52839" y1="298.3883" x2="164.7787" y2="302.22017" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_59">
+          <line x1="153.01483" y1="292.0432" x2="166.29226" y2="277.649" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_58">
+          <line x1="151.87512" y1="291.21997" x2="167.43196" y2="263.0141" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_57">
+          <line x1="151.85295" y1="270.55716" x2="167.45413" y2="299.13504" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_56">
+          <line x1="152.97812" y1="285.2135" x2="166.32896" y2="299.93684" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_55">
+          <line x1="175.31706" y1="301.3379" x2="185.90533" y2="295.20785" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_54">
+          <line x1="173.30951" y1="299.2806" x2="187.91288" y2="275.42726" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_53">
+          <line x1="176.02274" y1="289.7754" x2="185.19966" y2="291.3122" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_52">
+          <line x1="174.57196" y1="277.29563" x2="186.65044" y2="288.33386" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+        <g id="Line_51">
+          <line x1="173.27334" y1="262.90274" x2="187.94905" y2="287.26862" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+      </g>
+      <g id="Line_80">
+        <line x1="472.1579" y1="308.06686" x2="472.0665" y2="318.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_81">
+        <line x1="169.98355" y1="310.10788" x2="169.52168" y2="320" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_85">
+        <line x1="741.2654" y1="237.7199" x2="416.5258" y2="237.7199" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_86">
+        <rect x="542.779" y="225.7199" width="76.36" height="24" fill="white"></rect>
+        <text transform="translate(547.779 230.7199)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="29132252e-20" y="12">ESXi Host 2</tspan>
+        </text>
+      </g>
+      <g id="Line_87">
+        <line x1="214.92277" y1="238.2199" x2="-103" y2="238.2199" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_88">
+        <rect x="18.902578" y="226.2199" width="73.864" height="24" fill="white"></rect>
+        <text transform="translate(23.902578 231.2199)" fill="#1d4280">
+          <tspan font-family="Metropolis" font-size="12" fill="#1d4280" x="6998846e-19" y="12">ESXi Host 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_89">
+        <rect x="10" y="395" width="91.92277" height="24" stroke="#bee8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(15 400)" fill="#0095d3">
+          <tspan font-family="Metropolis" font-size="12" fill="#0095d3" x="28.163384" y="12">CPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_90">
+        <rect x="-103" y="395" width="91.92277" height="24" stroke="#bee8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(-98 400)" fill="#0095d3">
+          <tspan font-family="Metropolis" font-size="12" fill="#0095d3" x="17.435384" y="12">Memory</tspan>
+        </text>
+      </g>
+      <g id="Line_91">
+        <line x1="-11.077229" y1="407" x2="10" y2="407" stroke="#bee8fb" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Group_95">
+        <g id="Graphic_92">
+          <rect x="536.3426" y="395" width="91.92277" height="24" stroke="#bee8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(541.3426 400)" fill="#0095d3">
+            <tspan font-family="Metropolis" font-size="12" fill="#0095d3" x="28.163384" y="12">CPU</tspan>
+          </text>
+        </g>
+        <g id="Graphic_93">
+          <rect x="649.3426" y="395" width="91.92277" height="24" stroke="#bee8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+          <text transform="translate(654.3426 400)" fill="#0095d3">
+            <tspan font-family="Metropolis" font-size="12" fill="#0095d3" x="17.435384" y="12">Memory</tspan>
+          </text>
+        </g>
+        <g id="Line_94">
+          <line x1="649.3426" y1="407" x2="628.2654" y2="407" stroke="#bee8fb" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+        </g>
+      </g>
+      <g id="Graphic_96">
+        <rect x="10" y="347.23925" width="91.92277" height="24" stroke="#bee8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(15 352.23925)" fill="#0095d3">
+          <tspan font-family="Metropolis" font-size="12" fill="#0095d3" x="29.069384" y="12">VM1</tspan>
+        </text>
+      </g>
+      <g id="Line_97">
+        <line x1="101.92277" y1="359.23925" x2="123" y2="359.23925" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_98">
+        <line x1="55.961386" y1="371.23925" x2="55.961386" y2="395" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_100">
+        <line x1="85.12" y1="281.01378" x2="143.20452" y2="280.8945" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_101">
+        <rect x="536.3426" y="347.23925" width="91.92277" height="24" stroke="#bee8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(541.3426 352.23925)" fill="#0095d3">
+          <tspan font-family="Metropolis" font-size="12" fill="#0095d3" x="27.821384" y="12">VM2</tspan>
+        </text>
+      </g>
+      <g id="Line_102">
+        <line x1="582.304" y1="371.23925" x2="582.304" y2="395" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_103">
+        <line x1="536.3426" y1="359.23925" x2="517.9228" y2="359.23925" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+    </g>
+  </g>
+</svg>

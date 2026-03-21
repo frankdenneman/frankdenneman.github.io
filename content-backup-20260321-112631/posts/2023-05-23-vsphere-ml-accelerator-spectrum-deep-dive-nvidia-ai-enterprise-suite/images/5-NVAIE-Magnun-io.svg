@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="3010 689 643 216" width="643" height="216">
+  <defs></defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="3010" y="689" width="643" height="216"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_146">
+        <rect x="3011.412" y="816.6823" width="640.69746" height="87.56014" fill="#f7f7f7"></rect>
+        <path d="M 3011.412 816.6823 L 3652.1094 816.6823 L 3652.1094 904.2424 L 3011.412 904.2424 Z" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Graphic_147">
+        <rect x="3023.8228" y="828.9298" width="149.83434" height="63.06519" fill="white"></rect>
+        <rect x="3023.8228" y="828.9298" width="149.83434" height="63.06519" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3028.8228 846.4624)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="48.05917" y="12">NVIDIA</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="53.59717" y="26">vGPU</tspan>
+        </text>
+      </g>
+      <g id="Graphic_148">
+        <rect x="3186.9978" y="828.9298" width="290.5493" height="63.06519" fill="#fb3983"></rect>
+        <rect x="3186.9978" y="828.9298" width="290.5493" height="63.06519" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3191.9978 846.4624)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="118.41664" y="12">NVIDIA</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="104.26864" y="26">Magnum I/O</tspan>
+        </text>
+      </g>
+      <g id="Graphic_149">
+        <rect x="3491.6657" y="828.9298" width="149.83434" height="63.06519" fill="white"></rect>
+        <rect x="3491.6657" y="828.9298" width="149.83434" height="63.06519" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3496.6657 846.4624)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="48.05917" y="12">NVIDIA</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="37.649168" y="26">CUDA-X AI</tspan>
+        </text>
+      </g>
+      <g id="Graphic_200">
+        <rect x="3150.0155" y="689.5" width="60.95822" height="34" fill="#63e5ff"></rect>
+        <rect x="3150.0155" y="689.5" width="60.95822" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3152.0155 694.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="3.2191107" y="10">GPUDirect </tspan>
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="13.05911" y="22">RDMA</tspan>
+        </text>
+      </g>
+      <g id="Graphic_202">
+        <rect x="3215.3775" y="689.5" width="40.45822" height="34" fill="#63e5ff"></rect>
+        <rect x="3215.3775" y="689.5" width="40.45822" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3217.3775 700.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="4.3741107" y="10">NCCL</tspan>
+        </text>
+      </g>
+      <g id="Graphic_203">
+        <rect x="3260.2394" y="689.5" width="60.95822" height="34" fill="white"></rect>
+        <rect x="3260.2394" y="689.5" width="60.95822" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3262.2394 700.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="1.6891107" y="10">NVSHMEM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_204">
+        <rect x="3325.6014" y="689.5" width="45.00222" height="34" fill="white"></rect>
+        <rect x="3325.6014" y="689.5" width="45.00222" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3327.6014 694.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="4.18111" y="10">HPC-X </tspan>
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="3.15111" y="22">for MPI</tspan>
+        </text>
+      </g>
+      <g id="Graphic_205">
+        <rect x="3375.0073" y="689.5" width="40.45822" height="34" fill="white"></rect>
+        <rect x="3375.0073" y="689.5" width="40.45822" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3377.0073 700.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="7.604111" y="10">UCX</tspan>
+        </text>
+      </g>
+      <g id="Graphic_206">
+        <rect x="3421.733" y="689.5" width="45.00222" height="34" fill="white"></rect>
+        <rect x="3421.733" y="689.5" width="45.00222" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3423.733 700.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="3.78111" y="10">ASAP2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_207">
+        <rect x="3473.0027" y="689.5" width="40.45822" height="34" fill="white"></rect>
+        <rect x="3473.0027" y="689.5" width="40.45822" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3475.0027 700.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="3.7141107" y="10">DPDK</tspan>
+        </text>
+      </g>
+      <g id="Graphic_221">
+        <rect x="3011.412" y="689.5" width="61.143624" height="34" fill="white"></rect>
+        <rect x="3011.412" y="689.5" width="61.143624" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3016.412 694.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="5.986812" y="10">MPI Tag</tspan>
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="3.6418117" y="22">Matching</tspan>
+        </text>
+      </g>
+      <g id="Graphic_220">
+        <rect x="3076.7517" y="689.5" width="61.143624" height="34" fill="#3cdfff"></rect>
+        <rect x="3076.7517" y="689.5" width="61.143624" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3081.7517 700.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="8.036812" y="10">SHARP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_219">
+        <rect x="3525.626" y="689.5" width="61.143624" height="34" fill="#3cdfff"></rect>
+        <rect x="3525.626" y="689.5" width="61.143624" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3527.626 694.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="3.3118117" y="10">GPUDirect </tspan>
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="9.871812" y="22">Storage</tspan>
+        </text>
+      </g>
+      <g id="Graphic_218">
+        <rect x="3590.9658" y="689.5" width="61.143624" height="34" fill="white"></rect>
+        <rect x="3590.9658" y="689.5" width="61.143624" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3592.9658 694.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="13.531812" y="10">NVMe</tspan>
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="16.546812" y="22">Snap</tspan>
+        </text>
+      </g>
+      <g id="Graphic_217">
+        <rect x="3011.412" y="742.5" width="126.48338" height="34" fill="white"></rect>
+        <rect x="3011.412" y="742.5" width="126.48338" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3016.412 753.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="7.901692" y="10">In-Network Compute</tspan>
+        </text>
+      </g>
+      <g id="Graphic_201">
+        <rect x="3150.0155" y="742.5" width="363.44543" height="34" fill="white"></rect>
+        <rect x="3150.0155" y="742.5" width="363.44543" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3155.0155 753.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="147.17272" y="10">Network I/O</tspan>
+        </text>
+      </g>
+      <g id="Graphic_216">
+        <rect x="3525.626" y="742.5" width="126.48338" height="34" fill="white"></rect>
+        <rect x="3525.626" y="742.5" width="126.48338" height="34" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(3530.626 753.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="10" fill="#006990" x="32.60669" y="10">Storage IO</tspan>
+        </text>
+      </g>
+      <g id="Line_230">
+        <line x1="3180.4947" y1="723.5" x2="3180.4947" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_231">
+        <line x1="3235.6066" y1="723.5" x2="3235.6066" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_232">
+        <line x1="3290.7185" y1="723.5" x2="3290.7185" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_233">
+        <line x1="3348.1025" y1="723.5" x2="3348.1025" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_235">
+        <line x1="3395.2364" y1="723.5" x2="3395.2364" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_236">
+        <line x1="3444.234" y1="723.5" x2="3444.234" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_239">
+        <line x1="3107.3235" y1="723.5" x2="3107.3235" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_240">
+        <line x1="3556.198" y1="723.5" x2="3556.198" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_241">
+        <line x1="3621.5376" y1="723.5" x2="3621.5376" y2="742.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_248">
+        <line x1="3331.828" y1="776.5" x2="3332.1056" y2="828.9298" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_249">
+        <line x1="3041.9837" y1="723.5" x2="3041.9837" y2="741.2809" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_255">
+        <path d="M 3074.6536 776.5 L 3074.6536 795.6676 L 3260.2394 795.6676 L 3260.2394 828.9298" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+      <g id="Line_256">
+        <path d="M 3588.8677 776.5 L 3588.8677 796.0911 L 3415.4656 796.0911 L 3415.4656 833.1618" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></path>
+      </g>
+    </g>
+  </g>
+</svg>

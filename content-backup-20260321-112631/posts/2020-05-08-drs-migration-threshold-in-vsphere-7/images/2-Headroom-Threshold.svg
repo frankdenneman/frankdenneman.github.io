@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-286.52442 56.5 1467.0488 654.5" width="1467.0488" height="654.5">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.15.2 
+    <dc:date>2020-05-01 19:16:45 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-286.52442" y="56.5" width="1467.0488" height="654.5"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_88">
+        <path d="M 389.6123 364.0484 L -219.54212 364.0484 L -219.54212 222.0484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_87">
+        <line x1="-95.72442" y1="364.0484" x2="-95.72442" y2="222.0484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_86">
+        <rect x="547.6924" y="212.04839" width="375" height="488.4516" fill="white"/>
+        <rect x="547.6924" y="212.04839" width="375" height="488.4516" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(1050.0764 542.2484)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">30% Host Load</tspan>
+        </text>
+      </g>
+      <g id="Graphic_84">
+        <text transform="translate(1050.0764 448.5484)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="34816594e-20" y="16">50% Host Load</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(1050.0764 353.8484)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="1563194e-19" y="16">70% Host Load</tspan>
+        </text>
+      </g>
+      <g id="Graphic_82">
+        <path d="M -230.22373 192.04839 L -221.02442 207.5 L -211.82511 192.04839 L -203.52442 192.04839 L -203.52442 161.04839 L -238.52442 161.04839 L -238.52442 192.04839 Z" fill="black"/>
+      </g>
+      <g id="Graphic_81">
+        <rect x="-227.84842" y="167.04839" width="13.648" height="19" fill="black"/>
+        <text transform="translate(-223.84842 167.04839)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="52402527e-20" y="16">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_80">
+        <path d="M -104.42373 192.04839 L -95.22442 207.5 L -86.02511 192.04839 L -77.724425 192.04839 L -77.724425 161.04839 L -112.72442 161.04839 L -112.72442 192.04839 Z" fill="black"/>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(-99.93642 167.04839)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <path d="M 21.376265 192.04839 L 30.575575 207.5 L 39.774885 192.04839 L 48.075575 192.04839 L 48.075575 161.04839 L 13.075575 161.04839 L 13.075575 192.04839 Z" fill="black"/>
+      </g>
+      <g id="Graphic_77">
+        <text transform="translate(25.887575 167.04839)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="10214052e-20" y="16">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <path d="M 147.17627 192.04839 L 156.37558 207.5 L 165.57489 192.04839 L 173.87558 192.04839 L 173.87558 161.04839 L 138.87558 161.04839 L 138.87558 192.04839 Z" fill="black"/>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(151.39158 167.04839)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="378364e-18" y="16">4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_74">
+        <path d="M 274.11263 192.04839 L 283.31194 207.5 L 292.51125 192.04839 L 300.81194 192.04839 L 300.81194 161.04839 L 265.81194 161.04839 L 265.81194 192.04839 Z" fill="black"/>
+      </g>
+      <g id="Graphic_73">
+        <rect x="274.51994" y="167.04839" width="17.584" height="19" fill="black"/>
+        <text transform="translate(278.51994 167.04839)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(411.5796 353.8484)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="27711167e-20" y="16">30% Headroom</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <text transform="translate(411.4756 448.0484)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">50% Headroom</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <text transform="translate(411.4756 542.2484)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">70% Headroom</tspan>
+        </text>
+      </g>
+      <g id="Graphic_69">
+        <rect x="655.14706" y="202.5" width="160.272" height="19" fill="white"/>
+        <text transform="translate(659.14706 202.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="4405365e-19" y="16">100% Host Capacity</tspan>
+        </text>
+      </g>
+      <g id="Line_68">
+        <line x1="-158.6806" y1="75.5" x2="200.85612" y2="75.5" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_67">
+        <rect x="-46.356425" y="66.5" width="151.632" height="19" fill="white"/>
+        <text transform="translate(-42.356423 66.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="7105427e-19" y="16">Migration Treshold</tspan>
+        </text>
+      </g>
+      <g id="Graphic_66">
+        <rect x="209.93194" y="66.5" width="144.528" height="19" fill="white"/>
+        <text transform="translate(213.93194 66.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="0" y="16">Frequent vMotion</tspan>
+        </text>
+      </g>
+      <g id="Line_65">
+        <line x1="282.81194" y1="100.04839" x2="282.81194" y2="146.5" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_64">
+        <rect x="-276.52442" y="66.5" width="108.768" height="19" fill="white"/>
+        <text transform="translate(-272.52443 66.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="14210855e-21" y="16">Less vMotion</tspan>
+        </text>
+      </g>
+      <g id="Line_63">
+        <line x1="-221.52442" y1="100.04839" x2="-221.52442" y2="146.5" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_62">
+        <rect x="26.443764" y="310.7484" width="7.524" height="241" fill="white"/>
+      </g>
+      <g id="Line_61">
+        <path d="M 389.6123 458.5484 L 30.075575 458.5484 L 30.075575 222.0484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_60">
+        <title>Rectangle 4</title>
+        <rect x="151.6243" y="310.7484" width="7.524" height="241" fill="white"/>
+      </g>
+      <g id="Line_59">
+        <path d="M 389.6123 551.7484 L 155.87558 551.7484 L 155.13595 222.0484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_58">
+        <title>Rectangle 5</title>
+        <rect x="279.60194" y="310.7484" width="7.524" height="236.5" fill="white"/>
+      </g>
+      <g id="Line_57">
+        <line x1="282.81194" y1="551.7484" x2="282.81194" y2="222.0484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_56">
+        <line x1="1043.0136" y1="551.2484" x2="936.2133" y2="551.2484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_55">
+        <line x1="1043.0136" y1="458.5484" x2="936.2133" y2="458.5484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_54">
+        <line x1="1043.0136" y1="364.0484" x2="936.2133" y2="364.0484" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_53">
+        <path d="M 565.7218 683.9999 L 565.7524 684.0306 L 622.2524 627.53056 L 565.7524 571.03056 L 565.7218 571.0612 Z" fill="#7defa3"/>
+      </g>
+      <g id="Graphic_52">
+        <path d="M 678.7524 571.03056 L 735.2524 627.53056 L 678.7524 684.0306 L 622.2524 627.53056 Z" fill="#7defa3"/>
+      </g>
+      <g id="Graphic_51">
+        <path d="M 791.7524 571.03056 L 848.2524 627.53056 L 791.7524 684.0306 L 735.2524 627.53056 Z" fill="#7defa3"/>
+      </g>
+      <g id="Graphic_50">
+        <path d="M 904.7218 571.0612 L 848.2524 627.53056 L 904.7218 683.9999 Z" fill="#7defa3"/>
+      </g>
+      <g id="Graphic_49">
+        <path d="M 678.7218 684.0127 L 622.2218 627.51274 L 565.7218 684.0127 Z" fill="#a9f7ae"/>
+      </g>
+      <g id="Graphic_48">
+        <path d="M 791.7218 684.0127 L 735.2218 627.51274 L 678.7218 684.0127 Z" fill="#a9f7ae"/>
+      </g>
+      <g id="Graphic_47">
+        <path d="M 904.704 684.0306 L 904.7218 684.0127 L 848.2218 627.51274 L 791.7218 684.0127 L 791.7396 684.0306 Z" fill="#a9f7ae"/>
+      </g>
+      <g id="Graphic_46">
+        <path d="M 622.2218 514.51274 L 678.7218 571.01274 L 622.2218 627.51274 L 565.7218 571.01274 Z" fill="#5ae5b7"/>
+      </g>
+      <g id="Graphic_45">
+        <path d="M 735.2218 514.51274 L 791.7218 571.01274 L 735.2218 627.51274 L 678.7218 571.01274 Z" fill="#5ae5b7"/>
+      </g>
+      <g id="Graphic_44">
+        <path d="M 848.2218 514.51274 L 904.7218 571.01274 L 848.2218 627.51274 L 791.7218 571.01274 Z" fill="#5ae5b7"/>
+      </g>
+      <g id="Group_40">
+        <g id="Graphic_43">
+          <path d="M 622.28306 401.5484 L 678.78306 458.0484 L 622.28306 514.5484 L 565.78306 458.0484 Z" fill="#1cb9f0"/>
+        </g>
+        <g id="Graphic_42">
+          <path d="M 735.2831 401.5484 L 791.7831 458.0484 L 735.2831 514.5484 L 678.78306 458.0484 Z" fill="#1cb9f0"/>
+        </g>
+        <g id="Graphic_41">
+          <path d="M 848.2831 401.5484 L 904.7831 458.0484 L 848.2831 514.5484 L 791.7831 458.0484 Z" fill="#1cb9f0"/>
+        </g>
+      </g>
+      <g id="Graphic_39">
+        <path d="M 565.7218 570.9999 L 565.7524 571.03056 L 622.2524 514.53056 L 565.7524 458.03056 L 565.7218 458.0612 Z" fill="#39d1dd"/>
+      </g>
+      <g id="Graphic_38">
+        <path d="M 678.7524 458.03056 L 735.2524 514.53056 L 678.7524 571.03056 L 622.2524 514.53056 Z" fill="#39d1dd"/>
+      </g>
+      <g id="Graphic_37">
+        <path d="M 791.7524 458.03056 L 848.2524 514.53056 L 791.7524 571.03056 L 735.2524 514.53056 Z" fill="#39d1dd"/>
+      </g>
+      <g id="Graphic_36">
+        <path d="M 904.7218 458.0612 L 848.2524 514.53056 L 904.7218 570.9999 Z" fill="#39d1dd"/>
+      </g>
+      <g id="Graphic_35">
+        <path d="M 565.7218 458.2096 L 565.7524 458.2402 L 622.2524 401.7402 L 565.7524 345.2402 L 565.7218 345.27084 Z" fill="#1ea6f9"/>
+      </g>
+      <g id="Graphic_34">
+        <path d="M 678.7524 345.2402 L 735.2524 401.7402 L 678.7524 458.2402 L 622.2524 401.7402 Z" fill="#1ea6f9"/>
+      </g>
+      <g id="Graphic_33">
+        <path d="M 791.7524 345.2402 L 848.2524 401.7402 L 791.7524 458.2402 L 735.2524 401.7402 Z" fill="#1ea6f9"/>
+      </g>
+      <g id="Graphic_32">
+        <path d="M 904.7218 345.27084 L 848.2524 401.7402 L 904.7218 458.20957 Z" fill="#1ea6f9"/>
+      </g>
+      <g id="Graphic_31">
+        <path d="M 678.7524 232.0662 L 735.2524 288.5662 L 678.7524 345.0662 L 622.2524 288.5662 Z" fill="#e76fff"/>
+      </g>
+      <g id="Group_27">
+        <g id="Graphic_30">
+          <path d="M 622.2218 288.5484 L 678.7218 345.0484 L 622.2218 401.5484 L 565.7218 345.0484 Z" fill="#1590ff"/>
+        </g>
+        <g id="Graphic_29">
+          <path d="M 735.2218 288.5484 L 791.7218 345.0484 L 735.2218 401.5484 L 678.7218 345.0484 Z" fill="#1590ff"/>
+        </g>
+        <g id="Graphic_28">
+          <path d="M 848.2218 288.5484 L 904.7218 345.0484 L 848.2218 401.5484 L 791.7218 345.0484 Z" fill="#1590ff"/>
+        </g>
+      </g>
+      <g id="Graphic_26">
+        <text transform="translate(665.8804 505.1354)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <text transform="translate(569.78306 618.03056)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_24">
+        <text transform="translate(778.8804 618.03056)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(874.9778 618.03056)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <text transform="translate(609.3498 561.51274)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(722.3204 561.51274)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(835.2911 564.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(776.4484 505.1354)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="8881784e-20" y="16">Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_18">
+        <text transform="translate(663.4484 618.03056)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="8881784e-20" y="16">Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <text transform="translate(606.9178 451.7742)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="8881784e-20" y="16">Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <text transform="translate(722.4111 451.7742)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(778.8804 392.2402)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14">
+        <text transform="translate(835.2911 335.5484)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <text transform="translate(835.3498 451.7742)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <text transform="translate(874.9778 392.2402)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(663.4484 392.2402)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="8881784e-20" y="16">Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(569.78306 392.2402)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(874.9778 505.1354)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <text transform="translate(569.78306 505.03056)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(609.3498 335.5484)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(663.4484 278.6443)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="8881784e-20" y="16">Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(722.4111 335.03947)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(609.3498 656)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(722.4111 656)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="0" y="16">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <text transform="translate(832.8591 656)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="8881784e-20" y="16">Pod</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

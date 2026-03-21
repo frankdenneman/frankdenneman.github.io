@@ -39,11 +39,11 @@ The CPU uses the memory management unit (MMU) to translate virtual addresses to 
 
 It is required to enable VT-D in the ESXi host BIOS for both passthrough-enabled GPUs as well as NVIDIA GPUs. In 2006 Intel introduced Intel Virtualization Technology for Directed I/O (Intel VT-d) architecture, an I/O memory management unit (IOMMU). One of the key features of the IOMMU is providing DMA isolation, allowing the VMkernel to assign devices to specific virtual machines directly. Complete isolation of hardware resources while providing a direct path and reducing overhead typically associated with software emulation. 
 
-[![](images/01-Vt-D-passthrough.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/01-Vt-D-passthrough.svg)
+[![](images/01-Vt-D-passthrough.svg)](/wp-content-mirror/2023/05/01-Vt-D-passthrough.svg)
 
 The left part of the diagram is outdated technology, which succeeded in vSphere by VT-D. In AMD systems, this feature is called AMD-IO Virtualization Technology (previously called AMD IOMMU).  Please note that VT-D is a sub-feature of the [Intel Virtualization Technology](https://www.intel.com/content/www/us/en/virtualization/virtualization-technology/intel-virtualization-technology.html) (Intel VT) and AMD Virtualization (AMD-V). Enabling Virtualization Technology in the BIOS should enable all Intel VT sub-features, such as VT-D.
 
-[![](images/02-BIOS-VT-enabled.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/02-BIOS-VT-enabled.png)
+[![](images/02-BIOS-VT-enabled.png)](/wp-content-mirror/2023/05/02-BIOS-VT-enabled.png)
 
 You can verify if Intel VT-d or AMD-V is enabled in the BIOS by running the following command in the shell of ESXi (requires root access to an SSH session)
 
@@ -51,7 +51,7 @@ You can verify if Intel VT-d or AMD-V is enabled in the BIOS by running the foll
 esxcfg-info|grep "\----\HV Support"
 ```
 
-[![](images/03-esxcfg-info.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/03-esxcfg-info.png)
+[![](images/03-esxcfg-info.png)](/wp-content-mirror/2023/05/03-esxcfg-info.png)
 
 If the command returns the value 3, it indicates that VT or AMD-V is enabled in the BIOS and can be used. If it returns the value of 2, it indicates that the CPU is VT/D or AMD-V is supported by the CPU but is currently not enabled in the BIOS. If it returns 0 or 1, it's time to ask someone to acquire some budget for new server hardware. :) For more info about status 0 or 1, visit VMware KB article [1011712](https://kb.vmware.com/s/article/1011712).
 
@@ -85,7 +85,7 @@ The MMIO space for a VM is outside its VM memory configuration (guest physical m
 
 When the application in the user space is issuing a data transfer, the communication library, or the native GPU driver, determines the virtual memory address and size of the data set and issues a data request to the GPU. The GPU initiates a DMA request, and the CPU uses the MMIO space to set up the transfer by writing the necessary configuration data to the GPU MMIO registers to specify the source and destination addresses of the data transfer. The GPU has page tables which contain page tables of the host system memory and the frame buffer capacity. "Frame buffer" is a GPU terminology for onboard GPU DRAM, a remnant of the times when GPUs were actually used to generate graphical images on a screen ;) As we use reserved memory on the host side, these page addresses do not change, allowing the GPU to cache the host's physical memory addresses. When the GPU is all set up and configured to receive the data, the GPU kicks off a DMA transfer and copies the data between the host's physical memory and GPU memory without involving the CPU in the transfer.
 
-[![](images/04-IOMMU-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/04-IOMMU-v2.svg)
+[![](images/04-IOMMU-v2.svg)](/wp-content-mirror/2023/05/04-IOMMU-v2.svg)
 
 Please note that MMIO space is a separate entity in the host physical memory. Assigning an MMIO space does not consume any memory resources from the VM memory pool. Let's look at how the MMIO space is configured in an X86 system.
 
@@ -95,7 +95,7 @@ It is required to enable the setting "Memory mapping above 4G", often called "ab
 
 At boot time, the BIOS assigns an MMIO space for PCIe devices. It discovers the GPU memory size and its matching MMIO space request and assigns a memory address range from the MMIO space. By default, the system carves out a part for the I/O address space in the first 32 bits of the address space. Because it's in the first 4 gigabytes of the system memory address range, it is why this region is called MMIO-low or "MMIO below 4G". 
 
-[![](images/05-MMIO-Space-mapping.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/05-MMIO-Space-mapping.svg)
+[![](images/05-MMIO-Space-mapping.svg)](/wp-content-mirror/2023/05/05-MMIO-Space-mapping.svg)
 
 The BAR size of the GPU impacts the MMIO space at the CPU side, and the size of a BAR determines the amount of allocated memory available for communication purposes. Suppose the GPU requires more than 256 MB to function. In that case, it has to incorporate multiple bars during its operations, which typically increases complexity, resulting in additional overhead and impacting performance negatively. Sometimes a GPU requires contiguous memory space, and a BAR size limit of 256 MB can prevent the device from being used. X86 64-bit architectures can address much larger address spaces. However, by default, most server hardware is still configured to work correctly with X86 32-bit systems. By enabling the system BIOS setting "Memory mapping above 4G", the system can create an MMIO space beyond the 4G threshold and has the following benefits:
 
@@ -132,11 +132,11 @@ As the memory-mapped I/O part mentions, every system has an MMIO below the 4 GB 
 
 Please note that the BAR (1) sizes are independent of the actual frame buffer size of the GPU. The best method to determine this is by reading out the BAR size and comparing it to the device's memory capacity. By default, most modern GPUs use a 64-bit decoder for addressing. You can request the size of the BAR1 in vSphere via VSI Shell (not supported, so don't generate any support tickets based on your findings). In that case, you will notice that the A100 BAR1 has an address range of 64 GB, while the physically available memory capacity is 40 GB. 
 
-[![](images/06-vsish-bar-1.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/06-vsish-bar-1.png)
+[![](images/06-vsish-bar-1.png)](/wp-content-mirror/2023/05/06-vsish-bar-1.png)
 
 However, ultimately it's a combination of the device and driver that determines what the guest OS detects. Many drivers use a 256 MB BAR1 aperture for backward compatibility reasons. This aperture acts as a window into the much larger device memory. This removes the requirement of contiguous access to the device memory. However, if SR-IOV is used, a VF has contiguous access to its own isolated VF memory space (typically smaller than device memory). If I load the datacenter driver in the VMkernel and run the nvidia-smi -q command, it shows a BAR1 aperture size of 4 GB.
 
-[![](images/07-Bar1-Memory-Usage-1024x163.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/07-Bar1-Memory-Usage.png)
+[![](images/07-Bar1-Memory-Usage-1024x163.png)](/wp-content-mirror/2023/05/07-Bar1-Memory-Usage.png)
 
 BAR3 is another control space primarily used by kernel processes
 
@@ -158,7 +158,7 @@ The setting pciPassthru.set.usebitMMIO = true enables 64-bit MMIO. The setting "
 
 A popular method is to use the frame buffer size (GPU memory capacity), round it up to a power of two, use the next power of two values, and use that value as the MMIO size. Let's use an A100 40 GB as an example. The frame buffer capacity is 40 GB. Rounding it up would result in 64 GB, then using the next power of two values would result in a 128 GB MMIO space. Until the 15.0 GRID documentation, NVIDIA used to list the recommended MMIO Size. It aligns with this calculation method. If you assign two A100 40 GBs to one VM, you should assign a value of 256 GB as the MMIO Size. But **why** is this necessary? If you have a 40 GB card, why do you need more than 40 GB of MMIO? If you need more, why isn't 64GB enough? Why is 128 GB required? Let's look deeper into the PCIe BAR structure in the configuration space of the GPU.
 
-[![](images/08-A100-40GB-BARs.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/08-A100-40GB-BARs.svg)
+[![](images/08-A100-40GB-BARs.svg)](/wp-content-mirror/2023/05/08-A100-40GB-BARs.svg)
 
 A GPU config space contains six BARs with a 32-bit addressable space. Each base register is 32-bits wide and can be mapped anywhere in the 32-bit memory space. Two BARs are combined to provide a 64-bit memory space. Modern GPUs expose multiple 64-bit BARs. The BIOS determines the size. How this works exceeds the depth of this deep dive, Sarayhy Jayakumar explains it very well in the video "[System Architecture 10 - PCIe MMIO Resource Assignment](https://www.youtube.com/watch?v=Y1cZbdJ2DqY)." What is essential to know is that the MMIO space for a BAR has to be naturally aligned. The concept of a "naturally aligned MMIO space" refers to the idea that these memory addresses should be allocated in a way that is efficient for the device's data access patterns. That means for a 32-bit BAR, the data is stored in four consecutive bytes, and the first byte lies on a 4-byte boundary, while a 64-bit BAR uses an 8-byte boundary, and the first byte lies on an 8-byte boundary. If we take a closer look at an a100 40 GB, it exposes three memory-mapped BARs to the system. 
 
@@ -186,7 +186,7 @@ As a result, we need to combine these 32-bit and 64-bit BARs into the MMIO space
 
 The VM is configured with 128 GB of memory. This memory configuration should be enough to keep a data set in system memory that can fill up the entire frame buffer of the GPU. Before setting the MMIO space and assigning the GPU as a passthrough device, the overhead memory consumption of the virtual machine is 773.91 MB. You can check that by selecting the VM in vCenter, going to the Monitor tab, and selecting utilization or monitoring the memory consumption using ESXTOP.
 
-[![](images/12-Without-MMIO-1024x689.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/12-Without-MMIO.png)
+[![](images/12-Without-MMIO-1024x689.png)](/wp-content-mirror/2023/05/12-Without-MMIO.png)
 
 The VM is configured with an MMIO space of 128 GB.
 
@@ -194,15 +194,15 @@ The VM is configured with an MMIO space of 128 GB.
 
 If you only assign the MMIO space but don't assign a GPU, the VM overhead does not change as there is no communication happening via the MMIO space. It will only become active once a GPU is assigned to the VM. The GPU device is assigned, and if you monitor the VM memory consumption, you notice that the memory overhead of the VM is increased to 856.82 MB. The 128GB MMIO space consumes 82.91 MB.
 
-[![](images/14-MMIO-128-GB-overhead-1024x683.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/14-MMIO-128-GB-overhead.png)
+[![](images/14-MMIO-128-GB-overhead-1024x683.png)](/wp-content-mirror/2023/05/14-MMIO-128-GB-overhead.png)
 
 Let's go crazy and increase the MMIO space to 512GB.
 
-[![](images/15-MMIO-512GB-1024x176.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/15-MMIO-512GB.png)
+[![](images/15-MMIO-512GB-1024x176.png)](/wp-content-mirror/2023/05/15-MMIO-512GB.png)
 
 Going from an MMIO space of 128GB to 512GB increases the VM overhead to 870.94MB, which results in an increment of  ~14MB. 
 
-[![](images/16-MMIO-512GB-overhead-1024x690.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/16-MMIO-512GB-overhead.png)
+[![](images/16-MMIO-512GB-overhead-1024x690.png)](/wp-content-mirror/2023/05/16-MMIO-512GB-overhead.png)
 
 An adequate-sized MMIO space is vital to performance. Looking at the minimal overhead an MMIO space introduces, I recommend not to size the MMIO space too conservatively.  
 
@@ -210,7 +210,7 @@ An adequate-sized MMIO space is vital to performance. Looking at the minimal ove
 
 We have to do two things because we cannot predict how many GPUs and which GPU types are attached to TKGS GPU-enabled worker nodes. Enable the MMIO space automatically to continue a seamless developer experience and set an adequate MMIO space for a worker node. By default, an 512 GB MMIO space is automatically configured, or to state it differently, it provides enough space for four A100 40 GB GPUs per TKGS worker node.
 
-[![](images/17-TKGs-GPU-enabled-worker-node-setting.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/17-TKGs-GPU-enabled-worker-node-setting.png)
+[![](images/17-TKGs-GPU-enabled-worker-node-setting.png)](/wp-content-mirror/2023/05/17-TKGs-GPU-enabled-worker-node-setting.png)
 
 If this is not enough space for your configuration, we have a way to change that, but this is not a developer-facing option. Let me know in the comments below if you foresee any challenges by not exposing this option.
 
@@ -218,7 +218,7 @@ If this is not enough space for your configuration, we have a way to change that
 
 One of the primary benefits of vGPU over (Dynamic) Direct Path I/O is its capability of live migration of vGPU-enabled workload. Before you can vMotion a VM with a vGPU attached to it, you need to tick the checkbox of the `vgpu.hotmigrate.enabled` setting in the Advanced vCenter Server Settings section of your vCenter. In vSphere 7 and 8, the setting is already present and only needs to be ticked to get enabled.
 
-[![](images/18-vCenter-vgpu.hotmigrate-enabled-setting-1024x288.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/18-vCenter-vgpu.hotmigrate-enabled-setting.png)
+[![](images/18-vCenter-vgpu.hotmigrate-enabled-setting-1024x288.png)](/wp-content-mirror/2023/05/18-vCenter-vgpu.hotmigrate-enabled-setting.png)
 
 Other articles in this series:
 

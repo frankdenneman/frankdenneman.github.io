@@ -13,7 +13,7 @@ Today Kris posted a very interesting question;
 
 > How about the scenario where one uses multi NIC vMotion for against two 5Gbps virtual adapters)? I know a cost of 4 will be set for the network by the VMkernel, however as the aggregate bandwidth becomes 10Gbps is it safe enough to raise the limit? Perhaps not to the full 8 for 10Gbps, but 6?
 
-[![vMotion system resource pool](images/vMotion-system-resource-pool.png)](http://frankdenneman.nl/wp-content/uploads/2012/12/vMotion-system-resource-pool.png)
+[![vMotion system resource pool](images/vMotion-system-resource-pool.png)](/wp-content-mirror/2012/12/vMotion-system-resource-pool.png)
 
 Please note that this article does not bash Kris. He provides a use case that I’ve heard a couple of times, making his comment an example use case. Although Kris’s scenario sounds like a very good use case to adjust the cost settings to circumvent the line-speed detection of the VMkernel to determine the max-cost of the network resource, it does not solve the other dynamic elements using line speed.
 

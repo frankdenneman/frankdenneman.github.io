@@ -1,9 +1,6 @@
 ---
 title: "Tools"
 description: "Interactive tools for AI infrastructure, GPU placement, and capacity planning."
-outputs:
-- HTML
-- JSON
 ---
 
 Interactive tools that help architects evaluate how vGPU profile choices shape long-term deployable capacity, accompanying the [Architecting AI Infrastructure](/ai-infrastructure/) series.

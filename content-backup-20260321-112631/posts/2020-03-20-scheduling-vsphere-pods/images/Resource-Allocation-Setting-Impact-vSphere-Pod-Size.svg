@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="-123.5 151.75182 1141.4136 460.34134" width="1141.4136" height="460.34134">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Metropolis-Medium"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Metropolis-Medium"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="-734.375" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-style="italic" font-weight="300">
+      <font-face-src>
+        <font-face-name name="Metropolis-LightItalic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.14 
+    <dc:date>2020-03-19 22:30:48 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-123.5" y="151.75182" width="1141.4136" height="460.34134"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_62">
+        <line x1="250.68927" y1="197.42132" x2="250.68927" y2="503.4213" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_61">
+        <rect x="-68.36929" y="389.4213" width="143.136" height="37" fill="white"/>
+        <rect x="-68.36929" y="389.4213" width="143.136" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-63.36929 388.9213)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="11.672001" y="16">Default size of </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="30.608" y="35">container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <rect x="81.54127" y="389.4213" width="143.136" height="37" fill="white"/>
+        <rect x="81.54127" y="389.4213" width="143.136" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(86.54127 388.9213)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="11.672001" y="16">Default size of </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="30.608" y="35">container</tspan>
+        </text>
+      </g>
+      <g id="Line_59">
+        <path d="M 6.661272 388.4213 L 6.661272 269.4432 L 156.39818 269.4432 L 156.39818 388.4213" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_58">
+        <rect x="60.46927" y="257.4432" width="42.384" height="19" fill="white"/>
+        <text transform="translate(64.46927 257.4432)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="0" y="16">Sum</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <rect x="-1.3971026" y="283.5724" width="17.52" height="19" fill="white"/>
+        <text transform="translate(2.6028976 283.5724)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <rect x="148.3629" y="283.5724" width="17.52" height="19" fill="white"/>
+        <text transform="translate(152.3629 283.5724)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Line_55">
+        <line x1="81.16127" y1="254.58436" x2="81.16127" y2="226.58436" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_54">
+        <rect x="41.121043" y="200.16092" width="80.08046" height="19" fill="white"/>
+        <text transform="translate(45.121043 200.16092)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="0" y="16">CPU Size</tspan>
+        </text>
+      </g>
+      <g id="Line_53">
+        <line x1="-71.15165" y1="504.10626" x2="224.67727" y2="504.10626" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_52">
+        <rect x="25.043528" y="495.10626" width="107.84" height="19" fill="white"/>
+        <text transform="translate(29.043526 495.10626)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="7105427e-20" y="16">vSphere Pod</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <rect x="329.4686" y="389.4213" width="143.136" height="37" fill="white"/>
+        <rect x="329.4686" y="389.4213" width="143.136" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(334.4686 388.9213)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="11.672001" y="16">Default size of </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="30.608" y="35">container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_50">
+        <rect x="479.37917" y="389.4213" width="143.136" height="37" fill="white"/>
+        <rect x="479.37917" y="389.4213" width="143.136" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(484.37917 388.9213)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="11.672001" y="16">Default size of </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="30.608" y="35">container</tspan>
+        </text>
+      </g>
+      <g id="Line_49">
+        <path d="M 360.53614 339.4432 L 360.53614 269.4432 L 510.27305 269.4432 L 510.53614 341.4213" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_48">
+        <rect x="414.34414" y="257.4432" width="42.384" height="19" fill="white"/>
+        <text transform="translate(418.34414 257.4432)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="0" y="16">Sum</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <rect x="352.47777" y="283.5724" width="17.52" height="19" fill="white"/>
+        <text transform="translate(356.47777 283.5724)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <rect x="502.23777" y="283.5724" width="17.52" height="19" fill="white"/>
+        <text transform="translate(506.23777 283.5724)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="435.03614" y1="254.58436" x2="435.03614" y2="226.58436" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_44">
+        <rect x="394.9959" y="200.16092" width="80.08046" height="19" fill="white"/>
+        <text transform="translate(398.9959 200.16092)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="0" y="16">CPU Size</tspan>
+        </text>
+      </g>
+      <g id="Graphic_43">
+        <rect x="331.25614" y="329.9213" width="59" height="51" fill="#f95700"/>
+        <rect x="331.25614" y="329.9213" width="59" height="51" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_42">
+        <text transform="translate(336.93614 341.4213)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="10.95" y="12">CPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="0" y="26">Request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <rect x="479.37917" y="328.06043" width="59" height="51" fill="#f95700"/>
+        <rect x="479.37917" y="328.06043" width="59" height="51" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_40">
+        <text transform="translate(485.05917 339.56043)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="10.95" y="12">CPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="0" y="26">Request</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <rect x="320.0366" y="545.09316" width="162" height="57" fill="white"/>
+        <text transform="translate(324.0366 545.09316)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="14.632" y="16">If CPU request is </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="6.672" y="35">larger than default </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="63" y="54">size</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <rect x="469.94717" y="545.09316" width="162" height="57" fill="white"/>
+        <text transform="translate(473.94717 545.09316)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="14.632" y="16">If CPU request is </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="6.672" y="35">larger than default </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="63" y="54">size </tspan>
+        </text>
+      </g>
+      <g id="Line_37">
+        <line x1="401.0366" y1="542.8879" x2="401.0366" y2="488.11506" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_36">
+        <line x1="550.94717" y1="542.8879" x2="550.94717" y2="488.11506" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_35">
+        <line x1="671.8171" y1="207.5426" x2="671.8171" y2="513.5426" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_34">
+        <path d="M 819.3406 339.76483 L 819.3406 269.18415 L 969.0775 269.76483 L 969.3406 341.74293" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_33">
+        <rect x="873.1486" y="254.7036" width="42.384" height="19" fill="white"/>
+        <text transform="translate(877.1486 254.7036)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="0" y="16">Sum</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <rect x="960.2189" y="276.56246" width="17.52" height="19" fill="white"/>
+        <text transform="translate(964.2189 276.56246)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Line_30">
+        <line x1="893.8406" y1="251.84475" x2="893.8406" y2="223.84475" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_29">
+        <rect x="853.8004" y="197.42132" width="80.08046" height="19" fill="white"/>
+        <text transform="translate(857.8004 197.42132)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="0" y="16">CPU Size</tspan>
+        </text>
+      </g>
+      <g id="Line_28">
+        <line x1="712.6871" y1="504.10626" x2="1006.1389" y2="504.10626" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27">
+        <rect x="805.2903" y="495.10626" width="107.84" height="19" fill="white"/>
+        <text transform="translate(809.2903 495.10626)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="7105427e-20" y="16">vSphere Pod</tspan>
+        </text>
+      </g>
+      <g id="Group_24">
+        <g id="Graphic_26">
+          <rect x="790.6396" y="301.12673" width="59" height="77.7792" fill="#00a4cc"/>
+          <rect x="790.6396" y="301.12673" width="59" height="77.7792" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_25">
+          <text transform="translate(805.7816 326.01633)" fill="white">
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="1.488" y="12">CPU</tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="17408297e-20" y="26">Limit</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_21">
+        <g id="Graphic_23">
+          <rect x="936.1161" y="300.4025" width="59" height="77.7792" fill="#00a4cc"/>
+          <rect x="936.1161" y="300.4025" width="59" height="77.7792" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_22">
+          <text transform="translate(951.2581 325.2921)" fill="white">
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="1.488" y="12">CPU</tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="17408297e-20" y="26">Limit</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_20">
+        <line x1="-105.47945" y1="175.17199" x2="1007.4136" y2="175.17199" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_19">
+        <rect x="255.73804" y="161.75182" width="390.4581" height="19" fill="white"/>
+        <text transform="translate(259.73804 161.75182)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="49.35705" y="16">CPU Size Calculation of vSphere Pod</tspan>
+        </text>
+      </g>
+      <g id="Group_16">
+        <g id="Graphic_18">
+          <rect x="720.4691" y="327.90593" width="59" height="51" fill="#f95700"/>
+          <rect x="720.4691" y="327.90593" width="59" height="51" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_17">
+          <text transform="translate(726.1491 339.40593)" fill="white">
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="10.95" y="12">CPU</tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="0" y="26">Request</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_13">
+        <g id="Graphic_15">
+          <rect x="865.9456" y="327.1817" width="59" height="51" fill="#f95700"/>
+          <rect x="865.9456" y="327.1817" width="59" height="51" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_14">
+          <text transform="translate(871.6256 338.6817)" fill="white">
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="10.95" y="12">CPU</tspan>
+            <tspan font-family="Metropolis" font-size="12" font-weight="500" fill="white" x="0" y="26">Request</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_12">
+        <path d="M -77.316675 452.4189 L -104.42903 452.4189 L -104.42903 269.70117 L 6.661272 269.4432" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11">
+        <rect x="-70.454575" y="435.17927" width="298.8362" height="37" fill="#b0dde2"/>
+        <rect x="-70.454575" y="435.17927" width="298.8362" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-65.454575 444.17927)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="103.2101" y="16">Pod Agent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <rect x="-113.5" y="283.5724" width="17.52" height="19" fill="white"/>
+        <text transform="translate(-109.5 283.5724)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="329.4686" y="435.17927" width="293.04656" height="37" fill="#b0dde2"/>
+        <rect x="329.4686" y="435.17927" width="293.04656" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(334.4686 444.17927)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="100.31528" y="16">Pod Agent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <rect x="712.6871" y="435.17927" width="293.04656" height="37" fill="#b0dde2"/>
+        <rect x="712.6871" y="435.17927" width="293.04656" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(717.6871 444.17927)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="100.31528" y="16">Pod Agent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="712.6871" y="389.4213" width="143.136" height="37" fill="white"/>
+        <rect x="712.6871" y="389.4213" width="143.136" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(717.6871 388.9213)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="11.672001" y="16">Default size of </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="30.608" y="35">container</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <rect x="862.5976" y="389.4213" width="143.136" height="37" fill="white"/>
+        <rect x="862.5976" y="389.4213" width="143.136" height="37" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(867.5976 388.9213)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="11.672001" y="16">Default size of </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="30.608" y="35">container</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <path d="M 711.9405 451.66677 L 684.8282 451.66677 L 684.916 269.18415 L 817.9245 269.18415" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="676.5" y="276.56246" width="17.52" height="19" fill="white"/>
+        <text transform="translate(680.5 276.56246)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <path d="M 326.9468 452.33163 L 299.83446 452.33163 L 299.83446 269.61392 L 360.4871 269.61392" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <rect x="291.33938" y="283.5724" width="17.52" height="19" fill="white"/>
+        <text transform="translate(295.33938 283.5724)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+      <g id="Graphic_64">
+        <rect x="420.21727" y="495.10626" width="107.84" height="19" fill="white"/>
+        <text transform="translate(424.21727 495.10626)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="7105427e-20" y="16">vSphere Pod</tspan>
+        </text>
+      </g>
+      <g id="Line_65">
+        <line x1="331.25614" y1="504.10626" x2="391.83673" y2="504.10626" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_66">
+        <line x1="561.5223" y1="504.10626" x2="622.1029" y2="504.10626" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_67">
+        <rect x="811.3796" y="276.56246" width="17.52" height="19" fill="white"/>
+        <text transform="translate(815.3796 276.56246)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="500" fill="black" x="2184919e-19" y="16">+</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

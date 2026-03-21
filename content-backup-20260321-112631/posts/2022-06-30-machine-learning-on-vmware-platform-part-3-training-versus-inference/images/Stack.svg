@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="115 310 372 553" width="372" height="553">
+  <defs/>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="115" y="310" width="372" height="553"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Line_68">
+        <line x1="320" y1="747" x2="486.20354" y2="747" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_26">
+        <line x1="254" y1="694" x2="329.88403" y2="694" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_15">
+        <title>Batch</title>
+        <g id="Graphic_8">
+          <rect x="116" y="509" width="39" height="98.32192" fill="white"/>
+          <rect x="116" y="509" width="39" height="98.32192" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_10">
+          <rect x="125.04" y="525.95205" width="20.92" height="64.41781" fill="white"/>
+          <text transform="translate(130.04 515.66096)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_16">
+        <title>Batch</title>
+        <g id="Graphic_18">
+          <rect x="217" y="509" width="39" height="98.32192" fill="white"/>
+          <rect x="217" y="509" width="39" height="98.32192" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_17">
+          <rect x="226.04" y="525.95205" width="20.92" height="64.41781" fill="white"/>
+          <text transform="translate(231.04 515.66096)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_19">
+        <title>Batch</title>
+        <g id="Graphic_21">
+          <rect x="167" y="509.6781" width="39" height="98.32192" fill="white"/>
+          <rect x="167" y="509.6781" width="39" height="98.32192" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_20">
+          <rect x="176.04" y="526.63014" width="20.92" height="64.41781" fill="white"/>
+          <text transform="translate(181.04 516.33904)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_23">
+        <title>Dataset</title>
+        <g id="Graphic_22">
+          <title>Dataset</title>
+          <rect x="117" y="617" width="140" height="43" fill="white"/>
+          <rect x="117" y="617" width="140" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_11">
+          <rect x="155.163" y="624" width="61.674" height="27" fill="white"/>
+          <text transform="translate(160.163 629)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Dataset</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_27">
+        <title>Storage</title>
+        <g id="Graphic_29">
+          <rect x="118" y="671" width="140" height="43" fill="white"/>
+          <rect x="118" y="671" width="140" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_28">
+          <rect x="155.893" y="679" width="63.214" height="27" fill="white"/>
+          <text transform="translate(160.893 684)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Storage</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_12">
+        <rect x="320" y="671" width="166.20354" height="43" fill="white"/>
+        <rect x="320" y="671" width="166.20354" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_24">
+        <rect x="364.1496" y="679" width="77.90435" height="27" fill="white"/>
+        <text transform="translate(375.29077 684)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Memory</tspan>
+        </text>
+      </g>
+      <g id="Group_30">
+        <title>Storage</title>
+        <g id="Graphic_32">
+          <rect x="320" y="561" width="166.20354" height="99" fill="white"/>
+          <rect x="320" y="561" width="166.20354" height="99" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_31">
+          <rect x="363.556" y="579.4186" width="77.90435" height="62.16279" fill="white"/>
+          <text transform="translate(387.4932 602)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">CPU</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_36">
+        <title>Storage</title>
+        <g id="Graphic_38">
+          <rect x="320" y="518" width="166.20354" height="43" fill="white"/>
+          <rect x="320" y="518" width="166.20354" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_37">
+          <rect x="338.82493" y="526" width="127.36652" height="27" fill="white"/>
+          <text transform="translate(353.8652 531)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="14210855e-21" y="14">PCI-Controller</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_39">
+        <line x1="403.10177" y1="660" x2="403.10177" y2="671" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_40">
+        <title>Storage</title>
+        <g id="Graphic_42">
+          <rect x="320" y="462" width="166.20354" height="43" fill="white"/>
+          <rect x="320" y="462" width="166.20354" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_41">
+          <rect x="378.30658" y="470" width="48.40322" height="27" fill="white"/>
+          <text transform="translate(387.1222 475)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="42277293e-20" y="14">GPU</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_43">
+        <line x1="403.10177" y1="518" x2="403.10177" y2="505" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_44">
+        <line x1="135.5" y1="607.3219" x2="135.5" y2="617" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_45">
+        <line x1="186.5" y1="608" x2="186.5" y2="617" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_46">
+        <line x1="236.5" y1="607.3219" x2="236.5" y2="617" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_51">
+        <g id="Graphic_50">
+          <rect x="392.104" y="419" width="94.09954" height="43" fill="white"/>
+          <rect x="392.104" y="419" width="94.09954" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_49">
+          <rect x="406.0067" y="427" width="65.622" height="27" fill="white"/>
+          <text transform="translate(411.0067 432)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Memory</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_54">
+        <rect x="320" y="419" width="72.104" height="43" fill="white"/>
+        <rect x="320" y="419" width="72.104" height="43" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_53">
+        <text transform="translate(325 432)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="14">Compute</tspan>
+        </text>
+      </g>
+      <g id="Group_55">
+        <title>Batch</title>
+        <g id="Graphic_57">
+          <rect x="425" y="310.6781" width="39" height="98.32192" fill="white"/>
+          <rect x="425" y="310.6781" width="39" height="98.32192" stroke="#006990" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_56">
+          <rect x="434.04" y="327.63014" width="20.92" height="64.41781" fill="white"/>
+          <text transform="translate(439.04 317.33904)" fill="#006990">
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".497" y="14">B</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".196" y="31">A</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.218" y="48">T</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".574" y="65">C</tspan>
+            <tspan font-family="Metropolis" font-size="14" fill="#006990" x="0" y="82">H</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_58">
+        <line x1="444.5" y1="409" x2="444.5" y2="419" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_65">
+        <rect x="281.00716" y="689.25" width="14.093089" height="9.5" fill="white"/>
+      </g>
+      <g id="Group_64">
+        <g id="Line_62">
+          <line x1="281.00716" y1="685.4272" x2="290.60025" y2="702.5728" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Line_63">
+          <line x1="285.50716" y1="685.4272" x2="295.10025" y2="702.5728" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_66">
+        <line x1="187.39815" y1="660" x2="187.60185" y2="671" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_67">
+        <rect x="364.9279" y="733.5" width="76.738" height="27" fill="white"/>
+        <text transform="translate(369.9279 738.5)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="5968559e-19" y="14">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <rect x="150" y="802" width="77.90435" height="61" fill="white"/>
+        <text transform="translate(155 807)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="4.909175" y="14">Network </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="3.131175" y="31">Attached </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="7.345175" y="48">Storage</tspan>
+        </text>
+      </g>
+      <g id="Line_106">
+        <line x1="188.14623" y1="714" x2="188.74474" y2="802" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_107">
+        <rect x="149.4194" y="733.6326" width="77.90435" height="27" fill="white"/>
+        <text transform="translate(154.4194 738.6326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="14.835175" y="14">vSAN</tspan>
+        </text>
+      </g>
+      <g id="Graphic_108">
+        <rect x="149.65408" y="768.13915" width="77.90435" height="27" fill="white"/>
+        <text transform="translate(154.65408 773.13915)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="25.377175" y="14">Or</tspan>
+        </text>
+      </g>
+      <g id="Line_109">
+        <line x1="229" y1="746.5" x2="301.104" y2="746.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

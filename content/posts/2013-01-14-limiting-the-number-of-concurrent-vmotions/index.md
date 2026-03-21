@@ -41,9 +41,9 @@ As mentioned, there are three resources, host, network, and datastore. A vMotion
 | Storage vMotion Cost | CostPerEsx41SVmotion | 16 |
 | Maximum Cost | maxCostPerEsx41Ds | 128 |
 
-[![vMotion operation cost](images/vMotion-operation-cost1.png)](http://frankdenneman.nl/wp-content/uploads/2013/01/vMotion-operation-cost1.png)
+[![vMotion operation cost](images/vMotion-operation-cost1.png)](/wp-content-mirror/2013/01/vMotion-operation-cost1.png)
 
-[![Motion operation costs](images/Motion-operation-costs1.png)](http://frankdenneman.nl/wp-content/uploads/2013/01/Motion-operation-costs1.png)
+[![Motion operation costs](images/Motion-operation-costs1.png)](/wp-content-mirror/2013/01/Motion-operation-costs1.png)
 
 Please note that because these values were not changed after 4.1, the advanced settings were unnecessary. Therefore these advanced settings apply to ESXi 5.0 and ESXi 5.1 as well.  
 

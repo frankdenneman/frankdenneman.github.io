@@ -1,0 +1,20 @@
+---
+title: "Life in the Data Center - a story of love, betrayal and virtualization"
+date: 2014-07-31
+categories: 
+  - "miscellaneous"
+---
+
+I’m excited to announce the first ever “collective novel”, in which members of the virtualization community collaborated to create a book with intrigue, mystery, romance, and a whole lot of geeky data center references. [![Lifeinthedatacenter](images/Lifeinthedatacenter.png)](http://frankdenneman.nl/wp-content/uploads/2014/07/Lifeinthedatacenter.png) The concept of the project is that one person writes a section and then passes it along. The writers don't know their fellow contributors. They get an unfinished story in their mailbox and are allowed to take the story in whatever direction it needs to go. The only limitation is the author imagination. For me it was a fun and interesting project. Writing a chapter for a novel is a whole different ballgame than writing technical focused content. As I rarely read novels it’s a challenge how to properly describe the situation the protagonist is getting himself into. On top of that I needed to figure out how to extend and expand the story line set by the previous authors but also get the story into a direction I prefer. And to make it more challenging, you do not know what the next author will be writing, therefor your intention for the direction of the storyline may be ignored. All in all a great experience and I hope we can do a second collective novel. I’m already collecting ideas ☺ I would like to thank Jeff Aaron. He came up with the idea and guided the project perfectly. Once again [Jon Atterbury](https://twitter.com/jonatterbury "Jon Atterbury on twitter") did a tremendous job on the formatting and artwork of the book. And of course I would like to thank the authors of taking time out of their busy schedules to contribute to the book. The authors: \[caption id="attachment\_4495" align="alignleft" width="125"\][![Jeff Aaron (@jeffreysaaron)](images/08-Jeff-300x300.jpeg)](https://twitter.com/jeffreysaaron) Jeff Aaron (@jeffreysaaron)\[/caption\] \[caption id="attachment\_4491" align="alignleft" width="125"\][![Josh Atwell (@Josh_Atwell)](images/04-Josh-300x300.jpeg)](https://twitter.com/Josh_Atwell) Josh Atwell (@Josh\_Atwell)\[/caption\] \[caption id="attachment\_4490" align="alignleft" width="125"\][![Kendrick Coleman on twitter](images/03-Kendrick-300x300.png)](https://twitter.com/KendrickColeman) Kendrick Coleman (@KendrickColeman)\[/caption\] \[caption id="attachment\_4488" align="alignleft" width="125"\][![Amy Lewis (@commsNinja)](images/01-amy-300x300.jpeg)](https://twitter.com/CommsNinja) Amy Lewis (@commsNinja)\[/caption\] \[caption id="attachment\_4489" align="alignleft" width="125"\][![Lauren Malhoit (@malhoit)](images/02-Lauren-300x300.jpeg)](https://twitter.com/malhoit) Lauren Malhoit (@malhoit)\[/caption\] \[caption id="attachment\_4492" align="alignleft" width="125"\][![Bob Planker (@plankers)](images/06-Bob-300x300.jpg)](https://twitter.com/plankers) Bob Planker (@plankers)\[/caption\] \[caption id="attachment\_4494" align="alignleft" width="125"\][![Satyam Vaghani (@SatyamVaghani)](images/07-Satyam-300x300.jpeg)](https://twitter.com/SatyamVaghani) Satyam Vaghani (@SatyamVaghani)\[/caption\] \[caption id="attachment\_4493" align="alignleft" width="125"\][![Chris Wahl (@ChrisWahl)](images/06-Chris-300x300.png)](https://twitter.com/ChrisWahl) Chris Wahl (@ChrisWahl)\[/caption\]  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+To make it more interesting for the readers, we deliberately hid which author wrote which chapter you can have some fun guessing via a short quiz. Prizes will be given to those people with the best scores. I'm not entirely sure that this book will be nominated for a Pulitzer, but it is worth a read to see what is in the authors’ crazy heads – and to witness how well they work together when collaborating on a project like this. Go [download the book](http://info.pernixdata.com/life-data-center-novel "Collective novel") and take the quiz

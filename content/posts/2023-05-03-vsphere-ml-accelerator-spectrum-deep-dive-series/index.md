@@ -28,7 +28,7 @@ To create the proper fundament, you need to understand the workload. However, mo
 
 [Parts 3 to 6](https://frankdenneman.ai/?s=training+versus+inference) offer detailed insights into the technical requirements of the neural networks during training jobs and the inference process. It helps to interpret GPU functionality and gauge the expected load of the platform.
 
-[![](images/vSphere-ML-Accelerator-Spectrum-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/vSphere-ML-Accelerator-Spectrum-v2.svg)
+[![](images/vSphere-ML-Accelerator-Spectrum-v2.svg)](/wp-content-mirror/2023/05/vSphere-ML-Accelerator-Spectrum-v2.svg)
 
 To successfully accelerate the workload, I want to dive deeper into the available vSphere and Tanzu options in the upcoming series. It focuses on the available spectrum of machine learning accelerators the NVIDIA AI Enterprise suite offers. What hardware capabilities are available, and how do you configure the platform? Although this series focuses on GPUs, I want to note that CPUs are an excellent resource for light training and inference. And with the latest release of the Intel Sapphire Rapids CPU with its Advanced Matrix Extensions (AMX), the future of CPUs in the ML ecosystem looks bright. But I'll save that topic for another blog post (series).
 

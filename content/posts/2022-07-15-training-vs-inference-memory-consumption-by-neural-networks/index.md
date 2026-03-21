@@ -20,7 +20,7 @@ Understanding the workload characteristics helps with resource management, troub
 
 [Convolutional neural networks](https://en.wikipedia.org/wiki/Convolutional_neural_network) (CNN) efficiently recognize and capture patterns and objects in images and are the key components in computer vision tasks. A CNN is a multilayer neural network and consists of three different types of layers. The convolution layer, the pooling layer, and the fully connected layer. The first part of the neural network is responsible for feature extraction and consists of convolution and pooling layers. I'll cover what that exactly is in the convolution layer paragraph. The second part of the network consists of the fully connected layers and a softmax layer. This part is responsible for the classification of the image.
 
-[![](images/CNN-pipeline.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/CNN-pipeline.svg)
+[![](images/CNN-pipeline.svg)](/wp-content-mirror/2022/07/CNN-pipeline.svg)
 
 ## Convolution layer
 
@@ -32,7 +32,7 @@ For (us) non-native English speakers, convolution (layer) is not to be confused 
 
 A neural network is a pipeline, meaning that the process's output is the input of the following process. There are three components in a convolution layer, an array of input, a filter, and an array of output. The initial input of a CNN is an image and is the input array(a matrix of values). The convolution layer applies a feature detector known as a kernel or filter, and the most straightforward way of describing this is a sliding window. This sliding window, also in a matrix shape, includes the neural network's weights. Weights are learnable parameters in the neural network that are adjusted during training. The weight starts with a random value, and as training continues, it, alongside the bias (another parameter), is adjusted towards a value that provides the accurate output. The weights and biases need to be stored in memory during training and are the core IP of a trained network. Typically a CNN uses a standard kernel (filter) height and width size that determines the number of weights applied per filter. The typical kernel size is 3 x 3. This filter is applied to the input array in the case of the first convolutional layer, the image. As mentioned, the convolution layer performs a [dot product](https://en.wikipedia.org/wiki/Dot_product) between two [matrices](https://en.wikipedia.org/wiki/Matrix_\(mathematics\)) to generate a feature map containing activations. Let's look at the image to get a better understanding.
 
-[![](images/convoluition.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/convoluition.svg)
+[![](images/convoluition.svg)](/wp-content-mirror/2022/07/convoluition.svg)
 
 For this example, a 3x3 filter is applied to a 6 x 6 image (normally, the image dimensions would be 224 x 224). This kernel or filter size is sometimes called the receptive field. During this process, the filter calculates a single value, called activation, by multiplying the value in the kernel with every value in the highlight input array field and then adding up the "products" to get the final output value, the activation. Output = (1\*1)+(2\*4)+(1\*1)+(4\*1)+(2\*3)+(1\*5)+(0\*9)+(1\*1)+(1\*3)=1+8+1+4+6+5+0+1+3=29.
 
@@ -74,7 +74,7 @@ The pooling layer applies a max pooling operation with a kernel size of 2 x 2 an
 
 7kb and 147kb are certainly not earth-shattering numbers, but now let's see the rest of the network. As you can see, the memory parameters slowly grow throughout the convolutional layers of the network and then dramatically explode at the fully connected layers. What's interesting to note is that there is a flattening operation after the last pool layer of the feature extraction part of the network. This operation will flatten the pooled feature map into a single column that produces a long vector of input data that can pass through the fully connected layers. The 512 matrices of 7 x 7 turn into a single vector containing 25,088 activations. (Click on the image to enlarge).
 
-[![](images/vgg-16-parameters-1.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/vgg-16-parameters-1.svg)
+[![](images/vgg-16-parameters-1.svg)](/wp-content-mirror/2022/07/vgg-16-parameters-1.svg)
 
 In total, the network requires 540 MB to store the weights and the biases. That's quite a footprint if you consider deploying this to edge devices. But there are always bigger fish. The state-of-the-art (SOTA) neural network for generating text [GPT-3](https://en.wikipedia.org/wiki/GPT-3), or the third generation Generative Pre-trained Transformer, has 175 billion parameters. If we use a single-precision floating-point (FP32), it needs 700 GB of memory. Most companies don't use a GPT-3 model to enhance their business processes, but it illustrates the range of memory footprint some neural networks can have.
 
@@ -95,7 +95,7 @@ Let's take a step back. On average, a 224 x 224 image takes up 19kb of space on 
 
 Interestingly, we noticed the parameters' memory footprint go up while moving towards the network's end. We see the memory footprint per feature map go simply as the pooling layers reduce the dimensions of each feature map. This is important to note for inference requirements for your GPU device! But I'll cover that in detail later. During the batch iteration, 32 images with a 244 x 244 dimension consume roughly 1.88 GBs of memory. (Click on the image to enlarge).
 
-[![](images/vgg-16-feature-maps-1.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/vgg-16-feature-maps-1.svg)
+[![](images/vgg-16-feature-maps-1.svg)](/wp-content-mirror/2022/07/vgg-16-feature-maps-1.svg)
 
 If you applied the same math to a 4K image (ignoring whether it's possible with a VGG-16 network), the memory consumption of a 3840 x 2160 image would be roughly 9.6 GB for one image and 307,2 GB for 32 images. This means that the data scientist needs to choose between reducing the batch size and thus agree with the increase in training time. Or spend more time pre-processing and reducing the image size or [distributing the model](https://frankdenneman.ai/2020/02/19/multi-gpu-and-distributed-deep-learning/) across multiple GPUs to increase the available GPU memory. 
 

@@ -55,7 +55,7 @@ However the inter-socket communication speed can reduce –or remove- the positi
 
 **HyperThreading** If a virtual machine is running on a HyperThreading-enabled system it is best to set the CPU-affinity to logical CPUs not belonging to the same core. The HT threads on a core are translated by the VMkernel as logical CPUs and are consecutively numbers, for example Core 1 contains LCPU0 and LCPU1, Core 2 contains LCPU2 and LCPU3, etc. If CPU-affinity is set to logical CPUs belonging to the same core, both vCPUs of the virtual machine need to compete with each other for physical CPU resources. By scheduling a virtual machine on logical CPUs of different cores, it doesn’t have to compete and can benefit the vCPUs’ throughput because the VMkernel allows the vCPU to use the entire Cores’ resources if only one logical CPU residing on the core is active.
 
-[![](images/cpu-affinity-HT.png "cpu-affinity-HT")](http://frankdenneman.nl/wp-content/uploads/2011/01/cpu-affinity-HT.png)
+[![](images/cpu-affinity-HT.png "cpu-affinity-HT")](/wp-content-mirror/2011/01/cpu-affinity-HT.png)
 
 **NUMA** If CPU affinity is set on a virtual machine running in a NUMA architecture (Intel Nehalem and AMD Opteron) the virtual machine is treated as a NON-NUMA client and gets excluded from NUMA scheduling. Therefore the NUMA scheduler will not set a memory affinity for the virtual machine to its current NUMA node and the VMkernel can allocate memory from every available NUMA node in the system Therefore the virtual machine may end up running on a different NUMA node than were its memory is residing, resulting in unnecessary memory latency and possibly higher %Ready time as the instruction must wait until the memory is fetched from a remote node.
 

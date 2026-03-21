@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="957 -69 716 676" width="716" height="676">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" fill="none" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="957" y="-69" width="716" height="676"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <rect x="1143" y="543" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1143" y="543" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1148 560.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <rect x="1143" y="468" width="162.60033" height="63.06519" fill="#fb3983"></rect>
+        <rect x="1143" y="468" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1148 485.5326)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="white" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="1143" y="393" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1143" y="393" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1148 410.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <rect x="1143" y="318" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1143" y="318" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1148 335.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <rect x="1143" y="230" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1143" y="230" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1148 254.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="48.160163" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Line_30">
+        <line x1="1224.3002" y1="293.0652" x2="1224.3002" y2="318" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_31">
+        <line x1="1224.3002" y1="381.0652" x2="1224.3002" y2="393" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_32">
+        <line x1="1224.3002" y1="456.0652" x2="1224.3002" y2="468" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_33">
+        <line x1="1224.3002" y1="531.0652" x2="1224.3002" y2="543" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_35">
+        <rect x="960" y="543" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="960" y="543" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(965 560.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <rect x="960" y="468" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="960" y="468" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(965 485.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <rect x="960" y="393" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="960" y="393" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(965 410.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_38">
+        <rect x="960" y="318" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="960" y="318" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(965 335.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="46.624163" y="12">A100 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="33.904163" y="26">Label: Training</tspan>
+        </text>
+      </g>
+      <g id="Graphic_39">
+        <rect x="960" y="230" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="960" y="230" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(965 254.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="48.160163" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <line x1="1041.3002" y1="293.0652" x2="1041.3002" y2="318" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_41">
+        <line x1="1041.3002" y1="381.0652" x2="1041.3002" y2="393" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_42">
+        <line x1="1041.3002" y1="456.0652" x2="1041.3002" y2="468" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_43">
+        <line x1="1041.3002" y1="531.0652" x2="1041.3002" y2="543" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_44">
+        <rect x="1509" y="543" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1509" y="543" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1514 560.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_45">
+        <rect x="1509" y="468" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1509" y="468" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1514 485.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_46">
+        <rect x="1509" y="393" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1509" y="393" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1514 410.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <rect x="1509" y="318" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1509" y="318" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1514 335.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <rect x="1509" y="230" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1509" y="230" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1514 254.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="48.160163" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Line_49">
+        <line x1="1590.3002" y1="293.0652" x2="1590.3002" y2="318" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_50">
+        <line x1="1590.3002" y1="381.0652" x2="1590.3002" y2="393" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_51">
+        <line x1="1590.3002" y1="456.0652" x2="1590.3002" y2="468" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_52">
+        <line x1="1590.3002" y1="531.0652" x2="1590.3002" y2="543" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_53">
+        <rect x="1326" y="543" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1326" y="543" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1331 560.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <rect x="1326" y="468" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1326" y="468" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1331 485.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_55">
+        <rect x="1326" y="393" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1326" y="393" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1331 410.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <rect x="1326" y="318" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1326" y="318" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1331 335.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="49.420163" y="12">A30 GPU</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="30.268163" y="26">Label: Inference</tspan>
+        </text>
+      </g>
+      <g id="Graphic_57">
+        <rect x="1326" y="230" width="162.60033" height="63.06519" fill="white"></rect>
+        <rect x="1326" y="230" width="162.60033" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1331 254.5326)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="48.160163" y="12">ESXi Host</tspan>
+        </text>
+      </g>
+      <g id="Line_58">
+        <line x1="1407.3002" y1="293.0652" x2="1407.3002" y2="318" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_59">
+        <line x1="1407.3002" y1="381.0652" x2="1407.3002" y2="393" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_60">
+        <line x1="1407.3002" y1="456.0652" x2="1407.3002" y2="468" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_61">
+        <line x1="1407.3002" y1="531.0652" x2="1407.3002" y2="543" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_64">
+        <line x1="960" y1="103" x2="1668.6003" y2="103" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_65">
+        <rect x="957.3579" y="91" width="100.696" height="24" fill="white"></rect>
+        <text transform="translate(962.3579 96)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">vSphere Cluster</tspan>
+        </text>
+      </g>
+      <g id="Graphic_67">
+        <rect x="1273.8662" y="-42" width="78" height="63.06519" fill="white"></rect>
+        <rect x="1273.8662" y="-42" width="78" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1278.8662 -17.467405)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="24.25" y="12">VM</tspan>
+        </text>
+      </g>
+      <g id="Graphic_63">
+        <rect x="1273.8662" y="71.467405" width="78" height="63.06519" fill="white"></rect>
+        <rect x="1273.8662" y="71.467405" width="78" height="63.06519" stroke="#0095d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></rect>
+        <text transform="translate(1278.8662 96)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="12" fill="#006990" x="21.574" y="12">DRS</tspan>
+        </text>
+      </g>
+      <g id="Line_68">
+        <line x1="1312.8662" y1="21.06519" x2="1312.8662" y2="71.467405" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_71">
+        <path d="M 1224.3002 220.1 L 1224.3002 124.71326 L 1273.8662 124.71326" marker-start="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></path>
+      </g>
+      <g id="Line_72">
+        <line x1="1351.8662" y1="-10.467405" x2="1378.394" y2="-10.467405" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_73">
+        <text transform="translate(1383 -24.467405)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">pciPassthru0.allowedDevices = "0x10de:0x20f1"</tspan>
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="26">pciPassthru0.customLabel = “Training”</tspan>
+        </text>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(1037.9284 -17.467405)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">GA100 [A100 PCIe 40GB] (Training)</tspan>
+        </text>
+      </g>
+      <g id="Line_77">
+        <line x1="1247.7324" y1="-10.467405" x2="1273.8662" y2="-10.467405" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"></line>
+      </g>
+      <g id="Line_78">
+        <line x1="1140.3304" y1="-22.467405" x2="1140.3304" y2="-42" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_79">
+        <text transform="translate(1134.0184 -64)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">UI</tspan>
+        </text>
+      </g>
+      <g id="Line_80">
+        <line x1="1521.3" y1="-29.467405" x2="1521.3" y2="-42" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_81">
+        <text transform="translate(1507.488 -64)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">VMX</tspan>
+        </text>
+      </g>
+      <g id="Graphic_82">
+        <rect x="1144.7382" y="162.44971" width="159.124" height="24" fill="white"></rect>
+        <text transform="translate(1149.7382 167.4497)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" fill="black" x="0" y="12">Host and Device Selection</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

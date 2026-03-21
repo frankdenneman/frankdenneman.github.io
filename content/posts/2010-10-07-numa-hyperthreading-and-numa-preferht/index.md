@@ -13,7 +13,7 @@ I received a lot of questions about Hyperthreading and NUMA in ESX 4.1 after wri
 
 A common misconception is that Hyperthreading is ignored and therefore not used on a NUMA system. This is not entirely true and due to the improved Hyperthreading code on Nehalems, the CPU scheduler is programmed to use the HT feature more aggressively than the previous releases of ESX. The main reason why I think this misconception exists is the way the NUMA load balancer handles vCPU placement of vSMP virtual machine. Before continuing, let’s get our CPU elements nomenclature aligned, I’ve created a diagram showing all the elements:
 
-[![NUMA and CPU elemenents](images/NUMA-CPU-elements2.png "NUMA-CPU-elements")](http://frankdenneman.nl/wp-content/uploads/2010/10/NUMA-CPU-elements2.png) The Nehalem Hyperthreading feature is officially called Symmetric MultiThreading (SMT), the term HT and SMT are interchangeable.
+[![NUMA and CPU elemenents](images/NUMA-CPU-elements2.png "NUMA-CPU-elements")](/wp-content-mirror/2010/10/NUMA-CPU-elements2.png) The Nehalem Hyperthreading feature is officially called Symmetric MultiThreading (SMT), the term HT and SMT are interchangeable.
 
 1\. An Intel Nehalem processor often called a CPU or package. 2. An Intel Nehalem processor contains 4 cores in one package. 3. Each core contains 2 threads if Hyperthreading is enabled. 4. A SMT Thread equals a logical processor. 5. A logical processor is translated in esxtop as a PCPU. 6. A vCPU is scheduled on a PCPU. 7. NUMA= Non-uniform Memory Access (Each Processor has its own local memory assigned) 8. LLC= Last Level Cache: Shared by Cores is last on-die cache memory before turning to Local memory.
 

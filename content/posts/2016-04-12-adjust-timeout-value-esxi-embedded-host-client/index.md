@@ -5,7 +5,7 @@ categories:
   - "vmware"
 ---
 
-I love to use the ESXi Embedded Host Client next to vCenter in my lab. It's quick, it provide most of the functionality and best of it all it has a functioning VM console when accessing it from a MAC. The ESXi Embedded Host Client time-out default is set to 15 minutes, but you can adjust this setting. [![Time-out ESXI embedded client](images/Time-out-ESXI-embedded-client.png)](http://frankdenneman.nl/wp-content/uploads/2016/04/Time-out-ESXI-embedded-client.png) On the right side of the menu bar there is a drop down menu next to the IP-address or DNS name of your ESXi server. Open it and go to:
+I love to use the ESXi Embedded Host Client next to vCenter in my lab. It's quick, it provide most of the functionality and best of it all it has a functioning VM console when accessing it from a MAC. The ESXi Embedded Host Client time-out default is set to 15 minutes, but you can adjust this setting. [![Time-out ESXI embedded client](images/Time-out-ESXI-embedded-client.png)](/wp-content-mirror/2016/04/Time-out-ESXI-embedded-client.png) On the right side of the menu bar there is a drop down menu next to the IP-address or DNS name of your ESXi server. Open it and go to:
 
 1. Settings
 2. Application timeout

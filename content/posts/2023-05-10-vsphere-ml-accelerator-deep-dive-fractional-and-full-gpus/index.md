@@ -24,7 +24,7 @@ A machine learning model that is fully trained and deemed production ready must 
 
 5. Deployment process
 
-[![](images/1-ML-model-development-lifecycle.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/1-ML-model-development-lifecycle.svg)
+[![](images/1-ML-model-development-lifecycle.svg)](/wp-content-mirror/2023/05/1-ML-model-development-lifecycle.svg)
 
 In the build process, the data science team determines what framework and algorithm to use during the concept phase. They explore what data is available, where the data lives, and how they can access it. They study the idea's feasibility by running some tests using small data sets.
 
@@ -36,7 +36,7 @@ To successfully integrate, deploy, operate, monitor and retrain and re-release, 
 
 Understanding the three ML processes better is essential for the infrastructure focussed operator, as this translates to hardware requirements. Let's look at what's supported by vSphere first and then map these features and functionalities to the ML development lifecycle processes. vSphere and Tanzu Kubernetes Grid Services can assign ML accelerators (GPUs) to workloads. Three configurations are possible: a full GPU, a fractional GPU, and multiple GPUs assigned to a single VM. Fractional GPU functionality allows vSphere to split up a full GPU and assign smaller GPUs to multiple VMs. With Multi-GPU, the ESXi hosts can assign multiple GPUs to VMs. NVIDIA GPUDirect RDMA technology significantly improves communication between GPU-enabled VMs on different ESXi hosts. Throughout this series, we will continuously dive deeper into each technology.
 
-[![](images/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)
+[![](images/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)](/wp-content-mirror/2023/05/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)
 
 ## Full GPUs
 
@@ -64,7 +64,7 @@ Fractional GPUs enable multiple VMs to have simultaneous, direct access to a sin
 
 The C-series is optimized for compute-intensive workloads. These are pretty much the classical ML workloads. The Q-series type can do the same, but the key difference is that the C-type can only decode video streams, and the Q-type can also (hardware) encode video streams. This difference is essential to know if the data science team plans to deploy a vision AI model. If the model only generates an action or a warning after object\\anomaly detection in a video stream, the video is not encoded, and thus only decoders are necessary. A C-series vGPU type is sufficient. However, if the video stream is encoded after being processed by the model because human intervention or a second opinion is required, then a Q-type series is required.
 
-[![](images/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)
+[![](images/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)](/wp-content-mirror/2023/05/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)
 
 NVIDIA vGPU offers two modes, the default Time-sliced mode or the vGPU Multi-Instance GPU (MIG) mode, available from the Ampere architecture onwards. A vGPU is assigned to a VM by selecting a vGPU type (C or Q-series) and a frame buffer size (GPU memory). When using MIG mode, the vGPU type also provides the ability to specify compute elements. The GPU device runs either in time-sliced mode or in MIG mode. There is no possibility of creating a heterogenous vGPU environment where MIG and time-sliced profiles share the same physical GPU device. You can deploy multiple GPU devices in one ESXi host and configure one GPU in time-sliced mode and one in MIG mode. 
 
@@ -100,7 +100,7 @@ MIG provides a composable configuration of GPU resources. Although the profiles 
 
 For example, the MIG vGPU profile MIG4g.40gb constructs a GPU instance from four "GPU slices." A GPU slice includes a "Sys Pipe," a GPC, an L2 cache slice, and a GPU memory slice. A GPU memory slice includes the L2 cache slices and the associated frame buffer. These are dedicated memory resources. An application consuming a GPU instance does not consume an L2 slice from another GPU instance. This partitioning ensures fault isolation, error containment, recovery, and QoS.
 
-[![](images/5-MIG-Architecture.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/5-MIG-Architecture.svg)
+[![](images/5-MIG-Architecture.svg)](/wp-content-mirror/2023/05/5-MIG-Architecture.svg)
 
 The sys pipe communicates with the CPU and is responsible for GPC task scheduling. MIG creates a separate and isolated data path through the entire system, from the crossbar parts all the way to the memory controllers and its DRAM address buses. It's expected that if more GPU memory is assigned to a GPU instance, more data is copied between the ESXi host system and GPU memory. Thus, dedicated copy engines are assigned to the GPU instance. Additionally, a dedicated number of decoders are assigned per GPU instance. Returning to the MIG Instance example, the MIG vGPU profile MIG4g.40gb isolates four of the eight available memory slices, four GPCs, four copy engines, and two decoders.
 
@@ -126,7 +126,7 @@ For training workloads, it's typically relatively straightforward present as man
 
 Many data science teams explore distributed training methods to speed up training jobs to reduce training time duration. With today's large models and large datasets, it's common to see training jobs of 150+ hours (a whole week of continuous training). For these workloads, vSphere supports the latest and greatest technology available. VSphere 7 and 8 support assigning multiple physical GPUs to a single VM. NVIDIA technology provides high-speed interconnect technology to speed up inter-GPU communication during training jobs. [Part 2](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) dives into the ML accelerator spectrum for distributed training - Multi-GPU technology. 
 
-[![](images/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)
+[![](images/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)](/wp-content-mirror/2023/05/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)
 
 Other articles in this series:
 

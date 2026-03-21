@@ -54,7 +54,7 @@ This synchronization is interesting when designing your ML platform as specific 
 **Data parallelism**  
 Data parallelism is the most common strategy deployed. As covered in the previous article: "[Machine Learning Workload and GPGPU NUMA node locality](https://frankdenneman.ai/2020/01/30/machine-learning-workload-and-gpgpu-numa-node-locality/)" it is common to split up the entire training dataset into batches (batch 0 and batch1). With data parallelism, these batches are sent to the multiple GPUs (GPU 0 and GPU1). Each GPU will load a full replica of the model (Neural Network A) and run their batch of training examples through the model.
 
-[![](images/Data-Parallelism-1024x747.png)](https://frankdenneman.ai/wp-content/uploads/2020/02/Data-Parallelism.png)
+[![](images/Data-Parallelism-1024x747.png)](/wp-content-mirror/2020/02/Data-Parallelism.png)
 
 The models running on the GPUs must communicate with each other to share the results. Communication timing and patterns between the GPUs depend on the DL model ( Convolutional Neural Networks (CNN) or Recurrent Neural Networks (RNN)) and on the framework used ([TensorFlow](https://www.tensorflow.org/guide/distributed_training), [Pytorch](https://pytorch.org/tutorials/intermediate/dist_tuto.html), [MXNet](https://mxnet.apache.org/api/faq/distributed_training)).
 
@@ -72,7 +72,7 @@ If two PCIe devices communicate with each other, then the CPU is involved. Data 
 
 <figure>
 
-[![](images/GPU-CPU-GPU-Communication-1024x552.png)](https://frankdenneman.ai/wp-content/uploads/2020/02/GPU-CPU-GPU-Communication.png)
+[![](images/GPU-CPU-GPU-Communication-1024x552.png)](/wp-content-mirror/2020/02/GPU-CPU-GPU-Communication.png)
 
 <figcaption>
 

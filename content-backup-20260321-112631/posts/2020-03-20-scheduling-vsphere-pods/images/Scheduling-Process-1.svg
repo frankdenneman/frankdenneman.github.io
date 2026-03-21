@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" viewBox="437.9246 244.21138 970.0348 580.21934" width="970.0348" height="580.21934">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="-979.1667" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-style="italic" font-weight="300">
+      <font-face-src>
+        <font-face-name name="Metropolis-LightItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Metropolis" font-size="12" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-7 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M -5.6 0 L 0 2.1 L 0 -2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.14 
+    <dc:date>2020-03-20 10:14:39 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" fill="none" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="437.9246" y="244.21138" width="970.0348" height="580.21934"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_26">
+        <g id="Line_28">
+          <path d="M 1155.8326 762.00615 L 1155.8326 699.1831 L 1072.1936 699.1831" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+        <g id="Line_27">
+          <path d="M 952.7682 762.4082 L 952.7682 699.58516 L 1036.4072 699.58516" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_25">
+        <path d="M 1155.4643 307.40206 L 1155.4643 370.2251 L 1071.8254 370.2251" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Line_24">
+        <path d="M 952.4 307 L 952.4 369.82306 L 1036.039 369.82306" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_23">
+        <path d="M 1297.4594 486 L 1387.4594 486 C 1392.9823 486 1397.4594 490.47715 1397.4594 496 L 1397.4594 572.5 C 1397.4594 578.02285 1392.9823 582.5 1387.4594 582.5 L 1297.4594 582.5 C 1291.9366 582.5 1287.4594 578.02285 1287.4594 572.5 L 1287.4594 496 C 1287.4594 490.47715 1291.9366 486 1297.4594 486 Z" fill="#cdecf0"/>
+        <path d="M 1297.4594 486 L 1387.4594 486 C 1392.9823 486 1397.4594 490.47715 1397.4594 496 L 1397.4594 572.5 C 1397.4594 578.02285 1392.9823 582.5 1387.4594 582.5 L 1297.4594 582.5 C 1291.9366 582.5 1287.4594 578.02285 1287.4594 572.5 L 1287.4594 496 C 1287.4594 490.47715 1291.9366 486 1297.4594 486 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1292.4594 515.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="12.76" y="16">Workload </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="9.736" y="35">Placement</tspan>
+        </text>
+      </g>
+      <g id="Graphic_22">
+        <path d="M 978.3697 459 L 1129.9241 459 C 1135.447 459 1139.9241 463.47715 1139.9241 469 L 1139.9241 599.5 C 1139.9241 605.02285 1135.447 609.5 1129.9241 609.5 L 978.3697 609.5 C 972.8469 609.5 968.3697 605.02285 968.3697 599.5 L 968.3697 469 C 968.3697 463.47715 972.8469 459 978.3697 459 Z" fill="#cdecf0"/>
+        <path d="M 978.3697 459 L 1129.9241 459 C 1135.447 459 1139.9241 463.47715 1139.9241 469 L 1139.9241 599.5 C 1139.9241 605.02285 1135.447 609.5 1129.9241 609.5 L 978.3697 609.5 C 972.8469 609.5 968.3697 605.02285 968.3697 599.5 L 968.3697 469 C 968.3697 463.47715 972.8469 459 978.3697 459 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(973.3697 515.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="29.2012" y="16">Host or Node </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="45.6572" y="35">Selection</tspan>
+        </text>
+      </g>
+      <g id="Line_21">
+        <line x1="1147" y1="533.75" x2="1272.8835" y2="533.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_20">
+        <rect x="1185.0258" y="527.25" width="57.332" height="14" fill="white"/>
+        <text transform="translate(1189.0258 527.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">Leads to</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 720.8344 486 L 810.8344 486 C 816.3572 486 820.8344 490.47715 820.8344 496 L 820.8344 572.5 C 820.8344 578.02285 816.3572 582.5 810.8344 582.5 L 720.8344 582.5 C 715.31155 582.5 710.8344 578.02285 710.8344 572.5 L 710.8344 496 C 710.8344 490.47715 715.31155 486 720.8344 486 Z" fill="#cdecf0"/>
+        <path d="M 720.8344 486 L 810.8344 486 C 816.3572 486 820.8344 490.47715 820.8344 496 L 820.8344 572.5 C 820.8344 578.02285 816.3572 582.5 810.8344 582.5 L 720.8344 582.5 C 715.31155 582.5 710.8344 578.02285 710.8344 572.5 L 710.8344 496 C 710.8344 490.47715 715.31155 486 720.8344 486 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(715.8344 515.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="12.76" y="16">Workload </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="black" x="7.984" y="35">Scheduling</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <line x1="830.3475" y1="533.75" x2="956.231" y2="533.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_17">
+        <rect x="868.3553" y="527.25" width="57.368" height="14" fill="white"/>
+        <text transform="translate(872.3553 527.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">Requires</tspan>
+        </text>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 458.4246 486 L 548.4246 486 C 553.9475 486 558.4246 490.47715 558.4246 496 L 558.4246 572.5 C 558.4246 578.02285 553.9475 582.5 548.4246 582.5 L 458.4246 582.5 C 452.9018 582.5 448.4246 578.02285 448.4246 572.5 L 448.4246 496 C 448.4246 490.47715 452.9018 486 458.4246 486 Z" fill="#dead26"/>
+        <path d="M 458.4246 486 L 548.4246 486 C 553.9475 486 558.4246 490.47715 558.4246 496 L 558.4246 572.5 C 558.4246 578.02285 553.9475 582.5 548.4246 582.5 L 458.4246 582.5 C 452.9018 582.5 448.4246 578.02285 448.4246 572.5 L 448.4246 496 C 448.4246 490.47715 452.9018 486 458.4246 486 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(453.4246 515.25)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="12.76" y="16">Workload </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="2.976" y="35">Deployment</tspan>
+        </text>
+      </g>
+      <g id="Line_15">
+        <line x1="567.93775" y1="533.75" x2="693.8213" y2="533.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <rect x="605.9455" y="527.25" width="57.368" height="14" fill="white"/>
+        <text transform="translate(609.9455 527.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">Requires</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <path d="M 914.9818 730.3693 L 990.2331 730.3693 C 995.756 730.3693 1000.2331 734.8464 1000.2331 740.3693 L 1000.2331 803.9307 C 1000.2331 809.4536 995.756 813.9307 990.2331 813.9307 L 914.9818 813.9307 C 909.4589 813.9307 904.9818 809.4536 904.9818 803.9307 L 904.9818 740.3693 C 904.9818 734.8464 909.4589 730.3693 914.9818 730.3693 Z" fill="#f95700"/>
+        <path d="M 914.9818 730.3693 L 990.2331 730.3693 C 995.756 730.3693 1000.2331 734.8464 1000.2331 740.3693 L 1000.2331 803.9307 C 1000.2331 809.4536 995.756 813.9307 990.2331 813.9307 L 914.9818 813.9307 C 909.4589 813.9307 904.9818 809.4536 904.9818 803.9307 L 904.9818 740.3693 C 904.9818 734.8464 909.4589 730.3693 914.9818 730.3693 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(909.9818 765.15)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="30.943687" y="12">Size</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12">
+        <path d="M 1016.5212 730.3693 L 1091.7726 730.3693 C 1097.2954 730.3693 1101.7726 734.8464 1101.7726 740.3693 L 1101.7726 803.9307 C 1101.7726 809.4536 1097.2954 813.9307 1091.7726 813.9307 L 1016.5212 813.9307 C 1010.9984 813.9307 1006.5212 809.4536 1006.5212 803.9307 L 1006.5212 740.3693 C 1006.5212 734.8464 1010.9984 730.3693 1016.5212 730.3693 Z" fill="#f95700"/>
+        <path d="M 1016.5212 730.3693 L 1091.7726 730.3693 C 1097.2954 730.3693 1101.7726 734.8464 1101.7726 740.3693 L 1101.7726 803.9307 C 1101.7726 809.4536 1097.2954 813.9307 1091.7726 813.9307 L 1016.5212 813.9307 C 1010.9984 813.9307 1006.5212 809.4536 1006.5212 803.9307 L 1006.5212 740.3693 C 1006.5212 734.8464 1010.9984 730.3693 1016.5212 730.3693 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1011.5212 765.15)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="3.7216866" y="12">Configuration</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 1118.0607 730.3693 L 1193.312 730.3693 C 1198.8349 730.3693 1203.312 734.8464 1203.312 740.3693 L 1203.312 803.9307 C 1203.312 809.4536 1198.8349 813.9307 1193.312 813.9307 L 1118.0607 813.9307 C 1112.5378 813.9307 1108.0607 809.4536 1108.0607 803.9307 L 1108.0607 740.3693 C 1108.0607 734.8464 1112.5378 730.3693 1118.0607 730.3693 Z" fill="#f95700"/>
+        <path d="M 1118.0607 730.3693 L 1193.312 730.3693 C 1198.8349 730.3693 1203.312 734.8464 1203.312 740.3693 L 1203.312 803.9307 C 1203.312 809.4536 1198.8349 813.9307 1193.312 813.9307 L 1118.0607 813.9307 C 1112.5378 813.9307 1108.0607 809.4536 1108.0607 803.9307 L 1108.0607 740.3693 C 1108.0607 734.8464 1112.5378 730.3693 1118.0607 730.3693 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1113.0607 765.15)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="2.8516866" y="12">Requirements</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 914.9818 254.71138 L 990.2331 254.71138 C 995.756 254.71138 1000.2331 259.18853 1000.2331 264.71138 L 1000.2331 328.2728 C 1000.2331 333.79566 995.756 338.2728 990.2331 338.2728 L 914.9818 338.2728 C 909.4589 338.2728 904.9818 333.79566 904.9818 328.2728 L 904.9818 264.71138 C 904.9818 259.18853 909.4589 254.71138 914.9818 254.71138 Z" fill="#00a4cc"/>
+        <path d="M 914.9818 254.71138 L 990.2331 254.71138 C 995.756 254.71138 1000.2331 259.18853 1000.2331 264.71138 L 1000.2331 328.2728 C 1000.2331 333.79566 995.756 338.2728 990.2331 338.2728 L 914.9818 338.2728 C 909.4589 338.2728 904.9818 333.79566 904.9818 328.2728 L 904.9818 264.71138 C 904.9818 259.18853 909.4589 254.71138 914.9818 254.71138 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(909.9818 289.4921)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="17.461687" y="12">Capacity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <path d="M 1016.5212 254.71138 L 1091.7726 254.71138 C 1097.2954 254.71138 1101.7726 259.18853 1101.7726 264.71138 L 1101.7726 328.2728 C 1101.7726 333.79566 1097.2954 338.2728 1091.7726 338.2728 L 1016.5212 338.2728 C 1010.9984 338.2728 1006.5212 333.79566 1006.5212 328.2728 L 1006.5212 264.71138 C 1006.5212 259.18853 1010.9984 254.71138 1016.5212 254.71138 Z" fill="#00a4cc"/>
+        <path d="M 1016.5212 254.71138 L 1091.7726 254.71138 C 1097.2954 254.71138 1101.7726 259.18853 1101.7726 264.71138 L 1101.7726 328.2728 C 1101.7726 333.79566 1097.2954 338.2728 1091.7726 338.2728 L 1016.5212 338.2728 C 1010.9984 338.2728 1006.5212 333.79566 1006.5212 328.2728 L 1006.5212 264.71138 C 1006.5212 259.18853 1010.9984 254.71138 1016.5212 254.71138 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1011.5212 289.4921)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="3.7216866" y="12">Configuration</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 1118.0607 254.71138 L 1193.312 254.71138 C 1198.8349 254.71138 1203.312 259.18853 1203.312 264.71138 L 1203.312 328.2728 C 1203.312 333.79566 1198.8349 338.2728 1193.312 338.2728 L 1118.0607 338.2728 C 1112.5378 338.2728 1108.0607 333.79566 1108.0607 328.2728 L 1108.0607 264.71138 C 1108.0607 259.18853 1112.5378 254.71138 1118.0607 254.71138 Z" fill="#00a4cc"/>
+        <path d="M 1118.0607 254.71138 L 1193.312 254.71138 C 1198.8349 254.71138 1203.312 259.18853 1203.312 264.71138 L 1203.312 328.2728 C 1203.312 333.79566 1198.8349 338.2728 1193.312 338.2728 L 1118.0607 338.2728 C 1112.5378 338.2728 1108.0607 333.79566 1108.0607 328.2728 L 1108.0607 264.71138 C 1108.0607 259.18853 1112.5378 254.71138 1118.0607 254.71138 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1113.0607 282.4921)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="15.703687" y="12">Resource </tspan>
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="11.701687" y="26">Availability</tspan>
+        </text>
+      </g>
+      <g id="Line_7">
+        <line x1="1054.0334" y1="620.5" x2="1054.1156" y2="730.3693" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_6">
+        <rect x="1027.4369" y="634.95" width="53.42" height="14" fill="white"/>
+        <text transform="translate(1031.4369 634.95)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="0" y="12">Impacts</tspan>
+        </text>
+      </g>
+      <g id="Line_5">
+        <line x1="1054.0334" y1="448" x2="1054.1156" y2="338.2728" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <rect x="1015.8509" y="419.55" width="76.592" height="14" fill="white"/>
+        <text transform="translate(1019.8509 419.55)" fill="black">
+          <tspan font-family="Metropolis" font-size="12" font-style="italic" font-weight="300" fill="black" x="27000624e-20" y="12">Depends on</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 978.3697 345.6 L 1129.9241 345.6 C 1135.447 345.6 1139.9241 350.07715 1139.9241 355.6 L 1139.9241 384.1 C 1139.9241 389.62284 1135.447 394.1 1129.9241 394.1 L 978.3697 394.1 C 972.8469 394.1 968.3697 389.62284 968.3697 384.1 L 968.3697 355.6 C 968.3697 350.07715 972.8469 345.6 978.3697 345.6 Z" fill="#00a4cc"/>
+        <path d="M 978.3697 345.6 L 1129.9241 345.6 C 1135.447 345.6 1139.9241 350.07715 1139.9241 355.6 L 1139.9241 384.1 C 1139.9241 389.62284 1135.447 394.1 1129.9241 394.1 L 978.3697 394.1 C 972.8469 394.1 968.3697 389.62284 968.3697 384.1 L 968.3697 355.6 C 968.3697 350.07715 972.8469 345.6 978.3697 345.6 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(973.3697 362.85)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="25.7332" y="12">Resource Producer</tspan>
+        </text>
+      </g>
+      <g id="Graphic_2">
+        <path d="M 978.3697 674.4 L 1129.9241 674.4 C 1135.447 674.4 1139.9241 678.87716 1139.9241 684.4 L 1139.9241 712.9 C 1139.9241 718.42285 1135.447 722.9 1129.9241 722.9 L 978.3697 722.9 C 972.8469 722.9 968.3697 718.42285 968.3697 712.9 L 968.3697 684.4 C 968.3697 678.87716 972.8469 674.4 978.3697 674.4 Z" fill="#f95700"/>
+        <path d="M 978.3697 674.4 L 1129.9241 674.4 C 1135.447 674.4 1139.9241 678.87716 1139.9241 684.4 L 1139.9241 712.9 C 1139.9241 718.42285 1135.447 722.9 1129.9241 722.9 L 978.3697 722.9 C 972.8469 722.9 968.3697 718.42285 968.3697 712.9 L 968.3697 684.4 C 968.3697 678.87716 972.8469 674.4 978.3697 674.4 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(973.3697 691.65)" fill="white">
+          <tspan font-family="Metropolis" font-size="12" font-weight="400" fill="white" x="22.9132" y="12">Resource Consumer</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+---
+title: "Two very interesting videos about how computer algorithms shapes today&#039;s world"
+date: 2013-01-16
+---
+
+Resource management within virtual infrastructures relies on distributed algorithms, as a result I became more and more interested in the application of computer algorithms in other areas. Today I found an English version of the multiple award winning Dutch documentary which I can finally share with my non-dutch speaking friends. The documentary reviews the flash crash on the U.S. Stock Market on May 6th 2010. In particular it explores the application of black box trading (algo-trading) and how algorithms shaped and formed the architecture of not only of the trade market institutions but also city architectures and human terraforming. [Money & Speed: Inside the Black Box (Marije Meerman, VPRO)](http://www.youtube.com/watch?feature=player_embedded&v=aq1Ln1UCoEU#!) Sit back and be amazed. Once viewed, view the TED presentation by Kevin Slavin: [How algorithms shape our world](http://www.ted.com/talks/kevin_slavin_how_algorithms_shape_our_world.html?fb_ref=talk ). Kevin Slavin zooms in some of the algorithms applied in our lives and how it affect us and our surroundings.

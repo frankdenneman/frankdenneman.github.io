@@ -1,7 +1,8 @@
 ---
 title: "Mixed Size vGPU Mode in Practice"
-url: "/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/"
+url: "/2026-02-24-mixed-size-vgpu-mode-in-practice/"
 aliases:
+  - "/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/"
   - /posts/2026-02-24-Mixed%20Size-vGPU-Mode-in-Practice/
 linkTitle: "Part 6 - Mixed Size vGPU Mode in Practice"
 date: 2026-02-24T16:00:00+01:00
@@ -15,11 +16,11 @@ concepts: ["Mixed-Size vGPU Mode", "Placement IDs", "Stranded Capacity", "GPU Pl
 ---
 ## Architecting AI Infrastructure - Part 6
 
-[Last time](https://frankdenneman.ai/posts/2026-02-19-how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/), I looked at how Same Size vGPU mode works with different assignment policies and how right-sizing profiles can make placement more flexible. The main point was that both profile variety and assignment choices have a big impact on how much GPU capacity you can actually use over time.
+<a href="{{< ref "posts/2026-02-19-how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/index.md" >}}">Last time</a>, I looked at how Same Size vGPU mode works with different assignment policies and how right-sizing profiles can make placement more flexible. The main point was that both profile variety and assignment choices have a big impact on how much GPU capacity you can actually use over time.
 
 ## Understanding Placement IDs and Siloed Capacity
 
-This article focuses on Mixed Size mode. Unlike locking a GPU to one profile after the first placement, Mixed Size lets you use different profile sizes on the same device. This might seem like an easy fix for fragmentation, but it brings a new challenge: placement IDs. These are fixed memory spots on the GPU where a profile can begin, so even if memory appears free, you can't always use it unless it aligns with a valid placement spot. For more details on how placement IDs work, see [Part 4](https://frankdenneman.ai/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/).
+This article focuses on Mixed Size mode. Unlike locking a GPU to one profile after the first placement, Mixed Size lets you use different profile sizes on the same device. This might seem like an easy fix for fragmentation, but it brings a new challenge: placement IDs. These are fixed memory spots on the GPU where a profile can begin, so even if memory appears free, you can't always use it unless it aligns with a valid placement spot. For more details on how placement IDs work, see <a href="{{< ref "posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/index.md" >}}">Part 4</a>.
 
 ## Placement Flow and Local Optimization
 

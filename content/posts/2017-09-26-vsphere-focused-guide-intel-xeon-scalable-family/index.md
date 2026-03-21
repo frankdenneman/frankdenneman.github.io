@@ -35,7 +35,7 @@ Upholding the tradition, the new Xeon family contains more cores than the previo
 
 **Omni-Path Architecture** The new Xeon family offers on-die Omni-Path Architecture that allows for 100 Gbps connectivity. In-line with the industry effort to remove as much "moving parts or components as possible the new architecture the signal is not being routed through the socket and motherboard but provides a direct connection to the processor.
 
-\[caption id="attachment\_7085" align="aligncenter" width="676"\][![](images/Intel-Xeon-Scalable-Fabric-v-No-Fabric-750x460.jpg)](http://frankdenneman.nl/wp-content/uploads/2017/09/Intel-Xeon-Scalable-Fabric-v-No-Fabric.jpg) Image by ServeTheHome.com\[/caption\]
+\[caption id="attachment\_7085" align="aligncenter" width="676"\][![](images/Intel-Xeon-Scalable-Fabric-v-No-Fabric-750x460.jpg)](/wp-content-mirror/2017/09/Intel-Xeon-Scalable-Fabric-v-No-Fabric.jpg) Image by ServeTheHome.com\[/caption\]
 
 The always excellent [Serve The Home](https://www.servethehome.com/intel-skylake-omni-path-fabric-does-not-work-on-every-server-and-motherboard/) has published a nice article about the F-type Xeons. Unfortunately, the current vSphere version does not support the Omni-Path Architecture.
 

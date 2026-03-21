@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="-86 316 1758 607" width="1758" height="607">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="#0095d3">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"></path>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke="none" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-86" y="316" width="1758" height="607"></rect>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_83">
+        <title>vGPU Instances</title>
+        <circle cx="373.4431" cy="561.5721" r="10.3906416031994" fill="white"></circle>
+        <circle cx="373.4431" cy="561.5721" r="10.3906416031994" stroke="#387c2c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></circle>
+      </g>
+      <g id="Graphic_3">
+        <title>vGPU Instances</title>
+        <circle cx="373.4431" cy="561.5721" r="6.5000103863623" fill="#a8de9e"></circle>
+      </g>
+      <g id="Graphic_2">
+        <rect x="265" y="548.0721" width="73.294" height="27" fill="white"></rect>
+        <text transform="translate(270 553.0721)" fill="#387c2c">
+          <tspan font-family="Metropolis" font-size="14" fill="#387c2c" x="8455459e-19" y="14"> Full GPU</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="363.0525" y1="561.5721" x2="338.294" y2="561.5721" stroke="#fb3983" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_7">
+        <line x1="373.44574" y1="551.18145" x2="373.4776" y2="424.9" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="373.48175" cy="408.5" r="6.50001038636236" fill="#ff7b00"></circle>
+      </g>
+      <g id="Graphic_9">
+        <rect x="314" y="327" width="118.9635" height="44" fill="white"></rect>
+        <text transform="translate(319 332)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="20.30775" y="14">(Dynamic) </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="3.6267505" y="31">Direct Path I/O</tspan>
+        </text>
+      </g>
+      <g id="Line_10">
+        <line x1="373.48175" y1="402" x2="373.48175" y2="371" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_11">
+        <circle cx="373.4431" cy="714.6442" r="6.50001038636229" fill="#ff7b00"></circle>
+      </g>
+      <g id="Line_12">
+        <line x1="373.4431" y1="571.9627" x2="373.4431" y2="698.2442" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_14">
+        <line x1="373.4431" y1="721.1442" x2="373.4431" y2="760.735" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_15">
+        <rect x="318.46137" y="760.735" width="109.9635" height="44" fill="white"></rect>
+        <text transform="translate(323.46137 765.735)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.9977505" y="14">NVIDIA vGPU</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="26.98675" y="31">Device</tspan>
+        </text>
+      </g>
+      <g id="Line_16">
+        <line x1="86.93176" y1="714.6442" x2="366.9431" y2="714.6442" marker-start="url(#FilledArrow_Marker_2)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="70.53176" cy="714.6442" r="6.50001038636229" fill="#ff7b00"></circle>
+      </g>
+      <g id="Graphic_18">
+        <rect x="14.50176" y="659" width="112.06" height="27" fill="white"></rect>
+        <text transform="translate(19.50176 664)" fill="#387c2c">
+          <tspan font-family="Metropolis" font-size="14" fill="#387c2c" x="6536993e-19" y="14">Fractional GPU</tspan>
+        </text>
+      </g>
+      <g id="Line_19">
+        <line x1="70.53176" y1="708.1442" x2="70.53176" y2="686" stroke="#fb3983" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_21">
+        <text transform="translate(120.34796 849.3258)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".173" y="14"> </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" y="14">Time-Sliced C-Type</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="17.12" y="31">1/20 - Full GPU</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.923" y="48">(Device dependent)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <text transform="translate(-80.96824 849.3258)" fill="#ff7b00">
+          <tspan font-family="Metropolis" font-size="14" fill="#ff7b00" x="7673862e-19" y="14">MIG Partitions</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.68" y="31">1/7 - Full GPU</tspan>
+        </text>
+      </g>
+      <g id="Line_22">
+        <line x1="70.48934" y1="721.144" x2="69.498935" y2="872.9032" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_24">
+        <circle cx="69.54186" cy="866.3258" r="6.50001038636235" fill="#ff7b00"></circle>
+      </g>
+      <g id="Line_25">
+        <line x1="63.04186" y1="866.3258" x2="29.191693" y2="866.3258" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_26">
+        <line x1="76.04186" y1="866.3258" x2="109.44796" y2="866.3258" marker-end="url(#FilledArrow_Marker)" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_27">
+        <line x1="379.98175" y1="408.5" x2="1595.7074" y2="408.5" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_28">
+        <line x1="379.94313" y1="714.6442" x2="1085.7719" y2="714.6442" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_29">
+        <circle cx="808.6101" cy="714.6442" r="6.50001038636225" fill="#ff7b00"></circle>
+      </g>
+      <g id="Graphic_30">
+        <rect x="749.1283" y="760.735" width="118.9635" height="61" fill="white"></rect>
+        <text transform="translate(754.1283 765.735)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="8.49875" y="14">Up to 4 vGPU </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.1777505" y="31">devices per VM </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="20.83975" y="48">(ESXI 7.0)</tspan>
+        </text>
+      </g>
+      <g id="Line_31">
+        <line x1="808.6101" y1="721.1442" x2="808.6101" y2="760.735" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_33">
+        <title>vGPU Instances</title>
+        <circle cx="1085.9705" cy="714.6442" r="6.50001038636228" fill="#0095d3"></circle>
+      </g>
+      <g id="Line_34">
+        <line x1="1085.9705" y1="721.1442" x2="1085.9705" y2="760.735" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(1031.4888 765.735)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="8.35175" y="14">Up to 8 vGPU </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.1777505" y="31">devices per VM </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="20.17475" y="48">(ESXI 8.0)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <rect x="744.9641" y="844.3258" width="127.292" height="61" fill="white"></rect>
+        <text transform="translate(749.9641 849.3258)" fill="#f9822c">
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="4.214" y="14">Fractional GPUs</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="6394885e-19" y="31">possible per GPU</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="35.651" y="48">Device</tspan>
+        </text>
+      </g>
+      <g id="Line_37">
+        <line x1="808.6101" y1="821.735" x2="808.6101" y2="844.3258" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_38">
+        <rect x="1022.3245" y="844.3258" width="127.292" height="61" fill="white"></rect>
+        <text transform="translate(1027.3245 849.3258)" fill="#f9822c">
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="4.214" y="14">Fractional GPUs</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="6394885e-19" y="31">possible per GPU</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="35.651" y="48">Device</tspan>
+        </text>
+      </g>
+      <g id="Line_39">
+        <line x1="1085.9705" y1="821.735" x2="1085.9705" y2="844.3258" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_40">
+        <circle cx="572.8623" cy="714.6442" r="6.50001038636226" fill="#ff7b00"></circle>
+      </g>
+      <g id="Graphic_48">
+        <rect x="402.25364" y="625" width="139" height="61" fill="white"></rect>
+        <text transform="translate(404.25364 630)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.085" y="14">NVIDIA  GPUDirect </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="2.414" y="31">Peer to Peer (PCIe)</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="13.579" y="48">Across Network</tspan>
+        </text>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(493.5383 765.735)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="5258016e-19" y="14">NVIDIA  NVLink Bridge</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="58.611" y="31">(PCIe)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_54">
+        <title>vGPU Instances</title>
+        <circle cx="1085.9705" cy="642.09595" r="6.50001038636229" fill="#fb3983"></circle>
+      </g>
+      <g id="Line_59">
+        <line x1="1085.9705" y1="635.59594" x2="1085.9705" y2="607.0721" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_60">
+        <text transform="translate(1006.6465 551.0721)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="3.2899975" y="14">Supports systems with </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="36.077997" y="31">8+ SXM GPU</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="13.908997" y="48">(ESXi 8.0 Update 1)</tspan>
+        </text>
+      </g>
+      <g id="Line_61">
+        <line x1="1085.9705" y1="708.1442" x2="1085.9705" y2="648.59595" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_66">
+        <line x1="572.8623" y1="721.1442" x2="572.8623" y2="760.735" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Line_67">
+        <line x1="572.8623" y1="804.735" x2="572.8623" y2="844.3258" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_69">
+        <circle cx="471.75364" cy="714.6442" r="6.5000103863623" fill="#ff7b00"></circle>
+      </g>
+      <g id="Line_70">
+        <line x1="471.75364" y1="708.1442" x2="471.75364" y2="686" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_68">
+        <text transform="translate(506.09644 849.3258)" fill="#f9822c">
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="3.2338463" y="14">Up to 2 Full vGPUs</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="12.977846" y="31">Connected over </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="14.496846" y="48">Physical Bridge </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="44.652846" y="65">device</tspan>
+        </text>
+      </g>
+      <g id="Graphic_71">
+        <circle cx="1260.4955" cy="408.5" r="6.50001038636236" fill="#ff7b00"></circle>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(1206.0137 318.14433)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="6.8957505" y="14">Up to 16 DPIO </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="1.2957505" y="31">Devices per VM</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="21.14775" y="48">(ESXi 7.0)</tspan>
+        </text>
+      </g>
+      <g id="Line_73">
+        <line x1="1260.4955" y1="402" x2="1260.4955" y2="371" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_74">
+        <title>vGPU Instances</title>
+        <circle cx="1431.9103" cy="408.5" r="6.50001038636233" fill="#0095d3"></circle>
+      </g>
+      <g id="Line_75">
+        <line x1="1431.9103" y1="402" x2="1431.9103" y2="371" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_76">
+        <text transform="translate(1373.5163 318.14433)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="9.63897" y="14">Up to 32 DPIO </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="5.2079705" y="31">Devices per VM</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="24.39497" y="48">(ESXi 8.0)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_77">
+        <title>vGPU Instances</title>
+        <circle cx="1602.2074" cy="408.5" r="6.50001038636227" fill="#fb3983"></circle>
+      </g>
+      <g id="Line_81">
+        <line x1="1602.2074" y1="402" x2="1602.2074" y2="371" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_82">
+        <text transform="translate(1537.4364 318.14433)" fill="#006990">
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="15.596004" y="14">Up to 64 DPIO </tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x="11.585004" y="31">Devices per VM</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#006990" x=".4130037" y="48">(ESXi 8.0 update 1)</tspan>
+        </text>
+      </g>
+      <g id="Line_84">
+        <line x1="373.4533" y1="804.735" x2="373.4716" y2="844.3258" stroke="#0095d3" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"></line>
+      </g>
+      <g id="Graphic_85">
+        <text transform="translate(306.7159 849.3258)" fill="#f9822c">
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="17.233846" y="14">Up to 8 vGPUs</tspan>
+          <tspan font-family="Metropolis" font-size="14" fill="#f9822c" x="40.368846" y="31">Devices</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

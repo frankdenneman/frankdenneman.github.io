@@ -1,0 +1,12 @@
+---
+title: "vSphere 4.0 Quick Start Guide review"
+date: 2009-12-24
+categories: 
+  - "miscellaneous"
+tags: 
+  - "vsphere-4-0-quick-start-guide"
+---
+
+> un•put•down•a•ble _Pronunciation: (un"poot-dou'nu-bul), \[key\] —adj. Informal._ Adjective meaning consistently and irresistibly interesting. Typically refers to a book that is so well written and entertaining as to be difficult to (literally) put down and pause away from.
+
+Normally a term used to describe novels, but the vSphere Quick Start Guide certainly fits the definition. Last month I was finishing three major projects and needed to write my VCDX application in one week, but somehow it kept ending up in my hands. So what’s so special about this book and how does it distinguish itself from the competition? The book central theme is providing tips and ‘how to’s’ and it does this rather well. The book handles the traditional subjects, such like vCenter, Host, Virtual Machines, Networking and Storage. Besides the concise, easy to follow and non-ambiguous way the tips are written, I really like the minimal use of screenshots. This allowed using the (limited) space to contain as much content as possible. Besides describing how to change settings via the Service Console CLI and the GUI, most tips also list PowerCLI and RemoteCLI example scripts. Incorporating PowerCLI scripts allows this book to be of value to the more experienced administrator who is using PowerCLI or RemoteCLI to manage its environment. The examples certainly increased my interest of picking up PowerCLI. But what really makes this book shine is the short in-depth text accompanying most of the tips and how to’s. The text contains valuable information on how certain mechanism works, what impact changing a setting can have and field experience of using certain settings. Added bonus is addressing the possibility of using third-party tools such as Dell expart, EMC powerpath VE, vwire and many others, confirming that this book is written by authors with true field experience. I really recommend this book to anyone who is using VMware ESX. It doesn’t matter if you are a novice administrator or a seasoned consulting architect, you WILL learn something new by reading this book. During the ESX 2.5 era, anyone who was serious about his job owned the Advanced Technical Design Guide, in the current vSphere era it’s clear that this book must be on your desk.

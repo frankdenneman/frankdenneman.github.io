@@ -1,0 +1,8 @@
+---
+title: "Platform 9 - transform your virtual infrastructure into a private cloud within seconds"
+date: 2014-08-12
+categories: 
+  - "miscellaneous"
+---
+
+Recently I had the joy of reconnecting with some of my old VMware colleagues to learn that their new startup was coming out of stealth. Today [Platform 9](http://platform9.com) announced their SaaS platform. In short, Platform 9 allows IT organisations to transform their local IT infrastructure into a self-service private cloud. The beauty of this product is that it can be implemented on existing infrastructures. No need to create a new infrastructure to introduce the private cloud within your organisation. Just install the agent on your hypervisor layer, connect with the Platform 9 cloud management platform and you are off into the world of private clouds. The ease of integration is amazing and I believe that Platform 9 will be the accelerator of private cloud adoption. No need to go to AWS, no migration to Azure. You manage your own resources while allowing the customer to provision their own virtual machines or containers. Today Platform 9 supports KVM, but they will support both VMware and docker environments soon. I can dive into the details of Platform 9 but [Eric Wright](https://twitter.com/discoposse) has done a tremendous job of publishing an [extensive write-up](http://www.discoposse.com/index.php/2014/08/12/platform9-public-cloud-features-for-private-cloud-deployments/) and I recommend reading his article to learn more about Platform 9 private cloud offering. If you want to meet the team of Platform 9 and hear their vision, visit booth #324 at the solution exchange of VMworld 2014.

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-496.5 97.5 2199 879" width="2199" height="879">
+  <defs>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="0" x-height="517" cap-height="687" ascent="795.0016" descent="-205.00042" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Metropolis-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 8 8" markerWidth="8" markerHeight="8" color="black">
+      <g>
+        <path d="M 5.6 0 L 0 -2.1 L 0 2.1 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Metropolis" font-size="16" panose-1="0 0 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-123" underline-thickness="20" slope="-734.375" x-height="517" cap-height="687" ascent="794.9982" descent="-205.00183" font-style="italic" font-weight="300">
+      <font-face-src>
+        <font-face-name name="Metropolis-LightItalic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.13 
+    <dc:date>2020-03-12 13:54:31 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-496.5" y="97.5" width="2199" height="879"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Line_38">
+        <path d="M 1612 886.5 L 1612 734.1133 L 1532 734.1133" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <circle cx="498" cy="491" r="80.0001278321517" fill="#00a4cc"/>
+        <circle cx="498" cy="491" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(439 472)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="20.88" y="16">Improving </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="33.256" y="35">quality</tspan>
+        </text>
+      </g>
+      <g id="Line_3">
+        <line x1="585" y1="491" x2="703.5625" y2="491" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_4">
+        <circle cx="798.0625" cy="491.5" r="80.0001278321517" fill="#00a4cc"/>
+        <circle cx="798.0625" cy="491.5" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(739.0625 472.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="28.464" y="16">Prepare</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="7.584" y="35">Training Data</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <path d="M 798.0625 411.49996 L 798.0625 339.1133 L 718.0625 339.1133" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7">
+        <text transform="translate(619.373 282.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="10.95675" y="16">Labeling </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="14.80475" y="35">training </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="10.80475" y="54">data is a </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="9.58875" y="73">very time </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="2.4767495" y="92">consuming </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="23.93275" y="111">effort</tspan>
+        </text>
+      </g>
+      <g id="Line_8">
+        <line x1="885.0625" y1="491" x2="1003.625" y2="491" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_18">
+        <path d="M 1092.1875 496.4239 L 1092.1875 648.8106 L 1012.1875 648.8106" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_19">
+        <text transform="translate(913.498 592)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="16.93275" y="16">Data is </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="16.43675" y="35">flowing </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="14.02075" y="54">through </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="3.4607495" y="73">the system </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="11.78075" y="92">- GPU(s) </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="2.6207495" y="111">are utilized</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <circle cx="1092.1875" cy="491.5" r="80.0001278321517" fill="#f95700"/>
+        <circle cx="1092.1875" cy="491.5" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1033.1875 482)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="19.208" y="16">Train Data</tspan>
+        </text>
+      </g>
+      <g id="Graphic_21">
+        <circle cx="1091.6875" cy="188" r="80.0001278321517" fill="#00a4cc"/>
+        <circle cx="1091.6875" cy="188" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1032.6875 178.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="32.864" y="16">Tuning</tspan>
+        </text>
+      </g>
+      <g id="Line_26">
+        <line x1="1091.1875" y1="280" x2="1091.1875" y2="398.5625" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_28">
+        <path d="M 1183 487 L 1305.25 487 L 1305.25 188 L 1190.5 188" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_33">
+        <path d="M 1183 495 L 1305.25 495 L 1303.4547 790.5001" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_34">
+        <rect x="1043.8427" y="320.75" width="95.6895" height="38" fill="white"/>
+        <text transform="translate(1047.8427 320.75)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="11.02075" y="16">Run new </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="19.74075" y="35">Epoch</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <circle cx="1303" cy="886" r="80.0001278321517" fill="#f95700"/>
+        <circle cx="1303" cy="886" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1244 857.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="23.128" y="16">Inference </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="32.256" y="35">(model </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="20.048" y="54">deployed)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_36">
+        <circle cx="1612" cy="886" r="80.0001278321517" fill="#b0dde2"/>
+        <circle cx="1612" cy="886" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(1553 876.5)" fill="#080a52">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="#080a52" x="21.072" y="16">New Data</tspan>
+        </text>
+      </g>
+      <g id="Line_37">
+        <line x1="1514.0625" y1="885.5" x2="1395.5" y2="885.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(1440.3105 697)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="6.6607495" y="16">New data </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="23.58875" y="35">feeds </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="17.01275" y="54">trained </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="20.15675" y="73">model</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <rect x="1255.1552" y="311.25" width="95.6895" height="57" fill="white"/>
+        <text transform="translate(1259.1552 311.25)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="5.4927495" y="16">Prediction </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="31.38875" y="35">not </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x=".22074945" y="54">satisfactory</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <rect x="1255.1552" y="620.5" width="95.6895" height="38" fill="white"/>
+        <text transform="translate(1259.1552 620.5)" fill="black">
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x="5.4927495" y="16">Prediction </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-style="italic" font-weight="300" fill="black" x=".22074945" y="35">satisfactory</tspan>
+        </text>
+      </g>
+      <g id="Line_42">
+        <path d="M 1198 889 L 955.1948 889 L 955.1948 729" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_48">
+        <circle cx="197.9375" cy="490.25" r="80.0001278321517" fill="#00a4cc"/>
+        <circle cx="197.9375" cy="490.25" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(138.9375 442.75)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="30" y="16">Choose </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="22.72" y="35">algorithm</tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="54.256" y="54">+ </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="30" y="73">Choose </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="35.112" y="92">model</tspan>
+        </text>
+      </g>
+      <g id="Line_49">
+        <line x1="284.9375" y1="490.25" x2="403.5" y2="490.25" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_50">
+        <circle cx="-102.125" cy="491" r="80.0001278321517" fill="#00a4cc"/>
+        <circle cx="-102.125" cy="491" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-161.125 462.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="40.776" y="16">Data </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="15.392" y="35">Exploration </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="11.056" y="54">and Profiling</tspan>
+        </text>
+      </g>
+      <g id="Line_51">
+        <line x1="-15.125" y1="491" x2="103.4375" y2="491" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_52">
+        <circle cx="-406" cy="490.5" r="80.0001278321517" fill="#00a4cc"/>
+        <circle cx="-406" cy="490.5" r="80.0001278321517" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-465 471.5)" fill="white">
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="32.912" y="16">Gather </tspan>
+          <tspan font-family="Metropolis" font-size="16" font-weight="400" fill="white" x="7.584" y="35">Training Data</tspan>
+        </text>
+      </g>
+      <g id="Line_53">
+        <line x1="-319" y1="490.5" x2="-200.4375" y2="490.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

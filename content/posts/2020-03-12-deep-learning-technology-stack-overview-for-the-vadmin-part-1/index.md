@@ -22,7 +22,7 @@ To give an example, OpenCL and Vulkan are frameworks that allow for the executio
 
 ## Deep Learning Technology Stack
 
-[![](images/DL-Framework-Stack-1.svg)](https://frankdenneman.ai/wp-content/uploads/2020/03/DL-Framework-Stack-1.svg)
+[![](images/DL-Framework-Stack-1.svg)](/wp-content-mirror/2020/03/DL-Framework-Stack-1.svg)
 
 Let's use a bottom-up approach for reviewing the deep learning technology stack.
 
@@ -54,7 +54,7 @@ Currently, vSphere does not support the AMD Radeon Server Accelerators for Deep 
 
 [NVIDIA virtual GPU](https://www.nvidia.com/en-us/data-center/virtual-compute-server/) (vGPU) provides advanced GPU virtualization functionality that enables the sharing of GPU devices across VMs. An NVIDIA GPU can be logically partitioned (fractional GPU) to multiple virtual GPUs. A VM can use multiple vGPUs that are located in the same host. Both the hypervisor and the VM need to [run NVIDIA software](http://www.yellow-bricks.com/2020/01/22/installing-the-nvidia-software-on-an-esxi-host-and-configuring-for-vgpu-usage/) to provide fractional, full, and multiple vGPU functionalities.
 
-[![](images/vSphere-GPGPU-options.svg)](https://frankdenneman.ai/wp-content/uploads/2020/03/vSphere-GPGPU-options.svg)
+[![](images/vSphere-GPGPU-options.svg)](/wp-content-mirror/2020/03/vSphere-GPGPU-options.svg)
 
 #### Bitfusion
 
@@ -65,10 +65,10 @@ This model corresponds heavily to the early days of virtualization. We used to h
 **Deep Learning Development Cycle  
 **With deep-learning, you cannot just pump some data into a deep-learning model and expect a result. The data scientist has to gather training data, asses the data quality. The next step is to choose an algorithm and a framework. Often the data is not formatted correctly for the used model. The data set needs to be improved; typically, data scientists need to deal with outliers and extreme values, missing or inaccurate data. Data for [supervised learning](https://towardsdatascience.com/supervised-vs-unsupervised-learning-14f68e32ea8d) needs to be labeled, and the data set needs to be split up into training data sets and evaluation data sets. Now the deep-learning can begin, and the GPU is fed the data. The deep learning framework executes the model. After a single [epoch](https://frankdenneman.ai/2020/01/30/machine-learning-workload-and-gpgpu-numa-node-locality/), the data scientist reviews the effectiveness of the model and possibly adjust the model to improve prediction. The model is trained again to verify if the adjustments are correct. Once the model behaves appropriately, it deployed to production where it can run inference tasks that generate predictions based on new data. Each step consuming a lot of time, however only two moments (marked in red) utilize the expensive GPU hardware. Creating the problem, interestingly called "dark silicon".
 
-[![](images/Deep-Learning-Development-Cycle.svg)](https://frankdenneman.ai/wp-content/uploads/2020/03/Deep-Learning-Development-Cycle.svg)
+[![](images/Deep-Learning-Development-Cycle.svg)](/wp-content-mirror/2020/03/Deep-Learning-Development-Cycle.svg)
 
 It doesn't make sense to keep those resource isolated and assigned to a VM that can only be used by a specific data scientist. By introducing remote virtualization, a GPU can be shared between many different virtual machines. A Bitfusion server can contain multiple GPUs, and many Bitfusion servers can be active on the network. Abstracting the hardware and allow for remote execution of API calls, creates a solution that is easily scaled out. Orchestrating workload placement ensures that a pool of GPUs can be made available to the data scientist when the model is ready for training.
 
-[![](images/CUDA.svg)](https://frankdenneman.ai/wp-content/uploads/2020/03/CUDA.svg)
+[![](images/CUDA.svg)](/wp-content-mirror/2020/03/CUDA.svg)
 
 During the [Tech Field Day](https://techfieldday.com/?s=bitfusion), Mazhar Memom (CTO Bitfusion) covered the Bitfusion architecture, showing the use of CUDA libraries by the application to interact with the GPU device. In Bitfusion's case, it is sending these remote API calls to a server that controls the hardware. But this brings us to the statement made earlier in the article. We have arrived at a time in which the software depends heavily on abstraction layers. In the AI space, it is no different. A deep learning model is going to use a framework that uses a set of libraries that are provided by the hardware vendor. This model allows the application developer to quickly (and correctly) to consume the hardware functionality to drive application performance. The defacto toolkit for the deep learning ecosystem is NVIDIA's Compute Unified Device Architecture (CUDA). The next article covers the subsequent layers in the DL framework stack in more depth.

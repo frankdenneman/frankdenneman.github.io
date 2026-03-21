@@ -16,7 +16,7 @@ Does this mean that you stay clear of creating large VM’s? No need to if the V
 
 **NUMA node** Most modern CPU’s, Intel new Nehalem’s and AMD’s veteran Opteron are NUMA architectures. NUMA stands for Non-Uniform Memory Access, but what exactly is NUMA? Each CPU get assigned its own “local” memory, CPU and memory together form a NUMA node. An OS will try to use its local memory as much as possible, but when necessary the OS will use remote memory (memory within another NUMA node). Memory access time can differ due to the memory location relative to a processor, because a CPU can access it own memory faster than remote memory.
 
-[![](images/NUMA-local-remote-access.png "NUMA -local-remote access")](http://frankdenneman.nl/wp-content/uploads/2010/02/NUMA-local-remote-access.png)
+[![](images/NUMA-local-remote-access.png "NUMA -local-remote access")](/wp-content-mirror/2010/02/NUMA-local-remote-access.png)
 
 _Figure 1: Local and Remote memory access_
 
@@ -26,11 +26,11 @@ Accessing remote memory will increase latency, the key is to avoid this as much 
 
 ESX is NUMA aware and will use the NUMA CPU scheduler when detecting a NUMA system. On non-NUMA systems the ESX CPU scheduler spreads load across all sockets in a round robin manner. This approach improves performance by utilizing as much as cache as possible. When using a vSMP virtual machine in a non-NUMA system, each vCPU is scheduled on a separate socket. On NUMA systems, the NUMA CPU scheduler kicks in and use the NUMA optimizations to assigns each VM to a NUMA node, the scheduler tries to keep the vCPU and memory located in the same node. When a VM has multiple CPUs, all the vCPUs will be assigned to the same node and will reside in the same socket, this is to support memory locality as much as possible.
 
-[![](images/NUMA-vSMP-placement-non-numa.png "NUMA-vSMP placement non-numa")](http://frankdenneman.nl/wp-content/uploads/2010/02/NUMA-vSMP-placement-non-numa.png)
+[![](images/NUMA-vSMP-placement-non-numa.png "NUMA-vSMP placement non-numa")](/wp-content-mirror/2010/02/NUMA-vSMP-placement-non-numa.png)
 
 _Figure 2: NON-NUMA vCPU placement_
 
-[![](images/NUMA-vSMP-placement-numa.png "NUMA-vSMP placement numa")](http://frankdenneman.nl/wp-content/uploads/2010/02/NUMA-vSMP-placement-numa.png)
+[![](images/NUMA-vSMP-placement-numa.png "NUMA-vSMP placement numa")](/wp-content-mirror/2010/02/NUMA-vSMP-placement-numa.png)
 
 _Figure 3: NUMA vCPU placement_
 
@@ -38,19 +38,19 @@ At this moment, AMD and Intel offer Quad Core CPU’s, but what if the customer 
 
 **VM sizing pitfall #2: VM configured memory sizing and node local memory size** NUMA will assign all vCPU’s to a NUMA node, but what if the configured memory of the VM is greater than the assigned local memory of the NUMA node? Not aligning the VM configured memory with the local memory size will stop the ESX kernel of using NUMA optimizations for this VM. You can end up with all the VM’s memory scattered all over the server. So how do you know how much memory every NUMA node contains? Typically each socket will get assigned the same amount of memory; the physical memory (minus service console memory) is divided between the sockets. For example 16GB will be assigned to each NUMA node on a two socket server with 32GB total physical. A quick way to confirm the local memory configuration of the NUMA nodes is firing up esxtop. Esxtop will only display NUMA statistics if ESX is running on a NUMA server. The first number list the total amount of machine memory in the NUMA node that is managed by ESX, the statistic displayed within the round brackets is the amount of machine memory in the node that is currently free.
 
-[![](images/numa-esxtop-totals.png "numa-esxtop-totals")](http://frankdenneman.nl/wp-content/uploads/2010/02/numa-esxtop-totals.png)
+[![](images/numa-esxtop-totals.png "numa-esxtop-totals")](/wp-content-mirror/2010/02/numa-esxtop-totals.png)
 
 _Figure 4: esxtop memory totals_
 
 Let’s explore NUMA statistics in esxtop a little bit more based on this example. This system is a HP BL 460c with two Nehalem quad cores with 64GB memory. As shown, each NUMA node is assigned roughly 32GB. The first node has 13GB free; the second node has 372 MB free. It looks it will run out of memory space soon, luckily the VMs on that node still can get access remote memory. When a VM has a certain amount of memory located remote, the ESX scheduler migrates the VM to another node to improve locality. It’s not documented what threshold must be exceeded to trigger the migration, but its [considered](http://www.yellow-bricks.com/esxtop/) poor memory locality when a VM has less than 80% mapped locally, so my “educated” guess is that it will be migrated when the VM hit a number below the 80%. Esxtop memory NUMA statistics show the memory location of each VM. Start esxtop, press m for memory view, press f for customizing esxtop and press f to select the NUMA Statistics.
 
-[![](images/NUMA-esxtop-fields.png "NUMA-esxtop-fields")](http://frankdenneman.nl/wp-content/uploads/2010/02/NUMA-esxtop-fields.png)
+[![](images/NUMA-esxtop-fields.png "NUMA-esxtop-fields")](/wp-content-mirror/2010/02/NUMA-esxtop-fields.png)
 
 _Figure 5: Customizing esxtop_
 
 Figure 6 shows the NUMA statistics of the same ESX server with a fully loaded NUMA node, the N%L field shows the percentage of mapped local memory (memory locality) of the virtual machines.
 
-[![](images/NUMA-esxtop-numa.png "NUMA-esxtop-numa")](http://frankdenneman.nl/wp-content/uploads/2010/02/NUMA-esxtop-numa.png)
+[![](images/NUMA-esxtop-numa.png "NUMA-esxtop-numa")](/wp-content-mirror/2010/02/NUMA-esxtop-numa.png)
 
 _Figure 6: esxtop NUMA statistics_
 
@@ -68,7 +68,7 @@ It shows that a few VMs access remote memory. The man pages of esxtop explain al
 
 **Transparent page sharing and memory locality.** So how about transparent page sharing (TPS), this can increase latency if the VM on node 0 will share its page with a VM on node 1. Luckily VMware thought of that and TPS across nodes is disabled by default to ensure memory locality. TPS still works, but will share identical pages only inside nodes. The performance hit of accessing remote memory does not outweigh the saving of shared pages system wide.
 
-[![](images/NUMA-TPS.png "NUMA-TPS")](http://frankdenneman.nl/wp-content/uploads/2010/02/NUMA-TPS.png)
+[![](images/NUMA-TPS.png "NUMA-TPS")](/wp-content-mirror/2010/02/NUMA-TPS.png)
 
 _Figure 7: NUMA TPS boundaries_
 

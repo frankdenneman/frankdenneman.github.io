@@ -13,7 +13,7 @@ Turning off swap doesn't mean you are unable to create memory pressure. Why disa
 However, Kubernetes is a distributed system that is designed to operate at scale. When running a large number of containers on a vast fleet of machines, you want predictability and consistency. Disabling swap is the right approach. It's better to kill a single container than to have multiple containers run on a machine at unpredictable, probably slow, rate.
 
 Therefore the [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) is not designed to handle swap situations. It's expected that workload demand should fit within the memory of the host. On top of that, it is recommended to apply quality of service (QoS) settings to workloads that matter. Kubernetes provides three QoS classes to [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/); [Guaranteed, Burstable, and BestEffort](https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/#create-a-pod-that-gets-assigned-a-qos-class-of-guaranteed) .  
-[![](images/QoS-Classes.svg)](http://frankdenneman.nl/wp-content/uploads/2018/11/QoS-Classes.svg)  
+[![](images/QoS-Classes.svg)](/wp-content-mirror/2018/11/QoS-Classes.svg)  
 Kubernetes provides the construct _request_ to ensure the availability of resources. Similar to reservations at the vSphere level. Guaranteed pods have a request configuration that's equal to the CPU and memory limit. All memory the container can consume is guaranteed, and therefore it should never need swap. With Burstable a portion of the CPU and memory is protected by a request setting, while a BestEffort pod does not have a CPU and memory request and limit setting specified.
 
 **Multi-level Resource Management**  
@@ -26,7 +26,7 @@ A virtual machine is, in essence, a virtual hardware representation. You define 
 With containers it's a little bit different. In its default state, the most minimal configuration, a container inherits the attributes of the system it runs on. It is possible to consume the entire system, depending on a workload. (a single threaded application, might detect all CPU cores available in the system, but its nature won't allow it to run on more than a single core. In essence, a container is a process running in the Linux OS.
 
   
-[![](images/Container-in-Linux-750x409.png)](http://frankdenneman.nl/wp-content/uploads/2018/11/Container-in-Linux.png)
+[![](images/Container-in-Linux-750x409.png)](/wp-content-mirror/2018/11/Container-in-Linux.png)
 
   
 For a detailed explanation, please (re)view our [VMworld session, CNA1553BE](http://videos.vmworld.com/global/2018/vi…).
@@ -60,17 +60,17 @@ The balloon driver is installed within the guest VM as part of the VMware-Tools 
 The interesting part is the dependencies of guest OS native memory management techniques. As a requirement, the swap file inside the guest OS needs to be set to disabled when you install Kubernetes. Otherwise, the kubelet won't start. The swap file is the main reason why the balloon driver is so non-intrusive. It allows the guest OS to select memory page it deems fit. Typically these are idle pages and thus the working set of the application is not affected. What happens if the swap file is disabled. Is the balloon driver disabled? The answer is no.
 
 Let's verify if the swap file is disabled, by using the command _cat /proc/swaps_. Just to be sure I used another command _swapon -s_. Both outputs shows no swap file.  
-[![](images/01-Swap-Disabled-750x209.png)](http://frankdenneman.nl/wp-content/uploads/2018/11/01-Swap-Disabled.png)  
+[![](images/01-Swap-Disabled-750x209.png)](/wp-content-mirror/2018/11/01-Swap-Disabled.png)  
 The command _vmware-toolbox-cmd stat balloon_ shows the balloon driver size. Just to be sure I used another command _lsmod | grep -E 'vmmemctl|vmware\_balloon_ to show if the balloon driver is loaded  
 I created an overcommit scenario on the host and soon enough the balloon driver kicked into action.  
-[![](images/02-Balloon-Driver-engaged-750x213.png)](http://frankdenneman.nl/wp-content/uploads/2018/11/02-Balloon-Driver-engaged.png)  
+[![](images/02-Balloon-Driver-engaged-750x213.png)](/wp-content-mirror/2018/11/02-Balloon-Driver-engaged.png)  
 The command _vmware-toolbox-cmd stat balloon_ confirmed the output of the stats showed by vCenter. The balloon driver pinned 4GB of memory within the guest.
 
-[![](images/03-Stats-Balloon-750x164.png)](http://frankdenneman.nl/wp-content/uploads/2018/11/03-Stats-Balloon.png)  
+[![](images/03-Stats-Balloon-750x164.png)](/wp-content-mirror/2018/11/03-Stats-Balloon.png)  
 4GB memory pinnned, but _top_ showed nothing in swap.  
-[![](images/04-Top-Output-750x248.png)](http://frankdenneman.nl/wp-content/uploads/2018/11/04-Top-Output.png)  
+[![](images/04-Top-Output-750x248.png)](/wp-content-mirror/2018/11/04-Top-Output.png)  
 _dmesg_ shows the kernel messages, one of them is the activity of the OOM Killer. OOM stands for out of memory.  
-[![](images/05-OOM-Killer-750x93.png)](http://frankdenneman.nl/wp-content/uploads/2018/11/05-OOM-Killer.png)  
+[![](images/05-OOM-Killer-750x93.png)](/wp-content-mirror/2018/11/05-OOM-Killer.png)  
 According to online description: _The Out-Of-Memory Killer process that It is the task of the OOM Killer to continue killing processes until enough memory is freed for the smooth functioning of the rest of the process that the Kernel is attempting to run.  
 _
 

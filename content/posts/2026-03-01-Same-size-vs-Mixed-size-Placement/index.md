@@ -3,17 +3,19 @@ title: "Same Size vs Mixed Size Placement at Cluster Scale"
 linkTitle: "Part 7 - Same Size vs Mixed Size Placement at Cluster Scale"
 description: "How Same-size and Mixed-size vGPU placement behavior evolves at cluster scale and how profile strategy influences deployable capacity over time."
 date: 2026-03-01
-url: "/posts/2026-03-01-same-size-vs-mixed-size-placement/"
+url: "/2026-03-01-same-size-vs-mixed-size-placement/"
 categories: ["ai"]
 track: "AI Infrastructure"
 series: ["Architecting AI Infrastructure"]
 series_order: 7
 concepts: ["Same-Size vGPU Mode", "Mixed-Size vGPU Mode", "Cluster-Scale Placement"]
+aliases:
+  - "/posts/2026-03-01-same-size-vs-mixed-size-placement/"
 ---
 
 ## Architecting AI Infrastructure — Part 7
 
-The Silo Capacity Visualizer from [Part 6](https://frankdenneman.ai/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/) shows how profile selection and placement-ID alignment affect memory layout inside a single GPU. While that's helpful for understanding the basics, real capacity planning happens at the cluster level. This article introduces the [Same-size vs Mixed-size Placement simulator](https://frankdenneman.ai/tools/same-size-vs-mixed-mode/), the second tool in the Cluster Profile Strategy Toolset. It lets you simulate vGPU placement across an entire cluster using both same-size and mixed-size policies simultaneously, with the same workload sequence for both. This way, you can directly compare their results.
+The Silo Capacity Visualizer from <a href="{{< ref "posts/2026-02-24-mixed-size-vgpu-mode-in-practice/index.md" >}}">Part 6</a> shows how profile selection and placement-ID alignment affect memory layout inside a single GPU. While that's helpful for understanding the basics, real capacity planning happens at the cluster level. This article introduces the [Same-size vs Mixed-size Placement simulator](https://frankdenneman.ai/tools/same-size-vs-mixed-mode/), the second tool in the Cluster Profile Strategy Toolset. It lets you simulate vGPU placement across an entire cluster using both same-size and mixed-size policies simultaneously, with the same workload sequence for both. This way, you can directly compare their results.
 
 ![Screenshot tool](images/1-same-size-vs-mixed-mode-simulator.png)
 
@@ -132,7 +134,7 @@ The Swap Analyzer opens when you swap profiles in the sequence. I replaced every
 
 You can quickly see if your utilization improved or if you gained more placement options.
 
-The 8GB profile doesn’t align as well with the 20GB and 40GB profiles as the 10GB profile does on the H100. As explained in [Part 6](https://frankdenneman.ai/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/), profiles without clean shared boundaries leave gaps that other profiles can’t use. Swapping to 10GB improves that alignment. In mixed-size mode, this swap reduced siloed capacity and may have increased the total number of VMs placed.
+The 8GB profile doesn’t align as well with the 20GB and 40GB profiles as the 10GB profile does on the H100. As explained in <a href="{{< ref "posts/2026-02-24-mixed-size-vgpu-mode-in-practice/index.md" >}}">Part 6</a>, profiles without clean shared boundaries leave gaps that other profiles can’t use. Swapping to 10GB improves that alignment. In mixed-size mode, this swap reduced siloed capacity and may have increased the total number of VMs placed.
 
 ![screenshot](images/18-swap-results.png)
 

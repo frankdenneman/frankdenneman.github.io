@@ -8,7 +8,7 @@ coverImage: "NVAIE.png"
 
 vSphere allows assigning GPU devices to a VM using VMware's (Dynamic) Direct Path I/O technology (Passthru) or NVIDIA's vGPU technology. The NVIDIA vGPU technology is a core part of the NVIDIA AI Enterprise suite ([NVAIE](https://www.nvidia.com/en-us/data-center/products/ai-enterprise/)). NVAIE is more than just the vGPU driver. It's a complete technology stack that allows data scientists to run an end-to-end workflow on certified accelerated infrastructure. Let's look at what NVAIE offers and how it works under the cover.
 
-[![](images/1.-NVAIE-stack.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/1.-NVAIE-stack.svg)
+[![](images/1.-NVAIE-stack.svg)](/wp-content-mirror/2023/05/1.-NVAIE-stack.svg)
 
 The operators, VI admins, and architects facilitate the technology stack while the data science team and developers consume it. Most elements can be consumed via self-service. However, there is one place in the technology stack, NVIDIA Magnum IO, where the expertise of both roles (facilitators and consumers) come together, and their joint effort produces an efficient and optimized distributed training solution.
 
@@ -42,7 +42,7 @@ Certified systems for the data center are tested both as single nodes and in a 2
 
 The [NVIDIA Qualified Server Catalog](https://www.nvidia.com/en-in/data-center/data-center-gpus/tesla-qualified-servers-catalog/) provides an easy overview of all the server models and their specific configuration and NVIDIA validation types. It offers the ability to export the table in a PDF and Excel format at the bottom of the page. Still, I like the available filter system to drill down to the exact specification that suits your workload needs. The [GPU device differentiators article](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/) can help you select the GPUs that fit your workloads and deploy location.
 
-[![](images/2-Qualified-Server-Catalog--1024x243.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/2-Qualified-Server-Catalog-.png)
+[![](images/2-Qualified-Server-Catalog--1024x243.png)](/wp-content-mirror/2023/05/2-Qualified-Server-Catalog-.png)
 
 The only distinction the qualified server catalog doesn't appear to make is whether the system is classified as a data center or an edge system and thus receives a different functional and performance test pattern. The [NVIDIA-Certified Systems](https://docs.nvidia.com/ngc/ngc-deploy-on-premises/nvidia-certified-systems/index.html#nvidia-certified-systems-list) web page lists the recent data center server and edge servers. A [PDF](https://docs.nvidia.com/ngc/ngc-deploy-on-premises/pdf/nvidia-certified-systems.pdf) is also available for download.
 
@@ -64,11 +64,11 @@ The "Complete vGPU Package for vSphere 8.0 including supported guest drivers" co
 
 We are interested in the "NVIDIA AI Enterprise 3.1 Software Package for VMware vSphere 8.0" package. This package contains both the NVD-AIE Host VIB and the compatible guest os driver.
 
-[![](images/3-Contents-of-NVAIE-package.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/3-Contents-of-NVAIE-package.png)
+[![](images/3-Contents-of-NVAIE-package.png)](/wp-content-mirror/2023/05/3-Contents-of-NVAIE-package.png)
 
 The easiest and failsafe method of downloading the correct package is to select the NVAIE option in the Product Family. You can finetune the results by only selecting the vSphere platform version you are running in your environment.
 
-[![](images/4-Software-Downloads-1024x445.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/4-Software-Downloads.png)
+[![](images/4-Software-Downloads-1024x445.png)](/wp-content-mirror/2023/05/4-Software-Downloads.png)
 
 What's in the package? The extracted AIE zip file screenshot shows that a vGPU Software release contains the Host VIB, the NVIDIA Windows driver, and the NVIDIA Linux driver. NVIDIA uses the term NVIDIA Virtual GPU Manager, what we like to call the ESXi host VIB. There are some compatibility requirements between the host and guest driver, hence the reason to package them together. The best experience is to keep both drivers in lockstep when updating the ESXi host with a new vGPU driver release. But I can imagine that it's simply not doable for some workloads, and the operating team would prefer to delay the outage required for the guest OS upgrade until later. Luckily, NVIDIA has relaxed this requirement and now supports host and guest drivers from major release branches (15. x) and previous branches. Suppose the combination is used where the guest VM drivers are from the previous branches. In that case, the combination supports **only** the features, hardware, and software (including guest OSes) supported on both releases. According to the [vGPU software documentation](https://docs.nvidia.com/grid/latest/grid-vgpu-release-notes-vmware-vsphere/index.html#vgpu-manager-guest-vm-compatibilty-requirements), the host driver 15.0 through 15.2 is compatible with the guest drivers of the 14.x release. A future article in this series shows how to correctly configure a VM in passthrough mode or with a vGPU profile. 
 
@@ -76,7 +76,7 @@ What's in the package? The extracted AIE zip file screenshot shows that a vGPU S
 
 The name Magnum IO is derived from multi-GPU, multi-node input/output. NVIDIA likes to explain Magnum IO as a collection of technologies related to data at rest, data on the move, and data at work for the IO subsystem of the data center. It divides into four categories: Network IO, In-network compute, Storage IO, and IO management. I won't cover IO management as they focus on bare-metal implementations. All these acceleration technologies focus on optimizing distributed training. The data science team deploys most of these components in their preferred runtime (VM, container). However, it's necessary to understand the infrastructure topology the data science team wants to leverage technologies like GPUDirect RDMA, NCCL, SHARP, and GPUDirect Storage. Typically this requires the involvement of the virtual infrastructure team. The [previous parts](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/) in this series help the infrastructure team to have a basic understanding of distributed training. 
 
-[![](images/5-NVAIE-Magnun-io.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/5-NVAIE-Magnun-io.svg)
+[![](images/5-NVAIE-Magnun-io.svg)](/wp-content-mirror/2023/05/5-NVAIE-Magnun-io.svg)
 
 ### In-Network Compute
 
@@ -128,7 +128,7 @@ NVIDIA [CUDA-X](https://developer.nvidia.com/gpu-accelerated-libraries) is a C
 
 NVIDIA uses the GPU and Network operator to automate the drivers, container runtimes, and relevant libraries configuration for GPU and network devices on Kubernetes nodes. The Network Operator automates the management of all the NVIDIA software components needed to provision fast networking, such as RDMA and GPUDirect. The Network operator works together with the GPU operator to enable GPU-Direct RDMA.
 
-[![](images/6-NVAIE-vGPU-Operator.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/6-NVAIE-vGPU-Operator.svg)
+[![](images/6-NVAIE-vGPU-Operator.svg)](/wp-content-mirror/2023/05/6-NVAIE-vGPU-Operator.svg)
 
 The GPU operator is open-source and packaged as a helm chart. The GPU operator automates the management of all software components needed to provision GPU. The components are:
 

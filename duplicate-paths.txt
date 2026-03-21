@@ -1,0 +1,1776 @@
+### 10-guidelines-for-creating-good-looking-diagrams
+content/2013/02/01/10-guidelines-for-creating-good-looking-diagrams
+content/2013/02/10-guidelines-for-creating-good-looking-diagrams
+
+### 3-common-questions-about-drs-preferential-vm-host-affinity-rules
+content/2013/04/15/3-common-questions-about-drs-preferential-vm-host-affinity-rules
+content/2013/04/3-common-questions-about-drs-preferential-vm-host-affinity-rules
+
+### 46-vmware-cloud-flex-compute-tech-preview
+content/2023/05/15/46-vmware-cloud-flex-compute-tech-preview
+content/2023/05/46-vmware-cloud-flex-compute-tech-preview
+
+### 47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal
+content/2023/05/30/47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal
+content/2023/05/47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal
+
+### 5-days-to-vote
+content/2010/09/19/5-days-to-vote
+content/2010/09/5-days-to-vote
+
+### 5-things-to-know-about-project-pacific
+content/2019/08/26/5-things-to-know-about-project-pacific
+content/2019/08/5-things-to-know-about-project-pacific
+
+### 60-minutes-of-numa-vmworld-session-commands
+content/2019/08/27/60-minutes-of-numa-vmworld-session-commands
+content/2019/08/60-minutes-of-numa-vmworld-session-commands
+
+### a-look-inside-the-upcoming-vsphere-clustering-book
+content/2011/06/10/a-look-inside-the-upcoming-vsphere-clustering-book
+content/2011/06/a-look-inside-the-upcoming-vsphere-clustering-book
+
+### a-primer-on-network-io-control
+content/2013/01/17/a-primer-on-network-io-control
+content/2013/01/a-primer-on-network-io-control
+
+### add-drs-cluster-to-existing-datastore-cluster
+content/2012/10/29/add-drs-cluster-to-existing-datastore-cluster
+content/2012/10/add-drs-cluster-to-existing-datastore-cluster
+
+### adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster
+content/2013/01/11/adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster
+content/2013/01/adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster
+
+### adjust-timeout-value-esxi-embedded-host-client
+content/2016/04/12/adjust-timeout-value-esxi-embedded-host-client
+content/2016/04/adjust-timeout-value-esxi-embedded-host-client
+
+### adjusting-the-cost-of-vmotion-a-word-of-caution
+content/2013/01/15/adjusting-the-cost-of-vmotion-a-word-of-caution
+content/2013/01/adjusting-the-cost-of-vmotion-a-word-of-caution
+
+### admission-control-and-vcloud-allocation-pool-model
+content/2012/05/16/admission-control-and-vcloud-allocation-pool-model
+content/2012/05/admission-control-and-vcloud-allocation-pool-model
+
+### aggregating-datastores-from-multiple-storage-arrays-into-one-storage-drs-datastore-cluster
+content/2012/04/26/aggregating-datastores-from-multiple-storage-arrays-into-one-storage-drs-datastore-cluster
+content/2012/04/aggregating-datastores-from-multiple-storage-arrays-into-one-storage-drs-datastore-cluster
+
+### allen-mckeown-and-kondo
+content/2019/04/24/allen-mckeown-and-kondo
+content/2019/04/allen-mckeown-and-kondo
+
+### alternative-vm-swap-file-locations-qa
+content/2012/11/14/alternative-vm-swap-file-locations-qa
+content/2012/11/alternative-vm-swap-file-locations-qa
+
+### alternative-vm-swap-file-locations-qa-2
+content/2012/11/14/alternative-vm-swap-file-locations-qa-2
+content/2012/11/alternative-vm-swap-file-locations-qa-2
+
+### alternative-vm-swap-file-locations-qa-part-2
+content/2012/11/19/alternative-vm-swap-file-locations-qa-part-2
+content/2012/11/alternative-vm-swap-file-locations-qa-part-2
+
+### alternative-vm-swap-file-locations-qa-part-2-2
+content/2012/11/19/alternative-vm-swap-file-locations-qa-part-2-2
+content/2012/11/alternative-vm-swap-file-locations-qa-part-2-2
+
+### amazon-indexing-problems
+content/2011/07/15/amazon-indexing-problems
+content/2011/07/amazon-indexing-problems
+
+### amd-epyc-and-vsphere-vnuma
+content/2019/02/19/amd-epyc-and-vsphere-vnuma
+content/2019/02/amd-epyc-and-vsphere-vnuma
+
+### amd-epyc-naples-vs-rome-and-vsphere-cpu-scheduler-updates
+content/2019/10/14/amd-epyc-naples-vs-rome-and-vsphere-cpu-scheduler-updates
+content/2019/10/amd-epyc-naples-vs-rome-and-vsphere-cpu-scheduler-updates
+
+### amd-magny-cours-and-esx
+content/2011/01/05/amd-magny-cours-and-esx
+content/2011/01/amd-magny-cours-and-esx
+
+### apply-user-defined-storage-capabilities-to-multiple-datastore-at-once
+content/2012/10/01/apply-user-defined-storage-capabilities-to-multiple-datastore-at-once
+content/2012/10/apply-user-defined-storage-capabilities-to-multiple-datastore-at-once
+
+### architecture-and-design-of-datastore-clusters
+content/2011/09/16/architecture-and-design-of-datastore-clusters
+content/2011/09/architecture-and-design-of-datastore-clusters
+
+### avoiding-vmdk-level-over-commitment-while-using-thin-disks-and-storage-drs
+content/2012/10/01/avoiding-vmdk-level-over-commitment-while-using-thin-disks-and-storage-drs
+content/2012/10/avoiding-vmdk-level-over-commitment-while-using-thin-disks-and-storage-drs
+
+### awesome-read-storage-performance-and-testing-best-practices
+content/2013/04/24/awesome-read-storage-performance-and-testing-best-practices
+content/2013/04/awesome-read-storage-performance-and-testing-best-practices
+
+### ballooning-queue-depths-and-other-back-pressure-features-revisited
+content/2015/05/20/ballooning-queue-depths-and-other-back-pressure-features-revisited
+content/2015/05/ballooning-queue-depths-and-other-back-pressure-features-revisited
+
+### basic-terminologies-large-language-models
+content/2023/08/18/basic-terminologies-large-language-models
+content/2023/08/basic-terminologies-large-language-models
+
+### beating-a-dead-horse-using-cpu-affinity
+content/2011/01/11/beating-a-dead-horse-using-cpu-affinity
+content/2011/01/beating-a-dead-horse-using-cpu-affinity
+
+### best-practices
+content/2010/10/21/best-practices
+content/2010/10/best-practices
+
+### black-and-white-edition-clustering-deepdive-available
+content/2011/07/16/black-and-white-edition-clustering-deepdive-available
+content/2011/07/black-and-white-edition-clustering-deepdive-available
+
+### blog-hacked-vs0ciety
+content/2016/09/27/blog-hacked-vs0ciety
+content/2016/09/blog-hacked-vs0ciety
+
+### blog-post-on
+content/2012/05/23/blog-post-on
+content/2012/05/blog-post-on
+
+### calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process
+content/2012/12/04/calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process
+content/2012/12/calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process
+
+### catch-me-at-vmworld-2018
+content/2018/08/10/catch-me-at-vmworld-2018
+content/2018/08/catch-me-at-vmworld-2018
+
+### changing-your-vcenter-logging-level-using-the-webclient
+content/2012/10/05/changing-your-vcenter-logging-level-using-the-webclient
+content/2012/10/changing-your-vcenter-logging-level-using-the-webclient
+
+### cloudphysics-in-a-nutshell
+content/2012/08/22/cloudphysics-in-a-nutshell
+content/2012/08/cloudphysics-in-a-nutshell
+
+### cloudphysics-vm-reservation-limits-card-a-closer-look
+content/2012/10/05/cloudphysics-vm-reservation-limits-card-a-closer-look
+content/2012/10/cloudphysics-vm-reservation-limits-card-a-closer-look
+
+### cloudphysics-vm-reservation-limits-card-a-closer-look-2
+content/2012/10/05/cloudphysics-vm-reservation-limits-card-a-closer-look-2
+content/2012/10/cloudphysics-vm-reservation-limits-card-a-closer-look-2
+
+### cloudphysics-webinar-expert-tips-for-managing-datastore-space-in-a-vsphere-environment
+content/2013/05/09/cloudphysics-webinar-expert-tips-for-managing-datastore-space-in-a-vsphere-environment
+content/2013/05/cloudphysics-webinar-expert-tips-for-managing-datastore-space-in-a-vsphere-environment
+
+### compute-policy-in-vmware-cloud-on-aws
+content/2018/10/19/compute-policy-in-vmware-cloud-on-aws
+content/2018/10/compute-policy-in-vmware-cloud-on-aws
+
+### connecting-multiple-drs-clusters-to-a-single-storage-drs-datastore-cluster
+content/2012/04/19/connecting-multiple-drs-clusters-to-a-single-storage-drs-datastore-cluster
+content/2012/04/connecting-multiple-drs-clusters-to-a-single-storage-drs-datastore-cluster
+
+### considerations-when-modifying-the-individual-vm-automation-level
+content/2012/07/27/considerations-when-modifying-the-individual-vm-automation-level
+content/2012/07/considerations-when-modifying-the-individual-vm-automation-level
+
+### consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick
+content/2014/03/10/consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick
+content/2014/03/consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick
+
+### contention-on-lightly-utilized-hosts
+content/2011/04/27/contention-on-lightly-utilized-hosts
+content/2011/04/contention-on-lightly-utilized-hosts
+
+### could-not-initialize-plugin-libnvidia-vgx-so-check-sr-iov-in-the-bios
+content/2022/10/18/could-not-initialize-plugin-libnvidia-vgx-so-check-sr-iov-in-the-bios
+content/2022/10/could-not-initialize-plugin-libnvidia-vgx-so-check-sr-iov-in-the-bios
+
+### cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core
+content/2021/06/11/cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core
+content/2021/06/cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core
+
+### cyber-monday-deal
+content/2011/11/26/cyber-monday-deal
+content/2011/11/cyber-monday-deal
+
+### database-workload-characteristics-and-their-impact-on-storage-architecture-design-part-5-query-execution-plans
+content/2015/04/07/database-workload-characteristics-and-their-impact-on-storage-architecture-design-part-5-query-execution-plans
+content/2015/04/database-workload-characteristics-and-their-impact-on-storage-architecture-design-part-5-query-execution-plans
+
+### database-workload-characteristics-impact-storage-architecture-design-part-1
+content/2014/09/23/database-workload-characteristics-impact-storage-architecture-design-part-1
+content/2014/09/database-workload-characteristics-impact-storage-architecture-design-part-1
+
+### database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines
+content/2014/09/24/database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines
+content/2014/09/database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines
+
+### database-workload-characteristics-impact-storage-architecture-design-part-3-ancillary-structures-tuning-databases
+content/2014/09/29/database-workload-characteristics-impact-storage-architecture-design-part-3-ancillary-structures-tuning-databases
+content/2014/09/database-workload-characteristics-impact-storage-architecture-design-part-3-ancillary-structures-tuning-databases
+
+### db-deepdive-part-6-query-plans-intermediate-results-tempdb-and-storage-performance
+content/2015/04/09/db-deepdive-part-6-query-plans-intermediate-results-tempdb-and-storage-performance
+content/2015/04/db-deepdive-part-6-query-plans-intermediate-results-tempdb-and-storage-performance
+
+### decoupling-cores-per-socket-virtual-numa-topology-vsphere-6-5
+content/2016/12/12/decoupling-cores-per-socket-virtual-numa-topology-vsphere-6-5
+content/2016/12/decoupling-cores-per-socket-virtual-numa-topology-vsphere-6-5
+
+### dedicated-hardware-public-cloud-world
+content/2018/05/03/dedicated-hardware-public-cloud-world
+content/2018/05/dedicated-hardware-public-cloud-world
+
+### deep-learning-technology-stack-overview-for-the-vadmin-part-1
+content/2020/03/12/deep-learning-technology-stack-overview-for-the-vadmin-part-1
+content/2020/03/deep-learning-technology-stack-overview-for-the-vadmin-part-1
+
+### deploying-volumes-with-command-line-interface-lefthand-cliq
+content/2009/08/25/deploying-volumes-with-command-line-interface-lefthand-cliq
+content/2009/08/deploying-volumes-with-command-line-interface-lefthand-cliq
+
+### deploying-volumes-with-command-line-interface-lefthand-cliq-2
+content/2009/08/25/deploying-volumes-with-command-line-interface-lefthand-cliq-2
+content/2009/08/deploying-volumes-with-command-line-interface-lefthand-cliq-2
+
+### designing-your-vmotion-network
+content/2012/12/18/designing-your-vmotion-network
+content/2012/12/designing-your-vmotion-network
+
+### designing-your-vmotion-network-3-reasons-why-i-use-a-distributed-switch-for-vmotion-networks
+content/2013/01/30/designing-your-vmotion-network-3-reasons-why-i-use-a-distributed-switch-for-vmotion-networks
+content/2013/01/designing-your-vmotion-network-3-reasons-why-i-use-a-distributed-switch-for-vmotion-networks
+
+### designing-your-vmotion-network-multi-nic-and-netioc
+content/2013/01/18/designing-your-vmotion-network-multi-nic-and-netioc
+content/2013/01/designing-your-vmotion-network-multi-nic-and-netioc
+
+### designing-your-vmotion-networking-choose-link-aggregation-over-multi-nic-vmotion
+content/2013/01/25/designing-your-vmotion-networking-choose-link-aggregation-over-multi-nic-vmotion
+content/2013/01/designing-your-vmotion-networking-choose-link-aggregation-over-multi-nic-vmotion
+
+### direct-ip-storage-and-using-netioc-user-defined-network-resource-pools-for-qos
+content/2013/01/21/direct-ip-storage-and-using-netioc-user-defined-network-resource-pools-for-qos
+content/2013/01/direct-ip-storage-and-using-netioc-user-defined-network-resource-pools-for-qos
+
+### disable-ballooning
+content/2010/11/29/disable-ballooning
+content/2010/11/disable-ballooning
+
+### disable-drs-and-vm-host-rules
+content/2010/07/22/disable-drs-and-vm-host-rules
+content/2010/07/disable-drs-and-vm-host-rules
+
+### disable-vmotion-single-vm
+content/2014/08/18/disable-vmotion-single-vm
+content/2014/08/disable-vmotion-single-vm
+
+### disabling-mingoodness-and-costbenefit
+content/2012/07/09/disabling-mingoodness-and-costbenefit
+content/2012/07/disabling-mingoodness-and-costbenefit
+
+### disallowing-multiple-vm-console-sessions
+content/2010/11/30/disallowing-multiple-vm-console-sessions
+content/2010/11/disallowing-multiple-vm-console-sessions
+
+### discover-whats-new-in-vsphere-8-0-u1-and-vsan-8-0-u1
+content/2023/03/16/discover-whats-new-in-vsphere-8-0-u1-and-vsan-8-0-u1
+content/2023/03/discover-whats-new-in-vsphere-8-0-u1-and-vsan-8-0-u1
+
+### distribution-of-resources-based-on-shares-in-a-resource-pool-environment
+content/2013/02/28/distribution-of-resources-based-on-shares-in-a-resource-pool-environment
+content/2013/02/distribution-of-resources-based-on-shares-in-a-resource-pool-environment
+
+### do-you-use-vapps
+content/2013/02/26/do-you-use-vapps
+content/2013/02/do-you-use-vapps
+
+### dont-backup-go-forward-with-rubrik
+content/2015/03/24/dont-backup-go-forward-with-rubrik
+content/2015/03/dont-backup-go-forward-with-rubrik
+
+### download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free
+content/2013/06/05/download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free
+content/2013/06/download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free
+
+### dpm-scheduled-task
+content/2010/07/20/dpm-scheduled-task
+content/2010/07/dpm-scheduled-task
+
+### draft-of-the-vsphere-4-1-hardening-guide-released
+content/2011/01/19/draft-of-the-vsphere-4-1-hardening-guide-released
+content/2011/01/draft-of-the-vsphere-4-1-hardening-guide-released
+
+### drs-4-1-adaptive-maxmovesperhost
+content/2010/08/27/drs-4-1-adaptive-maxmovesperhost
+content/2010/08/drs-4-1-adaptive-maxmovesperhost
+
+### drs-and-memory-balancing-in-non-overcomitted-clusters
+content/2012/08/10/drs-and-memory-balancing-in-non-overcomitted-clusters
+content/2012/08/drs-and-memory-balancing-in-non-overcomitted-clusters
+
+### drs-clusters-and-allocating-reserved-memory
+content/2012/05/21/drs-clusters-and-allocating-reserved-memory
+content/2012/05/drs-clusters-and-allocating-reserved-memory
+
+### drs-ft-integration
+content/2010/07/22/drs-ft-integration
+content/2010/07/drs-ft-integration
+
+### drs-migration-threshold-in-vsphere-7
+content/2020/05/08/drs-migration-threshold-in-vsphere-7
+content/2020/05/drs-migration-threshold-in-vsphere-7
+
+### drs-resource-distribution-chart
+content/2010/03/08/drs-resource-distribution-chart
+content/2010/03/drs-resource-distribution-chart
+
+### drs-threshold-1-does-not-initiate-load-balancing-vmotions
+content/2021/10/22/drs-threshold-1-does-not-initiate-load-balancing-vmotions
+content/2021/10/drs-threshold-1-does-not-initiate-load-balancing-vmotions
+
+### dutch-vbeers
+content/2010/12/06/dutch-vbeers
+content/2010/12/dutch-vbeers
+
+### dutch-vbeers-2
+content/2011/01/31/dutch-vbeers-2
+content/2011/01/dutch-vbeers-2
+
+### dvd-store-the-perfect-homelab-workload-tool
+content/2016/03/31/dvd-store-the-perfect-homelab-workload-tool
+content/2016/03/dvd-store-the-perfect-homelab-workload-tool
+
+### dying-home-lab-feedback-welcome
+content/2018/05/15/dying-home-lab-feedback-welcome
+content/2018/05/dying-home-lab-feedback-welcome
+
+### elastic-vdc-and-how-to-span-a-provider-vdc-across-multiple-drs-clusters
+content/2013/03/29/elastic-vdc-and-how-to-span-a-provider-vdc-across-multiple-drs-clusters
+content/2013/03/elastic-vdc-and-how-to-span-a-provider-vdc-across-multiple-drs-clusters
+
+### embarking-on-a-new-adventure-joining-pernixdata-as-tech-evangelist
+content/2013/04/29/embarking-on-a-new-adventure-joining-pernixdata-as-tech-evangelist
+content/2013/04/embarking-on-a-new-adventure-joining-pernixdata-as-tech-evangelist
+
+### enhanced-vmotion-compatibility
+content/2010/12/14/enhanced-vmotion-compatibility
+content/2010/12/enhanced-vmotion-compatibility
+
+### error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc
+content/2013/02/11/error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc
+content/2013/02/error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc
+
+### error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc-2
+content/2013/02/11/error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc-2
+content/2013/02/error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc-2
+
+### esx-4-1-numa-scheduling
+content/2010/09/13/esx-4-1-numa-scheduling
+content/2010/09/esx-4-1-numa-scheduling
+
+### esx-4i-support-jumbo-frames
+content/2009/12/19/esx-4i-support-jumbo-frames
+content/2009/12/esx-4i-support-jumbo-frames
+
+### esx4-alua-and-hp-continuous-access
+content/2010/03/25/esx4-alua-and-hp-continuous-access
+content/2010/03/esx4-alua-and-hp-continuous-access
+
+### european-distributor-for-ha-and-drs-book
+content/2010/12/09/european-distributor-for-ha-and-drs-book
+content/2010/12/european-distributor-for-ha-and-drs-book
+
+### exciting-sessions-from-nvidia-gtc-fall-2021
+content/2021/12/09/exciting-sessions-from-nvidia-gtc-fall-2021
+content/2021/12/exciting-sessions-from-nvidia-gtc-fall-2021
+
+### expandable-reservation-on-resource-pools-how-does-it-work
+content/2013/02/12/expandable-reservation-on-resource-pools-how-does-it-work
+content/2013/02/expandable-reservation-on-resource-pools-how-does-it-work
+
+### explainer-spectre-meltdown-graham-sutherland
+content/2018/01/05/explainer-spectre-meltdown-graham-sutherland
+content/2018/01/explainer-spectre-meltdown-graham-sutherland
+
+### exploring-core-motivation-writing-book
+content/2017/07/11/exploring-core-motivation-writing-book
+content/2017/07/exploring-core-motivation-writing-book
+
+### fab-four-vmworld-2012-sessions-approved
+content/2012/06/27/fab-four-vmworld-2012-sessions-approved
+content/2012/06/fab-four-vmworld-2012-sessions-approved
+
+### fdm-in-mixed-esx-and-vsphere-clusters
+content/2011/10/17/fdm-in-mixed-esx-and-vsphere-clusters
+content/2011/10/fdm-in-mixed-esx-and-vsphere-clusters
+
+### flex-10-lessons-learned
+content/2009/04/26/flex-10-lessons-learned
+content/2009/04/flex-10-lessons-learned
+
+### flex10-update
+content/2009/07/08/flex10-update
+content/2009/07/flex10-update
+
+### free-vsphere-6-5-host-resources-deep-dive-ebook
+content/2017/11/07/free-vsphere-6-5-host-resources-deep-dive-ebook
+content/2017/11/free-vsphere-6-5-host-resources-deep-dive-ebook
+
+### free-vsphere-clustering-deep-dive-book-at-vmworld-europe
+content/2018/11/02/free-vsphere-clustering-deep-dive-book-at-vmworld-europe
+content/2018/11/free-vsphere-clustering-deep-dive-book-at-vmworld-europe
+
+### from-the-archives-an-old-isometric-diagram
+content/2012/10/05/from-the-archives-an-old-isometric-diagram
+content/2012/10/from-the-archives-an-old-isometric-diagram
+
+### full-color-version-of-the-new-book
+content/2011/03/24/full-color-version-of-the-new-book
+content/2011/03/full-color-version-of-the-new-book
+
+### funny-ha-and-drs-technical-deepdive-audiobook
+content/2011/01/03/funny-ha-and-drs-technical-deepdive-audiobook
+content/2011/01/funny-ha-and-drs-technical-deepdive-audiobook
+
+### gen-ai-sessions-at-explore-barcelona-2023
+content/2023/11/01/gen-ai-sessions-at-explore-barcelona-2023
+content/2023/11/gen-ai-sessions-at-explore-barcelona-2023
+
+### get-free-book-vmworld
+content/2017/08/25/get-free-book-vmworld
+content/2017/08/get-free-book-vmworld
+
+### get-your-votes-in-while-it-can-voting-closes-at-friday
+content/2010/01/11/get-your-votes-in-while-it-can-voting-closes-at-friday
+content/2010/01/get-your-votes-in-while-it-can-voting-closes-at-friday
+
+### gotcha-disable-reserve-guest-memory-setting-remove-reservation
+content/2014/04/03/gotcha-disable-reserve-guest-memory-setting-remove-reservation
+content/2014/04/gotcha-disable-reserve-guest-memory-setting-remove-reservation
+
+### ha-admission-control-is-not-a-capacity-management-tool
+content/2012/10/17/ha-admission-control-is-not-a-capacity-management-tool
+content/2012/10/ha-admission-control-is-not-a-capacity-management-tool
+
+### ha-admission-control-policy-use
+content/2014/04/04/ha-admission-control-policy-use
+content/2014/04/ha-admission-control-policy-use
+
+### ha-and-drs-book-in-action
+content/2011/01/13/ha-and-drs-book-in-action
+content/2011/01/ha-and-drs-book-in-action
+
+### ha-and-drs-technical-deepdive-available
+content/2010/12/06/ha-and-drs-technical-deepdive-available
+content/2010/12/ha-and-drs-technical-deepdive-available
+
+### ha-percentage-based-admission-control-from-a-resource-management-perspective-part-1
+content/2013/02/15/ha-percentage-based-admission-control-from-a-resource-management-perspective-part-1
+content/2013/02/ha-percentage-based-admission-control-from-a-resource-management-perspective-part-1
+
+### hammer-magicbands-and-challenging-status-quo
+content/2015/04/23/hammer-magicbands-and-challenging-status-quo
+content/2015/04/hammer-magicbands-and-challenging-status-quo
+
+### have-you-seen-the-new-video-introduction-to-pernixdata
+content/2013/08/06/have-you-seen-the-new-video-introduction-to-pernixdata
+content/2013/08/have-you-seen-the-new-video-introduction-to-pernixdata
+
+### have-you-signed-up-for-the-benelux-software-defined-datacenter-roadshow-yet
+content/2013/02/14/have-you-signed-up-for-the-benelux-software-defined-datacenter-roadshow-yet
+content/2013/02/have-you-signed-up-for-the-benelux-software-defined-datacenter-roadshow-yet
+
+### hello-world-2
+content/2013/03/25/hello-world-2
+content/2013/03/hello-world-2
+
+### help-drs-cluster-load-balancing
+content/2014/03/18/help-drs-cluster-load-balancing
+content/2014/03/help-drs-cluster-load-balancing
+
+### help-us-make-vmotion-even-better
+content/2018/10/02/help-us-make-vmotion-even-better
+content/2018/10/help-us-make-vmotion-even-better
+
+### hide-all-getting-started-pages-in-vsphere-5-1-webclient
+content/2013/01/23/hide-all-getting-started-pages-in-vsphere-5-1-webclient
+content/2013/01/hide-all-getting-started-pages-in-vsphere-5-1-webclient
+
+### home-lab-fundamentals-dns-reverse-lookup-zones
+content/2016/06/13/home-lab-fundamentals-dns-reverse-lookup-zones
+content/2016/06/home-lab-fundamentals-dns-reverse-lookup-zones
+
+### home-lab-fundamentals-time-sync
+content/2016/06/03/home-lab-fundamentals-time-sync
+content/2016/06/home-lab-fundamentals-time-sync
+
+### homelab-power-supermicro-system-sshing-ipmi
+content/2014/04/29/homelab-power-supermicro-system-sshing-ipmi
+content/2014/04/homelab-power-supermicro-system-sshing-ipmi
+
+### host-deep-dive-first-major-milestone
+content/2017/07/24/host-deep-dive-first-major-milestone
+content/2017/07/host-deep-dive-first-major-milestone
+
+### host-deep-dive-stickers
+content/2017/07/03/host-deep-dive-stickers
+content/2017/07/host-deep-dive-stickers
+
+### host-not-ready
+content/2016/11/04/host-not-ready
+content/2016/11/host-not-ready
+
+### hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws
+content/2018/07/20/hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws
+content/2018/07/hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws
+
+### how-to-attach-vm-storage-profiles-to-a-virtual-machine-using-the-web-client
+content/2012/09/14/how-to-attach-vm-storage-profiles-to-a-virtual-machine-using-the-web-client
+content/2012/09/how-to-attach-vm-storage-profiles-to-a-virtual-machine-using-the-web-client
+
+### how-to-create-a-datastore-cluster-using-the-new-web-client
+content/2012/09/12/how-to-create-a-datastore-cluster-using-the-new-web-client
+content/2012/09/how-to-create-a-datastore-cluster-using-the-new-web-client
+
+### how-to-create-a-new-storage-drs-recommendation-generated-alarm
+content/2012/11/30/how-to-create-a-new-storage-drs-recommendation-generated-alarm
+content/2012/11/how-to-create-a-new-storage-drs-recommendation-generated-alarm
+
+### how-to-create-a-new-storage-drs-recommendation-generated-alarm-2
+content/2012/11/30/how-to-create-a-new-storage-drs-recommendation-generated-alarm-2
+content/2012/11/how-to-create-a-new-storage-drs-recommendation-generated-alarm-2
+
+### how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey
+content/2022/12/21/how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey
+content/2022/12/how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey
+
+### how-to-create-vm-to-host-affinity-rules-using-the-webclient
+content/2012/09/21/how-to-create-vm-to-host-affinity-rules-using-the-webclient
+content/2012/09/how-to-create-vm-to-host-affinity-rules-using-the-webclient
+
+### how-to-enable-sioc-stats-only-mode
+content/2013/02/11/how-to-enable-sioc-stats-only-mode
+content/2013/02/how-to-enable-sioc-stats-only-mode
+
+### how-to-setup-multi-nic-vmotion-on-a-distributed-vswitch
+content/2013/02/01/how-to-setup-multi-nic-vmotion-on-a-distributed-vswitch
+content/2013/02/how-to-setup-multi-nic-vmotion-on-a-distributed-vswitch
+
+### how-to-write-a-book-show-up-daily
+content/2022/08/01/how-to-write-a-book-show-up-daily
+content/2022/08/how-to-write-a-book-show-up-daily
+
+### hp-continuous-access-and-the-use-of-lun-balancing-scripts
+content/2009/02/09/hp-continuous-access-and-the-use-of-lun-balancing-scripts
+content/2009/02/hp-continuous-access-and-the-use-of-lun-balancing-scripts
+
+### identify-storage-performance-issues
+content/2010/03/25/identify-storage-performance-issues
+content/2010/03/identify-storage-performance-issues
+
+### im-coming-home
+content/2016/08/30/im-coming-home
+content/2016/08/im-coming-home
+
+### impact-cpu-hot-add-numa-scheduling
+content/2017/04/14/impact-cpu-hot-add-numa-scheduling
+content/2017/04/impact-cpu-hot-add-numa-scheduling
+
+### impact-of-host-local-vm-swap-on-ha-and-drs
+content/2010/02/15/impact-of-host-local-vm-swap-on-ha-and-drs
+content/2010/02/impact-of-host-local-vm-swap-on-ha-and-drs
+
+### impact-of-intra-vm-affinity-rules-on-storage-drs
+content/2012/02/21/impact-of-intra-vm-affinity-rules-on-storage-drs
+content/2012/02/impact-of-intra-vm-affinity-rules-on-storage-drs
+
+### impact-of-load-balancing-on-datastore-cluster-configuration
+content/2012/01/02/impact-of-load-balancing-on-datastore-cluster-configuration
+content/2012/01/impact-of-load-balancing-on-datastore-cluster-configuration
+
+### impact-of-memory-reservation
+content/2009/12/08/impact-of-memory-reservation
+content/2009/12/impact-of-memory-reservation
+
+### impact-of-mismatch-guest-os-type
+content/2009/12/15/impact-of-mismatch-guest-os-type
+content/2009/12/impact-of-mismatch-guest-os-type
+
+### impact-of-oversized-virtual-machines-part-1
+content/2010/12/16/impact-of-oversized-virtual-machines-part-1
+content/2010/12/impact-of-oversized-virtual-machines-part-1
+
+### impact-of-oversized-virtual-machines-part-2
+content/2010/12/17/impact-of-oversized-virtual-machines-part-2
+content/2010/12/impact-of-oversized-virtual-machines-part-2
+
+### impact-of-oversized-virtual-machines-part-3
+content/2011/01/03/impact-of-oversized-virtual-machines-part-3
+content/2011/01/impact-of-oversized-virtual-machines-part-3
+
+### impact-on-ssl-certificates-when-upgrading-srm-1-to-srm-4
+content/2009/11/08/impact-on-ssl-certificates-when-upgrading-srm-1-to-srm-4
+content/2009/11/impact-on-ssl-certificates-when-upgrading-srm-1-to-srm-4
+
+### implicit-anti-affinity-rules-and-drs-placement-behavior
+content/2013/02/19/implicit-anti-affinity-rules-and-drs-placement-behavior
+content/2013/02/implicit-anti-affinity-rules-and-drs-placement-behavior
+
+### improve-public-speaking-reading-book
+content/2014/09/08/improve-public-speaking-reading-book
+content/2014/09/improve-public-speaking-reading-book
+
+### increasing-the-queue-depth
+content/2009/03/04/increasing-the-queue-depth
+content/2009/03/increasing-the-queue-depth
+
+### initial-placement-of-a-vsphere-native-pod
+content/2020/03/06/initial-placement-of-a-vsphere-native-pod
+content/2020/03/initial-placement-of-a-vsphere-native-pod
+
+### insights-into-cpu-and-memory-configuration-of-esxi-hosts
+content/2015/12/23/insights-into-cpu-and-memory-configuration-of-esxi-hosts
+content/2015/12/insights-into-cpu-and-memory-configuration-of-esxi-hosts
+
+### insights-into-vm-density
+content/2016/02/15/insights-into-vm-density
+content/2016/02/insights-into-vm-density
+
+### installing-exchange-jetstress-without-full-installation-media
+content/2014/02/05/installing-exchange-jetstress-without-full-installation-media
+content/2014/02/installing-exchange-jetstress-without-full-installation-media
+
+### interesting-related-documentaries
+content/2014/12/24/interesting-related-documentaries
+content/2014/12/interesting-related-documentaries
+
+### introduction-2016-numa-deep-dive-series
+content/2016/07/06/introduction-2016-numa-deep-dive-series
+content/2016/07/introduction-2016-numa-deep-dive-series
+
+### introduction-elastic-drs
+content/2018/07/17/introduction-elastic-drs
+content/2018/07/introduction-elastic-drs
+
+### io-analyzer-v1-1
+content/2012/03/30/io-analyzer-v1-1
+content/2012/03/io-analyzer-v1-1
+
+### ip-hash-versus-lbt
+content/2011/02/24/ip-hash-versus-lbt
+content/2011/02/ip-hash-versus-lbt
+
+### joining-vmware
+content/2009/12/30/joining-vmware
+content/2009/12/joining-vmware
+
+### kb-2104983-explained-default-behavior-drs-changed-make-feature-less-aggressive
+content/2015/01/28/kb-2104983-explained-default-behavior-drs-changed-make-feature-less-aggressive
+content/2015/01/kb-2104983-explained-default-behavior-drs-changed-make-feature-less-aggressive
+
+### keep-alive-ping-some-updates
+content/2011/06/08/keep-alive-ping-some-updates
+content/2011/06/keep-alive-ping-some-updates
+
+### keynoting-deutsche-vmug-london-vmug
+content/2017/06/06/keynoting-deutsche-vmug-london-vmug
+content/2017/06/keynoting-deutsche-vmug-london-vmug
+
+### kindle-ebook-host-deep-dive-available
+content/2017/07/24/kindle-ebook-host-deep-dive-available
+content/2017/07/kindle-ebook-host-deep-dive-available
+
+### kindle-version-of-hadrs-book-and-info-on-amazons-regional-price-scheme
+content/2011/04/06/kindle-version-of-hadrs-book-and-info-on-amazons-regional-price-scheme
+content/2011/04/kindle-version-of-hadrs-book-and-info-on-amazons-regional-price-scheme
+
+### kindle-version-of-hadrs-book-and-info-on-amazons-regional-price-scheme-2
+content/2011/04/06/kindle-version-of-hadrs-book-and-info-on-amazons-regional-price-scheme-2
+content/2011/04/kindle-version-of-hadrs-book-and-info-on-amazons-regional-price-scheme-2
+
+### kubernetes-at-vmworld-europe
+content/2018/10/30/kubernetes-at-vmworld-europe
+content/2018/10/kubernetes-at-vmworld-europe
+
+### kubernetes-swap-and-the-vmware-balloon-driver
+content/2018/11/15/kubernetes-swap-and-the-vmware-balloon-driver
+content/2018/11/kubernetes-swap-and-the-vmware-balloon-driver
+
+### kubernetes-vsphere-compute-storage-doubleheader-vmworld-session
+content/2018/07/19/kubernetes-vsphere-compute-storage-doubleheader-vmworld-session
+content/2018/07/kubernetes-vsphere-compute-storage-doubleheader-vmworld-session
+
+### lefthand-san-lessons-learned
+content/2009/10/11/lefthand-san-lessons-learned
+content/2009/10/lefthand-san-lessons-learned
+
+### let-cloudphysics-help-rid-heartbleed
+content/2014/07/28/let-cloudphysics-help-rid-heartbleed
+content/2014/07/let-cloudphysics-help-rid-heartbleed
+
+### life-data-center-story-love-betrayal-virtualization
+content/2014/07/31/life-data-center-story-love-betrayal-virtualization
+content/2014/07/life-data-center-story-love-betrayal-virtualization
+
+### limiting-the-number-of-concurrent-vmotions
+content/2013/01/14/limiting-the-number-of-concurrent-vmotions
+content/2013/01/limiting-the-number-of-concurrent-vmotions
+
+### limiting-the-number-of-storage-vmotions
+content/2012/06/28/limiting-the-number-of-storage-vmotions
+content/2012/06/limiting-the-number-of-storage-vmotions
+
+### load-based-teaming
+content/2010/07/21/load-based-teaming
+content/2010/07/load-based-teaming
+
+### machine-learning-infrastructure-from-a-vsphere-infrastructure-perspective
+content/2021/08/12/machine-learning-infrastructure-from-a-vsphere-infrastructure-perspective
+content/2021/08/machine-learning-infrastructure-from-a-vsphere-infrastructure-perspective
+
+### machine-learning-on-vmware-cloud-platform-part-1
+content/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1
+content/2022/05/machine-learning-on-vmware-cloud-platform-part-1
+
+### machine-learning-on-vmware-cloud-platform-part-2
+content/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2
+content/2022/06/machine-learning-on-vmware-cloud-platform-part-2
+
+### machine-learning-on-vmware-platform-part-3-training-versus-inference
+content/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference
+content/2022/06/machine-learning-on-vmware-platform-part-3-training-versus-inference
+
+### machine-learning-workload-and-gpgpu-numa-node-locality
+content/2020/01/30/machine-learning-workload-and-gpgpu-numa-node-locality
+content/2020/01/machine-learning-workload-and-gpgpu-numa-node-locality
+
+### managing-your-virtual-datacenter-and-home-lab-with-a-mac
+content/2016/04/21/managing-your-virtual-datacenter-and-home-lab-with-a-mac
+content/2016/04/managing-your-virtual-datacenter-and-home-lab-with-a-mac
+
+### manual-storage-vmotion-migration-into-datastore-cluster
+content/2013/01/08/manual-storage-vmotion-migration-into-datastore-cluster
+content/2013/01/manual-storage-vmotion-migration-into-datastore-cluster
+
+### mem-minfreepct-sliding-scale-function
+content/2011/07/26/mem-minfreepct-sliding-scale-function
+content/2011/07/mem-minfreepct-sliding-scale-function
+
+### memory-configuration-scalability-blog-series
+content/2015/02/18/memory-configuration-scalability-blog-series
+content/2015/02/memory-configuration-scalability-blog-series
+
+### memory-deep-dive
+content/2015/02/20/memory-deep-dive
+content/2015/02/memory-deep-dive
+
+### memory-deep-dive-ddr4
+content/2015/02/25/memory-deep-dive-ddr4
+content/2015/02/memory-deep-dive-ddr4
+
+### memory-deep-dive-memory-subsystem-bandwidth
+content/2015/02/19/memory-deep-dive-memory-subsystem-bandwidth
+content/2015/02/memory-deep-dive-memory-subsystem-bandwidth
+
+### memory-deep-dive-numa-data-locality
+content/2015/02/27/memory-deep-dive-numa-data-locality
+content/2015/02/memory-deep-dive-numa-data-locality
+
+### memory-deep-dive-summary
+content/2015/03/02/memory-deep-dive-summary
+content/2015/03/memory-deep-dive-summary
+
+### memory-like-storage-means-file-systems-must-change-take
+content/2017/05/25/memory-like-storage-means-file-systems-must-change-take
+content/2017/05/memory-like-storage-means-file-systems-must-change-take
+
+### memory-reclaimation-when-and-how
+content/2010/06/11/memory-reclaimation-when-and-how
+content/2010/06/memory-reclaimation-when-and-how
+
+### memory-tech-primer-memory-subsystem-organization
+content/2015/02/18/memory-tech-primer-memory-subsystem-organization
+content/2015/02/memory-tech-primer-memory-subsystem-organization
+
+### migrating-datastore-clusters-by-changing-storage-profiles-in-a-vcloud
+content/2013/04/12/migrating-datastore-clusters-by-changing-storage-profiles-in-a-vcloud
+content/2013/04/migrating-datastore-clusters-by-changing-storage-profiles-in-a-vcloud
+
+### migrating-vapps-between-drs-clusters-in-an-elastic-vdc
+content/2013/04/17/migrating-vapps-between-drs-clusters-in-an-elastic-vdc
+content/2013/04/migrating-vapps-between-drs-clusters-in-an-elastic-vdc
+
+### mixing-resource-pools-and-virtual-machines-on-the-same-hierarchical-level
+content/2012/05/09/mixing-resource-pools-and-virtual-machines-on-the-same-hierarchical-level
+content/2012/05/mixing-resource-pools-and-virtual-machines-on-the-same-hierarchical-level
+
+### ml-session-at-ctex-vmware-explore
+content/2022/11/04/ml-session-at-ctex-vmware-explore
+content/2022/11/ml-session-at-ctex-vmware-explore
+
+### monitoring-power-consumption-of-your-home-lab-with-a-smart-plug
+content/2016/05/19/monitoring-power-consumption-of-your-home-lab-with-a-smart-plug
+content/2016/05/monitoring-power-consumption-of-your-home-lab-with-a-smart-plug
+
+### ms-word-style-formatting-shortcut-keys-mac
+content/2014/10/27/ms-word-style-formatting-shortcut-keys-mac
+content/2014/10/ms-word-style-formatting-shortcut-keys-mac
+
+### multi-gpu-and-distributed-deep-learning
+content/2020/02/19/multi-gpu-and-distributed-deep-learning
+content/2020/02/multi-gpu-and-distributed-deep-learning
+
+### multi-nic-vmotion-failover-order-configuration
+content/2012/12/20/multi-nic-vmotion-failover-order-configuration
+content/2012/12/multi-nic-vmotion-failover-order-configuration
+
+### multi-nic-vmotion-support-in-vsphere-5-0
+content/2011/07/18/multi-nic-vmotion-support-in-vsphere-5-0
+content/2011/07/multi-nic-vmotion-support-in-vsphere-5-0
+
+### my-first-lefthand-iscsi-vi-architecture
+content/2009/03/23/my-first-lefthand-iscsi-vi-architecture
+content/2009/03/my-first-lefthand-iscsi-vi-architecture
+
+### my-lab-and-the-birth-of-the-portable-ikea-lack-19-datacenter-rack
+content/2013/12/16/my-lab-and-the-birth-of-the-portable-ikea-lack-19-datacenter-rack
+content/2013/12/my-lab-and-the-birth-of-the-portable-ikea-lack-19-datacenter-rack
+
+### my-new-role
+content/2018/10/08/my-new-role
+content/2018/10/my-new-role
+
+### my-picks-for-nvidia-gtc-spring-2023
+content/2023/03/21/my-picks-for-nvidia-gtc-spring-2023
+content/2023/03/my-picks-for-nvidia-gtc-spring-2023
+
+### my-public-vmworld-schedule
+content/2012/08/20/my-public-vmworld-schedule
+content/2012/08/my-public-vmworld-schedule
+
+### my-sessions-at-vmware-explore-2023-las-vegas
+content/2023/08/17/my-sessions-at-vmware-explore-2023-las-vegas
+content/2023/08/my-sessions-at-vmware-explore-2023-las-vegas
+
+### new-book-project-tweet-sized-vsphere-design-considerations-selection-process
+content/2013/06/21/new-book-project-tweet-sized-vsphere-design-considerations-selection-process
+content/2013/06/new-book-project-tweet-sized-vsphere-design-considerations-selection-process
+
+### new-fling-drs-entitlement
+content/2018/05/30/new-fling-drs-entitlement
+content/2018/05/new-fling-drs-entitlement
+
+### new-home-lab-hardware-dual-socket-xeon-v4
+content/2016/06/22/new-home-lab-hardware-dual-socket-xeon-v4
+content/2016/06/new-home-lab-hardware-dual-socket-xeon-v4
+
+### new-job-role
+content/2011/11/21/new-job-role
+content/2011/11/new-job-role
+
+### new-storage-drs-whitepaper-available-at-vmware-com
+content/2013/05/13/new-storage-drs-whitepaper-available-at-vmware-com
+content/2013/05/new-storage-drs-whitepaper-available-at-vmware-com
+
+### new-technical-paper-the-cpu-scheduler-in-vmware-vsphere-5-1
+content/2013/01/24/new-technical-paper-the-cpu-scheduler-in-vmware-vsphere-5-1
+content/2013/01/new-technical-paper-the-cpu-scheduler-in-vmware-vsphere-5-1
+
+### new-tps-management-capabilities
+content/2015/02/02/new-tps-management-capabilities
+content/2015/02/new-tps-management-capabilities
+
+### new-vsphere-8-features-for-consistent-ml-workload-performance
+content/2022/08/30/new-vsphere-8-features-for-consistent-ml-workload-performance
+content/2022/08/new-vsphere-8-features-for-consistent-ml-workload-performance
+
+### new-whitepaper-available-on-vsphere-7-drs-load-balancing
+content/2020/07/22/new-whitepaper-available-on-vsphere-7-drs-load-balancing
+content/2020/07/new-whitepaper-available-on-vsphere-7-drs-load-balancing
+
+### nfs-and-ip-hash-loadbalancing
+content/2009/11/13/nfs-and-ip-hash-loadbalancing
+content/2009/11/nfs-and-ip-hash-loadbalancing
+
+### no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer
+content/2016/05/24/no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer
+content/2016/05/no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer
+
+### node-interleaving-enable-or-disable
+content/2010/12/28/node-interleaving-enable-or-disable
+content/2010/12/node-interleaving-enable-or-disable
+
+### ntpq-p-connection-refused-error-message
+content/2016/05/30/ntpq-p-connection-refused-error-message
+content/2016/05/ntpq-p-connection-refused-error-message
+
+### numa-deep-dive-4-local-memory-optimization
+content/2016/07/13/numa-deep-dive-4-local-memory-optimization
+content/2016/07/numa-deep-dive-4-local-memory-optimization
+
+### numa-deep-dive-part-1-uma-numa
+content/2016/07/07/numa-deep-dive-part-1-uma-numa
+content/2016/07/numa-deep-dive-part-1-uma-numa
+
+### numa-deep-dive-part-2-system-architecture
+content/2016/07/08/numa-deep-dive-part-2-system-architecture
+content/2016/07/numa-deep-dive-part-2-system-architecture
+
+### numa-deep-dive-part-3-cache-coherency
+content/2016/07/11/numa-deep-dive-part-3-cache-coherency
+content/2016/07/numa-deep-dive-part-3-cache-coherency
+
+### numa-deep-dive-part-5-esxi-vmkernel-numa-constructs
+content/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs
+content/2016/08/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs
+
+### numa-hyperthreading-and-numa-preferht
+content/2010/10/07/numa-hyperthreading-and-numa-preferht
+content/2010/10/numa-hyperthreading-and-numa-preferht
+
+### only-two-days-left-to-sign-up-for-your-vmworld-speaker-shirt
+content/2013/08/12/only-two-days-left-to-sign-up-for-your-vmworld-speaker-shirt
+content/2013/08/only-two-days-left-to-sign-up-for-your-vmworld-speaker-shirt
+
+### overlapping-drs-vm-host-affinity-rule-in-a-vsphere-stretched-cluster
+content/2012/12/05/overlapping-drs-vm-host-affinity-rule-in-a-vsphere-stretched-cluster
+content/2012/12/overlapping-drs-vm-host-affinity-rule-in-a-vsphere-stretched-cluster
+
+### part-3-data-path-is-not-managed-as-a-clustered-resource
+content/2015/03/16/part-3-data-path-is-not-managed-as-a-clustered-resource
+content/2015/03/part-3-data-path-is-not-managed-as-a-clustered-resource
+
+### partially-connected-datastore-clusters
+content/2011/10/07/partially-connected-datastore-clusters
+content/2011/10/partially-connected-datastore-clusters
+
+### partially-connected-datastore-clusters-where-can-i-find-the-warnings-and-how-to-solve-it-via-the-web-client
+content/2012/10/15/partially-connected-datastore-clusters-where-can-i-find-the-warnings-and-how-to-solve-it-via-the-web-client
+content/2012/10/partially-connected-datastore-clusters-where-can-i-find-the-warnings-and-how-to-solve-it-via-the-web-client
+
+### pcie-device-numa-node-locality
+content/2020/01/10/pcie-device-numa-node-locality
+content/2020/01/pcie-device-numa-node-locality
+
+### performance-study-drs-cluster-management-reservation-shares
+content/2017/04/10/performance-study-drs-cluster-management-reservation-shares
+content/2017/04/performance-study-drs-cluster-management-reservation-shares
+
+### pernixdata-flash-virtualization-platform-will-revolutionize-virtual-infrastructure-ecosystem-design-2
+content/2013/02/20/pernixdata-flash-virtualization-platform-will-revolutionize-virtual-infrastructure-ecosystem-design-2
+content/2013/02/pernixdata-flash-virtualization-platform-will-revolutionize-virtual-infrastructure-ecosystem-design-2
+
+### platform-9-transform-virtual-infrastructure-private-cloud-within-seconds
+content/2014/08/12/platform-9-transform-virtual-infrastructure-private-cloud-within-seconds
+content/2014/08/platform-9-transform-virtual-infrastructure-private-cloud-within-seconds
+
+### playing-tonight-drs-io-controllers
+content/2014/12/01/playing-tonight-drs-io-controllers
+content/2014/12/playing-tonight-drs-io-controllers
+
+### please-help-vmware-bring-project-nee-down-to-its-knees
+content/2013/02/05/please-help-vmware-bring-project-nee-down-to-its-knees
+content/2013/02/please-help-vmware-bring-project-nee-down-to-its-knees
+
+### project-monterey-and-the-need-for-network-cycles-offload-for-ml-workloads
+content/2021/10/06/project-monterey-and-the-need-for-network-cycles-offload-for-ml-workloads
+content/2021/10/project-monterey-and-the-need-for-network-cycles-offload-for-ml-workloads
+
+### provider-vdc-cluster-or-resource-pool
+content/2010/09/24/provider-vdc-cluster-or-resource-pool
+content/2010/09/provider-vdc-cluster-or-resource-pool
+
+### public-shaming-resource-pool-folder-user
+content/2018/04/25/public-shaming-resource-pool-folder-user
+content/2018/04/public-shaming-resource-pool-folder-user
+
+### public-speaking-schedule
+content/2018/02/21/public-speaking-schedule
+content/2018/02/public-speaking-schedule
+
+### re-impact-of-large-pages-on-consolidation-ratios
+content/2011/01/25/re-impact-of-large-pages-on-consolidation-ratios
+content/2011/01/re-impact-of-large-pages-on-consolidation-ratios
+
+### re-swapping
+content/2010/05/26/re-swapping
+content/2010/05/re-swapping
+
+### recent-reported-intel-ht-bug-not-data-center
+content/2017/06/26/recent-reported-intel-ht-bug-not-data-center
+content/2017/06/recent-reported-intel-ht-bug-not-data-center
+
+### register-now-vmware-cloud-aws-technical-deep-dive-session
+content/2017/08/15/register-now-vmware-cloud-aws-technical-deep-dive-session
+content/2017/08/register-now-vmware-cloud-aws-technical-deep-dive-session
+
+### removing-orphaned-nexus-dvs
+content/2010/03/11/removing-orphaned-nexus-dvs
+content/2010/03/removing-orphaned-nexus-dvs
+
+### removing-the-horizontal-bar-in-the-footer-of-a-word-doc
+content/2012/07/20/removing-the-horizontal-bar-in-the-footer-of-a-word-doc
+content/2012/07/removing-the-horizontal-bar-in-the-footer-of-a-word-doc
+
+### repeat-session-vsphere-clustering-deep-dive-at-vmworld-europe
+content/2018/10/22/repeat-session-vsphere-clustering-deep-dive-at-vmworld-europe
+content/2018/10/repeat-session-vsphere-clustering-deep-dive-at-vmworld-europe
+
+### research-and-innovation-at-vmware-with-chris-wolf
+content/2023/03/27/research-and-innovation-at-vmware-with-chris-wolf
+content/2023/03/research-and-innovation-at-vmware-with-chris-wolf
+
+### reservations-and-cpu-scheduling
+content/2010/06/08/reservations-and-cpu-scheduling
+content/2010/06/reservations-and-cpu-scheduling
+
+### reserve-all-guest-memory-all-locked
+content/2013/02/21/reserve-all-guest-memory-all-locked
+content/2013/02/reserve-all-guest-memory-all-locked
+
+### resource-consumption-encrypted-vmotion
+content/2018/06/26/resource-consumption-encrypted-vmotion
+content/2018/06/resource-consumption-encrypted-vmotion
+
+### resource-pools-and-avoiding-ha-slot-sizing
+content/2010/02/24/resource-pools-and-avoiding-ha-slot-sizing
+content/2010/02/resource-pools-and-avoiding-ha-slot-sizing
+
+### resource-pools-and-simultaneous-vmotions
+content/2010/09/20/resource-pools-and-simultaneous-vmotions
+content/2010/09/resource-pools-and-simultaneous-vmotions
+
+### resource-pools-memory-reservations
+content/2010/05/18/resource-pools-memory-reservations
+content/2010/05/resource-pools-memory-reservations
+
+### resource-pools-sibling-rivalry
+content/2018/07/16/resource-pools-sibling-rivalry
+content/2018/07/resource-pools-sibling-rivalry
+
+### restart-vcenter-results-in-drs-load-balancing
+content/2011/04/08/restart-vcenter-results-in-drs-load-balancing
+content/2011/04/restart-vcenter-results-in-drs-load-balancing
+
+### retrospect-of-2011-content-due-to-bloggers-survey
+content/2012/01/24/retrospect-of-2011-content-due-to-bloggers-survey
+content/2012/01/retrospect-of-2011-content-due-to-bloggers-survey
+
+### sapphire-rapids-memory-configuration
+content/2023/02/28/sapphire-rapids-memory-configuration
+content/2023/02/sapphire-rapids-memory-configuration
+
+### saving-a-resource-pool-structure
+content/2013/04/05/saving-a-resource-pool-structure
+content/2013/04/saving-a-resource-pool-structure
+
+### saving-a-resource-pool-structure-web-client-feature-not-suitable-for-vcd-environments
+content/2013/04/08/saving-a-resource-pool-structure-web-client-feature-not-suitable-for-vcd-environments
+content/2013/04/saving-a-resource-pool-structure-web-client-feature-not-suitable-for-vcd-environments
+
+### scheduling-vsphere-pods
+content/2020/03/20/scheduling-vsphere-pods
+content/2020/03/scheduling-vsphere-pods
+
+### sdrs-and-multi-extents-datastores
+content/2012/01/17/sdrs-and-multi-extents-datastores
+content/2012/01/sdrs-and-multi-extents-datastores
+
+### sdrs-anti-affinity-rule-types-and-ha-interoperability
+content/2012/02/06/sdrs-anti-affinity-rule-types-and-ha-interoperability
+content/2012/02/sdrs-anti-affinity-rule-types-and-ha-interoperability
+
+### sdrs-out-of-space-avoidance
+content/2011/09/13/sdrs-out-of-space-avoidance
+content/2011/09/sdrs-out-of-space-avoidance
+
+### send-f11-key-to-nested-esxi-on-mac
+content/2013/11/05/send-f11-key-to-nested-esxi-on-mac
+content/2013/11/send-f11-key-to-nested-esxi-on-mac
+
+### setting-correct-percentage-of-cluster-resources-reserved
+content/2011/01/20/setting-correct-percentage-of-cluster-resources-reserved
+content/2011/01/setting-correct-percentage-of-cluster-resources-reserved
+
+### simulating-numa-nodes-for-nested-esxi-virtual-appliances
+content/2023/03/02/simulating-numa-nodes-for-nested-esxi-virtual-appliances
+content/2023/03/simulating-numa-nodes-for-nested-esxi-virtual-appliances
+
+### sioc-on-datastores-backed-by-a-single-datapool
+content/2012/12/06/sioc-on-datastores-backed-by-a-single-datapool
+content/2012/12/sioc-on-datastores-backed-by-a-single-datapool
+
+### six-interesting-kubernetes-sessions-at-vmworld-2018
+content/2018/09/07/six-interesting-kubernetes-sessions-at-vmworld-2018
+content/2018/09/six-interesting-kubernetes-sessions-at-vmworld-2018
+
+### sizing-vms-and-numa-nodes
+content/2010/02/03/sizing-vms-and-numa-nodes
+content/2010/02/sizing-vms-and-numa-nodes
+
+### solving-vnuma-topology-mismatch-when-migrating-between-dual-socket-servers-and-quad-socket-servers
+content/2022/03/11/solving-vnuma-topology-mismatch-when-migrating-between-dual-socket-servers-and-quad-socket-servers
+content/2022/03/solving-vnuma-topology-mismatch-when-migrating-between-dual-socket-servers-and-quad-socket-servers
+
+### stop-designing-your-server-platform-with-solely-the-cpu-roadmap-in-mind
+content/2021/12/20/stop-designing-your-server-platform-with-solely-the-cpu-roadmap-in-mind
+content/2021/12/stop-designing-your-server-platform-with-solely-the-cpu-roadmap-in-mind
+
+### storage-drs-and-alternative-swap-file-locations
+content/2012/10/18/storage-drs-and-alternative-swap-file-locations
+content/2012/10/storage-drs-and-alternative-swap-file-locations
+
+### storage-drs-and-storage-profiles-part-2-distributed-vms
+content/2012/09/19/storage-drs-and-storage-profiles-part-2-distributed-vms
+content/2012/09/storage-drs-and-storage-profiles-part-2-distributed-vms
+
+### storage-drs-and-storage-vmotion-bugs-solved-in-vsphere-5-0-update-2
+content/2012/12/21/storage-drs-and-storage-vmotion-bugs-solved-in-vsphere-5-0-update-2
+content/2012/12/storage-drs-and-storage-vmotion-bugs-solved-in-vsphere-5-0-update-2
+
+### storage-drs-automation-level-and-initial-placement-behavior
+content/2012/10/04/storage-drs-automation-level-and-initial-placement-behavior
+content/2012/10/storage-drs-automation-level-and-initial-placement-behavior
+
+### storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection
+content/2013/01/21/storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection
+content/2013/01/storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection
+
+### storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection-2
+content/2013/01/21/storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection-2
+content/2013/01/storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection-2
+
+### storage-drs-datastore-cluster-default-affinity-rule
+content/2012/09/05/storage-drs-datastore-cluster-default-affinity-rule
+content/2012/09/storage-drs-datastore-cluster-default-affinity-rule
+
+### storage-drs-datastore-correlation-detector
+content/2012/09/03/storage-drs-datastore-correlation-detector
+content/2012/09/storage-drs-datastore-correlation-detector
+
+### storage-drs-demo-available-on-vmware-tv
+content/2012/09/27/storage-drs-demo-available-on-vmware-tv
+content/2012/09/storage-drs-demo-available-on-vmware-tv
+
+### storage-drs-device-modeling-behavior
+content/2012/10/03/storage-drs-device-modeling-behavior
+content/2012/10/storage-drs-device-modeling-behavior
+
+### storage-drs-enables-sioc-on-datastores-only-if-io-load-balancing-is-enabled
+content/2012/08/01/storage-drs-enables-sioc-on-datastores-only-if-io-load-balancing-is-enabled
+content/2012/08/storage-drs-enables-sioc-on-datastores-only-if-io-load-balancing-is-enabled
+
+### storage-drs-initial-placement-and-datastore-cluster-defragmentation
+content/2012/01/24/storage-drs-initial-placement-and-datastore-cluster-defragmentation
+content/2012/01/storage-drs-initial-placement-and-datastore-cluster-defragmentation
+
+### storage-drs-initial-placement-workflow
+content/2013/02/05/storage-drs-initial-placement-workflow
+content/2013/02/storage-drs-initial-placement-workflow
+
+### storage-drs-io-load-balancing-and-array-based-auto-tiering
+content/2012/02/09/storage-drs-io-load-balancing-and-array-based-auto-tiering
+content/2012/02/storage-drs-io-load-balancing-and-array-based-auto-tiering
+
+### storage-drs-load-balance-frequency
+content/2012/05/07/storage-drs-load-balance-frequency
+content/2012/05/storage-drs-load-balance-frequency
+
+### storage-drs-survey
+content/2013/01/17/storage-drs-survey
+content/2013/01/storage-drs-survey
+
+### storage-vmotion-and-the-vsphere-web-client
+content/2012/12/18/storage-vmotion-and-the-vsphere-web-client
+content/2012/12/storage-vmotion-and-the-vsphere-web-client
+
+### stretched-clusters-vmware-cloud-aws-really-big-thing
+content/2018/05/16/stretched-clusters-vmware-cloud-aws-really-big-thing
+content/2018/05/stretched-clusters-vmware-cloud-aws-really-big-thing
+
+### sub-numa-clustering
+content/2022/09/21/sub-numa-clustering
+content/2022/09/sub-numa-clustering
+
+### talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast
+content/2025/09/02/talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast
+content/2025/09/talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast
+
+### tech-paper-drs-enhancements-in-vsphere-6-7
+content/2018/09/06/tech-paper-drs-enhancements-in-vsphere-6-7
+content/2018/09/tech-paper-drs-enhancements-in-vsphere-6-7
+
+### technical-paper-vmware-vcloud-director-resource-allocation-models-available-for-download
+content/2012/09/20/technical-paper-vmware-vcloud-director-resource-allocation-models-available-for-download
+content/2012/09/technical-paper-vmware-vcloud-director-resource-allocation-models-available-for-download
+
+### terminal-affinity-poll
+content/2018/09/12/terminal-affinity-poll
+content/2018/09/terminal-affinity-poll
+
+### the-admission-control-family
+content/2012/05/10/the-admission-control-family
+content/2012/05/the-admission-control-family
+
+### the-dynamic-world-of-llm-runtime-memory
+content/2026/01/12/the-dynamic-world-of-llm-runtime-memory
+content/2026/01/the-dynamic-world-of-llm-runtime-memory
+
+### the-impact-of-qos-network-traffic-on-vm-performance
+content/2010/11/18/the-impact-of-qos-network-traffic-on-vm-performance
+content/2010/11/the-impact-of-qos-network-traffic-on-vm-performance
+
+### the-misconception-of-self-learning-capabilities-of-large-language-models-during-production
+content/2024/02/22/the-misconception-of-self-learning-capabilities-of-large-language-models-during-production
+content/2024/02/the-misconception-of-self-learning-capabilities-of-large-language-models-during-production
+
+### there-is-a-new-fling-in-town-drmdiagnose
+content/2013/02/28/there-is-a-new-fling-in-town-drmdiagnose
+content/2013/02/there-is-a-new-fling-in-town-drmdiagnose
+
+### thin-or-thick-disks-its-about-management-not-performance
+content/2012/12/19/thin-or-thick-disks-its-about-management-not-performance
+content/2012/12/thin-or-thick-disks-its-about-management-not-performance
+
+### thought-800-page-vcdx-designs
+content/2016/11/15/thought-800-page-vcdx-designs
+content/2016/11/thought-800-page-vcdx-designs
+
+### timekeeping-best-practices-for-linux
+content/2009/09/18/timekeeping-best-practices-for-linux
+content/2009/09/timekeeping-best-practices-for-linux
+
+### timesavers-for-vcdx-application
+content/2009/12/16/timesavers-for-vcdx-application
+content/2009/12/timesavers-for-vcdx-application
+
+### to-which-host-level-latency-statistic-is-the-sioc-congestion-threshold-related
+content/2012/07/23/to-which-host-level-latency-statistic-is-the-sioc-congestion-threshold-related
+content/2012/07/to-which-host-level-latency-statistic-is-the-sioc-congestion-threshold-related
+
+### top-25-virtualization-bloggers
+content/2010/01/21/top-25-virtualization-bloggers
+content/2010/01/top-25-virtualization-bloggers
+
+### top-5-vblog
+content/2016/07/01/top-5-vblog
+content/2016/07/top-5-vblog
+
+### tracking-down-noisy-neighbors
+content/2016/05/03/tracking-down-noisy-neighbors
+content/2016/05/tracking-down-noisy-neighbors
+
+### training-vs-inference-memory-consumption-by-neural-networks
+content/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks
+content/2022/07/training-vs-inference-memory-consumption-by-neural-networks
+
+### training-vs-inference-network-compression
+content/2022/08/26/training-vs-inference-network-compression
+content/2022/08/training-vs-inference-network-compression
+
+### training-vs-inference-numerical-precision
+content/2022/07/26/training-vs-inference-numerical-precision
+content/2022/07/training-vs-inference-numerical-precision
+
+### two-very-interesting-videos-about-how-computer-algorithms-shapes-todays-world
+content/2013/01/16/two-very-interesting-videos-about-how-computer-algorithms-shapes-todays-world
+content/2013/01/two-very-interesting-videos-about-how-computer-algorithms-shapes-todays-world
+
+### unexplored-territory-ep-34-william-lam-talks-home-labs-christmas-special
+content/2022/12/21/unexplored-territory-ep-34-william-lam-talks-home-labs-christmas-special
+content/2022/12/unexplored-territory-ep-34-william-lam-talks-home-labs-christmas-special
+
+### unexplored-territory-podcast-32-it-giving-mclaren-racing-the-edge
+content/2022/11/28/unexplored-territory-podcast-32-it-giving-mclaren-racing-the-edge
+content/2022/11/unexplored-territory-podcast-32-it-giving-mclaren-racing-the-edge
+
+### unexplored-territory-podcast-ep30-project-keswick-with-alan-renouf
+content/2022/10/31/unexplored-territory-podcast-ep30-project-keswick-with-alan-renouf
+content/2022/10/unexplored-territory-podcast-ep30-project-keswick-with-alan-renouf
+
+### unexplored-territory-podcast-episode-18-not-just-artificially-intelligent-featuring-mazhar-memon
+content/2022/06/13/unexplored-territory-podcast-episode-18-not-just-artificially-intelligent-featuring-mazhar-memon
+content/2022/06/unexplored-territory-podcast-episode-18-not-just-artificially-intelligent-featuring-mazhar-memon
+
+### unexplored-territory-podcast-episode-19-discussing-numa-and-cores-per-sockets-with-the-main-cpu-engineer-of-vsphere
+content/2022/07/01/unexplored-territory-podcast-episode-19-discussing-numa-and-cores-per-sockets-with-the-main-cpu-engineer-of-vsphere
+content/2022/07/unexplored-territory-podcast-episode-19-discussing-numa-and-cores-per-sockets-with-the-main-cpu-engineer-of-vsphere
+
+### unexplored-territory-vmware-explore-usa-special
+content/2022/09/02/unexplored-territory-vmware-explore-usa-special
+content/2022/09/unexplored-territory-vmware-explore-usa-special
+
+### upcoming-vmware-vsphere-5-1-clustering-deepdive-promo
+content/2014/10/09/upcoming-vmware-vsphere-5-1-clustering-deepdive-promo
+content/2014/10/upcoming-vmware-vsphere-5-1-clustering-deepdive-promo
+
+### upgrading-vmfs-datastores-and-sdrs
+content/2011/07/22/upgrading-vmfs-datastores-and-sdrs
+content/2011/07/upgrading-vmfs-datastores-and-sdrs
+
+### using-remote-desktop-connection-on-a-mac-switch-to-cord
+content/2013/02/13/using-remote-desktop-connection-on-a-mac-switch-to-cord
+content/2013/02/using-remote-desktop-connection-on-a-mac-switch-to-cord
+
+### vaai-hw-offload-and-storage-vmotion-between-two-storage-arrays
+content/2012/11/06/vaai-hw-offload-and-storage-vmotion-between-two-storage-arrays
+content/2012/11/vaai-hw-offload-and-storage-vmotion-between-two-storage-arrays
+
+### vbrownbag-techtalks-vmworld-call-papers-now-open
+content/2018/04/26/vbrownbag-techtalks-vmworld-call-papers-now-open
+content/2018/04/vbrownbag-techtalks-vmworld-call-papers-now-open
+
+### vcd-and-initial-placement-of-virtual-disks-in-a-storage-drs-datastore-cluster
+content/2013/02/13/vcd-and-initial-placement-of-virtual-disks-in-a-storage-drs-datastore-cluster
+content/2013/02/vcd-and-initial-placement-of-virtual-disks-in-a-storage-drs-datastore-cluster
+
+### vcdx-abstract-way-things-indefinitely
+content/2014/11/11/vcdx-abstract-way-things-indefinitely
+content/2014/11/vcdx-abstract-way-things-indefinitely
+
+### vcdx-defence-planning-use-fictitious-design
+content/2014/02/10/vcdx-defence-planning-use-fictitious-design
+content/2014/02/vcdx-defence-planning-use-fictitious-design
+
+### vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt
+content/2014/01/07/vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt
+content/2014/01/vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt
+
+### vcdx-number-29
+content/2010/02/12/vcdx-number-29
+content/2010/02/vcdx-number-29
+
+### vcdx-tip-the-application-form
+content/2010/08/23/vcdx-tip-the-application-form
+content/2010/08/vcdx-tip-the-application-form
+
+### vcdx-tip-vmtools-increases-timeoutvalue
+content/2010/03/16/vcdx-tip-vmtools-increases-timeoutvalue
+content/2010/03/vcdx-tip-vmtools-increases-timeoutvalue
+
+### vcloud-director-architecture
+content/2010/09/08/vcloud-director-architecture
+content/2010/09/vcloud-director-architecture
+
+### vcpu-configuration-performance-impact-between-virtual-sockets-and-virtual-cores
+content/2013/09/18/vcpu-configuration-performance-impact-between-virtual-sockets-and-virtual-cores
+content/2013/09/vcpu-configuration-performance-impact-between-virtual-sockets-and-virtual-cores
+
+### virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2
+content/2015/03/12/virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2
+content/2015/03/virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2
+
+### virtual-machine-memory-overhead
+content/2010/05/31/virtual-machine-memory-overhead
+content/2010/05/virtual-machine-memory-overhead
+
+### virtual-machines-versus-containers-will-win
+content/2014/08/21/virtual-machines-versus-containers-will-win
+content/2014/08/virtual-machines-versus-containers-will-win
+
+### virtually-speaking-podcast-67-resource-management
+content/2018/01/29/virtually-speaking-podcast-67-resource-management
+content/2018/01/virtually-speaking-podcast-67-resource-management
+
+### virtually-speaking-podcast-host-deep-dive
+content/2017/07/15/virtually-speaking-podcast-host-deep-dive
+content/2017/07/virtually-speaking-podcast-host-deep-dive
+
+### virtually-speaking-podcast-technical-writing
+content/2018/07/11/virtually-speaking-podcast-technical-writing
+content/2018/07/virtually-speaking-podcast-technical-writing
+
+### virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive
+content/2017/05/08/virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive
+content/2017/05/virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive
+
+### vm-host-affinity-rules-should-or-must
+content/2010/12/01/vm-host-affinity-rules-should-or-must
+content/2010/12/vm-host-affinity-rules-should-or-must
+
+### vm-memory-config-exceeds-memory-capacity-physical-numa-node
+content/2017/10/05/vm-memory-config-exceeds-memory-capacity-physical-numa-node
+content/2017/10/vm-memory-config-exceeds-memory-capacity-physical-numa-node
+
+### vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure
+content/2021/05/03/vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure
+content/2021/05/vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure
+
+### vm-settings-prefer-partially-automated-over-disabled
+content/2010/10/01/vm-settings-prefer-partially-automated-over-disabled
+content/2010/10/vm-settings-prefer-partially-automated-over-disabled
+
+### vm-storage-profiles-and-storage-drs-part-1
+content/2012/09/18/vm-storage-profiles-and-storage-drs-part-1
+content/2012/09/vm-storage-profiles-and-storage-drs-part-1
+
+### vm-templates-and-storage-drs
+content/2012/08/22/vm-templates-and-storage-drs
+content/2012/08/vm-templates-and-storage-drs
+
+### vm-to-hosts-affinity-rule
+content/2010/07/16/vm-to-hosts-affinity-rule
+content/2010/07/vm-to-hosts-affinity-rule
+
+### vmfs-volume-management-document
+content/2009/03/27/vmfs-volume-management-document
+content/2009/03/vmfs-volume-management-document
+
+### vmotion-and-etherchannel-an-overview-of-the-load-balancing-policies-stack
+content/2013/01/28/vmotion-and-etherchannel-an-overview-of-the-load-balancing-policies-stack
+content/2013/01/vmotion-and-etherchannel-an-overview-of-the-load-balancing-policies-stack
+
+### vmotion-bug-fixed-in-vcenter-server-5-1-0a
+content/2012/10/29/vmotion-bug-fixed-in-vcenter-server-5-1-0a
+content/2012/10/vmotion-bug-fixed-in-vcenter-server-5-1-0a
+
+### vmotion-futures-survey
+content/2012/12/19/vmotion-futures-survey
+content/2012/12/vmotion-futures-survey
+
+### vmotion-over-layer-3
+content/2013/04/09/vmotion-over-layer-3
+content/2013/04/vmotion-over-layer-3
+
+### vmware-cloud-aws-closer-look
+content/2016/10/13/vmware-cloud-aws-closer-look
+content/2016/10/vmware-cloud-aws-closer-look
+
+### vmware-cloud-aws-elastic-drs
+content/2016/10/18/vmware-cloud-aws-elastic-drs
+content/2016/10/vmware-cloud-aws-elastic-drs
+
+### vmware-cloud-aws-predictable-capacity-provisioning
+content/2017/07/26/vmware-cloud-aws-predictable-capacity-provisioning
+content/2017/07/vmware-cloud-aws-predictable-capacity-provisioning
+
+### vmware-cloud-aws-reinvent
+content/2016/11/22/vmware-cloud-aws-reinvent
+content/2016/11/vmware-cloud-aws-reinvent
+
+### vmware-cloud-aws-technical-overview
+content/2017/08/29/vmware-cloud-aws-technical-overview
+content/2017/08/vmware-cloud-aws-technical-overview
+
+### vmware-cloud-on-aws-on-virtually-speaking-podcast
+content/2019/04/09/vmware-cloud-on-aws-on-virtually-speaking-podcast
+content/2019/04/vmware-cloud-on-aws-on-virtually-speaking-podcast
+
+### vmware-cloud-services-overview-podcast-series
+content/2023/04/17/vmware-cloud-services-overview-podcast-series
+content/2023/04/vmware-cloud-services-overview-podcast-series
+
+### vmware-fault-tolerance-and-dpm
+content/2010/06/20/vmware-fault-tolerance-and-dpm
+content/2010/06/vmware-fault-tolerance-and-dpm
+
+### vmware-feature-request
+content/2012/11/12/vmware-feature-request
+content/2012/11/vmware-feature-request
+
+### vmware-private-ai-foundation-privacy-and-security-best-practices-white-paper
+content/2024/07/01/vmware-private-ai-foundation-privacy-and-security-best-practices-white-paper
+content/2024/07/vmware-private-ai-foundation-privacy-and-security-best-practices-white-paper
+
+### vmware-sessions-at-nvidia-gtc
+content/2022/09/20/vmware-sessions-at-nvidia-gtc
+content/2022/09/vmware-sessions-at-nvidia-gtc
+
+### vmware-tools-disk-timeout-value-linux-gos
+content/2010/04/28/vmware-tools-disk-timeout-value-linux-gos
+content/2010/04/vmware-tools-disk-timeout-value-linux-gos
+
+### vmware-tools-is-out-of-data-on-this-virtual-machine-while-summary-states-current
+content/2015/05/05/vmware-tools-is-out-of-data-on-this-virtual-machine-while-summary-states-current
+content/2015/05/vmware-tools-is-out-of-data-on-this-virtual-machine-while-summary-states-current
+
+### vmware-updates-timekeeping-best-practices-for-windows-vms
+content/2009/12/22/vmware-updates-timekeeping-best-practices-for-windows-vms
+content/2009/12/vmware-updates-timekeeping-best-practices-for-windows-vms
+
+### vmware-vsphere-5-clustering-technical-deepdive
+content/2011/07/16/vmware-vsphere-5-clustering-technical-deepdive
+content/2011/07/vmware-vsphere-5-clustering-technical-deepdive
+
+### vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available
+content/2012/05/22/vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available
+content/2012/05/vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available
+
+### vmware-vsphere-storage-drs-interoperability-technical-paper-available
+content/2012/06/05/vmware-vsphere-storage-drs-interoperability-technical-paper-available
+content/2012/06/vmware-vsphere-storage-drs-interoperability-technical-paper-available
+
+### vmworld-2009-sessions
+content/2009/07/25/vmworld-2009-sessions
+content/2009/07/vmworld-2009-sessions
+
+### vmworld-2013-call-of-papers-deadline-ends-today
+content/2013/04/12/vmworld-2013-call-of-papers-deadline-ends-today
+content/2013/04/vmworld-2013-call-of-papers-deadline-ends-today
+
+### vmworld-europe-sessions
+content/2012/09/18/vmworld-europe-sessions
+content/2012/09/vmworld-europe-sessions
+
+### vmworld-geek-whisperers-podcast-choosing-titles-want
+content/2016/09/21/vmworld-geek-whisperers-podcast-choosing-titles-want
+content/2016/09/vmworld-geek-whisperers-podcast-choosing-titles-want
+
+### vmworld-public-voting
+content/2011/05/16/vmworld-public-voting
+content/2011/05/vmworld-public-voting
+
+### vmworld-session-proposals
+content/2012/05/30/vmworld-session-proposals
+content/2012/05/vmworld-session-proposals
+
+### vmworld-us-2019-know-before-you-go-podcast
+content/2019/07/22/vmworld-us-2019-know-before-you-go-podcast
+content/2019/07/vmworld-us-2019-know-before-you-go-podcast
+
+### vmworld-vcloud-director-labs
+content/2010/10/12/vmworld-vcloud-director-labs
+content/2010/10/vmworld-vcloud-director-labs
+
+### vote
+content/2014/02/25/vote
+content/2014/02/vote
+
+### voted-number-6-of-top-25-vmware-blogs-wow
+content/2010/10/01/voted-number-6-of-top-25-vmware-blogs-wow
+content/2010/10/voted-number-6-of-top-25-vmware-blogs-wow
+
+### voting-for-the-2013-top-virtualization-blogs-a-year-in-review
+content/2013/02/20/voting-for-the-2013-top-virtualization-blogs-a-year-in-review
+content/2013/02/voting-for-the-2013-top-virtualization-blogs-a-year-in-review
+
+### vsphere-4-0-quick-start-guide-review
+content/2009/12/24/vsphere-4-0-quick-start-guide-review
+content/2009/12/vsphere-4-0-quick-start-guide-review
+
+### vsphere-4-1-ha-and-drs-book-for-only-19-95
+content/2012/01/09/vsphere-4-1-ha-and-drs-book-for-only-19-95
+content/2012/01/vsphere-4-1-ha-and-drs-book-for-only-19-95
+
+### vsphere-4-1-ha-and-drs-deepdive-book
+content/2010/08/25/vsphere-4-1-ha-and-drs-deepdive-book
+content/2010/08/vsphere-4-1-ha-and-drs-deepdive-book
+
+### vsphere-5-1-clustering-deepdive-available
+content/2012/08/28/vsphere-5-1-clustering-deepdive-available
+content/2012/08/vsphere-5-1-clustering-deepdive-available
+
+### vsphere-5-1-clustering-deepdive-cyber-monday-deal
+content/2012/11/26/vsphere-5-1-clustering-deepdive-cyber-monday-deal
+content/2012/11/vsphere-5-1-clustering-deepdive-cyber-monday-deal
+
+### vsphere-5-1-drs-advanced-option-limitvmsperesxhost
+content/2012/10/10/vsphere-5-1-drs-advanced-option-limitvmsperesxhost
+content/2012/10/vsphere-5-1-drs-advanced-option-limitvmsperesxhost
+
+### vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements
+content/2012/10/19/vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements
+content/2012/10/vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements
+
+### vsphere-5-1-storage-drs-multi-vm-provisioning-improvement
+content/2012/11/02/vsphere-5-1-storage-drs-multi-vm-provisioning-improvement
+content/2012/11/vsphere-5-1-storage-drs-multi-vm-provisioning-improvement
+
+### vsphere-5-1-storage-vmotion-parallel-disk-migrations
+content/2012/09/04/vsphere-5-1-storage-vmotion-parallel-disk-migrations
+content/2012/09/vsphere-5-1-storage-vmotion-parallel-disk-migrations
+
+### vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug
+content/2013/04/26/vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug
+content/2013/04/vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug
+
+### vsphere-5-1-vmotion-deepdive
+content/2012/09/07/vsphere-5-1-vmotion-deepdive
+content/2012/09/vsphere-5-1-vmotion-deepdive
+
+### vsphere-5-1-web-client-vm-overrides-storage-drs-automation-level-overview
+content/2013/01/09/vsphere-5-1-web-client-vm-overrides-storage-drs-automation-level-overview
+content/2013/01/vsphere-5-1-web-client-vm-overrides-storage-drs-automation-level-overview
+
+### vsphere-5-5-home-lab
+content/2014/03/27/vsphere-5-5-home-lab
+content/2014/03/vsphere-5-5-home-lab
+
+### vsphere-5-5-vcenter-server-0-inventory
+content/2014/01/16/vsphere-5-5-vcenter-server-0-inventory
+content/2014/01/vsphere-5-5-vcenter-server-0-inventory
+
+### vsphere-6-5-drs-memory-balancing-non-overcommitted-clusters
+content/2018/01/15/vsphere-6-5-drs-memory-balancing-non-overcommitted-clusters
+content/2018/01/vsphere-6-5-drs-memory-balancing-non-overcommitted-clusters
+
+### vsphere-6-5-drs-pairwise-balancing
+content/2019/10/30/vsphere-6-5-drs-pairwise-balancing
+content/2019/10/vsphere-6-5-drs-pairwise-balancing
+
+### vsphere-6-5-host-deep-dive-update
+content/2017/02/24/vsphere-6-5-host-deep-dive-update
+content/2017/02/vsphere-6-5-host-deep-dive-update
+
+### vsphere-6-x-deep-dive-resource-kit-completed
+content/2018/07/30/vsphere-6-x-deep-dive-resource-kit-completed
+content/2018/07/vsphere-6-x-deep-dive-resource-kit-completed
+
+### vsphere-6-x-host-resource-deep-dive-session-8430-accepted-for-vmworld-us-and-europe
+content/2016/06/16/vsphere-6-x-host-resource-deep-dive-session-8430-accepted-for-vmworld-us-and-europe
+content/2016/06/vsphere-6-x-host-resource-deep-dive-session-8430-accepted-for-vmworld-us-and-europe
+
+### vsphere-7-cores-per-socket-and-virtual-numa
+content/2021/12/02/vsphere-7-cores-per-socket-and-virtual-numa
+content/2021/12/vsphere-7-cores-per-socket-and-virtual-numa
+
+### vsphere-7-drs-scalable-shares-deep-dive
+content/2020/05/27/vsphere-7-drs-scalable-shares-deep-dive
+content/2020/05/vsphere-7-drs-scalable-shares-deep-dive
+
+### vsphere-7-vmotion-with-attached-remote-device
+content/2020/05/12/vsphere-7-vmotion-with-attached-remote-device
+content/2020/05/vsphere-7-vmotion-with-attached-remote-device
+
+### vsphere-8-0-update-1-enhancements-for-accelerating-machine-learning-workloads
+content/2023/04/26/vsphere-8-0-update-1-enhancements-for-accelerating-machine-learning-workloads
+content/2023/04/vsphere-8-0-update-1-enhancements-for-accelerating-machine-learning-workloads
+
+### vsphere-8-and-vsan-8-unexplored-territory-podcast-double-header
+content/2022/09/05/vsphere-8-and-vsan-8-unexplored-territory-podcast-double-header
+content/2022/09/vsphere-8-and-vsan-8-unexplored-territory-podcast-double-header
+
+### vsphere-8-cpu-topology-device-assignment
+content/2022/10/25/vsphere-8-cpu-topology-device-assignment
+content/2022/10/vsphere-8-cpu-topology-device-assignment
+
+### vsphere-8-cpu-topology-for-large-memory-footprint-vms-exceeding-numa-boundaries
+content/2022/11/03/vsphere-8-cpu-topology-for-large-memory-footprint-vms-exceeding-numa-boundaries
+content/2022/11/vsphere-8-cpu-topology-for-large-memory-footprint-vms-exceeding-numa-boundaries
+
+### vsphere-focused-guide-intel-xeon-scalable-family
+content/2017/09/26/vsphere-focused-guide-intel-xeon-scalable-family
+content/2017/09/vsphere-focused-guide-intel-xeon-scalable-family
+
+### vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem
+content/2017/10/03/vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem
+content/2017/10/vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem
+
+### vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus
+content/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus
+content/2023/05/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus
+
+### vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings
+content/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings
+content/2023/05/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings
+
+### vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu
+content/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu
+content/2023/05/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu
+
+### vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators
+content/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators
+content/2023/05/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators
+
+### vsphere-ml-accelerator-spectrum-deep-dive-installing-the-nvaie-vgpu-driver
+content/2023/07/06/vsphere-ml-accelerator-spectrum-deep-dive-installing-the-nvaie-vgpu-driver
+content/2023/07/vsphere-ml-accelerator-spectrum-deep-dive-installing-the-nvaie-vgpu-driver
+
+### vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup
+content/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup
+content/2023/07/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup
+
+### vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite
+content/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite
+content/2023/05/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite
+
+### vsphere-ml-accelerator-spectrum-deep-dive-series
+content/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series
+content/2023/05/vsphere-ml-accelerator-spectrum-deep-dive-series
+
+### vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms
+content/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms
+content/2023/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms
+
+### vsphere-storage-area-network-traffic-system-network-resource-pool-netioc
+content/2013/02/12/vsphere-storage-area-network-traffic-system-network-resource-pool-netioc
+content/2013/02/vsphere-storage-area-network-traffic-system-network-resource-pool-netioc
+
+### vsphere-supervisor-namespace
+content/2020/04/01/vsphere-supervisor-namespace
+content/2020/04/vsphere-supervisor-namespace
+
+### vsphere-with-tanzu-vcenter-server-network-configuration-overview
+content/2020/11/06/vsphere-with-tanzu-vcenter-server-network-configuration-overview
+content/2020/11/vsphere-with-tanzu-vcenter-server-network-configuration-overview
+
+### vswitch-failover-and-high-availability
+content/2010/10/22/vswitch-failover-and-high-availability
+content/2010/10/vswitch-failover-and-high-availability
+
+### want-to-have-a-vsphere-5-1-clustering-deepdive-book-for-free
+content/2012/10/17/want-to-have-a-vsphere-5-1-clustering-deepdive-book-for-free
+content/2012/10/want-to-have-a-vsphere-5-1-clustering-deepdive-book-for-free
+
+### want-to-have-my-former-job
+content/2013/05/20/want-to-have-my-former-job
+content/2013/05/want-to-have-my-former-job
+
+### whats-your-favorite-tech-novel
+content/2020/07/30/whats-your-favorite-tech-novel
+content/2020/07/whats-your-favorite-tech-novel
+
+### when-your-home-lab-turns-into-a-home-dc
+content/2015/06/04/when-your-home-lab-turns-into-a-home-dc
+content/2015/06/when-your-home-lab-turns-into-a-home-dc
+
+### where-is-my-new-vmotion-functionality
+content/2012/09/11/where-is-my-new-vmotion-functionality
+content/2012/09/where-is-my-new-vmotion-functionality
+
+### which-multi-gpu-configurations-are-you-planning-to-deploy
+content/2025/09/02/which-multi-gpu-configurations-are-you-planning-to-deploy
+content/2025/09/which-multi-gpu-configurations-are-you-planning-to-deploy
+
+### whiteboard-desk
+content/2012/05/03/whiteboard-desk
+content/2012/05/whiteboard-desk
+
+### why-do-you-manually-select-a-datastore-while-using-storage-drs
+content/2013/01/10/why-do-you-manually-select-a-datastore-while-using-storage-drs
+content/2013/01/why-do-you-manually-select-a-datastore-while-using-storage-drs
+
+### why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network
+content/2013/02/07/why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network
+content/2013/02/why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network
+
+### windows-2008-disk-alignment
+content/2009/05/20/windows-2008-disk-alignment
+content/2009/05/windows-2008-disk-alignment
+
+### wish-2015-better-tooling-provide-better-insight
+content/2014/12/30/wish-2015-better-tooling-provide-better-insight
+content/2014/12/wish-2015-better-tooling-provide-better-insight
+
+### would-you-be-interested-in-storage-level-reservations
+content/2013/03/26/would-you-be-interested-in-storage-level-reservations
+content/2013/03/would-you-be-interested-in-storage-level-reservations
+
+### wow-voted-number-2-of-top-virtualization-blogs
+content/2013/03/12/wow-voted-number-2-of-top-virtualization-blogs
+content/2013/03/wow-voted-number-2-of-top-virtualization-blogs
+
+### wrap-up-2009
+content/2009/12/30/wrap-up-2009
+content/2009/12/wrap-up-2009
+
+### you-do-not-have-permissions-to-view-this-object-error-after-updating-vcsa-to-6-0-update-1b
+content/2016/03/01/you-do-not-have-permissions-to-view-this-object-error-after-updating-vcsa-to-6-0-update-1b
+content/2016/03/you-do-not-have-permissions-to-view-this-object-error-after-updating-vcsa-to-6-0-update-1b
+

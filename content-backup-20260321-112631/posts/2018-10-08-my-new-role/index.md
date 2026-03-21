@@ -1,0 +1,10 @@
+---
+title: "My New Role"
+date: 2018-10-08
+categories: 
+  - "vmware"
+tags: 
+  - "vmware"
+---
+
+A couple of months ago I joined the Office of the CTO of the Cloud Platform Business Unit and started reporting directly to the CTO, [Kit Colbert](https://twitter.com/kitcolbert). Kit asked me to select a few areas to focus on. One of these areas is running Kubernetes on vSphere. I’ve increased my focus on Kubernetes, as this architecture becomes increasingly important in the datacenter. When talking to customers, two questions I ask is, what is the current ratio of VMs to containers in your data center and what is the most popular format of deployment today? The common response is respectively 90% VMs and net-new is 90% containers. Today’s trend moves away from installing shrink-wrapped software and more towards custom building revenue-critical applications by their development teams. The standard tool for developers is container-based infrastructure. Kubernetes is the defacto choice of orchestration of containers and consists of many infrastructure-focused options. The operations that interest me are the high availability and resource management operations. It appears these operations replace HA and DRS processes when glancing over them, but when looking more closely they strongly augment each other. At VMworld in Las Vegas, [Michael Gasch](https://twitter.com/embano1) and I presented the session “[Deep Dive: The Value of Running Kubernetes on vSphere](https://videos.vmworld.com/searchsite/2018/videoplayer/18528)” (CNA1553BU). If you are not going to [VMworld Europe](https://my.vmworld.com/widget/vmware/vmworld18eu/eucatalog?search=Denneman), I recommend watching the video recording, if you are going to VMworld Europe I recommend you to sign up.   One thing you can expect from me is more Kubernetes focused articles. One of the things that I noticed is that many articles are written by cloud-native natives for cloud-native natives. I.e. they rely on extensive previous exposure to this ecosystem. I’m trying to cover some of the challenges I have faced and the quirks I notice as a “newcomer”.

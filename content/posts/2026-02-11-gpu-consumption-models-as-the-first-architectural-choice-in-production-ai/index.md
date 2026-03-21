@@ -10,14 +10,14 @@ tags: ["GPU Placement", "AI Platform", "VMware Private AI Foundation", "Kubernet
 series: ["Architecting AI Infrastructure"]
 series_order: 2
 concepts: ["GPU Consumption Models", "AI Infrastructure", "Runtime Memory"]
-url: "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
+url: "/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
 aliases:
-  - "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
+  - "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
 ---
 
 ## Architecting AI Infrastructure - Part 2
 
-The [previous article](https://frankdenneman.ai/posts/2026-02-09-why-gpu-placement-becomes-the-defining-problem/) covered GPU placement as part of the platform’s lifecycle, not just a scheduling step. These choices affect what the platform can handle as workloads evolve. Before making placement decisions, it’s worth asking: how do AI workloads use GPUs?
+The <a href="{{< ref "posts/2026-02-09-why-gpu-placement-becomes-the-defining-problem/index.md" >}}">previous article</a> covered GPU placement as part of the platform’s lifecycle, not just a scheduling step. These choices affect what the platform can handle as workloads evolve. Before making placement decisions, it’s worth asking: how do AI workloads use GPUs?
 
 This question is important because not every GPU workload requires the same resources. Two services might both need accelerators, but can be very different in memory use, how they run, and how much they depend on other GPUs. These differences set the platform’s limits well before the scheduler gets involved. So, GPU consumption models are not just an optimization detail. They are the first architectural choice for any AI platform.
 

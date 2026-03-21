@@ -11,7 +11,7 @@ For VMware users just learning about this technology, [EVC masks](https://kb.vmw
 
 The challenge when moving live workloads between ESXi hosts with different socket configurations is that vNUMA topology of the virtual machine does not match the physical topology. A virtual NUMA topology exists out of two components, the component that presents the CPU topology to the virtual machine, called the VPD. The VPD exists to help the guest OS and the applications optimize their CPU scheduling decisions. This VPD construct is principally the virtual NUMA topology. The other component, the PPD, groups the vCPUs and helps the NUMA scheduler for placement decisions across the physical NUMA nodes.
 
-[![](images/Guest-OS-Layer-Virtual-NUMA-Node.svg)](https://frankdenneman.nl/wp-content/uploads/2022/03/Guest-OS-Layer-Virtual-NUMA-Node.svg)
+[![](images/Guest-OS-Layer-Virtual-NUMA-Node.svg)](https://frankdenneman.ai/wp-content/uploads/2022/03/Guest-OS-Layer-Virtual-NUMA-Node.svg)
 
 The fascinating part of this story is that the VPD and PPD are closely linked, yet they can differ if needed. The scheduler attempts to mirror the configuration between the two elements; the PPD configuration is dynamic, but the VPD configuration always remains the same. From the moment the VM is powered on, the VPD configuration does not change. And that is a good thing because operating systems generally do not like to see whole CPU layouts change. Adding a core with CPU hot add is all right. But drastically rearranging caches and socket configurations it's pretty much a bridge too far. 
 
@@ -31,13 +31,13 @@ numa.autosize.vcpu.maxPerVirtualNode = "18"
 
 The key entry for this example is the "numa.autosize.vcpu.maxPerVirtualNode = "18", as the NUMA scheduler likes to distribute as many vCPUs across many cores as possible and evenly across sockets. 
 
-[![](images/Guest-OS-Layer-Virtual-NUMA-Node-18-vCPU.svg)](https://frankdenneman.nl/wp-content/uploads/2022/03/Guest-OS-Layer-Virtual-NUMA-Node-18-vCPU.svg)
+[![](images/Guest-OS-Layer-Virtual-NUMA-Node-18-vCPU.svg)](https://frankdenneman.ai/wp-content/uploads/2022/03/Guest-OS-Layer-Virtual-NUMA-Node-18-vCPU.svg)
 
 But what happens if this virtual machine moves to a quad-socket system with 14 physical cores per socket? The NUMA scheduler will create three scheduling constructs to distribute those vCPUs across the NUMA nodes but keep the presentation layer the same not to confuse the guest OS and the applications.
 
-[![](images/Guest-OS-Layer-Virtual-NUMA-mismatch-1.svg)](https://frankdenneman.nl/wp-content/uploads/2022/03/Guest-OS-Layer-Virtual-NUMA-mismatch-1.svg)
+[![](images/Guest-OS-Layer-Virtual-NUMA-mismatch-1.svg)](https://frankdenneman.ai/wp-content/uploads/2022/03/Guest-OS-Layer-Virtual-NUMA-mismatch-1.svg)
 
-Since the NUMA topologies are created during a VM's power-on, we have to shut down the virtual machine and power it back to realign the VPD and PPD topology again. Well, since 2019, we don't need to power down the VM anymore! And I have to admit. I only found out about it just recently. Bob Plankers ([not this Bob](https://frankdenneman.nl/2021/06/11/cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/)) writes about the vmx.reboot.PowerCycle advanced parameter [here](https://blogs.vmware.com/vsphere/2019/10/vmx-reboot-powercycle-makes-cpu-vulnerability-remediation-easy.html). This setting does not require a complete power cycle anymore. 
+Since the NUMA topologies are created during a VM's power-on, we have to shut down the virtual machine and power it back to realign the VPD and PPD topology again. Well, since 2019, we don't need to power down the VM anymore! And I have to admit. I only found out about it just recently. Bob Plankers ([not this Bob](https://frankdenneman.ai/2021/06/11/cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/)) writes about the vmx.reboot.PowerCycle advanced parameter [here](https://blogs.vmware.com/vsphere/2019/10/vmx-reboot-powercycle-makes-cpu-vulnerability-remediation-easy.html). This setting does not require a complete power cycle anymore. 
 
 That means that if you are in the process of migrating your VM estate from dual-socket systems to quad-socket systems, you can add the following adjustments in the VMX file while the VM is running. (for example via PowerCLI / New-AdvancedSetting)
 

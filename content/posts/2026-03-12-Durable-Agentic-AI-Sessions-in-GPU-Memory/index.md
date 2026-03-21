@@ -13,7 +13,7 @@ track: "AI Memory"
 
 ## The durable memory of agentic systems
 
-When a user asks a question in a chat interface and the model responds, the interaction is a single prompt completion. A prompt goes in, tokens come out. From an infrastructure perspective this is a predictable transaction. As described in [The Dynamic World of LLM Runtime Memory](https://frankdenneman.nl/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), the KV cache grows with the prompt, peaks during generation, and is released when the session ends. The memory footprint is bounded and relatively easy to plan for.
+When a user asks a question in a chat interface and the model responds, the interaction is a single prompt completion. A prompt goes in, tokens come out. From an infrastructure perspective this is a predictable transaction. As described in [The Dynamic World of LLM Runtime Memory](https://frankdenneman.ai/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), the KV cache grows with the prompt, peaks during generation, and is released when the session ends. The memory footprint is bounded and relatively easy to plan for.
 
 Agentic AI behaves differently. Instead of answering a single prompt, an agent executes a sequence of steps. It reasons about a goal, calls a tool, evaluates the result, and continues until the task is complete. Each step is technically another prompt completion, but the agent does not start fresh each time. It carries forward the entire history of the task, including every prior LLM completion, tool result, and reasoning step, all of which are sent back to the model on every next call.
 
@@ -55,7 +55,7 @@ The accumulated history of all prior steps is the third. Every completion, tool 
 
 To make the memory impact concrete, consider a realistic enterprise workflow: an AI agent that analyzes GPU cluster utilization, evaluates upcoming project demand, checks budget constraints, and raises a ServiceNow change request for capacity expansion. Ten steps, three tool integrations, three reasoning phases.
 
-Each step adds tokens to the session history and the KV cache grows with it. For GPT-oss 120B the cost is approximately 0.035 MB per token, derived from its hybrid attention architecture of 18 full-attention and 18 sliding-window layers. The full architectural breakdown is covered in [Part 2 of this series](https://frankdenneman.nl/posts/2026-02-05-understanding-activation-in-mixture-of-experts-models/).
+Each step adds tokens to the session history and the KV cache grows with it. For GPT-oss 120B the cost is approximately 0.035 MB per token, derived from its hybrid attention architecture of 18 full-attention and 18 sliding-window layers. The full architectural breakdown is covered in [Part 2 of this series](https://frankdenneman.ai/posts/2026-02-05-understanding-activation-in-mixture-of-experts-models/).
 
 {{< diagram src="/diagrams/diagram1.html" height="580" >}}
 
@@ -71,4 +71,4 @@ Multi-replica deployment runs multiple complete model copies, each on its own GP
 In practice, large-scale agentic deployments require both. A model that requires multiple GPUs to load is deployed with tensor parallelism to handle size, then replicated across multiple such instances to handle concurrency.
 
 A long-standing concern with multi-replica deployments was naive load balancing, routing each request to the next available replica regardless of session history, landing on a cold KV cache every time. For stateful chat that was a real liability. For agentic AI it largely disappears. Because the full session transcript is sent with every request, any replica can reconstruct the KV cache from scratch. The property that makes agentic sessions expensive, carrying the full history, is also what makes them portable. Session affinity matters less when the session carries itself.
-Designing for durable, long-running sessions across multiple GPUs and replicas is the infrastructure challenge that follows from everything covered in this article. That is where the next article in the [Architecting AI Infrastrucre](https://frankdenneman.nl/ai-infrastructure/) begins
+Designing for durable, long-running sessions across multiple GPUs and replicas is the infrastructure challenge that follows from everything covered in this article. That is where the next article in the [Architecting AI Infrastrucre](https://frankdenneman.ai/ai-infrastructure/) begins

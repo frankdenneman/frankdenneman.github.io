@@ -17,7 +17,7 @@ aliases:
 
 ## Architecting AI Infrastructure - Part 2
 
-The [previous article](https://frankdenneman.nl/posts/2026-02-09-why-gpu-placement-becomes-the-defining-problem/) covered GPU placement as part of the platform’s lifecycle, not just a scheduling step. These choices affect what the platform can handle as workloads evolve. Before making placement decisions, it’s worth asking: how do AI workloads use GPUs?
+The [previous article](https://frankdenneman.ai/posts/2026-02-09-why-gpu-placement-becomes-the-defining-problem/) covered GPU placement as part of the platform’s lifecycle, not just a scheduling step. These choices affect what the platform can handle as workloads evolve. Before making placement decisions, it’s worth asking: how do AI workloads use GPUs?
 
 This question is important because not every GPU workload requires the same resources. Two services might both need accelerators, but can be very different in memory use, how they run, and how much they depend on other GPUs. These differences set the platform’s limits well before the scheduler gets involved. So, GPU consumption models are not just an optimization detail. They are the first architectural choice for any AI platform.
 
@@ -87,7 +87,7 @@ GPU consumption never exists in isolation. Every GPU-accelerated workload depend
 
 Static GPU memory footprint sets a baseline requirement. Model parameters must stay in GPU memory at all times, no matter the workload activity. Dynamic behavior, such as activations and key-value caches, determines how the workload scales with concurrency. These GPU characteristics do not exist in isolation. They directly dictate how the workload must be provisioned at the system level.
 
-The amount of GPU memory consumed and how it is accessed determine how much CPU is needed to feed the device, how much system memory must be reserved to support the working set, and how closely the virtual machine must align with [NUMA](https://frankdenneman.nl/categories/numa/) boundaries. In other words, choosing a GPU consumption model also defines the CPU and memory shape of the virtual machine that can support it.
+The amount of GPU memory consumed and how it is accessed determine how much CPU is needed to feed the device, how much system memory must be reserved to support the working set, and how closely the virtual machine must align with [NUMA](https://frankdenneman.ai/categories/numa/) boundaries. In other words, choosing a GPU consumption model also defines the CPU and memory shape of the virtual machine that can support it.
 
 Once that VM configuration is set, placement decisions go beyond the GPU. Host selection, CPU scheduling flexibility, memory locality, and even cluster-level behaviors like vSphere HA admission control are all affected by what first seems like a GPU-only choice.
 

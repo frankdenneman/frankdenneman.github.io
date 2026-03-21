@@ -22,8 +22,8 @@ Topics discussed in the episode
 
 [Extreme Performance Series: vSphere Compute and Memory Schedulers \[HCP2583\]](https://my.vmworld.com/widget/vmware/vmworld2020/catalog/session/1589649142910001HMCU)
 
-[NUMA counters and command line tools - part 1](https://frankdenneman.nl/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/)
+[NUMA counters and command line tools - part 1](https://frankdenneman.ai/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/)
 
-[NUMA command lines tools - part 2](https://frankdenneman.nl/2019/08/27/60-minutes-of-numa-vmworld-session-commands/)
+[NUMA command lines tools - part 2](https://frankdenneman.ai/2019/08/27/60-minutes-of-numa-vmworld-session-commands/)
 
 ![](images/EP20-screenshot.jpg)

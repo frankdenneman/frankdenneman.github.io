@@ -13,7 +13,7 @@ concepts: ["Same-Size vGPU Mode", "Mixed-Size vGPU Mode", "Cluster-Scale Placeme
 
 ## Architecting AI Infrastructure — Part 7
 
-The Silo Capacity Visualizer from [Part 6](https://frankdenneman.nl/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/) shows how profile selection and placement-ID alignment affect memory layout inside a single GPU. While that's helpful for understanding the basics, real capacity planning happens at the cluster level. This article introduces the [Same-size vs Mixed-size Placement simulator](https://frankdenneman.nl/tools/same-size-vs-mixed-mode/), the second tool in the Cluster Profile Strategy Toolset. It lets you simulate vGPU placement across an entire cluster using both same-size and mixed-size policies simultaneously, with the same workload sequence for both. This way, you can directly compare their results.
+The Silo Capacity Visualizer from [Part 6](https://frankdenneman.ai/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/) shows how profile selection and placement-ID alignment affect memory layout inside a single GPU. While that's helpful for understanding the basics, real capacity planning happens at the cluster level. This article introduces the [Same-size vs Mixed-size Placement simulator](https://frankdenneman.ai/tools/same-size-vs-mixed-mode/), the second tool in the Cluster Profile Strategy Toolset. It lets you simulate vGPU placement across an entire cluster using both same-size and mixed-size policies simultaneously, with the same workload sequence for both. This way, you can directly compare their results.
 
 ![Screenshot tool](images/1-same-size-vs-mixed-mode-simulator.png)
 
@@ -116,7 +116,7 @@ After the simulation, the Platform Impact Table sums up the results for each pro
 
 ## GPU Memory Map
 
-After a simulation run, you can use the same simulator introduced by the [‘Mixed Mode vGPU Profile Placement Silo Simulator’](https://frankdenneman.nl/tools/vgpu-silo-capacity-calculator/) by going to the ‘View memory map’ option in the Mixed-Size Mode section. The drop-down menu provides access to each GPU's memory map. You can also just click on one of the GPU tiles. In this scenario, I’m interested in taking a closer look at GPU C of Host 1. Underneath the placement log, the memory map appears:
+After a simulation run, you can use the same simulator introduced by the [‘Mixed Mode vGPU Profile Placement Silo Simulator’](https://frankdenneman.ai/tools/vgpu-silo-capacity-calculator/) by going to the ‘View memory map’ option in the Mixed-Size Mode section. The drop-down menu provides access to each GPU's memory map. You can also just click on one of the GPU tiles. In this scenario, I’m interested in taking a closer look at GPU C of Host 1. Underneath the placement log, the memory map appears:
 
 ![Screenshot](images/15-view-memory-map.png)
 
@@ -132,7 +132,7 @@ The Swap Analyzer opens when you swap profiles in the sequence. I replaced every
 
 You can quickly see if your utilization improved or if you gained more placement options.
 
-The 8GB profile doesn’t align as well with the 20GB and 40GB profiles as the 10GB profile does on the H100. As explained in [Part 6](https://frankdenneman.nl/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/), profiles without clean shared boundaries leave gaps that other profiles can’t use. Swapping to 10GB improves that alignment. In mixed-size mode, this swap reduced siloed capacity and may have increased the total number of VMs placed.
+The 8GB profile doesn’t align as well with the 20GB and 40GB profiles as the 10GB profile does on the H100. As explained in [Part 6](https://frankdenneman.ai/posts/2026-02-24-mixed-size-vgpu-mode-in-practice/), profiles without clean shared boundaries leave gaps that other profiles can’t use. Swapping to 10GB improves that alignment. In mixed-size mode, this swap reduced siloed capacity and may have increased the total number of VMs placed.
 
 ![screenshot](images/18-swap-results.png)
 

@@ -13,7 +13,7 @@ track: "AI Infrastructure"
 
 ## Architecting AI Infrastructure Series - Part 9
 
-The [AI Memory series](https://frankdenneman.nl/understanding-ai-memory/) has been showing how AI workloads use GPU memory in different ways. [The Dynamic World of LLM Runtime Memory](https://frankdenneman.nl/2026-01-12-the-dynamic-world-of-llm-runtime-memory/) explains how the KV cache grows with each new token and becomes a main user of GPU resources. [Understanding Activation Memory in Mixture of Experts Models](https://frankdenneman.nl/2026-02-05-understanding-activation-in-mixture-of-experts-models/) looks at the hardware pressure that happens when activation memory spikes during the prefill phase. The series also covers how agentic systems keep memory active to stay on track during complex tasks, as discussed in [Durable Agentic AI Sessions in GPU Memory](https://frankdenneman.nl/2026-03-12-durable-agentic-ai-sessions-in-gpu-memory/).
+The [AI Memory series](https://frankdenneman.ai/understanding-ai-memory/) has been showing how AI workloads use GPU memory in different ways. [The Dynamic World of LLM Runtime Memory](https://frankdenneman.ai/2026-01-12-the-dynamic-world-of-llm-runtime-memory/) explains how the KV cache grows with each new token and becomes a main user of GPU resources. [Understanding Activation Memory in Mixture of Experts Models](https://frankdenneman.ai/2026-02-05-understanding-activation-in-mixture-of-experts-models/) looks at the hardware pressure that happens when activation memory spikes during the prefill phase. The series also covers how agentic systems keep memory active to stay on track during complex tasks, as discussed in [Durable Agentic AI Sessions in GPU Memory](https://frankdenneman.ai/2026-03-12-durable-agentic-ai-sessions-in-gpu-memory/).
 
 All these behaviors change where system pressure shows up. Inference is a two-stage dance of “Prefill” and “Decode,” and it taxes different parts of the system. In the prefill phase, large prompts need a lot of compute to process the full context. During the decode phase, dynamic (runtime) memory keeps growing. Long sessions make both demands higher. As prompts get bigger, prefill work gets more expensive, and the model’s working memory grows as more tokens are added.
 
@@ -35,7 +35,7 @@ Key Takeaway: Data has to move between GPUs to complete even a single layer of c
 
 ## The NUMA analogy
 
-For administrators familiar with CPU architectures, the behavior should feel familiar. [NUMA](https://frankdenneman.nl/posts/2016-07-06-introduction-2016-numa-deep-dive-series/) systems divide memory across nodes. A processor accessing memory attached to its local node can do so quickly. Accessing memory attached to a remote node takes longer because the request must traverse an interconnect.
+For administrators familiar with CPU architectures, the behavior should feel familiar. [NUMA](https://frankdenneman.ai/posts/2016-07-06-introduction-2016-numa-deep-dive-series/) systems divide memory across nodes. A processor accessing memory attached to its local node can do so quickly. Accessing memory attached to a remote node takes longer because the request must traverse an interconnect.
 
 ![NUMA-basics](images/Numa-basics.svg)
 

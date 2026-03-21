@@ -12,7 +12,7 @@ The first step is to determine the primary workload. Will this be only inference
 
 If your organization plans to purchase ML-assisted products and services, the focus shifts towards deploying an "inference" workload. Inference workloads are production-ready machine models infused in services or applications that process unseen data and generate an action for the subsequent business process or a recommendation. These workloads require the appropriate hardware and orchestration services. Only a monitoring suite focusing on service availability could suffice if the models are vendor-proprietary. 
 
-If your organization builds models, the ML platform should focus on two distinct disciplines: Model development and model deployment. A term often heard in this scenario is MLOPs, DevOPs for the Machine Learning ecosystem. The ML platform should provide an infrastructure and software platform that helps data scientists develop their models. Data Scientists are highly skilled in calculus, linear algebra, and statistics. They are typically not hardcore developers, nor are they infrastructure-tech savvy. The unicorns are the ones that know enough to help themselves with creating their own world and developing their model. This blog series and the [training vs. inference series](https://frankdenneman.nl/?s=training+versus+inference) intend to bring you closer to the data science team and help you understand some of the nuances of machine learning without going through a full-fledged linear algebra course. 
+If your organization builds models, the ML platform should focus on two distinct disciplines: Model development and model deployment. A term often heard in this scenario is MLOPs, DevOPs for the Machine Learning ecosystem. The ML platform should provide an infrastructure and software platform that helps data scientists develop their models. Data Scientists are highly skilled in calculus, linear algebra, and statistics. They are typically not hardcore developers, nor are they infrastructure-tech savvy. The unicorns are the ones that know enough to help themselves with creating their own world and developing their model. This blog series and the [training vs. inference series](https://frankdenneman.ai/?s=training+versus+inference) intend to bring you closer to the data science team and help you understand some of the nuances of machine learning without going through a full-fledged linear algebra course. 
 
 # ML Development Lifecycle
 
@@ -24,7 +24,7 @@ A machine learning model that is fully trained and deemed production ready must 
 
 5. Deployment process
 
-[![](images/1-ML-model-development-lifecycle.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/1-ML-model-development-lifecycle.svg)
+[![](images/1-ML-model-development-lifecycle.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/1-ML-model-development-lifecycle.svg)
 
 In the build process, the data science team determines what framework and algorithm to use during the concept phase. They explore what data is available, where the data lives, and how they can access it. They study the idea's feasibility by running some tests using small data sets.
 
@@ -36,7 +36,7 @@ To successfully integrate, deploy, operate, monitor and retrain and re-release, 
 
 Understanding the three ML processes better is essential for the infrastructure focussed operator, as this translates to hardware requirements. Let's look at what's supported by vSphere first and then map these features and functionalities to the ML development lifecycle processes. vSphere and Tanzu Kubernetes Grid Services can assign ML accelerators (GPUs) to workloads. Three configurations are possible: a full GPU, a fractional GPU, and multiple GPUs assigned to a single VM. Fractional GPU functionality allows vSphere to split up a full GPU and assign smaller GPUs to multiple VMs. With Multi-GPU, the ESXi hosts can assign multiple GPUs to VMs. NVIDIA GPUDirect RDMA technology significantly improves communication between GPU-enabled VMs on different ESXi hosts. Throughout this series, we will continuously dive deeper into each technology.
 
-[![](images/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)
+[![](images/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/2-vSphere-ML-Accelerator-Spectrum-fractional-multi-gpu.svg)
 
 ## Full GPUs
 
@@ -64,7 +64,7 @@ Fractional GPUs enable multiple VMs to have simultaneous, direct access to a sin
 
 The C-series is optimized for compute-intensive workloads. These are pretty much the classical ML workloads. The Q-series type can do the same, but the key difference is that the C-type can only decode video streams, and the Q-type can also (hardware) encode video streams. This difference is essential to know if the data science team plans to deploy a vision AI model. If the model only generates an action or a warning after object\\anomaly detection in a video stream, the video is not encoded, and thus only decoders are necessary. A C-series vGPU type is sufficient. However, if the video stream is encoded after being processed by the model because human intervention or a second opinion is required, then a Q-type series is required.
 
-[![](images/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)
+[![](images/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/3-vSphere-ML-Accelerator-Spectrum-fractional-GPUs-in-detail.svg)
 
 NVIDIA vGPU offers two modes, the default Time-sliced mode or the vGPU Multi-Instance GPU (MIG) mode, available from the Ampere architecture onwards. A vGPU is assigned to a VM by selecting a vGPU type (C or Q-series) and a frame buffer size (GPU memory). When using MIG mode, the vGPU type also provides the ability to specify compute elements. The GPU device runs either in time-sliced mode or in MIG mode. There is no possibility of creating a heterogenous vGPU environment where MIG and time-sliced profiles share the same physical GPU device. You can deploy multiple GPU devices in one ESXi host and configure one GPU in time-sliced mode and one in MIG mode. 
 
@@ -100,7 +100,7 @@ MIG provides a composable configuration of GPU resources. Although the profiles 
 
 For example, the MIG vGPU profile MIG4g.40gb constructs a GPU instance from four "GPU slices." A GPU slice includes a "Sys Pipe," a GPC, an L2 cache slice, and a GPU memory slice. A GPU memory slice includes the L2 cache slices and the associated frame buffer. These are dedicated memory resources. An application consuming a GPU instance does not consume an L2 slice from another GPU instance. This partitioning ensures fault isolation, error containment, recovery, and QoS.
 
-[![](images/5-MIG-Architecture.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/5-MIG-Architecture.svg)
+[![](images/5-MIG-Architecture.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/5-MIG-Architecture.svg)
 
 The sys pipe communicates with the CPU and is responsible for GPC task scheduling. MIG creates a separate and isolated data path through the entire system, from the crossbar parts all the way to the memory controllers and its DRAM address buses. It's expected that if more GPU memory is assigned to a GPU instance, more data is copied between the ESXi host system and GPU memory. Thus, dedicated copy engines are assigned to the GPU instance. Additionally, a dedicated number of decoders are assigned per GPU instance. Returning to the MIG Instance example, the MIG vGPU profile MIG4g.40gb isolates four of the eight available memory slices, four GPCs, four copy engines, and two decoders.
 
@@ -108,7 +108,7 @@ MIG provides a defined Quality of Service (QoS) and enhanced security due to iso
 
 ## MIG vGPU Fractional GPU use case - The Deployment Process
 
-If we return to the ML model development cycle, the deployment phase requires consistent performance. Of course, there is no problem in assigning Full GPUs to the workload, but not every inference workload needs that many resources. MIG can offer the right amount of high-performing yet efficient technology. The [training vs. inference series](https://frankdenneman.nl/?s=training+versus+inference) dove deep into both workload characteristics. For the typical inference workload, we notice a pattern of lightweight, latency-sensitive streaming data with lower computational needs than the training workload. 
+If we return to the ML model development cycle, the deployment phase requires consistent performance. Of course, there is no problem in assigning Full GPUs to the workload, but not every inference workload needs that many resources. MIG can offer the right amount of high-performing yet efficient technology. The [training vs. inference series](https://frankdenneman.ai/?s=training+versus+inference) dove deep into both workload characteristics. For the typical inference workload, we notice a pattern of lightweight, latency-sensitive streaming data with lower computational needs than the training workload. 
 
 |  | **Training** | **Inference** |
 | --- | --- | --- |
@@ -124,24 +124,24 @@ If we return to the ML model development cycle, the deployment phase requires co
 
 For training workloads, it's typically relatively straightforward present as many GPU resources to the training job as possible. The table shows that training is throughput based, requiring a large memory footprint, which often exceeds the memory capacity of a single GPU. 
 
-Many data science teams explore distributed training methods to speed up training jobs to reduce training time duration. With today's large models and large datasets, it's common to see training jobs of 150+ hours (a whole week of continuous training). For these workloads, vSphere supports the latest and greatest technology available. VSphere 7 and 8 support assigning multiple physical GPUs to a single VM. NVIDIA technology provides high-speed interconnect technology to speed up inter-GPU communication during training jobs. [Part 2](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) dives into the ML accelerator spectrum for distributed training - Multi-GPU technology. 
+Many data science teams explore distributed training methods to speed up training jobs to reduce training time duration. With today's large models and large datasets, it's common to see training jobs of 150+ hours (a whole week of continuous training). For these workloads, vSphere supports the latest and greatest technology available. VSphere 7 and 8 support assigning multiple physical GPUs to a single VM. NVIDIA technology provides high-speed interconnect technology to speed up inter-GPU communication during training jobs. [Part 2](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) dives into the ML accelerator spectrum for distributed training - Multi-GPU technology. 
 
-[![](images/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)
+[![](images/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)
 
 Other articles in this series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

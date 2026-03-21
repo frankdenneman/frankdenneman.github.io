@@ -8,11 +8,11 @@ coverImage: "Featured-DRS-and-AH.png"
 
 vSphere 7 and 8 offer two passthrough options, DirectPath IO and Dynamic DirectPath IO. Dynamic DirectPath IO is the vSphere brand name of the passthrough functionality of PCI devices to virtual machines. It allows assigning a dedicated GPU to a VM with the lowest overhead possible. DirectPath I/O assigns a PCI Passthrough device by identifying a specific physical device located on a specific ESXi host at a specific bus location on that ESXi host using the Segment/Bus/Device/Function format. This configuration path restricts that VM to that specific ESXi host.
 
-[![](images/01-DirectPathIO.svg)](https://frankdenneman.nl/wp-content/uploads/2023/06/01-DirectPathIO.svg)
+[![](images/01-DirectPathIO.svg)](https://frankdenneman.ai/wp-content/uploads/2023/06/01-DirectPathIO.svg)
 
 In contrast, Dynamic DirectPath I/O utilizes the assignable hardware framework with vSphere that provides a key-value method using custom or vendor-device-generated labels. It allows vSphere to decouple the static relationship between VM and device and provides a flexible mechanism for assigning PCI devices exclusively to VMs. In other words, it makes passthrough devices work with DRS initial placement and, subsequently vSphere HA. 
 
-[![](images/02-Dynamic-DirectPathIO-.svg)](https://frankdenneman.nl/wp-content/uploads/2023/06/02-Dynamic-DirectPathIO-.svg)
+[![](images/02-Dynamic-DirectPathIO-.svg)](https://frankdenneman.ai/wp-content/uploads/2023/06/02-Dynamic-DirectPathIO-.svg)
 
 The assignable hardware framework allows a device to describe itself with key-value attributes. The framework allows the VM to specify the attributes of the device. It relies on the framework to match these two for design assignment before DRS handles the virtual machine placement decision. It allows operation teams to specify custom labels that help to indicate hardware or site-specific functionality. For example, Labels in a heterogeneous ML cluster can designate which GPUs serve for training and inference workloads. 
 
@@ -27,7 +27,7 @@ The assignable hardware framework allows a device to describe itself with key-va
 
 The operations team can describe what kind of device a VM needs. Dynamic Directpath IO, with the help of the assignable hardware framework, assigns a device that satisfies the description. As DRS has a global view of all the GPU devices in the cluster, it is DRS that coordinates the matching of the VM, the ESXi host, and the GPU device. DRS selects and GPU device and moves the VM to the corresponding ESXi host. During power on, the host services follow up on DRS's decision and assign the GPU device to the VM.
 
-[![](images/04-DRS-and-AH.svg)](https://frankdenneman.nl/wp-content/uploads/2023/06/04-DRS-and-AH.svg)
+[![](images/04-DRS-and-AH.svg)](https://frankdenneman.ai/wp-content/uploads/2023/06/04-DRS-and-AH.svg)
 
 The combination of vSphere clustering services and Dynamic DirectPath IO is a significant differentiator between running ML workloads on a virtualized platform and bare-metal hosting. Dynamic DirectPath IO allows DRS to automate the initial placement of accelerated workloads. With Dynamic DirectPath IO and vSphere HA, workloads can frictionlessly return to operation on other available hardware if the current accelerated ESXi host fails.
 
@@ -39,17 +39,17 @@ For Dynamic DirectPath IO, DRS uses the internal AH search engine to find a suit
 
 If an ESXi host fails, vSphere High Availability restarts the VMs on the remaining ESXi hosts within the cluster. If vCenter runs, HA relies on DRS to find an appropriate ESXi host. With Dynamic DirectPath IO, AH assists DRS in finding a new host based on the device assignment availability. Workloads automatically restart on the remaining available GPUs without any human intervention. With DirectPath IO, the VM is powered down by HA during an isolation event or has crashed due to an ESXi host failure. However, it will remain powered off, as the VM is confined to running on that specific host due to its static SBDF configuration.
 
-[![](images/05-DPIO-vs-DDPIO-and-HAA-DRS.svg)](https://frankdenneman.nl/wp-content/uploads/2023/06/05-DPIO-vs-DDPIO-and-HAA-DRS.svg)
+[![](images/05-DPIO-vs-DDPIO-and-HAA-DRS.svg)](https://frankdenneman.ai/wp-content/uploads/2023/06/05-DPIO-vs-DDPIO-and-HAA-DRS.svg)
 
 # Default ESXi GPU Setting
 
 Although DirectPath IO and Dynamic DirectPath IO are the brand names we at VMware like to use in most public-facing collateral, most of the UI uses the term passthrough as the name of the overarching technology. (If we poke around with the esxcli, we also see Passthru.) But the two DirectPath IO types are distinguished at VM creation time as "Access Type". A freshly installed ESXi OS does not automatically configure the GPU as a passthrough device. If you select the accelerated ESXi host in the inventory view and click on the configure menu, and click on PCIe Devices.
 
-[![](images/06-Default-GPU-Passthrough-Disabled-1024x127.png)](https://frankdenneman.nl/wp-content/uploads/2023/06/06-Default-GPU-Passthrough-Disabled.png)
+[![](images/06-Default-GPU-Passthrough-Disabled-1024x127.png)](https://frankdenneman.ai/wp-content/uploads/2023/06/06-Default-GPU-Passthrough-Disabled.png)
 
 Graphics shows that the GPU device is set to Basics Graphics Type and in a Shared configuration. It is the state the device should be in before configuring either any DirectPath IO type or NVIDIA vGPU functionality. 
 
-[![](images/07-Graphics-Devices-Passthrough-Disabled-1024x352.png)](https://frankdenneman.nl/wp-content/uploads/2023/06/07-Graphics-Devices-Passthrough-Disabled.png)
+[![](images/07-Graphics-Devices-Passthrough-Disabled-1024x352.png)](https://frankdenneman.ai/wp-content/uploads/2023/06/07-Graphics-Devices-Passthrough-Disabled.png)
 
 You can verify these settings via the CLI: 
 
@@ -57,7 +57,7 @@ You can verify these settings via the CLI: 
 esxcli graphics device list
 ```
 
-[![](images/08-esxcli-graphics-device-list.png)](https://frankdenneman.nl/wp-content/uploads/2023/06/08-esxcli-graphics-device-list.png)
+[![](images/08-esxcli-graphics-device-list.png)](https://frankdenneman.ai/wp-content/uploads/2023/06/08-esxcli-graphics-device-list.png)
 
 ```
 esxcli graphics host get
@@ -69,11 +69,11 @@ esxcli graphics host get
 
 Once we know the GPU device is in its default state, we can go back to the PCI Devices overview, select GPU Device, and click "Toggle Passthrough."
 
-[![](images/10-select-GPU-and-Toggle-Passthrough-1024x128.png)](https://frankdenneman.nl/wp-content/uploads/2023/06/10-select-GPU-and-Toggle-Passthrough.png)
+[![](images/10-select-GPU-and-Toggle-Passthrough-1024x128.png)](https://frankdenneman.ai/wp-content/uploads/2023/06/10-select-GPU-and-Toggle-Passthrough.png)
 
 The UI reports that the GPU device has enabled Passthrough.
 
-[![](images/11-GPU-Passthrough-enabled-1024x135.png)](https://frankdenneman.nl/wp-content/uploads/2023/06/11-GPU-Passthrough-enabled.png)
+[![](images/11-GPU-Passthrough-enabled-1024x135.png)](https://frankdenneman.ai/wp-content/uploads/2023/06/11-GPU-Passthrough-enabled.png)
 
 Now, the UI list the active type of the GPU device as Direct.
 
@@ -177,18 +177,18 @@ The following articles will cover NVAIE vGPU driver installation on ESXi and TKG
 
 Other articles in this series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

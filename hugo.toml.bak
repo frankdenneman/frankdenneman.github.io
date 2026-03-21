@@ -1,7 +1,6 @@
 baseURL = "https://frankdenneman.nl/"
 languageCode = "en-us"
-title = "Frank Denneman"
-
+title = "Frank Denneman | Architecting AI Infrastructure"
 enableRobotsTXT = true
 canonifyURLs = true
 
@@ -10,6 +9,7 @@ canonifyURLs = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "TXT", "LLMSFULL"]
+  section = ["HTML", "RSS", "JSON"]
 
 [outputFormats.TXT]
   mediaType = "text/plain"
@@ -52,7 +52,7 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
   author = "Frank Denneman"
   profilePicture = "images/Headshot-FD.jpeg"
   favicon = "favicons/"
-
+description = "Distinguished Engineer and Chief Technologist for AI at VMware Cloud Foundation. Writing about AI infrastructure, GPU platform design, and NUMA-aware architecture."
 [params.plausibleAnalytics]
   domain = "frankdenneman.nl"
   serverURL = "https://plausible.io"
@@ -100,6 +100,11 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
     weight = 42
 
   [[menu.main]]
+    name = "AI Memory Series"
+    url = "/understanding-ai-memory/"
+    weight = 43
+
+  [[menu.main]]
     name = "Tools"
     url = "/tools/"
     weight = 44
@@ -113,17 +118,6 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
     name = "About"
     url = "/about/"
     weight = 47
-
-  [[menu.main]]
-    name = "Now"
-    url = "/now/"
-    weight = 50
-
-  [[menu.main]]
-    identifier = "privacy"
-    name = "Privacy Policy"
-    url = "/privacy/"
-    weight = 90
 
 [security.exec]
   # Allow the Node toolcache path used on GitHub Actions runners

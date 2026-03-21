@@ -8,7 +8,7 @@ coverImage: "NVAIE.png"
 
 vSphere allows assigning GPU devices to a VM using VMware's (Dynamic) Direct Path I/O technology (Passthru) or NVIDIA's vGPU technology. The NVIDIA vGPU technology is a core part of the NVIDIA AI Enterprise suite ([NVAIE](https://www.nvidia.com/en-us/data-center/products/ai-enterprise/)). NVAIE is more than just the vGPU driver. It's a complete technology stack that allows data scientists to run an end-to-end workflow on certified accelerated infrastructure. Let's look at what NVAIE offers and how it works under the cover.
 
-[![](images/1.-NVAIE-stack.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/1.-NVAIE-stack.svg)
+[![](images/1.-NVAIE-stack.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/1.-NVAIE-stack.svg)
 
 The operators, VI admins, and architects facilitate the technology stack while the data science team and developers consume it. Most elements can be consumed via self-service. However, there is one place in the technology stack, NVIDIA Magnum IO, where the expertise of both roles (facilitators and consumers) come together, and their joint effort produces an efficient and optimized distributed training solution.
 
@@ -40,9 +40,9 @@ Certified systems for the data center are tested both as single nodes and in a 2
 
 - System-level security and hardware-based key management
 
-The [NVIDIA Qualified Server Catalog](https://www.nvidia.com/en-in/data-center/data-center-gpus/tesla-qualified-servers-catalog/) provides an easy overview of all the server models and their specific configuration and NVIDIA validation types. It offers the ability to export the table in a PDF and Excel format at the bottom of the page. Still, I like the available filter system to drill down to the exact specification that suits your workload needs. The [GPU device differentiators article](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/) can help you select the GPUs that fit your workloads and deploy location.
+The [NVIDIA Qualified Server Catalog](https://www.nvidia.com/en-in/data-center/data-center-gpus/tesla-qualified-servers-catalog/) provides an easy overview of all the server models and their specific configuration and NVIDIA validation types. It offers the ability to export the table in a PDF and Excel format at the bottom of the page. Still, I like the available filter system to drill down to the exact specification that suits your workload needs. The [GPU device differentiators article](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/) can help you select the GPUs that fit your workloads and deploy location.
 
-[![](images/2-Qualified-Server-Catalog--1024x243.png)](https://frankdenneman.nl/wp-content/uploads/2023/05/2-Qualified-Server-Catalog-.png)
+[![](images/2-Qualified-Server-Catalog--1024x243.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/2-Qualified-Server-Catalog-.png)
 
 The only distinction the qualified server catalog doesn't appear to make is whether the system is classified as a data center or an edge system and thus receives a different functional and performance test pattern. The [NVIDIA-Certified Systems](https://docs.nvidia.com/ngc/ngc-deploy-on-premises/nvidia-certified-systems/index.html#nvidia-certified-systems-list) web page lists the recent data center server and edge servers. A [PDF](https://docs.nvidia.com/ngc/ngc-deploy-on-premises/pdf/nvidia-certified-systems.pdf) is also available for download.
 
@@ -64,19 +64,19 @@ The "Complete vGPU Package for vSphere 8.0 including supported guest drivers" co
 
 We are interested in the "NVIDIA AI Enterprise 3.1 Software Package for VMware vSphere 8.0" package. This package contains both the NVD-AIE Host VIB and the compatible guest os driver.
 
-[![](images/3-Contents-of-NVAIE-package.png)](https://frankdenneman.nl/wp-content/uploads/2023/05/3-Contents-of-NVAIE-package.png)
+[![](images/3-Contents-of-NVAIE-package.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/3-Contents-of-NVAIE-package.png)
 
 The easiest and failsafe method of downloading the correct package is to select the NVAIE option in the Product Family. You can finetune the results by only selecting the vSphere platform version you are running in your environment.
 
-[![](images/4-Software-Downloads-1024x445.png)](https://frankdenneman.nl/wp-content/uploads/2023/05/4-Software-Downloads.png)
+[![](images/4-Software-Downloads-1024x445.png)](https://frankdenneman.ai/wp-content/uploads/2023/05/4-Software-Downloads.png)
 
 What's in the package? The extracted AIE zip file screenshot shows that a vGPU Software release contains the Host VIB, the NVIDIA Windows driver, and the NVIDIA Linux driver. NVIDIA uses the term NVIDIA Virtual GPU Manager, what we like to call the ESXi host VIB. There are some compatibility requirements between the host and guest driver, hence the reason to package them together. The best experience is to keep both drivers in lockstep when updating the ESXi host with a new vGPU driver release. But I can imagine that it's simply not doable for some workloads, and the operating team would prefer to delay the outage required for the guest OS upgrade until later. Luckily, NVIDIA has relaxed this requirement and now supports host and guest drivers from major release branches (15. x) and previous branches. Suppose the combination is used where the guest VM drivers are from the previous branches. In that case, the combination supports **only** the features, hardware, and software (including guest OSes) supported on both releases. According to the [vGPU software documentation](https://docs.nvidia.com/grid/latest/grid-vgpu-release-notes-vmware-vsphere/index.html#vgpu-manager-guest-vm-compatibilty-requirements), the host driver 15.0 through 15.2 is compatible with the guest drivers of the 14.x release. A future article in this series shows how to correctly configure a VM in passthrough mode or with a vGPU profile. 
 
 ## NVIDIA Magnum IO
 
-The name Magnum IO is derived from multi-GPU, multi-node input/output. NVIDIA likes to explain Magnum IO as a collection of technologies related to data at rest, data on the move, and data at work for the IO subsystem of the data center. It divides into four categories: Network IO, In-network compute, Storage IO, and IO management. I won't cover IO management as they focus on bare-metal implementations. All these acceleration technologies focus on optimizing distributed training. The data science team deploys most of these components in their preferred runtime (VM, container). However, it's necessary to understand the infrastructure topology the data science team wants to leverage technologies like GPUDirect RDMA, NCCL, SHARP, and GPUDirect Storage. Typically this requires the involvement of the virtual infrastructure team. The [previous parts](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/) in this series help the infrastructure team to have a basic understanding of distributed training. 
+The name Magnum IO is derived from multi-GPU, multi-node input/output. NVIDIA likes to explain Magnum IO as a collection of technologies related to data at rest, data on the move, and data at work for the IO subsystem of the data center. It divides into four categories: Network IO, In-network compute, Storage IO, and IO management. I won't cover IO management as they focus on bare-metal implementations. All these acceleration technologies focus on optimizing distributed training. The data science team deploys most of these components in their preferred runtime (VM, container). However, it's necessary to understand the infrastructure topology the data science team wants to leverage technologies like GPUDirect RDMA, NCCL, SHARP, and GPUDirect Storage. Typically this requires the involvement of the virtual infrastructure team. The [previous parts](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/) in this series help the infrastructure team to have a basic understanding of distributed training. 
 
-[![](images/5-NVAIE-Magnun-io.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/5-NVAIE-Magnun-io.svg)
+[![](images/5-NVAIE-Magnun-io.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/5-NVAIE-Magnun-io.svg)
 
 ### In-Network Compute
 
@@ -85,7 +85,7 @@ The name Magnum IO is derived from multi-GPU, multi-node input/output. NVIDIA li
 | **MPI Tag Matching** | [MPI Tag Matching](https://enterprise-support.nvidia.com/s/article/understanding-mpi-tag-matching-and-rendezvous-offloads--connectx-5-x) reduces MPI communication time on NVIDIA Mellanox Infiniband adapters. |
 | **SHARP** | Scalable Hierarchical Aggregation and Reduction Protocol ([SHARP](https://docs.nvidia.com/networking/display/sharpv270)) offloads collective communication operations from the CPU to the network and eliminates the need to send data multiple times between nodes.  |
 
-SHARP support was added to NCCL to offload all-reduce collective operations into the network fabric. Additionally, SHARP accelerators are present in NVSwitch v3. Instead of distributing the data to each GPU and having the GPUs perform the calculations, they send their data to SHARP accelerators inside the [NVSwitch](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/). The accelerators then perform the calculations and then send the results back. This results in 2_N_+2 operations, or approximately halving the number of read/write operations needed to perform the all-reduce calculation.
+SHARP support was added to NCCL to offload all-reduce collective operations into the network fabric. Additionally, SHARP accelerators are present in NVSwitch v3. Instead of distributing the data to each GPU and having the GPUs perform the calculations, they send their data to SHARP accelerators inside the [NVSwitch](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/). The accelerators then perform the calculations and then send the results back. This results in 2_N_+2 operations, or approximately halving the number of read/write operations needed to perform the all-reduce calculation.
 
 ### Network IO
 
@@ -94,14 +94,14 @@ The Network IO stack contains IO acceleration technologies that bypass the kerne
 | **Technology** | **Description** |
 | --- | --- |
 | **GPUDirect RDMA** | [GPUDirect RDMA](https://docs.nvidia.com/cuda/gpudirect-rdma/index.html) enables a direct path for data exchange between the GPU and a NIC. It allows for direct communication between NVIDIA GPUs in different ESXi hosts.  |
-| **NCCL** | NVIDIA Collective Communications Library ([NCCL](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html)) is a library that contains inter-GPU communication primitives optimizing distributed training on [multi-GPU multi-node systems](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/). |
+| **NCCL** | NVIDIA Collective Communications Library ([NCCL](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html)) is a library that contains inter-GPU communication primitives optimizing distributed training on [multi-GPU multi-node systems](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/). |
 | **NVSHMEM** | NVIDIA Symmetrical Hierarchical Memory ([NVSHMEM](https://developer.nvidia.com/nvshmem)) creates a global address space for data that spans the memory of multiple GPUs. NVSHMEM-enabled CUDA uses asynchronous, GPU-initiated data transfers, thereby reducing critical-path latencies and eliminating synchronization overheads between the CPU and the GPU while scaling. |
 | **HPC-X for MPI** | NVIDIA [HPC-X for MPI](https://enterprise-support.nvidia.com/s/article/what-is-hpc-x-x) offloads collective communication from Message Passing Interface (MPI) onto NVIDIA Quantum InfiniBand networking hardware. |
 | **UCX** | Unified Communication X ([UCX](https://openucx.org/)) is an open-source communication framework that provides GPU-accelerated point-to-point communications, supporting NVLink, PCIe, Ethernet, or Infiniband connections between GPUs. |
 | **ASAP2** | NVIDIA Accelerated Switch and Packet Processing ([ASAP2](https://www.nvidia.com/en-us/search/?page=1&q=asap2&sort=relevance)) technology allows SmartNICs and data processing units (DPUs) to offload and accelerate software-defined network operations. |
 | **DPDK** | The Data Plane Deployment Kit ([DPDK](https://core.dpdk.org/doc/)) contains the poll mode driver (PMD) for ConnectX Ethernet adapters, NVIDIA Bluefield-2 SmartNICs (DPUs). Kernel bypass optimizations allow the system to reach 200 GbE throughput on a single NIC port. |
 
-The article "[vSphere ML Accelerator Spectrum Deep Dive for Distributed Training – Multi-GPU](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)" has more info about GPUDirect RDMA, NCCL, and distributed training.
+The article "[vSphere ML Accelerator Spectrum Deep Dive for Distributed Training – Multi-GPU](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)" has more info about GPUDirect RDMA, NCCL, and distributed training.
 
 ### Storage IO
 
@@ -128,7 +128,7 @@ NVIDIA [CUDA-X](https://developer.nvidia.com/gpu-accelerated-libraries) is a C
 
 NVIDIA uses the GPU and Network operator to automate the drivers, container runtimes, and relevant libraries configuration for GPU and network devices on Kubernetes nodes. The Network Operator automates the management of all the NVIDIA software components needed to provision fast networking, such as RDMA and GPUDirect. The Network operator works together with the GPU operator to enable GPU-Direct RDMA.
 
-[![](images/6-NVAIE-vGPU-Operator.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/6-NVAIE-vGPU-Operator.svg)
+[![](images/6-NVAIE-vGPU-Operator.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/6-NVAIE-vGPU-Operator.svg)
 
 The GPU operator is open-source and packaged as a helm chart. The GPU operator automates the management of all software components needed to provision GPU. The components are:
 
@@ -160,18 +160,18 @@ The [NeMo](https://www.nvidia.com/en-us/ai-data-science/generative-ai/nemo-fram
 
 Other articles in the vSphere ML Accelerator Spectrum Deep Dive
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

@@ -6,11 +6,11 @@ categories:
 coverImage: "Install-ESXi-NVIDIA-AIE.png"
 ---
 
-After setting up the [Cloud License Service Instance](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/), the NVIDIA AI Enterprise vGPU driver must be installed on the ESXi host. A single version driver amongst all the ESXi hosts in the cluster containing NVIDIA GPU devices is recommended. The most common error during the GPU install process is using the wrong driver. And it's an easy mistake to make. In vGPU version 13 (the current NVAIE version is 15.2), NVIDIA split its ESXi host vGPU driver into two kinds. A standard vGPU driver component supports graphics, and an AI Enterprise (AIE) vGPU component supports compute. The Ampere generation devices, such as the A30 and A100 device, support compute only, so it requires an AIE vGPU component. There are AIE components available for all NVIDIA drivers since vGPU 13.
+After setting up the [Cloud License Service Instance](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/), the NVIDIA AI Enterprise vGPU driver must be installed on the ESXi host. A single version driver amongst all the ESXi hosts in the cluster containing NVIDIA GPU devices is recommended. The most common error during the GPU install process is using the wrong driver. And it's an easy mistake to make. In vGPU version 13 (the current NVAIE version is 15.2), NVIDIA split its ESXi host vGPU driver into two kinds. A standard vGPU driver component supports graphics, and an AI Enterprise (AIE) vGPU component supports compute. The Ampere generation devices, such as the A30 and A100 device, support compute only, so it requires an AIE vGPU component. There are AIE components available for all NVIDIA drivers since vGPU 13.
 
 This article series focuses on building a vSphere infrastructure for ML platforms, and thus this article lists the steps to install the NVD-AIE driver. To download the NVD-AIE driver, ensure you have a user id that has access to the NVIDIA License Portal. The next step is to ensure the platform meets the requirements before installing the driver component. The installation process can be done using vSphere Lifecycle Manager or manually installing the driver component on each ESXi host in the cluster. Both methods are covered in this article.
 
-[![](images/01-Install-ESXi-NVIDIA-AIE-1.svg)](https://frankdenneman.nl/wp-content/uploads/2023/07/01-Install-ESXi-NVIDIA-AIE-1.svg)
+[![](images/01-Install-ESXi-NVIDIA-AIE-1.svg)](https://frankdenneman.ai/wp-content/uploads/2023/07/01-Install-ESXi-NVIDIA-AIE-1.svg)
 
 ## Requirements
 
@@ -24,21 +24,21 @@ Make sure to configure the ESXi Host settings as follows before installing the N
 | vCenter | Must be configured with Advanced Setting _vgpu.hotmigrate.enabled_ | If you want to live-migrate VMs |
 | vSphere GPU Device Settings | Graphics Type: Basic   Graphics Device Settings: Shared Direct |  |
 
-The article [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/) provides detailed information about every setting listed.
+The article [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/) provides detailed information about every setting listed.
 
 ## Preparing the GPU Device for the vGPU Driver
 
 The GPU device must be in "Basic Graphics Type" mode to successfully install the vGPU driver. It is the default setting for the device. That means that the GPU should not be configured as a Passthrough device. In vCenter, go to the **Inventory view**, select the ESXi host containing the GPU device, go to the **Configure** menu option, **Hardware**, **PCI Devices**. The GUI should present the following settings:
 
-[![](images/02-PCIe-Device-Default-Settings-1024x257.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/02-PCIe-Device-Default-Settings.png)
+[![](images/02-PCIe-Device-Default-Settings-1024x257.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/02-PCIe-Device-Default-Settings.png)
 
 Go to the **Graphics** menu options
 
-[![](images/03-Graphics-Device-Default-Settings-1024x354.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/03-Graphics-Device-Default-Settings.png)
+[![](images/03-Graphics-Device-Default-Settings-1024x354.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/03-Graphics-Device-Default-Settings.png)
 
 Select the GPU and choose **EDIT..**. The default graphics type is Shared, which provides vSGA functionality. To enable vGPU support for VMs, you must change the default graphics type to **Shared Direct**.
 
-[![](images/04-Shared-Direct-Graphics-Settings-1024x725.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/04-Shared-Direct-Graphics-Settings.png)
+[![](images/04-Shared-Direct-Graphics-Settings-1024x725.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/04-Shared-Direct-Graphics-Settings.png)
 
 You can verify these settings via the CLI using the following command:
 
@@ -79,27 +79,27 @@ Exclusive access granted.
 
 The vGPU driver is available at the NVIDIA Licensing Portal, part of the NVIDIA APPLICATION HUB. Go to the **SOFTWARE DOWNLOADS** option in the left menu, or go directly to [https://ui.licensing.nvidia.com/software](https://ui.licensing.nvidia.com/software) if logged in.
 
-[![](images/05-NVIDIA-Software-Downloads-Product-Family-1024x248.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/05-NVIDIA-Software-Downloads-Product-Family.png)
+[![](images/05-NVIDIA-Software-Downloads-Product-Family-1024x248.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/05-NVIDIA-Software-Downloads-Product-Family.png)
 
 Two options look applicable: the vGPU product family and the NVAIE product family. For ML workloads, choose the NVAIE product family. The NVAIE product family provides vGPU capability for compute (ML/AI) workload. The vGPU family is for vGPU functionality for the VDI workload. You can recognize the correct vGPU Driver components with the NVD-AIE (NVIDIA AI Enterprise) prefix. To reduce the results shown on the screen, click **PLATFORM** and select **VMware vSphere.**
 
-[![](images/06-NVIDIA-Software-Downloads-Select-Platform.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/06-NVIDIA-Software-Downloads-Select-Platform.png)
+[![](images/06-NVIDIA-Software-Downloads-Select-Platform.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/06-NVIDIA-Software-Downloads-Select-Platform.png)
 
 Select the latest release. At the time of writing this article, the latest NVAIE version was 3.1 for both vSphere 7 and vSphere 8. 
 
-[![](images/07-Software-Downloads-NVAIE-3.1--1024x180.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/07-Software-Downloads-NVAIE-3.1-.png)
+[![](images/07-Software-Downloads-NVAIE-3.1--1024x180.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/07-Software-Downloads-NVAIE-3.1-.png)
 
 Since I'm running vSphere 8.0 update 1, I'm selecting NVAIE 3.1 for vSphere 8.
 
-[![](images/08-NVAIE-3.1-for-vSphere-8.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/08-NVAIE-3.1-for-vSphere-8.png)
+[![](images/08-NVAIE-3.1-for-vSphere-8.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/08-NVAIE-3.1-for-vSphere-8.png)
 
 The file is downloaded in a zip-file format. Extract the file to review the contents.
 
-[![](images/09-Extracted-NVAIE-zip.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/09-Extracted-NVAIE-zip.png)
+[![](images/09-Extracted-NVAIE-zip.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/09-Extracted-NVAIE-zip.png)
 
-As described in the articles "[vSphere ML Accelerator Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)" and "[vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)", two components drive the GPU. The guest OS driver controls the MMIO space and the communication of the device, and the GPU manager (the NVIDIA name for the ESXi Driver) controls the time-sharing mechanism to multiplex control across multiple workloads.
+As described in the articles "[vSphere ML Accelerator Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)" and "[vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)", two components drive the GPU. The guest OS driver controls the MMIO space and the communication of the device, and the GPU manager (the NVIDIA name for the ESXi Driver) controls the time-sharing mechanism to multiplex control across multiple workloads.
 
-[![](images/01-Vt-D-passthrough.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/01-Vt-D-passthrough.svg)
+[![](images/01-Vt-D-passthrough.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/01-Vt-D-passthrough.svg)
 
 The zip file contains the ESXi Host Drivers and the Guest Drivers. It does not contain the GPU operator for TKGs, which installs and manages the LCM of the TKGs worker node driver. The GPU operator is installed via a helm chart. Before being able to install the GPU operator, the ESXi host driver must be installed to allow the VM Class to present a vGPU device to the TKGs worker node.
 
@@ -111,31 +111,31 @@ vSphere Lifecycle Manager
 
 [vSphere Lifecycle Manager (vCLM)](https://core.vmware.com/resource/introducing-vsphere-lifecycle-management-vlcm#section2) integrates the NVAIE GPU driver with the vSphere base image to enforce consistency across the ESXi hosts in the cluster. To extend the base image, import the NVAIE GPU driver component by opening up the **vSphere client menu** (click on the three lines in the top left corner next to vSphere Client) select **Lifecycle Manager**, select **ACTIONS**, **Import Updates**.
 
-[![](images/10-vCLM-Import-Updates.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/10-vCLM-Import-Updates.png)
+[![](images/10-vCLM-Import-Updates.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/10-vCLM-Import-Updates.png)
 
 Browse to the download location of the NVAIE vGPU driver and select the Host Driver Zip file to **IMPORT**.
 
-[![](images/11-vCLM-Import-NVAIE-vGPU-Driver-zip-1024x558.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/11-vCLM-Import-NVAIE-vGPU-Driver-zip.png)
+[![](images/11-vCLM-Import-NVAIE-vGPU-Driver-zip-1024x558.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/11-vCLM-Import-NVAIE-vGPU-Driver-zip.png)
 
 Verify if the import of the driver component is successful by clicking on **Image Depot**. Search the **Components** list.
 
-[![](images/12-vCLM-Independent-Components-1024x112.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/12-vCLM-Independent-Components.png)
+[![](images/12-vCLM-Independent-Components-1024x112.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/12-vCLM-Independent-Components.png)
 
 To extend the base image with the newly added component, go to the vCenter **Inventory view**, right-click the **vSphere cluster**, choose **Settings**, and click the **update** tab.
 
-[![](images/13-Lifecycle-Manager-Image-1024x306.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/13-Lifecycle-Manager-Image.png)
+[![](images/13-Lifecycle-Manager-Image-1024x306.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/13-Lifecycle-Manager-Image.png)
 
 In the **Image** view, Click on **EDIT**, review the confirmation, and choose **RESUME EDITING**. Click on **ADD COMPONENTS**, add the NVIDIA AI Enterprise vGPU driver for VMware ESX-version number, and choose **SELECT**.
 
-[![](images/01-vCLM-Add-Components-1024x634.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/01-vCLM-Add-Components.png)
+[![](images/01-vCLM-Add-Components-1024x634.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/01-vCLM-Add-Components.png)
 
 The driver is added to the base Image. Click on **Save.**
 
-[![](images/15-vCLM-Edit-Image-Driver-Added-1024x411.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/15-vCLM-Edit-Image-Driver-Added.png)
+[![](images/15-vCLM-Edit-Image-Driver-Added-1024x411.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/15-vCLM-Edit-Image-Driver-Added.png)
 
 The ESXi hosts in the cluster should be listed as non-compliant. Select the ESXi hosts to validate and remediate to apply the new base image. Once the base image is installed on all ESXi hosts, the Image Compliance screen indicates that all ESXi hosts in the cluster are compliant.
 
-[![](images/16-LCM-Image-Compliance-1024x293.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/16-LCM-Image-Compliance.png)
+[![](images/16-LCM-Image-Compliance-1024x293.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/16-LCM-Image-Compliance.png)
 
 The cluster is ready to deploy vGPU-enabled virtual machines.
 
@@ -186,7 +186,7 @@ Please note that the full path is required, even if you are running the esxcli 
 
 Verify if the driver is operational by executing the command nvidia-smi in an SSH session. 
 
-[![](images/17-nvidia-smi.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/17-nvidia-smi.png)
+[![](images/17-nvidia-smi.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/17-nvidia-smi.png)
 
 Unfortunately, NVIDIA SMI doesn't show whether an NVD-AIE or a regular vGPU driver is installed. If you are using an A30, A100, or H100, NVIDIA-SMI only works if an NVD-AIE driver is installed. You can check the current loaded VIB in vSphere with the following command:
 
@@ -197,24 +197,24 @@ NVD-AIE-800                     NVIDIA AI Enterprise vGPU driver for VMWare ESX-
 
 The UI shows that the active type configuration is now Shared Direct.
 
-[![](images/18-Graphics-Devices-Shared-Direct-Shared-Direct-1024x162.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/18-Graphics-Devices-Shared-Direct-Shared-Direct.png)
+[![](images/18-Graphics-Devices-Shared-Direct-Shared-Direct-1024x162.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/18-Graphics-Devices-Shared-Direct-Shared-Direct.png)
 
 The cluster is ready to deploy vGPU-enabled virtual machines. The next article focusses on installing the TKGs NVAIE GPU Operator.
 
 Previous articles in the vSphere ML Accelerator Spectrum Deep Dive Series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

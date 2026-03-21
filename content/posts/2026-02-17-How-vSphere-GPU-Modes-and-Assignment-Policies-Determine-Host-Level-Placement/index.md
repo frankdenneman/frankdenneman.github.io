@@ -14,7 +14,7 @@ concepts: ["GPU Modes", "Assignment Policies", "Host-Level Placement"]
 
 ## Architecting AI Infrastructure - Part 4
 
-In the [last article](https://frankdenneman.nl/posts/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/), we tracked a GPU-backed VM from resource configuration to host selection. DRS evaluated the cluster, Assignable Hardware filtered hosts for GPU compatibility, DRS ran its Goodness calculation, and picked a destination host. Now, the host is selected. But the placement is not finished.
+In the [last article](https://frankdenneman.ai/posts/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/), we tracked a GPU-backed VM from resource configuration to host selection. DRS evaluated the cluster, Assignable Hardware filtered hosts for GPU compatibility, DRS ran its Goodness calculation, and picked a destination host. Now, the host is selected. But the placement is not finished.
 
 Inside the host, another set of decisions decides which physical GPU gets the workload and what types of workloads that GPU will handle from then on. These host-level choices are less visible than DRS decisions. They do not show up in dashboards or trigger alerts. However, their effects add up over time, and they play a key role in keeping a shared AI platform healthy or letting it decline.
 

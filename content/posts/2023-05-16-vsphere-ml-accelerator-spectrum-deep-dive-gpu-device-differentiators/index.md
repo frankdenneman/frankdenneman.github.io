@@ -6,7 +6,7 @@ categories:
 coverImage: "NVAIE-Supported-GPUs-small.jpg"
 ---
 
-The two last parts reviewed the capabilities of the platform. vSphere can offer [fractional GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/) to [Multi-GPU](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) setups, catering to the workload's needs in every stage of its development life cycle. Let's look at the features and functionality of each supported GPU device. Currently, the range of supported GPU devices is quite broad. In total, 29 GPU devices are supported, dating back from 2016 to the last release in 2023. A table at the end of the article includes links to each GPUs product brief and their datasheet. Although NVIDIA and VMware form a close partnership, the listed support of devices is not a complete match. This can lead to some interesting questions typically answered with; it should work. But as always, if you want bulletproof support, follow the guides to ensure more leisure time on weekends and nights.
+The two last parts reviewed the capabilities of the platform. vSphere can offer [fractional GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/) to [Multi-GPU](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) setups, catering to the workload's needs in every stage of its development life cycle. Let's look at the features and functionality of each supported GPU device. Currently, the range of supported GPU devices is quite broad. In total, 29 GPU devices are supported, dating back from 2016 to the last release in 2023. A table at the end of the article includes links to each GPUs product brief and their datasheet. Although NVIDIA and VMware form a close partnership, the listed support of devices is not a complete match. This can lead to some interesting questions typically answered with; it should work. But as always, if you want bulletproof support, follow the guides to ensure more leisure time on weekends and nights.
 
 ## VMware HCL and NVAIE Support
 
@@ -16,25 +16,25 @@ The Y axis shows the device Interface type and possible slot consumption. This a
 
 The Ampere A16 is the only device that is listed twice in these overviews. The A16 device uses a dual-slot PCIe interface to offer four distinct GPUs on a single PCB card. The card contains 64GB GPU memory, but vSphere shall report four devices offering 16G of GPU memory. I thought this was the best solution to avoid confusion or remarks that the A16 was omitted, as some architects like to calculate the overall available GPU memory capacity per PCIe slot.
 
-[![](images/1-NVAIE-Supported-GPUs.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/1-NVAIE-Supported-GPUs.svg)
+[![](images/1-NVAIE-Supported-GPUs.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/1-NVAIE-Supported-GPUs.svg)
 
 ## NVLink Support
 
-If you plan to create a platform that supports [distributed training using multi-GPU technology](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/), this overview shows the available and supported NVLinks bandwidth capabilities. Not all GPU devices include NVLink support, and the ones with support can wildly differ. The MIG capability is omitted as MIG technology does not support NVLink.
+If you plan to create a platform that supports [distributed training using multi-GPU technology](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/), this overview shows the available and supported NVLinks bandwidth capabilities. Not all GPU devices include NVLink support, and the ones with support can wildly differ. The MIG capability is omitted as MIG technology does not support NVLink.
 
-[![](images/2-NVAIE-Supported-GPUs-NVLINK.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/2-NVAIE-Supported-GPUs-NVLINK.svg)
+[![](images/2-NVAIE-Supported-GPUs-NVLINK.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/2-NVAIE-Supported-GPUs-NVLINK.svg)
 
 ## NVIDIA Encoder Support
 
 The GPU decodes the video file before running it through an ML model. But it depends on the process following the outcome of the model prediction, whether to encode the video again and replay it to a display. With some models, the action required after, for example, an anomaly detection, is to generate a warning event. But if a human needs to look at the video for verification, a hardware encoder must be available on the GPU. The Q-series vGPU type is required to utilize the encoders. What may surprise most readers is that most high-end datacenter does not have encoders. This can affect the GPU selection process if you want to create isolated media streams at the edge using MIG technology. Other GPU devices might be a better choice or investigate the performance impact of CPU encoding.
 
-[![](images/3-NVAIE-Supported-GPUs-Encoders.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/3-NVAIE-Supported-GPUs-Encoders.svg)
+[![](images/3-NVAIE-Supported-GPUs-Encoders.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/3-NVAIE-Supported-GPUs-Encoders.svg)
 
 ## NVIDIA Decoder Support
 
 Every GPU has at least one decoder, but many have more. With MIG, you can assign and isolate decoders to a specific workload. When a GPU is time-sliced, the active workload utilizes all GPU decoders available. Please note that the A16 list has eight decoders, but each distinct GPU on the A16 exposes two decoders to the workload.
 
-[![](images/4-NVAIE-Supported-GPUs-Decoders.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/4-NVAIE-Supported-GPUs-Decoders.svg)
+[![](images/4-NVAIE-Supported-GPUs-Decoders.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/4-NVAIE-Supported-GPUs-Decoders.svg)
 
 ## GPUDirect RDMA Support
 
@@ -46,7 +46,7 @@ GPUDirect RDMA is supported on all time-sliced and MIG-backed C-series vGPUs on 
 
 When deploying at an edge location, power consumption can be a constraint. This table list the specified power consumption of each GPU device.
 
-[![](images/5-NVAIE-Supported-GPUs-Power-Consumption.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/5-NVAIE-Supported-GPUs-Power-Consumption.svg)
+[![](images/5-NVAIE-Supported-GPUs-Power-Consumption.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/5-NVAIE-Supported-GPUs-Power-Consumption.svg)
 
 ## Supported GPUs Overview
 
@@ -82,18 +82,18 @@ The table contains all the GPUs depicted in the diagrams above. Instead of repea
 
 Other articles in the vSphere ML Accelerator Spectrum Deep Dive
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

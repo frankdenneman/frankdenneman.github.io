@@ -36,7 +36,7 @@ To train ChatGPT, they used textual data from 5 sources. 60% of the dataset was 
 
 Update 1 again increases the maximum number of PCI passthrough devices for a VM. In 7.0 with hardware version 19, 16 passthrough devices are supported. In 8.0, with hardware version 20, a VM can contain up to 32 passthrough devices. With 8.0 update 1, hardware version 20, vSphere supports up to 64 PCIe passthrough devices per VM.
 
-[![](images/vSphere-ML-Accelerator-Spectrum-v2.svg)](https://frankdenneman.nl/wp-content/uploads/2023/04/vSphere-ML-Accelerator-Spectrum-v2.svg)
+[![](images/vSphere-ML-Accelerator-Spectrum-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2023/04/vSphere-ML-Accelerator-Spectrum-v2.svg)
 
 vSphere 8 Update 1 extends the spectrum of ML accelerator by supporting NVIDIA NVSwitch Architecture. NVIDIA NVSwitch is a technology that bolts onto the system's motherboard and connects four to sixteen SXM form factor GPUs. Such systems are known as NVIDIA HGX systems. The [Dell PowerEdge XE8545](https://www.dell.com/en-us/shop/povw/poweredge-xe8545) (AMD) (4 x A100), [XE9680](https://www.dell.com/en-us/shop/enterprise-products/new-xe9680-rack-server-intel/spd/poweredge-xe9680) (8 x A100\\H100) (Intel), and [HPE Apollo 6500 Gen10 Plus](https://buy.hpe.com/us/en/compute/apollo-systems/apollo-6500-system/apollo-6500-system/hpe-apollo-6500-gen10-plus-system/p/1013092236) (AMD) are such systems. The HGX lineup consists of two platforms, the "Redstone" platform, which contains 4 x SXM4 A100 GPUs, and the "Delta" platform, which contains 8 x SXM4 A100 SXMe GPUs. With the introduction of the NVIDIA Hopper architecture, the HGX platforms are now called Redstone-Next and Delta-Next, containing SXM5 H100 GPUs. There is the possibility of connecting two baseboards of a Delta (-Next) platform via the NVSwitch together in a single server, providing the ability to connect sixteen A100/H100 GPUs directly, but I haven't seen a server SKU of the major server vendors offering that configuration. If we open up an HGX machine, the first thing that sticks out is SXM from factor GPU. It moves away from the PCIe physical interface. The SXM socket handles power delivery, eliminating the need for external power cables, but more importantly, it results in a better (horizontal) mounting position, allowing for better cooling options. As the GPUs are better cooled, the H100 SXM5 can run more cores (1[32 streaming multi-processors (SMs)](https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/)) vs. H100 PCIe (113 SMs).
 
@@ -44,7 +44,7 @@ vSphere 8 Update 1 extends the spectrum of ML accelerator by supporting NVIDIA N
 
 ## What is the benefit of SXM, NVLINK, and NVSwitch?
 
-Training machine Learning models require a lot of data, which the system has to move between components such as CPUs and GPUs and between GPUs and GPUs. [Distributed training](https://frankdenneman.nl/2020/02/19/multi-gpu-and-distributed-deep-learning/) uses multiple GPUs to provide enough onboard GPU memory capacity to either process and execute the model parameters or to process the data set. If we dissect the data flow, this process has three major steps.
+Training machine Learning models require a lot of data, which the system has to move between components such as CPUs and GPUs and between GPUs and GPUs. [Distributed training](https://frankdenneman.ai/2020/02/19/multi-gpu-and-distributed-deep-learning/) uses multiple GPUs to provide enough onboard GPU memory capacity to either process and execute the model parameters or to process the data set. If we dissect the data flow, this process has three major steps.
 
 1. Load the data from system memory on the GPUs
 
@@ -54,15 +54,15 @@ Training machine Learning models require a lot of data, which the system has to 
 
 7. Rinse and repeat
 
-[![](images/Host-To-Device-Copy-v2.svg)](https://frankdenneman.nl/wp-content/uploads/2023/04/Host-To-Device-Copy-v2.svg)
+[![](images/Host-To-Device-Copy-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2023/04/Host-To-Device-Copy-v2.svg)
 
 Internal data buses move data between components, significantly affecting the system's overall throughput. The most common expansion bus standard is PCI Express (PCIe). Its latest iteration (PCIe5) offers a theoretical bandwidth of 64 GB/s. That is fast, but nothing compared to the onboard GPU RAM speed of an A100 (600 GB/s) or an H100 (900 GB/s). To benefit the most from that memory speed is to build a non-blocking interconnect between the GPUs. If you go one level deeper, by creating a proprietary interconnect system, NVIDIA does not have to wait for the industry to develop and accept standards such as PCIe 6 or 7. It can develop and iterate much faster, attempting to match the interconnect speed to the high bandwidth memory speed of the onboard GPU RAM.
 
 However, NVIDIA has to play well with others in the industry to connect the SXM socket to the CPU, and therefore the SXM4 (A100) connects to the CPU via a PCIe 4.0 x16 bus interface ([source](https://www.techpowerup.com/gpu-specs/a100-sxm4-40-gb.c3506)), and SXM5 (H100) connects to the CPU via a PCIe 5.0 x16 interface ([source](https://www.techpowerup.com/gpu-specs/h100-sxm5.c3900)). That means that during a host-to-device memory copy, the data flows from the system memory across the PCIe controller to the SXM Socket with the matching PCIe bandwidth.
 
-Suppose you are a regular ready of my content. In that case, you might expect me to start deep diving into [PCIe NUMA locality](https://frankdenneman.nl/2020/01/10/pcie-device-numa-node-locality/) and the challenges of having multiple GPUs connected in a dual-socket system. However, our engineers and NVIDIA engineers helped the NVIDIA library be aware of the home NUMA configuration. It uses CPU and PCIe information to guide the data traffic between the CPU and PCIe interface. When the data arrives at the onboard GPU memory, communication remains between GPUs. All communication flows across the NVLinks and NVswitch fabrics, essentially keeping GPU-related traffic of the CPU interconnect (AMD Infinity fabric, Intel UPI ~40 GB/s theoretical bandwidth). 
+Suppose you are a regular ready of my content. In that case, you might expect me to start deep diving into [PCIe NUMA locality](https://frankdenneman.ai/2020/01/10/pcie-device-numa-node-locality/) and the challenges of having multiple GPUs connected in a dual-socket system. However, our engineers and NVIDIA engineers helped the NVIDIA library be aware of the home NUMA configuration. It uses CPU and PCIe information to guide the data traffic between the CPU and PCIe interface. When the data arrives at the onboard GPU memory, communication remains between GPUs. All communication flows across the NVLinks and NVswitch fabrics, essentially keeping GPU-related traffic of the CPU interconnect (AMD Infinity fabric, Intel UPI ~40 GB/s theoretical bandwidth). 
 
-[![](images/NVSwitch.svg)](https://frankdenneman.nl/wp-content/uploads/2023/04/NVSwitch.svg)
+[![](images/NVSwitch.svg)](https://frankdenneman.ai/wp-content/uploads/2023/04/NVSwitch.svg)
 
 Please note, on the left side of the diagram, the NVLinks are greyed out of three GPUs to provide a better view of the NVLink connection of an individual GPU in an A100 HGX system.
 

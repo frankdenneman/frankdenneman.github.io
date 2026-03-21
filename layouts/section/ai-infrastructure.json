@@ -1,0 +1,21 @@
+{{- $pages := where .Site.RegularPages "Params.series" "intersect" (slice "Architecting AI Infrastructure") -}}
+{{- $pages = sort $pages "Params.series_order" -}}
+
+{
+  "series": "Architecting AI Infrastructure",
+  "url": "{{ .Permalink }}",
+  "generated": "{{ now.Format "2006-01-02" }}",
+  "articles": [
+  {{- range $i, $p := $pages }}
+    {{- if $i }},{{ end }}
+    {
+      "title": {{ $p.Title | jsonify }},
+      "url": {{ $p.Permalink | jsonify }},
+      "description": {{ $p.Description | jsonify }},
+      "date": "{{ $p.Date.Format "2006-01-02" }}",
+      "series_order": {{ $p.Params.series_order }},
+      "concepts": {{ $p.Params.concepts | jsonify }}
+    }
+  {{- end }}
+  ]
+}

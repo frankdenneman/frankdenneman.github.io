@@ -14,38 +14,38 @@ It's essential to understand the data science teams' world to be successful as a
 
 To create the proper fundament, you need to understand the workload. However, most machine-learning content is geared toward data scientists. These articles primarily focus on solving an algorithmic challenge while using domain-specific terminology. I've written several articles about the training and inference workloads to overcome this gap.
 
-[Part 1: focuses on the ML Model development lifecycle](https://frankdenneman.nl/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/)
+[Part 1: focuses on the ML Model development lifecycle](https://frankdenneman.ai/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/)
 
-[Part 2: Gives a brief overview of the pipeline structure](https://frankdenneman.nl/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/)
+[Part 2: Gives a brief overview of the pipeline structure](https://frankdenneman.ai/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/)
 
-[Part 3: Zooms into Training versus Inference Data Flow and Access Patterns](https://frankdenneman.nl/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/)
+[Part 3: Zooms into Training versus Inference Data Flow and Access Patterns](https://frankdenneman.ai/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/)
 
-[Part 4: Provides a deep dive into memory consumption by Neural Networks](https://frankdenneman.nl/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/)
+[Part 4: Provides a deep dive into memory consumption by Neural Networks](https://frankdenneman.ai/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/)
 
-[Part 5: Provides a deep dive into Numerical Precision](https://frankdenneman.nl/2022/07/26/training-vs-inference-numerical-precision/) 
+[Part 5: Provides a deep dive into Numerical Precision](https://frankdenneman.ai/2022/07/26/training-vs-inference-numerical-precision/) 
 
-[Part 6: Explores network compression technology in detail, such as pruning and sparsity.](https://frankdenneman.nl/2022/08/26/training-vs-inference-network-compression/)
+[Part 6: Explores network compression technology in detail, such as pruning and sparsity.](https://frankdenneman.ai/2022/08/26/training-vs-inference-network-compression/)
 
-[Parts 3 to 6](https://frankdenneman.nl/?s=training+versus+inference) offer detailed insights into the technical requirements of the neural networks during training jobs and the inference process. It helps to interpret GPU functionality and gauge the expected load of the platform.
+[Parts 3 to 6](https://frankdenneman.ai/?s=training+versus+inference) offer detailed insights into the technical requirements of the neural networks during training jobs and the inference process. It helps to interpret GPU functionality and gauge the expected load of the platform.
 
-[![](images/vSphere-ML-Accelerator-Spectrum-v2.svg)](https://frankdenneman.nl/wp-content/uploads/2023/05/vSphere-ML-Accelerator-Spectrum-v2.svg)
+[![](images/vSphere-ML-Accelerator-Spectrum-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2023/05/vSphere-ML-Accelerator-Spectrum-v2.svg)
 
 To successfully accelerate the workload, I want to dive deeper into the available vSphere and Tanzu options in the upcoming series. It focuses on the available spectrum of machine learning accelerators the NVIDIA AI Enterprise suite offers. What hardware capabilities are available, and how do you configure the platform? Although this series focuses on GPUs, I want to note that CPUs are an excellent resource for light training and inference. And with the latest release of the Intel Sapphire Rapids CPU with its Advanced Matrix Extensions (AMX), the future of CPUs in the ML ecosystem looks bright. But I'll save that topic for another blog post (series).
 
 Articles in this series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

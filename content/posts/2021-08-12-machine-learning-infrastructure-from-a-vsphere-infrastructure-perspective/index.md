@@ -14,6 +14,6 @@ The different ML model engineering life cycle phases generate different function
 
 I intend to publish a set of articles that helps to describe where the two worlds of data center infrastructure and ML infrastructure interact, where the rubber meets the road. The series covers the different phases of the ML model engineering lifecycle and what kind of requirements they produce. What is MLOps, and how does this differ from DevOps? Why is data lineage so crucial in today's world, and how does this impact your infrastructure services? What type of persona is involved with machine learning, their tasks and role in the process, and what type of infrastructure service can benefit them. And how we can map actual data and ML pipeline components to an abstract process diagram full of beautiful terms such as data processing, feature engineering, model validation, and model serving.
 
-[![](images/ML-Infrastructure.svg)](https://frankdenneman.nl/wp-content/uploads/2021/08/ML-Infrastructure.svg)
+[![](images/ML-Infrastructure.svg)](https://frankdenneman.ai/wp-content/uploads/2021/08/ML-Infrastructure.svg)
 
 I'm sure that I will introduce more topics along the way, but if you have any topic in mind that you want to see covered, please leave a comment!

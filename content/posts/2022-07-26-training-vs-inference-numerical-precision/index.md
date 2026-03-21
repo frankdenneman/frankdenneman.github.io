@@ -6,7 +6,7 @@ categories:
 coverImage: "FP16-FP32-BFfloat16-50dpi.png"
 ---
 
-[Part 4](https://frankdenneman.nl/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/) focused on the memory consumption of a CNN and revealed that neural networks require parameter data (weights) and input data (activations) to generate the computations. Most machine learning is linear algebra at its core; therefore, training and inference rely heavily on the arithmetic capabilities of the platform. By default, neural network architectures use the single-precision floating-point data type for numerical representation. However, modern CPUs and GPUs support various floating-point data types, which can significantly impact memory consumption or arithmetic bandwidth requirements, leading to a smaller footprint for inference (production placement) and reduced training time.
+[Part 4](https://frankdenneman.ai/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/) focused on the memory consumption of a CNN and revealed that neural networks require parameter data (weights) and input data (activations) to generate the computations. Most machine learning is linear algebra at its core; therefore, training and inference rely heavily on the arithmetic capabilities of the platform. By default, neural network architectures use the single-precision floating-point data type for numerical representation. However, modern CPUs and GPUs support various floating-point data types, which can significantly impact memory consumption or arithmetic bandwidth requirements, leading to a smaller footprint for inference (production placement) and reduced training time.
 
 Let's look at a spec sheet of a modern data center GPU. Let's use the NVIDIA A100 as an example. I'm aware that NVIDIA announced the [Hopper architecture](https://www.nvidia.com/en-us/technologies/hopper-architecture/#:~:text=The%20NVIDIA%20Hopper%20architecture%20advances,accelerate%20AI%20calculations%20for%20transformers.), but as they are not out in the wild, let's stick with what we can use in our systems today.
 
@@ -30,7 +30,7 @@ Different floating standards exist, each with different configurations to provid
 
 <figure>
 
-[![](images/FP16-FP32-FP64-v2.svg)](https://frankdenneman.nl/wp-content/uploads/2022/07/FP16-FP32-FP64-v2.svg)
+[![](images/FP16-FP32-FP64-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/FP16-FP32-FP64-v2.svg)
 
 <figcaption>
 
@@ -52,7 +52,7 @@ But the concept of reducing memory consumption is alluring. The industry started
 
 <figure>
 
-[![](images/FP16-FP32-BFfloat16.svg)](https://frankdenneman.nl/wp-content/uploads/2022/07/FP16-FP32-BFfloat16.svg)
+[![](images/FP16-FP32-BFfloat16.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/FP16-FP32-BFfloat16.svg)
 
 <figcaption>
 
@@ -70,7 +70,7 @@ The quote tells us that the BF16 workload with seven precision bits takes half t
 
 BF16 is more or less a truncated version of FP32, and with minimal code conversion, it can replace FP32 code. It does not require techniques such as loss scaling, which attempts to solve the underflow problem occurring with FP16, reducing boat-loads of the data scientists' headaches. On top of that, BF16 allows the data scientist to train deeper and wider neural network models. Fewer bits to move means fewer throughput requirements, and fewer bits to compute means less arithmetic complexity, meaning less silicon area required per experiment. As a result, BF16 allows data scientist to increase their batch size or create more extensive neural networks. BF16 is becoming a prevalent floating point data type within the data science community. Look for hardware that supports the BF16 data type, such as the NVIDIA Ampere generation ([A100](https://www.nvidia.com/en-us/data-center/a100/#specifications)/[A30](https://www.nvidia.com/en-us/data-center/products/a30-gpu/#specs)/[A40](https://www.nvidia.com/en-us/data-center/a40/#specs)/[A2](https://www.nvidia.com/en-us/data-center/products/a2/#specification)), [AMD Instinct MI200 Accelerator](https://www.amd.com/en/graphics/instinct-server-accelerators) GPU series, Intel Xeon Scalable Processor Third Gen supports it ([Intel Deep Learning Boost AVX-512\_BF16 Extension](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-deep-learning-boost-new-instruction-bfloat16.html)), and [ARMv8-A](https://community.arm.com/arm-community-blogs/b/ai-and-ml-blog/posts/bfloat16-processing-for-neural-networks-on-armv8_2d00_a).
 
-From a platform operator perspective, BF16 allows more teams to use the same hardware when developing models and running experiments. As 8 GB of memory suddenly feels more like 16 GB by using lower precision, data science teams can use fractional GPUs without experiencing performance impact. That additional headroom works in favor of workload consolidation for ML workloads. [Part 1](https://frankdenneman.nl/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/) described the ML model development lifecycle, and if data science teams are currently developing models (concept phase), they can share a single GPU without drastically impacting their performance. Combine fractional GPU functionality such as NVIDIA vGPU ([MIG](https://blogs.vmware.com/performance/2022/06/vsphere7-vgpu-vs-mig-perf.html)) with a platform such as Kubernetes. You can easily create a platform that quickly attaches and detaches accelerator resources to data science teams developing new neural network models or ML-infused services. Justin Murray and Catherine Xu wrote an extensive article [on deploying an AI-ready platform with vSphere and Kubernetes](https://core.vmware.com/resource/deploy-ai-ready-enterprise-platform-vmware-vsphere-7-vmware-tanzu-kubernetes-grid-service#overview). Another article in this series will dive into the spectrum of ML accelerators and when to deploy fractional GPUs regarding the ML model development lifecycle. 
+From a platform operator perspective, BF16 allows more teams to use the same hardware when developing models and running experiments. As 8 GB of memory suddenly feels more like 16 GB by using lower precision, data science teams can use fractional GPUs without experiencing performance impact. That additional headroom works in favor of workload consolidation for ML workloads. [Part 1](https://frankdenneman.ai/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/) described the ML model development lifecycle, and if data science teams are currently developing models (concept phase), they can share a single GPU without drastically impacting their performance. Combine fractional GPU functionality such as NVIDIA vGPU ([MIG](https://blogs.vmware.com/performance/2022/06/vsphere7-vgpu-vs-mig-perf.html)) with a platform such as Kubernetes. You can easily create a platform that quickly attaches and detaches accelerator resources to data science teams developing new neural network models or ML-infused services. Justin Murray and Catherine Xu wrote an extensive article [on deploying an AI-ready platform with vSphere and Kubernetes](https://core.vmware.com/resource/deploy-ai-ready-enterprise-platform-vmware-vsphere-7-vmware-tanzu-kubernetes-grid-service#overview). Another article in this series will dive into the spectrum of ML accelerators and when to deploy fractional GPUs regarding the ML model development lifecycle. 
 
 **TensorFloat32:** NVIDIA developed TensorFloat32 (TF32). TF32 is internal to CUDA, meaning only NVIDIA devices support it. This one is interesting as it's not explicitly called in frameworks like TensorFlow or PyTorch like all the other floating point data types. Well, it's a Tensor core mode, not a data type.
 
@@ -78,7 +78,7 @@ For example, if you want to use the data type BF16, you use  tf.bfloat16 in [
 
 <figure>
 
-[![](images/FP16-FP32-BFfloat16-TF32.svg)](https://frankdenneman.nl/wp-content/uploads/2022/07/FP16-FP32-BFfloat16-TF32.svg)
+[![](images/FP16-FP32-BFfloat16-TF32.svg)](https://frankdenneman.ai/wp-content/uploads/2022/07/FP16-FP32-BFfloat16-TF32.svg)
 
 <figcaption>
 
@@ -110,7 +110,7 @@ The AVX-512 instruction set includes the [INT8 data type](https://www.intel.com
 
 [Instruction Set Extensions and Future Features Programming Reference](https://www.intel.com/content/dam/develop/external/us/en/documents/architecture-instruction-set-extensions-programming-reference.pdf) online. Chapter 3 contains all the details. Have fun! To some, it may surprise that Intel focuses on ML extensions in their CPUs, but much inference at the edge runs on them. 
 
-As [Part 4](https://frankdenneman.nl/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/) shows, the Inference workload is, on average, a streaming workload. We now have to deal with a tiny workload that we must quickly process. GPUs are throughput and parallel beasts, and CPUs are latency-focused sprinters. We now have a choice, should we allow the CPU to process this data directly, or should we get the data through the system, from the CPU and memory, across the PCIe bus, to a GPU core that runs on a lower clock cycle than a CPU. Because there isn't much data, we are losing the advantage of parallelism. Letting the CPU take care of that workload with the proper optimization sometimes makes more sense. A great example of the power of quantization is the [story of Roblox](https://blog.roblox.com/2020/05/scaled-bert-serve-1-billion-daily-requests-cpus/), which uses CPUs to run its inference workload. They serve over 1 billion requests a day using a fine-tuned Bert model. 
+As [Part 4](https://frankdenneman.ai/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/) shows, the Inference workload is, on average, a streaming workload. We now have to deal with a tiny workload that we must quickly process. GPUs are throughput and parallel beasts, and CPUs are latency-focused sprinters. We now have a choice, should we allow the CPU to process this data directly, or should we get the data through the system, from the CPU and memory, across the PCIe bus, to a GPU core that runs on a lower clock cycle than a CPU. Because there isn't much data, we are losing the advantage of parallelism. Letting the CPU take care of that workload with the proper optimization sometimes makes more sense. A great example of the power of quantization is the [story of Roblox](https://blog.roblox.com/2020/05/scaled-bert-serve-1-billion-daily-requests-cpus/), which uses CPUs to run its inference workload. They serve over 1 billion requests a day using a fine-tuned Bert model. 
 
 But not every inference workload can just run on a CPU. Plenty of inference workloads generate a data stream that overwhelms a CPU. The data scientist can use a roofline analysis to determine the CPU and GPU performance headroom. Another article in this series will cover the roofline analysis. The [Tesla P4](https://images.nvidia.com/content/pdf/tesla/184457-Tesla-P4-Datasheet-NV-Final-Letter-Web.pdf) started the support for the INT8 data type, and you can imagine that the ML community hasn't stopped looking for finding ways to optimize. Turing Architecture introduced support for [INT4 precision](https://developer.nvidia.com/blog/int4-for-ai-inference/). CPUs do not have native INT4 support. 
 
@@ -125,7 +125,7 @@ Hopefully, the spec sheets of GPUs will make more sense now. During conversation
 
 Previous parts in the Machine Learning on the VMware Platform series
 
-- [Part 1 - covering ML development lifecycle and the data science team](https://frankdenneman.nl/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/)
-- [Part 2 - covering Resource Utilization Efficiency](https://frankdenneman.nl/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/)
-- [Part 3 - Training vs Inference - Data flow, Data sets & Batches, Dataset Random Read Access](https://frankdenneman.nl/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/)
-- [Part 4 - Training vs Inference - Memory Consumption by Neural Networks](https://frankdenneman.nl/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/)
+- [Part 1 - covering ML development lifecycle and the data science team](https://frankdenneman.ai/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/)
+- [Part 2 - covering Resource Utilization Efficiency](https://frankdenneman.ai/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/)
+- [Part 3 - Training vs Inference - Data flow, Data sets & Batches, Dataset Random Read Access](https://frankdenneman.ai/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/)
+- [Part 4 - Training vs Inference - Memory Consumption by Neural Networks](https://frankdenneman.ai/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/)

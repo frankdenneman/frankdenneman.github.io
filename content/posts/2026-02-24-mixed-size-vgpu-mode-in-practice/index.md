@@ -15,11 +15,11 @@ concepts: ["Mixed-Size vGPU Mode", "Placement IDs", "Stranded Capacity", "GPU Pl
 ---
 ## Architecting AI Infrastructure - Part 6
 
-[Last time](https://frankdenneman.nl/posts/2026-02-19-how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/), I looked at how Same Size vGPU mode works with different assignment policies and how right-sizing profiles can make placement more flexible. The main point was that both profile variety and assignment choices have a big impact on how much GPU capacity you can actually use over time.
+[Last time](https://frankdenneman.ai/posts/2026-02-19-how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/), I looked at how Same Size vGPU mode works with different assignment policies and how right-sizing profiles can make placement more flexible. The main point was that both profile variety and assignment choices have a big impact on how much GPU capacity you can actually use over time.
 
 ## Understanding Placement IDs and Siloed Capacity
 
-This article focuses on Mixed Size mode. Unlike locking a GPU to one profile after the first placement, Mixed Size lets you use different profile sizes on the same device. This might seem like an easy fix for fragmentation, but it brings a new challenge: placement IDs. These are fixed memory spots on the GPU where a profile can begin, so even if memory appears free, you can't always use it unless it aligns with a valid placement spot. For more details on how placement IDs work, see [Part 4](https://frankdenneman.nl/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/).
+This article focuses on Mixed Size mode. Unlike locking a GPU to one profile after the first placement, Mixed Size lets you use different profile sizes on the same device. This might seem like an easy fix for fragmentation, but it brings a new challenge: placement IDs. These are fixed memory spots on the GPU where a profile can begin, so even if memory appears free, you can't always use it unless it aligns with a valid placement spot. For more details on how placement IDs work, see [Part 4](https://frankdenneman.ai/posts/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/).
 
 ## Placement Flow and Local Optimization
 
@@ -76,7 +76,7 @@ So, the real trade-off isn't just about density versus flexibility. Equal Size m
 
 ## Introducing the Silo Capacity Visualizer
 
-To help explain how placement-IDs work, I created the [Silo Capacity Visualizer](https://frankdenneman.nl/tools/vgpu-silo-capacity-calculator/).
+To help explain how placement-IDs work, I created the [Silo Capacity Visualizer](https://frankdenneman.ai/tools/vgpu-silo-capacity-calculator/).
 
 This tool is just for learning and isn't connected to Broadcom or NVIDIA. It doesn't predict how a whole cluster will behave or simulate every scheduling decision. Instead, it answers one question: how does your choice of profile catalog affect the memory layout inside a GPU?
 

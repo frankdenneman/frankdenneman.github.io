@@ -25,7 +25,7 @@ It was big news when the AMD Opteron and Intel Nehalem Processor integrated the 
 
 <figure>
 
-[![](images/01-PCIe-NUMA-Locality-GPU-Skylake-Schema-1-1024x767.png)](https://frankdenneman.nl/wp-content/uploads/2020/01/01-PCIe-NUMA-Locality-GPU-Skylake-Schema-1.png)
+[![](images/01-PCIe-NUMA-Locality-GPU-Skylake-Schema-1-1024x767.png)](https://frankdenneman.ai/wp-content/uploads/2020/01/01-PCIe-NUMA-Locality-GPU-Skylake-Schema-1.png)
 
 <figcaption>
 
@@ -91,7 +91,7 @@ Root access is required to execute a vanish command via the SSH session. It migh
 
 Each script consists of three stages, Host selection & logon, data collection, and data modeling. The script uses the module [Posh-SSH](http://www.lucd.info/knowledge-base/use-posh-ssh-instead-of-putty/) to create an SSH connection and runs a vsish command directly on the node itself. Due to this behavior, the script creates an output per server and cannot invoke at the cluster level.
 
-[![](images/04-PCIe-NUMA-Locality-GPU-FlowChart-428x1024.png)](https://frankdenneman.nl/wp-content/uploads/2020/01/04-PCIe-NUMA-Locality-GPU-FlowChart.png)
+[![](images/04-PCIe-NUMA-Locality-GPU-FlowChart-428x1024.png)](https://frankdenneman.ai/wp-content/uploads/2020/01/04-PCIe-NUMA-Locality-GPU-FlowChart.png)
 
 ### Host Selection & Logon
 

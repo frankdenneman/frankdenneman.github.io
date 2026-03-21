@@ -12,7 +12,7 @@ track: "AI Memory"
 ---
 
 
-In my previous article, [The Dynamic World of LLM Runtime Memory](https://frankdenneman.nl/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), I focused on KV-cache as the primary driver of runtime memory pressure. Today, as inference workloads move toward long-context and agentic execution, activation memory has emerged as an equally important and often overlooked constraint.
+In my previous article, [The Dynamic World of LLM Runtime Memory](https://frankdenneman.ai/posts/2026-01-12-the-dynamic-world-of-llm-runtime-memory/), I focused on KV-cache as the primary driver of runtime memory pressure. Today, as inference workloads move toward long-context and agentic execution, activation memory has emerged as an equally important and often overlooked constraint.
 
 Long-context inference, once niche, is now expected as models handle tens of thousands of tokens in lengthy prefill phases. Agentic inference introduces variable execution, including reasoning, tool calls, pauses, and uneven token generation. These patterns put sustained pressure on both KV-cache and intermediate activations.
 

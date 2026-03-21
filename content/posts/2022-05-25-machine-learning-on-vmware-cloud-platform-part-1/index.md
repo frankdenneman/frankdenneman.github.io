@@ -14,7 +14,7 @@ But Machine Learning (ML) allows us to think much broader than that. One of the 
 
 As of today, VMware's platform can offer much functionality to ML practitioners already. We can break down a machine learning platform into horizontal fabrics connecting the vertical training and inference stack. An example of a horizontal fabric can be a data pipeline that runs from ingesting data all the way to feeding the training stack a training data set. Or it can be a pipeline that streams data from a sensor to an ISV pre-trained model and goes all the way to control the actions of a robot arm. All the functions, applications, and services are backed by containers and VMs that could run on a VMware platform.
 
-[![](images/Horizontal-Fabrics-v2.svg)](https://frankdenneman.nl/wp-content/uploads/2022/05/Horizontal-Fabrics-v2.svg)
+[![](images/Horizontal-Fabrics-v2.svg)](https://frankdenneman.ai/wp-content/uploads/2022/05/Horizontal-Fabrics-v2.svg)
 
 Looking beyond the vertical training stack, we immediately see familiar constructs we have spent years caring for as platform architects. The majority of databases run on vSphere platforms. Many of these contain the data; data scientists want to use to train their models. Your vSphere platform can efficiently and economically run all the services needed to extract and transform the data. The storage services safely and securely store the data close to the computational power. The networking and security services, combined with the core services, can offer intrinsic security to the data stream from the point of data ingestion all the way to the edge location where the model is served.
 
@@ -30,7 +30,7 @@ The availability and distribution of accelerator resources within the organizati
 
 A machine learning model follows a particular development lifecycle, **Concept - Training - Deployment** (inference).
 
-[![](images/ML-model-engineering-lifecycle-1.svg)](https://frankdenneman.nl/wp-content/uploads/2022/05/ML-model-engineering-lifecycle-1.svg)
+[![](images/ML-model-engineering-lifecycle-1.svg)](https://frankdenneman.ai/wp-content/uploads/2022/05/ML-model-engineering-lifecycle-1.svg)
 
 **Concept phase:** The data science team determines what framework and algorithm to use during the concept phase. During this stage, the DS team explores what data is available, where the data lives and how they can access it. They study the idea's feasibility by running some tests using small data sets. As a result, the team will run and test some code, with lots of idle time in between. The run time will be seconds to minutes when the code is tested. As you can imagine, a collection of bare metal machines assigned to individual data scientists or teams with dedicated expensive GPUs might be overkill for this scenario.
 

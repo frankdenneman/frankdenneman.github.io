@@ -24,7 +24,7 @@ Next in this series is installing the NVAIE GPU operator on a TKGs guest cluster
 
 The following diagram provides an overview of all the components, settings, and commands involved.
 
-[![](images/NVIDIA-vGPU-Operator.svg)](https://frankdenneman.nl/wp-content/uploads/2023/07/NVIDIA-vGPU-Operator.svg)
+[![](images/NVIDIA-vGPU-Operator.svg)](https://frankdenneman.ai/wp-content/uploads/2023/07/NVIDIA-vGPU-Operator.svg)
 
 Although I do not shy away from publishing long articles, these steps combined are too much for a single article. I've split the process up in three separate articles:
 
@@ -75,7 +75,7 @@ For AI/ML workloads, most customers prefer the CLS instance hosted by the NVIDIA
 | 80 | TLS, TCP | Egress | License release | Client | CLS |
 | 443 | TLS, TCP | Egress | License acquisition   License renewal | Client | CLS |
 
-[![](images/NVIDIA-CLS-Instance.svg)](https://frankdenneman.nl/wp-content/uploads/2023/07/NVIDIA-CLS-Instance.svg)
+[![](images/NVIDIA-CLS-Instance.svg)](https://frankdenneman.ai/wp-content/uploads/2023/07/NVIDIA-CLS-Instance.svg)
 
 A DLS instance is necessary if you are running an ML cluster in an air-gapped data center. The DLS instance is fully disconnected from the NVIDIA licensing portal. The VI-admin must manually download the licenses from the NVIDIA license portal and upload them to the instance. A highly available DLS setup is recommended to provide licensed clients with continued access to NVAIE licenses if one DLS instance fails. A DLS instance can either run as a virtual appliance or as a containerized software image. The minimum footprint of the DLS virtual appliance is 4 vCPUs, 8GB RAM, and 10GB disk space. A fixed or reserved DHCP address and an FQDN must be registered before installing the DLS virtual appliance. It is recommended to synchronize the DLS virtual appliance with an NTP server. Please review the NVIDIA License System User Guide for a detailed installation guide and an overview of all the required firewall rules. For this example, A CLS instance is created and configured. 
 
@@ -87,33 +87,33 @@ Log in to the [NVIDIA Enterprise Application Hub](http://nvid.nvidia.com/dashboa
 
 Expand "License Server" in the menu on the left of your screen and select "create server"
 
-[![](images/CLS-Create-Server.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/CLS-Create-Server.png)
+[![](images/CLS-Create-Server.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/CLS-Create-Server.png)
 
 Ensure "Create legacy server" is disabled (slide to the left) and provide a name and description for your CLS. Click on "Select features". The node-locked functionality allows air-gapped client systems to obtain a node-locked vGPU software license from a file installed locally on the client system. The express CLS installation.
 
-[![](images/04-Create-License-Server-1024x590.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/04-Create-License-Server.png)
+[![](images/04-Create-License-Server-1024x590.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/04-Create-License-Server.png)
 
 Find your licensed product using the PAK ID that is listed in your NVIDIA Entitlement Certificate. The PAK ID should contain 30 alphanumeric characters).
 
-[![](images/05-CLS-create-license-server-step-2-1024x583.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/05-CLS-create-license-server-step-2.png)
+[![](images/05-CLS-create-license-server-step-2-1024x583.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/05-CLS-create-license-server-step-2.png)
 
 In the textbox in the **ADDED** column, enter the number of licenses for the product that you want to add. Click **Next: Preview server creation**.
 
-[![](images/06-CLS-Create-License-Server-Preview-Server-Creation-1024x868.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/06-CLS-Create-License-Server-Preview-Server-Creation.png)
+[![](images/06-CLS-Create-License-Server-Preview-Server-Creation-1024x868.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/06-CLS-Create-License-Server-Preview-Server-Creation.png)
 
 On the Preview server creation page, click **CREATE SERVER**. Once the server is created, the portal shows the license server is in an "unbound state".
 
-[![](images/07-NVIDIA-License-Server-Unbound.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/07-NVIDIA-License-Server-Unbound.png)
+[![](images/07-NVIDIA-License-Server-Unbound.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/07-NVIDIA-License-Server-Unbound.png)
 
 ### Creating a CLS Instance 
 
 In the left navigation pane of the NVIDIA Licensing Portal dashboard, click **SERVICE INSTANCES**.
 
-[![](images/08-NVIDIA-Service-Instance-Actions-Create-1024x279.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/08-NVIDIA-Service-Instance-Actions-Create.png)
+[![](images/08-NVIDIA-Service-Instance-Actions-Create-1024x279.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/08-NVIDIA-Service-Instance-Actions-Create.png)
 
 Provide a name and description for the CLS Service Instance.
 
-[![](images/09-Create-CLS-Service-Instance.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/09-Create-CLS-Service-Instance.png)
+[![](images/09-Create-CLS-Service-Instance.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/09-Create-CLS-Service-Instance.png)
 
 ### Binding a License Server to a Service Instance
 
@@ -121,50 +121,50 @@ Binding a license server to a service instance ensures that licenses on the serv
 
 In the left menu, select **License Servers**, and click **LIST SERVERS**.
 
-[![](images/10-List-License-Servers.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/10-List-License-Servers.png)
+[![](images/10-List-License-Servers.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/10-List-License-Servers.png)
 
 Find your license server using its name, click the **Actions** button on the right side of your screen, and select **Bind**.
 
-[![](images/11-License-Servers-Actions-Bind-1024x503.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/11-License-Servers-Actions-Bind.png)
+[![](images/11-License-Servers-Actions-Bind-1024x503.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/11-License-Servers-Actions-Bind.png)
 
 In the Bind Service Instance pop-up window that opens select the CLS service instance to which you want to bind the license server and click **BIND**. The Bind Service Instance pop-up window confirms that the license server has been bound to the service instance.
 
-[![](images/12-Bind-Service-Instance.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/12-Bind-Service-Instance.png)
+[![](images/12-Bind-Service-Instance.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/12-Bind-Service-Instance.png)
 
 The event viewer lists the successful bind action.
 
-[![](images/13-CLS-Events-Bound-Service-Instance-1024x130.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/13-CLS-Events-Bound-Service-Instance.png)
+[![](images/13-CLS-Events-Bound-Service-Instance-1024x130.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/13-CLS-Events-Bound-Service-Instance.png)
 
 ### Installing a License Server on a CLS Instance
 
 This step is necessary if you are using multiple CLS instances in your organization that is registered at NVIDIA and you are using the new CLS instance, not the default CLS instance for the organization. In the left navigation pane, expand **LICENSE SERVER** and click **LIST SERVERS**. Select your License Server, click on **Actions,** and choose **Install**.
 
-[![](images/14-License-Server-Install-1024x396.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/14-License-Server-Install.png)
+[![](images/14-License-Server-Install-1024x396.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/14-License-Server-Install.png)
 
 In the Install License Server pop-up window that opens, click **INSTALL SERVER**.
 
-[![](images/15-Install-License-Server.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/15-Install-License-Server.png)
+[![](images/15-Install-License-Server.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/15-Install-License-Server.png)
 
 The event viewer lists a successful deployment of the license service on the service instance.
 
-[![](images/16-CLS-Events-Deployed-License-Server-1024x132.png)](https://frankdenneman.nl/wp-content/uploads/2023/07/16-CLS-Events-Deployed-License-Server.png)
+[![](images/16-CLS-Events-Deployed-License-Server-1024x132.png)](https://frankdenneman.ai/wp-content/uploads/2023/07/16-CLS-Events-Deployed-License-Server.png)
 
 The next step is to install the NVIDIA NVAIE vGPU Driver on the ESXi host. This step is covered in the next article.
 
 Previous articles in the vSphere ML Accelerator Spectrum Deep Dive Series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.nl/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.nl/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.nl/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.nl/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.nl/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.nl/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.nl/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.nl/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

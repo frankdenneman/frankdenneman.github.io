@@ -1,6 +1,9 @@
 ---
 title: "My first lefthand ISCSI VI architecture"
 date: 2009-03-23
+url: "/2009-03-23-my-first-lefthand-iscsi-vi-architecture/"
+aliases:
+  - "/posts/2009-03-23-my-first-lefthand-iscsi-vi-architecture/"
 categories: 
   - "storage"
 tags: 

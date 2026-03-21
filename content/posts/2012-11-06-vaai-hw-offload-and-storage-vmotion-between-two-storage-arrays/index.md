@@ -1,6 +1,9 @@
 ---
 title: "VAAI hw offload and Storage vMotion between two Storage Arrays"
 date: 2012-11-06
+url: "/2012-11-06-vaai-hw-offload-and-storage-vmotion-between-two-storage-arrays/"
+aliases:
+  - "/posts/2012-11-06-vaai-hw-offload-and-storage-vmotion-between-two-storage-arrays/"
 categories: 
   - "sdrs"
   - "vmotion"

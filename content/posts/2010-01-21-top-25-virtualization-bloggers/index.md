@@ -1,6 +1,9 @@
 ---
 title: "Top 25 Virtualization Bloggers"
 date: 2010-01-21
+url: "/2010-01-21-top-25-virtualization-bloggers/"
+aliases:
+  - "/posts/2010-01-21-top-25-virtualization-bloggers/"
 categories: 
   - "vmware"
 ---

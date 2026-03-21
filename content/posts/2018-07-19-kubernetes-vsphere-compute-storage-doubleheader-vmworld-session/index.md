@@ -1,6 +1,9 @@
 ---
 title: "Kubernetes and vSphere Compute and Storage Doubleheader VMworld Session"
 date: 2018-07-19
+url: "/2018-07-19-kubernetes-vsphere-compute-storage-doubleheader-vmworld-session/"
+aliases:
+  - "/posts/2018-07-19-kubernetes-vsphere-compute-storage-doubleheader-vmworld-session/"
 categories: 
   - "vmware"
 ---

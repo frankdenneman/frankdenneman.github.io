@@ -1,6 +1,9 @@
 ---
 title: "vSphere 7 Cores per Socket and Virtual NUMA"
 date: 2021-12-02
+url: "/2021-12-02-vsphere-7-cores-per-socket-and-virtual-numa/"
+aliases:
+  - "/posts/2021-12-02-vsphere-7-cores-per-socket-and-virtual-numa/"
 categories: 
   - "numa"
 coverImage: "Virtual-NUMA-Topology-Constructs-nt.png"

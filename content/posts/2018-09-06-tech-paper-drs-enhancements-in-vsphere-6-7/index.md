@@ -1,6 +1,9 @@
 ---
 title: "Tech Paper DRS Enhancements in vSphere 6.7"
 date: 2018-09-06
+url: "/2018-09-06-tech-paper-drs-enhancements-in-vsphere-6-7/"
+aliases:
+  - "/posts/2018-09-06-tech-paper-drs-enhancements-in-vsphere-6-7/"
 categories: 
   - "vmware"
 ---

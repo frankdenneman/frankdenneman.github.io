@@ -1,6 +1,9 @@
 ---
 title: "Virtually Speaking Podcast: VMware Cloud on AWS &amp; HostDeepDive"
 date: 2017-05-08
+url: "/2017-05-08-virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive/"
+aliases:
+  - "/posts/2017-05-08-virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive/"
 categories: 
   - "vmware"
 ---

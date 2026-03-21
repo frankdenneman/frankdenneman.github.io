@@ -1,6 +1,9 @@
 ---
 title: "HA and DRS book in action"
 date: 2011-01-13
+url: "/2011-01-13-ha-and-drs-book-in-action/"
+aliases:
+  - "/posts/2011-01-13-ha-and-drs-book-in-action/"
 categories: 
   - "miscellaneous"
 tags: 

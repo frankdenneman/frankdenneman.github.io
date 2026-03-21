@@ -1,6 +1,9 @@
 ---
 title: "vSphere 4.1 HA and DRS book for only $19.95"
 date: 2012-01-09
+url: "/2012-01-09-vsphere-4-1-ha-and-drs-book-for-only-19-95/"
+aliases:
+  - "/posts/2012-01-09-vsphere-4-1-ha-and-drs-book-for-only-19-95/"
 ---
 
 We lowered the price of the vSphere 4.1 HA and DRS technical Deepdive book permanently. As of this week you can obtain one of the coolest books in the virtualization section at Amazon for only **$19.95**. [30 5-star reviews](http://www.amazon.com/VMware-vSphere-4-1-Technical-deepdive/product-reviews/1456301446/ref=dp_top_cm_cr_acr_txt?ie=UTF8&showViewpoints=1) couldn’t be wrong. Here is just a random selection of two of those 5-star reviews:

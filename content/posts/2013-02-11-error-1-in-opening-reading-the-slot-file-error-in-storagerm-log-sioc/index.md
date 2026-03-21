@@ -1,6 +1,9 @@
 ---
 title: "Error -1 in opening &amp; reading the slot file error in storageRM.log (SIOC)"
 date: 2013-02-11
+url: "/2013-02-11-error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc/"
+aliases:
+  - "/posts/2013-02-11-error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc/"
 categories: 
   - "sioc"
 ---

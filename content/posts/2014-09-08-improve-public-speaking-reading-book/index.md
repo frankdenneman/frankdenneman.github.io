@@ -1,6 +1,9 @@
 ---
 title: "Improve public speaking by reading a book?"
 date: 2014-09-08
+url: "/2014-09-08-improve-public-speaking-reading-book/"
+aliases:
+  - "/posts/2014-09-08-improve-public-speaking-reading-book/"
 categories: 
   - "miscellaneous"
 ---

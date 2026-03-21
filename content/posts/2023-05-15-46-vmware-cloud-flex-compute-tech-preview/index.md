@@ -1,6 +1,9 @@
 ---
 title: "#46 - VMware Cloud Flex Compute Tech Preview"
 date: 2023-05-15
+url: "/2023-05-15-46-vmware-cloud-flex-compute-tech-preview/"
+aliases:
+  - "/posts/2023-05-15-46-vmware-cloud-flex-compute-tech-preview/"
 categories: 
   - "podcast"
 coverImage: "VMware-Cloud-Flex-Compute-Service.png"

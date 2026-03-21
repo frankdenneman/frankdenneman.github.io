@@ -1,6 +1,9 @@
 ---
 title: "VCDX tip: VMtools increases TimeOutValue"
 date: 2010-03-16
+url: "/2010-03-16-vcdx-tip-vmtools-increases-timeoutvalue/"
+aliases:
+  - "/posts/2010-03-16-vcdx-tip-vmtools-increases-timeoutvalue/"
 categories: 
   - "vcdx"
 tags: 

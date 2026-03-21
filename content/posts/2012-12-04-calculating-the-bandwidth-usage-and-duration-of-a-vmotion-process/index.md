@@ -1,6 +1,9 @@
 ---
 title: "Calculating the bandwidth usage and duration of a vMotion process?"
 date: 2012-12-04
+url: "/2012-12-04-calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process/"
+aliases:
+  - "/posts/2012-12-04-calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process/"
 categories: 
   - "vmotion"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "MACHINE LEARNING ON VMWARE PLATFORM – PART 2"
 date: 2022-06-08
+url: "/2022-06-08-machine-learning-on-vmware-cloud-platform-part-2/"
+aliases:
+  - "/posts/2022-06-08-machine-learning-on-vmware-cloud-platform-part-2/"
 categories: 
   - "ai"
 coverImage: "ML-Infrastructure-full-png.png"

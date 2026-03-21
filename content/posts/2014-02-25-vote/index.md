@@ -1,6 +1,9 @@
 ---
 title: "Who to vote for?"
 date: 2014-02-25
+url: "/2014-02-25-vote/"
+aliases:
+  - "/posts/2014-02-25-vote/"
 categories: 
   - "miscellaneous"
 ---

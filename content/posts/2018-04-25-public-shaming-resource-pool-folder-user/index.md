@@ -1,6 +1,9 @@
 ---
 title: "The public Shaming of Resource Pool-as-a-Folder User"
 date: 2018-04-25
+url: "/2018-04-25-public-shaming-resource-pool-folder-user/"
+aliases:
+  - "/posts/2018-04-25-public-shaming-resource-pool-folder-user/"
 categories: 
   - "vmware"
 ---

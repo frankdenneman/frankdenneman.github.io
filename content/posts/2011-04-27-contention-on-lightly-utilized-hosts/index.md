@@ -1,6 +1,9 @@
 ---
 title: "Contention on lightly utilized hosts"
 date: 2011-04-27
+url: "/2011-04-27-contention-on-lightly-utilized-hosts/"
+aliases:
+  - "/posts/2011-04-27-contention-on-lightly-utilized-hosts/"
 categories: 
   - "cpu"
 ---

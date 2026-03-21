@@ -1,6 +1,9 @@
 ---
 title: "Virtually Speaking Podcast: Host Deep Dive"
 date: 2017-07-15
+url: "/2017-07-15-virtually-speaking-podcast-host-deep-dive/"
+aliases:
+  - "/posts/2017-07-15-virtually-speaking-podcast-host-deep-dive/"
 categories: 
   - "vmware"
 ---

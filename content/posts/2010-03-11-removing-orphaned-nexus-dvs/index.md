@@ -1,6 +1,9 @@
 ---
 title: "Removing orphaned Nexus DVS"
 date: 2010-03-11
+url: "/2010-03-11-removing-orphaned-nexus-dvs/"
+aliases:
+  - "/posts/2010-03-11-removing-orphaned-nexus-dvs/"
 categories: 
   - "networking"
 tags: 

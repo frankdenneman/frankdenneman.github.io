@@ -1,6 +1,9 @@
 ---
 title: "Dedicated Hardware in a Public Cloud World"
 date: 2018-05-03
+url: "/2018-05-03-dedicated-hardware-public-cloud-world/"
+aliases:
+  - "/posts/2018-05-03-dedicated-hardware-public-cloud-world/"
 categories: 
   - "vmware"
 ---

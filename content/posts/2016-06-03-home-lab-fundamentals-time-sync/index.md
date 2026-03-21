@@ -1,6 +1,9 @@
 ---
 title: "Home Lab Fundamentals: Time Sync"
 date: 2016-06-03
+url: "/2016-06-03-home-lab-fundamentals-time-sync/"
+aliases:
+  - "/posts/2016-06-03-home-lab-fundamentals-time-sync/"
 categories: 
   - "home-lab"
   - "vmware"

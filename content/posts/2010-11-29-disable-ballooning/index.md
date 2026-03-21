@@ -1,6 +1,9 @@
 ---
 title: "Disable ballooning?"
 date: 2010-11-29
+url: "/2010-11-29-disable-ballooning/"
+aliases:
+  - "/posts/2010-11-29-disable-ballooning/"
 categories: 
   - "memory"
 ---

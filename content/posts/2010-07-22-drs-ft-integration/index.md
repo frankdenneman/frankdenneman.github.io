@@ -1,6 +1,9 @@
 ---
 title: "DRS-FT integration"
 date: 2010-07-22
+url: "/2010-07-22-drs-ft-integration/"
+aliases:
+  - "/posts/2010-07-22-drs-ft-integration/"
 categories: 
   - "drs"
 tags: 

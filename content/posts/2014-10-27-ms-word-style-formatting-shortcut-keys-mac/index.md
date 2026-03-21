@@ -1,6 +1,9 @@
 ---
 title: "MS Word style formatting shortcut keys for Mac"
 date: 2014-10-27
+url: "/2014-10-27-ms-word-style-formatting-shortcut-keys-mac/"
+aliases:
+  - "/posts/2014-10-27-ms-word-style-formatting-shortcut-keys-mac/"
 categories: 
   - "miscellaneous"
 ---

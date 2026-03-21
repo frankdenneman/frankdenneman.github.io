@@ -1,6 +1,9 @@
 ---
 title: "Keynoting Deutsche VMUG and London VMUG"
 date: 2017-06-06
+url: "/2017-06-06-keynoting-deutsche-vmug-london-vmug/"
+aliases:
+  - "/posts/2017-06-06-keynoting-deutsche-vmug-london-vmug/"
 categories: 
   - "vmware"
 tags: 

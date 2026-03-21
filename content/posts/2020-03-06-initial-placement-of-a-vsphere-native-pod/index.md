@@ -1,6 +1,9 @@
 ---
 title: "Initial Placement of a vSphere Pod"
 date: 2020-03-06
+url: "/2020-03-06-initial-placement-of-a-vsphere-native-pod/"
+aliases:
+  - "/posts/2020-03-06-initial-placement-of-a-vsphere-native-pod/"
 categories: 
   - "vmware"
 coverImage: "DRS-Pacific-Integration.png"

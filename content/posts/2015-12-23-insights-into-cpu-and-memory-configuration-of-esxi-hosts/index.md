@@ -1,6 +1,9 @@
 ---
 title: "Insights into CPU and Memory configuration of ESXi Hosts"
 date: 2015-12-23
+url: "/2015-12-23-insights-into-cpu-and-memory-configuration-of-esxi-hosts/"
+aliases:
+  - "/posts/2015-12-23-insights-into-cpu-and-memory-configuration-of-esxi-hosts/"
 categories: 
   - "miscellaneous"
 ---

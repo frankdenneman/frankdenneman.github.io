@@ -1,6 +1,9 @@
 ---
 title: "HA Percentage based admission control from a resource management perspective – Part 1"
 date: 2013-02-15
+url: "/2013-02-15-ha-percentage-based-admission-control-from-a-resource-management-perspective-part-1/"
+aliases:
+  - "/posts/2013-02-15-ha-percentage-based-admission-control-from-a-resource-management-perspective-part-1/"
 categories: 
   - "ha"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "SDRS out of space avoidance"
 date: 2011-09-13
+url: "/2011-09-13-sdrs-out-of-space-avoidance/"
+aliases:
+  - "/posts/2011-09-13-sdrs-out-of-space-avoidance/"
 categories: 
   - "sdrs"
 tags: 

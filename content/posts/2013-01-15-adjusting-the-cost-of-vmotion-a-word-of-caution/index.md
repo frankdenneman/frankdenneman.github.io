@@ -1,6 +1,9 @@
 ---
 title: "Adjusting the cost of vMotion – a word of caution"
 date: 2013-01-15
+url: "/2013-01-15-adjusting-the-cost-of-vmotion-a-word-of-caution/"
+aliases:
+  - "/posts/2013-01-15-adjusting-the-cost-of-vmotion-a-word-of-caution/"
 categories: 
   - "drs"
   - "vmotion"

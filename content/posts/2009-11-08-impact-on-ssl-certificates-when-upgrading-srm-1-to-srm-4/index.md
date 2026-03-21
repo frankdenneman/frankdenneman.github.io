@@ -1,6 +1,9 @@
 ---
 title: "Upgrading to SRM 4 and SSL certificates"
 date: 2009-11-08
+url: "/2009-11-08-impact-on-ssl-certificates-when-upgrading-srm-1-to-srm-4/"
+aliases:
+  - "/posts/2009-11-08-impact-on-ssl-certificates-when-upgrading-srm-1-to-srm-4/"
 categories: 
   - "vmware"
 tags: 

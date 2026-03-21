@@ -1,6 +1,9 @@
 ---
 title: "Insights into VM density"
 date: 2016-02-15
+url: "/2016-02-15-insights-into-vm-density/"
+aliases:
+  - "/posts/2016-02-15-insights-into-vm-density/"
 categories: 
   - "miscellaneous"
 ---

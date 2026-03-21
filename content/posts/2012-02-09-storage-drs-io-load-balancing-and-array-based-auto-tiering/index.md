@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS I/O load balancing and Array-based Auto-Tiering"
 date: 2012-02-09
+url: "/2012-02-09-storage-drs-io-load-balancing-and-array-based-auto-tiering/"
+aliases:
+  - "/posts/2012-02-09-storage-drs-io-load-balancing-and-array-based-auto-tiering/"
 categories: 
   - "sdrs"
 ---

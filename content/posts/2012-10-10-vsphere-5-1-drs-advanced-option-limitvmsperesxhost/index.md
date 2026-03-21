@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 DRS advanced option LimitVMsPerESXHost"
 date: 2012-10-10
+url: "/2012-10-10-vsphere-5-1-drs-advanced-option-limitvmsperesxhost/"
+aliases:
+  - "/posts/2012-10-10-vsphere-5-1-drs-advanced-option-limitvmsperesxhost/"
 categories: 
   - "drs"
 ---

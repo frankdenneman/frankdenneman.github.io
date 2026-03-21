@@ -1,6 +1,9 @@
 ---
 title: "Disable DRS and VM-Host rules"
 date: 2010-07-22
+url: "/2010-07-22-disable-drs-and-vm-host-rules/"
+aliases:
+  - "/posts/2010-07-22-disable-drs-and-vm-host-rules/"
 categories: 
   - "drs"
 tags: 

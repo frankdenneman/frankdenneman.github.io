@@ -1,6 +1,9 @@
 ---
 title: "Host not Ready Error When Installing NSX Agents"
 date: 2016-11-04
+url: "/2016-11-04-host-not-ready/"
+aliases:
+  - "/posts/2016-11-04-host-not-ready/"
 categories: 
   - "networking"
   - "vmware"

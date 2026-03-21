@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS survey"
 date: 2013-01-17
+url: "/2013-01-17-storage-drs-survey/"
+aliases:
+  - "/posts/2013-01-17-storage-drs-survey/"
 categories: 
   - "sdrs"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Whiteboard desk"
 date: 2012-05-03
+url: "/2012-05-03-whiteboard-desk/"
+aliases:
+  - "/posts/2012-05-03-whiteboard-desk/"
 categories: 
   - "miscellaneous"
 ---

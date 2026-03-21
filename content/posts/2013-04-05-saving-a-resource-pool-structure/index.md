@@ -1,6 +1,9 @@
 ---
 title: "Saving a Resource Pool Structure"
 date: 2013-04-05
+url: "/2013-04-05-saving-a-resource-pool-structure/"
+aliases:
+  - "/posts/2013-04-05-saving-a-resource-pool-structure/"
 categories: 
   - "drs"
 ---

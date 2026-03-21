@@ -1,6 +1,9 @@
 ---
 title: "Database workload characteristics and their impact on storage architecture design - part 1"
 date: 2014-09-23
+url: "/2014-09-23-database-workload-characteristics-impact-storage-architecture-design-part-1/"
+aliases:
+  - "/posts/2014-09-23-database-workload-characteristics-impact-storage-architecture-design-part-1/"
 categories: 
   - "miscellaneous"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "A vSphere Focused Guide to the Intel Xeon Scalable Family - Memory Subsystem"
 date: 2017-10-03
+url: "/2017-10-03-vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem/"
+aliases:
+  - "/posts/2017-10-03-vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem/"
 categories: 
   - "numa"
   - "vmware"

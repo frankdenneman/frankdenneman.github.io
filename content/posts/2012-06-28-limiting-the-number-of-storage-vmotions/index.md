@@ -1,6 +1,9 @@
 ---
 title: "Limiting the number of Storage vMotions"
 date: 2012-06-28
+url: "/2012-06-28-limiting-the-number-of-storage-vmotions/"
+aliases:
+  - "/posts/2012-06-28-limiting-the-number-of-storage-vmotions/"
 categories: 
   - "drs"
   - "sdrs"

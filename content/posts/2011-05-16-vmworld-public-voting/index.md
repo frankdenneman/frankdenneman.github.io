@@ -1,6 +1,9 @@
 ---
 title: "VMworld Public Voting"
 date: 2011-05-16
+url: "/2011-05-16-vmworld-public-voting/"
+aliases:
+  - "/posts/2011-05-16-vmworld-public-voting/"
 categories: 
   - "miscellaneous"
 tags: 

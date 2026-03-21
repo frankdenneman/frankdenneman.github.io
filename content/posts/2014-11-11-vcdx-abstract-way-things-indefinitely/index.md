@@ -1,6 +1,9 @@
 ---
 title: "VCDX- You cannot abstract your way out of things indefinitely"
 date: 2014-11-11
+url: "/2014-11-11-vcdx-abstract-way-things-indefinitely/"
+aliases:
+  - "/posts/2014-11-11-vcdx-abstract-way-things-indefinitely/"
 categories: 
   - "vcdx"
 ---

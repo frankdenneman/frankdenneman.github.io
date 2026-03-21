@@ -1,6 +1,9 @@
 ---
 title: "There is a new fling in town: DRMdiagnose"
 date: 2013-02-28
+url: "/2013-02-28-there-is-a-new-fling-in-town-drmdiagnose/"
+aliases:
+  - "/posts/2013-02-28-there-is-a-new-fling-in-town-drmdiagnose/"
 categories: 
   - "drs"
 ---

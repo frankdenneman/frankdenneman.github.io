@@ -1,6 +1,9 @@
 ---
 title: "Database workload characteristics and their impact on storage architecture design – part 2 - Data pipelines"
 date: 2014-09-24
+url: "/2014-09-24-database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines/"
+aliases:
+  - "/posts/2014-09-24-database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines/"
 categories: 
   - "miscellaneous"
 ---

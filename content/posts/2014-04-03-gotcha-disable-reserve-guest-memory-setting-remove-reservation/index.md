@@ -1,6 +1,9 @@
 ---
 title: "Gotcha - Disable reserve all guest memory setting does not remove the reservation"
 date: 2014-04-03
+url: "/2014-04-03-gotcha-disable-reserve-guest-memory-setting-remove-reservation/"
+aliases:
+  - "/posts/2014-04-03-gotcha-disable-reserve-guest-memory-setting-remove-reservation/"
 categories: 
   - "memory"
 ---

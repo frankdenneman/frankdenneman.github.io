@@ -1,6 +1,9 @@
 ---
 title: "Resource pools memory reservations"
 date: 2010-05-18
+url: "/2010-05-18-resource-pools-memory-reservations/"
+aliases:
+  - "/posts/2010-05-18-resource-pools-memory-reservations/"
 categories: 
   - "drs"
   - "memory"

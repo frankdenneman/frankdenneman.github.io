@@ -1,6 +1,9 @@
 ---
 title: "Introduction 2016 NUMA Deep Dive Series"
 date: 2016-07-06
+url: "/2016-07-06-introduction-2016-numa-deep-dive-series/"
+aliases:
+  - "/posts/2016-07-06-introduction-2016-numa-deep-dive-series/"
 categories: 
   - "numa"
   - "vmware"

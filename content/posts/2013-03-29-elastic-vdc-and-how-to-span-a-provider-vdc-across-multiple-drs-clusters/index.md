@@ -1,6 +1,9 @@
 ---
 title: "Elastic vDC and how to span a provider vDC across multiple DRS clusters"
 date: 2013-03-29
+url: "/2013-03-29-elastic-vdc-and-how-to-span-a-provider-vdc-across-multiple-drs-clusters/"
+aliases:
+  - "/posts/2013-03-29-elastic-vdc-and-how-to-span-a-provider-vdc-across-multiple-drs-clusters/"
 categories: 
   - "vmware"
 ---

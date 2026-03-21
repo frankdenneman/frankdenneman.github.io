@@ -1,6 +1,9 @@
 ---
 title: "How to create a &#034;New Storage DRS recommendation generated&#034; alarm"
 date: 2012-11-30
+url: "/2012-11-30-how-to-create-a-new-storage-drs-recommendation-generated-alarm-2/"
+aliases:
+  - "/posts/2012-11-30-how-to-create-a-new-storage-drs-recommendation-generated-alarm-2/"
 categories: 
   - "sdrs"
 tags: 

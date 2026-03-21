@@ -1,6 +1,9 @@
 ---
 title: "Introduction to Elastic DRS"
 date: 2018-07-17
+url: "/2018-07-17-introduction-elastic-drs/"
+aliases:
+  - "/posts/2018-07-17-introduction-elastic-drs/"
 categories: 
   - "vmware"
 ---

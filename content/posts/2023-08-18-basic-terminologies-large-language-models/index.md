@@ -1,6 +1,9 @@
 ---
 title: "Basic Terminologies Large Language Models"
 date: 2023-08-18
+url: "/2023-08-18-basic-terminologies-large-language-models/"
+aliases:
+  - "/posts/2023-08-18-basic-terminologies-large-language-models/"
 categories: 
   - "ai"
 coverImage: "1_wcQ22XZt97iPYfm8RBpBZg@2x.webp"

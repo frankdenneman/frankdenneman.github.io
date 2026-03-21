@@ -1,6 +1,9 @@
 ---
 title: "Top 5 vBlog Again, Thanks!!!!"
 date: 2016-07-01
+url: "/2016-07-01-top-5-vblog/"
+aliases:
+  - "/posts/2016-07-01-top-5-vblog/"
 categories: 
   - "miscellaneous"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 Storage DRS Multi-VM provisioning improvement"
 date: 2012-11-02
+url: "/2012-11-02-vsphere-5-1-storage-drs-multi-vm-provisioning-improvement/"
+aliases:
+  - "/posts/2012-11-02-vsphere-5-1-storage-drs-multi-vm-provisioning-improvement/"
 categories: 
   - "sdrs"
 tags: 

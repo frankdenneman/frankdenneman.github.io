@@ -1,6 +1,9 @@
 ---
 title: "NUMA Deep Dive Part 4: Local Memory Optimization"
 date: 2016-07-13
+url: "/2016-07-13-numa-deep-dive-4-local-memory-optimization/"
+aliases:
+  - "/posts/2016-07-13-numa-deep-dive-4-local-memory-optimization/"
 categories: 
   - "numa"
   - "vmware"

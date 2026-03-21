@@ -1,6 +1,9 @@
 ---
 title: "VMware Cloud™ on AWS – A Closer Look"
 date: 2016-10-13
+url: "/2016-10-13-vmware-cloud-aws-closer-look/"
+aliases:
+  - "/posts/2016-10-13-vmware-cloud-aws-closer-look/"
 categories: 
   - "vmware"
 ---

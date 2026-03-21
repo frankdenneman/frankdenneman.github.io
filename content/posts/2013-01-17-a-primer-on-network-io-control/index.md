@@ -1,6 +1,9 @@
 ---
 title: "A primer on Network I/O Control"
 date: 2013-01-17
+url: "/2013-01-17-a-primer-on-network-io-control/"
+aliases:
+  - "/posts/2013-01-17-a-primer-on-network-io-control/"
 categories: 
   - "vmware"
 ---

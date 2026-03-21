@@ -1,6 +1,9 @@
 ---
 title: "Unexplored Territory Podcast Episode 19 - Discussing NUMA and Cores per Sockets with the main CPU engineer of vSphere"
 date: 2022-07-01
+url: "/2022-07-01-unexplored-territory-podcast-episode-19-discussing-numa-and-cores-per-sockets-with-the-main-cpu-engineer-of-vsphere/"
+aliases:
+  - "/posts/2022-07-01-unexplored-territory-podcast-episode-19-discussing-numa-and-cores-per-sockets-with-the-main-cpu-engineer-of-vsphere/"
 categories: 
   - "numa"
 coverImage: "EP20-screenshot.jpg"

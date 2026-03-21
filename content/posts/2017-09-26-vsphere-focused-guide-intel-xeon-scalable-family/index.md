@@ -1,6 +1,9 @@
 ---
 title: "A vSphere Focused Guide to the Intel Xeon Scalable Family"
 date: 2017-09-26
+url: "/2017-09-26-vsphere-focused-guide-intel-xeon-scalable-family/"
+aliases:
+  - "/posts/2017-09-26-vsphere-focused-guide-intel-xeon-scalable-family/"
 categories: 
   - "numa"
   - "vmware"

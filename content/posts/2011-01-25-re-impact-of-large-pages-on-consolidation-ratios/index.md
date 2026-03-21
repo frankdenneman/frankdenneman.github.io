@@ -1,6 +1,9 @@
 ---
 title: "Re: impact of large pages on consolidation ratios"
 date: 2011-01-25
+url: "/2011-01-25-re-impact-of-large-pages-on-consolidation-ratios/"
+aliases:
+  - "/posts/2011-01-25-re-impact-of-large-pages-on-consolidation-ratios/"
 categories: 
   - "memory"
 ---

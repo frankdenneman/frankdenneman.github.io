@@ -1,6 +1,9 @@
 ---
 title: "NFS and IP-HASH loadbalancing"
 date: 2009-11-13
+url: "/2009-11-13-nfs-and-ip-hash-loadbalancing/"
+aliases:
+  - "/posts/2009-11-13-nfs-and-ip-hash-loadbalancing/"
 categories: 
   - "networking"
 tags: 

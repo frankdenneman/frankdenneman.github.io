@@ -1,6 +1,9 @@
 ---
 title: "Consumer grade SSD versus Enterprise grade SSD, which one to pick?"
 date: 2014-03-10
+url: "/2014-03-10-consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick/"
+aliases:
+  - "/posts/2014-03-10-consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick/"
 categories: 
   - "storage"
 ---

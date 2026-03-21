@@ -1,6 +1,9 @@
 ---
 title: "Adding new disk to an existing virtual machine in a Storage DRS Datastore Cluster"
 date: 2013-01-11
+url: "/2013-01-11-adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster/"
+aliases:
+  - "/posts/2013-01-11-adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster/"
 categories: 
   - "sdrs"
 ---

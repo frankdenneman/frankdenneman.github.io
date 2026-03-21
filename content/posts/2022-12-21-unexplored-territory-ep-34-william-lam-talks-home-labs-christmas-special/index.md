@@ -1,6 +1,9 @@
 ---
 title: "Unexplored Territory Ep 34 - William Lam Talks Home Labs - Christmas Special"
 date: 2022-12-21
+url: "/2022-12-21-unexplored-territory-ep-34-william-lam-talks-home-labs-christmas-special/"
+aliases:
+  - "/posts/2022-12-21-unexplored-territory-ep-34-william-lam-talks-home-labs-christmas-special/"
 categories: 
   - "home-lab"
   - "podcast"

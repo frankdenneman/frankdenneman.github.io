@@ -1,6 +1,9 @@
 ---
 title: "Load Based Teaming"
 date: 2010-07-21
+url: "/2010-07-21-load-based-teaming/"
+aliases:
+  - "/posts/2010-07-21-load-based-teaming/"
 categories: 
   - "networking"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "Research and Innovation at VMware with Chris Wolf"
 date: 2023-03-27
+url: "/2023-03-27-research-and-innovation-at-vmware-with-chris-wolf/"
+aliases:
+  - "/posts/2023-03-27-research-and-innovation-at-vmware-with-chris-wolf/"
 categories: 
   - "podcast"
 coverImage: "UT-42.png"

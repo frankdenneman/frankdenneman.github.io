@@ -1,6 +1,9 @@
 ---
 title: "DVD Store, the perfect homelab workload tool"
 date: 2016-03-31
+url: "/2016-03-31-dvd-store-the-perfect-homelab-workload-tool/"
+aliases:
+  - "/posts/2016-03-31-dvd-store-the-perfect-homelab-workload-tool/"
 categories: 
   - "home-lab"
   - "vmware"

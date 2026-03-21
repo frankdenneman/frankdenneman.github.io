@@ -1,6 +1,9 @@
 ---
 title: "Setting Correct Percentage of Cluster Resources Reserved"
 date: 2011-01-20
+url: "/2011-01-20-setting-correct-percentage-of-cluster-resources-reserved/"
+aliases:
+  - "/posts/2011-01-20-setting-correct-percentage-of-cluster-resources-reserved/"
 categories: 
   - "vmware"
 tags: 

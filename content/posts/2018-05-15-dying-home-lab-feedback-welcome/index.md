@@ -1,6 +1,9 @@
 ---
 title: "Dying Home Lab - Feedback Welcome"
 date: 2018-05-15
+url: "/2018-05-15-dying-home-lab-feedback-welcome/"
+aliases:
+  - "/posts/2018-05-15-dying-home-lab-feedback-welcome/"
 categories: 
   - "home-lab"
   - "vmware"

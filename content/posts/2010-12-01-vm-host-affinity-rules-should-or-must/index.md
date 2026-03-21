@@ -1,6 +1,9 @@
 ---
 title: "Should or Must VM-Host affinity rules?"
 date: 2010-12-01
+url: "/2010-12-01-vm-host-affinity-rules-should-or-must/"
+aliases:
+  - "/posts/2010-12-01-vm-host-affinity-rules-should-or-must/"
 categories: 
   - "drs"
 tags: 

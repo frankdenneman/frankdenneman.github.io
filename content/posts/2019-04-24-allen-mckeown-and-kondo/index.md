@@ -1,6 +1,9 @@
 ---
 title: "Allen, McKeown, and Kondo"
 date: 2019-04-24
+url: "/2019-04-24-allen-mckeown-and-kondo/"
+aliases:
+  - "/posts/2019-04-24-allen-mckeown-and-kondo/"
 coverImage: "PHOTO-2018-05-18-11-21-02-1-e1556056017400.jpg"
 ---
 

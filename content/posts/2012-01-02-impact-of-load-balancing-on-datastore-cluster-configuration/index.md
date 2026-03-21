@@ -1,6 +1,9 @@
 ---
 title: "Impact of load balancing on datastore cluster configuration"
 date: 2012-01-02
+url: "/2012-01-02-impact-of-load-balancing-on-datastore-cluster-configuration/"
+aliases:
+  - "/posts/2012-01-02-impact-of-load-balancing-on-datastore-cluster-configuration/"
 categories: 
   - "sdrs"
 ---

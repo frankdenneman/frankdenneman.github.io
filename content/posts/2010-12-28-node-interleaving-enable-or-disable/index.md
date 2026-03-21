@@ -1,6 +1,9 @@
 ---
 title: "Node Interleaving: Enable or Disable?"
 date: 2010-12-28
+url: "/2010-12-28-node-interleaving-enable-or-disable/"
+aliases:
+  - "/posts/2010-12-28-node-interleaving-enable-or-disable/"
 categories: 
   - "numa"
   - "vmware"

@@ -1,6 +1,9 @@
 ---
 title: "vBrownBag Techtalks VMworld Call for Papers now open"
 date: 2018-04-26
+url: "/2018-04-26-vbrownbag-techtalks-vmworld-call-papers-now-open/"
+aliases:
+  - "/posts/2018-04-26-vbrownbag-techtalks-vmworld-call-papers-now-open/"
 categories: 
   - "vmware"
 ---

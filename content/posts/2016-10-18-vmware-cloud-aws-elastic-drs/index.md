@@ -1,6 +1,9 @@
 ---
 title: "VMware Cloud on AWS - Elastic DRS preview"
 date: 2016-10-18
+url: "/2016-10-18-vmware-cloud-aws-elastic-drs/"
+aliases:
+  - "/posts/2016-10-18-vmware-cloud-aws-elastic-drs/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Help Us Make vMotion Even Better"
 date: 2018-10-02
+url: "/2018-10-02-help-us-make-vmotion-even-better/"
+aliases:
+  - "/posts/2018-10-02-help-us-make-vmotion-even-better/"
 categories: 
   - "vmotion"
   - "vmware"

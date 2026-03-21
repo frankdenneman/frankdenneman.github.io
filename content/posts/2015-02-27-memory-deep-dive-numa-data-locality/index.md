@@ -1,6 +1,9 @@
 ---
 title: "Memory Deep Dive: NUMA and Data Locality"
 date: 2015-02-27
+url: "/2015-02-27-memory-deep-dive-numa-data-locality/"
+aliases:
+  - "/posts/2015-02-27-memory-deep-dive-numa-data-locality/"
 categories: 
   - "memory"
 ---

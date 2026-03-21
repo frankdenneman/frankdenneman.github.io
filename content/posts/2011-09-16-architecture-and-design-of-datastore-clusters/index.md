@@ -1,6 +1,9 @@
 ---
 title: "Architecture and design of Datastore clusters"
 date: 2011-09-16
+url: "/2011-09-16-architecture-and-design-of-datastore-clusters/"
+aliases:
+  - "/posts/2011-09-16-architecture-and-design-of-datastore-clusters/"
 categories: 
   - "sdrs"
 tags: 

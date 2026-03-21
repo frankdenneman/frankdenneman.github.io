@@ -1,6 +1,9 @@
 ---
 title: "Cyber Monday deal!"
 date: 2011-11-26
+url: "/2011-11-26-cyber-monday-deal/"
+aliases:
+  - "/posts/2011-11-26-cyber-monday-deal/"
 categories: 
   - "vmware"
 tags: 

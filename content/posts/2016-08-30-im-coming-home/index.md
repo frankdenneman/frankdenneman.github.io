@@ -1,6 +1,9 @@
 ---
 title: "I&#039;m Coming Home"
 date: 2016-08-30
+url: "/2016-08-30-im-coming-home/"
+aliases:
+  - "/posts/2016-08-30-im-coming-home/"
 categories: 
   - "vmware"
 ---

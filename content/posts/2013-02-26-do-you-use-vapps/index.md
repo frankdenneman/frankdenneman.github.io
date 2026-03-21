@@ -1,6 +1,9 @@
 ---
 title: "Do you use vApps?"
 date: 2013-02-26
+url: "/2013-02-26-do-you-use-vapps/"
+aliases:
+  - "/posts/2013-02-26-do-you-use-vapps/"
 categories: 
   - "drs"
 ---

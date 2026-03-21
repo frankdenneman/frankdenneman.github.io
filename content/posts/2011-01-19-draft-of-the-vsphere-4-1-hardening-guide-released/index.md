@@ -1,6 +1,9 @@
 ---
 title: "&#039;Draft&#039; of the vSphere 4.1 Hardening guide released"
 date: 2011-01-19
+url: "/2011-01-19-draft-of-the-vsphere-4-1-hardening-guide-released/"
+aliases:
+  - "/posts/2011-01-19-draft-of-the-vsphere-4-1-hardening-guide-released/"
 categories: 
   - "vmware"
 ---

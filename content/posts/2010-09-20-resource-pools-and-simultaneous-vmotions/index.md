@@ -1,6 +1,9 @@
 ---
 title: "Resource pools and simultaneous vMotions"
 date: 2010-09-20
+url: "/2010-09-20-resource-pools-and-simultaneous-vmotions/"
+aliases:
+  - "/posts/2010-09-20-resource-pools-and-simultaneous-vmotions/"
 categories: 
   - "drs"
 tags: 

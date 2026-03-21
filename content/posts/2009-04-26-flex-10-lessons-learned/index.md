@@ -1,6 +1,9 @@
 ---
 title: "Flex-10 lessons learned"
 date: 2009-04-26
+url: "/2009-04-26-flex-10-lessons-learned/"
+aliases:
+  - "/posts/2009-04-26-flex-10-lessons-learned/"
 categories: 
   - "vmware"
 tags: 

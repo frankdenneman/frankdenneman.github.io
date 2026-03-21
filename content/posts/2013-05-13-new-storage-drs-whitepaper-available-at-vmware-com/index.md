@@ -1,6 +1,9 @@
 ---
 title: "New Storage DRS whitepaper available at VMware.com"
 date: 2013-05-13
+url: "/2013-05-13-new-storage-drs-whitepaper-available-at-vmware-com/"
+aliases:
+  - "/posts/2013-05-13-new-storage-drs-whitepaper-available-at-vmware-com/"
 categories: 
   - "sdrs"
 ---

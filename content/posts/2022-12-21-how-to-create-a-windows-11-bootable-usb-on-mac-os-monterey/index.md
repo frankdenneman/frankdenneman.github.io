@@ -1,6 +1,9 @@
 ---
 title: "How to Create a Windows 11 Bootable USB on Mac OS Monterey"
 date: 2022-12-21
+url: "/2022-12-21-how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey/"
+aliases:
+  - "/posts/2022-12-21-how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey/"
 categories: 
   - "miscellaneous"
 coverImage: "diskutil-list-external.png"

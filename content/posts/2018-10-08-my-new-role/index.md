@@ -1,6 +1,9 @@
 ---
 title: "My New Role"
 date: 2018-10-08
+url: "/2018-10-08-my-new-role/"
+aliases:
+  - "/posts/2018-10-08-my-new-role/"
 categories: 
   - "vmware"
 tags: 

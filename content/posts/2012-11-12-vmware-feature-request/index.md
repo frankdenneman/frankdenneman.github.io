@@ -1,6 +1,9 @@
 ---
 title: "VMware feature request"
 date: 2012-11-12
+url: "/2012-11-12-vmware-feature-request/"
+aliases:
+  - "/posts/2012-11-12-vmware-feature-request/"
 categories: 
   - "vmware"
 ---

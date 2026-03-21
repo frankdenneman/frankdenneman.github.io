@@ -1,6 +1,9 @@
 ---
 title: "Retrieval-Augmented Generation Basics for the Data Center Admin"
 date: 2024-01-16T09:00:00+01:00
+url: "/2024-01-16-retrieval-augmented-generation-basics-for-the-data-center-admin/"
+aliases:
+  - "/posts/2024-01-16-retrieval-augmented-generation-basics-for-the-data-center-admin/"
 draft: false
 slug: "retrieval-augmented-generation-basics-for-the-data-center-admin"
 categories: ["ai"]

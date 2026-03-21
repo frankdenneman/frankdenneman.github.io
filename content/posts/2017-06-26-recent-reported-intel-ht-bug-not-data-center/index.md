@@ -1,6 +1,9 @@
 ---
 title: "Why the Recent Reported Intel HT Bug is Not in Your Data Center"
 date: 2017-06-26
+url: "/2017-06-26-recent-reported-intel-ht-bug-not-data-center/"
+aliases:
+  - "/posts/2017-06-26-recent-reported-intel-ht-bug-not-data-center/"
 categories: 
   - "cpu"
 ---

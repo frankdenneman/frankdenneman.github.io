@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS and Multi-extents datastores"
 date: 2012-01-17
+url: "/2012-01-17-sdrs-and-multi-extents-datastores/"
+aliases:
+  - "/posts/2012-01-17-sdrs-and-multi-extents-datastores/"
 categories: 
   - "sdrs"
 tags: 

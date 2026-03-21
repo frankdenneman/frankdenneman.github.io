@@ -1,6 +1,9 @@
 ---
 title: "Identify storage performance issues"
 date: 2010-03-25
+url: "/2010-03-25-identify-storage-performance-issues/"
+aliases:
+  - "/posts/2010-03-25-identify-storage-performance-issues/"
 categories: 
   - "storage"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "RAG Architecture Deep Dive"
 date: 2024-03-19T09:00:00+01:00
+url: "/2024-03-19-rag-architecture-deep-dive/"
+aliases:
+  - "/posts/2024-03-19-rag-architecture-deep-dive/"
 draft: false
 slug: "rag-architecture-deep-dive"
 categories: ["ai"]

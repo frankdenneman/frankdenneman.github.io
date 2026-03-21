@@ -1,6 +1,9 @@
 ---
 title: "My lab and the birth of the portable Ikea lack 19” datacenter rack"
 date: 2013-12-16
+url: "/2013-12-16-my-lab-and-the-birth-of-the-portable-ikea-lack-19-datacenter-rack/"
+aliases:
+  - "/posts/2013-12-16-my-lab-and-the-birth-of-the-portable-ikea-lack-19-datacenter-rack/"
 ---
 
 Currently, topics about labs are hot, and when meeting people at the VMUGs or other tech conferences, I get asked a lot about my lab configuration. I'm a big fan of labs, and I think everybody who works in IT needs a lab, whether it's at home or in a centralized location.

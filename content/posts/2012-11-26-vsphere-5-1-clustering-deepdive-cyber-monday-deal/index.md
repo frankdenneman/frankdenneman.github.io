@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 Clustering deepdive Cyber Monday deal"
 date: 2012-11-26
+url: "/2012-11-26-vsphere-5-1-clustering-deepdive-cyber-monday-deal/"
+aliases:
+  - "/posts/2012-11-26-vsphere-5-1-clustering-deepdive-cyber-monday-deal/"
 ---
 
 We are long time fascinated by the whole Black Friday and Cyber Monday craze in the USA. Unfortunately we do not celebrate Thanksgiving in the Netherlands and none of the shops are participating in something similar as Black Friday. Similar to last year, we thought it was a great idea to participate in some form and what better than to offer our [vSphere 5.1 Clustering Technical Deepdive book](http://www.amazon.com/gp/product/1478183411/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1478183411&linkCode=as2&tag=frankdenneman-20) for a price you cannot resist. We just changed the price of the vSphere 5.1 Clustering Technical Deepdive to $17.95, [Amazon Deutschland](http://www.amazon.de/VMware-vSphere-5-1-Clustering-Deepdive/dp/1478183411/ref=sr_1_1?ie=UTF8&qid=1353930820&sr=8-1) is offering the book for 16.00 EURO, while [Amazon UK](http://www.amazon.co.uk/VMware-vSphere-5-1-Clustering-Deepdive/dp/1478183411/ref=sr_1_1?ie=UTF8&qid=1353930879&sr=8-1) is selling the book for 11.01 Pounds sterling. The book has some amazing reviews, here is one we like to share with you:

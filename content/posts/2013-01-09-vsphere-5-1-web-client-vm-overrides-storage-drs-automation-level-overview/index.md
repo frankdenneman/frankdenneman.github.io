@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 web client: VM overrides -Storage DRS automation level overview"
 date: 2013-01-09
+url: "/2013-01-09-vsphere-5-1-web-client-vm-overrides-storage-drs-automation-level-overview/"
+aliases:
+  - "/posts/2013-01-09-vsphere-5-1-web-client-vm-overrides-storage-drs-automation-level-overview/"
 categories: 
   - "sdrs"
 ---

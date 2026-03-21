@@ -1,6 +1,9 @@
 ---
 title: "Exploring the Core Motivation of Writing a Book"
 date: 2017-07-11
+url: "/2017-07-11-exploring-core-motivation-writing-book/"
+aliases:
+  - "/posts/2017-07-11-exploring-core-motivation-writing-book/"
 categories: 
   - "miscellaneous"
 ---

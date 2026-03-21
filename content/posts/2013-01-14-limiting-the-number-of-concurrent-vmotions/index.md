@@ -1,6 +1,9 @@
 ---
 title: "Limiting the number of concurrent vMotions"
 date: 2013-01-14
+url: "/2013-01-14-limiting-the-number-of-concurrent-vmotions/"
+aliases:
+  - "/posts/2013-01-14-limiting-the-number-of-concurrent-vmotions/"
 categories: 
   - "vmotion"
 ---

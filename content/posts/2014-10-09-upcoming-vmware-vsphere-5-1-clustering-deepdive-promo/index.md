@@ -1,6 +1,9 @@
 ---
 title: "99 cents Promo to celebrate a major milestone of the vSphere Clustering Deepdive series"
 date: 2014-10-09
+url: "/2014-10-09-upcoming-vmware-vsphere-5-1-clustering-deepdive-promo/"
+aliases:
+  - "/posts/2014-10-09-upcoming-vmware-vsphere-5-1-clustering-deepdive-promo/"
 categories: 
   - "vmware"
 ---

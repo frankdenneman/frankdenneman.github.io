@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS automation level and initial placement behavior"
 date: 2012-10-04
+url: "/2012-10-04-storage-drs-automation-level-and-initial-placement-behavior/"
+aliases:
+  - "/posts/2012-10-04-storage-drs-automation-level-and-initial-placement-behavior/"
 categories: 
   - "sdrs"
 ---

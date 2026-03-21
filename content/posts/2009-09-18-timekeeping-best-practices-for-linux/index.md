@@ -1,6 +1,9 @@
 ---
 title: "Timekeeping best practices for Linux"
 date: 2009-09-18
+url: "/2009-09-18-timekeeping-best-practices-for-linux/"
+aliases:
+  - "/posts/2009-09-18-timekeeping-best-practices-for-linux/"
 categories: 
   - "vmware"
 tags: 

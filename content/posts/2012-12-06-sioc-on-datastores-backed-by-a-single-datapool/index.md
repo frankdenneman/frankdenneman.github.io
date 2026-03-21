@@ -1,6 +1,9 @@
 ---
 title: "SIOC on datastores backed by a single datapool"
 date: 2012-12-06
+url: "/2012-12-06-sioc-on-datastores-backed-by-a-single-datapool/"
+aliases:
+  - "/posts/2012-12-06-sioc-on-datastores-backed-by-a-single-datapool/"
 categories: 
   - "sioc"
 tags: 

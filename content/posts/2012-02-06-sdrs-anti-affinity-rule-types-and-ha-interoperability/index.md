@@ -1,6 +1,9 @@
 ---
 title: "(Storage) DRS (anti-) affinity rule types and HA interoperability"
 date: 2012-02-06
+url: "/2012-02-06-sdrs-anti-affinity-rule-types-and-ha-interoperability/"
+aliases:
+  - "/posts/2012-02-06-sdrs-anti-affinity-rule-types-and-ha-interoperability/"
 categories: 
   - "drs"
   - "sdrs"

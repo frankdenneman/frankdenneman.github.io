@@ -1,6 +1,9 @@
 ---
 title: "Resource Pools and Sibling Rivalry"
 date: 2018-07-16
+url: "/2018-07-16-resource-pools-sibling-rivalry/"
+aliases:
+  - "/posts/2018-07-16-resource-pools-sibling-rivalry/"
 categories: 
   - "drs"
   - "vmware"

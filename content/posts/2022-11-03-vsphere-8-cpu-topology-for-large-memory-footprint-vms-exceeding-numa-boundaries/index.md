@@ -1,6 +1,9 @@
 ---
 title: "vSphere 8 CPU Topology for Large Memory Footprint VMs Exceeding NUMA Boundaries"
 date: 2022-11-03
+url: "/2022-11-03-vsphere-8-cpu-topology-for-large-memory-footprint-vms-exceeding-numa-boundaries/"
+aliases:
+  - "/posts/2022-11-03-vsphere-8-cpu-topology-for-large-memory-footprint-vms-exceeding-numa-boundaries/"
 categories: 
   - "numa"
 coverImage: "VM-CPU-Topology-2-NUMA-nodes.png"

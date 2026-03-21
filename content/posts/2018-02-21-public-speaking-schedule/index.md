@@ -1,6 +1,9 @@
 ---
 title: "Public Speaking Schedule"
 date: 2018-02-21
+url: "/2018-02-21-public-speaking-schedule/"
+aliases:
+  - "/posts/2018-02-21-public-speaking-schedule/"
 categories: 
   - "vmware"
 ---

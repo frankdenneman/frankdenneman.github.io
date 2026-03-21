@@ -1,6 +1,9 @@
 ---
 title: "Memory-Like Storage Means File Systems Must Change - My Take"
 date: 2017-05-25
+url: "/2017-05-25-memory-like-storage-means-file-systems-must-change-take/"
+aliases:
+  - "/posts/2017-05-25-memory-like-storage-means-file-systems-must-change-take/"
 categories: 
   - "deep-dive"
   - "vmware"

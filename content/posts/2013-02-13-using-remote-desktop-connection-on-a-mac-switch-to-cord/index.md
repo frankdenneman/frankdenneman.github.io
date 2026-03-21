@@ -1,6 +1,9 @@
 ---
 title: "Using Remote desktop connection on a Mac? Switch to CoRD"
 date: 2013-02-13
+url: "/2013-02-13-using-remote-desktop-connection-on-a-mac-switch-to-cord/"
+aliases:
+  - "/posts/2013-02-13-using-remote-desktop-connection-on-a-mac-switch-to-cord/"
 categories: 
   - "miscellaneous"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "60 Minutes of NUMA VMworld Session Commands"
 date: 2019-08-27
+url: "/2019-08-27-60-minutes-of-numa-vmworld-session-commands/"
+aliases:
+  - "/posts/2019-08-27-60-minutes-of-numa-vmworld-session-commands/"
 categories: 
   - "numa"
 coverImage: "Screenshot-2019-08-27-12.21.00.png"

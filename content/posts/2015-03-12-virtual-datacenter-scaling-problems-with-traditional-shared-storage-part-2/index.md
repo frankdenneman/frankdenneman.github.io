@@ -1,6 +1,9 @@
 ---
 title: "Virtual Datacenter scaling problems with traditional shared storage - part 2"
 date: 2015-03-12
+url: "/2015-03-12-virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2/"
+aliases:
+  - "/posts/2015-03-12-virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2/"
 categories: 
   - "vmware"
 ---

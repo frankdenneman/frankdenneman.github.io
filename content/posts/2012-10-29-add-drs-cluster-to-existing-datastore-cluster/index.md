@@ -1,6 +1,9 @@
 ---
 title: "Add DRS cluster to existing Storage DRS Datastore Cluster?"
 date: 2012-10-29
+url: "/2012-10-29-add-drs-cluster-to-existing-datastore-cluster/"
+aliases:
+  - "/posts/2012-10-29-add-drs-cluster-to-existing-datastore-cluster/"
 categories: 
   - "sdrs"
 tags: 

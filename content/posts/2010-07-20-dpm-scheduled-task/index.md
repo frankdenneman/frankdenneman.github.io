@@ -1,6 +1,9 @@
 ---
 title: "DPM scheduled tasks"
 date: 2010-07-20
+url: "/2010-07-20-dpm-scheduled-task/"
+aliases:
+  - "/posts/2010-07-20-dpm-scheduled-task/"
 categories: 
   - "drs"
 tags: 

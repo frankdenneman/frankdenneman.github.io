@@ -1,6 +1,9 @@
 ---
 title: "10 guidelines for creating good looking diagrams"
 date: 2013-02-01
+url: "/2013-02-01-10-guidelines-for-creating-good-looking-diagrams/"
+aliases:
+  - "/posts/2013-02-01-10-guidelines-for-creating-good-looking-diagrams/"
 categories: 
   - "miscellaneous"
 ---

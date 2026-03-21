@@ -1,6 +1,9 @@
 ---
 title: "vSwitch Failback and High Availability"
 date: 2010-10-22
+url: "/2010-10-22-vswitch-failover-and-high-availability/"
+aliases:
+  - "/posts/2010-10-22-vswitch-failover-and-high-availability/"
 categories: 
   - "networking"
 tags: 

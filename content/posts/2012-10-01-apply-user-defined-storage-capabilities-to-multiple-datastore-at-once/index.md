@@ -1,6 +1,9 @@
 ---
 title: "Apply User-defined Storage Capabilities to multiple datastore at once"
 date: 2012-10-01
+url: "/2012-10-01-apply-user-defined-storage-capabilities-to-multiple-datastore-at-once/"
+aliases:
+  - "/posts/2012-10-01-apply-user-defined-storage-capabilities-to-multiple-datastore-at-once/"
 categories: 
   - "sdrs"
 tags: 

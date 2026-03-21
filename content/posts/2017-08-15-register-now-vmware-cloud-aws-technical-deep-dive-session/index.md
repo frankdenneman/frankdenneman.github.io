@@ -1,6 +1,9 @@
 ---
 title: "Register now for VMware Cloud on AWS Technical Deep Dive Session"
 date: 2017-08-15
+url: "/2017-08-15-register-now-vmware-cloud-aws-technical-deep-dive-session/"
+aliases:
+  - "/posts/2017-08-15-register-now-vmware-cloud-aws-technical-deep-dive-session/"
 categories: 
   - "vmware"
 ---

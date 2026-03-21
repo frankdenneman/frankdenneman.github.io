@@ -1,6 +1,9 @@
 ---
 title: "Manual storage vMotion migrations into a datastore cluster"
 date: 2013-01-08
+url: "/2013-01-08-manual-storage-vmotion-migration-into-datastore-cluster/"
+aliases:
+  - "/posts/2013-01-08-manual-storage-vmotion-migration-into-datastore-cluster/"
 categories: 
   - "sdrs"
   - "vmotion"

@@ -1,6 +1,9 @@
 ---
 title: "HP CA and the use of LUN balancing scripts"
 date: 2009-02-09
+url: "/2009-02-09-hp-continuous-access-and-the-use-of-lun-balancing-scripts/"
+aliases:
+  - "/posts/2009-02-09-hp-continuous-access-and-the-use-of-lun-balancing-scripts/"
 categories: 
   - "storage"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "VMware tools disk timeout value Linux GOS"
 date: 2010-04-28
+url: "/2010-04-28-vmware-tools-disk-timeout-value-linux-gos/"
+aliases:
+  - "/posts/2010-04-28-vmware-tools-disk-timeout-value-linux-gos/"
 categories: 
   - "vmware"
 tags: 

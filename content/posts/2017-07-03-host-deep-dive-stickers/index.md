@@ -1,6 +1,9 @@
 ---
 title: "Host Deep Dive Stickers and More"
 date: 2017-07-03
+url: "/2017-07-03-host-deep-dive-stickers/"
+aliases:
+  - "/posts/2017-07-03-host-deep-dive-stickers/"
 categories: 
   - "deep-dive"
   - "miscellaneous"

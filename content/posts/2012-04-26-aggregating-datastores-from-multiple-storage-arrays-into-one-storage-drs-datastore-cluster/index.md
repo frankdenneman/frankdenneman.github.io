@@ -1,6 +1,9 @@
 ---
 title: "Aggregating datastores from multiple storage arrays into one Storage DRS datastore cluster."
 date: 2012-04-26
+url: "/2012-04-26-aggregating-datastores-from-multiple-storage-arrays-into-one-storage-drs-datastore-cluster/"
+aliases:
+  - "/posts/2012-04-26-aggregating-datastores-from-multiple-storage-arrays-into-one-storage-drs-datastore-cluster/"
 categories: 
   - "sdrs"
 ---

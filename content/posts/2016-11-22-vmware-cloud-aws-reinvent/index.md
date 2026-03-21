@@ -1,6 +1,9 @@
 ---
 title: "VMware Cloud on AWS at re:Invent"
 date: 2016-11-22
+url: "/2016-11-22-vmware-cloud-aws-reinvent/"
+aliases:
+  - "/posts/2016-11-22-vmware-cloud-aws-reinvent/"
 categories: 
   - "vmware"
 ---

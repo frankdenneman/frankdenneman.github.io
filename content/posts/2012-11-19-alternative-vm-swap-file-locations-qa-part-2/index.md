@@ -1,6 +1,9 @@
 ---
 title: "(Alternative) VM swap file locations Q&amp;A – part 2"
 date: 2012-11-19
+url: "/2012-11-19-alternative-vm-swap-file-locations-qa-part-2/"
+aliases:
+  - "/posts/2012-11-19-alternative-vm-swap-file-locations-qa-part-2/"
 categories: 
   - "drs"
   - "vmotion"

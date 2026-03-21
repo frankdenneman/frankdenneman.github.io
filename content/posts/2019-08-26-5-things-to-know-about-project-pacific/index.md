@@ -1,6 +1,9 @@
 ---
 title: "5 Things to Know About Project Pacific"
 date: 2019-08-26
+url: "/2019-08-26-5-things-to-know-about-project-pacific/"
+aliases:
+  - "/posts/2019-08-26-5-things-to-know-about-project-pacific/"
 coverImage: "project-pacific-medium.png"
 ---
 

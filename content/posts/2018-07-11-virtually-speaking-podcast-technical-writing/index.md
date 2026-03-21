@@ -1,6 +1,9 @@
 ---
 title: "Virtually Speaking Podcast about Technical Writing"
 date: 2018-07-11
+url: "/2018-07-11-virtually-speaking-podcast-technical-writing/"
+aliases:
+  - "/posts/2018-07-11-virtually-speaking-podcast-technical-writing/"
 categories: 
   - "vmware"
 tags: 

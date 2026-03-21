@@ -1,6 +1,9 @@
 ---
 title: "My wish for 2015 - better tooling to provide better insight"
 date: 2014-12-30
+url: "/2014-12-30-wish-2015-better-tooling-provide-better-insight/"
+aliases:
+  - "/posts/2014-12-30-wish-2015-better-tooling-provide-better-insight/"
 categories: 
   - "miscellaneous"
 ---

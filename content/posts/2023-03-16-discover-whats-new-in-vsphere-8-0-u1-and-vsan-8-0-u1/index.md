@@ -1,6 +1,9 @@
 ---
 title: "Discover what's new in vSphere 8.0 U1 and vSAN 8.0 U1"
 date: 2023-03-16
+url: "/2023-03-16-discover-whats-new-in-vsphere-8-0-u1-and-vsan-8-0-u1/"
+aliases:
+  - "/posts/2023-03-16-discover-whats-new-in-vsphere-8-0-u1-and-vsan-8-0-u1/"
 categories: 
   - "podcast"
 coverImage: "Screenshot-2023-03-16-at-13.56.52.png"

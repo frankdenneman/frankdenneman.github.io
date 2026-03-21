@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 storage vMotion parallel disk migrations"
 date: 2012-09-04
+url: "/2012-09-04-vsphere-5-1-storage-vmotion-parallel-disk-migrations/"
+aliases:
+  - "/posts/2012-09-04-vsphere-5-1-storage-vmotion-parallel-disk-migrations/"
 categories: 
   - "vmware"
 ---

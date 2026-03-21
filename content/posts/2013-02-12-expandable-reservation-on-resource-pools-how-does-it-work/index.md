@@ -1,6 +1,9 @@
 ---
 title: "Expandable reservation on resource pools, how does it work?"
 date: 2013-02-12
+url: "/2013-02-12-expandable-reservation-on-resource-pools-how-does-it-work/"
+aliases:
+  - "/posts/2013-02-12-expandable-reservation-on-resource-pools-how-does-it-work/"
 categories: 
   - "drs"
 ---

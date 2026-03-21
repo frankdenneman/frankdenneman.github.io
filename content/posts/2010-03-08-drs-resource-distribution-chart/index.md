@@ -1,6 +1,9 @@
 ---
 title: "DRS Resource Distribution Chart"
 date: 2010-03-08
+url: "/2010-03-08-drs-resource-distribution-chart/"
+aliases:
+  - "/posts/2010-03-08-drs-resource-distribution-chart/"
 categories: 
   - "drs"
 tags: 

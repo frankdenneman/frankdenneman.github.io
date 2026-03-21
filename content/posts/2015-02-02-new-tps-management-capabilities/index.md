@@ -1,6 +1,9 @@
 ---
 title: "New TPS management capabilities"
 date: 2015-02-02
+url: "/2015-02-02-new-tps-management-capabilities/"
+aliases:
+  - "/posts/2015-02-02-new-tps-management-capabilities/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "VMware Cloud on AWS on Virtually Speaking Podcast"
 date: 2019-04-09
+url: "/2019-04-09-vmware-cloud-on-aws-on-virtually-speaking-podcast/"
+aliases:
+  - "/posts/2019-04-09-vmware-cloud-on-aws-on-virtually-speaking-podcast/"
 categories: 
   - "vmware"
 tags: 

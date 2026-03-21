@@ -1,6 +1,9 @@
 ---
 title: "VCDX Defence: Are you planning to use a fictitious design?"
 date: 2014-02-10
+url: "/2014-02-10-vcdx-defence-planning-use-fictitious-design/"
+aliases:
+  - "/posts/2014-02-10-vcdx-defence-planning-use-fictitious-design/"
 categories: 
   - "vcdx"
 ---

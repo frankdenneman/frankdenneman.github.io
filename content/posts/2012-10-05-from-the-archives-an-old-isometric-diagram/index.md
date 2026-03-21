@@ -1,6 +1,9 @@
 ---
 title: "From the archives - An old Isometric diagram"
 date: 2012-10-05
+url: "/2012-10-05-from-the-archives-an-old-isometric-diagram/"
+aliases:
+  - "/posts/2012-10-05-from-the-archives-an-old-isometric-diagram/"
 categories: 
   - "miscellaneous"
 ---

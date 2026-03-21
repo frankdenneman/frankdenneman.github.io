@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 Clustering Deepdive available"
 date: 2012-08-28
+url: "/2012-08-28-vsphere-5-1-clustering-deepdive-available/"
+aliases:
+  - "/posts/2012-08-28-vsphere-5-1-clustering-deepdive-available/"
 categories: 
   - "vmware"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "Hotdog-Not Hotdog: The SDDC of VMware Cloud on AWS"
 date: 2018-07-20
+url: "/2018-07-20-hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws/"
+aliases:
+  - "/posts/2018-07-20-hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws/"
 categories: 
   - "vmware"
 ---

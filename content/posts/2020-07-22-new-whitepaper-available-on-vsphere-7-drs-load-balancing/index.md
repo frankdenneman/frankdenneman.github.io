@@ -1,6 +1,9 @@
 ---
 title: "New whitepaper available on vSphere 7 DRS Load Balancing"
 date: 2020-07-22
+url: "/2020-07-22-new-whitepaper-available-on-vsphere-7-drs-load-balancing/"
+aliases:
+  - "/posts/2020-07-22-new-whitepaper-available-on-vsphere-7-drs-load-balancing/"
 categories: 
   - "drs"
 coverImage: "Screenshot-2020-07-22-13.42.16.png"

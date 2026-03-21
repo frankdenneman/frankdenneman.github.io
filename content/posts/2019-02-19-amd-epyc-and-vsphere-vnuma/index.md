@@ -1,6 +1,9 @@
 ---
 title: "AMD EPYC and vSphere vNUMA"
 date: 2019-02-19
+url: "/2019-02-19-amd-epyc-and-vsphere-vnuma/"
+aliases:
+  - "/posts/2019-02-19-amd-epyc-and-vsphere-vnuma/"
 categories: 
   - "numa"
   - "vmware"

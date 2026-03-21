@@ -1,6 +1,9 @@
 ---
 title: "This blog has been hacked by vS0ciety"
 date: 2016-09-27
+url: "/2016-09-27-blog-hacked-vs0ciety/"
+aliases:
+  - "/posts/2016-09-27-blog-hacked-vs0ciety/"
 categories: 
   - "storage"
 ---

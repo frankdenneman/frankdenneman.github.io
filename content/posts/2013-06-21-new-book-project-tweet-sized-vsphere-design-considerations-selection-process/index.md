@@ -1,6 +1,9 @@
 ---
 title: "New Book Project: Tweet sized vSphere Design Considerations – Selection process"
 date: 2013-06-21
+url: "/2013-06-21-new-book-project-tweet-sized-vsphere-design-considerations-selection-process/"
+aliases:
+  - "/posts/2013-06-21-new-book-project-tweet-sized-vsphere-design-considerations-selection-process/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "No network connection after re-registering VCSA using the I&#039;ve copied it answer"
 date: 2016-05-24
+url: "/2016-05-24-no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer/"
+aliases:
+  - "/posts/2016-05-24-no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Funny: HA and DRS technical deepdive audiobook"
 date: 2011-01-03
+url: "/2011-01-03-funny-ha-and-drs-technical-deepdive-audiobook/"
+aliases:
+  - "/posts/2011-01-03-funny-ha-and-drs-technical-deepdive-audiobook/"
 categories: 
   - "miscellaneous"
 ---

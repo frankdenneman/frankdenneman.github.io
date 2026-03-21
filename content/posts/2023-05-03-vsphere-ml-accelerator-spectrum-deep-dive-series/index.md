@@ -1,6 +1,9 @@
 ---
 title: "vSphere ML Accelerator Spectrum Deep Dive Series"
 date: 2023-05-03
+url: "/2023-05-03-vsphere-ml-accelerator-spectrum-deep-dive-series/"
+aliases:
+  - "/posts/2023-05-03-vsphere-ml-accelerator-spectrum-deep-dive-series/"
 categories: 
   - "ai"
 coverImage: "vSphere-ML-Accelerator-Spectrum-v2.png"

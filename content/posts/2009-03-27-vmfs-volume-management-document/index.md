@@ -1,6 +1,9 @@
 ---
 title: "VMFS Volume Management document"
 date: 2009-03-27
+url: "/2009-03-27-vmfs-volume-management-document/"
+aliases:
+  - "/posts/2009-03-27-vmfs-volume-management-document/"
 categories: 
   - "vmware"
 tags: 

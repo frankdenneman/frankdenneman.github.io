@@ -1,6 +1,9 @@
 ---
 title: "Virtually Speaking Podcast #67 Resource Management"
 date: 2018-01-29
+url: "/2018-01-29-virtually-speaking-podcast-67-resource-management/"
+aliases:
+  - "/posts/2018-01-29-virtually-speaking-podcast-67-resource-management/"
 categories: 
   - "drs"
   - "vmware"

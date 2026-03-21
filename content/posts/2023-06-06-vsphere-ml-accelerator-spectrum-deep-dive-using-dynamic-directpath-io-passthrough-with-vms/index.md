@@ -1,6 +1,9 @@
 ---
 title: "vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs"
 date: 2023-06-06
+url: "/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/"
+aliases:
+  - "/posts/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/"
 categories: 
   - "ai"
 coverImage: "Featured-DRS-and-AH.png"

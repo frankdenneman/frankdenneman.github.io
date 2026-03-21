@@ -1,6 +1,9 @@
 ---
 title: "2 days left to vote"
 date: 2010-09-19
+url: "/2010-09-19-5-days-to-vote/"
+aliases:
+  - "/posts/2010-09-19-5-days-to-vote/"
 categories: 
   - "vmware"
 tags: 

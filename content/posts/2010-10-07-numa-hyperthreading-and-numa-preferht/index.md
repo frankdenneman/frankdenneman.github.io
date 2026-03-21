@@ -1,6 +1,9 @@
 ---
 title: "NUMA, Hyperthreading and NUMA.PreferHT"
 date: 2010-10-07
+url: "/2010-10-07-numa-hyperthreading-and-numa-preferht/"
+aliases:
+  - "/posts/2010-10-07-numa-hyperthreading-and-numa-preferht/"
 categories: 
   - "numa"
 tags: 

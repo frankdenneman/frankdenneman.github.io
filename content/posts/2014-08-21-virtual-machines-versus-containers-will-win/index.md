@@ -1,6 +1,9 @@
 ---
 title: "Virtual machines versus Containers who will win?"
 date: 2014-08-21
+url: "/2014-08-21-virtual-machines-versus-containers-will-win/"
+aliases:
+  - "/posts/2014-08-21-virtual-machines-versus-containers-will-win/"
 categories: 
   - "miscellaneous"
 ---

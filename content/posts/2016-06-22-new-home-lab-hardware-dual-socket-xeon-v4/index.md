@@ -1,6 +1,9 @@
 ---
 title: "New Home Lab Hardware - Dual Socket Xeon v4"
 date: 2016-06-22
+url: "/2016-06-22-new-home-lab-hardware-dual-socket-xeon-v4/"
+aliases:
+  - "/posts/2016-06-22-new-home-lab-hardware-dual-socket-xeon-v4/"
 categories: 
   - "home-lab"
 ---

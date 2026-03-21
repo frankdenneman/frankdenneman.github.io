@@ -1,6 +1,9 @@
 ---
 title: "VMworld Geek Whisperers Podcast - Choosing Titles You Want To Have"
 date: 2016-09-21
+url: "/2016-09-21-vmworld-geek-whisperers-podcast-choosing-titles-want/"
+aliases:
+  - "/posts/2016-09-21-vmworld-geek-whisperers-podcast-choosing-titles-want/"
 categories: 
   - "miscellaneous"
   - "vmware"

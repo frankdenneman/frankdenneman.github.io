@@ -1,6 +1,9 @@
 ---
 title: "Machine Learning on VMware Platform - Part 1"
 date: 2022-05-25
+url: "/2022-05-25-machine-learning-on-vmware-cloud-platform-part-1/"
+aliases:
+  - "/posts/2022-05-25-machine-learning-on-vmware-cloud-platform-part-1/"
 categories: 
   - "ai"
 coverImage: "Horizontal-Fabrics-v2.png"

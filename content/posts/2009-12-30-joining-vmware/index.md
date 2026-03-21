@@ -1,6 +1,9 @@
 ---
 title: "Joining VMware"
 date: 2009-12-30
+url: "/2009-12-30-joining-vmware/"
+aliases:
+  - "/posts/2009-12-30-joining-vmware/"
 categories: 
   - "miscellaneous"
 tags: 

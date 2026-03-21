@@ -1,6 +1,9 @@
 ---
 title: "Life in the Data Center - a story of love, betrayal and virtualization"
 date: 2014-07-31
+url: "/2014-07-31-life-data-center-story-love-betrayal-virtualization/"
+aliases:
+  - "/posts/2014-07-31-life-data-center-story-love-betrayal-virtualization/"
 categories: 
   - "miscellaneous"
 ---

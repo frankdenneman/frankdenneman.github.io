@@ -1,6 +1,9 @@
 ---
 title: "VMware vSphere Metro Storage Cluster Case Study Technical Paper available"
 date: 2012-05-22
+url: "/2012-05-22-vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available/"
+aliases:
+  - "/posts/2012-05-22-vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available/"
 categories: 
   - "vmware"
 ---

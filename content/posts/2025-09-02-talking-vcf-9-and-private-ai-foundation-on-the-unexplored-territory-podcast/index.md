@@ -1,6 +1,9 @@
 ---
 title: "Talking VCF 9 and Private AI Foundation on the Unexplored Territory Podcast"
 date: 2025-09-02
+url: "/2025-09-02-talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast/"
+aliases:
+  - "/posts/2025-09-02-talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast/"
 categories: 
   - "ai"
 ---

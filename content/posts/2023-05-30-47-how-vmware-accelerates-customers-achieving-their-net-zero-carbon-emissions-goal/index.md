@@ -1,6 +1,9 @@
 ---
 title: "#47 - How VMware accelerates customers achieving their net zero carbon emissions goal"
 date: 2023-05-30
+url: "/2023-05-30-47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal/"
+aliases:
+  - "/posts/2023-05-30-47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal/"
 categories: 
   - "podcast"
 coverImage: "UT47.jpeg"

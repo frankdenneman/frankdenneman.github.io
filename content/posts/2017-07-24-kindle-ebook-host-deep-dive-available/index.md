@@ -1,6 +1,9 @@
 ---
 title: "Kindle Ebook Host Deep Dive Available"
 date: 2017-07-24
+url: "/2017-07-24-kindle-ebook-host-deep-dive-available/"
+aliases:
+  - "/posts/2017-07-24-kindle-ebook-host-deep-dive-available/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Impact of CPU Hot Add on NUMA scheduling"
 date: 2017-04-14
+url: "/2017-04-14-impact-cpu-hot-add-numa-scheduling/"
+aliases:
+  - "/posts/2017-04-14-impact-cpu-hot-add-numa-scheduling/"
 categories: 
   - "numa"
   - "vmware"

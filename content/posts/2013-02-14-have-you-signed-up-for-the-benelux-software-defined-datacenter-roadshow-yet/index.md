@@ -1,6 +1,9 @@
 ---
 title: "Have you signed up for the Benelux Software Defined Datacenter Roadshow yet?"
 date: 2013-02-14
+url: "/2013-02-14-have-you-signed-up-for-the-benelux-software-defined-datacenter-roadshow-yet/"
+aliases:
+  - "/posts/2013-02-14-have-you-signed-up-for-the-benelux-software-defined-datacenter-roadshow-yet/"
 categories: 
   - "vmware"
 ---

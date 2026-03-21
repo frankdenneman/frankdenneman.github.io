@@ -1,6 +1,9 @@
 ---
 title: "vCPU configuration. Performance impact between virtual sockets and virtual cores?"
 date: 2013-09-18
+url: "/2013-09-18-vcpu-configuration-performance-impact-between-virtual-sockets-and-virtual-cores/"
+aliases:
+  - "/posts/2013-09-18-vcpu-configuration-performance-impact-between-virtual-sockets-and-virtual-cores/"
 categories: 
   - "numa"
   - "vmware"

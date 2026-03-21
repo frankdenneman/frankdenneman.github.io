@@ -1,6 +1,9 @@
 ---
 title: "Deploying Volumes with Lefthand CLIQ"
 date: 2009-08-25
+url: "/2009-08-25-deploying-volumes-with-command-line-interface-lefthand-cliq-2/"
+aliases:
+  - "/posts/2009-08-25-deploying-volumes-with-command-line-interface-lefthand-cliq-2/"
 categories: 
   - "storage"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "Impact of oversized virtual machines part 2"
 date: 2010-12-17
+url: "/2010-12-17-impact-of-oversized-virtual-machines-part-2/"
+aliases:
+  - "/posts/2010-12-17-impact-of-oversized-virtual-machines-part-2/"
 categories: 
   - "drs"
   - "vmware"

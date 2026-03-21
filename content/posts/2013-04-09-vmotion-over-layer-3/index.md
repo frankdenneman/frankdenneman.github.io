@@ -1,6 +1,9 @@
 ---
 title: "vMotion over layer 3?"
 date: 2013-04-09
+url: "/2013-04-09-vmotion-over-layer-3/"
+aliases:
+  - "/posts/2013-04-09-vmotion-over-layer-3/"
 categories: 
   - "vmotion"
 ---

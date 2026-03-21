@@ -1,6 +1,9 @@
 ---
 title: "Beating a dead horse - using CPU affinity"
 date: 2011-01-11
+url: "/2011-01-11-beating-a-dead-horse-using-cpu-affinity/"
+aliases:
+  - "/posts/2011-01-11-beating-a-dead-horse-using-cpu-affinity/"
 categories: 
   - "cpu"
 tags: 

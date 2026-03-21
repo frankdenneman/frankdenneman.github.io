@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS initial placement and datastore cluster defragmentation"
 date: 2012-01-24
+url: "/2012-01-24-storage-drs-initial-placement-and-datastore-cluster-defragmentation/"
+aliases:
+  - "/posts/2012-01-24-storage-drs-initial-placement-and-datastore-cluster-defragmentation/"
 categories: 
   - "sdrs"
 tags: 

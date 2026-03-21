@@ -1,6 +1,9 @@
 ---
 title: "ESX 4.1 NUMA Scheduling"
 date: 2010-09-13
+url: "/2010-09-13-esx-4-1-numa-scheduling/"
+aliases:
+  - "/posts/2010-09-13-esx-4-1-numa-scheduling/"
 categories: 
   - "numa"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "The Admission Control Family"
 date: 2012-05-10
+url: "/2012-05-10-the-admission-control-family/"
+aliases:
+  - "/posts/2012-05-10-the-admission-control-family/"
 categories: 
   - "drs"
 ---

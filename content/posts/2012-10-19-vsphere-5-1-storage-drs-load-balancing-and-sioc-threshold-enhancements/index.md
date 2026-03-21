@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 Storage DRS load balancing and SIOC threshold enhancements"
 date: 2012-10-19
+url: "/2012-10-19-vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements/"
+aliases:
+  - "/posts/2012-10-19-vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements/"
 categories: 
   - "sioc"
   - "sdrs"

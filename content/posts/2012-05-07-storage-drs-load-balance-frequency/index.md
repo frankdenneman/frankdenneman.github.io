@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS load balance frequency"
 date: 2012-05-07
+url: "/2012-05-07-storage-drs-load-balance-frequency/"
+aliases:
+  - "/posts/2012-05-07-storage-drs-load-balance-frequency/"
 categories: 
   - "sdrs"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "ESX4 ALUA, TPGS and HP CA"
 date: 2010-03-25
+url: "/2010-03-25-esx4-alua-and-hp-continuous-access/"
+aliases:
+  - "/posts/2010-03-25-esx4-alua-and-hp-continuous-access/"
 categories: 
   - "storage"
 tags: 

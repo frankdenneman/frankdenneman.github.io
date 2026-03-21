@@ -1,6 +1,9 @@
 ---
 title: "You do not have permissions to view this object error after updating VCSA to 6.0 Update 1b"
 date: 2016-03-01
+url: "/2016-03-01-you-do-not-have-permissions-to-view-this-object-error-after-updating-vcsa-to-6-0-update-1b/"
+aliases:
+  - "/posts/2016-03-01-you-do-not-have-permissions-to-view-this-object-error-after-updating-vcsa-to-6-0-update-1b/"
 categories: 
   - "vmware"
 ---

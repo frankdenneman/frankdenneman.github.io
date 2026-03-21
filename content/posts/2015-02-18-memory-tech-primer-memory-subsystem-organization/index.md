@@ -1,6 +1,9 @@
 ---
 title: "Memory Deep Dive: Memory Subsystem Organisation"
 date: 2015-02-18
+url: "/2015-02-18-memory-tech-primer-memory-subsystem-organization/"
+aliases:
+  - "/posts/2015-02-18-memory-tech-primer-memory-subsystem-organization/"
 categories: 
   - "memory"
 ---

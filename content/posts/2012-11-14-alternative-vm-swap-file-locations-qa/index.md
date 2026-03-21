@@ -1,6 +1,9 @@
 ---
 title: "(Alternative) VM swap file locations Q&amp;A"
 date: 2012-11-14
+url: "/2012-11-14-alternative-vm-swap-file-locations-qa/"
+aliases:
+  - "/posts/2012-11-14-alternative-vm-swap-file-locations-qa/"
 categories: 
   - "drs"
   - "memory"

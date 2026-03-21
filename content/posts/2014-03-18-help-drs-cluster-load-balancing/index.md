@@ -1,6 +1,9 @@
 ---
 title: "Help my DRS cluster is not load balancing!"
 date: 2014-03-18
+url: "/2014-03-18-help-drs-cluster-load-balancing/"
+aliases:
+  - "/posts/2014-03-18-help-drs-cluster-load-balancing/"
 categories: 
   - "drs"
 ---

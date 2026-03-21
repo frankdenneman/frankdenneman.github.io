@@ -1,6 +1,9 @@
 ---
 title: "Voting closes at Friday!"
 date: 2010-01-11
+url: "/2010-01-11-get-your-votes-in-while-it-can-voting-closes-at-friday/"
+aliases:
+  - "/posts/2010-01-11-get-your-votes-in-while-it-can-voting-closes-at-friday/"
 categories: 
   - "miscellaneous"
 tags: 

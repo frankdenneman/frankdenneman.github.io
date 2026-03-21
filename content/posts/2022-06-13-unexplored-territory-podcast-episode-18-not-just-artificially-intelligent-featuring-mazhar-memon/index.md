@@ -1,6 +1,9 @@
 ---
 title: "Unexplored Territory Podcast Episode 18 - Not just artificially intelligent featuring Mazhar Memon"
 date: 2022-06-13
+url: "/2022-06-13-unexplored-territory-podcast-episode-18-not-just-artificially-intelligent-featuring-mazhar-memon/"
+aliases:
+  - "/posts/2022-06-13-unexplored-territory-podcast-episode-18-not-just-artificially-intelligent-featuring-mazhar-memon/"
 categories: 
   - "ai"
 coverImage: "UnexploredTerritory-EP18-2.png"

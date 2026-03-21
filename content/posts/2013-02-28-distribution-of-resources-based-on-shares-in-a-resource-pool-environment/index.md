@@ -1,6 +1,9 @@
 ---
 title: "Distribution of resources based on shares in a Resource pool environment"
 date: 2013-02-28
+url: "/2013-02-28-distribution-of-resources-based-on-shares-in-a-resource-pool-environment/"
+aliases:
+  - "/posts/2013-02-28-distribution-of-resources-based-on-shares-in-a-resource-pool-environment/"
 categories: 
   - "drs"
 ---

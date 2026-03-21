@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS Device Modeling behavior"
 date: 2012-10-03
+url: "/2012-10-03-storage-drs-device-modeling-behavior/"
+aliases:
+  - "/posts/2012-10-03-storage-drs-device-modeling-behavior/"
 categories: 
   - "sdrs"
 tags: 

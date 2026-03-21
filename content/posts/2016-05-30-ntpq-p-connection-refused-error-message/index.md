@@ -1,6 +1,9 @@
 ---
 title: "ntpq -p connection refused error message"
 date: 2016-05-30
+url: "/2016-05-30-ntpq-p-connection-refused-error-message/"
+aliases:
+  - "/posts/2016-05-30-ntpq-p-connection-refused-error-message/"
 categories: 
   - "vmware"
 ---

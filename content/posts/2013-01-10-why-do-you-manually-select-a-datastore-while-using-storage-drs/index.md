@@ -1,6 +1,9 @@
 ---
 title: "Why do you manually select a datastore while using Storage DRS?"
 date: 2013-01-10
+url: "/2013-01-10-why-do-you-manually-select-a-datastore-while-using-storage-drs/"
+aliases:
+  - "/posts/2013-01-10-why-do-you-manually-select-a-datastore-while-using-storage-drs/"
 categories: 
   - "sdrs"
 ---

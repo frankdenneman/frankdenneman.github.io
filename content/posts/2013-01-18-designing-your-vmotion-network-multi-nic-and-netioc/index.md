@@ -1,6 +1,9 @@
 ---
 title: "Designing your vMotion network – Multi-NIC vMotion and NetIOC"
 date: 2013-01-18
+url: "/2013-01-18-designing-your-vmotion-network-multi-nic-and-netioc/"
+aliases:
+  - "/posts/2013-01-18-designing-your-vmotion-network-multi-nic-and-netioc/"
 categories: 
   - "vmotion"
 ---

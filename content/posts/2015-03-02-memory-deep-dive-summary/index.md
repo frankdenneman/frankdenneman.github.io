@@ -1,6 +1,9 @@
 ---
 title: "Memory Deep Dive Summary"
 date: 2015-03-02
+url: "/2015-03-02-memory-deep-dive-summary/"
+aliases:
+  - "/posts/2015-03-02-memory-deep-dive-summary/"
 categories: 
   - "memory"
 ---

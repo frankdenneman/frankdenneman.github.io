@@ -1,6 +1,9 @@
 ---
 title: "VM Storage Profiles and Storage DRS - Part 2 - Distributed VMs"
 date: 2012-09-19
+url: "/2012-09-19-storage-drs-and-storage-profiles-part-2-distributed-vms/"
+aliases:
+  - "/posts/2012-09-19-storage-drs-and-storage-profiles-part-2-distributed-vms/"
 categories: 
   - "sdrs"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Repeat Session vSphere Clustering Deep Dive at VMworld Europe"
 date: 2018-10-22
+url: "/2018-10-22-repeat-session-vsphere-clustering-deep-dive-at-vmworld-europe/"
+aliases:
+  - "/posts/2018-10-22-repeat-session-vsphere-clustering-deep-dive-at-vmworld-europe/"
 categories: 
   - "vmware"
 ---

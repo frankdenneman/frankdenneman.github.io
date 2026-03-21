@@ -1,6 +1,9 @@
 ---
 title: "How to attach VM storage profiles to a virtual machine using the web client"
 date: 2012-09-14
+url: "/2012-09-14-how-to-attach-vm-storage-profiles-to-a-virtual-machine-using-the-web-client/"
+aliases:
+  - "/posts/2012-09-14-how-to-attach-vm-storage-profiles-to-a-virtual-machine-using-the-web-client/"
 categories: 
   - "storage"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "What if the VM Memory Config Exceeds the Memory Capacity of the Physical NUMA Node?"
 date: 2017-10-05
+url: "/2017-10-05-vm-memory-config-exceeds-memory-capacity-physical-numa-node/"
+aliases:
+  - "/posts/2017-10-05-vm-memory-config-exceeds-memory-capacity-physical-numa-node/"
 categories: 
   - "numa"
   - "vmware"

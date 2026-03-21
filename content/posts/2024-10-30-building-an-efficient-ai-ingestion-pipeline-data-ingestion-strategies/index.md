@@ -1,6 +1,9 @@
 ---
 title: "Building an Efficient AI Ingestion Pipeline: Data Ingestion Strategies"
 date: 2024-10-30T09:00:00+01:00
+url: "/2024-10-30-building-an-efficient-ai-ingestion-pipeline-data-ingestion-strategies/"
+aliases:
+  - "/posts/2024-10-30-building-an-efficient-ai-ingestion-pipeline-data-ingestion-strategies/"
 draft: false
 categories: ["ai"]
 tags: ["RAG", "LLM", "Ingestion", "Vector Database", "Batch", "Streaming", "MLOps"]

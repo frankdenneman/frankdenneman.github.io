@@ -1,6 +1,9 @@
 ---
 title: "vSphere Supervisor Namespace"
 date: 2020-04-01
+url: "/2020-04-01-vsphere-supervisor-namespace/"
+aliases:
+  - "/posts/2020-04-01-vsphere-supervisor-namespace/"
 categories: 
   - "vmware"
 coverImage: "Supervisor-Namespace.png"

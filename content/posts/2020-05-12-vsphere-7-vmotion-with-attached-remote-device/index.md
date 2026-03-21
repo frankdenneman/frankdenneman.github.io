@@ -1,6 +1,9 @@
 ---
 title: "vSphere 7 vMotion with Attached Remote Device"
 date: 2020-05-12
+url: "/2020-05-12-vsphere-7-vmotion-with-attached-remote-device/"
+aliases:
+  - "/posts/2020-05-12-vsphere-7-vmotion-with-attached-remote-device/"
 categories: 
   - "vmware"
 coverImage: "01-VMRC-Removable-Devices.png"

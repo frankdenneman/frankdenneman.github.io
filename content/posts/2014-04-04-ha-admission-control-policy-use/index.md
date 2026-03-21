@@ -1,6 +1,9 @@
 ---
 title: "Which HA admission control policy do you use?"
 date: 2014-04-04
+url: "/2014-04-04-ha-admission-control-policy-use/"
+aliases:
+  - "/posts/2014-04-04-ha-admission-control-policy-use/"
 categories: 
   - "ha"
 ---

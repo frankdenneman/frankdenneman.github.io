@@ -1,6 +1,9 @@
 ---
 title: "Simulating NUMA Nodes for Nested ESXi Virtual Appliances"
 date: 2023-03-02
+url: "/2023-03-02-simulating-numa-nodes-for-nested-esxi-virtual-appliances/"
+aliases:
+  - "/posts/2023-03-02-simulating-numa-nodes-for-nested-esxi-virtual-appliances/"
 categories: 
   - "numa"
 tags: 

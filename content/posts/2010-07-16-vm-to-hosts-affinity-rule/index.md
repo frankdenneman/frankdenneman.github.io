@@ -1,6 +1,9 @@
 ---
 title: "VM to Hosts affinity rule"
 date: 2010-07-16
+url: "/2010-07-16-vm-to-hosts-affinity-rule/"
+aliases:
+  - "/posts/2010-07-16-vm-to-hosts-affinity-rule/"
 categories: 
   - "drs"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Storage DRS Cluster shows error &quot;Index was out of range. Must be non-negative and less than the size of the collection."
 date: 2013-01-21
+url: "/2013-01-21-storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection/"
+aliases:
+  - "/posts/2013-01-21-storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection/"
 categories: 
   - "sdrs"
 ---

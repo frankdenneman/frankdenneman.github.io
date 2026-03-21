@@ -1,6 +1,9 @@
 ---
 title: "vSphere ML Accelerator Spectrum Deep Dive for Distributed Training - Multi-GPU"
 date: 2023-05-12
+url: "/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/"
+aliases:
+  - "/posts/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/"
 categories: 
   - "ai"
 tags: 

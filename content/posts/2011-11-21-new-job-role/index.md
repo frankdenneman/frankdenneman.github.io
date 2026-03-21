@@ -1,6 +1,9 @@
 ---
 title: "New job role"
 date: 2011-11-21
+url: "/2011-11-21-new-job-role/"
+aliases:
+  - "/posts/2011-11-21-new-job-role/"
 categories: 
   - "vmware"
 tags: 

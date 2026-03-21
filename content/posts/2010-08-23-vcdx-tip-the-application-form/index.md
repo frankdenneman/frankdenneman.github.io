@@ -1,6 +1,9 @@
 ---
 title: "VCDX tip: The application form"
 date: 2010-08-23
+url: "/2010-08-23-vcdx-tip-the-application-form/"
+aliases:
+  - "/posts/2010-08-23-vcdx-tip-the-application-form/"
 categories: 
   - "vcdx"
 tags: 

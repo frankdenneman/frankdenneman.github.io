@@ -1,6 +1,9 @@
 ---
 title: "AMD EPYC Naples vs Rome and vSphere CPU Scheduler Updates"
 date: 2019-10-14
+url: "/2019-10-14-amd-epyc-naples-vs-rome-and-vsphere-cpu-scheduler-updates/"
+aliases:
+  - "/posts/2019-10-14-amd-epyc-naples-vs-rome-and-vsphere-cpu-scheduler-updates/"
 categories: 
   - "numa"
   - "vmware"

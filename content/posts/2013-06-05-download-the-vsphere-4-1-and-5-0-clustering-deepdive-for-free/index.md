@@ -1,6 +1,9 @@
 ---
 title: "Download the vSphere 4.1 and 5.0 clustering deepdive for free"
 date: 2013-06-05
+url: "/2013-06-05-download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free/"
+aliases:
+  - "/posts/2013-06-05-download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free/"
 categories: 
   - "vmware"
 ---

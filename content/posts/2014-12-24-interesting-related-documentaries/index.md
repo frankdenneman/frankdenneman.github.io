@@ -1,6 +1,9 @@
 ---
 title: "Interesting IT related documentaries"
 date: 2014-12-24
+url: "/2014-12-24-interesting-related-documentaries/"
+aliases:
+  - "/posts/2014-12-24-interesting-related-documentaries/"
 categories: 
   - "miscellaneous"
 ---

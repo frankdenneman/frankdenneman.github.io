@@ -1,6 +1,9 @@
 ---
 title: "VCDX defend clinic: Choosing between Multi-NIC vMotion and LBT"
 date: 2014-01-07
+url: "/2014-01-07-vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt/"
+aliases:
+  - "/posts/2014-01-07-vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt/"
 categories: 
   - "vcdx"
   - "vmware"

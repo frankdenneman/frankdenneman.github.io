@@ -1,6 +1,9 @@
 ---
 title: "Stretched Clusters on VMware Cloud on AWS, a Really Big Thing"
 date: 2018-05-16
+url: "/2018-05-16-stretched-clusters-vmware-cloud-aws-really-big-thing/"
+aliases:
+  - "/posts/2018-05-16-stretched-clusters-vmware-cloud-aws-really-big-thing/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Training vs Inference - Memory Consumption by Neural Networks"
 date: 2022-07-15
+url: "/2022-07-15-training-vs-inference-memory-consumption-by-neural-networks/"
+aliases:
+  - "/posts/2022-07-15-training-vs-inference-memory-consumption-by-neural-networks/"
 categories: 
   - "ai"
 coverImage: "1st-bllock-CNN.png"

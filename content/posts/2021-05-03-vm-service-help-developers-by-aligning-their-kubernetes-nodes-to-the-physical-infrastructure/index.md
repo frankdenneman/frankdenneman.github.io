@@ -1,6 +1,9 @@
 ---
 title: "VM Service - Help Developers by Aligning Their Kubernetes Nodes to the Physical Infrastructure"
 date: 2021-05-03
+url: "/2021-05-03-vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure/"
+aliases:
+  - "/posts/2021-05-03-vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure/"
 categories: 
   - "kubernetes"
   - "numa"

@@ -1,6 +1,9 @@
 ---
 title: "Decoupling of Cores per Socket from Virtual NUMA Topology in vSphere 6.5"
 date: 2016-12-12
+url: "/2016-12-12-decoupling-cores-per-socket-virtual-numa-topology-vsphere-6-5/"
+aliases:
+  - "/posts/2016-12-12-decoupling-cores-per-socket-virtual-numa-topology-vsphere-6-5/"
 categories: 
   - "vmware"
 tags: 

@@ -1,6 +1,9 @@
 ---
 title: "VMware Sessions at NVIDIA GTC"
 date: 2022-09-20
+url: "/2022-09-20-vmware-sessions-at-nvidia-gtc/"
+aliases:
+  - "/posts/2022-09-20-vmware-sessions-at-nvidia-gtc/"
 categories: 
   - "ai"
 coverImage: "vSphere8MLAcceleratorspectrum.png"

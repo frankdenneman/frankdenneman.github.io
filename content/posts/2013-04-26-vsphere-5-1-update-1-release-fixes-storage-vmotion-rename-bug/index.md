@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.1 update 1 release fixes Storage vMotion rename &quot;bug&quot;"
 date: 2013-04-26
+url: "/2013-04-26-vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug/"
+aliases:
+  - "/posts/2013-04-26-vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug/"
 categories: 
   - "vmotion"
   - "vmware"

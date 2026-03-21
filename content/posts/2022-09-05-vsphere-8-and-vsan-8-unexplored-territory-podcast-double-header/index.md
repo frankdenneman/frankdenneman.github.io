@@ -1,6 +1,9 @@
 ---
 title: "vSphere 8 and vSan 8 Unexplored Territory Podcast Double Header"
 date: 2022-09-05
+url: "/2022-09-05-vsphere-8-and-vsan-8-unexplored-territory-podcast-double-header/"
+aliases:
+  - "/posts/2022-09-05-vsphere-8-and-vsan-8-unexplored-territory-podcast-double-header/"
 categories: 
   - "podcast"
 coverImage: "VSAN8-vSphere8.jpeg"

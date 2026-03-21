@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.5 Home lab"
 date: 2014-03-27
+url: "/2014-03-27-vsphere-5-5-home-lab/"
+aliases:
+  - "/posts/2014-03-27-vsphere-5-5-home-lab/"
 categories: 
   - "vmware"
 ---

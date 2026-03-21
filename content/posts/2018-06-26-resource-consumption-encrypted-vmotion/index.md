@@ -1,6 +1,9 @@
 ---
 title: "Resource Consumption of Encrypted vMotion"
 date: 2018-06-26
+url: "/2018-06-26-resource-consumption-encrypted-vmotion/"
+aliases:
+  - "/posts/2018-06-26-resource-consumption-encrypted-vmotion/"
 categories: 
   - "vmware"
 ---

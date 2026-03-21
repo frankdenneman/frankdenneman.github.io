@@ -1,6 +1,9 @@
 ---
 title: "AMD Magny-Cours and ESX"
 date: 2011-01-05
+url: "/2011-01-05-amd-magny-cours-and-esx/"
+aliases:
+  - "/posts/2011-01-05-amd-magny-cours-and-esx/"
 categories: 
   - "numa"
   - "vmware"

@@ -1,6 +1,9 @@
 ---
 title: "vSphere 5.5 vCenter server inventory 0"
 date: 2014-01-16
+url: "/2014-01-16-vsphere-5-5-vcenter-server-0-inventory/"
+aliases:
+  - "/posts/2014-01-16-vsphere-5-5-vcenter-server-0-inventory/"
 categories: 
   - "vmware"
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Don’t backup. Go forward with Rubrik"
 date: 2015-03-24
+url: "/2015-03-24-dont-backup-go-forward-with-rubrik/"
+aliases:
+  - "/posts/2015-03-24-dont-backup-go-forward-with-rubrik/"
 categories: 
   - "miscellaneous"
 ---

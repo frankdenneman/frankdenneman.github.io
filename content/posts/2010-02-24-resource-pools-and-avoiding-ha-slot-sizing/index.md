@@ -1,6 +1,9 @@
 ---
 title: "Resource pools and avoiding HA slot sizing"
 date: 2010-02-24
+url: "/2010-02-24-resource-pools-and-avoiding-ha-slot-sizing/"
+aliases:
+  - "/posts/2010-02-24-resource-pools-and-avoiding-ha-slot-sizing/"
 categories: 
   - "drs"
   - "memory"

@@ -1,6 +1,9 @@
 ---
 title: "DRS 4.1 Adaptive MaxMovesPerHost"
 date: 2010-08-27
+url: "/2010-08-27-drs-4-1-adaptive-maxmovesperhost/"
+aliases:
+  - "/posts/2010-08-27-drs-4-1-adaptive-maxmovesperhost/"
 categories: 
   - "drs"
 tags: 

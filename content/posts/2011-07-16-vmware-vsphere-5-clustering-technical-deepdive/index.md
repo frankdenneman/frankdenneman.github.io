@@ -1,6 +1,9 @@
 ---
 title: "VMware vSphere 5 Clustering Technical Deepdive"
 date: 2011-07-16
+url: "/2011-07-16-vmware-vsphere-5-clustering-technical-deepdive/"
+aliases:
+  - "/posts/2011-07-16-vmware-vsphere-5-clustering-technical-deepdive/"
 categories: 
   - "vmware"
 tags: 

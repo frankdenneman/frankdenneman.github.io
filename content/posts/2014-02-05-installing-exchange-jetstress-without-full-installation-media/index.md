@@ -1,6 +1,9 @@
 ---
 title: "Installing Exchange Jetstress without full installation media."
 date: 2014-02-05
+url: "/2014-02-05-installing-exchange-jetstress-without-full-installation-media/"
+aliases:
+  - "/posts/2014-02-05-installing-exchange-jetstress-without-full-installation-media/"
 categories: 
   - "vmware"
 ---

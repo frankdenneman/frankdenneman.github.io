@@ -1,6 +1,9 @@
 ---
 title: "Lefthand SAN – Lessons learned"
 date: 2009-10-11
+url: "/2009-10-11-lefthand-san-lessons-learned/"
+aliases:
+  - "/posts/2009-10-11-lefthand-san-lessons-learned/"
 categories: 
   - "storage"
 tags: 

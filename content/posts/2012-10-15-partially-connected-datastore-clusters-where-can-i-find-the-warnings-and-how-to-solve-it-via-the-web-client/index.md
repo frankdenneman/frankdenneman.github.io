@@ -1,6 +1,9 @@
 ---
 title: "Partially connected datastore clusters - where can I find the warnings and how to solve it via the web client?"
 date: 2012-10-15
+url: "/2012-10-15-partially-connected-datastore-clusters-where-can-i-find-the-warnings-and-how-to-solve-it-via-the-web-client/"
+aliases:
+  - "/posts/2012-10-15-partially-connected-datastore-clusters-where-can-i-find-the-warnings-and-how-to-solve-it-via-the-web-client/"
 categories: 
   - "sdrs"
 tags: 

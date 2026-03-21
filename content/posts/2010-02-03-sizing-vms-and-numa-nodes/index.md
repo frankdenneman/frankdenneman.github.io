@@ -1,6 +1,9 @@
 ---
 title: "Sizing VMs and NUMA nodes"
 date: 2010-02-03
+url: "/2010-02-03-sizing-vms-and-numa-nodes/"
+aliases:
+  - "/posts/2010-02-03-sizing-vms-and-numa-nodes/"
 categories: 
   - "memory"
   - "numa"

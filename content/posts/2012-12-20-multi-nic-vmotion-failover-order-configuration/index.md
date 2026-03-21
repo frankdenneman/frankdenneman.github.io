@@ -1,6 +1,9 @@
 ---
 title: "Multi-NIC vMotion – failover order configuration"
 date: 2012-12-20
+url: "/2012-12-20-multi-nic-vmotion-failover-order-configuration/"
+aliases:
+  - "/posts/2012-12-20-multi-nic-vmotion-failover-order-configuration/"
 categories: 
   - "vmotion"
 ---

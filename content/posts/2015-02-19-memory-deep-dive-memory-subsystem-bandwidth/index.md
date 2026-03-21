@@ -1,6 +1,9 @@
 ---
 title: "Memory Deep Dive: Memory Subsystem Bandwidth"
 date: 2015-02-19
+url: "/2015-02-19-memory-deep-dive-memory-subsystem-bandwidth/"
+aliases:
+  - "/posts/2015-02-19-memory-deep-dive-memory-subsystem-bandwidth/"
 categories: 
   - "memory"
 ---

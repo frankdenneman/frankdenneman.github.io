@@ -2,6 +2,9 @@
 title: "How Same Size vGPU Mode and Right-sizing Shape GPU Placement Efficiency"
 linkTitle: "Part 5 - How Same Size vGPU Mode and Right-sizing Shape GPU Placement Efficiency"
 date: 2026-02-19T15:00:00+01:00
+url: "/2026-02-19-How-Same-Size-vGPU-Mode-and-Right-sizing-Shape-GPU-Placement-Efficiency/"
+aliases:
+  - "/posts/2026-02-19-How-Same-Size-vGPU-Mode-and-Right-sizing-Shape-GPU-Placement-Efficiency/"
 draft: false
 categories: ["ai"]
 track: "AI Infrastructure"

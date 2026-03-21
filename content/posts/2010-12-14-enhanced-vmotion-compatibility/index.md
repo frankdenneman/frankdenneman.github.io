@@ -1,6 +1,9 @@
 ---
 title: "Enhanced vMotion Compatibility"
 date: 2010-12-14
+url: "/2010-12-14-enhanced-vmotion-compatibility/"
+aliases:
+  - "/posts/2010-12-14-enhanced-vmotion-compatibility/"
 categories: 
   - "drs"
 tags: 

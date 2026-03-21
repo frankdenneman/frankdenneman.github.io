@@ -1,6 +1,9 @@
 ---
 title: "VMware updates Timekeeping best practices"
 date: 2009-12-22
+url: "/2009-12-22-vmware-updates-timekeeping-best-practices-for-windows-vms/"
+aliases:
+  - "/posts/2009-12-22-vmware-updates-timekeeping-best-practices-for-windows-vms/"
 categories: 
   - "vmware"
 tags: 

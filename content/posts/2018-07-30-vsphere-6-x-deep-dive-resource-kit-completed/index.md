@@ -1,6 +1,9 @@
 ---
 title: "vSphere 6.x Deep Dive Resource Kit Completed"
 date: 2018-07-30
+url: "/2018-07-30-vsphere-6-x-deep-dive-resource-kit-completed/"
+aliases:
+  - "/posts/2018-07-30-vsphere-6-x-deep-dive-resource-kit-completed/"
 categories: 
   - "vmware"
 ---

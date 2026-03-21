@@ -1,6 +1,9 @@
 ---
 title: "Platform 9 - transform your virtual infrastructure into a private cloud within seconds"
 date: 2014-08-12
+url: "/2014-08-12-platform-9-transform-virtual-infrastructure-private-cloud-within-seconds/"
+aliases:
+  - "/posts/2014-08-12-platform-9-transform-virtual-infrastructure-private-cloud-within-seconds/"
 categories: 
   - "miscellaneous"
 ---

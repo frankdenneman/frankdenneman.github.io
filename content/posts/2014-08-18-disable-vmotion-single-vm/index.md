@@ -1,6 +1,9 @@
 ---
 title: "Disable vMotion for a single VM"
 date: 2014-08-18
+url: "/2014-08-18-disable-vmotion-single-vm/"
+aliases:
+  - "/posts/2014-08-18-disable-vmotion-single-vm/"
 categories: 
   - "vmotion"
 ---

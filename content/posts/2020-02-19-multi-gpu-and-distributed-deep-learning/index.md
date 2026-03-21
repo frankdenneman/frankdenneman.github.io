@@ -1,6 +1,9 @@
 ---
 title: "Multi-GPU and Distributed Deep Learning"
 date: 2020-02-19
+url: "/2020-02-19-multi-gpu-and-distributed-deep-learning/"
+aliases:
+  - "/posts/2020-02-19-multi-gpu-and-distributed-deep-learning/"
 categories: 
   - "ai"
 tags: 

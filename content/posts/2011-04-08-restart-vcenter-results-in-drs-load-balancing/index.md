@@ -1,6 +1,9 @@
 ---
 title: "Restart vCenter results in DRS load balancing"
 date: 2011-04-08
+url: "/2011-04-08-restart-vcenter-results-in-drs-load-balancing/"
+aliases:
+  - "/posts/2011-04-08-restart-vcenter-results-in-drs-load-balancing/"
 categories: 
   - "drs"
 ---

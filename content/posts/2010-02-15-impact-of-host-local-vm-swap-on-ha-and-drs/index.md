@@ -1,6 +1,9 @@
 ---
 title: "Impact of host local VM swap on HA and DRS"
 date: 2010-02-15
+url: "/2010-02-15-impact-of-host-local-vm-swap-on-ha-and-drs/"
+aliases:
+  - "/posts/2010-02-15-impact-of-host-local-vm-swap-on-ha-and-drs/"
 categories: 
   - "drs"
   - "memory"

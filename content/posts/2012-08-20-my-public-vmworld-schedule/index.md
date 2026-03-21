@@ -1,6 +1,9 @@
 ---
 title: "My public VMworld schedule"
 date: 2012-08-20
+url: "/2012-08-20-my-public-vmworld-schedule/"
+aliases:
+  - "/posts/2012-08-20-my-public-vmworld-schedule/"
 categories: 
   - "vmware"
 tags: 

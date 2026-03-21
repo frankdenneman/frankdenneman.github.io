@@ -1,6 +1,9 @@
 ---
 title: "Dutch vBeers"
 date: 2010-12-06
+url: "/2010-12-06-dutch-vbeers/"
+aliases:
+  - "/posts/2010-12-06-dutch-vbeers/"
 ---
 
 Simon Long of [The SLOG](http://www.simonlong.co.uk) is introducing vBeers to Holland. I've copied the text from his [vBeers blog article](http://www.simonlong.co.uk/blog/vbeers/).

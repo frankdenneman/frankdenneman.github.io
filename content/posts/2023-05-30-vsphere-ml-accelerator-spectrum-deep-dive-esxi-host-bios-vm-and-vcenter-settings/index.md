@@ -60,7 +60,7 @@ If the command returns the value 3, it indicates that VT or AMD-V is enabled in
 
 ## Single Root I/O Virtualization
 
-It is required to enable Single Root I/O Virtualization (SR-IOV) in the ESXi host BIOS for only NVIDIA [Multi-Instance GPUs (vGPU MIG)](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/). Single Root I/O Virtualization (SR-IOV) is sometimes called Global SR-IOV in the BIOS. SR-IOV permits a physical GPU to partition and isolates its resources, allowing it to appear as multiple separate physical devices to the ESXi host. 
+It is required to enable Single Root I/O Virtualization (SR-IOV) in the ESXi host BIOS for only NVIDIA [Multi-Instance GPUs (vGPU MIG)](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/). Single Root I/O Virtualization (SR-IOV) is sometimes called Global SR-IOV in the BIOS. SR-IOV permits a physical GPU to partition and isolates its resources, allowing it to appear as multiple separate physical devices to the ESXi host. 
 
 SR-IOV uses physical functions (PFs) and virtual functions (VFs) to manage global functions for the SR-IOV devices. The PF handles the functions that control the physical card. The PF is not tied to any virtual machine. Global functions are responsible for initializing and configuring the physical GPU, moving data in and out of the device, and managing resources such as memory allocation and Quality of Service (QoS) policies. VFs are associated with the virtual machine. They have their own PCI configuration space and complete IOMMU protection for the VM, I/O queues, interrupts, and memory resources. 
 
@@ -225,18 +225,18 @@ One of the primary benefits of vGPU over (Dynamic) Direct Path I/O is its capabi
 
 Other articles in this series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](/2023-05-03-vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](/2023-05-16-vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](/2023-05-23-vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

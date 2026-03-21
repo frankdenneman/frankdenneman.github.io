@@ -8,10 +8,10 @@ categories:
   - "miscellaneous"
 ---
 
-Welcome to part 3 of the [Database workload characteristics series](https://frankdenneman.ai/2014/09/23/database-workload-characteristics-impact-storage-architecture-design-part-1/ "Database workload characteristics and their impact on storage architecture design – part 1"). Databases are considered to be one of the biggest I/O consumers in the virtual infrastructure. Database operations and database design are a study upon themselves, but I thought it might be interested to take a small peak underneath the surface of database design land. I turned to our resident Database expert [Bala Narasimhan](https://twitter.com/BalaNarasimhan "Bala on twitter"), PernixData’s director of products to provide some insights about the database designs and their I/O preferences. Previous instalments of the series:
+Welcome to part 3 of the [Database workload characteristics series](/2014-09-23-database-workload-characteristics-impact-storage-architecture-design-part-1/ "Database workload characteristics and their impact on storage architecture design – part 1"). Databases are considered to be one of the biggest I/O consumers in the virtual infrastructure. Database operations and database design are a study upon themselves, but I thought it might be interested to take a small peak underneath the surface of database design land. I turned to our resident Database expert [Bala Narasimhan](https://twitter.com/BalaNarasimhan "Bala on twitter"), PernixData’s director of products to provide some insights about the database designs and their I/O preferences. Previous instalments of the series:
 
-1. [Part 1 - Database Structures](https://frankdenneman.ai/2014/09/23/database-workload-characteristics-impact-storage-architecture-design-part-1/ "Database workload characteristics and their impact on storage architecture design – part 1")
-2. [Part 2 – Data pipelines](https://frankdenneman.ai/2014/09/24/database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines/ "Database workload characteristics and their impact on storage architecture design – part 2 – Data pipelines")
+1. [Part 1 - Database Structures](/2014-09-23-database-workload-characteristics-impact-storage-architecture-design-part-1/ "Database workload characteristics and their impact on storage architecture design – part 1")
+2. [Part 2 – Data pipelines](/2014-09-24-database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines/ "Database workload characteristics and their impact on storage architecture design – part 2 – Data pipelines")
 
 ###### Question 3: You’ve talked about ancillary structures for tuning databases, what are they and what role does FVP play here?
 

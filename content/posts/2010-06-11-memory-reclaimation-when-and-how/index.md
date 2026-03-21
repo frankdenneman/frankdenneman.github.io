@@ -11,7 +11,7 @@ tags:
   - "vmware"
 ---
 
-After discussing with Duncan the performance problem presented by @heiner\_hardt , we discussed the exact moment the VMkernel decides which reclamation technique it will use and specific behaviors of the reclamation techniques. This article supplements Duncan's [article](http://www.yellow-bricks.com/2010/06/10/is-this-vm-actively-swapping-helping-heiner_hardt/) on Yellow-bricks.com. Now let's begin with when the kernel decides to reclaim memory and see how the kernel reclaims memory. So host physical memory is reclaimed based on four "free memory states", each with a corresponding threshold. Based on the Threshold, the VMkernel chooses which reclamation technique it will use to reclaim memory from virtual machines.
+After discussing with Duncan the performance problem presented by @heiner\_hardt , we discussed the exact moment the VMkernel decides which reclamation technique it will use and specific behaviors of the reclamation techniques. This article supplements Duncan's [article](http://www.yellow-bricks.com/2010-06-10-is-this-vm-actively-swapping-helping-heiner_hardt/) on Yellow-bricks.com. Now let's begin with when the kernel decides to reclaim memory and see how the kernel reclaims memory. So host physical memory is reclaimed based on four "free memory states", each with a corresponding threshold. Based on the Threshold, the VMkernel chooses which reclamation technique it will use to reclaim memory from virtual machines.
 
 | **Free Memory state** | **Threshold** | **Reclamation technique** |
 | --- | --- | --- |

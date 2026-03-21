@@ -127,24 +127,24 @@ If we return to the ML model development cycle, the deployment phase requires co
 
 For training workloads, it's typically relatively straightforward present as many GPU resources to the training job as possible. The table shows that training is throughput based, requiring a large memory footprint, which often exceeds the memory capacity of a single GPU. 
 
-Many data science teams explore distributed training methods to speed up training jobs to reduce training time duration. With today's large models and large datasets, it's common to see training jobs of 150+ hours (a whole week of continuous training). For these workloads, vSphere supports the latest and greatest technology available. VSphere 7 and 8 support assigning multiple physical GPUs to a single VM. NVIDIA technology provides high-speed interconnect technology to speed up inter-GPU communication during training jobs. [Part 2](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) dives into the ML accelerator spectrum for distributed training - Multi-GPU technology. 
+Many data science teams explore distributed training methods to speed up training jobs to reduce training time duration. With today's large models and large datasets, it's common to see training jobs of 150+ hours (a whole week of continuous training). For these workloads, vSphere supports the latest and greatest technology available. VSphere 7 and 8 support assigning multiple physical GPUs to a single VM. NVIDIA technology provides high-speed interconnect technology to speed up inter-GPU communication during training jobs. [Part 2](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) dives into the ML accelerator spectrum for distributed training - Multi-GPU technology. 
 
 [![](images/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)](/wp-content-mirror/2023/05/6-vSphere-ML-Accelerator-Spectrum-Full-Spectrum.svg)
 
 Other articles in this series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](/2023-05-03-vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](/2023-05-16-vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](/2023-05-23-vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

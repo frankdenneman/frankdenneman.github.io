@@ -9,7 +9,7 @@ categories:
 coverImage: "Supervisor-Namespace.png"
 ---
 
-vSphere 7 with Kubernetes enables the vSphere cluster to run and manage containers as native constructs (vSphere Pods). The previous two articles in this series cover the [initial placement of a vSphere pod](https://frankdenneman.ai/2020/03/06/initial-placement-of-a-vsphere-native-pod/) and c[ompute resource management of individual vSphere pods](https://frankdenneman.ai/2020/03/20/scheduling-vsphere-pods/). This article covers the compute resource management aspect of the vSphere Supervisor namespace construct. Cormac Hogan will dive into the storage aspects of the Supervisor namespace in his (excellent) blog series.
+vSphere 7 with Kubernetes enables the vSphere cluster to run and manage containers as native constructs (vSphere Pods). The previous two articles in this series cover the [initial placement of a vSphere pod](/2020-03-06-initial-placement-of-a-vsphere-native-pod/) and c[ompute resource management of individual vSphere pods](/2020-03-20-scheduling-vsphere-pods/). This article covers the compute resource management aspect of the vSphere Supervisor namespace construct. Cormac Hogan will dive into the storage aspects of the Supervisor namespace in his (excellent) blog series.
 
 ## Supervisor Cluster
 
@@ -111,6 +111,6 @@ The reason why this is interesting is that Scalable shares can calculate a new s
 
 ## Previous Articles in this Series
 
-[Initial Placement of a vSphere Pod](https://frankdenneman.ai/2020/03/06/initial-placement-of-a-vsphere-native-pod/)
+[Initial Placement of a vSphere Pod](/2020-03-06-initial-placement-of-a-vsphere-native-pod/)
 
-[Scheduling vSphere Pods](https://frankdenneman.ai/2020/03/20/scheduling-vsphere-pods/)
+[Scheduling vSphere Pods](/2020-03-20-scheduling-vsphere-pods/)

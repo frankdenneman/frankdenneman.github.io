@@ -10,7 +10,7 @@ categories:
 
 Last year [Rubrik](http://www.rubrik.com) gave away hard copies of the vSphere Host Deep Dive book, this year they are doing it again with the vSphere 6.7 Clustering Deep Dive Book.
 
-Come by the Rubrik Booth #P305 on Tuesday from 4:00 PM - 5:00 PM to get a signed, complimentary copy of [vSphere 6.7 Clustering Deep Dive](https://frankdenneman.ai/2018/07/30/vsphere-6-x-deep-dive-resource-kit-completed/) and meet the authors.
+Come by the Rubrik Booth #P305 on Tuesday from 4:00 PM - 5:00 PM to get a signed, complimentary copy of [vSphere 6.7 Clustering Deep Dive](/2018-07-30-vsphere-6-x-deep-dive-resource-kit-completed/) and meet the authors.
 
 Last year we gave away a thousand copies and were gone within an hour. As most of you can remember, the line was insane. This year we have a similar amount, so make sure you're on time.
 

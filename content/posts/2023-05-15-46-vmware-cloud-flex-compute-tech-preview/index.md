@@ -19,9 +19,9 @@ Make sure to follow Frances on Twitter ([https://twitter.com/frances\_wong](http
   
 Additional resources can be found here:
 
-- Announcement - [https://blogs.vmware.com/cloud/2022/08/30/announcing-vmware-cloud-flex-compute/](https://blogs.vmware.com/cloud/2022/08/30/announcing-vmware-cloud-flex-compute/)
+- Announcement - [https://blogs.vmware.com/cloud/2022-08-30-announcing-vmware-cloud-flex-compute/](https://blogs.vmware.com/cloud/2022/08/30/announcing-vmware-cloud-flex-compute/)
 
-- Deep Dive - [https://blogs.vmware.com/cloud/2022/08/30/vmware-cloud-flex-compute-deep-dive/](https://blogs.vmware.com/cloud/2022/08/30/vmware-cloud-flex-compute-deep-dive/)
+- Deep Dive - [https://blogs.vmware.com/cloud/2022-08-30-vmware-cloud-flex-compute-deep-dive/](https://blogs.vmware.com/cloud/2022/08/30/vmware-cloud-flex-compute-deep-dive/)
 
 - Early Access Demo - [https://vmc.techzone.vmware.com/?share=video2847&title=vmware-cloud-flex-compute-early-access-demo](https://vmc.techzone.vmware.com/?share=video2847&title=vmware-cloud-flex-compute-early-access-demo)
 

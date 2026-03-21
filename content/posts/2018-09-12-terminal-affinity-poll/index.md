@@ -8,4 +8,4 @@ categories:
   - "vmware"
 ---
 
-We are looking into the combination of licensed workload and hard-affinity rules ([Must run on rule](https://frankdenneman.ai/2010/12/01/vm-host-affinity-rules-should-or-must/)). If you deploy this in your environment right now, how do you deal with this during maintenance hours? Your input helps in shaping future features. (Scroll down in the survey window to access the done button to submit your response)
+We are looking into the combination of licensed workload and hard-affinity rules ([Must run on rule](/2010-12-01-vm-host-affinity-rules-should-or-must/)). If you deploy this in your environment right now, how do you deal with this during maintenance hours? Your input helps in shaping future features. (Scroll down in the survey window to access the done button to submit your response)

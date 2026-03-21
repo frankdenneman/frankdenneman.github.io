@@ -13,7 +13,7 @@ This article dives deeper into the memory consumption of deep learning neural ne
 
 Plenty of content discusses using image classification to distinguish cats from dogs in a picture, but let's look beyond the scope of pet projects. Many organizations are looking for ways to increase revenue or decrease costs by applying image classification, object identification, edge perception, or pattern discovery to their business processes. You can expect an application on your platform that incorporates such functionality.
 
-[Part 3](https://frankdenneman.ai/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/) of this series covered batch sizes and mentioned a batch size of 32, which seems a small number nowadays. An uncompressed 8K image (7680 x 4320) consumes 265 MB. The memory capacity of a modern data center GPU ranges from 16 GB to 80 GB. You would argue that it could easily fit more than 32 uncompressed (8 GB) 8K images, let alone 32 8K jpegs (896 MB). Why do we see so many questions about memory consumption on data science forums? Why are the most commonly used datasets and neural networks focused on images with dimensions hovering around the 224 x 224 image size?
+[Part 3](/2022-06-30-machine-learning-on-vmware-platform-part-3-training-versus-inference/) of this series covered batch sizes and mentioned a batch size of 32, which seems a small number nowadays. An uncompressed 8K image (7680 x 4320) consumes 265 MB. The memory capacity of a modern data center GPU ranges from 16 GB to 80 GB. You would argue that it could easily fit more than 32 uncompressed (8 GB) 8K images, let alone 32 8K jpegs (896 MB). Why do we see so many questions about memory consumption on data science forums? Why are the most commonly used datasets and neural networks focused on images with dimensions hovering around the 224 x 224 image size?
 
 Memory consumption of neural networks depends on many factors. Such as which network architecture is used and its depth. The image size and the batch size. And whether it's performing a training operation or an inference operation. This article is by no means an in-depth course on neural networks. I recommend you follow Stanfords' [CS231n](http://cs231n.stanford.edu/) or sign up for the free online courses at [fast.ai](http://fast.ai/). Let's dig into neural networks a little bit, explore the constructs of a neural network and its components and figure out why an image eats up a hefty chunk of memory. 
 
@@ -100,7 +100,7 @@ Interestingly, we noticed the parameters' memory footprint go up while moving to
 
 [![](images/vgg-16-feature-maps-1.svg)](/wp-content-mirror/2022/07/vgg-16-feature-maps-1.svg)
 
-If you applied the same math to a 4K image (ignoring whether it's possible with a VGG-16 network), the memory consumption of a 3840 x 2160 image would be roughly 9.6 GB for one image and 307,2 GB for 32 images. This means that the data scientist needs to choose between reducing the batch size and thus agree with the increase in training time. Or spend more time pre-processing and reducing the image size or [distributing the model](https://frankdenneman.ai/2020/02/19/multi-gpu-and-distributed-deep-learning/) across multiple GPUs to increase the available GPU memory. 
+If you applied the same math to a 4K image (ignoring whether it's possible with a VGG-16 network), the memory consumption of a 3840 x 2160 image would be roughly 9.6 GB for one image and 307,2 GB for 32 images. This means that the data scientist needs to choose between reducing the batch size and thus agree with the increase in training time. Or spend more time pre-processing and reducing the image size or [distributing the model](/2020-02-19-multi-gpu-and-distributed-deep-learning/) across multiple GPUs to increase the available GPU memory. 
 
 ## Training versus Inference
 
@@ -122,6 +122,6 @@ With Inference, the memory consumption is quite different. The neural network ha
 
 Previous parts in the Machine Learning on the VMware Platform series
 
-- [Part 1 - covering ML development lifecycle and the data science team](https://frankdenneman.ai/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/)
-- [Part 2 - covering Resource Utilization Efficiency](https://frankdenneman.ai/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/)
-- [Part 3 - Training vs Inference - Data flow, Data sets & Batches, Dataset Random Read Access](https://frankdenneman.ai/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/)
+- [Part 1 - covering ML development lifecycle and the data science team](/2022-05-25-machine-learning-on-vmware-cloud-platform-part-1/)
+- [Part 2 - covering Resource Utilization Efficiency](/2022-06-08-machine-learning-on-vmware-cloud-platform-part-2/)
+- [Part 3 - Training vs Inference - Data flow, Data sets & Batches, Dataset Random Read Access](/2022-06-30-machine-learning-on-vmware-platform-part-3-training-versus-inference/)

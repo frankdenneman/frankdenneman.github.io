@@ -9,7 +9,7 @@ categories:
 coverImage: "Install-ESXi-NVIDIA-AIE.png"
 ---
 
-After setting up the [Cloud License Service Instance](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/), the NVIDIA AI Enterprise vGPU driver must be installed on the ESXi host. A single version driver amongst all the ESXi hosts in the cluster containing NVIDIA GPU devices is recommended. The most common error during the GPU install process is using the wrong driver. And it's an easy mistake to make. In vGPU version 13 (the current NVAIE version is 15.2), NVIDIA split its ESXi host vGPU driver into two kinds. A standard vGPU driver component supports graphics, and an AI Enterprise (AIE) vGPU component supports compute. The Ampere generation devices, such as the A30 and A100 device, support compute only, so it requires an AIE vGPU component. There are AIE components available for all NVIDIA drivers since vGPU 13.
+After setting up the [Cloud License Service Instance](/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/), the NVIDIA AI Enterprise vGPU driver must be installed on the ESXi host. A single version driver amongst all the ESXi hosts in the cluster containing NVIDIA GPU devices is recommended. The most common error during the GPU install process is using the wrong driver. And it's an easy mistake to make. In vGPU version 13 (the current NVAIE version is 15.2), NVIDIA split its ESXi host vGPU driver into two kinds. A standard vGPU driver component supports graphics, and an AI Enterprise (AIE) vGPU component supports compute. The Ampere generation devices, such as the A30 and A100 device, support compute only, so it requires an AIE vGPU component. There are AIE components available for all NVIDIA drivers since vGPU 13.
 
 This article series focuses on building a vSphere infrastructure for ML platforms, and thus this article lists the steps to install the NVD-AIE driver. To download the NVD-AIE driver, ensure you have a user id that has access to the NVIDIA License Portal. The next step is to ensure the platform meets the requirements before installing the driver component. The installation process can be done using vSphere Lifecycle Manager or manually installing the driver component on each ESXi host in the cluster. Both methods are covered in this article.
 
@@ -27,7 +27,7 @@ Make sure to configure the ESXi Host settings as follows before installing the N
 | vCenter | Must be configured with Advanced Setting _vgpu.hotmigrate.enabled_ | If you want to live-migrate VMs |
 | vSphere GPU Device Settings | Graphics Type: Basic   Graphics Device Settings: Shared Direct |  |
 
-The article [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/) provides detailed information about every setting listed.
+The article [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/) provides detailed information about every setting listed.
 
 ## Preparing the GPU Device for the vGPU Driver
 
@@ -100,7 +100,7 @@ The file is downloaded in a zip-file format. Extract the file to review the cont
 
 [![](images/09-Extracted-NVAIE-zip.png)](/wp-content-mirror/2023/07/09-Extracted-NVAIE-zip.png)
 
-As described in the articles "[vSphere ML Accelerator Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)" and "[vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)", two components drive the GPU. The guest OS driver controls the MMIO space and the communication of the device, and the GPU manager (the NVIDIA name for the ESXi Driver) controls the time-sharing mechanism to multiplex control across multiple workloads.
+As described in the articles "[vSphere ML Accelerator Deep Dive – Fractional and Full GPUs](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)" and "[vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)", two components drive the GPU. The guest OS driver controls the MMIO space and the communication of the device, and the GPU manager (the NVIDIA name for the ESXi Driver) controls the time-sharing mechanism to multiplex control across multiple workloads.
 
 [![](images/01-Vt-D-passthrough.svg)](/wp-content-mirror/2023/05/01-Vt-D-passthrough.svg)
 
@@ -206,18 +206,18 @@ The cluster is ready to deploy vGPU-enabled virtual machines. The next article f
 
 Previous articles in the vSphere ML Accelerator Spectrum Deep Dive Series:
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](/2023-05-03-vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](/2023-05-16-vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](/2023-05-23-vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

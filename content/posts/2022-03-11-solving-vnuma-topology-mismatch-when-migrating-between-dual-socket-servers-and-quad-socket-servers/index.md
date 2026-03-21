@@ -40,7 +40,7 @@ But what happens if this virtual machine moves to a quad-socket system with 14 p
 
 [![](images/Guest-OS-Layer-Virtual-NUMA-mismatch-1.svg)](/wp-content-mirror/2022/03/Guest-OS-Layer-Virtual-NUMA-mismatch-1.svg)
 
-Since the NUMA topologies are created during a VM's power-on, we have to shut down the virtual machine and power it back to realign the VPD and PPD topology again. Well, since 2019, we don't need to power down the VM anymore! And I have to admit. I only found out about it just recently. Bob Plankers ([not this Bob](https://frankdenneman.ai/2021/06/11/cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/)) writes about the vmx.reboot.PowerCycle advanced parameter [here](https://blogs.vmware.com/vsphere/2019/10/vmx-reboot-powercycle-makes-cpu-vulnerability-remediation-easy.html). This setting does not require a complete power cycle anymore. 
+Since the NUMA topologies are created during a VM's power-on, we have to shut down the virtual machine and power it back to realign the VPD and PPD topology again. Well, since 2019, we don't need to power down the VM anymore! And I have to admit. I only found out about it just recently. Bob Plankers ([not this Bob](/2021-06-11-cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/)) writes about the vmx.reboot.PowerCycle advanced parameter [here](https://blogs.vmware.com/vsphere/2019/10/vmx-reboot-powercycle-makes-cpu-vulnerability-remediation-easy.html). This setting does not require a complete power cycle anymore. 
 
 That means that if you are in the process of migrating your VM estate from dual-socket systems to quad-socket systems, you can add the following adjustments in the VMX file while the VM is running. (for example via PowerCLI / New-AdvancedSetting)
 

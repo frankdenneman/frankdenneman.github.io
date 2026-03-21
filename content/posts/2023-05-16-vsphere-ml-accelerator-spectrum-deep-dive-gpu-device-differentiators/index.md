@@ -9,7 +9,7 @@ categories:
 coverImage: "NVAIE-Supported-GPUs-small.jpg"
 ---
 
-The two last parts reviewed the capabilities of the platform. vSphere can offer [fractional GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/) to [Multi-GPU](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) setups, catering to the workload's needs in every stage of its development life cycle. Let's look at the features and functionality of each supported GPU device. Currently, the range of supported GPU devices is quite broad. In total, 29 GPU devices are supported, dating back from 2016 to the last release in 2023. A table at the end of the article includes links to each GPUs product brief and their datasheet. Although NVIDIA and VMware form a close partnership, the listed support of devices is not a complete match. This can lead to some interesting questions typically answered with; it should work. But as always, if you want bulletproof support, follow the guides to ensure more leisure time on weekends and nights.
+The two last parts reviewed the capabilities of the platform. vSphere can offer [fractional GPUs](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/) to [Multi-GPU](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/) setups, catering to the workload's needs in every stage of its development life cycle. Let's look at the features and functionality of each supported GPU device. Currently, the range of supported GPU devices is quite broad. In total, 29 GPU devices are supported, dating back from 2016 to the last release in 2023. A table at the end of the article includes links to each GPUs product brief and their datasheet. Although NVIDIA and VMware form a close partnership, the listed support of devices is not a complete match. This can lead to some interesting questions typically answered with; it should work. But as always, if you want bulletproof support, follow the guides to ensure more leisure time on weekends and nights.
 
 ## VMware HCL and NVAIE Support
 
@@ -23,7 +23,7 @@ The Ampere A16 is the only device that is listed twice in these overviews. The A
 
 ## NVLink Support
 
-If you plan to create a platform that supports [distributed training using multi-GPU technology](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/), this overview shows the available and supported NVLinks bandwidth capabilities. Not all GPU devices include NVLink support, and the ones with support can wildly differ. The MIG capability is omitted as MIG technology does not support NVLink.
+If you plan to create a platform that supports [distributed training using multi-GPU technology](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/), this overview shows the available and supported NVLinks bandwidth capabilities. Not all GPU devices include NVLink support, and the ones with support can wildly differ. The MIG capability is omitted as MIG technology does not support NVLink.
 
 [![](images/2-NVAIE-Supported-GPUs-NVLINK.svg)](/wp-content-mirror/2023/05/2-NVAIE-Supported-GPUs-NVLINK.svg)
 
@@ -85,18 +85,18 @@ The table contains all the GPUs depicted in the diagrams above. Instead of repea
 
 Other articles in the vSphere ML Accelerator Spectrum Deep Dive
 
-- [vSphere ML Accelerator Spectrum Deep Dive Series](https://frankdenneman.ai/2023/05/03/vsphere-ml-accelerator-spectrum-deep-dive-series/)
+- [vSphere ML Accelerator Spectrum Deep Dive Series](/2023-05-03-vsphere-ml-accelerator-spectrum-deep-dive-series/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](https://frankdenneman.ai/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Fractional and Full GPUs](/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](https://frankdenneman.ai/2023/05/12/vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Multi-GPU for Distributed Training](/2023-05-12-vsphere-ml-accelerator-spectrum-deep-dive-for-distributed-training-multi-gpu/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](https://frankdenneman.ai/2023/05/16/vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
+- [vSphere ML Accelerator Spectrum Deep Dive – GPU Device Differentiators](/2023-05-16-vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](https://frankdenneman.ai/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVIDIA AI Enterprise Suite](/2023-05-23-vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](https://frankdenneman.ai/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
+- [vSphere ML Accelerator Spectrum Deep Dive – ESXi Host BIOS, VM, and vCenter Settings](/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](https://frankdenneman.ai/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
+- [vSphere ML Accelerator Spectrum Deep Dive – Using Dynamic DirectPath IO (Passthrough) with VMs](/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/)
 
-- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](https://frankdenneman.ai/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)
+- [vSphere ML Accelerator Spectrum Deep Dive – NVAIE Cloud License Service Setup](/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/)

@@ -9,7 +9,7 @@ categories: ["ai"]
 tags: ["VCF 9.0", "vMotion", "vGPU", "LLM", "GPU memory", "KV cache"]
 ---
 
-VMware's latest release of Cloud Foundation 9.0 introduces an important new feature for managing AI infrastructure: **Enhanced vMotion for vGPU VMs**. This new feature substantially improves the management of large language models (LLMs) in virtualized environments. For an in-depth technical overview, please read **[Justin Murray](https://www.linkedin.com/in/justin-murray-6118481/)**'s **[detailed article](https://blogs.vmware.com/cloud-foundation/2025/06/19/enhanced-vmotion-for-vgpu-vms-in-vmware-cloud-foundation-9-0/)** on the subject.
+VMware's latest release of Cloud Foundation 9.0 introduces an important new feature for managing AI infrastructure: **Enhanced vMotion for vGPU VMs**. This new feature substantially improves the management of large language models (LLMs) in virtualized environments. For an in-depth technical overview, please read **[Justin Murray](https://www.linkedin.com/in/justin-murray-6118481/)**'s **[detailed article](https://blogs.vmware.com/cloud-foundation/2025-06-19-enhanced-vmotion-for-vgpu-vms-in-vmware-cloud-foundation-9-0/)** on the subject.
 
 ## The Power of vMotion
 

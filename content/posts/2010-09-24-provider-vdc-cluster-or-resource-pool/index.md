@@ -13,7 +13,7 @@ tags:
   - "resource-pools"
 ---
 
-Duncan’s article on [vCloud Allocation models](http://www.yellow-bricks.com/2010/09/22/vcd-allocation-models/) states that:
+Duncan’s article on [vCloud Allocation models](http://www.yellow-bricks.com/2010-09-22-vcd-allocation-models/) states that:
 
 > a provider vDC can be a VMware vSphere Cluster or a Resource Pool …
 
@@ -33,7 +33,7 @@ An Organization vDC (Org vDC) is an allocation out of the Provider vDC (pVDC), i
 - Allocation Pool
 - Reservation Pool
 
-Each allocation model has a unique set of resource allocation settings and each model uses both Resource Pool level and Virtual Machine level resource allocation settings differently. Read the [vCD allocation models article](http://www.yellow-bricks.com/2010/09/22/vcd-allocation-models/) on Yellow-Bricks.com. **Note**: Reservations on resource pool act differently than reservations on VM-level, for a refresher please read the articles: “[Resource Pools memory reservations](https://frankdenneman.ai/2010/05/resource-pools-memory-reservations/)” and “[Impact of memory reservations](https://frankdenneman.ai/2009/12/impact-of-memory-reservation/)". In addition CPU type reservations behave differently from Memory reservations, please read the article “[Reservations and CPU scheduling](https://frankdenneman.ai/2010/06/reservations-and-cpu-scheduling)”. Now let’s visualize the difference between a PvDC aligned with a cluster and a pVDC aligned with a Resource Pool:
+Each allocation model has a unique set of resource allocation settings and each model uses both Resource Pool level and Virtual Machine level resource allocation settings differently. Read the [vCD allocation models article](http://www.yellow-bricks.com/2010-09-22-vcd-allocation-models/) on Yellow-Bricks.com. **Note**: Reservations on resource pool act differently than reservations on VM-level, for a refresher please read the articles: “[Resource Pools memory reservations](https://frankdenneman.ai/2010/05/resource-pools-memory-reservations/)” and “[Impact of memory reservations](https://frankdenneman.ai/2009/12/impact-of-memory-reservation/)". In addition CPU type reservations behave differently from Memory reservations, please read the article “[Reservations and CPU scheduling](https://frankdenneman.ai/2010/06/reservations-and-cpu-scheduling)”. Now let’s visualize the difference between a PvDC aligned with a cluster and a pVDC aligned with a Resource Pool:
 
 [![Aligning PvDC to Cluster or Resource Pool](images/MappingPvDC-01.png "Aligning PvDC to Cluster or Resource Pool")](/wp-content-mirror/2010/09/MappingPvDC-01.png) **Using Resource Pools instead of Clusters** One thing immediately becomes obvious, when using a Resource Pool for providing Compute and Memory resources to the PvDC you share the cluster resources with other PvDCs. One might argue to create only one Resource Pool below Cluster level and create some sort of buffer, but creating a single Resource Pool below cluster level and assigning a PvDC to it will render a certain amount of cluster resources unused. By default, a Resource Pool can claim up to a maximum of 94% of its parent Resource Pool.
 

@@ -47,7 +47,7 @@ vSphere 8 Update 1 extends the spectrum of ML accelerator by supporting NVIDIA N
 
 ## What is the benefit of SXM, NVLINK, and NVSwitch?
 
-Training machine Learning models require a lot of data, which the system has to move between components such as CPUs and GPUs and between GPUs and GPUs. [Distributed training](https://frankdenneman.ai/2020/02/19/multi-gpu-and-distributed-deep-learning/) uses multiple GPUs to provide enough onboard GPU memory capacity to either process and execute the model parameters or to process the data set. If we dissect the data flow, this process has three major steps.
+Training machine Learning models require a lot of data, which the system has to move between components such as CPUs and GPUs and between GPUs and GPUs. [Distributed training](/2020-02-19-multi-gpu-and-distributed-deep-learning/) uses multiple GPUs to provide enough onboard GPU memory capacity to either process and execute the model parameters or to process the data set. If we dissect the data flow, this process has three major steps.
 
 1. Load the data from system memory on the GPUs
 
@@ -63,7 +63,7 @@ Internal data buses move data between components, significantly affecting the sy
 
 However, NVIDIA has to play well with others in the industry to connect the SXM socket to the CPU, and therefore the SXM4 (A100) connects to the CPU via a PCIe 4.0 x16 bus interface ([source](https://www.techpowerup.com/gpu-specs/a100-sxm4-40-gb.c3506)), and SXM5 (H100) connects to the CPU via a PCIe 5.0 x16 interface ([source](https://www.techpowerup.com/gpu-specs/h100-sxm5.c3900)). That means that during a host-to-device memory copy, the data flows from the system memory across the PCIe controller to the SXM Socket with the matching PCIe bandwidth.
 
-Suppose you are a regular ready of my content. In that case, you might expect me to start deep diving into [PCIe NUMA locality](https://frankdenneman.ai/2020/01/10/pcie-device-numa-node-locality/) and the challenges of having multiple GPUs connected in a dual-socket system. However, our engineers and NVIDIA engineers helped the NVIDIA library be aware of the home NUMA configuration. It uses CPU and PCIe information to guide the data traffic between the CPU and PCIe interface. When the data arrives at the onboard GPU memory, communication remains between GPUs. All communication flows across the NVLinks and NVswitch fabrics, essentially keeping GPU-related traffic of the CPU interconnect (AMD Infinity fabric, Intel UPI ~40 GB/s theoretical bandwidth). 
+Suppose you are a regular ready of my content. In that case, you might expect me to start deep diving into [PCIe NUMA locality](/2020-01-10-pcie-device-numa-node-locality/) and the challenges of having multiple GPUs connected in a dual-socket system. However, our engineers and NVIDIA engineers helped the NVIDIA library be aware of the home NUMA configuration. It uses CPU and PCIe information to guide the data traffic between the CPU and PCIe interface. When the data arrives at the onboard GPU memory, communication remains between GPUs. All communication flows across the NVLinks and NVswitch fabrics, essentially keeping GPU-related traffic of the CPU interconnect (AMD Infinity fabric, Intel UPI ~40 GB/s theoretical bandwidth). 
 
 [![](images/NVSwitch.svg)](/wp-content-mirror/2023/04/NVSwitch.svg)
 

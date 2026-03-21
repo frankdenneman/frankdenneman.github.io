@@ -9,7 +9,7 @@ categories:
   - "vmware"
 ---
 
-The servers in my home lab are dying on a daily basis. After [four years](https://frankdenneman.ai/2014/03/27/vsphere-5-5-home-lab/) of active duty, I think they have the right to retire. So I need something else. But what? I can't rent lab space as I work with unreleased ESXi code. I've been waiting for the Intel Xeon D 21xx Supermicro systems, but I have the feeling that Elon will reach Mars before we see these systems widely available. The system that I have in mind is the following:
+The servers in my home lab are dying on a daily basis. After [four years](/2014-03-27-vsphere-5-5-home-lab/) of active duty, I think they have the right to retire. So I need something else. But what? I can't rent lab space as I work with unreleased ESXi code. I've been waiting for the Intel Xeon D 21xx Supermicro systems, but I have the feeling that Elon will reach Mars before we see these systems widely available. The system that I have in mind is the following:
 
 - Intel Xeon Silver 4108 - 8 Core at 1.8 GHz (85TDP)
 - Supermicro X11SPM-TF (6 DIMMs, 2 x 10 GbE)

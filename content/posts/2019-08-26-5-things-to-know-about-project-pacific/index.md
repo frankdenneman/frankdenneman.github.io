@@ -11,7 +11,7 @@ During the keynote of the first day of VMworld 2019, Pat unveiled Project Pacifi
 
 ![](images/project-pacific-1024x538.png)
 
-Although it might seem that the acquisition of [Heptio](https://techcrunch.com/2018/11/06/vmware-acquires-heptio-the-startup-founded-by-2-co-founders-of-kubernetes/) and [Pivotal](https://www.cnbc.com/2019/08/22/vmware-earnings-q2-2020-acquires-carbon-black-pivotal.html) kickstarted project Pacific, VMware has been working on project Pacific for nearly three years! [Jared Rosoff](https://twitter.com/forjared ), the initiator or the project and overall product manager, told me that over 200 engineers are involved as it affects almost every component of the vSphere platform.
+Although it might seem that the acquisition of [Heptio](https://techcrunch.com/2018-11-06-vmware-acquires-heptio-the-startup-founded-by-2-co-founders-of-kubernetes/) and [Pivotal](https://www.cnbc.com/2019-08-22-vmware-earnings-q2-2020-acquires-carbon-black-pivotal.html/) kickstarted project Pacific, VMware has been working on project Pacific for nearly three years! [Jared Rosoff](https://twitter.com/forjared ), the initiator or the project and overall product manager, told me that over 200 engineers are involved as it affects almost every component of the vSphere platform.
 
 Lengthy technical articles are going to be published in the following days. With this article, I want to highlight the five key takeaways from project Pacific.
 

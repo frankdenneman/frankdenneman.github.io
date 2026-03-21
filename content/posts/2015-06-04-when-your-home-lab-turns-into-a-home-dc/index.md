@@ -9,7 +9,7 @@ categories:
   - "vmware"
 ---
 
-A little bit over a year ago I decide to [update my lab](https://frankdenneman.ai/2014/03/27/vsphere-5-5-home-lab/) and build two servers. My old lab had plenty of compute power, however they were lacking bandwidth, 3 Gbit/s SATA and 1 Gb network bandwidth. I turned to one of the masters of building a home lab, [Erik Bussink](https://twitter.com/erikbussink), and we thought that the following configuration was sufficient to handle my needs. **Overview**
+A little bit over a year ago I decide to [update my lab](/2014-03-27-vsphere-5-5-home-lab/) and build two servers. My old lab had plenty of compute power, however they were lacking bandwidth, 3 Gbit/s SATA and 1 Gb network bandwidth. I turned to one of the masters of building a home lab, [Erik Bussink](https://twitter.com/erikbussink), and we thought that the following configuration was sufficient to handle my needs. **Overview**
 
 | Component | Type | Cost |
 | --- | --- | --- |

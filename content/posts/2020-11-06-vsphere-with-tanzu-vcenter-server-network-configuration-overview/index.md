@@ -11,7 +11,7 @@ I noticed quite a few network-related queries about the install of vSphere with 
 
 The whole install process can be a little overwhelming when it's your first time dealing with Kubernetes and load-balancing services. Before installing Workload Management (the user interface designation for running Kubernetes inside vSphere), you have to setup HA-Proxy, a virtual appliance for provisioning load-balancers.
 
-[Cormac did a tremendous job](https://cormachogan.com/2020/09/28/enabling-vsphere-with-tanzu-using-ha-proxy/) describing the configuration steps of all components. Still, when installing vSphere with Tanzu, I found myself mapping out the network topology to make sense of it all since there seems to be a mismatch of terminology between HA-proxy and Workload Management configuration workflow.
+[Cormac did a tremendous job](https://cormachogan.com/2020-09-28-enabling-vsphere-with-tanzu-using-ha-proxy/) describing the configuration steps of all components. Still, when installing vSphere with Tanzu, I found myself mapping out the network topology to make sense of it all since there seems to be a mismatch of terminology between HA-proxy and Workload Management configuration workflow.
 
 [![](images/TanzuHAproxyVDS-Network-Layout-svg.svg)](/wp-content-mirror/2020/11/TanzuHAproxyVDS-Network-Layout-svg.svg)
 

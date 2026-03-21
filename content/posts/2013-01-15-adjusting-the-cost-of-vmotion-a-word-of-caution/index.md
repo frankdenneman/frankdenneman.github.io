@@ -10,7 +10,7 @@ categories:
   - "vmware"
 ---
 
-Yesterday I posted an article on [how to change the cost of vMotion](https://frankdenneman.ai/2013/01/14/limiting-the-number-of-concurrent-vmotions/ "Limiting the number of concurrent vMotions") in order to change the default number of concurrent vMotion. As I mentioned in the article, I’m not a proponent of changing advanced settings.
+Yesterday I posted an article on [how to change the cost of vMotion](/2013-01-14-limiting-the-number-of-concurrent-vmotions/ "Limiting the number of concurrent vMotions") in order to change the default number of concurrent vMotion. As I mentioned in the article, I’m not a proponent of changing advanced settings.
 
 Today Kris posted a very interesting question;
 

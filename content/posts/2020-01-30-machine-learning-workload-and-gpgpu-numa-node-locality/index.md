@@ -19,7 +19,7 @@ tags:
 coverImage: "00-neural-networks.png"
 ---
 
-In the previous article "[PCIe Device NUMA Node Locality](https://frankdenneman.ai/2020/01/10/pcie-device-numa-node-locality/)" I covered the physical connection between the processor and the PCIe device briefly touched upon machine learning workloads with regards to PCIe NUMA locality. This article zooms in on why it is important to consider PCIe NUMA locality.
+In the previous article "[PCIe Device NUMA Node Locality](/2020-01-10-pcie-device-numa-node-locality/)" I covered the physical connection between the processor and the PCIe device briefly touched upon machine learning workloads with regards to PCIe NUMA locality. This article zooms in on why it is important to consider PCIe NUMA locality.
 
 **General-Purpose Computing on Graphics Processing Units**
 

@@ -9,7 +9,7 @@ categories:
 coverImage: "Google-search-results.png"
 ---
 
-[Machine Learning on VMware Cloud Platform – Part 1](https://frankdenneman.ai/2022/05/25/machine-learning-on-vmware-cloud-platform-part-1/) covered the three distinct phases: concept, training, and deployment, [part 2](https://frankdenneman.ai/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/) explored the data streams, the infrastructure components needed and vSphere can help with increasing resource utilization efficiency of ML platforms. In this part, I want to go a little bit deeper into the territory of training and inference workloads.
+[Machine Learning on VMware Cloud Platform – Part 1](/2022-05-25-machine-learning-on-vmware-cloud-platform-part-1/) covered the three distinct phases: concept, training, and deployment, [part 2](/2022-06-08-machine-learning-on-vmware-cloud-platform-part-2/) explored the data streams, the infrastructure components needed and vSphere can help with increasing resource utilization efficiency of ML platforms. In this part, I want to go a little bit deeper into the territory of training and inference workloads.
 
 It would be best to consider the platform's purpose when building an ML infrastructure. Are you building it for serving inference workloads, or are you building a training platform? Are there data science teams inside the organization that create and train the models themselves? Or will pre-trained models be acquired? Where will the trained (converged) model be deployed? Will it be in the data center, industrial sites, or retail locations?
 

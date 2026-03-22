@@ -1,47 +1,46 @@
 ---
-layout: post
 title: "How I Got Past the DGX Spark Infinite Wi-Fi Setup Loop"
+linkTitle: "How I Got Past the DGX Spark Infinite Wi-Fi Setup Loop"
+description: "How agentic AI workloads accumulate KV cache across reasoning steps and tool calls and why this changes GPU memory planning for on-prem infrastructure."
 date: 2026-03-22
-url: /2026-03-22-How-I-Got-Past-the-DGX-Spark-Infinite-Wi-Fi-Setup-Loop
-categories: ["ai""]
-tags: [dgx-spark, oobe, unifi, dns, workaround, nvidia]
+url: "/2026-03-22-How-I-Got-Past-the-DGX-Spark-Infinite-Wi-Fi-Setup-Loop/"
+concepts: ["dgx-spark", "oobe", "unifi", "workaround", "dns", "nvidia"]
+categories: ["dgx"]
 ---
 
-Got a DGX Spark stuck in an endless Wi-Fi setup loop even though ethernet is plugged in? I ran into the same thing. Here's a network-level fix that worked for me, hopefully it helps you get past it and start enjoying your Spark.
+Got a DGX Spark stuck in an endless Wi-Fi setup loop even though ethernet is plugged in? I ran into the same thing. Here's a network-level fix that worked for me. Hopefully it helps you get past it and start enjoying your Spark.
 
 ## What's Going On
 
-During initial setup, the Spark checks internet connectivity by hitting `connectivity-check.ubuntu.com` over HTTPS. If that fails, it assumes there's no network and dumps you into the Wi-Fi screen, regardless of whether ethernet is working fine. The problem? Those HTTPS endpoints are all dead. I tested all six IPs the domain resolves to, on both HTTP and HTTPS:
+During initial setup, the DGX Spark's Out-of-Box Experience (OOBE) checks internet connectivity by making an HTTPS request to `connectivity-check.ubuntu.com`. If that check fails, it assumes there's no network and forces you into the Wi-Fi screen, even when ethernet is connected and working fine.
 
-```bash
-for ip in 185.125.190.97 185.125.190.98 185.125.190.96 91.189.91.96 91.189.91.98 91.189.91.97; do
-  echo "--- Testing $ip on port 80 (HTTP) ---"
-  curl -s -o /dev/null -w "HTTP %{http_code} in %{time_total}s\n" --max-time 5 \
-    --resolve connectivity-check.ubuntu.com:80:$ip http://connectivity-check.ubuntu.com
-  echo "--- Testing $ip on port 443 (HTTPS) ---"
-  curl -s -o /dev/null -w "HTTP %{http_code} in %{time_total}s\n" --max-time 5 \
-    --resolve connectivity-check.ubuntu.com:443:$ip https://connectivity-check.ubuntu.com
-done
+Here's what that looks like when you test it:
+
+```
+curl -v https://connectivity-check.ubuntu.com
+* Host connectivity-check.ubuntu.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 185.125.190.97, 185.125.190.98, 91.189.91.96, 185.125.190.96, 91.189.91.98, 91.189.91.97
+*   Trying 185.125.190.97:443...
+* Connected to connectivity-check.ubuntu.com (185.125.190.97) port 443
+* ALPN: curl offers h2,http/1.1
+* (304) (OUT), TLS handshake, Client hello (1):
+*  CAfile: /etc/ssl/cert.pem
+*  CApath: none
+* Recv failure: Connection reset by peer
+* LibreSSL/3.3.6: error:02FFF036:system library:func(4095):Connection reset by peer
+* Closing connection
+curl: (35) Recv failure: Connection reset by peer
 ```
 
-| IP Address | HTTP (port 80) | HTTPS (port 443) |
-|---|---|---|
-| 185.125.190.97 | 204 in 0.028s | Timeout |
-| 185.125.190.98 | 204 in 0.030s | Timeout |
-| 185.125.190.96 | 204 in 0.028s | Timeout |
-| 91.189.91.96 | 204 in 0.167s | Timeout |
-| 91.189.91.98 | 204 in 0.164s | Timeout |
-| 91.189.91.97 | 204 in 0.164s | Timeout |
-
-HTTP works everywhere. HTTPS works nowhere. The Spark uses HTTPS. That's the bug.
-
-A [forum thread](https://forums.developer.nvidia.com/t/setup-wizard-loop/364222) suggested overriding DNS to point at a specific IP, but since none of them respond on 443, that won't cut it.
+I tested all six IPs individually and found they all respond fine on HTTP (port 80) but time out or reset on HTTPS (port 443). The OOBE uses HTTPS. That's the bug. A [forum thread](https://forums.developer.nvidia.com/t/setup-wizard-loop/364222) suggested overriding DNS to point at a specific IP, but since none of them respond on port 443, that won't help.
 
 ## The Fix
-The idea is simple: run a tiny HTTPS server on your local network that returns the expected 204 response, then use a DNS override on your router to point the Spark at it.
+
+The idea is simple. Run a tiny HTTPS server on your local network that returns the expected 204 response, then use a DNS override on your router to point the Spark at it.
 
 ### 1. Generate a self-signed cert
-On your Mac (or any machine on the same LAN):
+On any machine on the same LAN (I used a Mac):
 
 ```bash
 mkdir -p ~/connectivity-fix && cd ~/connectivity-fix
@@ -93,28 +92,25 @@ curl -vk --resolve connectivity-check.ubuntu.com:443:127.0.0.1 https://connectiv
 Both should return `204 No Content`.
 
 ### 4. Add a DNS override on your router
-You need your router to resolve `connectivity-check.ubuntu.com` to your Mac's local IP instead of the broken upstream servers.
-
-**UniFi Dream Machine SE (Network 10.1.x)**
-
-If you're on UniFi Network 10.1, the DNS settings have moved compared to older versions. The path is:
+You need your router to resolve `connectivity-check.ubuntu.com` to your Mac's local IP instead of the broken upstream servers. At home I have a Unify network, so I'm using a Dream Machine SE environment as an example to show hot to set it up.  If you're on UniFi Network 10.1, the DNS settings have moved compared to older versions. The path is:
 
 **Settings → Policy Engine → Policy Table → Create Policy**
 
 Create a DNS **A record** with `connectivity-check.ubuntu.com` pointing to your Mac's IP (e.g. `192.168.1.143`).
 
-> In older UniFi Network versions (8.x – 9.x), this was under Settings → Routing → DNS.
+![policy engine](images/create-new-policy.png)
 
-**Other routers:** look for "Local DNS", "DNS Override", or "Static DNS Entries" in your admin panel.
+### 5. Verify and reboot the DGX
 
-### 5. Verify and reboot
 Confirm the override works:
 
 ```bash
 nslookup connectivity-check.ubuntu.com 192.168.1.1
 ```
 
-This should return your Mac's IP. Now reboot the DGX Spark — it should sail past the Wi-Fi screen.
+This should return your Mac's IP. Now reboot the DGX Spark. It should sail past the Wi-Fi screen. After setup was done, I installed the DGX dashboard and ready to explore the possibilities of this thing.
+
+![dgx dashboard](images/dgx-dashboard.png)
 
 ## Cleanup
 Once setup is done, stop the Python server, delete the DNS override from your router, and remove `~/connectivity-fix`. The connectivity check only runs during initial setup.
@@ -123,4 +119,5 @@ Once setup is done, stop the Python server, delete the DNS override from your ro
 If you'd rather patch the Spark directly, [sjug's recovery image patch](https://github.com/sjug/dgx-spark-ethernet-patch) modifies the setup binary to skip the connectivity check entirely. It requires a Linux machine to prepare a patched USB recovery drive.
 
 ## Bottom Line
-The Out-of-Box Experience (OOBE) insists on validating connectivity over HTTPS, but Canonical's endpoints aren't responding on port 443. Running a local stand-in server and redirecting DNS gets you past it without opening up the Spark. Hopefully NVIDIA updates the OOBE to fall back to HTTP or skip the check when ethernet is already connected.
+The OOBE insists on validating connectivity over HTTPS, but Canonical's endpoints aren't responding on port 443. Running a local stand-in server and redirecting DNS got me past it without modifying the Spark. Hopefully NVIDIA updates the OOBE to fall back to HTTP or skip the check when ethernet is already connected.
+

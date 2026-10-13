@@ -6,7 +6,7 @@ aliases:
   - "/posts/2012-10-17-want-to-have-a-vsphere-5-1-clustering-deepdive-book-for-free/"
 ---
 
-[![vSphere 5.1 clustering deepdive CloudPhysics cover](images/cloudphysics-bookcover.png "cloudphysics-bookcover")](/wp-content-mirror/2012/10/cloudphysics-bookcover.png) Want to have a vSphere 5.1 clustering deepdive book for free? CloudPhysics are giving away some vSphere 5.1 clustering deepdive books, do the following if you want to receive a copy: **Action required**
+![vSphere 5.1 clustering deepdive CloudPhysics cover](images/cloudphysics-bookcover.png "cloudphysics-bookcover") Want to have a vSphere 5.1 clustering deepdive book for free? CloudPhysics are giving away some vSphere 5.1 clustering deepdive books, do the following if you want to receive a copy: **Action required**
 
 - Email info@cloudphysics.com with a subject of “Book”. No message is needed.
 - Register at [http://www.cloudphysics.com/](http://www.cloudphysics.com/) by clicking “SIGN UP”.

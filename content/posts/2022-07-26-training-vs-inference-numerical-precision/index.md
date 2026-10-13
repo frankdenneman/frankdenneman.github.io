@@ -33,7 +33,7 @@ Different floating standards exist, each with different configurations to provid
 
 <figure>
 
-[![](images/FP16-FP32-FP64-v2.svg)](/wp-content-mirror/2022/07/FP16-FP32-FP64-v2.svg)
+![](images/FP16-FP32-FP64-v2.svg)
 
 <figcaption>
 
@@ -55,7 +55,7 @@ But the concept of reducing memory consumption is alluring. The industry started
 
 <figure>
 
-[![](images/FP16-FP32-BFfloat16.svg)](/wp-content-mirror/2022/07/FP16-FP32-BFfloat16.svg)
+![](images/FP16-FP32-BFfloat16.svg)
 
 <figcaption>
 
@@ -81,7 +81,7 @@ For example, if you want to use the data type BF16, you use  tf.bfloat16 in [
 
 <figure>
 
-[![](images/FP16-FP32-BFfloat16-TF32.svg)](/wp-content-mirror/2022/07/FP16-FP32-BFfloat16-TF32.svg)
+![](images/FP16-FP32-BFfloat16-TF32.svg)
 
 <figcaption>
 

@@ -11,6 +11,7 @@ categories: ["ai"]
 track: "AI Infrastructure"
 aliases:
   - "/posts/2026-03-27-Understanding-Multi-GPU-Topologies-Within-a-Single-Host"
+  - "/2026-03-27-understanding-multi-gpu-topologies-within-a-single-host/"
 ---
 
 ## Architecting AI Infrastructure Series - Part 10

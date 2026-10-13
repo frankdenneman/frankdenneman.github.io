@@ -4,6 +4,7 @@ date: 2014-12-30
 url: "/2014-12-30-wish-2015-better-tooling-provide-better-insight/"
 aliases:
   - "/posts/2014-12-30-wish-2015-better-tooling-provide-better-insight/"
+  - "/2014-12-30-Wish-2015-Better-Tooling-Provide-Better-Insight/"
 categories: 
   - "miscellaneous"
 ---

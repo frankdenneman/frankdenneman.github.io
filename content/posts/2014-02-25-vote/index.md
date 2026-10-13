@@ -4,6 +4,7 @@ date: 2014-02-25
 url: "/2014-02-25-vote/"
 aliases:
   - "/posts/2014-02-25-vote/"
+  - "/2014-02-25-Vote/"
 categories: 
   - "miscellaneous"
 ---

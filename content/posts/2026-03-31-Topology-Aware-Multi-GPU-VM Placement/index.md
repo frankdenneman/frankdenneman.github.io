@@ -11,6 +11,7 @@ categories: ["ai"]
 track: "AI Infrastructure"
 aliases:
   - "/posts/2026-03-31-Topology-Aware-Multi-GPU-VM-Placement"
+  - "/2026-03-31-topology-aware-multi-gpu-vm-placement/"
 ---
 
 ## Architecting AI Infrastructure Series - Part 11

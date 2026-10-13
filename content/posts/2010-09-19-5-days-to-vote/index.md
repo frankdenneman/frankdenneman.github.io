@@ -4,6 +4,7 @@ date: 2010-09-19
 url: "/2010-09-19-5-days-to-vote/"
 aliases:
   - "/posts/2010-09-19-5-days-to-vote/"
+  - "/2010-09-19-5-Days-to-Vote/"
 categories: 
   - "vmware"
 tags: 

@@ -5,6 +5,7 @@ date: 2026-02-17T14:00:00+01:00
 url: "/2026-02-17-How-vSphere-GPU-Modes-and-Assignment-Policies-Determine-Host-Level-Placement/"
 aliases:
   - "/posts/2026-02-17-How-vSphere-GPU-Modes-and-Assignment-Policies-Determine-Host-Level-Placement/"
+  - "/2026-02-17-how-vsphere-gpu-modes-and-assignment-policies-determine-host-level-placement/"
 draft: false
 categories: ["ai"]
 track: "AI Infrastructure"

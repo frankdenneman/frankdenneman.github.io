@@ -4,6 +4,7 @@ date: 2013-04-24
 url: "/2013-04-24-awesome-read-storage-performance-and-testing-best-practices/"
 aliases:
   - "/posts/2013-04-24-awesome-read-storage-performance-and-testing-best-practices/"
+  - "/2013-04-24-Awesome-read-Storage-Performance-And-Testing-Best-Practices/"
 categories: 
   - "miscellaneous"
   - "vmware"

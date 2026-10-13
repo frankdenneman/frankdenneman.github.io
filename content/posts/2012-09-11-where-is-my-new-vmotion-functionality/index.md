@@ -4,6 +4,7 @@ date: 2012-09-11
 url: "/2012-09-11-where-is-my-new-vmotion-functionality/"
 aliases:
   - "/posts/2012-09-11-where-is-my-new-vmotion-functionality/"
+  - "/2012-09-11-Where-is-my-new-vMotion-functionality/"
 categories: 
   - "vmware"
 ---

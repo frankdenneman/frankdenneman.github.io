@@ -4,6 +4,7 @@ date: 2010-09-08
 url: "/2010-09-08-vcloud-director-architecture/"
 aliases:
   - "/posts/2010-09-08-vcloud-director-architecture/"
+  - "/2010-09-08-vCloud-Director-Architecture/"
 categories: 
   - "vmware"
 tags: 

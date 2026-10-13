@@ -4,6 +4,7 @@ date: 2023-02-28
 url: "/2023-02-28-sapphire-rapids-memory-configuration/"
 aliases:
   - "/posts/2023-02-28-sapphire-rapids-memory-configuration/"
+  - "/2023-02-28-Sapphire-Rapids-Memory-Configuration/"
 categories: 
   - "cpu"
 coverImage: "4th-Gen-Intel-Xeon-Scalable-Sapphire-Rapids-Network-and-Edge-Overview-annotated-1.jpeg"

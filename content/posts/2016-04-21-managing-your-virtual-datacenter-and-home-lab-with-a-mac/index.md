@@ -4,6 +4,7 @@ date: 2016-04-21
 url: "/2016-04-21-managing-your-virtual-datacenter-and-home-lab-with-a-mac/"
 aliases:
   - "/posts/2016-04-21-managing-your-virtual-datacenter-and-home-lab-with-a-mac/"
+  - "/2016-04-21-Managing-your-virtual-datacenter-and-home-lab-with-a-MAC/"
 categories: 
   - "home-lab"
 ---

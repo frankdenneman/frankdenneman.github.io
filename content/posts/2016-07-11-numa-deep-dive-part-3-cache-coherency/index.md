@@ -4,6 +4,7 @@ date: 2016-07-11
 url: "/2016-07-11-numa-deep-dive-part-3-cache-coherency/"
 aliases:
   - "/posts/2016-07-11-numa-deep-dive-part-3-cache-coherency/"
+  - "/2016-07-11-NUMA-Deep-Dive-Part-3-Cache-Coherency/"
 categories: 
   - "numa"
   - "vmware"

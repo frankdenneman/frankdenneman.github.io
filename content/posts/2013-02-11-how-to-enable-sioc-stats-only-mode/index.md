@@ -4,6 +4,7 @@ date: 2013-02-11
 url: "/2013-02-11-how-to-enable-sioc-stats-only-mode/"
 aliases:
   - "/posts/2013-02-11-how-to-enable-sioc-stats-only-mode/"
+  - "/2013-02-11-How-to-enable-SIOC-stats-only-mode/"
 categories: 
   - "sioc"
 tags: 

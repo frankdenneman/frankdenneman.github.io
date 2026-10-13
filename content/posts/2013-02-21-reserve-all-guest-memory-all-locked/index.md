@@ -4,6 +4,7 @@ date: 2013-02-21
 url: "/2013-02-21-reserve-all-guest-memory-all-locked/"
 aliases:
   - "/posts/2013-02-21-reserve-all-guest-memory-all-locked/"
+  - "/2013-02-21-Reserve-all-guest-memory-all-locked/"
 categories: 
   - "memory"
 ---

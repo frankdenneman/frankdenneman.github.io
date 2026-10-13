@@ -4,6 +4,7 @@ date: 2023-04-26
 url: "/2023-04-26-vsphere-8-0-update-1-enhancements-for-accelerating-machine-learning-workloads/"
 aliases:
   - "/posts/2023-04-26-vsphere-8-0-update-1-enhancements-for-accelerating-machine-learning-workloads/"
+  - "/2023-04-26-vSphere-8-0-Update-1-Enhancements-for-Accelerating-Machine-Learning-Workloads/"
 categories: 
   - "ai"
 coverImage: "nvidia-hgx-a100-og-social-share-1200x630-1.jpg"

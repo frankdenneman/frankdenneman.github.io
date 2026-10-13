@@ -4,6 +4,7 @@ date: 2021-10-22
 url: "/2021-10-22-drs-threshold-1-does-not-initiate-load-balancing-vmotions/"
 aliases:
   - "/posts/2021-10-22-drs-threshold-1-does-not-initiate-load-balancing-vmotions/"
+  - "/2021-10-22-DRS-threshold-1-does-not-initiate-Load-balancing-vMotions/"
 categories: 
   - "drs"
 coverImage: "DRS-Threshold-1.jpeg"

@@ -4,6 +4,7 @@ date: 2013-04-15
 url: "/2013-04-15-3-common-questions-about-drs-preferential-vm-host-affinity-rules/"
 aliases:
   - "/posts/2013-04-15-3-common-questions-about-drs-preferential-vm-host-affinity-rules/"
+  - "/2013-04-15-3-common-questions-about-DRS-preferential-VM-Host-affinity-rules/"
 categories: 
   - "drs"
 ---

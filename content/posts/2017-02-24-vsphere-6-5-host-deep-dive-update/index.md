@@ -4,6 +4,7 @@ date: 2017-02-24
 url: "/2017-02-24-vsphere-6-5-host-deep-dive-update/"
 aliases:
   - "/posts/2017-02-24-vsphere-6-5-host-deep-dive-update/"
+  - "/2017-02-24-vSphere-6-5-Host-Deep-Dive-Update/"
 categories: 
   - "deep-dive"
 ---

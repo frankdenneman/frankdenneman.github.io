@@ -4,6 +4,7 @@ date: 2016-08-22
 url: "/2016-08-22-numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/"
 aliases:
   - "/posts/2016-08-22-numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/"
+  - "/2016-08-22-NUMA-Deep-Dive-Part-5-ESXi-VMkernel-NUMA-Constructs/"
 categories: 
   - "numa"
   - "vmware"

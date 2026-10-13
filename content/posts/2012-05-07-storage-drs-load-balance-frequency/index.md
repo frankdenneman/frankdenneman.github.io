@@ -4,6 +4,7 @@ date: 2012-05-07
 url: "/2012-05-07-storage-drs-load-balance-frequency/"
 aliases:
   - "/posts/2012-05-07-storage-drs-load-balance-frequency/"
+  - "/2012-05-07-Storage-DRS-load-balance-frequency/"
 categories: 
   - "sdrs"
 ---

@@ -4,6 +4,7 @@ date: 2013-02-05
 url: "/2013-02-05-storage-drs-initial-placement-workflow/"
 aliases:
   - "/posts/2013-02-05-storage-drs-initial-placement-workflow/"
+  - "/2013-02-05-Storage-DRS-Initial-placement-workflow/"
 categories: 
   - "sdrs"
 ---

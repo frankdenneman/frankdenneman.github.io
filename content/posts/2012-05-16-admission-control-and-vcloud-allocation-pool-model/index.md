@@ -4,6 +4,7 @@ date: 2012-05-16
 url: "/2012-05-16-admission-control-and-vcloud-allocation-pool-model/"
 aliases:
   - "/posts/2012-05-16-admission-control-and-vcloud-allocation-pool-model/"
+  - "/2012-05-16-Admission-control-and-vCloud-Allocation-Pool-model/"
 categories: 
   - "vmware"
 ---

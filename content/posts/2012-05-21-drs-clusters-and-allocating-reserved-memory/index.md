@@ -4,6 +4,7 @@ date: 2012-05-21
 url: "/2012-05-21-drs-clusters-and-allocating-reserved-memory/"
 aliases:
   - "/posts/2012-05-21-drs-clusters-and-allocating-reserved-memory/"
+  - "/2012-05-21-DRS-clusters-and-allocating-reserved-memory/"
 categories: 
   - "drs"
 ---

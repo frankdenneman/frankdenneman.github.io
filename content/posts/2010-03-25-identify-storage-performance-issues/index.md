@@ -4,6 +4,7 @@ date: 2010-03-25
 url: "/2010-03-25-identify-storage-performance-issues/"
 aliases:
   - "/posts/2010-03-25-identify-storage-performance-issues/"
+  - "/2010-03-25-Identify-storage-performance-issues/"
 categories: 
   - "storage"
 tags: 

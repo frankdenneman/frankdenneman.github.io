@@ -4,6 +4,7 @@ date: 2018-01-29
 url: "/2018-01-29-virtually-speaking-podcast-67-resource-management/"
 aliases:
   - "/posts/2018-01-29-virtually-speaking-podcast-67-resource-management/"
+  - "/2018-01-29-Virtually-Speaking-Podcast-67-Resource-Management/"
 categories: 
   - "drs"
   - "vmware"

@@ -4,6 +4,7 @@ date: 2009-03-27
 url: "/2009-03-27-vmfs-volume-management-document/"
 aliases:
   - "/posts/2009-03-27-vmfs-volume-management-document/"
+  - "/2009-03-27-VMFS-Volume-Management-document/"
 categories: 
   - "vmware"
 tags: 

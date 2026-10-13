@@ -4,6 +4,7 @@ date: 2012-09-18
 url: "/2012-09-18-vmworld-europe-sessions/"
 aliases:
   - "/posts/2012-09-18-vmworld-europe-sessions/"
+  - "/2012-09-18-VMworld-Europe-Sessions/"
 categories: 
   - "vmware"
 ---

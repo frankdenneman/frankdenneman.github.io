@@ -4,6 +4,7 @@ date: 2022-10-18
 url: "/2022-10-18-could-not-initialize-plugin-libnvidia-vgx-so-check-sr-iov-in-the-bios/"
 aliases:
   - "/posts/2022-10-18-could-not-initialize-plugin-libnvidia-vgx-so-check-sr-iov-in-the-bios/"
+  - "/2022-10-18-Could-not-initialize-plugin-libnvidia-vgx-so-Check-SR-IOV-in-the-BIOS/"
 categories: 
   - "ai"
 coverImage: "Operation-Failed-Could-not-initialize-plugin-‘libnvidia-vgx.so-.png"

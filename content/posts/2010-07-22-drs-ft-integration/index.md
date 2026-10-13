@@ -4,6 +4,7 @@ date: 2010-07-22
 url: "/2010-07-22-drs-ft-integration/"
 aliases:
   - "/posts/2010-07-22-drs-ft-integration/"
+  - "/2010-07-22-DRS-FT-integration/"
 categories: 
   - "drs"
 tags: 

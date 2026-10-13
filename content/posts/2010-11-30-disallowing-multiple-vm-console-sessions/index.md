@@ -4,6 +4,7 @@ date: 2010-11-30
 url: "/2010-11-30-disallowing-multiple-vm-console-sessions/"
 aliases:
   - "/posts/2010-11-30-disallowing-multiple-vm-console-sessions/"
+  - "/2010-11-30-Disallowing-multiple-vm-console-sessions/"
 categories: 
   - "vmware"
 tags: 

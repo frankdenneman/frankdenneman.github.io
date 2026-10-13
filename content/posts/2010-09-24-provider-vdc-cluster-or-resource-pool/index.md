@@ -4,6 +4,7 @@ date: 2010-09-24
 url: "/2010-09-24-provider-vdc-cluster-or-resource-pool/"
 aliases:
   - "/posts/2010-09-24-provider-vdc-cluster-or-resource-pool/"
+  - "/2010-09-24-Provider-vDC-cluster-or-resource-pool/"
 categories: 
   - "vmware"
 tags: 

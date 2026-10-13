@@ -4,6 +4,7 @@ date: 2011-07-18
 url: "/2011-07-18-multi-nic-vmotion-support-in-vsphere-5-0/"
 aliases:
   - "/posts/2011-07-18-multi-nic-vmotion-support-in-vsphere-5-0/"
+  - "/2011-07-18-Multi-NIC-vMotion-support-in-vSphere-5-0/"
 categories: 
   - "drs"
 ---

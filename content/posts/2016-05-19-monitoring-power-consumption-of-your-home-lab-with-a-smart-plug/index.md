@@ -4,6 +4,7 @@ date: 2016-05-19
 url: "/2016-05-19-monitoring-power-consumption-of-your-home-lab-with-a-smart-plug/"
 aliases:
   - "/posts/2016-05-19-monitoring-power-consumption-of-your-home-lab-with-a-smart-plug/"
+  - "/2016-05-19-Monitoring-power-consumption-of-your-home-lab-with-a-smart-plug/"
 categories: 
   - "home-lab"
 ---

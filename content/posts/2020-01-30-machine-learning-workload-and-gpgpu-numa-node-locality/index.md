@@ -4,6 +4,7 @@ date: 2020-01-30
 url: "/2020-01-30-machine-learning-workload-and-gpgpu-numa-node-locality/"
 aliases:
   - "/posts/2020-01-30-machine-learning-workload-and-gpgpu-numa-node-locality/"
+  - "/2020-01-30-Machine-Learning-Workload-and-GPGPU-NUMA-Node-Locality/"
 categories: 
   - "ai"
   - "cpu"

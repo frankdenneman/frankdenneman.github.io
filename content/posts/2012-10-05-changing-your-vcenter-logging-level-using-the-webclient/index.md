@@ -4,6 +4,7 @@ date: 2012-10-05
 url: "/2012-10-05-changing-your-vcenter-logging-level-using-the-webclient/"
 aliases:
   - "/posts/2012-10-05-changing-your-vcenter-logging-level-using-the-webclient/"
+  - "/2012-10-05-Changing-your-vCenter-logging-level-using-the-webclient/"
 categories: 
   - "vmware"
 tags: 

@@ -4,6 +4,7 @@ date: 2013-02-19
 url: "/2013-02-19-implicit-anti-affinity-rules-and-drs-placement-behavior/"
 aliases:
   - "/posts/2013-02-19-implicit-anti-affinity-rules-and-drs-placement-behavior/"
+  - "/2013-02-19-Implicit-anti-affinity-rules-and-DRS-placement-behavior/"
 categories: 
   - "drs"
 ---

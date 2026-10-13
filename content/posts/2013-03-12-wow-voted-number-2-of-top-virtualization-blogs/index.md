@@ -4,6 +4,7 @@ date: 2013-03-12
 url: "/2013-03-12-wow-voted-number-2-of-top-virtualization-blogs/"
 aliases:
   - "/posts/2013-03-12-wow-voted-number-2-of-top-virtualization-blogs/"
+  - "/2013-03-12-WOW-voted-number-2-of-top-virtualization-blogs/"
 categories: 
   - "miscellaneous"
 ---

@@ -4,6 +4,7 @@ date: 2013-01-28
 url: "/2013-01-28-vmotion-and-etherchannel-an-overview-of-the-load-balancing-policies-stack/"
 aliases:
   - "/posts/2013-01-28-vmotion-and-etherchannel-an-overview-of-the-load-balancing-policies-stack/"
+  - "/2013-01-28-vMotion-and-EtherChannel-an-overview-of-the-load-balancing-policies-stack/"
 categories: 
   - "vmotion"
 ---

@@ -4,6 +4,7 @@ date: 2009-12-30
 url: "/2009-12-30-wrap-up-2009/"
 aliases:
   - "/posts/2009-12-30-wrap-up-2009/"
+  - "/2009-12-30-Wrap-up-2009/"
 categories: 
   - "miscellaneous"
 tags: 

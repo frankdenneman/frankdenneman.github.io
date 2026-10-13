@@ -4,6 +4,7 @@ date: 2013-02-13
 url: "/2013-02-13-vcd-and-initial-placement-of-virtual-disks-in-a-storage-drs-datastore-cluster/"
 aliases:
   - "/posts/2013-02-13-vcd-and-initial-placement-of-virtual-disks-in-a-storage-drs-datastore-cluster/"
+  - "/2013-02-13-VCD-and-initial-placement-of-virtual-disks-in-a-Storage-DRS-datastore-cluster/"
 categories: 
   - "sdrs"
 ---

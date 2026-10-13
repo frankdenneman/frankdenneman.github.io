@@ -4,6 +4,7 @@ date: 2018-10-08
 url: "/2018-10-08-my-new-role/"
 aliases:
   - "/posts/2018-10-08-my-new-role/"
+  - "/2018-10-08-My-New-Role/"
 categories: 
   - "vmware"
 tags: 

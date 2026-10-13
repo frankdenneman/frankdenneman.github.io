@@ -4,6 +4,7 @@ date: 2018-10-19
 url: "/2018-10-19-compute-policy-in-vmware-cloud-on-aws/"
 aliases:
   - "/posts/2018-10-19-compute-policy-in-vmware-cloud-on-aws/"
+  - "/2018-10-19-Compute-Policy-in-VMware-Cloud-on-AWS/"
 categories: 
   - "vmware"
 ---

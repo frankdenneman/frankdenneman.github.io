@@ -4,6 +4,7 @@ date: 2022-09-21
 url: "/2022-09-21-sub-numa-clustering/"
 aliases:
   - "/posts/2022-09-21-sub-numa-clustering/"
+  - "/2022-09-21-Sub-NUMA-Clustering/"
 categories: 
   - "numa"
 coverImage: "Skylake-Architecture-tiny.png"

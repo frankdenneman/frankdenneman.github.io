@@ -4,6 +4,7 @@ date: 2020-05-08
 url: "/2020-05-08-drs-migration-threshold-in-vsphere-7/"
 aliases:
   - "/posts/2020-05-08-drs-migration-threshold-in-vsphere-7/"
+  - "/2020-05-08-DRS-Migration-Threshold-in-vSphere-7/"
 categories: 
   - "drs"
 tags: 

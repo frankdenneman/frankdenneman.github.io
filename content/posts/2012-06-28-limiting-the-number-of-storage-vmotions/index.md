@@ -4,6 +4,7 @@ date: 2012-06-28
 url: "/2012-06-28-limiting-the-number-of-storage-vmotions/"
 aliases:
   - "/posts/2012-06-28-limiting-the-number-of-storage-vmotions/"
+  - "/2012-06-28-Limiting-the-number-of-Storage-vMotions/"
 categories: 
   - "drs"
   - "sdrs"

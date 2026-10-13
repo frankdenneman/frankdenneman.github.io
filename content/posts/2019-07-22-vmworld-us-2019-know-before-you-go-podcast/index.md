@@ -4,6 +4,7 @@ date: 2019-07-22
 url: "/2019-07-22-vmworld-us-2019-know-before-you-go-podcast/"
 aliases:
   - "/posts/2019-07-22-vmworld-us-2019-know-before-you-go-podcast/"
+  - "/2019-07-22-VMworld-US-2019-Know-Before-You-Go-Podcast/"
 categories: 
   - "podcast"
 coverImage: "Episode122.png"

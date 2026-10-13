@@ -4,6 +4,7 @@ date: 2011-11-26
 url: "/2011-11-26-cyber-monday-deal/"
 aliases:
   - "/posts/2011-11-26-cyber-monday-deal/"
+  - "/2011-11-26-Cyber-Monday-deal/"
 categories: 
   - "vmware"
 tags: 

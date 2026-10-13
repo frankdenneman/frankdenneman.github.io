@@ -4,6 +4,7 @@ date: 2015-03-24
 url: "/2015-03-24-dont-backup-go-forward-with-rubrik/"
 aliases:
   - "/posts/2015-03-24-dont-backup-go-forward-with-rubrik/"
+  - "/2015-03-24-Dont-backup-Go-forward-with-Rubrik/"
 categories: 
   - "miscellaneous"
 ---

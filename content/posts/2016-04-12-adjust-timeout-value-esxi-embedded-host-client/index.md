@@ -4,6 +4,7 @@ date: 2016-04-12
 url: "/2016-04-12-adjust-timeout-value-esxi-embedded-host-client/"
 aliases:
   - "/posts/2016-04-12-adjust-timeout-value-esxi-embedded-host-client/"
+  - "/2016-04-12-Adjust-timeout-value-ESXi-Embedded-Host-Client/"
 categories: 
   - "vmware"
 ---

@@ -4,6 +4,7 @@ date: 2012-04-19
 url: "/2012-04-19-connecting-multiple-drs-clusters-to-a-single-storage-drs-datastore-cluster/"
 aliases:
   - "/posts/2012-04-19-connecting-multiple-drs-clusters-to-a-single-storage-drs-datastore-cluster/"
+  - "/2012-04-19-Connecting-multiple-DRS-clusters-to-a-single-Storage-DRS-datastore-cluster/"
 categories: 
   - "sdrs"
 ---

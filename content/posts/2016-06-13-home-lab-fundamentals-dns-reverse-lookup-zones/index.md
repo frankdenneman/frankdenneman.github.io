@@ -4,6 +4,7 @@ date: 2016-06-13
 url: "/2016-06-13-home-lab-fundamentals-dns-reverse-lookup-zones/"
 aliases:
   - "/posts/2016-06-13-home-lab-fundamentals-dns-reverse-lookup-zones/"
+  - "/2016-06-13-Home-Lab-Fundamentals-DNS-Reverse-Lookup-Zones/"
 categories: 
   - "home-lab"
   - "vmware"

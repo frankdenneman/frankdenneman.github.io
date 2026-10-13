@@ -4,6 +4,7 @@ date: 2010-05-26
 url: "/2010-05-26-re-swapping/"
 aliases:
   - "/posts/2010-05-26-re-swapping/"
+  - "/2010-05-26-Re-Swapping/"
 categories: 
   - "memory"
 tags: 

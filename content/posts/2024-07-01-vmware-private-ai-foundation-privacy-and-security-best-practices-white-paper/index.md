@@ -4,6 +4,7 @@ date: 2024-07-01
 url: "/2024-07-01-vmware-private-ai-foundation-privacy-and-security-best-practices-white-paper/"
 aliases:
   - "/posts/2024-07-01-vmware-private-ai-foundation-privacy-and-security-best-practices-white-paper/"
+  - "/2024-07-01-VMware-Private-AI-Foundation-Privacy-and-Security-Best-Practices-white-paper/"
 categories: 
   - "ai"
 coverImage: "End-to-End-RAG-Architecture-35.png"

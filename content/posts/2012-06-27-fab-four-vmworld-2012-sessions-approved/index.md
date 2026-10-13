@@ -4,6 +4,7 @@ date: 2012-06-27
 url: "/2012-06-27-fab-four-vmworld-2012-sessions-approved/"
 aliases:
   - "/posts/2012-06-27-fab-four-vmworld-2012-sessions-approved/"
+  - "/2012-06-27-Fab-four-VMWorld-2012-sessions-approved/"
 categories: 
   - "vmware"
 ---

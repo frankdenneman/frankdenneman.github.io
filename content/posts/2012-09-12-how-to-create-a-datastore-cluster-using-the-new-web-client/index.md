@@ -4,6 +4,7 @@ date: 2012-09-12
 url: "/2012-09-12-how-to-create-a-datastore-cluster-using-the-new-web-client/"
 aliases:
   - "/posts/2012-09-12-how-to-create-a-datastore-cluster-using-the-new-web-client/"
+  - "/2012-09-12-How-to-create-a-datastore-cluster-using-the-new-web-client/"
 categories: 
   - "sdrs"
 ---

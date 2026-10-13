@@ -4,6 +4,7 @@ date: 2020-01-10
 url: "/2020-01-10-pcie-device-numa-node-locality/"
 aliases:
   - "/posts/2020-01-10-pcie-device-numa-node-locality/"
+  - "/2020-01-10-PCIe-Device-NUMA-Node-Locality/"
 categories: 
   - "numa"
   - "vmware"

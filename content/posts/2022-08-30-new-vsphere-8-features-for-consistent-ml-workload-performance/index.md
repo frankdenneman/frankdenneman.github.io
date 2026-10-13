@@ -4,6 +4,7 @@ date: 2022-08-30
 url: "/2022-08-30-new-vsphere-8-features-for-consistent-ml-workload-performance/"
 aliases:
   - "/posts/2022-08-30-new-vsphere-8-features-for-consistent-ml-workload-performance/"
+  - "/2022-08-30-New-vSphere-8-Features-for-Consistent-ML-Workload-Performance/"
 categories: 
   - "ai"
 coverImage: "Spectrum-of-ML-Accelerators-vSphere-8-release-tiny.png"

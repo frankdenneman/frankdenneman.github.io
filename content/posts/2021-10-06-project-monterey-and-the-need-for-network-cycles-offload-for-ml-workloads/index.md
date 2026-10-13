@@ -4,6 +4,7 @@ date: 2021-10-06
 url: "/2021-10-06-project-monterey-and-the-need-for-network-cycles-offload-for-ml-workloads/"
 aliases:
   - "/posts/2021-10-06-project-monterey-and-the-need-for-network-cycles-offload-for-ml-workloads/"
+  - "/2021-10-06-Project-Monterey-and-the-need-for-Network-Cycles-Offload-for-ML-Workloads/"
 categories: 
   - "ai"
 coverImage: "Offload-DPU1.png"

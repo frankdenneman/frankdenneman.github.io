@@ -4,6 +4,7 @@ date: 2024-02-22
 url: "/2024-02-22-the-misconception-of-self-learning-capabilities-of-large-language-models-during-production/"
 aliases:
   - "/posts/2024-02-22-the-misconception-of-self-learning-capabilities-of-large-language-models-during-production/"
+  - "/2024-02-22-The-misconception-of-self-learning-capabilities-of-Large-Language-Models-during-Production/"
 categories: 
   - "ai"
 coverImage: "1699963356933.jpeg"

@@ -4,6 +4,7 @@ date: 2013-02-07
 url: "/2013-02-07-why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network/"
 aliases:
   - "/posts/2013-02-07-why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network/"
+  - "/2013-02-07-Why-is-vMotion-using-the-management-network-instead-of-the-vMotion-network/"
 categories: 
   - "vmotion"
 ---

@@ -4,6 +4,7 @@ date: 2010-12-14
 url: "/2010-12-14-enhanced-vmotion-compatibility/"
 aliases:
   - "/posts/2010-12-14-enhanced-vmotion-compatibility/"
+  - "/2010-12-14-Enhanced-vMotion-Compatibility/"
 categories: 
   - "drs"
 tags: 

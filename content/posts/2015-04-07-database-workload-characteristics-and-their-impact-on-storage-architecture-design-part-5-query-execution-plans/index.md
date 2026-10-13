@@ -4,6 +4,7 @@ date: 2015-04-07
 url: "/2015-04-07-database-workload-characteristics-and-their-impact-on-storage-architecture-design-part-5-query-execution-plans/"
 aliases:
   - "/posts/2015-04-07-database-workload-characteristics-and-their-impact-on-storage-architecture-design-part-5-query-execution-plans/"
+  - "/2015-04-07-Database-workload-characteristics-and-their-impact-on-storage-architecture-design-part-5-Query-Execution-Plans/"
 categories: 
   - "miscellaneous"
 ---

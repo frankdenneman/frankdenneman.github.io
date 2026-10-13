@@ -4,6 +4,7 @@ date: 2012-05-09
 url: "/2012-05-09-mixing-resource-pools-and-virtual-machines-on-the-same-hierarchical-level/"
 aliases:
   - "/posts/2012-05-09-mixing-resource-pools-and-virtual-machines-on-the-same-hierarchical-level/"
+  - "/2012-05-09-Mixing-Resource-Pools-and-Virtual-Machines-on-the-same-hierarchical-level/"
 categories: 
   - "drs"
 ---

@@ -9,6 +9,8 @@ series_order: 3
 concepts: ["Durable Agents", "Prefill", "Tool Calling", "KV Cache", "LLM Runtime Memory", "Agentic AI"]
 categories: ["ai"]
 track: "AI Memory"
+aliases:
+  - "/2026-03-12-Durable-Agentic-AI-Sessions-in-GPU-Memory/"
 ---
 
 ## The durable memory of agentic systems

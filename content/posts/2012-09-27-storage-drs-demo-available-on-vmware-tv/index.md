@@ -4,6 +4,7 @@ date: 2012-09-27
 url: "/2012-09-27-storage-drs-demo-available-on-vmware-tv/"
 aliases:
   - "/posts/2012-09-27-storage-drs-demo-available-on-vmware-tv/"
+  - "/2012-09-27-Storage-DRS-demo-available-on-VMware-TV/"
 categories: 
   - "sdrs"
 ---

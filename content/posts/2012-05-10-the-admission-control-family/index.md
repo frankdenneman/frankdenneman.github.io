@@ -4,6 +4,7 @@ date: 2012-05-10
 url: "/2012-05-10-the-admission-control-family/"
 aliases:
   - "/posts/2012-05-10-the-admission-control-family/"
+  - "/2012-05-10-The-Admission-Control-Family/"
 categories: 
   - "drs"
 ---

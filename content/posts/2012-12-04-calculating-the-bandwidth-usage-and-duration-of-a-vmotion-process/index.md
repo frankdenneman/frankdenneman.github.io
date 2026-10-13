@@ -4,6 +4,7 @@ date: 2012-12-04
 url: "/2012-12-04-calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process/"
 aliases:
   - "/posts/2012-12-04-calculating-the-bandwidth-usage-and-duration-of-a-vmotion-process/"
+  - "/2012-12-04-Calculating-the-bandwidth-usage-and-duration-of-a-vMotion-process/"
 categories: 
   - "vmotion"
 ---

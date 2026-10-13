@@ -4,6 +4,7 @@ date: 2013-02-20
 url: "/2013-02-20-voting-for-the-2013-top-virtualization-blogs-a-year-in-review/"
 aliases:
   - "/posts/2013-02-20-voting-for-the-2013-top-virtualization-blogs-a-year-in-review/"
+  - "/2013-02-20-Voting-for-the-2013-top-virtualization-blogs-A-year-in-review/"
 categories: 
   - "miscellaneous"
 ---

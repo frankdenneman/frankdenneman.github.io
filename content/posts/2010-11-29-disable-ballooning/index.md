@@ -4,6 +4,7 @@ date: 2010-11-29
 url: "/2010-11-29-disable-ballooning/"
 aliases:
   - "/posts/2010-11-29-disable-ballooning/"
+  - "/2010-11-29-Disable-ballooning/"
 categories: 
   - "memory"
 ---

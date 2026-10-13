@@ -4,6 +4,7 @@ date: 2011-01-11
 url: "/2011-01-11-beating-a-dead-horse-using-cpu-affinity/"
 aliases:
   - "/posts/2011-01-11-beating-a-dead-horse-using-cpu-affinity/"
+  - "/2011-01-11-Beating-a-dead-horse-using-CPU-affinity/"
 categories: 
   - "cpu"
 tags: 

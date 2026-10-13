@@ -4,6 +4,7 @@ date: 2009-07-08
 url: "/2009-07-08-flex10-update/"
 aliases:
   - "/posts/2009-07-08-flex10-update/"
+  - "/2009-07-08-Flex10-update/"
 categories: 
   - "networking"
 tags: 

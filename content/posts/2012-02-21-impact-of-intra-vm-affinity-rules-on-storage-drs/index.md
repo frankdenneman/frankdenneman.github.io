@@ -4,6 +4,7 @@ date: 2012-02-21
 url: "/2012-02-21-impact-of-intra-vm-affinity-rules-on-storage-drs/"
 aliases:
   - "/posts/2012-02-21-impact-of-intra-vm-affinity-rules-on-storage-drs/"
+  - "/2012-02-21-Impact-of-Intra-VM-affinity-rules-on-Storage-DRS/"
 categories: 
   - "sdrs"
 ---

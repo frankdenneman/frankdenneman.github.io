@@ -4,6 +4,7 @@ date: 2009-12-08
 url: "/2009-12-08-impact-of-memory-reservation/"
 aliases:
   - "/posts/2009-12-08-impact-of-memory-reservation/"
+  - "/2009-12-08-Impact-of-memory-reservation/"
 categories: 
   - "memory"
 tags: 

@@ -4,6 +4,7 @@ date: 2016-07-08
 url: "/2016-07-08-numa-deep-dive-part-2-system-architecture/"
 aliases:
   - "/posts/2016-07-08-numa-deep-dive-part-2-system-architecture/"
+  - "/2016-07-08-NUMA-Deep-Dive-Part-2-System-Architecture/"
 categories: 
   - "numa"
   - "vmware"

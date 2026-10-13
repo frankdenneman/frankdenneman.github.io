@@ -4,6 +4,7 @@ date: 2021-12-20
 url: "/2021-12-20-stop-designing-your-server-platform-with-solely-the-cpu-roadmap-in-mind/"
 aliases:
   - "/posts/2021-12-20-stop-designing-your-server-platform-with-solely-the-cpu-roadmap-in-mind/"
+  - "/2021-12-20-Stop-designing-your-server-platform-with-solely-the-CPU-roadmap-in-mind/"
 categories: 
   - "ai"
 tags: 

@@ -4,6 +4,7 @@ date: 2012-07-20
 url: "/2012-07-20-removing-the-horizontal-bar-in-the-footer-of-a-word-doc/"
 aliases:
   - "/posts/2012-07-20-removing-the-horizontal-bar-in-the-footer-of-a-word-doc/"
+  - "/2012-07-20-Removing-the-horizontal-bar-in-the-footer-of-a-word-doc/"
 categories: 
   - "miscellaneous"
 ---

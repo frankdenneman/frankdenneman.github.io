@@ -4,6 +4,7 @@ date: 2015-04-23
 url: "/2015-04-23-hammer-magicbands-and-challenging-status-quo/"
 aliases:
   - "/posts/2015-04-23-hammer-magicbands-and-challenging-status-quo/"
+  - "/2015-04-23-Hammer-MagicBands-and-challenging-status-quo/"
 categories: 
   - "miscellaneous"
 ---

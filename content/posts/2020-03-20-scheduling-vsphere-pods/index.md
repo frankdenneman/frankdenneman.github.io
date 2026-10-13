@@ -4,6 +4,7 @@ date: 2020-03-20
 url: "/2020-03-20-scheduling-vsphere-pods/"
 aliases:
   - "/posts/2020-03-20-scheduling-vsphere-pods/"
+  - "/2020-03-20-Scheduling-vSphere-Pods/"
 categories: 
   - "vmware"
 coverImage: "vSphere-with-Kubernetes-Initial-Placement.png"

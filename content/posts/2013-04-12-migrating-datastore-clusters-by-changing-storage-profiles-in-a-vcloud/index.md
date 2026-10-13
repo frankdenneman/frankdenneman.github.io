@@ -4,6 +4,7 @@ date: 2013-04-12
 url: "/2013-04-12-migrating-datastore-clusters-by-changing-storage-profiles-in-a-vcloud/"
 aliases:
   - "/posts/2013-04-12-migrating-datastore-clusters-by-changing-storage-profiles-in-a-vcloud/"
+  - "/2013-04-12-Migrating-datastore-clusters-by-changing-storage-profiles-in-a-vCloud/"
 categories: 
   - "drs"
   - "sdrs"

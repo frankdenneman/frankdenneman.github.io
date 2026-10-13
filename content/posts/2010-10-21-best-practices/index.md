@@ -4,6 +4,7 @@ date: 2010-10-21
 url: "/2010-10-21-best-practices/"
 aliases:
   - "/posts/2010-10-21-best-practices/"
+  - "/2010-10-21-Best-practices/"
 categories: 
   - "miscellaneous"
 ---

@@ -4,6 +4,7 @@ date: 2013-01-30
 url: "/2013-01-30-designing-your-vmotion-network-3-reasons-why-i-use-a-distributed-switch-for-vmotion-networks/"
 aliases:
   - "/posts/2013-01-30-designing-your-vmotion-network-3-reasons-why-i-use-a-distributed-switch-for-vmotion-networks/"
+  - "/2013-01-30-Designing-your-vMotion-network-3-reasons-why-I-use-a-distributed-switch-for-vMotion-networks/"
 categories: 
   - "vmotion"
 ---

@@ -4,6 +4,7 @@ date: 2010-02-03
 url: "/2010-02-03-sizing-vms-and-numa-nodes/"
 aliases:
   - "/posts/2010-02-03-sizing-vms-and-numa-nodes/"
+  - "/2010-02-03-Sizing-VMs-and-NUMA-nodes/"
 categories: 
   - "memory"
   - "numa"

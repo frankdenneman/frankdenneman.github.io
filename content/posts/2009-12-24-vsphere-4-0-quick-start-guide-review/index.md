@@ -4,6 +4,7 @@ date: 2009-12-24
 url: "/2009-12-24-vsphere-4-0-quick-start-guide-review/"
 aliases:
   - "/posts/2009-12-24-vsphere-4-0-quick-start-guide-review/"
+  - "/2009-12-24-vSphere-4-0-Quick-Start-Guide-review/"
 categories: 
   - "miscellaneous"
 tags: 

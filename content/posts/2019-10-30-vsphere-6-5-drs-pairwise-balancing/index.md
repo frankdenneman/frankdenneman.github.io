@@ -4,6 +4,7 @@ date: 2019-10-30
 url: "/2019-10-30-vsphere-6-5-drs-pairwise-balancing/"
 aliases:
   - "/posts/2019-10-30-vsphere-6-5-drs-pairwise-balancing/"
+  - "/2019-10-30-vSphere-6-5-DRS-Pairwise-Balancing/"
 categories: 
   - "drs"
   - "vmware"

@@ -4,6 +4,7 @@ date: 2015-06-04
 url: "/2015-06-04-when-your-home-lab-turns-into-a-home-dc/"
 aliases:
   - "/posts/2015-06-04-when-your-home-lab-turns-into-a-home-dc/"
+  - "/2015-06-04-When-your-Home-Lab-turns-into-a-Home-DC/"
 categories: 
   - "home-lab"
   - "vmware"

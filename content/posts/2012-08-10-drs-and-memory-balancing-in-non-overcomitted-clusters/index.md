@@ -4,6 +4,7 @@ date: 2012-08-10
 url: "/2012-08-10-drs-and-memory-balancing-in-non-overcomitted-clusters/"
 aliases:
   - "/posts/2012-08-10-drs-and-memory-balancing-in-non-overcomitted-clusters/"
+  - "/2012-08-10-DRS-and-memory-balancing-in-non-overcomitted-clusters/"
 categories: 
   - "drs"
 tags: 

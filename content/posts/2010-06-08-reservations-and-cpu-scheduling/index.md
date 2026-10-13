@@ -4,6 +4,7 @@ date: 2010-06-08
 url: "/2010-06-08-reservations-and-cpu-scheduling/"
 aliases:
   - "/posts/2010-06-08-reservations-and-cpu-scheduling/"
+  - "/2010-06-08-Reservations-and-CPU-scheduling/"
 categories: 
   - "cpu"
   - "memory"

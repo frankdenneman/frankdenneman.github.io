@@ -4,6 +4,7 @@ date: 2012-07-23
 url: "/2012-07-23-to-which-host-level-latency-statistic-is-the-sioc-congestion-threshold-related/"
 aliases:
   - "/posts/2012-07-23-to-which-host-level-latency-statistic-is-the-sioc-congestion-threshold-related/"
+  - "/2012-07-23-To-which-host-level-latency-statistic-is-the-SIOC-congestion-threshold-related/"
 categories: 
   - "sioc"
 tags: 

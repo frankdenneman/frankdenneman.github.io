@@ -4,6 +4,7 @@ date: 2020-07-30
 url: "/2020-07-30-whats-your-favorite-tech-novel/"
 aliases:
   - "/posts/2020-07-30-whats-your-favorite-tech-novel/"
+  - "/2020-07-30-Whats-Your-Favorite-Tech-Novel/"
 coverImage: "Technovelbookstack-scaled.jpg"
 ---
 

@@ -4,6 +4,7 @@ date: 2023-04-17
 url: "/2023-04-17-vmware-cloud-services-overview-podcast-series/"
 aliases:
   - "/posts/2023-04-17-vmware-cloud-services-overview-podcast-series/"
+  - "/2023-04-17-VMware-Cloud-Services-Overview-Podcast-Series/"
 categories: 
   - "podcast"
   - "vmware"

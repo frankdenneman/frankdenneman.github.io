@@ -4,6 +4,7 @@ date: 2009-03-04
 url: "/2009-03-04-increasing-the-queue-depth/"
 aliases:
   - "/posts/2009-03-04-increasing-the-queue-depth/"
+  - "/2009-03-04-Increasing-the-queue-depth/"
 categories: 
   - "storage"
 tags: 

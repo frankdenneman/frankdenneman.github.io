@@ -4,6 +4,7 @@ date: 2018-10-02
 url: "/2018-10-02-help-us-make-vmotion-even-better/"
 aliases:
   - "/posts/2018-10-02-help-us-make-vmotion-even-better/"
+  - "/2018-10-02-Help-Us-Make-vMotion-Even-Better/"
 categories: 
   - "vmotion"
   - "vmware"

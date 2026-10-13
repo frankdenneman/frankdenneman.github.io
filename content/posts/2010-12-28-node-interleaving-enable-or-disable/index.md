@@ -4,6 +4,7 @@ date: 2010-12-28
 url: "/2010-12-28-node-interleaving-enable-or-disable/"
 aliases:
   - "/posts/2010-12-28-node-interleaving-enable-or-disable/"
+  - "/2010-12-28-Node-Interleaving-Enable-or-Disable/"
 categories: 
   - "numa"
   - "vmware"

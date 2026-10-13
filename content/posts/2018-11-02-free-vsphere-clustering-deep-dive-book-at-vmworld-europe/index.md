@@ -4,6 +4,7 @@ date: 2018-11-02
 url: "/2018-11-02-free-vsphere-clustering-deep-dive-book-at-vmworld-europe/"
 aliases:
   - "/posts/2018-11-02-free-vsphere-clustering-deep-dive-book-at-vmworld-europe/"
+  - "/2018-11-02-Free-vSphere-Clustering-Deep-Dive-Book-at-VMworld-Europe/"
 categories: 
   - "vmware"
 ---

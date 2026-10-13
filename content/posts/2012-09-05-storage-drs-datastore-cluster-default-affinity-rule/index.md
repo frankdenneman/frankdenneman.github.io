@@ -4,6 +4,7 @@ date: 2012-09-05
 url: "/2012-09-05-storage-drs-datastore-cluster-default-affinity-rule/"
 aliases:
   - "/posts/2012-09-05-storage-drs-datastore-cluster-default-affinity-rule/"
+  - "/2012-09-05-Storage-DRS-datastore-cluster-default-affinity-rule/"
 categories: 
   - "sdrs"
 tags: 

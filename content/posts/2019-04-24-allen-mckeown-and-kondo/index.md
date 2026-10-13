@@ -4,6 +4,7 @@ date: 2019-04-24
 url: "/2019-04-24-allen-mckeown-and-kondo/"
 aliases:
   - "/posts/2019-04-24-allen-mckeown-and-kondo/"
+  - "/2019-04-24-Allen-McKeown-and-Kondo/"
 coverImage: "PHOTO-2018-05-18-11-21-02-1-e1556056017400.jpg"
 ---
 

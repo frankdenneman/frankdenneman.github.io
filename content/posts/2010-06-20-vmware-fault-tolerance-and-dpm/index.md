@@ -4,6 +4,7 @@ date: 2010-06-20
 url: "/2010-06-20-vmware-fault-tolerance-and-dpm/"
 aliases:
   - "/posts/2010-06-20-vmware-fault-tolerance-and-dpm/"
+  - "/2010-06-20-VMware-Fault-Tolerance-and-DPM/"
 categories: 
   - "drs"
 tags: 

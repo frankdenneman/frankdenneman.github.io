@@ -4,6 +4,7 @@ date: 2020-11-06
 url: "/2020-11-06-vsphere-with-tanzu-vcenter-server-network-configuration-overview/"
 aliases:
   - "/posts/2020-11-06-vsphere-with-tanzu-vcenter-server-network-configuration-overview/"
+  - "/2020-11-06-vSphere-with-Tanzu-vCenter-Server-Network-Configuration-Overview/"
 coverImage: "TanzuHAproxyVDS-Network-Layout-2.png"
 ---
 

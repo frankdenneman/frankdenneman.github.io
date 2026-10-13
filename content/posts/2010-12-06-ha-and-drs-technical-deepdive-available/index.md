@@ -4,6 +4,7 @@ date: 2010-12-06
 url: "/2010-12-06-ha-and-drs-technical-deepdive-available/"
 aliases:
   - "/posts/2010-12-06-ha-and-drs-technical-deepdive-available/"
+  - "/2010-12-06-HA-and-DRS-Technical-deepdive-available/"
 categories: 
   - "miscellaneous"
 tags: 

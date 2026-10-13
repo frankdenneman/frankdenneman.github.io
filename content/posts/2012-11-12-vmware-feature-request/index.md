@@ -4,6 +4,7 @@ date: 2012-11-12
 url: "/2012-11-12-vmware-feature-request/"
 aliases:
   - "/posts/2012-11-12-vmware-feature-request/"
+  - "/2012-11-12-VMware-feature-request/"
 categories: 
   - "vmware"
 ---

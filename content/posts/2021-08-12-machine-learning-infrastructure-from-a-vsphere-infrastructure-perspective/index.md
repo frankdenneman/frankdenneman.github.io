@@ -4,6 +4,7 @@ date: 2021-08-12
 url: "/2021-08-12-machine-learning-infrastructure-from-a-vsphere-infrastructure-perspective/"
 aliases:
   - "/posts/2021-08-12-machine-learning-infrastructure-from-a-vsphere-infrastructure-perspective/"
+  - "/2021-08-12-Machine-Learning-Infrastructure-from-a-vSphere-Infrastructure-Perspective/"
 categories: 
   - "ai"
 coverImage: "ML-Infrastructure-jpg.jpg"

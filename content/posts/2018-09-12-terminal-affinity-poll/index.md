@@ -4,6 +4,7 @@ date: 2018-09-12
 url: "/2018-09-12-terminal-affinity-poll/"
 aliases:
   - "/posts/2018-09-12-terminal-affinity-poll/"
+  - "/2018-09-12-Terminal-Affinity-Poll/"
 categories: 
   - "vmware"
 ---

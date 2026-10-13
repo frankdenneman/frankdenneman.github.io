@@ -4,6 +4,7 @@ date: 2017-07-24
 url: "/2017-07-24-host-deep-dive-first-major-milestone/"
 aliases:
   - "/posts/2017-07-24-host-deep-dive-first-major-milestone/"
+  - "/2017-07-24-Host-Deep-Dive-First-Major-Milestone/"
 categories: 
   - "vmware"
 ---

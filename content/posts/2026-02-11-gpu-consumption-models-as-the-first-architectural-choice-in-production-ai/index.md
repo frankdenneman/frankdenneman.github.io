@@ -13,6 +13,7 @@ concepts: ["GPU Consumption Models", "AI Infrastructure", "Runtime Memory"]
 url: "/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
 aliases:
   - "/posts/2026-02-11-gpu-consumption-models-as-the-first-architectural-choice-in-production-ai/"
+  - "/2026-02-11-GPU-Consumption-Models-as-the-First-Architectural-Choice-in-Production-AI/"
 ---
 
 ## Architecting AI Infrastructure - Part 2

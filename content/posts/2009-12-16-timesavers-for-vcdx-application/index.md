@@ -4,6 +4,7 @@ date: 2009-12-16
 url: "/2009-12-16-timesavers-for-vcdx-application/"
 aliases:
   - "/posts/2009-12-16-timesavers-for-vcdx-application/"
+  - "/2009-12-16-Timesavers-for-VCDX-application/"
 categories: 
   - "vcdx"
 tags: 

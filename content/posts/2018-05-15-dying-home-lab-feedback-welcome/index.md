@@ -4,6 +4,7 @@ date: 2018-05-15
 url: "/2018-05-15-dying-home-lab-feedback-welcome/"
 aliases:
   - "/posts/2018-05-15-dying-home-lab-feedback-welcome/"
+  - "/2018-05-15-Dying-Home-Lab-Feedback-Welcome/"
 categories: 
   - "home-lab"
   - "vmware"

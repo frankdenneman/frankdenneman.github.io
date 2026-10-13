@@ -4,6 +4,7 @@ date: 2010-10-07
 url: "/2010-10-07-numa-hyperthreading-and-numa-preferht/"
 aliases:
   - "/posts/2010-10-07-numa-hyperthreading-and-numa-preferht/"
+  - "/2010-10-07-NUMA-Hyperthreading-and-NUMA-PreferHT/"
 categories: 
   - "numa"
 tags: 

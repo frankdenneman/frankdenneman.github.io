@@ -4,6 +4,7 @@ date: 2012-07-09
 url: "/2012-07-09-disabling-mingoodness-and-costbenefit/"
 aliases:
   - "/posts/2012-07-09-disabling-mingoodness-and-costbenefit/"
+  - "/2012-07-09-Disabling-MinGoodness-and-CostBenefit/"
 categories: 
   - "drs"
 ---

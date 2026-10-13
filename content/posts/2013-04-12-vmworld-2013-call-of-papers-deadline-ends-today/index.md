@@ -4,6 +4,7 @@ date: 2013-04-12
 url: "/2013-04-12-vmworld-2013-call-of-papers-deadline-ends-today/"
 aliases:
   - "/posts/2013-04-12-vmworld-2013-call-of-papers-deadline-ends-today/"
+  - "/2013-04-12-VMworld-2013-Call-of-Papers-deadline-ends-today/"
 categories: 
   - "miscellaneous"
 ---

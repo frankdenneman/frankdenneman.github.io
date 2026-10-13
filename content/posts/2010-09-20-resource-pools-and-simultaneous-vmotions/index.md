@@ -4,6 +4,7 @@ date: 2010-09-20
 url: "/2010-09-20-resource-pools-and-simultaneous-vmotions/"
 aliases:
   - "/posts/2010-09-20-resource-pools-and-simultaneous-vmotions/"
+  - "/2010-09-20-Resource-pools-and-simultaneous-vMotions/"
 categories: 
   - "drs"
 tags: 

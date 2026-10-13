@@ -4,6 +4,7 @@ date: 2013-01-25
 url: "/2013-01-25-designing-your-vmotion-networking-choose-link-aggregation-over-multi-nic-vmotion/"
 aliases:
   - "/posts/2013-01-25-designing-your-vmotion-networking-choose-link-aggregation-over-multi-nic-vmotion/"
+  - "/2013-01-25-Designing-your-vMotion-networking-Choose-link-aggregation-over-Multi-NIC-vMotion/"
 categories: 
   - "vmotion"
 ---

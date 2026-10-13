@@ -4,6 +4,7 @@ date: 2023-05-16
 url: "/2023-05-16-vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/"
 aliases:
   - "/posts/2023-05-16-vsphere-ml-accelerator-spectrum-deep-dive-gpu-device-differentiators/"
+  - "/2023-05-16-vSphere-ML-Accelerator-Spectrum-Deep-Dive-GPU-Device-Differentiators/"
 categories: 
   - "ai"
 coverImage: "NVAIE-Supported-GPUs-small.jpg"

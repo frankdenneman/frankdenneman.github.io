@@ -4,6 +4,7 @@ date: 2018-09-07
 url: "/2018-09-07-six-interesting-kubernetes-sessions-at-vmworld-2018/"
 aliases:
   - "/posts/2018-09-07-six-interesting-kubernetes-sessions-at-vmworld-2018/"
+  - "/2018-09-07-Six-Interesting-Kubernetes-Sessions-at-VMworld-2018/"
 categories: 
   - "vmware"
 ---

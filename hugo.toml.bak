@@ -53,9 +53,6 @@ I write about AI platform architecture, GPU resource strategy, and NUMA-aware in
   profilePicture = "images/Headshot-FD.jpeg"
   favicon = "favicons/"
 description = "Distinguished Engineer and Chief Technologist for AI at VMware Cloud Foundation. Writing about AI infrastructure, GPU platform design, and NUMA-aware architecture."
-[params.plausibleAnalytics]
-  domain = "frankdenneman.nl"
-  serverURL = "https://plausible.io"
 
 # Social icons under the profile picture
 [[params.socialIcons]]

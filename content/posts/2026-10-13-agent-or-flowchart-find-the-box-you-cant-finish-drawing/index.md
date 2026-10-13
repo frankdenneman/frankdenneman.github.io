@@ -3,14 +3,15 @@ title: "Agent or Flowchart? Find the Box You Can't Finish Drawing"
 linkTitle: "Part 1 - Agent or Flowchart?"
 description: "Explains when an agent is actually useful by separating fixed workflow logic from the parts where the model must decide what to do next based on intermediate results."
 date: 2026-10-13
-url: "/2026-10-13-Agent-or-Flowchart-Find-the-Box-You-Cant-Finish-Drawing/"
+url: "/2026-10-13-agent-or-flowchart-find-the-box-you-cant-finish-drawing/"
 series: ["Agentic Workloads"]
 series_order: 1
 concepts: ["AI Agents", "Agent Loops", "Tool Calling", "Workflow Automation", "Agent Runtime", "Infrastructure Automation"]
 categories: ["ai"]
 track: "Agentic Workloads"
 aliases:
-  - "/posts/2026-10-13-Agent-or-Flowchart-Find-the-Box-You-Cant-Finish-Drawing"
+
+"/posts/2026-10-13-agent-or-flowchart-find-the-box-you-cant-finish-drawing/"
 ---
 
 ## Agent or flowchart? Find the box you can't finish drawing.
@@ -132,7 +133,7 @@ Two rules for the tool list.
 Now go back to the flowchart. Every box that needs language, pulling the city out of a question, reading a document, writing the summary, is one model call inside the program. The sequence stays in code.
 That is not an agent, and most of what gets called one is exactly this.
 
-You need the loop only for a box you can't finish drawing: what happens next depends on what came back, and the possible next steps are too many to write out and keep current. That one box is the agent. Everything around it stays a program. The bike ride and the maintenance mode both have that box, and they share four ingredients:
+You need the loop only for a box you can't finish drawing: what happens next depends on what came back, and the possible next steps are too many to write out and keep current. That one box is the agent. Everything around it stays a program.The bike ride and the maintenance mode both have that box, and they share four ingredients:
 
 1. A go/no-go question.
 2. State spread across several sources.

@@ -5,6 +5,7 @@ url: "/2025-09-02-which-multi-gpu-configurations-are-you-planning-to-deploy/"
 aliases:
   - "/posts/2025-09-02-which-multi-gpu-configurations-are-you-planning-to-deploy/"
   - "/2025-09-02-Which-Multi-GPU-Configurations-Are-You-Planning-to-Deploy/"
+  - "/2025/09/02/which-multi-gpu-configurations-are-you-planning-to-deploy/"
 categories: 
   - "ai"
 ---

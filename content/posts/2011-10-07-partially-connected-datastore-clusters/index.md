@@ -5,6 +5,7 @@ url: "/2011-10-07-partially-connected-datastore-clusters/"
 aliases:
   - "/posts/2011-10-07-partially-connected-datastore-clusters/"
   - "/2011-10-07-Partially-connected-datastore-clusters/"
+  - "/2011/10/07/partially-connected-datastore-clusters/"
 categories: 
   - "sdrs"
 tags: 

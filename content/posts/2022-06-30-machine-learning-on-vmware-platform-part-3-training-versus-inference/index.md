@@ -5,6 +5,7 @@ url: "/2022-06-30-machine-learning-on-vmware-platform-part-3-training-versus-inf
 aliases:
   - "/posts/2022-06-30-machine-learning-on-vmware-platform-part-3-training-versus-inference/"
   - "/2022-06-30-Machine-Learning-on-VMware-Platform-Part-3-Training-versus-Inference/"
+  - "/2022/06/30/machine-learning-on-vmware-platform-part-3-training-versus-inference/"
 categories: 
   - "ai"
 coverImage: "Google-search-results.png"

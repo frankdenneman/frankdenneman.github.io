@@ -5,6 +5,7 @@ url: "/2022-09-02-unexplored-territory-vmware-explore-usa-special/"
 aliases:
   - "/posts/2022-09-02-unexplored-territory-vmware-explore-usa-special/"
   - "/2022-09-02-Unexplored-Territory-VMware-Explore-USA-Special/"
+  - "/2022/09/02/unexplored-territory-vmware-explore-usa-special/"
 categories: 
   - "podcast"
 coverImage: "VMwareExploreSession.jpeg"

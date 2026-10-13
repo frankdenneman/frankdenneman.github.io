@@ -5,6 +5,7 @@ url: "/2012-09-20-technical-paper-vmware-vcloud-director-resource-allocation-mod
 aliases:
   - "/posts/2012-09-20-technical-paper-vmware-vcloud-director-resource-allocation-models-available-for-download/"
   - "/2012-09-20-Technical-paper-VMware-vCloud-Director-Resource-Allocation-Models-available-for-download/"
+  - "/2012/09/20/technical-paper-vmware-vcloud-director-resource-allocation-models-available-for-download/"
 categories: 
   - "vmware"
 ---

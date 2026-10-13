@@ -5,6 +5,7 @@ url: "/2020-11-06-vsphere-with-tanzu-vcenter-server-network-configuration-overvi
 aliases:
   - "/posts/2020-11-06-vsphere-with-tanzu-vcenter-server-network-configuration-overview/"
   - "/2020-11-06-vSphere-with-Tanzu-vCenter-Server-Network-Configuration-Overview/"
+  - "/2020/11/06/vsphere-with-tanzu-vcenter-server-network-configuration-overview/"
 coverImage: "TanzuHAproxyVDS-Network-Layout-2.png"
 ---
 

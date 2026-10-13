@@ -5,6 +5,7 @@ url: "/2013-01-24-new-technical-paper-the-cpu-scheduler-in-vmware-vsphere-5-1/"
 aliases:
   - "/posts/2013-01-24-new-technical-paper-the-cpu-scheduler-in-vmware-vsphere-5-1/"
   - "/2013-01-24-New-technical-paper-The-CPU-Scheduler-in-VMware-vSphere-5-1/"
+  - "/2013/01/24/new-technical-paper-the-cpu-scheduler-in-vmware-vsphere-5-1/"
 categories: 
   - "vmware"
 ---

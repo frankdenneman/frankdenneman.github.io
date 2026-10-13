@@ -5,6 +5,7 @@ url: "/2023-11-01-gen-ai-sessions-at-explore-barcelona-2023/"
 aliases:
   - "/posts/2023-11-01-gen-ai-sessions-at-explore-barcelona-2023/"
   - "/2023-11-01-Gen-AI-Sessions-at-Explore-Barcelona-2023/"
+  - "/2023/11/01/gen-ai-sessions-at-explore-barcelona-2023/"
 coverImage: "vmware-explore-2023-recap.jpg"
 ---
 

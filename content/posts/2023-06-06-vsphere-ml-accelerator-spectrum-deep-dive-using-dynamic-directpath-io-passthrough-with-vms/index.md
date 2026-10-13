@@ -5,6 +5,7 @@ url: "/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-direct
 aliases:
   - "/posts/2023-06-06-vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/"
   - "/2023-06-06-vSphere-ML-Accelerator-Spectrum-Deep-Dive-Using-Dynamic-DirectPath-IO-Passthrough-with-VMs/"
+  - "/2023/06/06/vsphere-ml-accelerator-spectrum-deep-dive-using-dynamic-directpath-io-passthrough-with-vms/"
 categories: 
   - "ai"
 coverImage: "Featured-DRS-and-AH.png"

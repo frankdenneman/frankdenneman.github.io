@@ -5,6 +5,7 @@ url: "/2013-04-29-embarking-on-a-new-adventure-joining-pernixdata-as-tech-evange
 aliases:
   - "/posts/2013-04-29-embarking-on-a-new-adventure-joining-pernixdata-as-tech-evangelist/"
   - "/2013-04-29-Embarking-on-a-new-adventure-Joining-PernixData-as-Tech-Evangelist/"
+  - "/2013/04/29/embarking-on-a-new-adventure-joining-pernixdata-as-tech-evangelist/"
 categories: 
   - "miscellaneous"
 ---

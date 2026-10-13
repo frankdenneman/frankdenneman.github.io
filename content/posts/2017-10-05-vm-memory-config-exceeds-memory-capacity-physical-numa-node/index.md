@@ -5,6 +5,7 @@ url: "/2017-10-05-vm-memory-config-exceeds-memory-capacity-physical-numa-node/"
 aliases:
   - "/posts/2017-10-05-vm-memory-config-exceeds-memory-capacity-physical-numa-node/"
   - "/2017-10-05-VM-Memory-Config-Exceeds-Memory-Capacity-Physical-NUMA-Node/"
+  - "/2017/10/05/vm-memory-config-exceeds-memory-capacity-physical-numa-node/"
 categories: 
   - "numa"
   - "vmware"

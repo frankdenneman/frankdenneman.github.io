@@ -5,6 +5,7 @@ url: "/2016-11-15-thought-800-page-vcdx-designs/"
 aliases:
   - "/posts/2016-11-15-thought-800-page-vcdx-designs/"
   - "/2016-11-15-thought-800-page-VCDX-designs/"
+  - "/2016/11/15/thought-800-page-vcdx-designs/"
 categories: 
   - "vcdx"
 ---

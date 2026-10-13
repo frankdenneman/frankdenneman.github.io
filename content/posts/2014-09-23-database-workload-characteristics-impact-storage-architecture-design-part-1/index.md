@@ -5,6 +5,7 @@ url: "/2014-09-23-database-workload-characteristics-impact-storage-architecture-
 aliases:
   - "/posts/2014-09-23-database-workload-characteristics-impact-storage-architecture-design-part-1/"
   - "/2014-09-23-Database-workload-characteristics-impact-storage-architecture-design-part-1/"
+  - "/2014/09/23/database-workload-characteristics-impact-storage-architecture-design-part-1/"
 categories: 
   - "miscellaneous"
 ---

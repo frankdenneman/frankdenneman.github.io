@@ -5,6 +5,7 @@ url: "/2010-10-01-voted-number-6-of-top-25-vmware-blogs-wow/"
 aliases:
   - "/posts/2010-10-01-voted-number-6-of-top-25-vmware-blogs-wow/"
   - "/2010-10-01-Voted-number-6-of-top-25-VMware-blogs-WOW/"
+  - "/2010/10/01/voted-number-6-of-top-25-vmware-blogs-wow/"
 categories: 
   - "miscellaneous"
 tags: 

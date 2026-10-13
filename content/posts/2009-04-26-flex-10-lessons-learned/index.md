@@ -5,6 +5,7 @@ url: "/2009-04-26-flex-10-lessons-learned/"
 aliases:
   - "/posts/2009-04-26-flex-10-lessons-learned/"
   - "/2009-04-26-Flex-10-lessons-learned/"
+  - "/2009/04/26/flex-10-lessons-learned/"
 categories: 
   - "vmware"
 tags: 

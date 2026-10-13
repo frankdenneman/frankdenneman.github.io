@@ -5,6 +5,7 @@ url: "/2015-05-20-ballooning-queue-depths-and-other-back-pressure-features-revis
 aliases:
   - "/posts/2015-05-20-ballooning-queue-depths-and-other-back-pressure-features-revisited/"
   - "/2015-05-20-Ballooning-Queue-Depths-and-other-back-pressure-features-revisited/"
+  - "/2015/05/20/ballooning-queue-depths-and-other-back-pressure-features-revisited/"
 categories: 
   - "vmware"
 ---

@@ -5,6 +5,7 @@ url: "/2013-06-05-download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free/
 aliases:
   - "/posts/2013-06-05-download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free/"
   - "/2013-06-05-Download-the-vSphere-4-1-and-5-0-clustering-deepdive-for-free/"
+  - "/2013/06/05/download-the-vsphere-4-1-and-5-0-clustering-deepdive-for-free/"
 categories: 
   - "vmware"
 ---

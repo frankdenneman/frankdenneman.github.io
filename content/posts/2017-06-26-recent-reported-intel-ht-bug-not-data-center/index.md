@@ -5,6 +5,7 @@ url: "/2017-06-26-recent-reported-intel-ht-bug-not-data-center/"
 aliases:
   - "/posts/2017-06-26-recent-reported-intel-ht-bug-not-data-center/"
   - "/2017-06-26-Recent-Reported-Intel-HT-Bug-Not-Data-Center/"
+  - "/2017/06/26/recent-reported-intel-ht-bug-not-data-center/"
 categories: 
   - "cpu"
 ---

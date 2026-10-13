@@ -5,6 +5,7 @@ url: "/2022-11-04-ml-session-at-ctex-vmware-explore/"
 aliases:
   - "/posts/2022-11-04-ml-session-at-ctex-vmware-explore/"
   - "/2022-11-04-ML-Session-at-CTEX-VMware-Explore/"
+  - "/2022/11/04/ml-session-at-ctex-vmware-explore/"
 categories: 
   - "ai"
 ---

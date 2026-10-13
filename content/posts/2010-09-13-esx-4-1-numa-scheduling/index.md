@@ -5,6 +5,7 @@ url: "/2010-09-13-esx-4-1-numa-scheduling/"
 aliases:
   - "/posts/2010-09-13-esx-4-1-numa-scheduling/"
   - "/2010-09-13-ESX-4-1-NUMA-Scheduling/"
+  - "/2010/09/13/esx-4-1-numa-scheduling/"
 categories: 
   - "numa"
 tags: 

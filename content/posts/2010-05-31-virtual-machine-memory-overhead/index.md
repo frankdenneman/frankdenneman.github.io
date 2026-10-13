@@ -5,6 +5,7 @@ url: "/2010-05-31-virtual-machine-memory-overhead/"
 aliases:
   - "/posts/2010-05-31-virtual-machine-memory-overhead/"
   - "/2010-05-31-Virtual-Machine-memory-overhead/"
+  - "/2010/05/31/virtual-machine-memory-overhead/"
 categories: 
   - "memory"
 tags: 

@@ -12,6 +12,7 @@ concepts: ["Same-Size vGPU Mode", "Mixed-Size vGPU Mode", "Cluster-Scale Placeme
 aliases:
   - "/posts/2026-03-01-same-size-vs-mixed-size-placement/"
   - "/2026-03-01-Same-Size-vs-Mixed-Size-Placement/"
+  - "/2026/03/01/same-size-vs-mixed-size-placement/"
 ---
 
 ## Architecting AI Infrastructure — Part 7

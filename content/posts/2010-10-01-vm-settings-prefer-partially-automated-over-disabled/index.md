@@ -5,6 +5,7 @@ url: "/2010-10-01-vm-settings-prefer-partially-automated-over-disabled/"
 aliases:
   - "/posts/2010-10-01-vm-settings-prefer-partially-automated-over-disabled/"
   - "/2010-10-01-VM-settings-Prefer-Partially-Automated-over-Disabled/"
+  - "/2010/10/01/vm-settings-prefer-partially-automated-over-disabled/"
 categories: 
   - "drs"
 tags: 

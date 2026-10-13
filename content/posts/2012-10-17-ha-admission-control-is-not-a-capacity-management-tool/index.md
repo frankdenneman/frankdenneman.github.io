@@ -5,6 +5,7 @@ url: "/2012-10-17-ha-admission-control-is-not-a-capacity-management-tool/"
 aliases:
   - "/posts/2012-10-17-ha-admission-control-is-not-a-capacity-management-tool/"
   - "/2012-10-17-HA-admission-control-is-not-a-capacity-management-tool/"
+  - "/2012/10/17/ha-admission-control-is-not-a-capacity-management-tool/"
 categories: 
   - "vmware"
 tags: 

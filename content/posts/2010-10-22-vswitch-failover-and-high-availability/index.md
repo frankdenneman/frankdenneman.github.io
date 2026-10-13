@@ -5,6 +5,7 @@ url: "/2010-10-22-vswitch-failover-and-high-availability/"
 aliases:
   - "/posts/2010-10-22-vswitch-failover-and-high-availability/"
   - "/2010-10-22-vSwitch-failover-and-High-Availability/"
+  - "/2010/10/22/vswitch-failover-and-high-availability/"
 categories: 
   - "networking"
 tags: 

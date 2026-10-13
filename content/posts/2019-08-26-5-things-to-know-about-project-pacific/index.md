@@ -5,6 +5,7 @@ url: "/2019-08-26-5-things-to-know-about-project-pacific/"
 aliases:
   - "/posts/2019-08-26-5-things-to-know-about-project-pacific/"
   - "/2019-08-26-5-Things-to-Know-About-Project-Pacific/"
+  - "/2019/08/26/5-things-to-know-about-project-pacific/"
 coverImage: "project-pacific-medium.png"
 ---
 

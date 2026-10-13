@@ -5,6 +5,7 @@ url: "/2012-12-21-storage-drs-and-storage-vmotion-bugs-solved-in-vsphere-5-0-upd
 aliases:
   - "/posts/2012-12-21-storage-drs-and-storage-vmotion-bugs-solved-in-vsphere-5-0-update-2/"
   - "/2012-12-21-Storage-DRS-and-Storage-vMotion-bugs-solved-in-vSphere-5-0-Update-2/"
+  - "/2012/12/21/storage-drs-and-storage-vmotion-bugs-solved-in-vsphere-5-0-update-2/"
 categories: 
   - "sdrs"
   - "vmotion"

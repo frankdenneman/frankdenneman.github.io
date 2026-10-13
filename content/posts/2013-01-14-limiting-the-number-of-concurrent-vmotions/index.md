@@ -5,6 +5,7 @@ url: "/2013-01-14-limiting-the-number-of-concurrent-vmotions/"
 aliases:
   - "/posts/2013-01-14-limiting-the-number-of-concurrent-vmotions/"
   - "/2013-01-14-Limiting-the-number-of-concurrent-vMotions/"
+  - "/2013/01/14/limiting-the-number-of-concurrent-vmotions/"
 categories: 
   - "vmotion"
 ---

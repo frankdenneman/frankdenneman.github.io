@@ -5,6 +5,7 @@ url: "/2013-02-20-pernixdata-flash-virtualization-platform-will-revolutionize-vi
 aliases:
   - "/posts/2013-02-20-pernixdata-flash-virtualization-platform-will-revolutionize-virtual-infrastructure-ecosystem-design-2/"
   - "/2013-02-20-PernixData-Flash-Virtualization-Platform-will-revolutionize-virtual-infrastructure-ecosystem-design-2/"
+  - "/2013/02/20/pernixdata-flash-virtualization-platform-will-revolutionize-virtual-infrastructure-ecosystem-design-2/"
 categories: 
   - "miscellaneous"
 ---

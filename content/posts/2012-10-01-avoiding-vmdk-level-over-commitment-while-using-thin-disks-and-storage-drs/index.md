@@ -5,6 +5,7 @@ url: "/2012-10-01-avoiding-vmdk-level-over-commitment-while-using-thin-disks-and
 aliases:
   - "/posts/2012-10-01-avoiding-vmdk-level-over-commitment-while-using-thin-disks-and-storage-drs/"
   - "/2012-10-01-Avoiding-VMDK-level-over-commitment-while-using-Thin-disks-and-Storage-DRS/"
+  - "/2012/10/01/avoiding-vmdk-level-over-commitment-while-using-thin-disks-and-storage-drs/"
 categories: 
   - "sdrs"
 tags: 

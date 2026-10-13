@@ -5,6 +5,7 @@ url: "/2015-02-27-memory-deep-dive-numa-data-locality/"
 aliases:
   - "/posts/2015-02-27-memory-deep-dive-numa-data-locality/"
   - "/2015-02-27-Memory-Deep-Dive-NUMA-Data-Locality/"
+  - "/2015/02/27/memory-deep-dive-numa-data-locality/"
 categories: 
   - "memory"
 ---

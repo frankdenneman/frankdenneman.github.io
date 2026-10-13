@@ -5,6 +5,7 @@ url: "/2022-08-26-training-vs-inference-network-compression/"
 aliases:
   - "/posts/2022-08-26-training-vs-inference-network-compression/"
   - "/2022-08-26-Training-vs-Inference-Network-Compression/"
+  - "/2022/08/26/training-vs-inference-network-compression/"
 categories: 
   - "ai"
 coverImage: "Network-compression-1-1.png"

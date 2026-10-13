@@ -5,6 +5,7 @@ url: "/2020-05-27-vsphere-7-drs-scalable-shares-deep-dive/"
 aliases:
   - "/posts/2020-05-27-vsphere-7-drs-scalable-shares-deep-dive/"
   - "/2020-05-27-vSphere-7-DRS-Scalable-Shares-Deep-Dive/"
+  - "/2020/05/27/vsphere-7-drs-scalable-shares-deep-dive/"
 categories: 
   - "drs"
 tags: 

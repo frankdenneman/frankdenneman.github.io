@@ -5,6 +5,7 @@ url: "/2018-07-19-kubernetes-vsphere-compute-storage-doubleheader-vmworld-sessio
 aliases:
   - "/posts/2018-07-19-kubernetes-vsphere-compute-storage-doubleheader-vmworld-session/"
   - "/2018-07-19-Kubernetes-vSphere-Compute-Storage-Doubleheader-VMworld-Session/"
+  - "/2018/07/19/kubernetes-vsphere-compute-storage-doubleheader-vmworld-session/"
 categories: 
   - "vmware"
 ---

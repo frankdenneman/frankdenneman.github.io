@@ -5,6 +5,7 @@ url: "/2014-04-29-homelab-power-supermicro-system-sshing-ipmi/"
 aliases:
   - "/posts/2014-04-29-homelab-power-supermicro-system-sshing-ipmi/"
   - "/2014-04-29-Homelab-Power-Supermicro-system-sshing-IPMI/"
+  - "/2014/04/29/homelab-power-supermicro-system-sshing-ipmi/"
 ---
 
 Just a short article, recently I discovered you can access Supermicro IPMI via SSH and power on the system by using the command: `start /system1/pwrmgtsvc1` A nice short command that saves you a lot of time by eliminating the need to log in the webUI and wait until the app responds.

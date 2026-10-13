@@ -5,6 +5,7 @@ url: "/2021-06-11-cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/"
 aliases:
   - "/posts/2021-06-11-cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/"
   - "/2021-06-11-CPU-pinning-is-not-an-exclusive-right-to-a-CPU-core/"
+  - "/2021/06/11/cpu-pinning-is-not-an-exclusive-right-to-a-cpu-core/"
 ---
 
 https://twitter.com/MrsBrookfield/status/1402955235497287685

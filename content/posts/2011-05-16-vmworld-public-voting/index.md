@@ -5,6 +5,7 @@ url: "/2011-05-16-vmworld-public-voting/"
 aliases:
   - "/posts/2011-05-16-vmworld-public-voting/"
   - "/2011-05-16-VMworld-Public-Voting/"
+  - "/2011/05/16/vmworld-public-voting/"
 categories: 
   - "miscellaneous"
 tags: 

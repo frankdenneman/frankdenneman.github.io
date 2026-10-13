@@ -5,6 +5,7 @@ url: "/2013-02-01-10-guidelines-for-creating-good-looking-diagrams/"
 aliases:
   - "/posts/2013-02-01-10-guidelines-for-creating-good-looking-diagrams/"
   - "/2013-02-01-10-Guidelines-for-Creating-Good-Looking-Diagrams/"
+  - "/2013/02/01/10-guidelines-for-creating-good-looking-diagrams/"
 categories: 
   - "miscellaneous"
 ---

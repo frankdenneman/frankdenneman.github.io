@@ -5,6 +5,7 @@ url: "/2014-04-03-gotcha-disable-reserve-guest-memory-setting-remove-reservation
 aliases:
   - "/posts/2014-04-03-gotcha-disable-reserve-guest-memory-setting-remove-reservation/"
   - "/2014-04-03-Gotcha-Disable-reserve-guest-memory-setting-remove-reservation/"
+  - "/2014/04/03/gotcha-disable-reserve-guest-memory-setting-remove-reservation/"
 categories: 
   - "memory"
 ---

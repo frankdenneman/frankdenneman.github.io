@@ -5,6 +5,7 @@ url: "/2012-10-18-storage-drs-and-alternative-swap-file-locations/"
 aliases:
   - "/posts/2012-10-18-storage-drs-and-alternative-swap-file-locations/"
   - "/2012-10-18-Storage-DRS-and-alternative-swap-file-locations/"
+  - "/2012/10/18/storage-drs-and-alternative-swap-file-locations/"
 categories: 
   - "sdrs"
 tags: 

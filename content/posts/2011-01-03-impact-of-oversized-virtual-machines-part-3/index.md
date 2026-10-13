@@ -5,6 +5,7 @@ url: "/2011-01-03-impact-of-oversized-virtual-machines-part-3/"
 aliases:
   - "/posts/2011-01-03-impact-of-oversized-virtual-machines-part-3/"
   - "/2011-01-03-Impact-of-oversized-virtual-machines-part-3/"
+  - "/2011/01/03/impact-of-oversized-virtual-machines-part-3/"
 categories: 
   - "cpu"
   - "memory"

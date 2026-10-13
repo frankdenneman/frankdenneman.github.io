@@ -5,6 +5,7 @@ url: "/2010-12-16-impact-of-oversized-virtual-machines-part-1/"
 aliases:
   - "/posts/2010-12-16-impact-of-oversized-virtual-machines-part-1/"
   - "/2010-12-16-Impact-of-oversized-virtual-machines-part-1/"
+  - "/2010/12/16/impact-of-oversized-virtual-machines-part-1/"
 categories: 
   - "vmware"
 ---

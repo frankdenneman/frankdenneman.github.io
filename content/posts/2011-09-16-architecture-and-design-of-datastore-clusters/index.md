@@ -5,6 +5,7 @@ url: "/2011-09-16-architecture-and-design-of-datastore-clusters/"
 aliases:
   - "/posts/2011-09-16-architecture-and-design-of-datastore-clusters/"
   - "/2011-09-16-Architecture-and-design-of-Datastore-clusters/"
+  - "/2011/09/16/architecture-and-design-of-datastore-clusters/"
 categories: 
   - "sdrs"
 tags: 

@@ -5,6 +5,7 @@ url: "/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-
 aliases:
   - "/posts/2023-07-05-vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/"
   - "/2023-07-05-vSphere-ML-Accelerator-Spectrum-Deep-Dive-NVAIE-Cloud-License-Service-Setup/"
+  - "/2023/07/05/vsphere-ml-accelerator-spectrum-deep-dive-nvaie-cloud-license-service-setup/"
 categories: 
   - "ai"
 coverImage: "NVIDIA-CLS-Instance.png"

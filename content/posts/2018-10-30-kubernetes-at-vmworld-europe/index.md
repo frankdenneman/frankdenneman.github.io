@@ -5,6 +5,7 @@ url: "/2018-10-30-kubernetes-at-vmworld-europe/"
 aliases:
   - "/posts/2018-10-30-kubernetes-at-vmworld-europe/"
   - "/2018-10-30-Kubernetes-at-VMworld-Europe/"
+  - "/2018/10/30/kubernetes-at-vmworld-europe/"
 categories: 
   - "kubernetes"
   - "vmware"

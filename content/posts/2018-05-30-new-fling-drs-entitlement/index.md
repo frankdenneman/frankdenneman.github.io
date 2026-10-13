@@ -5,6 +5,7 @@ url: "/2018-05-30-new-fling-drs-entitlement/"
 aliases:
   - "/posts/2018-05-30-new-fling-drs-entitlement/"
   - "/2018-05-30-New-Fling-DRS-Entitlement/"
+  - "/2018/05/30/new-fling-drs-entitlement/"
 categories: 
   - "drs"
 ---

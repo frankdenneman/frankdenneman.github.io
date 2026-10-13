@@ -5,6 +5,7 @@ url: "/2022-08-01-how-to-write-a-book-show-up-daily/"
 aliases:
   - "/posts/2022-08-01-how-to-write-a-book-show-up-daily/"
   - "/2022-08-01-How-to-Write-a-Book-Show-Up-Daily/"
+  - "/2022/08/01/how-to-write-a-book-show-up-daily/"
 categories: 
   - "miscellaneous"
 coverImage: "Screen-Shot-2022-08-01-at-09.13.07.png"

@@ -5,6 +5,7 @@ url: "/2014-07-31-life-data-center-story-love-betrayal-virtualization/"
 aliases:
   - "/posts/2014-07-31-life-data-center-story-love-betrayal-virtualization/"
   - "/2014-07-31-Life-Data-Center-story-love-betrayal-virtualization/"
+  - "/2014/07/31/life-data-center-story-love-betrayal-virtualization/"
 categories: 
   - "miscellaneous"
 ---

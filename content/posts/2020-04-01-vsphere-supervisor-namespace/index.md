@@ -5,6 +5,7 @@ url: "/2020-04-01-vsphere-supervisor-namespace/"
 aliases:
   - "/posts/2020-04-01-vsphere-supervisor-namespace/"
   - "/2020-04-01-vSphere-Supervisor-Namespace/"
+  - "/2020/04/01/vsphere-supervisor-namespace/"
 categories: 
   - "vmware"
 coverImage: "Supervisor-Namespace.png"

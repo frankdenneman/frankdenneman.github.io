@@ -5,6 +5,7 @@ url: "/2016-11-04-host-not-ready/"
 aliases:
   - "/posts/2016-11-04-host-not-ready/"
   - "/2016-11-04-Host-not-Ready/"
+  - "/2016/11/04/host-not-ready/"
 categories: 
   - "networking"
   - "vmware"

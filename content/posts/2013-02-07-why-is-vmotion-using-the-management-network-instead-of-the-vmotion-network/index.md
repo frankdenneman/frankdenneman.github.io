@@ -5,6 +5,7 @@ url: "/2013-02-07-why-is-vmotion-using-the-management-network-instead-of-the-vmo
 aliases:
   - "/posts/2013-02-07-why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network/"
   - "/2013-02-07-Why-is-vMotion-using-the-management-network-instead-of-the-vMotion-network/"
+  - "/2013/02/07/why-is-vmotion-using-the-management-network-instead-of-the-vmotion-network/"
 categories: 
   - "vmotion"
 ---

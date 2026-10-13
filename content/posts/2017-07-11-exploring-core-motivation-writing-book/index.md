@@ -5,6 +5,7 @@ url: "/2017-07-11-exploring-core-motivation-writing-book/"
 aliases:
   - "/posts/2017-07-11-exploring-core-motivation-writing-book/"
   - "/2017-07-11-Exploring-Core-Motivation-Writing-Book/"
+  - "/2017/07/11/exploring-core-motivation-writing-book/"
 categories: 
   - "miscellaneous"
 ---

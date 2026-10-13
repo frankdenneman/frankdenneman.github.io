@@ -5,6 +5,7 @@ url: "/2012-05-03-whiteboard-desk/"
 aliases:
   - "/posts/2012-05-03-whiteboard-desk/"
   - "/2012-05-03-Whiteboard-desk/"
+  - "/2012/05/03/whiteboard-desk/"
 categories: 
   - "miscellaneous"
 ---

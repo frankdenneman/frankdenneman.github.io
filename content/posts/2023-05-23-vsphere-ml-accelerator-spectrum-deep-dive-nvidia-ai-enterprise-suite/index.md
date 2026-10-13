@@ -5,6 +5,7 @@ url: "/2023-05-23-vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise
 aliases:
   - "/posts/2023-05-23-vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/"
   - "/2023-05-23-vSphere-ML-Accelerator-Spectrum-Deep-Dive-NVIDIA-AI-Enterprise-Suite/"
+  - "/2023/05/23/vsphere-ml-accelerator-spectrum-deep-dive-nvidia-ai-enterprise-suite/"
 categories: 
   - "ai"
 coverImage: "NVAIE.png"

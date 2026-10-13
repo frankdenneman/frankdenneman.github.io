@@ -5,6 +5,7 @@ url: "/2011-11-21-new-job-role/"
 aliases:
   - "/posts/2011-11-21-new-job-role/"
   - "/2011-11-21-New-job-role/"
+  - "/2011/11/21/new-job-role/"
 categories: 
   - "vmware"
 tags: 

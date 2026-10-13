@@ -5,6 +5,7 @@ url: "/2015-12-23-insights-into-cpu-and-memory-configuration-of-esxi-hosts/"
 aliases:
   - "/posts/2015-12-23-insights-into-cpu-and-memory-configuration-of-esxi-hosts/"
   - "/2015-12-23-Insights-into-CPU-and-Memory-configuration-of-ESXi-Hosts/"
+  - "/2015/12/23/insights-into-cpu-and-memory-configuration-of-esxi-hosts/"
 categories: 
   - "miscellaneous"
 ---

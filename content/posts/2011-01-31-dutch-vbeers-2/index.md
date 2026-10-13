@@ -5,6 +5,7 @@ url: "/2011-01-31-dutch-vbeers-2/"
 aliases:
   - "/posts/2011-01-31-dutch-vbeers-2/"
   - "/2011-01-31-Dutch-vBeers-2/"
+  - "/2011/01/31/dutch-vbeers-2/"
 categories: 
   - "miscellaneous"
 ---

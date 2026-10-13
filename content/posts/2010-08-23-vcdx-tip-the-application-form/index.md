@@ -5,6 +5,7 @@ url: "/2010-08-23-vcdx-tip-the-application-form/"
 aliases:
   - "/posts/2010-08-23-vcdx-tip-the-application-form/"
   - "/2010-08-23-VCDX-tip-The-application-form/"
+  - "/2010/08/23/vcdx-tip-the-application-form/"
 categories: 
   - "vcdx"
 tags: 

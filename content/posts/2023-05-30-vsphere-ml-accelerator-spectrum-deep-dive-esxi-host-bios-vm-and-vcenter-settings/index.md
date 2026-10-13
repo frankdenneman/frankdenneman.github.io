@@ -5,6 +5,7 @@ url: "/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-an
 aliases:
   - "/posts/2023-05-30-vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/"
   - "/2023-05-30-vSphere-ML-Accelerator-Spectrum-Deep-Dive-ESXi-Host-BIOS-VM-and-vCenter-Settings/"
+  - "/2023/05/30/vsphere-ml-accelerator-spectrum-deep-dive-esxi-host-bios-vm-and-vcenter-settings/"
 categories: 
   - "ai"
 coverImage: "IOMMU-v2-FI.png"

@@ -5,6 +5,7 @@ url: "/2012-10-01-apply-user-defined-storage-capabilities-to-multiple-datastore-
 aliases:
   - "/posts/2012-10-01-apply-user-defined-storage-capabilities-to-multiple-datastore-at-once/"
   - "/2012-10-01-Apply-User-defined-Storage-Capabilities-to-multiple-datastore-at-once/"
+  - "/2012/10/01/apply-user-defined-storage-capabilities-to-multiple-datastore-at-once/"
 categories: 
   - "sdrs"
 tags: 

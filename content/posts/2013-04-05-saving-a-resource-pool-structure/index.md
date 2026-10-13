@@ -5,6 +5,7 @@ url: "/2013-04-05-saving-a-resource-pool-structure/"
 aliases:
   - "/posts/2013-04-05-saving-a-resource-pool-structure/"
   - "/2013-04-05-Saving-a-Resource-Pool-Structure/"
+  - "/2013/04/05/saving-a-resource-pool-structure/"
 categories: 
   - "drs"
 ---

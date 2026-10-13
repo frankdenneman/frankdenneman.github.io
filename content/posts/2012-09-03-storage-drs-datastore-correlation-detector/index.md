@@ -5,6 +5,7 @@ url: "/2012-09-03-storage-drs-datastore-correlation-detector/"
 aliases:
   - "/posts/2012-09-03-storage-drs-datastore-correlation-detector/"
   - "/2012-09-03-Storage-DRS-datastore-correlation-detector/"
+  - "/2012/09/03/storage-drs-datastore-correlation-detector/"
 categories: 
   - "sdrs"
 tags: 

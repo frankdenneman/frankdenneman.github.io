@@ -5,6 +5,7 @@ url: "/2009-09-18-timekeeping-best-practices-for-linux/"
 aliases:
   - "/posts/2009-09-18-timekeeping-best-practices-for-linux/"
   - "/2009-09-18-Timekeeping-best-practices-for-Linux/"
+  - "/2009/09/18/timekeeping-best-practices-for-linux/"
 categories: 
   - "vmware"
 tags: 

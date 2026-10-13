@@ -5,6 +5,7 @@ url: "/2018-11-15-kubernetes-swap-and-the-vmware-balloon-driver/"
 aliases:
   - "/posts/2018-11-15-kubernetes-swap-and-the-vmware-balloon-driver/"
   - "/2018-11-15-Kubernetes-Swap-and-the-VMware-Balloon-Driver/"
+  - "/2018/11/15/kubernetes-swap-and-the-vmware-balloon-driver/"
 categories: 
   - "kubernetes"
   - "vmware"

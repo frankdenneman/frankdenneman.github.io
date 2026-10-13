@@ -5,6 +5,7 @@ url: "/2022-03-11-solving-vnuma-topology-mismatch-when-migrating-between-dual-so
 aliases:
   - "/posts/2022-03-11-solving-vnuma-topology-mismatch-when-migrating-between-dual-socket-servers-and-quad-socket-servers/"
   - "/2022-03-11-Solving-vNUMA-Topology-Mismatch-When-Migrating-between-Dual-Socket-Servers-and-Quad-Socket-Servers/"
+  - "/2022/03/11/solving-vnuma-topology-mismatch-when-migrating-between-dual-socket-servers-and-quad-socket-servers/"
 categories: 
   - "numa"
 ---

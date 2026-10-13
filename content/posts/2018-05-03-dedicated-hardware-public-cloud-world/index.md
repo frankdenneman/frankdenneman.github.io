@@ -5,6 +5,7 @@ url: "/2018-05-03-dedicated-hardware-public-cloud-world/"
 aliases:
   - "/posts/2018-05-03-dedicated-hardware-public-cloud-world/"
   - "/2018-05-03-Dedicated-Hardware-Public-Cloud-World/"
+  - "/2018/05/03/dedicated-hardware-public-cloud-world/"
 categories: 
   - "vmware"
 ---

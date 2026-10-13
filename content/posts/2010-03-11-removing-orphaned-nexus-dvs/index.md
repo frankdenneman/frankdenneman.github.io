@@ -5,6 +5,7 @@ url: "/2010-03-11-removing-orphaned-nexus-dvs/"
 aliases:
   - "/posts/2010-03-11-removing-orphaned-nexus-dvs/"
   - "/2010-03-11-Removing-orphaned-Nexus-DVS/"
+  - "/2010/03/11/removing-orphaned-nexus-dvs/"
 categories: 
   - "networking"
 tags: 

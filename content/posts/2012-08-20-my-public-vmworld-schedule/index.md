@@ -5,6 +5,7 @@ url: "/2012-08-20-my-public-vmworld-schedule/"
 aliases:
   - "/posts/2012-08-20-my-public-vmworld-schedule/"
   - "/2012-08-20-My-public-VMworld-schedule/"
+  - "/2012/08/20/my-public-vmworld-schedule/"
 categories: 
   - "vmware"
 tags: 

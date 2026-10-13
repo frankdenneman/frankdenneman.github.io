@@ -5,6 +5,7 @@ url: "/2015-02-20-memory-deep-dive/"
 aliases:
   - "/posts/2015-02-20-memory-deep-dive/"
   - "/2015-02-20-Memory-Deep-Dive/"
+  - "/2015/02/20/memory-deep-dive/"
 categories: 
   - "memory"
 ---

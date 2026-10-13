@@ -5,6 +5,7 @@ url: "/2012-05-23-blog-post-on/"
 aliases:
   - "/posts/2012-05-23-blog-post-on/"
   - "/2012-05-23-Blog-post-on/"
+  - "/2012/05/23/blog-post-on/"
 categories: 
   - "sdrs"
   - "vmware"

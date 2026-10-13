@@ -5,6 +5,7 @@ url: "/2015-02-19-memory-deep-dive-memory-subsystem-bandwidth/"
 aliases:
   - "/posts/2015-02-19-memory-deep-dive-memory-subsystem-bandwidth/"
   - "/2015-02-19-Memory-Deep-Dive-Memory-Subsystem-Bandwidth/"
+  - "/2015/02/19/memory-deep-dive-memory-subsystem-bandwidth/"
 categories: 
   - "memory"
 ---

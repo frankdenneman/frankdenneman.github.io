@@ -5,6 +5,7 @@ url: "/2014-09-08-improve-public-speaking-reading-book/"
 aliases:
   - "/posts/2014-09-08-improve-public-speaking-reading-book/"
   - "/2014-09-08-Improve-public-speaking-reading-book/"
+  - "/2014/09/08/improve-public-speaking-reading-book/"
 categories: 
   - "miscellaneous"
 ---

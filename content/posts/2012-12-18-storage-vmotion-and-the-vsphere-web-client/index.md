@@ -5,6 +5,7 @@ url: "/2012-12-18-storage-vmotion-and-the-vsphere-web-client/"
 aliases:
   - "/posts/2012-12-18-storage-vmotion-and-the-vsphere-web-client/"
   - "/2012-12-18-Storage-vMotion-and-the-vSphere-web-client/"
+  - "/2012/12/18/storage-vmotion-and-the-vsphere-web-client/"
 categories: 
   - "sdrs"
   - "vmotion"

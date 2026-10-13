@@ -11,6 +11,7 @@ categories: ["ai"]
 track: "AI Memory"
 aliases:
   - "/2026-02-05-Understanding-Activation-in-Mixture-of-Experts-Models/"
+  - "/2026/02/05/understanding-activation-in-mixture-of-experts-models/"
 ---
 
 

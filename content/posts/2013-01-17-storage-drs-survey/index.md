@@ -5,6 +5,7 @@ url: "/2013-01-17-storage-drs-survey/"
 aliases:
   - "/posts/2013-01-17-storage-drs-survey/"
   - "/2013-01-17-Storage-DRS-survey/"
+  - "/2013/01/17/storage-drs-survey/"
 categories: 
   - "sdrs"
 ---

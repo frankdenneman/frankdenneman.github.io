@@ -5,6 +5,7 @@ url: "/2024-10-25-how-to-build-an-efficient-ai-ingestion-pipeline/"
 aliases:
   - "/posts/2024-10-25-how-to-build-an-efficient-ai-ingestion-pipeline/"
   - "/2024-10-25-How-to-Build-an-Efficient-AI-Ingestion-Pipeline/"
+  - "/2024/10/25/how-to-build-an-efficient-ai-ingestion-pipeline/"
 draft: false
 categories: ["ai"]
 tags: ["RAG", "Ingestion Pipeline", "Embeddings", "Vector Database", "Infrastructure"]

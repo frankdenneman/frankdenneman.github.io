@@ -5,6 +5,7 @@ url: "/2011-10-17-fdm-in-mixed-esx-and-vsphere-clusters/"
 aliases:
   - "/posts/2011-10-17-fdm-in-mixed-esx-and-vsphere-clusters/"
   - "/2011-10-17-FDM-in-mixed-ESX-and-vSphere-clusters/"
+  - "/2011/10/17/fdm-in-mixed-esx-and-vsphere-clusters/"
 categories: 
   - "vmware"
 tags: 

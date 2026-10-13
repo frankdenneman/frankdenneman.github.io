@@ -5,6 +5,7 @@ url: "/2019-02-19-amd-epyc-and-vsphere-vnuma/"
 aliases:
   - "/posts/2019-02-19-amd-epyc-and-vsphere-vnuma/"
   - "/2019-02-19-AMD-EPYC-and-vSphere-vNUMA/"
+  - "/2019/02/19/amd-epyc-and-vsphere-vnuma/"
 categories: 
   - "numa"
   - "vmware"

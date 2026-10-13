@@ -5,6 +5,7 @@ url: "/2020-03-12-deep-learning-technology-stack-overview-for-the-vadmin-part-1/
 aliases:
   - "/posts/2020-03-12-deep-learning-technology-stack-overview-for-the-vadmin-part-1/"
   - "/2020-03-12-Deep-Learning-Technology-Stack-Overview-for-the-vAdmin-Part-1/"
+  - "/2020/03/12/deep-learning-technology-stack-overview-for-the-vadmin-part-1/"
 categories: 
   - "ai"
 tags: 

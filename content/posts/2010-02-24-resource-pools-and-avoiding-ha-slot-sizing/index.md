@@ -5,6 +5,7 @@ url: "/2010-02-24-resource-pools-and-avoiding-ha-slot-sizing/"
 aliases:
   - "/posts/2010-02-24-resource-pools-and-avoiding-ha-slot-sizing/"
   - "/2010-02-24-Resource-pools-and-avoiding-HA-slot-sizing/"
+  - "/2010/02/24/resource-pools-and-avoiding-ha-slot-sizing/"
 categories: 
   - "drs"
   - "memory"

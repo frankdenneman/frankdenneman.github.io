@@ -5,6 +5,7 @@ url: "/2013-01-08-manual-storage-vmotion-migration-into-datastore-cluster/"
 aliases:
   - "/posts/2013-01-08-manual-storage-vmotion-migration-into-datastore-cluster/"
   - "/2013-01-08-Manual-storage-vMotion-migration-into-datastore-cluster/"
+  - "/2013/01/08/manual-storage-vmotion-migration-into-datastore-cluster/"
 categories: 
   - "sdrs"
   - "vmotion"

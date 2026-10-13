@@ -6,6 +6,7 @@ url: "/2026-02-19-How-Same-Size-vGPU-Mode-and-Right-sizing-Shape-GPU-Placement-E
 aliases:
   - "/posts/2026-02-19-How-Same-Size-vGPU-Mode-and-Right-sizing-Shape-GPU-Placement-Efficiency/"
   - "/2026-02-19-how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/"
+  - "/2026/02/19/how-same-size-vgpu-mode-and-right-sizing-shape-gpu-placement-efficiency/"
 draft: false
 categories: ["ai"]
 track: "AI Infrastructure"

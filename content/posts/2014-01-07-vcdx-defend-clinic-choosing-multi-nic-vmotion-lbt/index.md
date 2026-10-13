@@ -5,6 +5,7 @@ url: "/2014-01-07-vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt/"
 aliases:
   - "/posts/2014-01-07-vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt/"
   - "/2014-01-07-VCDX-defend-clinic-Choosing-Multi-NIC-vMotion-LBT/"
+  - "/2014/01/07/vcdx-defend-clinic-choosing-multi-nic-vmotion-lbt/"
 categories: 
   - "vcdx"
   - "vmware"

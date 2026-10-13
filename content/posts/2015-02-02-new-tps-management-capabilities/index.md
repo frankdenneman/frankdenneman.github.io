@@ -5,6 +5,7 @@ url: "/2015-02-02-new-tps-management-capabilities/"
 aliases:
   - "/posts/2015-02-02-new-tps-management-capabilities/"
   - "/2015-02-02-New-TPS-management-capabilities/"
+  - "/2015/02/02/new-tps-management-capabilities/"
 categories: 
   - "vmware"
 ---

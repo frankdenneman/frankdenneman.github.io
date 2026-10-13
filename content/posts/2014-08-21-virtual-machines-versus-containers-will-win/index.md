@@ -5,6 +5,7 @@ url: "/2014-08-21-virtual-machines-versus-containers-will-win/"
 aliases:
   - "/posts/2014-08-21-virtual-machines-versus-containers-will-win/"
   - "/2014-08-21-Virtual-machines-versus-Containers-will-win/"
+  - "/2014/08/21/virtual-machines-versus-containers-will-win/"
 categories: 
   - "miscellaneous"
 ---

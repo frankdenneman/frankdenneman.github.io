@@ -5,6 +5,7 @@ url: "/2012-12-18-designing-your-vmotion-network/"
 aliases:
   - "/posts/2012-12-18-designing-your-vmotion-network/"
   - "/2012-12-18-Designing-your-vMotion-network/"
+  - "/2012/12/18/designing-your-vmotion-network/"
 categories: 
   - "vmotion"
 ---

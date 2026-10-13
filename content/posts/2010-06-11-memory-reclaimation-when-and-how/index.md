@@ -5,6 +5,7 @@ url: "/2010-06-11-memory-reclaimation-when-and-how/"
 aliases:
   - "/posts/2010-06-11-memory-reclaimation-when-and-how/"
   - "/2010-06-11-Memory-reclaimation-when-and-how/"
+  - "/2010/06/11/memory-reclaimation-when-and-how/"
 categories: 
   - "memory"
 tags: 

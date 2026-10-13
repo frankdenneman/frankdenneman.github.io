@@ -5,6 +5,7 @@ url: "/2016-02-15-insights-into-vm-density/"
 aliases:
   - "/posts/2016-02-15-insights-into-vm-density/"
   - "/2016-02-15-Insights-into-VM-density/"
+  - "/2016/02/15/insights-into-vm-density/"
 categories: 
   - "miscellaneous"
 ---

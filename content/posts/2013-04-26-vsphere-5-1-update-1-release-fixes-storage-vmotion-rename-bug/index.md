@@ -5,6 +5,7 @@ url: "/2013-04-26-vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug/
 aliases:
   - "/posts/2013-04-26-vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug/"
   - "/2013-04-26-vSphere-5-1-update-1-release-fixes-Storage-vMotion-rename-bug/"
+  - "/2013/04/26/vsphere-5-1-update-1-release-fixes-storage-vmotion-rename-bug/"
 categories: 
   - "vmotion"
   - "vmware"

@@ -6,6 +6,7 @@ url: "/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/"
 aliases:
   - "/posts/2026-02-13-how-vsphere-drs-makes-gpu-placement-decisions/"
   - "/2026-02-13-How-vSphere-DRS-Makes-GPU-Placement-Decisions/"
+  - "/2026/02/13/how-vsphere-drs-makes-gpu-placement-decisions/"
 draft: false
 categories: ["ai"]
 track: "AI Infrastructure"

@@ -5,6 +5,7 @@ url: "/2014-12-24-interesting-related-documentaries/"
 aliases:
   - "/posts/2014-12-24-interesting-related-documentaries/"
   - "/2014-12-24-Interesting-related-documentaries/"
+  - "/2014/12/24/interesting-related-documentaries/"
 categories: 
   - "miscellaneous"
 ---

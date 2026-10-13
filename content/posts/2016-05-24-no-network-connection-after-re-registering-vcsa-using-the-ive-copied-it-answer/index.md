@@ -5,6 +5,7 @@ url: "/2016-05-24-no-network-connection-after-re-registering-vcsa-using-the-ive-
 aliases:
   - "/posts/2016-05-24-no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer/"
   - "/2016-05-24-No-network-connection-after-re-registering-VCSA-using-the-ive-copied-it-answer/"
+  - "/2016/05/24/no-network-connection-after-re-registering-vcsa-using-the-ive-copied-it-answer/"
 categories: 
   - "vmware"
 ---

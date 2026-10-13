@@ -5,6 +5,7 @@ url: "/2013-02-28-there-is-a-new-fling-in-town-drmdiagnose/"
 aliases:
   - "/posts/2013-02-28-there-is-a-new-fling-in-town-drmdiagnose/"
   - "/2013-02-28-There-is-a-new-fling-in-town-DRMdiagnose/"
+  - "/2013/02/28/there-is-a-new-fling-in-town-drmdiagnose/"
 categories: 
   - "drs"
 ---

@@ -5,6 +5,7 @@ url: "/2022-10-31-unexplored-territory-podcast-ep30-project-keswick-with-alan-re
 aliases:
   - "/posts/2022-10-31-unexplored-territory-podcast-ep30-project-keswick-with-alan-renouf/"
   - "/2022-10-31-Unexplored-Territory-Podcast-EP30-Project-Keswick-with-Alan-Renouf/"
+  - "/2022/10/31/unexplored-territory-podcast-ep30-project-keswick-with-alan-renouf/"
 categories: 
   - "podcast"
 coverImage: "UT30-1.jpeg"

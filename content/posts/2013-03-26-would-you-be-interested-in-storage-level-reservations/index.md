@@ -5,6 +5,7 @@ url: "/2013-03-26-would-you-be-interested-in-storage-level-reservations/"
 aliases:
   - "/posts/2013-03-26-would-you-be-interested-in-storage-level-reservations/"
   - "/2013-03-26-Would-you-be-interested-in-Storage-level-reservations/"
+  - "/2013/03/26/would-you-be-interested-in-storage-level-reservations/"
 categories: 
   - "vmware"
 tags: 

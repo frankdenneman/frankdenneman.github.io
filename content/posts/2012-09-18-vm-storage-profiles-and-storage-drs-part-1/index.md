@@ -5,6 +5,7 @@ url: "/2012-09-18-vm-storage-profiles-and-storage-drs-part-1/"
 aliases:
   - "/posts/2012-09-18-vm-storage-profiles-and-storage-drs-part-1/"
   - "/2012-09-18-VM-Storage-Profiles-and-Storage-DRS-Part-1/"
+  - "/2012/09/18/vm-storage-profiles-and-storage-drs-part-1/"
 categories: 
   - "sdrs"
 ---

@@ -5,6 +5,7 @@ url: "/2024-03-19-rag-architecture-deep-dive/"
 aliases:
   - "/posts/2024-03-19-rag-architecture-deep-dive/"
   - "/2024-03-19-RAG-Architecture-Deep-Dive/"
+  - "/2024/03/19/rag-architecture-deep-dive/"
 draft: false
 slug: "rag-architecture-deep-dive"
 categories: ["ai"]

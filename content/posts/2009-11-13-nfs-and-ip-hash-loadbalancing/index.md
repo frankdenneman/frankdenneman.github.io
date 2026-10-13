@@ -5,6 +5,7 @@ url: "/2009-11-13-nfs-and-ip-hash-loadbalancing/"
 aliases:
   - "/posts/2009-11-13-nfs-and-ip-hash-loadbalancing/"
   - "/2009-11-13-NFS-and-IP-HASH-loadbalancing/"
+  - "/2009/11/13/nfs-and-ip-hash-loadbalancing/"
 categories: 
   - "networking"
 tags: 

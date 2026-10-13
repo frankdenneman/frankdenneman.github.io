@@ -5,6 +5,7 @@ url: "/2012-10-19-vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enha
 aliases:
   - "/posts/2012-10-19-vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements/"
   - "/2012-10-19-vSphere-5-1-Storage-DRS-load-balancing-and-SIOC-threshold-enhancements/"
+  - "/2012/10/19/vsphere-5-1-storage-drs-load-balancing-and-sioc-threshold-enhancements/"
 categories: 
   - "sioc"
   - "sdrs"

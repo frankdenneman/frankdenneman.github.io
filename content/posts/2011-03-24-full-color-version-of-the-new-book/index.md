@@ -5,6 +5,7 @@ url: "/2011-03-24-full-color-version-of-the-new-book/"
 aliases:
   - "/posts/2011-03-24-full-color-version-of-the-new-book/"
   - "/2011-03-24-Full-color-version-of-the-new-book/"
+  - "/2011/03/24/full-color-version-of-the-new-book/"
 categories: 
   - "vmware"
 tags: 

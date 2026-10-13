@@ -5,6 +5,7 @@ url: "/2016-07-06-introduction-2016-numa-deep-dive-series/"
 aliases:
   - "/posts/2016-07-06-introduction-2016-numa-deep-dive-series/"
   - "/2016-07-06-Introduction-2016-NUMA-Deep-Dive-Series/"
+  - "/2016/07/06/introduction-2016-numa-deep-dive-series/"
 categories: 
   - "numa"
   - "vmware"

@@ -5,6 +5,7 @@ url: "/2017-07-26-vmware-cloud-aws-predictable-capacity-provisioning/"
 aliases:
   - "/posts/2017-07-26-vmware-cloud-aws-predictable-capacity-provisioning/"
   - "/2017-07-26-VMware-Cloud-AWS-Predictable-Capacity-Provisioning/"
+  - "/2017/07/26/vmware-cloud-aws-predictable-capacity-provisioning/"
 categories: 
   - "vmware"
 ---

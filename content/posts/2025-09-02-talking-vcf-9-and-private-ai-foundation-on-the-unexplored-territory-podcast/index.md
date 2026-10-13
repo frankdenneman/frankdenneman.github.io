@@ -5,6 +5,7 @@ url: "/2025-09-02-talking-vcf-9-and-private-ai-foundation-on-the-unexplored-terr
 aliases:
   - "/posts/2025-09-02-talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast/"
   - "/2025-09-02-Talking-VCF-9-and-Private-AI-Foundation-on-the-Unexplored-Territory-Podcast/"
+  - "/2025/09/02/talking-vcf-9-and-private-ai-foundation-on-the-unexplored-territory-podcast/"
 categories: 
   - "ai"
 ---

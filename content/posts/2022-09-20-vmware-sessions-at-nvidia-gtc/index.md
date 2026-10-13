@@ -5,6 +5,7 @@ url: "/2022-09-20-vmware-sessions-at-nvidia-gtc/"
 aliases:
   - "/posts/2022-09-20-vmware-sessions-at-nvidia-gtc/"
   - "/2022-09-20-VMware-Sessions-at-NVIDIA-GTC/"
+  - "/2022/09/20/vmware-sessions-at-nvidia-gtc/"
 categories: 
   - "ai"
 coverImage: "vSphere8MLAcceleratorspectrum.png"

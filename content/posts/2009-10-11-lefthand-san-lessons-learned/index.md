@@ -5,6 +5,7 @@ url: "/2009-10-11-lefthand-san-lessons-learned/"
 aliases:
   - "/posts/2009-10-11-lefthand-san-lessons-learned/"
   - "/2009-10-11-Lefthand-SAN-Lessons-learned/"
+  - "/2009/10/11/lefthand-san-lessons-learned/"
 categories: 
   - "storage"
 tags: 

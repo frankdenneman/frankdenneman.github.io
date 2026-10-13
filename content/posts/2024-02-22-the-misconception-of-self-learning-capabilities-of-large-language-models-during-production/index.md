@@ -5,6 +5,7 @@ url: "/2024-02-22-the-misconception-of-self-learning-capabilities-of-large-langu
 aliases:
   - "/posts/2024-02-22-the-misconception-of-self-learning-capabilities-of-large-language-models-during-production/"
   - "/2024-02-22-The-misconception-of-self-learning-capabilities-of-Large-Language-Models-during-Production/"
+  - "/2024/02/22/the-misconception-of-self-learning-capabilities-of-large-language-models-during-production/"
 categories: 
   - "ai"
 coverImage: "1699963356933.jpeg"

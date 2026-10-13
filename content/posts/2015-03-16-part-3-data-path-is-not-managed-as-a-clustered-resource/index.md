@@ -5,6 +5,7 @@ url: "/2015-03-16-part-3-data-path-is-not-managed-as-a-clustered-resource/"
 aliases:
   - "/posts/2015-03-16-part-3-data-path-is-not-managed-as-a-clustered-resource/"
   - "/2015-03-16-Part-3-Data-path-is-not-managed-as-a-clustered-resource/"
+  - "/2015/03/16/part-3-data-path-is-not-managed-as-a-clustered-resource/"
 categories: 
   - "storage"
 ---

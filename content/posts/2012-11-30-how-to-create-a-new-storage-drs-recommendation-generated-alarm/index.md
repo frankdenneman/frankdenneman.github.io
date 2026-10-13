@@ -5,6 +5,7 @@ url: "/2012-11-30-how-to-create-a-new-storage-drs-recommendation-generated-alarm
 aliases:
   - "/posts/2012-11-30-how-to-create-a-new-storage-drs-recommendation-generated-alarm/"
   - "/2012-11-30-How-to-create-a-New-Storage-DRS-recommendation-generated-alarm/"
+  - "/2012/11/30/how-to-create-a-new-storage-drs-recommendation-generated-alarm/"
 categories: 
   - "sdrs"
 tags: 

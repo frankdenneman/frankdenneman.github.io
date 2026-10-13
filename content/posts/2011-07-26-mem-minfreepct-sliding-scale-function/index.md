@@ -5,6 +5,7 @@ url: "/2011-07-26-mem-minfreepct-sliding-scale-function/"
 aliases:
   - "/posts/2011-07-26-mem-minfreepct-sliding-scale-function/"
   - "/2011-07-26-Mem-MinFreePct-sliding-scale-function/"
+  - "/2011/07/26/mem-minfreepct-sliding-scale-function/"
 categories: 
   - "memory"
 tags: 

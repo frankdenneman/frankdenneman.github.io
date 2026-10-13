@@ -5,6 +5,7 @@ url: "/2017-10-03-vsphere-focused-guide-intel-xeon-scalable-family-memory-subsys
 aliases:
   - "/posts/2017-10-03-vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem/"
   - "/2017-10-03-vSphere-Focused-Guide-Intel-Xeon-Scalable-Family-Memory-Subsystem/"
+  - "/2017/10/03/vsphere-focused-guide-intel-xeon-scalable-family-memory-subsystem/"
 categories: 
   - "numa"
   - "vmware"

@@ -5,6 +5,7 @@ url: "/2012-02-09-storage-drs-io-load-balancing-and-array-based-auto-tiering/"
 aliases:
   - "/posts/2012-02-09-storage-drs-io-load-balancing-and-array-based-auto-tiering/"
   - "/2012-02-09-Storage-DRS-io-load-balancing-and-Array-based-Auto-Tiering/"
+  - "/2012/02/09/storage-drs-io-load-balancing-and-array-based-auto-tiering/"
 categories: 
   - "sdrs"
 ---

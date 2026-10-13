@@ -5,6 +5,7 @@ url: "/2013-02-11-error-1-in-opening-reading-the-slot-file-error-in-storagerm-lo
 aliases:
   - "/posts/2013-02-11-error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc/"
   - "/2013-02-11-Error-1-in-opening-reading-the-slot-file-error-in-storageRM-log-SIOC/"
+  - "/2013/02/11/error-1-in-opening-reading-the-slot-file-error-in-storagerm-log-sioc/"
 categories: 
   - "sioc"
 ---

@@ -5,6 +5,7 @@ url: "/2024-01-16-retrieval-augmented-generation-basics-for-the-data-center-admi
 aliases:
   - "/posts/2024-01-16-retrieval-augmented-generation-basics-for-the-data-center-admin/"
   - "/2024-01-16-Retrieval-Augmented-Generation-Basics-for-the-Data-Center-Admin/"
+  - "/2024/01/16/retrieval-augmented-generation-basics-for-the-data-center-admin/"
 draft: false
 slug: "retrieval-augmented-generation-basics-for-the-data-center-admin"
 categories: ["ai"]

@@ -5,6 +5,7 @@ url: "/2012-10-05-from-the-archives-an-old-isometric-diagram/"
 aliases:
   - "/posts/2012-10-05-from-the-archives-an-old-isometric-diagram/"
   - "/2012-10-05-From-the-archives-An-old-Isometric-diagram/"
+  - "/2012/10/05/from-the-archives-an-old-isometric-diagram/"
 categories: 
   - "miscellaneous"
 ---

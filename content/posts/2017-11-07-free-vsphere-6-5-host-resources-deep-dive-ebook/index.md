@@ -5,6 +5,7 @@ url: "/2017-11-07-free-vsphere-6-5-host-resources-deep-dive-ebook/"
 aliases:
   - "/posts/2017-11-07-free-vsphere-6-5-host-resources-deep-dive-ebook/"
   - "/2017-11-07-Free-vSphere-6-5-Host-Resources-Deep-Dive-ebook/"
+  - "/2017/11/07/free-vsphere-6-5-host-resources-deep-dive-ebook/"
 categories: 
   - "deep-dive"
   - "vmware"

@@ -5,6 +5,7 @@ url: "/2013-11-05-send-f11-key-to-nested-esxi-on-mac/"
 aliases:
   - "/posts/2013-11-05-send-f11-key-to-nested-esxi-on-mac/"
   - "/2013-11-05-Send-F11-key-to-nested-ESXi-on-Mac/"
+  - "/2013/11/05/send-f11-key-to-nested-esxi-on-mac/"
 categories: 
   - "vmware"
 ---

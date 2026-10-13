@@ -5,6 +5,7 @@ url: "/2016-07-01-top-5-vblog/"
 aliases:
   - "/posts/2016-07-01-top-5-vblog/"
   - "/2016-07-01-Top-5-vBlog/"
+  - "/2016/07/01/top-5-vblog/"
 categories: 
   - "miscellaneous"
 ---

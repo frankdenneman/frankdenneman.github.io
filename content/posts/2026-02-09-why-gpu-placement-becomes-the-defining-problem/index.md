@@ -15,6 +15,7 @@ concepts: ["GPU Placement", "AI Infrastructure", "Scheduling"]
 aliases:
   - "/posts/2026-02-09-why-gpu-placement-becomes-the-defining-problem/"
   - "/2026-02-09-Why-GPU-Placement-Becomes-the-Defining-Problem/"
+  - "/2026/02/09/why-gpu-placement-becomes-the-defining-problem/"
 ---
 
 ## Architecting AI Infrastructure Series - Part 1

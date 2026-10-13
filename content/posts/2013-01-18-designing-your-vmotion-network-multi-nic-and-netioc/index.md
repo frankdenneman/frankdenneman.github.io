@@ -5,6 +5,7 @@ url: "/2013-01-18-designing-your-vmotion-network-multi-nic-and-netioc/"
 aliases:
   - "/posts/2013-01-18-designing-your-vmotion-network-multi-nic-and-netioc/"
   - "/2013-01-18-Designing-your-vMotion-network-Multi-NIC-and-NetIOC/"
+  - "/2013/01/18/designing-your-vmotion-network-multi-nic-and-netioc/"
 categories: 
   - "vmotion"
 ---

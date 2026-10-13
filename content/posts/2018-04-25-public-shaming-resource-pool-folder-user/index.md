@@ -5,6 +5,7 @@ url: "/2018-04-25-public-shaming-resource-pool-folder-user/"
 aliases:
   - "/posts/2018-04-25-public-shaming-resource-pool-folder-user/"
   - "/2018-04-25-public-Shaming-Resource-Pool-Folder-User/"
+  - "/2018/04/25/public-shaming-resource-pool-folder-user/"
 categories: 
   - "vmware"
 ---

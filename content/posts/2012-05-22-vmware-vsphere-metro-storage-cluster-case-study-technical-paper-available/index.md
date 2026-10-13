@@ -5,6 +5,7 @@ url: "/2012-05-22-vmware-vsphere-metro-storage-cluster-case-study-technical-pape
 aliases:
   - "/posts/2012-05-22-vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available/"
   - "/2012-05-22-VMware-vSphere-Metro-Storage-Cluster-Case-Study-Technical-Paper-available/"
+  - "/2012/05/22/vmware-vsphere-metro-storage-cluster-case-study-technical-paper-available/"
 categories: 
   - "vmware"
 ---

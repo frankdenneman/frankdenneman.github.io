@@ -5,6 +5,7 @@ url: "/2009-08-25-deploying-volumes-with-command-line-interface-lefthand-cliq-2/
 aliases:
   - "/posts/2009-08-25-deploying-volumes-with-command-line-interface-lefthand-cliq-2/"
   - "/2009-08-25-Deploying-Volumes-with-command-line-interface-Lefthand-CLIQ-2/"
+  - "/2009/08/25/deploying-volumes-with-command-line-interface-lefthand-cliq-2/"
 categories: 
   - "storage"
 tags: 

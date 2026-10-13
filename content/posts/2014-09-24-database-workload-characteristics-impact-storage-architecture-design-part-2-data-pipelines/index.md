@@ -5,6 +5,7 @@ url: "/2014-09-24-database-workload-characteristics-impact-storage-architecture-
 aliases:
   - "/posts/2014-09-24-database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines/"
   - "/2014-09-24-Database-workload-characteristics-impact-storage-architecture-design-part-2-Data-pipelines/"
+  - "/2014/09/24/database-workload-characteristics-impact-storage-architecture-design-part-2-data-pipelines/"
 categories: 
   - "miscellaneous"
 ---

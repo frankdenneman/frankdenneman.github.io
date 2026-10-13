@@ -5,6 +5,7 @@ url: "/2012-12-20-multi-nic-vmotion-failover-order-configuration/"
 aliases:
   - "/posts/2012-12-20-multi-nic-vmotion-failover-order-configuration/"
   - "/2012-12-20-Multi-NIC-vMotion-failover-order-configuration/"
+  - "/2012/12/20/multi-nic-vmotion-failover-order-configuration/"
 categories: 
   - "vmotion"
 ---

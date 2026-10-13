@@ -5,6 +5,7 @@ url: "/2012-03-30-io-analyzer-v1-1/"
 aliases:
   - "/posts/2012-03-30-io-analyzer-v1-1/"
   - "/2012-03-30-io-Analyzer-v1-1/"
+  - "/2012/03/30/io-analyzer-v1-1/"
 categories: 
   - "vmware"
 ---

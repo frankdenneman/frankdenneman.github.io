@@ -5,6 +5,7 @@ url: "/2010-08-25-vsphere-4-1-ha-and-drs-deepdive-book/"
 aliases:
   - "/posts/2010-08-25-vsphere-4-1-ha-and-drs-deepdive-book/"
   - "/2010-08-25-vSphere-4-1-HA-and-DRS-deepdive-book/"
+  - "/2010/08/25/vsphere-4-1-ha-and-drs-deepdive-book/"
 categories: 
   - "drs"
 ---

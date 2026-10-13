@@ -5,6 +5,7 @@ url: "/2023-03-21-my-picks-for-nvidia-gtc-spring-2023/"
 aliases:
   - "/posts/2023-03-21-my-picks-for-nvidia-gtc-spring-2023/"
   - "/2023-03-21-My-Picks-for-NVIDIA-GTC-Spring-2023/"
+  - "/2023/03/21/my-picks-for-nvidia-gtc-spring-2023/"
 categories: 
   - "ai"
 coverImage: "Screenshot-2023-03-14-at-09.05.54.png"

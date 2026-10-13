@@ -5,6 +5,7 @@ url: "/2016-05-30-ntpq-p-connection-refused-error-message/"
 aliases:
   - "/posts/2016-05-30-ntpq-p-connection-refused-error-message/"
   - "/2016-05-30-ntpq-p-Connection-Refused-Error-Message/"
+  - "/2016/05/30/ntpq-p-connection-refused-error-message/"
 categories: 
   - "vmware"
 ---

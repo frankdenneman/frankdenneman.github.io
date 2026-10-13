@@ -5,6 +5,7 @@ url: "/2013-02-28-distribution-of-resources-based-on-shares-in-a-resource-pool-e
 aliases:
   - "/posts/2013-02-28-distribution-of-resources-based-on-shares-in-a-resource-pool-environment/"
   - "/2013-02-28-Distribution-of-resources-based-on-shares-in-a-Resource-pool-environment/"
+  - "/2013/02/28/distribution-of-resources-based-on-shares-in-a-resource-pool-environment/"
 categories: 
   - "drs"
 ---

@@ -5,6 +5,7 @@ url: "/2017-08-15-register-now-vmware-cloud-aws-technical-deep-dive-session/"
 aliases:
   - "/posts/2017-08-15-register-now-vmware-cloud-aws-technical-deep-dive-session/"
   - "/2017-08-15-Register-now-VMware-Cloud-AWS-Technical-Deep-Dive-Session/"
+  - "/2017/08/15/register-now-vmware-cloud-aws-technical-deep-dive-session/"
 categories: 
   - "vmware"
 ---

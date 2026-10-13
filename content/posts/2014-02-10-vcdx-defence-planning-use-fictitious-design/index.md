@@ -5,6 +5,7 @@ url: "/2014-02-10-vcdx-defence-planning-use-fictitious-design/"
 aliases:
   - "/posts/2014-02-10-vcdx-defence-planning-use-fictitious-design/"
   - "/2014-02-10-VCDX-Defence-planning-use-fictitious-design/"
+  - "/2014/02/10/vcdx-defence-planning-use-fictitious-design/"
 categories: 
   - "vcdx"
 ---

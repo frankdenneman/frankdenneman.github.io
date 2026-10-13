@@ -5,6 +5,7 @@ url: "/2010-11-18-the-impact-of-qos-network-traffic-on-vm-performance/"
 aliases:
   - "/posts/2010-11-18-the-impact-of-qos-network-traffic-on-vm-performance/"
   - "/2010-11-18-The-impact-of-QoS-network-traffic-on-VM-performance/"
+  - "/2010/11/18/the-impact-of-qos-network-traffic-on-vm-performance/"
 categories: 
   - "drs"
 tags: 

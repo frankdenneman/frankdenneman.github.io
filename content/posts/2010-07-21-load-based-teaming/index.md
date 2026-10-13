@@ -5,6 +5,7 @@ url: "/2010-07-21-load-based-teaming/"
 aliases:
   - "/posts/2010-07-21-load-based-teaming/"
   - "/2010-07-21-Load-Based-Teaming/"
+  - "/2010/07/21/load-based-teaming/"
 categories: 
   - "networking"
 tags: 

@@ -5,6 +5,7 @@ url: "/2013-02-12-vsphere-storage-area-network-traffic-system-network-resource-p
 aliases:
   - "/posts/2013-02-12-vsphere-storage-area-network-traffic-system-network-resource-pool-netioc/"
   - "/2013-02-12-vSphere-Storage-Area-Network-Traffic-system-network-resource-pool-NetIOC/"
+  - "/2013/02/12/vsphere-storage-area-network-traffic-system-network-resource-pool-netioc/"
 ---
 
 After posting the [Network I/O Control primer](/2013-01-17-a-primer-on-network-io-control/ "A primer on Network I/O Control") I received a couple of questions about the vSAN traffic system network resource pool, such as:

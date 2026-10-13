@@ -5,6 +5,7 @@ url: "/2010-05-18-resource-pools-memory-reservations/"
 aliases:
   - "/posts/2010-05-18-resource-pools-memory-reservations/"
   - "/2010-05-18-Resource-pools-memory-reservations/"
+  - "/2010/05/18/resource-pools-memory-reservations/"
 categories: 
   - "drs"
   - "memory"

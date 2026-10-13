@@ -5,6 +5,7 @@ url: "/2012-08-28-vsphere-5-1-clustering-deepdive-available/"
 aliases:
   - "/posts/2012-08-28-vsphere-5-1-clustering-deepdive-available/"
   - "/2012-08-28-vSphere-5-1-Clustering-Deepdive-available/"
+  - "/2012/08/28/vsphere-5-1-clustering-deepdive-available/"
 categories: 
   - "vmware"
 tags: 

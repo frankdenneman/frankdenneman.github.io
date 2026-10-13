@@ -5,6 +5,7 @@ url: "/2013-02-26-do-you-use-vapps/"
 aliases:
   - "/posts/2013-02-26-do-you-use-vapps/"
   - "/2013-02-26-Do-you-use-vApps/"
+  - "/2013/02/26/do-you-use-vapps/"
 categories: 
   - "drs"
 ---

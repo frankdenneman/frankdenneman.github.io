@@ -5,6 +5,7 @@ url: "/2022-11-28-unexplored-territory-podcast-32-it-giving-mclaren-racing-the-e
 aliases:
   - "/posts/2022-11-28-unexplored-territory-podcast-32-it-giving-mclaren-racing-the-edge/"
   - "/2022-11-28-Unexplored-Territory-Podcast-32-IT-giving-McLaren-Racing-the-edge/"
+  - "/2022/11/28/unexplored-territory-podcast-32-it-giving-mclaren-racing-the-edge/"
 categories: 
   - "podcast"
 coverImage: "Lando-scaled.jpg"

@@ -5,6 +5,7 @@ url: "/2023-08-17-my-sessions-at-vmware-explore-2023-las-vegas/"
 aliases:
   - "/posts/2023-08-17-my-sessions-at-vmware-explore-2023-las-vegas/"
   - "/2023-08-17-My-Sessions-at-VMware-Explore-2023-Las-Vegas/"
+  - "/2023/08/17/my-sessions-at-vmware-explore-2023-las-vegas/"
 categories: 
   - "ai"
 coverImage: "Screenshot-2023-08-17-at-14.18.57.png"

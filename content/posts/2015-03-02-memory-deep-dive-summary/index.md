@@ -5,6 +5,7 @@ url: "/2015-03-02-memory-deep-dive-summary/"
 aliases:
   - "/posts/2015-03-02-memory-deep-dive-summary/"
   - "/2015-03-02-Memory-Deep-Dive-Summary/"
+  - "/2015/03/02/memory-deep-dive-summary/"
 categories: 
   - "memory"
 ---

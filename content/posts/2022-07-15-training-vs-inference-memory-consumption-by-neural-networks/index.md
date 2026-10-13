@@ -5,6 +5,7 @@ url: "/2022-07-15-training-vs-inference-memory-consumption-by-neural-networks/"
 aliases:
   - "/posts/2022-07-15-training-vs-inference-memory-consumption-by-neural-networks/"
   - "/2022-07-15-Training-vs-Inference-Memory-Consumption-by-Neural-Networks/"
+  - "/2022/07/15/training-vs-inference-memory-consumption-by-neural-networks/"
 categories: 
   - "ai"
 coverImage: "1st-bllock-CNN.png"

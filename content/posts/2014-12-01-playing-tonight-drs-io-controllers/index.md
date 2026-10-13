@@ -5,6 +5,7 @@ url: "/2014-12-01-playing-tonight-drs-io-controllers/"
 aliases:
   - "/posts/2014-12-01-playing-tonight-drs-io-controllers/"
   - "/2014-12-01-Playing-tonight-DRS-IO-controllers/"
+  - "/2014/12/01/playing-tonight-drs-io-controllers/"
 categories: 
   - "drs"
   - "ha"

@@ -5,6 +5,7 @@ url: "/2024-10-30-building-an-efficient-ai-ingestion-pipeline-data-ingestion-str
 aliases:
   - "/posts/2024-10-30-building-an-efficient-ai-ingestion-pipeline-data-ingestion-strategies/"
   - "/2024-10-30-Building-an-Efficient-AI-Ingestion-Pipeline-Data-Ingestion-Strategies/"
+  - "/2024/10/30/building-an-efficient-ai-ingestion-pipeline-data-ingestion-strategies/"
 draft: false
 categories: ["ai"]
 tags: ["RAG", "LLM", "Ingestion", "Vector Database", "Batch", "Streaming", "MLOps"]

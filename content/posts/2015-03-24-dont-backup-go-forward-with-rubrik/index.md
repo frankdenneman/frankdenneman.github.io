@@ -6,6 +6,7 @@ aliases:
   - "/posts/2015-03-24-dont-backup-go-forward-with-rubrik/"
   - "/2015-03-24-Dont-backup-Go-forward-with-Rubrik/"
   - "/2015-03-24-dont-backup-Go-forward-with-Rubrik/"
+  - "/2015/03/24/dont-backup-go-forward-with-rubrik/"
 categories: 
   - "miscellaneous"
 ---

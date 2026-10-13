@@ -5,6 +5,7 @@ url: "/2010-03-08-drs-resource-distribution-chart/"
 aliases:
   - "/posts/2010-03-08-drs-resource-distribution-chart/"
   - "/2010-03-08-DRS-Resource-Distribution-Chart/"
+  - "/2010/03/08/drs-resource-distribution-chart/"
 categories: 
   - "drs"
 tags: 

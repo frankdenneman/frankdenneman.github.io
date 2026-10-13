@@ -12,6 +12,7 @@ track: "AI Infrastructure"
 aliases:
   - "/posts/2026-03-06-MIG-Mode"
   - "/2026-03-06-MIG-Partitioning-Placement-Geometry-and-Stranded-Capacity/"
+  - "/2026/03/06/mig-partitioning-placement-geometry-and-stranded-capacity/"
 ---
 ## Architecting AI Infrastructure — Part 8
 

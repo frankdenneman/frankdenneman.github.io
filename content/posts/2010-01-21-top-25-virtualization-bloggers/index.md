@@ -5,6 +5,7 @@ url: "/2010-01-21-top-25-virtualization-bloggers/"
 aliases:
   - "/posts/2010-01-21-top-25-virtualization-bloggers/"
   - "/2010-01-21-Top-25-Virtualization-Bloggers/"
+  - "/2010/01/21/top-25-virtualization-bloggers/"
 categories: 
   - "vmware"
 ---

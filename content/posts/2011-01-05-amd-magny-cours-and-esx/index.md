@@ -5,6 +5,7 @@ url: "/2011-01-05-amd-magny-cours-and-esx/"
 aliases:
   - "/posts/2011-01-05-amd-magny-cours-and-esx/"
   - "/2011-01-05-AMD-Magny-Cours-and-ESX/"
+  - "/2011/01/05/amd-magny-cours-and-esx/"
 categories: 
   - "numa"
   - "vmware"

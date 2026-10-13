@@ -5,6 +5,7 @@ url: "/2018-09-06-tech-paper-drs-enhancements-in-vsphere-6-7/"
 aliases:
   - "/posts/2018-09-06-tech-paper-drs-enhancements-in-vsphere-6-7/"
   - "/2018-09-06-Tech-Paper-DRS-Enhancements-in-vSphere-6-7/"
+  - "/2018/09/06/tech-paper-drs-enhancements-in-vsphere-6-7/"
 categories: 
   - "vmware"
 ---

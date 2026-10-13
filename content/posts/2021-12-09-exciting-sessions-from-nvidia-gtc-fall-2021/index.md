@@ -5,6 +5,7 @@ url: "/2021-12-09-exciting-sessions-from-nvidia-gtc-fall-2021/"
 aliases:
   - "/posts/2021-12-09-exciting-sessions-from-nvidia-gtc-fall-2021/"
   - "/2021-12-09-Exciting-Sessions-from-NVIDIA-GTC-Fall-2021/"
+  - "/2021/12/09/exciting-sessions-from-nvidia-gtc-fall-2021/"
 categories: 
   - "ai"
 tags: 

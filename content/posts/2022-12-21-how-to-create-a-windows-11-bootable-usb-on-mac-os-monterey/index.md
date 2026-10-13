@@ -5,6 +5,7 @@ url: "/2022-12-21-how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey/"
 aliases:
   - "/posts/2022-12-21-how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey/"
   - "/2022-12-21-How-to-Create-a-Windows-11-Bootable-USB-on-Mac-OS-Monterey/"
+  - "/2022/12/21/how-to-create-a-windows-11-bootable-usb-on-mac-os-monterey/"
 categories: 
   - "miscellaneous"
 coverImage: "diskutil-list-external.png"

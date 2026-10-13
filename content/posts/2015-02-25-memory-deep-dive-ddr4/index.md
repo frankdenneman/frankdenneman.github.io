@@ -5,6 +5,7 @@ url: "/2015-02-25-memory-deep-dive-ddr4/"
 aliases:
   - "/posts/2015-02-25-memory-deep-dive-ddr4/"
   - "/2015-02-25-Memory-Deep-Dive-DDR4/"
+  - "/2015/02/25/memory-deep-dive-ddr4/"
 categories: 
   - "memory"
 ---

@@ -5,6 +5,7 @@ url: "/2013-02-01-how-to-setup-multi-nic-vmotion-on-a-distributed-vswitch/"
 aliases:
   - "/posts/2013-02-01-how-to-setup-multi-nic-vmotion-on-a-distributed-vswitch/"
   - "/2013-02-01-How-to-setup-Multi-NIC-vMotion-on-a-distributed-vSwitch/"
+  - "/2013/02/01/how-to-setup-multi-nic-vmotion-on-a-distributed-vswitch/"
 categories: 
   - "networking"
   - "vmotion"

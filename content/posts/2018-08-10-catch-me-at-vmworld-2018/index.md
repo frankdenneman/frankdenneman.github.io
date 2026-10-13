@@ -5,6 +5,7 @@ url: "/2018-08-10-catch-me-at-vmworld-2018/"
 aliases:
   - "/posts/2018-08-10-catch-me-at-vmworld-2018/"
   - "/2018-08-10-Catch-me-at-VMworld-2018/"
+  - "/2018/08/10/catch-me-at-vmworld-2018/"
 categories: 
   - "vmware"
 tags: 

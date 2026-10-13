@@ -5,6 +5,7 @@ url: "/2017-07-24-kindle-ebook-host-deep-dive-available/"
 aliases:
   - "/posts/2017-07-24-kindle-ebook-host-deep-dive-available/"
   - "/2017-07-24-Kindle-Ebook-Host-Deep-Dive-Available/"
+  - "/2017/07/24/kindle-ebook-host-deep-dive-available/"
 categories: 
   - "vmware"
 ---

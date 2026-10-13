@@ -12,6 +12,7 @@ track: "AI Infrastructure"
 aliases:
   - "/posts/2026-03-16-why-multi-gpu-requires-topology-awareness"
   - "/2026-03-16-Why-Multi-GPU-Requires-Topology-Awareness/"
+  - "/2026/03/16/why-multi-gpu-requires-topology-awareness/"
 ---
 
 ## Architecting AI Infrastructure Series - Part 9

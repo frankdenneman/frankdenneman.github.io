@@ -5,6 +5,7 @@ url: "/2015-04-09-db-deepdive-part-6-query-plans-intermediate-results-tempdb-and
 aliases:
   - "/posts/2015-04-09-db-deepdive-part-6-query-plans-intermediate-results-tempdb-and-storage-performance/"
   - "/2015-04-09-DB-Deepdive-part-6-Query-Plans-Intermediate-Results-tempdb-and-Storage-Performance/"
+  - "/2015/04/09/db-deepdive-part-6-query-plans-intermediate-results-tempdb-and-storage-performance/"
 categories: 
   - "miscellaneous"
 ---

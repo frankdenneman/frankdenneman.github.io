@@ -5,6 +5,7 @@ url: "/2023-05-30-47-how-vmware-accelerates-customers-achieving-their-net-zero-c
 aliases:
   - "/posts/2023-05-30-47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal/"
   - "/2023-05-30-47-How-VMware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal/"
+  - "/2023/05/30/47-how-vmware-accelerates-customers-achieving-their-net-zero-carbon-emissions-goal/"
 categories: 
   - "podcast"
 coverImage: "UT47.jpeg"

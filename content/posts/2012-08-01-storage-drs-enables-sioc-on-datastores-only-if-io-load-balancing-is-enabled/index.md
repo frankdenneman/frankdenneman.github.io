@@ -5,6 +5,7 @@ url: "/2012-08-01-storage-drs-enables-sioc-on-datastores-only-if-io-load-balanci
 aliases:
   - "/posts/2012-08-01-storage-drs-enables-sioc-on-datastores-only-if-io-load-balancing-is-enabled/"
   - "/2012-08-01-Storage-DRS-enables-SIOC-on-datastores-only-if-io-load-balancing-is-enabled/"
+  - "/2012/08/01/storage-drs-enables-sioc-on-datastores-only-if-io-load-balancing-is-enabled/"
 categories: 
   - "sioc"
   - "sdrs"

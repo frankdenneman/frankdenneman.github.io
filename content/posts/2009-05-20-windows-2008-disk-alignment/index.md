@@ -5,6 +5,7 @@ url: "/2009-05-20-windows-2008-disk-alignment/"
 aliases:
   - "/posts/2009-05-20-windows-2008-disk-alignment/"
   - "/2009-05-20-Windows-2008-disk-alignment/"
+  - "/2009/05/20/windows-2008-disk-alignment/"
 categories: 
   - "vmware"
 tags: 

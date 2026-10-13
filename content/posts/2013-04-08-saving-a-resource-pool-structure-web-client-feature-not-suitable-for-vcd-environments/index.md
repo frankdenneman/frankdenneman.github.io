@@ -5,6 +5,7 @@ url: "/2013-04-08-saving-a-resource-pool-structure-web-client-feature-not-suitab
 aliases:
   - "/posts/2013-04-08-saving-a-resource-pool-structure-web-client-feature-not-suitable-for-vcd-environments/"
   - "/2013-04-08-Saving-a-Resource-Pool-Structure-web-client-feature-not-suitable-for-vCD-environments/"
+  - "/2013/04/08/saving-a-resource-pool-structure-web-client-feature-not-suitable-for-vcd-environments/"
 categories: 
   - "drs"
 ---

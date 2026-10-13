@@ -5,6 +5,7 @@ url: "/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/"
 aliases:
   - "/posts/2023-05-10-vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/"
   - "/2023-05-10-vSphere-ML-Accelerator-Deep-Dive-Fractional-and-Full-GPUs/"
+  - "/2023/05/10/vsphere-ml-accelerator-deep-dive-fractional-and-full-gpus/"
 categories: 
   - "ai"
 coverImage: "MIG-Architecture-100-DPI.png"

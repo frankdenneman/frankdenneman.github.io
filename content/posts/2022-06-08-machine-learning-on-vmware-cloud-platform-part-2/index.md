@@ -5,6 +5,7 @@ url: "/2022-06-08-machine-learning-on-vmware-cloud-platform-part-2/"
 aliases:
   - "/posts/2022-06-08-machine-learning-on-vmware-cloud-platform-part-2/"
   - "/2022-06-08-MACHINE-LEARNING-ON-VMWARE-cloud-PLATFORM-PART-2/"
+  - "/2022/06/08/machine-learning-on-vmware-cloud-platform-part-2/"
 categories: 
   - "ai"
 coverImage: "ML-Infrastructure-full-png.png"

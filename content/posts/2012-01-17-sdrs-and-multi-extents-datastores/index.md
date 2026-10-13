@@ -5,6 +5,7 @@ url: "/2012-01-17-sdrs-and-multi-extents-datastores/"
 aliases:
   - "/posts/2012-01-17-sdrs-and-multi-extents-datastores/"
   - "/2012-01-17-sdrs-and-Multi-extents-datastores/"
+  - "/2012/01/17/sdrs-and-multi-extents-datastores/"
 categories: 
   - "sdrs"
 tags: 

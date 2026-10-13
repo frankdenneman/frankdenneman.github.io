@@ -5,6 +5,7 @@ url: "/2016-06-03-home-lab-fundamentals-time-sync/"
 aliases:
   - "/posts/2016-06-03-home-lab-fundamentals-time-sync/"
   - "/2016-06-03-Home-Lab-Fundamentals-Time-Sync/"
+  - "/2016/06/03/home-lab-fundamentals-time-sync/"
 categories: 
   - "home-lab"
   - "vmware"

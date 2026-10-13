@@ -5,6 +5,7 @@ url: "/2012-08-22-vm-templates-and-storage-drs/"
 aliases:
   - "/posts/2012-08-22-vm-templates-and-storage-drs/"
   - "/2012-08-22-VM-templates-and-Storage-DRS/"
+  - "/2012/08/22/vm-templates-and-storage-drs/"
 categories: 
   - "sdrs"
 ---

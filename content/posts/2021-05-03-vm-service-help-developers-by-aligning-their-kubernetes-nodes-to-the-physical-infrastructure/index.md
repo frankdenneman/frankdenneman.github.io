@@ -5,6 +5,7 @@ url: "/2021-05-03-vm-service-help-developers-by-aligning-their-kubernetes-nodes-
 aliases:
   - "/posts/2021-05-03-vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure/"
   - "/2021-05-03-VM-Service-Help-Developers-by-Aligning-Their-Kubernetes-Nodes-to-the-Physical-Infrastructure/"
+  - "/2021/05/03/vm-service-help-developers-by-aligning-their-kubernetes-nodes-to-the-physical-infrastructure/"
 categories: 
   - "kubernetes"
   - "numa"

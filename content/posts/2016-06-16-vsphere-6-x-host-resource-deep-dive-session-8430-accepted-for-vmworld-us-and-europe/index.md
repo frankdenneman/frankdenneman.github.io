@@ -5,6 +5,7 @@ url: "/2016-06-16-vsphere-6-x-host-resource-deep-dive-session-8430-accepted-for-
 aliases:
   - "/posts/2016-06-16-vsphere-6-x-host-resource-deep-dive-session-8430-accepted-for-vmworld-us-and-europe/"
   - "/2016-06-16-vSphere-6-x-host-resource-deep-dive-session-8430-accepted-for-VMworld-US-and-Europe/"
+  - "/2016/06/16/vsphere-6-x-host-resource-deep-dive-session-8430-accepted-for-vmworld-us-and-europe/"
 categories: 
   - "vmware"
 ---

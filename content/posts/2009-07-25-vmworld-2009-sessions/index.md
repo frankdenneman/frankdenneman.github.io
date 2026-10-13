@@ -5,6 +5,7 @@ url: "/2009-07-25-vmworld-2009-sessions/"
 aliases:
   - "/posts/2009-07-25-vmworld-2009-sessions/"
   - "/2009-07-25-VMworld-2009-sessions/"
+  - "/2009/07/25/vmworld-2009-sessions/"
 categories: 
   - "vmware"
 tags: 

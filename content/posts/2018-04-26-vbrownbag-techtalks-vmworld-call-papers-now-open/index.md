@@ -5,6 +5,7 @@ url: "/2018-04-26-vbrownbag-techtalks-vmworld-call-papers-now-open/"
 aliases:
   - "/posts/2018-04-26-vbrownbag-techtalks-vmworld-call-papers-now-open/"
   - "/2018-04-26-vBrownBag-Techtalks-VMworld-Call-Papers-now-open/"
+  - "/2018/04/26/vbrownbag-techtalks-vmworld-call-papers-now-open/"
 categories: 
   - "vmware"
 ---

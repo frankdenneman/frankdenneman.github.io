@@ -5,6 +5,7 @@ url: "/2018-07-20-hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws/"
 aliases:
   - "/posts/2018-07-20-hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws/"
   - "/2018-07-20-Hotdog-Not-Hotdog-The-SDDC-of-VMware-Cloud-on-AWS/"
+  - "/2018/07/20/hotdog-not-hotdog-the-sddc-of-vmware-cloud-on-aws/"
 categories: 
   - "vmware"
 ---

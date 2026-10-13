@@ -5,6 +5,7 @@ url: "/2012-10-29-vmotion-bug-fixed-in-vcenter-server-5-1-0a/"
 aliases:
   - "/posts/2012-10-29-vmotion-bug-fixed-in-vcenter-server-5-1-0a/"
   - "/2012-10-29-vMotion-bug-fixed-in-vCenter-server-5-1-0a/"
+  - "/2012/10/29/vmotion-bug-fixed-in-vcenter-server-5-1-0a/"
 categories: 
   - "vmware"
 ---

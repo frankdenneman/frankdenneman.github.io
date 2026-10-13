@@ -5,6 +5,7 @@ url: "/2022-10-25-vsphere-8-cpu-topology-device-assignment/"
 aliases:
   - "/posts/2022-10-25-vsphere-8-cpu-topology-device-assignment/"
   - "/2022-10-25-vSphere-8-CPU-Topology-Device-Assignment/"
+  - "/2022/10/25/vsphere-8-cpu-topology-device-assignment/"
 categories: 
   - "ai"
   - "cpu"

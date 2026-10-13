@@ -5,6 +5,7 @@ url: "/2012-11-02-vsphere-5-1-storage-drs-multi-vm-provisioning-improvement/"
 aliases:
   - "/posts/2012-11-02-vsphere-5-1-storage-drs-multi-vm-provisioning-improvement/"
   - "/2012-11-02-vSphere-5-1-Storage-DRS-Multi-VM-provisioning-improvement/"
+  - "/2012/11/02/vsphere-5-1-storage-drs-multi-vm-provisioning-improvement/"
 categories: 
   - "sdrs"
 tags: 

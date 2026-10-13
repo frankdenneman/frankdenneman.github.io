@@ -5,6 +5,7 @@ url: "/2010-12-01-vm-host-affinity-rules-should-or-must/"
 aliases:
   - "/posts/2010-12-01-vm-host-affinity-rules-should-or-must/"
   - "/2010-12-01-VM-Host-affinity-rules-Should-or-Must/"
+  - "/2010/12/01/vm-host-affinity-rules-should-or-must/"
 categories: 
   - "drs"
 tags: 

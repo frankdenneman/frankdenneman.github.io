@@ -5,6 +5,7 @@ url: "/2023-07-06-vsphere-ml-accelerator-spectrum-deep-dive-installing-the-nvaie
 aliases:
   - "/posts/2023-07-06-vsphere-ml-accelerator-spectrum-deep-dive-installing-the-nvaie-vgpu-driver/"
   - "/2023-07-06-vSphere-ML-Accelerator-Spectrum-Deep-Dive-Installing-the-NVAIE-vGPU-Driver/"
+  - "/2023/07/06/vsphere-ml-accelerator-spectrum-deep-dive-installing-the-nvaie-vgpu-driver/"
 categories: 
   - "ai"
 coverImage: "Install-ESXi-NVIDIA-AIE.png"

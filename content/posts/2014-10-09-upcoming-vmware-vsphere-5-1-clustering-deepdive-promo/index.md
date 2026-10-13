@@ -5,6 +5,7 @@ url: "/2014-10-09-upcoming-vmware-vsphere-5-1-clustering-deepdive-promo/"
 aliases:
   - "/posts/2014-10-09-upcoming-vmware-vsphere-5-1-clustering-deepdive-promo/"
   - "/2014-10-09-upcoming-vmware-vSphere-5-1-Clustering-Deepdive-Promo/"
+  - "/2014/10/09/upcoming-vmware-vsphere-5-1-clustering-deepdive-promo/"
 categories: 
   - "vmware"
 ---

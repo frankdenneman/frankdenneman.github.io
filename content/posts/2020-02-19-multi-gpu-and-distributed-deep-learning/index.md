@@ -5,6 +5,7 @@ url: "/2020-02-19-multi-gpu-and-distributed-deep-learning/"
 aliases:
   - "/posts/2020-02-19-multi-gpu-and-distributed-deep-learning/"
   - "/2020-02-19-Multi-GPU-and-Distributed-Deep-Learning/"
+  - "/2020/02/19/multi-gpu-and-distributed-deep-learning/"
 categories: 
   - "ai"
 tags: 

@@ -5,6 +5,7 @@ url: "/2013-01-21-storage-drs-cluster-shows-error-index-was-out-of-range-must-be
 aliases:
   - "/posts/2013-01-21-storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection-2/"
   - "/2013-01-21-Storage-DRS-Cluster-shows-error-Index-was-out-of-range-Must-be-non-negative-and-less-than-the-size-of-the-collection-2/"
+  - "/2013/01/21/storage-drs-cluster-shows-error-index-was-out-of-range-must-be-non-negative-and-less-than-the-size-of-the-collection-2/"
 categories: 
   - "sdrs"
 ---

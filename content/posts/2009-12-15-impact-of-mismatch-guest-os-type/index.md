@@ -5,6 +5,7 @@ url: "/2009-12-15-impact-of-mismatch-guest-os-type/"
 aliases:
   - "/posts/2009-12-15-impact-of-mismatch-guest-os-type/"
   - "/2009-12-15-Impact-of-mismatch-Guest-OS-type/"
+  - "/2009/12/15/impact-of-mismatch-guest-os-type/"
 categories: 
   - "vmware"
 tags: 

@@ -5,6 +5,7 @@ url: "/2022-07-26-training-vs-inference-numerical-precision/"
 aliases:
   - "/posts/2022-07-26-training-vs-inference-numerical-precision/"
   - "/2022-07-26-Training-vs-Inference-Numerical-Precision/"
+  - "/2022/07/26/training-vs-inference-numerical-precision/"
 categories: 
   - "ai"
 coverImage: "FP16-FP32-BFfloat16-50dpi.png"

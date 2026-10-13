@@ -5,6 +5,7 @@ url: "/2015-03-12-virtual-datacenter-scaling-problems-with-traditional-shared-st
 aliases:
   - "/posts/2015-03-12-virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2/"
   - "/2015-03-12-Virtual-Datacenter-scaling-problems-with-traditional-shared-storage-part-2/"
+  - "/2015/03/12/virtual-datacenter-scaling-problems-with-traditional-shared-storage-part-2/"
 categories: 
   - "vmware"
 ---

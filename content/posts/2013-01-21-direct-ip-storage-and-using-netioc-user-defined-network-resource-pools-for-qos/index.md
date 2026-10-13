@@ -5,6 +5,7 @@ url: "/2013-01-21-direct-ip-storage-and-using-netioc-user-defined-network-resour
 aliases:
   - "/posts/2013-01-21-direct-ip-storage-and-using-netioc-user-defined-network-resource-pools-for-qos/"
   - "/2013-01-21-Direct-IP-storage-and-using-NetIOC-User-defined-network-resource-pools-for-QoS/"
+  - "/2013/01/21/direct-ip-storage-and-using-netioc-user-defined-network-resource-pools-for-qos/"
 categories: 
   - "networking"
 ---

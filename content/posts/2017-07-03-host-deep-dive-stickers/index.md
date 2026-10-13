@@ -5,6 +5,7 @@ url: "/2017-07-03-host-deep-dive-stickers/"
 aliases:
   - "/posts/2017-07-03-host-deep-dive-stickers/"
   - "/2017-07-03-Host-Deep-Dive-Stickers/"
+  - "/2017/07/03/host-deep-dive-stickers/"
 categories: 
   - "deep-dive"
   - "miscellaneous"

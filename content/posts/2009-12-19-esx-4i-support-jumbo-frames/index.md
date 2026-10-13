@@ -5,6 +5,7 @@ url: "/2009-12-19-esx-4i-support-jumbo-frames/"
 aliases:
   - "/posts/2009-12-19-esx-4i-support-jumbo-frames/"
   - "/2009-12-19-ESX-4i-support-Jumbo-Frames/"
+  - "/2009/12/19/esx-4i-support-jumbo-frames/"
 categories: 
   - "vmware"
 tags: 

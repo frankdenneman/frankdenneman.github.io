@@ -5,6 +5,7 @@ url: "/2013-02-05-please-help-vmware-bring-project-nee-down-to-its-knees/"
 aliases:
   - "/posts/2013-02-05-please-help-vmware-bring-project-nee-down-to-its-knees/"
   - "/2013-02-05-Please-help-VMware-bring-project-NEE-down-to-its-knees/"
+  - "/2013/02/05/please-help-vmware-bring-project-nee-down-to-its-knees/"
 categories: 
   - "vmware"
 ---

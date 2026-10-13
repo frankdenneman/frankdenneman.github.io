@@ -11,6 +11,7 @@ categories: ["ai"]
 track: "AI Memory"
 aliases:
   - "/2026-03-12-Durable-Agentic-AI-Sessions-in-GPU-Memory/"
+  - "/2026/03/12/durable-agentic-ai-sessions-in-gpu-memory/"
 ---
 
 ## The durable memory of agentic systems

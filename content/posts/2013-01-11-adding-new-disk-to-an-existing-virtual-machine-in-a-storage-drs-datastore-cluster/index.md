@@ -5,6 +5,7 @@ url: "/2013-01-11-adding-new-disk-to-an-existing-virtual-machine-in-a-storage-dr
 aliases:
   - "/posts/2013-01-11-adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster/"
   - "/2013-01-11-Adding-new-disk-to-an-existing-virtual-machine-in-a-Storage-DRS-Datastore-Cluster/"
+  - "/2013/01/11/adding-new-disk-to-an-existing-virtual-machine-in-a-storage-drs-datastore-cluster/"
 categories: 
   - "sdrs"
 ---

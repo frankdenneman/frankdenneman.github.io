@@ -5,6 +5,7 @@ url: "/2018-02-21-public-speaking-schedule/"
 aliases:
   - "/posts/2018-02-21-public-speaking-schedule/"
   - "/2018-02-21-Public-Speaking-Schedule/"
+  - "/2018/02/21/public-speaking-schedule/"
 categories: 
   - "vmware"
 ---

@@ -5,6 +5,7 @@ url: "/2013-05-13-new-storage-drs-whitepaper-available-at-vmware-com/"
 aliases:
   - "/posts/2013-05-13-new-storage-drs-whitepaper-available-at-vmware-com/"
   - "/2013-05-13-New-Storage-DRS-whitepaper-available-at-VMware-com/"
+  - "/2013/05/13/new-storage-drs-whitepaper-available-at-vmware-com/"
 categories: 
   - "sdrs"
 ---

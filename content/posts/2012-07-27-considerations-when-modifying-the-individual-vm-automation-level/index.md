@@ -5,6 +5,7 @@ url: "/2012-07-27-considerations-when-modifying-the-individual-vm-automation-lev
 aliases:
   - "/posts/2012-07-27-considerations-when-modifying-the-individual-vm-automation-level/"
   - "/2012-07-27-Considerations-when-modifying-the-individual-VM-automation-level/"
+  - "/2012/07/27/considerations-when-modifying-the-individual-vm-automation-level/"
 categories: 
   - "drs"
 ---

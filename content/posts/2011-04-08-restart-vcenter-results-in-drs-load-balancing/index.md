@@ -5,6 +5,7 @@ url: "/2011-04-08-restart-vcenter-results-in-drs-load-balancing/"
 aliases:
   - "/posts/2011-04-08-restart-vcenter-results-in-drs-load-balancing/"
   - "/2011-04-08-Restart-vCenter-results-in-DRS-load-balancing/"
+  - "/2011/04/08/restart-vcenter-results-in-drs-load-balancing/"
 categories: 
   - "drs"
 ---

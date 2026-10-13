@@ -4,6 +4,7 @@ date: 2010-02-12
 url: "/2010-02-12-vcdx-number-29/"
 aliases:
   - "/posts/2010-02-12-vcdx-number-29/"
+  - "/2010-02-12-VCDX-number-29/"
 categories: 
   - "vcdx"
 tags: 

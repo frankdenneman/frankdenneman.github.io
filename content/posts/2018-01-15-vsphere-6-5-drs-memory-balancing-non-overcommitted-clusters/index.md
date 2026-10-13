@@ -4,6 +4,7 @@ date: 2018-01-15
 url: "/2018-01-15-vsphere-6-5-drs-memory-balancing-non-overcommitted-clusters/"
 aliases:
   - "/posts/2018-01-15-vsphere-6-5-drs-memory-balancing-non-overcommitted-clusters/"
+  - "/2018-01-15-vSphere-6-5-DRS-Memory-Balancing-Non-Overcommitted-Clusters/"
 categories: 
   - "drs"
 ---

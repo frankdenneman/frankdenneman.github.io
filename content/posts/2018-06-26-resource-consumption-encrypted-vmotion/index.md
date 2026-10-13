@@ -4,6 +4,7 @@ date: 2018-06-26
 url: "/2018-06-26-resource-consumption-encrypted-vmotion/"
 aliases:
   - "/posts/2018-06-26-resource-consumption-encrypted-vmotion/"
+  - "/2018-06-26-Resource-Consumption-Encrypted-vMotion/"
 categories: 
   - "vmware"
 ---

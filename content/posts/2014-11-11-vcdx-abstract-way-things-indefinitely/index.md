@@ -4,6 +4,7 @@ date: 2014-11-11
 url: "/2014-11-11-vcdx-abstract-way-things-indefinitely/"
 aliases:
   - "/posts/2014-11-11-vcdx-abstract-way-things-indefinitely/"
+  - "/2014-11-11-VCDX-abstract-way-things-indefinitely/"
 categories: 
   - "vcdx"
 ---

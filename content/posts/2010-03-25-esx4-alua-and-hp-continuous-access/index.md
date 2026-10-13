@@ -4,6 +4,7 @@ date: 2010-03-25
 url: "/2010-03-25-esx4-alua-and-hp-continuous-access/"
 aliases:
   - "/posts/2010-03-25-esx4-alua-and-hp-continuous-access/"
+  - "/2010-03-25-ESX4-ALUA-and-HP-continuous-access/"
 categories: 
   - "storage"
 tags: 

@@ -4,6 +4,7 @@ date: 2012-11-14
 url: "/2012-11-14-alternative-vm-swap-file-locations-qa-2/"
 aliases:
   - "/posts/2012-11-14-alternative-vm-swap-file-locations-qa-2/"
+  - "/2012-11-14-Alternative-VM-swap-file-locations-qa-2/"
 categories: 
   - "drs"
   - "memory"

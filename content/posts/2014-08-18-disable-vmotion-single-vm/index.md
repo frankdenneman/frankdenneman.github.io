@@ -4,6 +4,7 @@ date: 2014-08-18
 url: "/2014-08-18-disable-vmotion-single-vm/"
 aliases:
   - "/posts/2014-08-18-disable-vmotion-single-vm/"
+  - "/2014-08-18-Disable-vMotion-single-VM/"
 categories: 
   - "vmotion"
 ---

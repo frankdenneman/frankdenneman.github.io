@@ -12,6 +12,7 @@ track: "Agentic Workloads"
 aliases:
   - "/posts/2026-10-13-agent-or-flowchart-find-the-box-you-cant-finish-drawing/"
   - "/2026-10-13-Agent-or-Flowchart-Find-the-Box-You-Cant-Finish-Drawing/"
+  - "/2026-10-13-Agent-or-Flowchart-Find-the-Box-You-cant-Finish-Drawing/"
 ---
 
 ## Agent or flowchart? Find the box you can't finish drawing.

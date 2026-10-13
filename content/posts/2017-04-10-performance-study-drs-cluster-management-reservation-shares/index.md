@@ -4,6 +4,7 @@ date: 2017-04-10
 url: "/2017-04-10-performance-study-drs-cluster-management-reservation-shares/"
 aliases:
   - "/posts/2017-04-10-performance-study-drs-cluster-management-reservation-shares/"
+  - "/2017-04-10-Performance-Study-DRS-Cluster-Management-Reservation-Shares/"
 categories: 
   - "vmware"
 ---

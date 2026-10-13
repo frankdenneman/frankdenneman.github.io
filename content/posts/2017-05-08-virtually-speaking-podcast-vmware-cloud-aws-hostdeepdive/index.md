@@ -4,6 +4,7 @@ date: 2017-05-08
 url: "/2017-05-08-virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive/"
 aliases:
   - "/posts/2017-05-08-virtually-speaking-podcast-vmware-cloud-aws-hostdeepdive/"
+  - "/2017-05-08-Virtually-Speaking-Podcast-VMware-Cloud-AWS-HostDeepDive/"
 categories: 
   - "vmware"
 ---

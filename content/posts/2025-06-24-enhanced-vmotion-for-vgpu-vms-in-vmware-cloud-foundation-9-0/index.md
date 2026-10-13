@@ -4,6 +4,7 @@ date: 2025-06-24T09:00:00+02:00
 url: "/2025-06-24-enhanced-vmotion-for-vgpu-vms-in-vmware-cloud-foundation-9-0/"
 aliases:
   - "/posts/2025-06-24-enhanced-vmotion-for-vgpu-vms-in-vmware-cloud-foundation-9-0/"
+  - "/2025-06-24-Enhanced-vMotion-for-vGPU-VMs-in-vmware-cloud-foundation-9-0/"
 draft: false
 categories: ["ai"]
 tags: ["VCF 9.0", "vMotion", "vGPU", "LLM", "GPU memory", "KV cache"]

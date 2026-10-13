@@ -4,6 +4,7 @@ date: 2016-09-21
 url: "/2016-09-21-vmworld-geek-whisperers-podcast-choosing-titles-want/"
 aliases:
   - "/posts/2016-09-21-vmworld-geek-whisperers-podcast-choosing-titles-want/"
+  - "/2016-09-21-VMworld-Geek-Whisperers-Podcast-Choosing-Titles-Want/"
 categories: 
   - "miscellaneous"
   - "vmware"

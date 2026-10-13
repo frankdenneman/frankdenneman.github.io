@@ -4,6 +4,7 @@ date: 2013-01-17
 url: "/2013-01-17-a-primer-on-network-io-control/"
 aliases:
   - "/posts/2013-01-17-a-primer-on-network-io-control/"
+  - "/2013-01-17-A-primer-on-Network-io-Control/"
 categories: 
   - "vmware"
 ---

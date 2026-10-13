@@ -4,6 +4,7 @@ date: 2015-01-28
 url: "/2015-01-28-kb-2104983-explained-default-behavior-drs-changed-make-feature-less-aggressive/"
 aliases:
   - "/posts/2015-01-28-kb-2104983-explained-default-behavior-drs-changed-make-feature-less-aggressive/"
+  - "/2015-01-28-KB-2104983-explained-Default-behavior-DRS-changed-make-feature-less-aggressive/"
 categories: 
   - "drs"
 ---

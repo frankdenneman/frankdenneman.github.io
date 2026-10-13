@@ -4,6 +4,7 @@ date: 2018-07-11
 url: "/2018-07-11-virtually-speaking-podcast-technical-writing/"
 aliases:
   - "/posts/2018-07-11-virtually-speaking-podcast-technical-writing/"
+  - "/2018-07-11-Virtually-Speaking-Podcast-Technical-Writing/"
 categories: 
   - "vmware"
 tags: 

@@ -4,6 +4,7 @@ date: 2016-10-18
 url: "/2016-10-18-vmware-cloud-aws-elastic-drs/"
 aliases:
   - "/posts/2016-10-18-vmware-cloud-aws-elastic-drs/"
+  - "/2016-10-18-VMware-Cloud-AWS-Elastic-DRS/"
 categories: 
   - "vmware"
 ---

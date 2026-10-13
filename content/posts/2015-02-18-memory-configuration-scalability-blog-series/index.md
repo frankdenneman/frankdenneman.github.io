@@ -4,6 +4,7 @@ date: 2015-02-18
 url: "/2015-02-18-memory-configuration-scalability-blog-series/"
 aliases:
   - "/posts/2015-02-18-memory-configuration-scalability-blog-series/"
+  - "/2015-02-18-Memory-configuration-scalability-blog-Series/"
 categories: 
   - "deep-dive"
   - "memory"

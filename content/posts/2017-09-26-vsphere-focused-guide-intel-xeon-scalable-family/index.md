@@ -4,6 +4,7 @@ date: 2017-09-26
 url: "/2017-09-26-vsphere-focused-guide-intel-xeon-scalable-family/"
 aliases:
   - "/posts/2017-09-26-vsphere-focused-guide-intel-xeon-scalable-family/"
+  - "/2017-09-26-vSphere-Focused-Guide-Intel-Xeon-Scalable-Family/"
 categories: 
   - "numa"
   - "vmware"

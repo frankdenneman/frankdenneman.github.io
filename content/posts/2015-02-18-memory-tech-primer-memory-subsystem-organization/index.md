@@ -4,6 +4,7 @@ date: 2015-02-18
 url: "/2015-02-18-memory-tech-primer-memory-subsystem-organization/"
 aliases:
   - "/posts/2015-02-18-memory-tech-primer-memory-subsystem-organization/"
+  - "/2015-02-18-Memory-tech-primer-Memory-Subsystem-organization/"
 categories: 
   - "memory"
 ---

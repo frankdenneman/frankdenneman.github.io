@@ -4,6 +4,7 @@ date: 2011-01-19
 url: "/2011-01-19-draft-of-the-vsphere-4-1-hardening-guide-released/"
 aliases:
   - "/posts/2011-01-19-draft-of-the-vsphere-4-1-hardening-guide-released/"
+  - "/2011-01-19-Draft-of-the-vSphere-4-1-Hardening-guide-released/"
 categories: 
   - "vmware"
 ---

@@ -4,6 +4,7 @@ date: 2016-07-01
 url: "/2016-07-01-top-5-vblog/"
 aliases:
   - "/posts/2016-07-01-top-5-vblog/"
+  - "/2016-07-01-Top-5-vBlog/"
 categories: 
   - "miscellaneous"
 ---

@@ -4,6 +4,7 @@ date: 2018-01-05
 url: "/2018-01-05-explainer-spectre-meltdown-graham-sutherland/"
 aliases:
   - "/posts/2018-01-05-explainer-spectre-meltdown-graham-sutherland/"
+  - "/2018-01-05-Explainer-Spectre-Meltdown-Graham-Sutherland/"
 categories: 
   - "cpu"
   - "vmware"

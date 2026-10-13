@@ -4,6 +4,7 @@ date: 2016-11-22
 url: "/2016-11-22-vmware-cloud-aws-reinvent/"
 aliases:
   - "/posts/2016-11-22-vmware-cloud-aws-reinvent/"
+  - "/2016-11-22-VMware-Cloud-AWS-reinvent/"
 categories: 
   - "vmware"
 ---

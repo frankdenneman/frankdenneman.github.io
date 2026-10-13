@@ -4,6 +4,7 @@ date: 2016-10-13
 url: "/2016-10-13-vmware-cloud-aws-closer-look/"
 aliases:
   - "/posts/2016-10-13-vmware-cloud-aws-closer-look/"
+  - "/2016-10-13-VMware-Cloud-AWS-Closer-Look/"
 categories: 
   - "vmware"
 ---

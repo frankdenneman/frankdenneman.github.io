@@ -4,6 +4,7 @@ date: 2016-09-27
 url: "/2016-09-27-blog-hacked-vs0ciety/"
 aliases:
   - "/posts/2016-09-27-blog-hacked-vs0ciety/"
+  - "/2016-09-27-blog-hacked-vS0ciety/"
 categories: 
   - "storage"
 ---

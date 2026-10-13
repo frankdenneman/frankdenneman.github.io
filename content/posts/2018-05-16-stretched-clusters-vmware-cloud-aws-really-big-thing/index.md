@@ -4,6 +4,7 @@ date: 2018-05-16
 url: "/2018-05-16-stretched-clusters-vmware-cloud-aws-really-big-thing/"
 aliases:
   - "/posts/2018-05-16-stretched-clusters-vmware-cloud-aws-really-big-thing/"
+  - "/2018-05-16-Stretched-Clusters-VMware-Cloud-AWS-Really-Big-Thing/"
 categories: 
   - "vmware"
 ---

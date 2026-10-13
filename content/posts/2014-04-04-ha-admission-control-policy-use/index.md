@@ -4,6 +4,7 @@ date: 2014-04-04
 url: "/2014-04-04-ha-admission-control-policy-use/"
 aliases:
   - "/posts/2014-04-04-ha-admission-control-policy-use/"
+  - "/2014-04-04-HA-admission-control-policy-use/"
 categories: 
   - "ha"
 ---

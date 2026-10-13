@@ -4,6 +4,7 @@ date: 2014-08-12
 url: "/2014-08-12-platform-9-transform-virtual-infrastructure-private-cloud-within-seconds/"
 aliases:
   - "/posts/2014-08-12-platform-9-transform-virtual-infrastructure-private-cloud-within-seconds/"
+  - "/2014-08-12-Platform-9-transform-virtual-infrastructure-private-cloud-within-seconds/"
 categories: 
   - "miscellaneous"
 ---

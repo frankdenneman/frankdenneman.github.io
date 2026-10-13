@@ -4,6 +4,7 @@ date: 2018-07-16
 url: "/2018-07-16-resource-pools-sibling-rivalry/"
 aliases:
   - "/posts/2018-07-16-resource-pools-sibling-rivalry/"
+  - "/2018-07-16-Resource-Pools-Sibling-Rivalry/"
 categories: 
   - "drs"
   - "vmware"

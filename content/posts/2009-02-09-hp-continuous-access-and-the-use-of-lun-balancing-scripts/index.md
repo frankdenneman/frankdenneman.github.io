@@ -4,6 +4,7 @@ date: 2009-02-09
 url: "/2009-02-09-hp-continuous-access-and-the-use-of-lun-balancing-scripts/"
 aliases:
   - "/posts/2009-02-09-hp-continuous-access-and-the-use-of-lun-balancing-scripts/"
+  - "/2009-02-09-HP-continuous-access-and-the-use-of-LUN-balancing-scripts/"
 categories: 
   - "storage"
 tags: 

@@ -4,6 +4,7 @@ date: 2017-08-25
 url: "/2017-08-25-get-free-book-vmworld/"
 aliases:
   - "/posts/2017-08-25-get-free-book-vmworld/"
+  - "/2017-08-25-Get-Free-Book-VMworld/"
 categories: 
   - "deep-dive"
   - "vmware"

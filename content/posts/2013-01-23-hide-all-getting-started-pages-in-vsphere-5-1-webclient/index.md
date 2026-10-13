@@ -4,6 +4,7 @@ date: 2013-01-23
 url: "/2013-01-23-hide-all-getting-started-pages-in-vsphere-5-1-webclient/"
 aliases:
   - "/posts/2013-01-23-hide-all-getting-started-pages-in-vsphere-5-1-webclient/"
+  - "/2013-01-23-Hide-all-Getting-Started-Pages-in-vSphere-5-1-webclient/"
 categories: 
   - "vmware"
 ---

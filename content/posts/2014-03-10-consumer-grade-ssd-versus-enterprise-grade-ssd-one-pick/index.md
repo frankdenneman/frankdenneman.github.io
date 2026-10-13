@@ -4,6 +4,7 @@ date: 2014-03-10
 url: "/2014-03-10-consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick/"
 aliases:
   - "/posts/2014-03-10-consumer-grade-ssd-versus-enterprise-grade-ssd-one-pick/"
+  - "/2014-03-10-Consumer-grade-SSD-versus-Enterprise-grade-SSD-one-pick/"
 categories: 
   - "storage"
 ---

@@ -4,6 +4,7 @@ date: 2014-01-16
 url: "/2014-01-16-vsphere-5-5-vcenter-server-0-inventory/"
 aliases:
   - "/posts/2014-01-16-vsphere-5-5-vcenter-server-0-inventory/"
+  - "/2014-01-16-vSphere-5-5-vCenter-server-0-inventory/"
 categories: 
   - "vmware"
 ---

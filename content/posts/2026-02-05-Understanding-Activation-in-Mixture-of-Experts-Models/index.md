@@ -9,6 +9,8 @@ series_order: 2
 concepts: ["Mixture of Experts", "Activation Memory", "Prefill Phase", "GPU Memory Spikes", "Long-Context Inference"]
 categories: ["ai"]
 track: "AI Memory"
+aliases:
+  - "/2026-02-05-Understanding-Activation-in-Mixture-of-Experts-Models/"
 ---
 
 

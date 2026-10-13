@@ -4,6 +4,7 @@ date: 2010-07-20
 url: "/2010-07-20-dpm-scheduled-task/"
 aliases:
   - "/posts/2010-07-20-dpm-scheduled-task/"
+  - "/2010-07-20-DPM-scheduled-task/"
 categories: 
   - "drs"
 tags: 

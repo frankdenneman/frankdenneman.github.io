@@ -4,6 +4,7 @@ date: 2014-09-29
 url: "/2014-09-29-database-workload-characteristics-impact-storage-architecture-design-part-3-ancillary-structures-tuning-databases/"
 aliases:
   - "/posts/2014-09-29-database-workload-characteristics-impact-storage-architecture-design-part-3-ancillary-structures-tuning-databases/"
+  - "/2014-09-29-Database-workload-characteristics-impact-storage-architecture-design-part-3-Ancillary-structures-tuning-databases/"
 categories: 
   - "miscellaneous"
 ---

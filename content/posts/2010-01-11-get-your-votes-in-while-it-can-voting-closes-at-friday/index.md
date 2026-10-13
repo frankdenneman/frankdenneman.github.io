@@ -4,6 +4,7 @@ date: 2010-01-11
 url: "/2010-01-11-get-your-votes-in-while-it-can-voting-closes-at-friday/"
 aliases:
   - "/posts/2010-01-11-get-your-votes-in-while-it-can-voting-closes-at-friday/"
+  - "/2010-01-11-get-your-votes-in-while-it-can-Voting-closes-at-Friday/"
 categories: 
   - "miscellaneous"
 tags: 

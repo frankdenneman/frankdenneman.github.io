@@ -4,6 +4,7 @@ date: 2017-08-29
 url: "/2017-08-29-vmware-cloud-aws-technical-overview/"
 aliases:
   - "/posts/2017-08-29-vmware-cloud-aws-technical-overview/"
+  - "/2017-08-29-VMware-Cloud-AWS-Technical-Overview/"
 categories: 
   - "vmware"
 ---

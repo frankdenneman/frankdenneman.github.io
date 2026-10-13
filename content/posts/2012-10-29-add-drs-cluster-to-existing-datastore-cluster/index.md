@@ -4,6 +4,7 @@ date: 2012-10-29
 url: "/2012-10-29-add-drs-cluster-to-existing-datastore-cluster/"
 aliases:
   - "/posts/2012-10-29-add-drs-cluster-to-existing-datastore-cluster/"
+  - "/2012-10-29-Add-DRS-cluster-to-existing-Datastore-Cluster/"
 categories: 
   - "sdrs"
 tags: 

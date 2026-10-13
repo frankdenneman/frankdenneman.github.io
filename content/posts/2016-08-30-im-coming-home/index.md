@@ -4,6 +4,7 @@ date: 2016-08-30
 url: "/2016-08-30-im-coming-home/"
 aliases:
   - "/posts/2016-08-30-im-coming-home/"
+  - "/2016-08-30-im-Coming-Home/"
 categories: 
   - "vmware"
 ---

@@ -4,6 +4,7 @@ date: 2018-07-17
 url: "/2018-07-17-introduction-elastic-drs/"
 aliases:
   - "/posts/2018-07-17-introduction-elastic-drs/"
+  - "/2018-07-17-Introduction-Elastic-DRS/"
 categories: 
   - "vmware"
 ---

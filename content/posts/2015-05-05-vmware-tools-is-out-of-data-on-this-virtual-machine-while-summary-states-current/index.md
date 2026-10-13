@@ -4,6 +4,7 @@ date: 2015-05-05
 url: "/2015-05-05-vmware-tools-is-out-of-data-on-this-virtual-machine-while-summary-states-current/"
 aliases:
   - "/posts/2015-05-05-vmware-tools-is-out-of-data-on-this-virtual-machine-while-summary-states-current/"
+  - "/2015-05-05-VMware-Tools-is-out-of-data-on-this-virtual-machine-while-summary-states-Current/"
 categories: 
   - "vmware"
 ---

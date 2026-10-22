@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The KV cache is a conveyor belt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f8f9fb; --ink:#1c2433; --muted:#5d6678; --line:#d5dae3; --belt:#e7eaf0; --roller:#c3c9d4;
+  --prefix:#1d4ed8; --hist:#6aa5f5; --histNew:#9cc4fa; --other:#b8bfcc; --otherInk:#3b4352;
+  --new:#f7943b; --gpu:#0b8fb3; --hit:#1f8a4c; --miss:#c2410c; --chip:#ffffff; --agent:#7c5cd6;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12161d; --ink:#e7ebf2; --muted:#9aa3b4; --line:#2b3240; --belt:#1d232d; --roller:#3a4352;
+    --prefix:#4f7cf0; --hist:#5b93e0; --histNew:#86b2ef; --other:#4a5363; --otherInk:#dfe4ec;
+    --new:#f7943b; --gpu:#22a9cf; --hit:#4cc47e; --miss:#f0844d; --chip:#1a2029; --agent:#a68cf0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12161d; --ink:#e7ebf2; --muted:#9aa3b4; --line:#2b3240; --belt:#1d232d; --roller:#3a4352;
+  --prefix:#4f7cf0; --hist:#5b93e0; --histNew:#86b2ef; --other:#4a5363; --otherInk:#dfe4ec;
+  --new:#f7943b; --gpu:#22a9cf; --hit:#4cc47e; --miss:#f0844d; --chip:#1a2029; --agent:#a68cf0;
+  color-scheme: dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.45}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 32px}
+h1{font-size:1.6rem;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 20px;max-width:70ch}
+.controls{display:flex;flex-wrap:wrap;gap:18px 32px;margin-bottom:18px}
+.group span.lbl{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--chip)}
+.seg button{font:inherit;font-size:.9rem;border:0;background:transparent;color:var(--ink);padding:6px 12px;cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg button:focus-visible{outline:2px solid var(--gpu);outline-offset:-2px}
+
+.stage{position:relative;height:360px;margin:8px 0 6px}
+.top{position:absolute;left:0;right:56px;top:0;height:136px;display:flex;gap:0;align-items:stretch}
+.agent{flex:0 0 190px;border:2px solid var(--agent);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;justify-content:space-between}
+.agent b{color:var(--agent)}
+.agent small{color:var(--muted);font-size:.85rem;line-height:1.25;min-height:2.5em}
+.wire{flex:1 1 auto;position:relative;min-width:60px}
+.wire::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--line)}
+.gpu{flex:0 0 auto;border:2px solid var(--gpu);border-radius:10px;padding:10px 16px 12px;min-width:270px;display:flex;gap:14px;align-items:stretch;transition:box-shadow .3s}
+.gpu.busy{box-shadow:0 0 0 5px color-mix(in srgb,var(--gpu) 22%,transparent)}
+.gpu .col{display:flex;flex-direction:column;justify-content:space-between}
+.gpu b{color:var(--gpu)}
+.gpu .col>div:first-child{width:0;min-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#gpuTxt{display:block;margin-top:1px}
+.gpu small{color:var(--muted);font-size:.8rem;line-height:1.2}
+.slots{display:flex;gap:6px;margin-top:8px}
+.slot{height:52px;border:1px dashed var(--line);border-radius:8px;flex:0 0 auto}
+.others{border-left:1px solid var(--line);padding-left:12px;display:flex;flex-direction:column;justify-content:space-between}
+.others .slot{width:60px}
+.timer{height:8px;background:var(--belt);border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.timer i{display:block;height:100%;width:0;background:var(--new)}
+
+.pkt{position:absolute;top:50%;margin-top:-12px;height:24px;padding:0 10px;border-radius:12px;font-size:.78rem;font-weight:600;color:#fff;display:flex;align-items:center;white-space:nowrap;opacity:0;transition:left 1.4s ease-in-out,opacity .3s}
+.pkt.req{background:var(--new);color:#3d1d00} .pkt.rsp{background:var(--gpu)}
+
+.beltzone{position:absolute;left:0;right:56px;top:200px;height:64px}
+.belt{position:absolute;left:0;right:0;top:46px;height:14px;background:var(--belt);border-radius:7px;border:1px solid var(--line);overflow:hidden}
+.belt::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--roller) 0 2px,transparent 2px 22px);animation:roll 1.2s linear infinite;opacity:.8}
+@keyframes roll{to{background-position:22px 0}}
+.drop{position:absolute;right:0;top:196px;width:56px;height:164px;border-left:2px dashed var(--miss)}
+.drop span{position:absolute;left:-30px;top:-26px;color:var(--miss);font-size:.82rem;font-weight:600}
+.ends{position:absolute;left:0;right:120px;top:268px;display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem}
+
+.blk{position:absolute;left:0;top:0;height:44px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.74rem;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;
+  transition:transform 1s cubic-bezier(.3,.7,.3,1),opacity .8s ease,background-color .8s,box-shadow .3s;will-change:transform;z-index:2}
+.blk.prefix{background:var(--prefix)}
+.blk.new{background:var(--new);color:#3d1d00}
+.blk.other{background:var(--other);color:var(--otherInk);z-index:1}
+.blk.mine{outline:2px solid var(--ink);outline-offset:1px}
+.blk.recomputed{box-shadow:0 0 0 3px var(--miss)}
+.blk.falling{transition:transform 1.6s cubic-bezier(.5,0,.9,.6),opacity 1.6s ease-in}
+
+.status{display:grid;grid-template-columns:1fr auto;gap:12px 24px;align-items:start;border-top:1px solid var(--line);padding-top:14px}
+.msg{min-height:2.9em;margin:0}
+.msg.hit{color:var(--hit)} .msg.miss{color:var(--miss)}
+.stats{display:flex;gap:18px;font-size:.9rem;color:var(--muted)}
+.stats b{font-size:1.25rem;color:var(--ink);display:block;line-height:1.1}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:.85rem;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px}
+.arrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:6}
+.arrows path.a{stroke:var(--gpu);stroke-width:2;fill:none;stroke-dasharray:5 4;animation:dash .6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-9}}
+.replay{font:inherit;font-size:.9rem;margin-top:10px;padding:6px 14px;border:1px solid var(--line);border-radius:8px;background:var(--chip);color:var(--ink);cursor:pointer}
+.replay:focus-visible{outline:2px solid var(--gpu)}
+body.embed h1,body.embed .sub{display:none}
+.blk.computing{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.28) 0 6px,transparent 6px 12px);background-size:17px 17px;animation:compute .8s linear infinite}
+@keyframes compute{to{background-position:17px 0}}
+@media (prefers-reduced-motion:reduce){.blk.computing{animation:none}}
+.stage.paused .belt::after{animation-play-state:paused}
+.note{color:var(--muted);font-size:.9rem;margin:10px 0 0;max-width:80ch}
+@media (max-width:700px){.agent{flex-basis:120px}.others{display:none}.blk{font-size:.6rem}}
+@media (prefers-reduced-motion:reduce){.blk,.blk.falling,.pkt{transition:none}.belt::after{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The KV cache is a conveyor belt</h1>
+  <p class="sub">Each request carries the cached prefix plus new tool output. While the request runs, its KV blocks are held on the GPU. When the agent goes back to waiting on a tool, the GPU lets go of them: they go on the belt and move toward the edge, pushed by every other request. Will they still be there when the agent comes back?</p>
+
+  <div class="controls">
+    <div class="group"><span class="lbl">Session A’s tool wait</span>
+      <div class="seg" id="waitSeg">
+        <button data-v="5.2" aria-pressed="true">5.2 s median</button><button data-v="20">20 s</button><button data-v="81">81 s P99</button>
+      </div></div>
+    <div class="group"><span class="lbl">Load from everything else on the GPU</span>
+      <div class="seg" id="loadSeg">
+        <button data-v="0.35">Light</button><button data-v="0.7" aria-pressed="true">Busy</button><button data-v="1.4">Saturated</button>
+      </div></div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="top">
+      <div class="agent">
+        <div><b>Agent</b> <span style="color:var(--muted);font-size:.85rem">Session A</span></div>
+        <small id="agentTxt">Sending request</small>
+        <div class="timer"><i id="bar"></i></div>
+      </div>
+      <div class="wire" id="wire">
+        <div class="pkt req" id="pktReq">prefix + new tool output</div>
+        <div class="pkt rsp" id="pktRsp">tool call</div>
+      </div>
+      <div class="gpu" id="gpu">
+        <div class="col">
+          <div><b>GPU</b> <small id="gpuTxt">idle for Session A</small></div>
+          <div class="slots" id="slots"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="beltzone" id="belt"><div class="belt"></div></div>
+    <div class="drop"><span>Evicted</span></div>
+    <svg class="arrows" id="arrows"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--gpu)"/></marker></defs></svg>
+    <div class="ends"><span>Released blocks enter</span><span id="beltLen">An untouched block survives ≈ 17 s</span></div>
+  </div>
+
+  <div class="status">
+    <div><p class="msg" id="msg" aria-live="polite">First request: system prompt, skills and user task.</p><button class="replay" id="replay" hidden>Replay</button></div>
+    <div class="stats">
+      <div><b id="sHit">0</b>hits</div>
+      <div><b id="sPart">0</b>partial</div>
+      <div><b id="sMiss">0</b>misses</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--prefix)"></i>Prefix: system prompt, skills, user task, past decode and tool output</span>
+    <span><i style="background:var(--new)"></i>New tool output (newest, evicted first)</span>
+    <span><i style="background:var(--other)"></i>Other workloads</span>
+    <span><i style="background:transparent;box-shadow:inset 0 0 0 3px var(--miss)"></i>Recomputed</span>
+  </div>
+  <p class="note">Each turn: the agent sends the prefix plus new tool output, the GPU looks up the prefix blocks on the belt and pulls them back in (a cache hit), adds a slot for the new tool output, and returns a tool call. While the agent waits, every block goes back on the belt. When the GPU pulls last turn’s orange block back in, it turns blue: it is now part of the prefix. Blocks that fell off the edge are recomputed.</p>
+</div>
+
+<script>
+(function(){
+  const L = 12, SPEED = 2, CYCLES = 3;
+  const OTHER = ["chat","RAG","agent B","agent C","batch","chat","agent D","RAG"];
+  const $ = id => document.getElementById(id);
+  const beltEl = $("belt"), slotsEl = $("slots"), stage = $("stage"), svg = $("arrows");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (/[?&]embed/.test(location.search)) document.body.classList.add("embed");
+  let wait = 5.2, rate = 0.7, belt = [], slotW = 0, uid = 0;
+  let S, turn, stats, phase, pt, pdur, sim, nextArrive, running = false, runId = 0;
+
+  const slots = () => [...slotsEl.children];
+  function rel(el){ const r = el.getBoundingClientRect(), b = beltEl.getBoundingClientRect(); return {x:r.left-b.left, y:r.top-b.top}; }
+  function srel(el){ const r = el.getBoundingClientRect(), b = stage.getBoundingClientRect(); return {x:r.left-b.left, y:r.top-b.top, w:r.width, h:r.height}; }
+  function setT(b,x,y,extra){ b.el.style.transform = `translate(${x}px,${y}px)${extra||""}`; }
+  function slotPos(i){ const p = rel(slots()[i]); return {x:p.x+3, y:p.y+4}; }
+  function layout(){ belt.forEach((b,i) => { b.i = i; setT(b, i*slotW+2, 0); }); }
+  function layoutGpu(){ S.forEach((b,i) => { if (b.loc==="gpu" && slots()[i]){ const p = slotPos(i); setT(b,p.x,p.y); } }); }
+  function measure(){
+    slotW = beltEl.clientWidth / L;
+    slots().forEach(s => s.style.width = (slotW+2)+"px");
+    document.querySelectorAll(".blk").forEach(e => e.style.width = (slotW-4)+"px");
+    layout(); if (S) layoutGpu();
+  }
+  function addSlot(){ const d = document.createElement("div"); d.className = "slot"; d.style.width = (slotW+2)+"px"; slotsEl.appendChild(d); }
+
+  function make(kind,label,cls){
+    const el = document.createElement("div");
+    el.className = "blk " + kind + (cls ? " "+cls : "");
+    el.textContent = label; el.style.width = (slotW-4)+"px";
+    beltEl.appendChild(el);
+    return {id:uid++, kind, el, loc:"new"};
+  }
+  // a block computed on the GPU appears in its slot; it never travels from the belt
+  function computeInSlot(i, kind, label, recomputed){
+    const b = make(kind, label, "mine" + (recomputed ? " recomputed" : ""));
+    b.loc = "gpu"; b.el.style.transition = "none"; b.el.style.opacity = "0";
+    const p = slotPos(i); setT(b, p.x, p.y);
+    void b.el.offsetWidth;
+    b.el.style.transition = ""; b.el.style.opacity = "1";
+    return b;
+  }
+  function evict(b){
+    b.loc = "gone"; b.el.classList.add("falling");
+    setT(b, L*slotW+40, 150, ` rotate(${b.kind==="other"?24:-28}deg)`);
+    b.el.style.opacity = "0";
+    setTimeout(() => b.el.remove(), 1700);
+  }
+  function trim(){ while (belt.length > L) evict(belt.pop()); }
+  function pushFront(b){ b.loc = "belt"; belt.unshift(b); layout(); trim(); }
+  function takeOff(b){ const i = belt.indexOf(b); if (i<0) return; belt.splice(i,1); layout(); }
+  function arriveOther(){
+    const b = make("other", OTHER[uid % OTHER.length]);
+    setT(b, 2, -40); b.el.style.opacity = "0";
+    requestAnimationFrame(() => { b.el.style.opacity = "1"; pushFront(b); });
+  }
+  function toPrefix(b){ b.kind = "prefix"; b.el.classList.remove("new"); b.el.classList.add("prefix"); b.el.textContent = "prefix"; }
+
+  function drawArrows(){
+    svg.querySelectorAll("path.a").forEach(p => p.remove());
+    if (phase !== "lookup") return;
+    S.forEach((b,i) => {
+      if (b.loc !== "belt" || !slots()[i]) return;
+      const s0 = srel(slots()[i]), r = srel(b.el);
+      const sx = s0.x + s0.w/2, sy = s0.y + s0.h + 3, ex = r.x + r.w/2, ey = r.y - 4;
+      const p = document.createElementNS("http://www.w3.org/2000/svg","path");
+      p.setAttribute("class","a"); p.setAttribute("marker-end","url(#ah)");
+      p.setAttribute("d", `M${sx},${sy} C${sx},${(sy+ey)/2} ${ex},${(sy+ey)/2} ${ex},${ey}`);
+      svg.appendChild(p);
+    });
+  }
+
+  function loadOnGpu(){
+    const m = $("msg");
+    if (turn === 0){
+      addSlot(); S = [computeInSlot(0,"prefix","prefix")];
+      m.className = "msg"; m.textContent = "First request: the GPU computes the system prompt, skills and user task.";
+      return 0;
+    }
+    let lost = 0;
+    addSlot();   // grow the GPU box first, so every block is placed in its final slot
+    S = S.map((b,i) => {
+      if (b.loc === "belt"){
+        takeOff(b); b.loc = "gpu";
+        if (b.kind === "new") setTimeout(() => toPrefix(b), reduce ? 0 : 650);   // ingested: now part of the prefix
+        return b;
+      }
+      lost++; const nb = computeInSlot(i,"prefix","recompute",true); nb.el.classList.add("computing"); return nb;
+    });
+    S.push(computeInSlot(S.length,"new","new"));
+    layoutGpu();
+    const n = S.length - 1;
+    if (lost === 0){ stats.hit++; m.className = "msg hit";
+      m.textContent = `Back after ${wait} s. ${n===1?"The prefix block was":"All "+n+" prefix blocks were"} still on the belt: cache hit. The GPU prefills only the new tool output.`; }
+    else if (lost === n){ stats.miss++; m.className = "msg miss";
+      m.textContent = `Back after ${wait} s. The whole prefix fell off the belt: cache miss. The GPU spends compute prefilling ${n===1?"it":"all "+n+" blocks"} again before it can start on the new tool output.`; }
+    else { stats.part++; m.className = "msg miss";
+      m.textContent = `Back after ${wait} s. The newest ${lost} of ${n} prefix blocks were evicted: partial hit. The GPU spends compute prefilling those again before the new tool output.`; }
+    $("sHit").textContent = stats.hit; $("sPart").textContent = stats.part; $("sMiss").textContent = stats.miss;
+    return lost;
+  }
+
+  function releaseFromGpu(){
+    const id = runId;
+    [...S].reverse().forEach((b,k) => setTimeout(() => {
+      if (id !== runId || b.loc !== "gpu") return;
+      b.el.classList.remove("recomputed");
+      pushFront(b);
+    }, reduce ? 0 : k*300));
+  }
+
+  function packet(id, fromLeft, text){
+    const p = $(id); if (text) p.textContent = text;
+    const w = $("wire").clientWidth, pw = p.offsetWidth;
+    p.style.transition = "none"; p.style.left = (fromLeft ? 0 : Math.max(0,w-pw))+"px"; p.style.opacity = "1";
+    void p.offsetWidth;
+    p.style.transition = ""; p.style.left = (fromLeft ? Math.max(0,w-pw) : 0)+"px";
+    setTimeout(() => p.style.opacity = "0", 1450);
+  }
+
+  function enter(p){
+    phase = p; pt = 0;
+    $("gpu").classList.toggle("busy", p==="gpu");
+    if (p==="send"){
+      pdur = 3.2;
+      if (turn === 0){ $("agentTxt").textContent = "Sending system prompt, skills and task"; packet("pktReq", true, "prefix: system prompt + task"); }
+      else { $("agentTxt").textContent = "Tool output in. Sending prefix + new tool output"; packet("pktReq", true, "prefix + new tool output"); }
+      $("gpuTxt").textContent = "receiving request";
+    }
+    if (p==="lookup"){ pdur = turn === 0 ? 0.1 : 3; $("gpuTxt").textContent = "looking up cached prefix blocks"; }
+    if (p==="gpu"){
+      const lost = loadOnGpu();
+      pdur = 5 + lost*2.5;   // recomputing costs GPU time
+      if (turn === 0) $("gpuTxt").textContent = "computing the prefix";
+      else if (lost) $("gpuTxt").textContent = "recomputing evicted prefix";
+      else $("gpuTxt").textContent = "cache hit: new tokens only";
+      $("agentTxt").textContent = lost ? "Waiting on the model, longer: prefix is recomputed" : "Waiting on the model";
+    }
+    if (p==="reply"){ pdur = 3.2;
+      S.forEach(b => { if (b.el.classList.contains("computing")){ b.el.classList.remove("computing"); b.el.textContent = "prefix"; } }); $("gpuTxt").textContent = "returning tool call"; packet("pktRsp", false); }
+    if (p==="tool"){ pdur = wait; $("gpuTxt").textContent = "blocks released"; releaseFromGpu(); }
+    drawArrows();
+  }
+  function nextPhase(){
+    if (phase==="send") return enter("lookup");
+    if (phase==="lookup") return enter("gpu");
+    if (phase==="gpu"){
+      if (turn >= CYCLES){ stop(); return; }
+      return enter("reply");
+    }
+    if (phase==="reply") return enter("tool");
+    turn++; enter("send");
+  }
+  function stop(){
+    running = false; phase = "done"; stage.classList.add("paused");
+    $("gpu").classList.remove("busy");
+    S.forEach(b => { if (b.el.classList.contains("computing")){ b.el.classList.remove("computing"); b.el.textContent = "prefix"; } });
+    $("agentTxt").textContent = `${CYCLES} tool cycles done`;
+    $("replay").hidden = false;
+  }
+
+  let last = performance.now();
+  function tick(now){
+    const dt = Math.min(0.1,(now-last)/1000)*SPEED; last = now;
+    if (running){
+      sim += dt; pt += dt;
+      if (sim >= nextArrive){ arriveOther(); nextArrive = sim + (1/rate)*(0.6+Math.random()*0.8); }
+      if (phase==="tool"){
+        $("agentTxt").textContent = `Waiting on tool: ${Math.min(pt,wait).toFixed(1)} of ${wait} s`;
+        $("bar").style.width = Math.min(100, pt/pdur*100)+"%";
+      } else $("bar").style.width = "0";
+      if (phase==="lookup") drawArrows();
+      if (pt >= pdur) nextPhase();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function reset(){
+    runId++;
+    beltEl.querySelectorAll(".blk").forEach(e => e.remove());
+    svg.querySelectorAll("path.a").forEach(p => p.remove());
+    slotsEl.innerHTML = ""; belt = []; S = []; turn = 0; stats = {hit:0,part:0,miss:0}; sim = 0; nextArrive = 0.5;
+    ["sHit","sPart","sMiss"].forEach(id => $(id).textContent = "0");
+    $("msg").className = "msg"; $("msg").textContent = "First request: system prompt, skills and user task.";
+    $("replay").hidden = true;
+    for (let i=0;i<L-2;i++){ const b = make("other", OTHER[i%OTHER.length]); b.loc="belt"; belt.push(b); }
+    layout();
+    running = true; stage.classList.remove("paused"); enter("send");
+  }
+
+  function seg(id, fn){
+    const s = $(id);
+    s.addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return;
+      s.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x===b ? "true":"false"));
+      fn(parseFloat(b.dataset.v)); reset(); });
+  }
+  seg("waitSeg", v => { wait = v; });
+  seg("loadSeg", v => { rate = v; $("beltLen").textContent = `An untouched block survives ≈ ${Math.round(L/rate)} s`; });
+  $("replay").addEventListener("click", reset);
+
+  addEventListener("resize", measure);
+  if (window.ResizeObserver) new ResizeObserver(() => { if (S) layoutGpu(); }).observe($("gpu"));
+  measure();
+  reset();
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

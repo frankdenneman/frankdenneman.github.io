@@ -2,7 +2,7 @@
 title: "Anatomy of an Agent Request"
 linkTitle: "Part 3 - Anatomy of an Agent Request"
 description: "An agent run can generate dozens of model requests. A closer look at request structure, input and output tokens, tool latency, concurrency, and what these mean for inference infrastructure."
-date: 2026-10-22
+date: 2026-10-22T09:00:00+02:00
 url: "/2026-10-22-anatomy-of-an-agent-request/"
 series: ["Agentic Workloads"]
 series_order: 3
